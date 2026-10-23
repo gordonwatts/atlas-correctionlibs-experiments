@@ -72,7 +72,7 @@ class JetCorrections:
             np.repeat(npv, counts), charged, tile, em3,
             at_vertex("NumTrkPt1000"), at_vertex("TrackWidthPt1000"),
         ))
-        values = np.asarray(self.engine.batch(rows), dtype=np.float64).reshape((-1, 12))
+        values = np.asarray(self.engine.batch_array(rows), dtype=np.float64).reshape((-1, 12))
         valid = np.all(np.isfinite(values), axis=1)
         nominal = SimpleNamespace(**{name: ak.unflatten(values[:, 8+k], counts) for k, name in enumerate(("pt", "eta", "phi", "m"))}, valid=ak.unflatten(valid, counts))
         return {"NOSYS": nominal, "stages": values, "inputs": np.asarray(rows).reshape((-1, 14)), "counts": np.asarray(counts), "metadata": {"bundle": str(self.bundle), "systematics": ["NOSYS"], "validity": "finite outputs; backend exceptions propagate"}}

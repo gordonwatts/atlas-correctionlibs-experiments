@@ -70,8 +70,8 @@ class Systematics:
   self.tables=correctionlib.CorrectionSet.from_file(str(payload/"uncertainty-tables.json.gz"))
   self.engine=JetSystematics(str(payload/"uncertainty-tables.json.gz"),str(payload/"uncertainty-manifest.json"))
  def variations(self,p4,mu,npv,bjet):
-  rows=np.column_stack([p4,mu,npv,bjet]).tolist()
+  rows=np.column_stack([p4,mu,npv,bjet])
   for name in self.engine.names():
-   values=np.asarray(self.engine.batch(name,rows))
+   values=np.asarray(self.engine.batch_array(name,rows))
    if np.any(values[:,4]!=0):raise RuntimeError("Unsuccessful systematic correction status")
    yield name,values[:,:4]

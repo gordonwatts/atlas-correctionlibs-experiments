@@ -1,0 +1,2 @@
+117 states: bitwise legacy/array equality; strided inputs, empty batches, shapes and JVT PASS
+{'chunk_invariance': 'bitwise equal', 'empty_chunk': 'pass', 'zero_jet_event': 'pass', 'shape_missing_and_unsupported_inputs': 'pass'}

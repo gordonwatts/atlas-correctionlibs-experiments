@@ -19,6 +19,6 @@ class Jvt:
  def evaluate(self,p4,sumpt,jvfcorr,haspv,ishs,sigma=0):
   # Both NNJVT selection and efficiency use the configured default JetEtaName='eta'.
   rows=np.column_stack([p4[:,0],p4[:,1],p4[:,1],sumpt,jvfcorr,haspv])
-  result=np.asarray(self.nn.batch(rows));score=result[:,0];passed=result[:,1].astype(bool)
-  values=np.asarray(self.efficiency.batch(np.column_stack([p4[:,0],p4[:,1],passed,ishs]).tolist(),sigma))
+  result=np.asarray(self.nn.batch_array(rows));score=result[:,0];passed=result[:,1].astype(bool)
+  values=np.asarray(self.efficiency.batch_array(np.column_stack([p4[:,0],p4[:,1],passed,ishs]),sigma))
   return score,passed,values[:,0].astype(np.float32),values[:,1]==0
