@@ -1,0 +1,217 @@
+{
+  "status": "compiled-not-end-to-end-validated",
+  "sources": {
+    "/cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetCalibTools/CalibArea-00-04-83/CalibrationConfigs/AntiKt4EMPFlow_MC23a_PreRecR22_Phase2_CalibConfig_ResPU_EtaJES_GSC_241208_InSitu.config": {
+      "logical_path": "JetCalibTools/CalibArea-00-04-83/CalibrationConfigs/AntiKt4EMPFlow_MC23a_PreRecR22_Phase2_CalibConfig_ResPU_EtaJES_GSC_241208_InSitu.config",
+      "sha256": "30d6965c9a8d717334f9edca3bef95ef011d6775aa479cff437a56a40afcedb2",
+      "size": 3898
+    },
+    "/cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetCalibTools/CalibArea-00-04-83/CalibrationFactors/AntiKt4EMPFlow_MC23a_PreRecR22_Phase2_ResidualPileUp_20240205.config": {
+      "logical_path": "JetCalibTools/CalibArea-00-04-83/CalibrationFactors/AntiKt4EMPFlow_MC23a_PreRecR22_Phase2_ResidualPileUp_20240205.config",
+      "sha256": "ac2321fd5563fd2eb1d72e19c8cd1f838f3d9f8b6067cb3635b3008f91d1d27f",
+      "size": 1356
+    },
+    "/cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetCalibTools/CalibArea-00-04-83/CalibrationFactors/AntiKt4EMPFlow_MC23a_PreRecR22_Phase2_JES_constants.config": {
+      "logical_path": "JetCalibTools/CalibArea-00-04-83/CalibrationFactors/AntiKt4EMPFlow_MC23a_PreRecR22_Phase2_JES_constants.config",
+      "sha256": "c6ad90d31ab8e014906c0ce3df8864fd58b8c7a3a19d9ed79063f5203e4fd67b",
+      "size": 16892
+    },
+    "/cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetCalibTools/CalibArea-00-04-83/CalibrationFactors/AntiKt4EMPFlow_MC23a_PreRecR22_Phase2_JES_calibrationFactors.root": {
+      "logical_path": "JetCalibTools/CalibArea-00-04-83/CalibrationFactors/AntiKt4EMPFlow_MC23a_PreRecR22_Phase2_JES_calibrationFactors.root",
+      "sha256": "479df7a2112758361826da783a3f02ac05f198e9f71495e2a266fcbaffd68544",
+      "size": 8032646
+    },
+    "/cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetCalibTools/CalibArea-00-04-83/CalibrationFactors/AntiKt4EMPFlow_MC23a_PreRecR22_Phase2_GSC_calibrationFactors_240306.root": {
+      "logical_path": "JetCalibTools/CalibArea-00-04-83/CalibrationFactors/AntiKt4EMPFlow_MC23a_PreRecR22_Phase2_GSC_calibrationFactors_240306.root",
+      "sha256": "a70cc4be01f8614fea901749879efe4b4276aeff74a9290f9340c9b89bdc72b0",
+      "size": 462946
+    }
+  },
+  "corrections": {
+    "residual_mu": {
+      "file": "JetCalibTools/CalibArea-00-04-83/CalibrationFactors/AntiKt4EMPFlow_MC23a_PreRecR22_Phase2_ResidualPileUp_20240205.config",
+      "key": "ResidualOffsetMC23aFebruary2024.MuTerm.AntiKt4EMPFlow"
+    },
+    "residual_npv": {
+      "file": "JetCalibTools/CalibArea-00-04-83/CalibrationFactors/AntiKt4EMPFlow_MC23a_PreRecR22_Phase2_ResidualPileUp_20240205.config",
+      "key": "ResidualOffsetMC23aFebruary2024.NPVTerm.AntiKt4EMPFlow"
+    },
+    "pileup_scale": {
+      "implementation": "JetPileupCorrection"
+    },
+    "jes_scale": {
+      "file": "JetCalibTools/CalibArea-00-04-83/CalibrationFactors/AntiKt4EMPFlow_MC23a_PreRecR22_Phase2_JES_calibrationFactors.root",
+      "object": "etaJes",
+      "constants": "JetCalibTools/CalibArea-00-04-83/CalibrationFactors/AntiKt4EMPFlow_MC23a_PreRecR22_Phase2_JES_constants.config"
+    },
+    "eta_shift": {
+      "file": "JetCalibTools/CalibArea-00-04-83/CalibrationFactors/AntiKt4EMPFlow_MC23a_PreRecR22_Phase2_JES_constants.config",
+      "key": "EtaCorr.*",
+      "defaults": {
+        "min_pt": 8,
+        "max_energy": 2500
+      }
+    },
+    "gsc_chargedFraction": {
+      "file": "JetCalibTools/CalibArea-00-04-83/CalibrationFactors/AntiKt4EMPFlow_MC23a_PreRecR22_Phase2_GSC_calibrationFactors_240306.root",
+      "objects": [
+        "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta_0",
+        "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta_1",
+        "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta_2",
+        "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta_3",
+        "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta_4",
+        "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta_5",
+        "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta_6",
+        "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta_7",
+        "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta_8",
+        "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta_9",
+        "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta_10",
+        "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta_11",
+        "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta_12",
+        "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta_13",
+        "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta_14",
+        "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta_15",
+        "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta_16",
+        "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta_17",
+        "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta_18",
+        "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta_19",
+        "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta_20",
+        "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta_21",
+        "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta_22",
+        "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta_23",
+        "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta_24"
+      ]
+    },
+    "gsc_Tile0": {
+      "file": "JetCalibTools/CalibArea-00-04-83/CalibrationFactors/AntiKt4EMPFlow_MC23a_PreRecR22_Phase2_GSC_calibrationFactors_240306.root",
+      "objects": [
+        "AntiKt4EMPFlow_Tile0_interpolation_resp_eta_0",
+        "AntiKt4EMPFlow_Tile0_interpolation_resp_eta_1",
+        "AntiKt4EMPFlow_Tile0_interpolation_resp_eta_2",
+        "AntiKt4EMPFlow_Tile0_interpolation_resp_eta_3",
+        "AntiKt4EMPFlow_Tile0_interpolation_resp_eta_4",
+        "AntiKt4EMPFlow_Tile0_interpolation_resp_eta_5",
+        "AntiKt4EMPFlow_Tile0_interpolation_resp_eta_6",
+        "AntiKt4EMPFlow_Tile0_interpolation_resp_eta_7",
+        "AntiKt4EMPFlow_Tile0_interpolation_resp_eta_8",
+        "AntiKt4EMPFlow_Tile0_interpolation_resp_eta_9",
+        "AntiKt4EMPFlow_Tile0_interpolation_resp_eta_10",
+        "AntiKt4EMPFlow_Tile0_interpolation_resp_eta_11",
+        "AntiKt4EMPFlow_Tile0_interpolation_resp_eta_12",
+        "AntiKt4EMPFlow_Tile0_interpolation_resp_eta_13",
+        "AntiKt4EMPFlow_Tile0_interpolation_resp_eta_14",
+        "AntiKt4EMPFlow_Tile0_interpolation_resp_eta_15",
+        "AntiKt4EMPFlow_Tile0_interpolation_resp_eta_16"
+      ]
+    },
+    "gsc_EM3": {
+      "file": "JetCalibTools/CalibArea-00-04-83/CalibrationFactors/AntiKt4EMPFlow_MC23a_PreRecR22_Phase2_GSC_calibrationFactors_240306.root",
+      "objects": [
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_0",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_1",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_2",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_3",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_4",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_5",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_6",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_7",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_8",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_9",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_10",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_11",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_12",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_13",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_14",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_15",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_16",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_17",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_18",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_19",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_20",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_21",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_22",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_23",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_24",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_25",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_26",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_27",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_28",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_29",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_30",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_31",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_32",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_33",
+        "AntiKt4EMPFlow_EM3_interpolation_resp_eta_34"
+      ]
+    },
+    "gsc_nTrk": {
+      "file": "JetCalibTools/CalibArea-00-04-83/CalibrationFactors/AntiKt4EMPFlow_MC23a_PreRecR22_Phase2_GSC_calibrationFactors_240306.root",
+      "objects": [
+        "AntiKt4EMPFlow_nTrk_interpolation_resp_eta_0",
+        "AntiKt4EMPFlow_nTrk_interpolation_resp_eta_1",
+        "AntiKt4EMPFlow_nTrk_interpolation_resp_eta_2",
+        "AntiKt4EMPFlow_nTrk_interpolation_resp_eta_3",
+        "AntiKt4EMPFlow_nTrk_interpolation_resp_eta_4",
+        "AntiKt4EMPFlow_nTrk_interpolation_resp_eta_5",
+        "AntiKt4EMPFlow_nTrk_interpolation_resp_eta_6",
+        "AntiKt4EMPFlow_nTrk_interpolation_resp_eta_7",
+        "AntiKt4EMPFlow_nTrk_interpolation_resp_eta_8",
+        "AntiKt4EMPFlow_nTrk_interpolation_resp_eta_9",
+        "AntiKt4EMPFlow_nTrk_interpolation_resp_eta_10",
+        "AntiKt4EMPFlow_nTrk_interpolation_resp_eta_11",
+        "AntiKt4EMPFlow_nTrk_interpolation_resp_eta_12",
+        "AntiKt4EMPFlow_nTrk_interpolation_resp_eta_13",
+        "AntiKt4EMPFlow_nTrk_interpolation_resp_eta_14",
+        "AntiKt4EMPFlow_nTrk_interpolation_resp_eta_15",
+        "AntiKt4EMPFlow_nTrk_interpolation_resp_eta_16",
+        "AntiKt4EMPFlow_nTrk_interpolation_resp_eta_17",
+        "AntiKt4EMPFlow_nTrk_interpolation_resp_eta_18",
+        "AntiKt4EMPFlow_nTrk_interpolation_resp_eta_19",
+        "AntiKt4EMPFlow_nTrk_interpolation_resp_eta_20",
+        "AntiKt4EMPFlow_nTrk_interpolation_resp_eta_21",
+        "AntiKt4EMPFlow_nTrk_interpolation_resp_eta_22",
+        "AntiKt4EMPFlow_nTrk_interpolation_resp_eta_23",
+        "AntiKt4EMPFlow_nTrk_interpolation_resp_eta_24"
+      ]
+    },
+    "gsc_trackWIDTH": {
+      "file": "JetCalibTools/CalibArea-00-04-83/CalibrationFactors/AntiKt4EMPFlow_MC23a_PreRecR22_Phase2_GSC_calibrationFactors_240306.root",
+      "objects": [
+        "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta_0",
+        "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta_1",
+        "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta_2",
+        "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta_3",
+        "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta_4",
+        "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta_5",
+        "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta_6",
+        "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta_7",
+        "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta_8",
+        "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta_9",
+        "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta_10",
+        "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta_11",
+        "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta_12",
+        "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta_13",
+        "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta_14",
+        "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta_15",
+        "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta_16",
+        "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta_17",
+        "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta_18",
+        "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta_19",
+        "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta_20",
+        "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta_21",
+        "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta_22",
+        "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta_23",
+        "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta_24"
+      ]
+    }
+  },
+  "settings": {
+    "OffsetCorrection.DefaultMuRef": 0.0,
+    "OffsetCorrection.DefaultNPVRef": 1.0,
+    "MuScaleFactor": 1.0,
+    "ApplyNPVBeamspotCorrection": 0,
+    "RhoKey": "Kt4EMPFlowNeutEventShape",
+    "GSCDepth": "trackWIDTH"
+  },
+  "release": "25.2.100"
+}

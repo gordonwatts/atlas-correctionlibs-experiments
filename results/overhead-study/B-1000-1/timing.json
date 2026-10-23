@@ -1,0 +1,28 @@
+{
+  "case": "B",
+  "events": 1000,
+  "repeat": 1,
+  "wall_seconds": 28.606270035998023,
+  "user_seconds": 25.390663000000004,
+  "system_seconds": 1.5372529999999998,
+  "returncode": 0,
+  "loaded_libraries": [],
+  "command": [
+    "CPRun.py",
+    "-i",
+    "/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1",
+    "-t",
+    "/home/gwatts/atlas/correctionlib_tests/config/reference.yaml",
+    "-o",
+    "output.root",
+    "-e",
+    "1000"
+  ],
+  "config_sha256": "4d84aa237b6a1796c05e9a38fa341e89993f1b8c582bc99da7b1624b4ed46ca8",
+  "loadavg": [
+    0.93,
+    0.38,
+    0.16
+  ],
+  "validation_passed": true
+}

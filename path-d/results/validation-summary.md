@@ -1,0 +1,51 @@
+# Path D validation
+
+PASS: 20,000 events, 196,606 jets, all 117 kinematic and 119 NNJVT/weight states against untouched AnalysisBase A. No tolerance was changed.
+
+| Check | Result |
+|---|---|
+| Nominal intermediate four-vectors | Bitwise identical |
+| All JES/JER/NNJVT/jet and event weights | PASS |
+| Event numbers, original jet indices, per-event counts | Exact |
+| Original-tool JES boundaries | 110 cases, PASS |
+| Original-tool JVT boundaries/statuses | 672 cases, PASS |
+| Original-tool JES/JER boundaries/statuses | 8541 cases across 117 states, PASS |
+| Truth-match wrapped-angle/threshold cases | 108 cases, PASS |
+| Generic primitives and JSON-schema round trip | PASS |
+| Complete graph pipelines vs exposed stage calls | 119 states × 1,024 jets, exact |
+| Full nominal and all-state order/chunk/worker invariance | Exact |
+| Negative pile-up reset, small positive pt, GSC special inputs | PASS |
+
+The direct uncertainty edge oracle exposed and fixed negative-scale ROOT mass normalization and nonpositive-NPV sentinel behavior. A/B/C remain untouched.
+
+The full-sample reference does not record per-jet JES/JER statuses; their exact comparison is limited to the independent 8,541-case synthetic oracle. The original NN model remains a generic lwtnn inference boundary, and ROOT coordinates/TRandom3 remain explicit reusable primitives. See ../docs/design.md for architecture and limits.
+
+The machine-readable validation-summary.json links all per-state reports and records input/configuration/payload/source hashes.
+
+## Repeated timing study
+
+
+20,000 events / 196,606 jets per run. All times are wall seconds. Each path was run four times; its first run is excluded from averages and sample standard deviations.
+
+| Metric | A: reference | B: ATLAS + CorrectionLib | C: columnar | D: declarative columnar |
+|---|---|---|---|---|
+| Implementation | Original ATLAS tools | Handwritten shared C++ physics + CorrectionLib payloads | Python input preparation + same shared C++ backend as B | Payload-defined physics + optional GraphSet extension and generic primitives |
+| Run 1 (excluded) | 242.03 s | 294.24 s | 168.91 s | 255.91 s |
+| Run 2 | 237.90 s | 291.07 s | 167.85 s | 305.23 s |
+| Run 3 | 236.16 s | 289.55 s | 168.57 s | 283.89 s |
+| Run 4 | 237.72 s | 291.48 s | 166.68 s | 260.50 s |
+| **Average, runs 2–4** | **237.26 s** | **290.70 s** | **167.70 s** | **283.21 s** |
+| Sample SD, runs 2–4 | 0.96 s | 1.01 s | 0.95 s | 22.37 s |
+| Nominal stage average | Not separately measured | Not separately measured | 19.48 s | 23.90 s |
+| JES/JER stage average | Not separately measured | Not separately measured | 53.94 s | 67.36 s |
+| NNJVT/weights stage average | Not separately measured | Not separately measured | 94.28 s | 191.95 s |
+| Timed reference comparison | Excluded | Excluded | Included | Included |
+| Retained-run validation | PASS | PASS | PASS | PASS |
+
+Sequential full diagnostic workflow after environment setup; includes imports, initialization, input/feature preparation, repeated kinematic evaluation, writing and reference comparisons. No cache flush; first run excluded. A/B/C timings are prior measurements, not interleaved with these D runs.
+
+A/B process all stages within one ATLAS job, so separate phase costs are unavailable. C/D phase measurements include preparation, output and validation; the JVT phase repeats systematic evaluation. D timings use the diagnostic stage runners, not a new fused execution of the complete pipeline graphs. These are implemented-workflow costs, not isolated CorrectionLib evaluator benchmarks. Stage means can differ slightly from the total due to orchestration overhead.
+
+D is interpreted graph execution with a versioned optional extension, not stock schema-v2-only functionality or JIT compilation. ROOT coordinate/TRandom3 operations and lwtnn inference remain explicit reusable primitives.
+
+D raw measurements: path-d/results/repeated-timing/summary.json. A/B/C raw measurements: results/repeated-timing/summary.json. All isolated D run logs and outputs are retained beside its summary.

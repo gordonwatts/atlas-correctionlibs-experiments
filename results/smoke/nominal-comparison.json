@@ -1,0 +1,69 @@
+{
+  "events": 100,
+  "jets": 1025,
+  "chunk_size": 100,
+  "scope": "nominal-only",
+  "checks": {
+    "JetPileupScaleMomentum_pt": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetPileupScaleMomentum_eta": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetPileupScaleMomentum_phi": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetPileupScaleMomentum_m": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetEtaJESScaleMomentum_pt": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetEtaJESScaleMomentum_eta": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetEtaJESScaleMomentum_phi": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetEtaJESScaleMomentum_m": {
+      "max_abs": 0.005524271633476019,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetGSCScaleMomentum_pt": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetGSCScaleMomentum_eta": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetGSCScaleMomentum_phi": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetGSCScaleMomentum_m": {
+      "max_abs": 0.005524271633476019,
+      "mismatches": 0,
+      "first_bad": []
+    }
+  },
+  "passed": true
+}

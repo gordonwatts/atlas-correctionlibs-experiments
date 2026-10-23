@@ -1,0 +1,118 @@
+[  0%] Built target atlas_tests
+[  1%] Built target JetUncertaintiesDictDictGen
+[  1%] Built target JetCalibToolsDictDictGen
+[  2%] Built target JetJvtEfficiencyDictDictGen
+[  3%] Built target JetUncertaintiesHeaderInstall
+[  4%] Building CXX object CorrectionLibSmoke/CMakeFiles/CorrectionLibSmoke.dir/src/CorrectionLibSmoke.cxx.o
+[  5%] Built target JetCalibToolsHeaderInstall
+[  6%] Built target JetJvtEfficiencyHeaderInstall
+[  9%] Built target JetCalibToolsDataInstall
+[ 12%] Built target JetCalibToolsPythonInstall
+[ 13%] Built target JetCalibToolsPyCompile
+[ 14%] Built target JetJvtEfficiencyPyCompile
+[ 16%] Built target JetJvtEfficiencyPythonInstall
+[ 22%] Built target JetUncertaintiesGenericInstall
+[ 23%] Built target CorrectionLibAthenaOverlayRootMapMerge
+[ 44%] Built target JetUncertaintiesLib
+[ 44%] Linking CXX shared module ../x86_64-el9-gcc15-opt/lib/libJetUncertainties.so
+[ 45%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/JetCalibrationTool.cxx.o
+Detaching debug info of libJetUncertainties.so into libJetUncertainties.so.dbg
+[ 46%] Built target JetUncertainties
+In file included from /home/gwatts/atlas/correctionlib_tests/src/adapter_support.hxx:2,
+                 from /home/gwatts/atlas/correctionlib_tests/athena-overlay/JetCalibTools/Root/JetCalibrationTool.cxx:1:
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx: In member function 'std::vector<std::vector<double> > Nominal::batch(const std::vector<std::vector<double> >&) const':
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx:42:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   42 |   for(const auto& r:rows)out.push_back(evaluate(r));return out;
+      |   ^~~
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx:42:53: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   42 |   for(const auto& r:rows)out.push_back(evaluate(r));return out;
+      |                                                     ^~~~~~
+[ 47%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetUncertaintiesDict.so
+Detaching debug info of libJetUncertaintiesDict.so into libJetUncertaintiesDict.so.dbg
+[ 48%] Built target JetUncertaintiesDict
+[ 49%] Linking CXX shared module ../x86_64-el9-gcc15-opt/lib/libCorrectionLibSmoke.so
+[ 50%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/MakeCorrelationMatrixPlots
+Detaching debug info of libCorrectionLibSmoke.so into libCorrectionLibSmoke.so.dbg
+[ 50%] Built target CorrectionLibSmoke
+Detaching debug info of MakeCorrelationMatrixPlots into MakeCorrelationMatrixPlots.dbg
+[ 51%] Generating JetUncertainties_clid.db
+[ 52%] Built target MakeCorrelationMatrixPlots
+[ 52%] Generating CorrectionLibSmoke_clid.db
+[ 52%] Built target JetUncertaintiesClidGen
+[ 52%] Built target CorrectionLibSmokeClidGen
+[ 53%] Generating ../x86_64-el9-gcc15-opt/lib/libJetUncertainties.components
+[ 54%] Generating ../x86_64-el9-gcc15-opt/lib/libCorrectionLibSmoke.components
+[ 54%] Built target JetUncertaintiesComponentsList
+[ 54%] Built target CorrectionLibSmokeComponentsList
+[ 54%] Generating ../x86_64-el9-gcc15-opt/python/JetUncertainties/JetUncertaintiesConf.py, ../x86_64-el9-gcc15-opt/lib/libJetUncertainties.confdb, genConf/JetUncertainties.confdb2_part
+[ 55%] Generating ../x86_64-el9-gcc15-opt/python/CorrectionLibSmoke/CorrectionLibSmokeConf.py, ../x86_64-el9-gcc15-opt/lib/libCorrectionLibSmoke.confdb, genConf/CorrectionLibSmoke.confdb2_part
+[ 55%] Built target CorrectionLibSmokeConfigurables
+[ 55%] Built target JetUncertaintiesConfigurables
+[ 55%] Built target Package_CorrectionLibSmoke
+[ 55%] Built target Package_JetUncertainties
+[ 56%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetCalibToolsLib.so
+Detaching debug info of libJetCalibToolsLib.so into libJetCalibToolsLib.so.dbg
+[ 76%] Built target JetCalibToolsLib
+[ 77%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetCalibToolsDict.so
+[ 78%] Linking CXX shared module ../x86_64-el9-gcc15-opt/lib/libJetCalibTools.so
+[ 78%] Building CXX object JetJvtEfficiency/CMakeFiles/JetJvtEfficiencyLib.dir/Root/JvtEfficiencyToolBase.cxx.o
+Detaching debug info of libJetCalibToolsDict.so into libJetCalibToolsDict.so.dbg
+Detaching debug info of libJetCalibTools.so into libJetCalibTools.so.dbg
+[ 79%] Built target JetCalibToolsDict
+[ 79%] Built target JetCalibTools
+In file included from /home/gwatts/atlas/correctionlib_tests/src/adapter_support.hxx:2,
+                 from /home/gwatts/atlas/correctionlib_tests/athena-overlay/JetJvtEfficiency/Root/JvtEfficiencyToolBase.cxx:1:
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx: In member function 'std::vector<std::vector<double> > Nominal::batch(const std::vector<std::vector<double> >&) const':
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx:42:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   42 |   for(const auto& r:rows)out.push_back(evaluate(r));return out;
+      |   ^~~
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx:42:53: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   42 |   for(const auto& r:rows)out.push_back(evaluate(r));return out;
+      |                                                     ^~~~~~
+[ 80%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/JetCalibTools_Example
+[ 80%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/JetCalibTools_PlotJESFactors
+Detaching debug info of JetCalibTools_Example into JetCalibTools_Example.dbg
+Detaching debug info of JetCalibTools_PlotJESFactors into JetCalibTools_PlotJESFactors.dbg
+[ 81%] Built target JetCalibTools_Example
+[ 82%] Built target JetCalibTools_PlotJESFactors
+[ 83%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/JetCalibTools_PlotJMSFactors
+/home/gwatts/atlas/correctionlib_tests/athena-overlay/JetJvtEfficiency/Root/JvtEfficiencyToolBase.cxx: At global scope:
+/home/gwatts/atlas/correctionlib_tests/athena-overlay/JetJvtEfficiency/Root/JvtEfficiencyToolBase.cxx:17:10: warning: 'bool {anonymous}::getBinContentAndError(const TH2&, float, float, float&, float&)' defined but not used [-Wunused-function]
+   17 |     bool getBinContentAndError(const TH2 &h, float x, float y, float &content, float &error) {
+      |          ^~~~~~~~~~~~~~~~~~~~~
+[ 84%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/JetCalibTools_SmearingPlots
+Detaching debug info of JetCalibTools_PlotJMSFactors into JetCalibTools_PlotJMSFactors.dbg
+Detaching debug info of JetCalibTools_SmearingPlots into JetCalibTools_SmearingPlots.dbg
+[ 85%] Built target JetCalibTools_PlotJMSFactors
+[ 85%] Built target JetCalibTools_SmearingPlots
+[ 86%] Generating JetCalibTools_clid.db
+[ 87%] Generating ../x86_64-el9-gcc15-opt/lib/libJetCalibTools.components
+[ 87%] Built target JetCalibToolsComponentsList
+[ 87%] Generating ../x86_64-el9-gcc15-opt/python/JetCalibTools/JetCalibToolsConf.py, ../x86_64-el9-gcc15-opt/lib/libJetCalibTools.confdb, genConf/JetCalibTools.confdb2_part
+[ 87%] Built target JetCalibToolsClidGen
+[ 88%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetJvtEfficiencyLib.so
+[ 88%] Built target JetCalibToolsConfigurables
+Detaching debug info of libJetJvtEfficiencyLib.so into libJetJvtEfficiencyLib.so.dbg
+[ 88%] Built target Package_JetCalibTools
+[ 93%] Built target JetJvtEfficiencyLib
+[ 94%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetJvtEfficiencyDict.so
+[ 95%] Linking CXX shared module ../x86_64-el9-gcc15-opt/lib/libJetJvtEfficiency.so
+Detaching debug info of libJetJvtEfficiency.so into libJetJvtEfficiency.so.dbg
+Detaching debug info of libJetJvtEfficiencyDict.so into libJetJvtEfficiencyDict.so.dbg
+[ 96%] Built target JetJvtEfficiency
+[ 96%] Built target JetJvtEfficiencyDict
+[ 97%] Generating ../x86_64-el9-gcc15-opt/lib/libJetJvtEfficiency.components
+[ 97%] Generating JetJvtEfficiency_clid.db
+[ 98%] Generating ../x86_64-el9-gcc15-opt/python/JetJvtEfficiency/JetJvtEfficiencyConf.py, ../x86_64-el9-gcc15-opt/lib/libJetJvtEfficiency.confdb, genConf/JetJvtEfficiency.confdb2_part
+[ 98%] Built target JetJvtEfficiencyComponentsList
+[ 99%] Built /home/gwatts/atlas/correctionlib_tests/build-athena/x86_64-el9-gcc15-opt/lib/CorrectionLibAthenaOverlay.components
+[ 99%] Built target CorrectionLibAthenaOverlayComponentsMerge
+[ 99%] Built target JetJvtEfficiencyClidGen
+[ 99%] Built /home/gwatts/atlas/correctionlib_tests/build-athena/x86_64-el9-gcc15-opt/share/clid.db
+[ 99%] Built target JetJvtEfficiencyConfigurables
+[100%] Built /home/gwatts/atlas/correctionlib_tests/build-athena/x86_64-el9-gcc15-opt/lib/CorrectionLibAthenaOverlay.confdb2
+[100%] Built /home/gwatts/atlas/correctionlib_tests/build-athena/x86_64-el9-gcc15-opt/lib/CorrectionLibAthenaOverlay.confdb
+[100%] Built target CorrectionLibAthenaOverlayClidMerge
+[100%] Built target Package_JetJvtEfficiency
+[100%] Built target CorrectionLibAthenaOverlayConfdbMerge
+[100%] Built target CorrectionLibAthenaOverlayConfdb2Merge

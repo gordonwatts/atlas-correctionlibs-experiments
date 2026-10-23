@@ -1,0 +1,35 @@
+{
+  "case": "A-hybrid",
+  "events": 5000,
+  "repeat": 2,
+  "wall_seconds": 66.32535784899665,
+  "user_seconds": 63.60982100000001,
+  "system_seconds": 1.0977299999999985,
+  "returncode": 0,
+  "loaded_libraries": [
+    "/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libJetCalibTools.so",
+    "/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libJetCalibToolsLib.so",
+    "/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libJetJvtEfficiency.so",
+    "/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libJetJvtEfficiencyLib.so",
+    "/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libJetUncertainties.so",
+    "/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libJetUncertaintiesLib.so"
+  ],
+  "command": [
+    "CPRun.py",
+    "-i",
+    "/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1",
+    "-t",
+    "/home/gwatts/atlas/correctionlib_tests/config/reference.yaml",
+    "-o",
+    "output.root",
+    "-e",
+    "5000"
+  ],
+  "config_sha256": "4d84aa237b6a1796c05e9a38fa341e89993f1b8c582bc99da7b1624b4ed46ca8",
+  "loadavg": [
+    1.32,
+    1.49,
+    1.19
+  ],
+  "validation_passed": true
+}

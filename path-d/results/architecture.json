@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "graphs": 246,
+  "complete_pipelines": 119,
+  "operations": {
+    "constant": 6604,
+    "formula": 1542,
+    "cast": 595,
+    "assert": 2,
+    "call": 278,
+    "coordinates": 124,
+    "if": 188,
+    "gaussian": 56,
+    "inference": 1,
+    "graph": 363
+  },
+  "generic_runtime_has_no_component_formulas": true,
+  "interpretation": "Loaded graph interpreter; no graph-specialized C++ code generation."
+}

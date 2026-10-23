@@ -1,0 +1,4 @@
+{
+  "cpu": 0,
+  "scope": "all native kernel experiments and Callgrind; ATLAS workflow jobs were unpinned"
+}

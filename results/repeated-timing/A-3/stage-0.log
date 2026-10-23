@@ -1,0 +1,338 @@
+Py:CPBaseRunner      INFO EventLoopCPRunScript initialized
+Py:CPBaseRunner      INFO Initialized input files: ['/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1']
+Py:CPBaseRunner      INFO Found YAML config at: /home/gwatts/atlas/correctionlib_tests/config/reference.yaml
+Py:CPBaseRunner      INFO Setting up configuration based on YAML config:
+xAOD::Init                INFO    Environment initialised for data access
+Py:CPBaseRunner      INFO Adding files to the sample handler
+Py:CPBaseRunner      INFO =========================================================================
+Py:CPBaseRunner      INFO ====================FLAG CONFIGURATION====================
+Py:CPBaseRunner      INFO =========================================================================
+Py:AutoConfigFlags    INFO Obtaining metadata of auto-configuration by peeking into '/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1'
+Py:MetaReader        INFO Current mode used: lite
+Py:MetaReader        INFO Current filenames: ['/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1']
+Py:MetaReader        INFO MetaReader is called with the parameter "unique_tag_info_values" set to True. This is a workaround to remove all duplicate values from "/TagInfo" key
+Py:CPBaseRunner      INFO     Input files:     True
+Py:CPBaseRunner      INFO     RunNumber:       [410000]
+Py:CPBaseRunner      INFO     MCCampaign:      Campaign.MC23a
+Py:AutoConfigFlags    INFO Looking into the file in 'peeker' mode as the configuration requires more details: generators 
+Py:MetaReader        INFO Current mode used: peeker
+Py:MetaReader        INFO Current filenames: ['/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1']
+Py:MetaReader        INFO MetaReader is called with the parameter "unique_tag_info_values" set to True. This is a workaround to remove all duplicate values from "/TagInfo" key
+Py:CPBaseRunner      INFO     GeneratorInfo:   {'Powheg': '2_r3631', 'Pythia8': '308', 'EvtGen': '2.1.1'}
+Py:CPBaseRunner      INFO     MaxEvents:       20000
+Py:CPBaseRunner      INFO     SkipEvents:      0
+Py:CPBaseRunner      INFO =========================================================================
+Py:CPBaseRunner      INFO Configuring algorithms based on YAML file
+Py:CPBaseRunner      INFO Configuring common services
+Py:getRun3NavigationContainerFromInput    INFO Returning HLTNav_Summary_DAODSlimmed as the Run 3 trigger navigation collection to read in this job.
+Py:CPBaseRunner      INFO Configuring algorithms
+Py:GeoModelConfigFlags    INFO Deducing LHC Run period from the geometry tag name "ATLAS-R3S-2021-03-02-00" as database access is not available in analysis releases
+Py:GeoModelConfigFlags    INFO Using LHC Run period "RUN3"
+Package.EventLoop        INFO    created submission directory /home/gwatts/atlas/correctionlib_tests/results/repeated-timing/A-3/workDir-2026-10-22-0644-dcbc
+Package.EventLoop        INFO    created sym-link at: /home/gwatts/atlas/correctionlib_tests/results/repeated-timing/A-3/workDir
+Package.EventLoop        INFO    submitting job in /home/gwatts/atlas/correctionlib_tests/results/repeated-timing/A-3/workDir-2026-10-22-0644-dcbc
+xAOD::Init                INFO    Environment initialised for data access
+starting batch job initialization
+batch job user initialization finished
+PHYS-PROFWSN04
+/home/gwatts/atlas/correctionlib_tests/results/repeated-timing/A-3/workDir-2026-10-22-0644-dcbc/tmp/0
+gwatts
+xAOD::Init                INFO    Environment initialised for data access
+/tmp/EventLoop-Worker-output-0-1792676641-26106
+Package.EventLoop        INFO    xAODInput = 1
+Package.EventLoop        INFO    calling firstInitialize on all modules
+Package.EventLoop        INFO    calling preFileInitialize on all modules
+Package.EventLoop        INFO    Opening file file:///cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1
+Package.xAOD::Event      INFO    Using aux mode kClassAccess for file /cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1
+seq1_JetPileupLabelAlg...INFO    Initializing seq1_JetPileupLabelAlg_AnaJets.decorator
+seq1_JetPileupLabelAlg...INFO    Parameters for seq1_JetPileupLabelAlg_AnaJets.decorator :
+seq1_JetPileupLabelAlg...INFO    HS Truth Jet Container:           AntiKt4TruthDressedWZJets
+seq1_JetPileupLabelAlg...INFO    Name of isHS Label Decoration:    isJvtHS
+seq1_JetPileupLabelAlg...INFO    Name of isPU Label Decoration:    isJvtPU
+ToolSvc.JetCalibTool_A...INFO    Initializing ToolSvc.JetCalibTool_AntiKt4EMPFlow to calibrate AntiKt4EMPFlowJets
+ToolSvc.JetCalibTool_A...INFO    Reading global JES settings from: JetCalibTools/CalibArea-00-04-83/CalibrationConfigs/AntiKt4EMPFlow_MC23a_PreRecR22_Phase2_CalibConfig_ResPU_EtaJES_GSC_241208_InSitu.config
+ToolSvc.JetCalibTool_A...INFO      Calibration sequence: JetArea_Residual_EtaJES_GSC
+ToolSvc.JetCalibTool_A...INFO    Have loaded metadata mcDSID:601229, generatorsInfo: Powheg(v.2_r3631)+Pythia8(v.308)+EvtGen(v.2.1.1), mcCampaign: MC23, simFlavour: FullG4_QS
+ToolSvc.JetCalibTool_A...INFO    Have loaded metadata mcDSID:601229, generatorsInfo: Powheg(v.2_r3631)+Pythia8(v.308)+EvtGen(v.2.1.1), mcCampaign: MC23, simFlavour: FullG4_QS
+ToolSvc.JetCalibTool_A...INFO    Have loaded metadata mcDSID:601229, generatorsInfo: Powheg(v.2_r3631)+Pythia8(v.308)+EvtGen(v.2.1.1), mcCampaign: MC23, simFlavour: FullG4_QS
+seq1_JetUncertaintiesA...INFO    Preparing to initialize the JetUncertaintiesTool named seq1_JetUncertaintiesAlg_AnaJets.uncertaintiesTool
+seq1_JetUncertaintiesA...INFO    ================================================
+seq1_JetUncertaintiesA...INFO      Initializing the JetUncertaintiesTool named seq1_JetUncertaintiesAlg_AnaJets.uncertaintiesTool
+seq1_JetUncertaintiesA...INFO      Path is: ""
+seq1_JetUncertaintiesA...INFO      CalibArea is: "CalibArea-08"
+seq1_JetUncertaintiesA...INFO      IsData is: "false"
+seq1_JetUncertaintiesA...INFO      Configuration file: "rel22/Winter2025_PreRec/R4_CategoryReduction_FullJER.config"
+seq1_JetUncertaintiesA...INFO        Location: /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_CategoryReduction_FullJER.config
+seq1_JetUncertaintiesA...INFO      Uncertainty release: rel22_Winter2025_PreRec
+seq1_JetUncertaintiesA...INFO      Jet definition: AntiKt4EMPFlow
+seq1_JetUncertaintiesA...INFO      MC type: MC23
+seq1_JetUncertaintiesA...INFO      UncertaintyFile: "rel22/Winter2025_PreRec/R4_AllComponents.root"
+seq1_JetUncertaintiesA...INFO        Location: /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root
+seq1_JetUncertaintiesA...INFO      AnalysisFile: "analysisInputs/UnknownFlavourComp.root"
+seq1_JetUncertaintiesA...INFO        Location: /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root
+seq1_JetUncertaintiesA...INFO      NominalFourVecResData: "JER_Nominal_data,PtAbsEta,OnlyX"
+seq1_JetUncertaintiesA...INFO      NominalFourVecResMC: "JER_Nominal_MC16,PtAbsEta,OnlyX"
+seq1_JetUncertaintiesA...INFO      ResolutionSmearOnlyMC: "false"
+seq1_JetUncertaintiesA...INFO    
+seq1_JetUncertaintiesA...INFO           JES uncert. comp.                        : Description
+seq1_JetUncertaintiesA...INFO           -----------------                         ------------
+seq1_JetUncertaintiesA...INFO        1. JET_EtaIntercalibration_Modelling        : Eta intercalibration: MC generator modelling uncertainty
+seq1_JetUncertaintiesA...INFO        2. JET_EtaIntercalibration_TotalStat        : Eta intercalibration: statistical uncertainty
+seq1_JetUncertaintiesA...INFO        3. JET_Pileup_OffsetMu                      : Pileup: Offset, mu term
+seq1_JetUncertaintiesA...INFO        4. JET_Pileup_OffsetNPV                     : Pileup: Offset, NPV term
+seq1_JetUncertaintiesA...INFO        5. JET_Pileup_PtTerm                        : Pileup: Offset, pT term
+seq1_JetUncertaintiesA...INFO        6. JET_Pileup_RhoTopology                   : Rho topology uncertainty (jet areas)
+seq1_JetUncertaintiesA...INFO        7. JET_Flavor_Composition                   : Flavor composition uncertainty
+seq1_JetUncertaintiesA...INFO        8. JET_Flavor_Response                      : Flavor response uncertainty (dominated by gluon response)
+seq1_JetUncertaintiesA...INFO        9. JET_EffectiveNP_Statistical1             : Effective JES Uncertainty Statistical Component 1
+seq1_JetUncertaintiesA...INFO       10. JET_EffectiveNP_Statistical2             : Effective JES Uncertainty Statistical Component 2
+seq1_JetUncertaintiesA...INFO       11. JET_EffectiveNP_Statistical3             : Effective JES Uncertainty Statistical Component 3
+seq1_JetUncertaintiesA...INFO       12. JET_EffectiveNP_Statistical4             : Effective JES Uncertainty Statistical Component 4
+seq1_JetUncertaintiesA...INFO       13. JET_EffectiveNP_Statistical5             : Effective JES Uncertainty Statistical Component 5
+seq1_JetUncertaintiesA...INFO       14. JET_EffectiveNP_Statistical6             : Effective JES Uncertainty Statistical Component 6
+seq1_JetUncertaintiesA...INFO       15. JET_EffectiveNP_Modelling1               : Effective JES Uncertainty Modelling Component 1
+seq1_JetUncertaintiesA...INFO       16. JET_EffectiveNP_Modelling2               : Effective JES Uncertainty Modelling Component 2
+seq1_JetUncertaintiesA...INFO       17. JET_EffectiveNP_Modelling3               : Effective JES Uncertainty Modelling Component 3
+seq1_JetUncertaintiesA...INFO       18. JET_EffectiveNP_Modelling4               : Effective JES Uncertainty Modelling Component 4
+seq1_JetUncertaintiesA...INFO       19. JET_EffectiveNP_Detector1                : Effective JES Uncertainty Detector Component 1
+seq1_JetUncertaintiesA...INFO       20. JET_EffectiveNP_Detector2                : Effective JES Uncertainty Detector Component 2
+seq1_JetUncertaintiesA...INFO       21. JET_EffectiveNP_Mixed1                   : Effective JES Uncertainty Mixed Component 1
+seq1_JetUncertaintiesA...INFO       22. JET_EffectiveNP_Mixed2                   : Effective JES Uncertainty Mixed Component 2
+seq1_JetUncertaintiesA...INFO       23. JET_EffectiveNP_Mixed3                   : Effective JES Uncertainty Mixed Component 3
+seq1_JetUncertaintiesA...INFO       24. JET_EtaIntercalibration_NonClosure_0p2_PreRec : Eta intercalibration non-closure uncertainty wrt rel22, early Run3, Gaussian smoothing 0p2, absolute values
+seq1_JetUncertaintiesA...INFO       25. JET_FCal_MC23_NonClosure_PreRec          : FCal calibration uncertainty, early Run3
+seq1_JetUncertaintiesA...INFO       26. JET_SingleParticle_HighPt                : High pT term (r20.7 version)
+seq1_JetUncertaintiesA...INFO       27. JET_BJES_Response                        : JES uncertainty for b jets
+seq1_JetUncertaintiesA...INFO       28. JET_InSitu_NonClosure_PreRec             : InSitu non-closure uncertainty derived in Z+jet rel22, early Run3 
+seq1_JetUncertaintiesA...INFO       29. JET_JESUnc_Noise_PreRec                  : Pre recommendation systematics for R22. Comparison of different noise threshold setting
+seq1_JetUncertaintiesA...INFO       30. JET_JESUnc_VertexingAlg_PreRec           : Pre recommendation systematics for R22. Comparisong of different Vertexing Algorithms
+seq1_JetUncertaintiesA...INFO       31. JET_JER_DataVsMC_MC16                    : NP covering when JER(data) < JER(MC)
+seq1_JetUncertaintiesA...INFO       32. JET_JER_EffectiveNP_1                    : Effective JER Uncertainty Component 1
+seq1_JetUncertaintiesA...INFO       33. JET_JER_EffectiveNP_2                    : Effective JER Uncertainty Component 2
+seq1_JetUncertaintiesA...INFO       34. JET_JER_EffectiveNP_3                    : Effective JER Uncertainty Component 3
+seq1_JetUncertaintiesA...INFO       35. JET_JER_EffectiveNP_4                    : Effective JER Uncertainty Component 4
+seq1_JetUncertaintiesA...INFO       36. JET_JER_EffectiveNP_5                    : Effective JER Uncertainty Component 5
+seq1_JetUncertaintiesA...INFO       37. JET_JER_EffectiveNP_6                    : Effective JER Uncertainty Component 6
+seq1_JetUncertaintiesA...INFO       38. JET_JER_EffectiveNP_7                    : Effective JER Uncertainty Component 7
+seq1_JetUncertaintiesA...INFO       39. JET_JER_EffectiveNP_8                    : Effective JER Uncertainty Component 8
+seq1_JetUncertaintiesA...INFO       40. JET_JER_EffectiveNP_9                    : Effective JER Uncertainty Component 9
+seq1_JetUncertaintiesA...INFO       41. JET_JER_EffectiveNP_10                   : Effective JER Uncertainty Component 10
+seq1_JetUncertaintiesA...INFO       42. JET_JER_EffectiveNP_11                   : Effective JER Uncertainty Component 11
+seq1_JetUncertaintiesA...INFO       43. JET_JER_EffectiveNP_12restTerm           : Effective JER Uncertainty Component 12
+seq1_JetUncertaintiesA...INFO       44. JET_JERUnc_Noise_PreRec                  : Pre recommendation systematics for JER R22. Comparison of different noise threshold setting
+seq1_JetUncertaintiesA...INFO       Found and read in 52 individual components into 44 component groups of which 44 are recommended
+seq1_JetUncertaintiesA...INFO    ================================================
+seq1_JetUncertaintiesA...INFO    Preparing to initialize the JetUncertaintiesTool named seq1_JetUncertaintiesAlg_AnaJets.uncertaintiesToolPD
+seq1_JetUncertaintiesA...INFO    ================================================
+seq1_JetUncertaintiesA...INFO      Initializing the JetUncertaintiesTool named seq1_JetUncertaintiesAlg_AnaJets.uncertaintiesToolPD
+seq1_JetUncertaintiesA...INFO      Path is: ""
+seq1_JetUncertaintiesA...INFO      CalibArea is: "CalibArea-08"
+seq1_JetUncertaintiesA...INFO      IsData is: "true"
+seq1_JetUncertaintiesA...INFO      Configuration file: "rel22/Winter2025_PreRec/R4_CategoryReduction_FullJER.config"
+seq1_JetUncertaintiesA...INFO        Location: /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_CategoryReduction_FullJER.config
+seq1_JetUncertaintiesA...INFO      Uncertainty release: rel22_Winter2025_PreRec
+seq1_JetUncertaintiesA...INFO      Jet definition: AntiKt4EMPFlow
+seq1_JetUncertaintiesA...INFO      MC type: MC23
+seq1_JetUncertaintiesA...INFO      UncertaintyFile: "rel22/Winter2025_PreRec/R4_AllComponents.root"
+seq1_JetUncertaintiesA...INFO        Location: /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root
+seq1_JetUncertaintiesA...INFO      AnalysisFile: "analysisInputs/UnknownFlavourComp.root"
+seq1_JetUncertaintiesA...INFO        Location: /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root
+seq1_JetUncertaintiesA...INFO      NominalFourVecResData: "JER_Nominal_data,PtAbsEta,OnlyX"
+seq1_JetUncertaintiesA...INFO      NominalFourVecResMC: "JER_Nominal_MC16,PtAbsEta,OnlyX"
+seq1_JetUncertaintiesA...INFO      ResolutionSmearOnlyMC: "false"
+seq1_JetUncertaintiesA...INFO    
+seq1_JetUncertaintiesA...INFO           JES uncert. comp.                        : Description
+seq1_JetUncertaintiesA...INFO           -----------------                         ------------
+seq1_JetUncertaintiesA...INFO        1. JET_EtaIntercalibration_Modelling        : Eta intercalibration: MC generator modelling uncertainty
+seq1_JetUncertaintiesA...INFO        2. JET_EtaIntercalibration_TotalStat        : Eta intercalibration: statistical uncertainty
+seq1_JetUncertaintiesA...INFO        3. JET_Pileup_OffsetMu                      : Pileup: Offset, mu term
+seq1_JetUncertaintiesA...INFO        4. JET_Pileup_OffsetNPV                     : Pileup: Offset, NPV term
+seq1_JetUncertaintiesA...INFO        5. JET_Pileup_PtTerm                        : Pileup: Offset, pT term
+seq1_JetUncertaintiesA...INFO        6. JET_Pileup_RhoTopology                   : Rho topology uncertainty (jet areas)
+seq1_JetUncertaintiesA...INFO        7. JET_Flavor_Composition                   : Flavor composition uncertainty
+seq1_JetUncertaintiesA...INFO        8. JET_Flavor_Response                      : Flavor response uncertainty (dominated by gluon response)
+seq1_JetUncertaintiesA...INFO        9. JET_EffectiveNP_Statistical1             : Effective JES Uncertainty Statistical Component 1
+seq1_JetUncertaintiesA...INFO       10. JET_EffectiveNP_Statistical2             : Effective JES Uncertainty Statistical Component 2
+seq1_JetUncertaintiesA...INFO       11. JET_EffectiveNP_Statistical3             : Effective JES Uncertainty Statistical Component 3
+seq1_JetUncertaintiesA...INFO       12. JET_EffectiveNP_Statistical4             : Effective JES Uncertainty Statistical Component 4
+seq1_JetUncertaintiesA...INFO       13. JET_EffectiveNP_Statistical5             : Effective JES Uncertainty Statistical Component 5
+seq1_JetUncertaintiesA...INFO       14. JET_EffectiveNP_Statistical6             : Effective JES Uncertainty Statistical Component 6
+seq1_JetUncertaintiesA...INFO       15. JET_EffectiveNP_Modelling1               : Effective JES Uncertainty Modelling Component 1
+seq1_JetUncertaintiesA...INFO       16. JET_EffectiveNP_Modelling2               : Effective JES Uncertainty Modelling Component 2
+seq1_JetUncertaintiesA...INFO       17. JET_EffectiveNP_Modelling3               : Effective JES Uncertainty Modelling Component 3
+seq1_JetUncertaintiesA...INFO       18. JET_EffectiveNP_Modelling4               : Effective JES Uncertainty Modelling Component 4
+seq1_JetUncertaintiesA...INFO       19. JET_EffectiveNP_Detector1                : Effective JES Uncertainty Detector Component 1
+seq1_JetUncertaintiesA...INFO       20. JET_EffectiveNP_Detector2                : Effective JES Uncertainty Detector Component 2
+seq1_JetUncertaintiesA...INFO       21. JET_EffectiveNP_Mixed1                   : Effective JES Uncertainty Mixed Component 1
+seq1_JetUncertaintiesA...INFO       22. JET_EffectiveNP_Mixed2                   : Effective JES Uncertainty Mixed Component 2
+seq1_JetUncertaintiesA...INFO       23. JET_EffectiveNP_Mixed3                   : Effective JES Uncertainty Mixed Component 3
+seq1_JetUncertaintiesA...INFO       24. JET_EtaIntercalibration_NonClosure_0p2_PreRec : Eta intercalibration non-closure uncertainty wrt rel22, early Run3, Gaussian smoothing 0p2, absolute values
+seq1_JetUncertaintiesA...INFO       25. JET_FCal_MC23_NonClosure_PreRec          : FCal calibration uncertainty, early Run3
+seq1_JetUncertaintiesA...INFO       26. JET_SingleParticle_HighPt                : High pT term (r20.7 version)
+seq1_JetUncertaintiesA...INFO       27. JET_BJES_Response                        : JES uncertainty for b jets
+seq1_JetUncertaintiesA...INFO       28. JET_InSitu_NonClosure_PreRec             : InSitu non-closure uncertainty derived in Z+jet rel22, early Run3 
+seq1_JetUncertaintiesA...INFO       29. JET_JESUnc_Noise_PreRec                  : Pre recommendation systematics for R22. Comparison of different noise threshold setting
+seq1_JetUncertaintiesA...INFO       30. JET_JESUnc_VertexingAlg_PreRec           : Pre recommendation systematics for R22. Comparisong of different Vertexing Algorithms
+seq1_JetUncertaintiesA...INFO       31. JET_JER_DataVsMC_MC16                    : NP covering when JER(data) < JER(MC)
+seq1_JetUncertaintiesA...INFO       32. JET_JER_EffectiveNP_1                    : Effective JER Uncertainty Component 1
+seq1_JetUncertaintiesA...INFO       33. JET_JER_EffectiveNP_2                    : Effective JER Uncertainty Component 2
+seq1_JetUncertaintiesA...INFO       34. JET_JER_EffectiveNP_3                    : Effective JER Uncertainty Component 3
+seq1_JetUncertaintiesA...INFO       35. JET_JER_EffectiveNP_4                    : Effective JER Uncertainty Component 4
+seq1_JetUncertaintiesA...INFO       36. JET_JER_EffectiveNP_5                    : Effective JER Uncertainty Component 5
+seq1_JetUncertaintiesA...INFO       37. JET_JER_EffectiveNP_6                    : Effective JER Uncertainty Component 6
+seq1_JetUncertaintiesA...INFO       38. JET_JER_EffectiveNP_7                    : Effective JER Uncertainty Component 7
+seq1_JetUncertaintiesA...INFO       39. JET_JER_EffectiveNP_8                    : Effective JER Uncertainty Component 8
+seq1_JetUncertaintiesA...INFO       40. JET_JER_EffectiveNP_9                    : Effective JER Uncertainty Component 9
+seq1_JetUncertaintiesA...INFO       41. JET_JER_EffectiveNP_10                   : Effective JER Uncertainty Component 10
+seq1_JetUncertaintiesA...INFO       42. JET_JER_EffectiveNP_11                   : Effective JER Uncertainty Component 11
+seq1_JetUncertaintiesA...INFO       43. JET_JER_EffectiveNP_12restTerm           : Effective JER Uncertainty Component 12
+seq1_JetUncertaintiesA...INFO       44. JET_JERUnc_Noise_PreRec                  : Pre recommendation systematics for JER R22. Comparison of different noise threshold setting
+seq1_JetUncertaintiesA...INFO       Found and read in 52 individual components into 44 component groups of which 58 are recommended
+seq1_JetUncertaintiesA...INFO    ================================================
+seq1_NNJvtUpdateAlg_An...INFO    Using Classic NN configuration.
+seq1_NNJvtUpdateAlg_An...INFO    Reading JVT NN file from: NNJVT.Network.graph.Offline.Nonprompt_All_MaxWeight.json
+seq1_NNJvtUpdateAlg_An...INFO    
+ Reading JVT likelihood histogram from:
+    /cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetPileupTag/NNJvt/2022-03-22/NNJVT.Network.graph.Offline.Nonprompt_All_MaxWeight.json
+
+
+seq1_NNJvtUpdateAlg_An...INFO    Reading JVT NN cut file from: NNJVT.Cuts.FixedEffPt.Offline.Nonprompt_All_MaxW.json
+Package.EventLoop        INFO    Processing events 0-20000 in file file:///cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1
+Package.EventLoop        INFO    Processed 10000 events
+Package.EventLoop        INFO    Processed 20000 events
+SystematicsSvc           INFO    no systematics were run.
+seq1_SystematicsPrinter  INFO    Systematics regex '' matched:
+seq1_SystematicsPrinter  INFO      ''
+seq1_SystematicsPrinter  INFO      'JET_BJES_Response__1up'
+seq1_SystematicsPrinter  INFO      'JET_BJES_Response__1down'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Detector1__1up'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Detector1__1down'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Detector2__1up'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Detector2__1down'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Mixed1__1up'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Mixed1__1down'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Mixed2__1up'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Mixed2__1down'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Mixed3__1up'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Mixed3__1down'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Modelling1__1up'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Modelling1__1down'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Modelling2__1up'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Modelling2__1down'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Modelling3__1up'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Modelling3__1down'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Modelling4__1up'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Modelling4__1down'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Statistical1__1up'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Statistical1__1down'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Statistical2__1up'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Statistical2__1down'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Statistical3__1up'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Statistical3__1down'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Statistical4__1up'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Statistical4__1down'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Statistical5__1up'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Statistical5__1down'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Statistical6__1up'
+seq1_SystematicsPrinter  INFO      'JET_EffectiveNP_Statistical6__1down'
+seq1_SystematicsPrinter  INFO      'JET_EtaIntercalibration_Modelling__1up'
+seq1_SystematicsPrinter  INFO      'JET_EtaIntercalibration_Modelling__1down'
+seq1_SystematicsPrinter  INFO      'JET_EtaIntercalibration_NonClosure_0p2_PreRec__1up'
+seq1_SystematicsPrinter  INFO      'JET_EtaIntercalibration_NonClosure_0p2_PreRec__1down'
+seq1_SystematicsPrinter  INFO      'JET_EtaIntercalibration_TotalStat__1up'
+seq1_SystematicsPrinter  INFO      'JET_EtaIntercalibration_TotalStat__1down'
+seq1_SystematicsPrinter  INFO      'JET_FCal_MC23_NonClosure_PreRec__1up'
+seq1_SystematicsPrinter  INFO      'JET_FCal_MC23_NonClosure_PreRec__1down'
+seq1_SystematicsPrinter  INFO      'JET_Flavor_Composition__1up'
+seq1_SystematicsPrinter  INFO      'JET_Flavor_Composition__1down'
+seq1_SystematicsPrinter  INFO      'JET_Flavor_Response__1up'
+seq1_SystematicsPrinter  INFO      'JET_Flavor_Response__1down'
+seq1_SystematicsPrinter  INFO      'JET_InSitu_NonClosure_PreRec__1up'
+seq1_SystematicsPrinter  INFO      'JET_InSitu_NonClosure_PreRec__1down'
+seq1_SystematicsPrinter  INFO      'JET_JERUnc_Noise_PreRec__1up'
+seq1_SystematicsPrinter  INFO      'JET_JERUnc_Noise_PreRec__1down'
+seq1_SystematicsPrinter  INFO      'JET_JERUnc_Noise_PreRec_PseudoData__1up'
+seq1_SystematicsPrinter  INFO      'JET_JERUnc_Noise_PreRec_PseudoData__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_DataVsMC_MC16__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_DataVsMC_MC16__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_DataVsMC_MC16_PseudoData__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_DataVsMC_MC16_PseudoData__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_1__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_1__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_10__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_10__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_10_PseudoData__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_10_PseudoData__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_11__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_11__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_11_PseudoData__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_11_PseudoData__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_12restTerm__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_12restTerm__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_12restTerm_PseudoData__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_12restTerm_PseudoData__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_1_PseudoData__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_1_PseudoData__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_2__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_2__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_2_PseudoData__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_2_PseudoData__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_3__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_3__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_3_PseudoData__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_3_PseudoData__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_4__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_4__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_4_PseudoData__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_4_PseudoData__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_5__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_5__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_5_PseudoData__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_5_PseudoData__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_6__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_6__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_6_PseudoData__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_6_PseudoData__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_7__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_7__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_7_PseudoData__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_7_PseudoData__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_8__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_8__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_8_PseudoData__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_8_PseudoData__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_9__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_9__1down'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_9_PseudoData__1up'
+seq1_SystematicsPrinter  INFO      'JET_JER_EffectiveNP_9_PseudoData__1down'
+seq1_SystematicsPrinter  INFO      'JET_JESUnc_Noise_PreRec__1up'
+seq1_SystematicsPrinter  INFO      'JET_JESUnc_Noise_PreRec__1down'
+seq1_SystematicsPrinter  INFO      'JET_JESUnc_VertexingAlg_PreRec__1up'
+seq1_SystematicsPrinter  INFO      'JET_JESUnc_VertexingAlg_PreRec__1down'
+seq1_SystematicsPrinter  INFO      'JET_NNJvtEfficiency__1down'
+seq1_SystematicsPrinter  INFO      'JET_NNJvtEfficiency__1up'
+seq1_SystematicsPrinter  INFO      'JET_Pileup_OffsetMu__1up'
+seq1_SystematicsPrinter  INFO      'JET_Pileup_OffsetMu__1down'
+seq1_SystematicsPrinter  INFO      'JET_Pileup_OffsetNPV__1up'
+seq1_SystematicsPrinter  INFO      'JET_Pileup_OffsetNPV__1down'
+seq1_SystematicsPrinter  INFO      'JET_Pileup_PtTerm__1up'
+seq1_SystematicsPrinter  INFO      'JET_Pileup_PtTerm__1down'
+seq1_SystematicsPrinter  INFO      'JET_Pileup_RhoTopology__1up'
+seq1_SystematicsPrinter  INFO      'JET_Pileup_RhoTopology__1down'
+seq1_SystematicsPrinter  INFO      'JET_SingleParticle_HighPt__1up'
+seq1_SystematicsPrinter  INFO      'JET_SingleParticle_HighPt__1down'
+ELModule.LeakCheckModule INFO    Memory increase/change during the job:
+ELModule.LeakCheckModule INFO      - resident: 2.18931 kB/event (43784 kB total)
+ELModule.LeakCheckModule INFO      - virtual : -1.49627 kB/event (-29924 kB total)
+Real time 0:03:47, CP time 226.810
+Package.EventLoop        INFO    worker finished successfully
+xAOD::TFileAccessTracer   INFO    Sending file access statistics to http://rucio-lb-prod.cern.ch:18762/traces/
+Package.EventLoop        INFO    retrieving batch job in location /home/gwatts/atlas/correctionlib_tests/results/repeated-timing/A-3/workDir-2026-10-22-0644-dcbc
+Package.EventLoop        INFO    current job status: 1 success, 0 failure, 0 running/unknown
+Package.EventLoop        INFO    done
+Package.EventLoop        INFO    retrieving batch job in location workDir
+Package.EventLoop        INFO    current job status: 1 success, 0 failure, 0 running/unknown
+Package.EventLoop        INFO    done
+Py:CPBaseRunner      INFO Moving the analysis root file and the hist file to the top level.
+Py:CPBaseRunner      INFO Moving /home/gwatts/atlas/correctionlib_tests/results/repeated-timing/A-3/workDir-2026-10-22-0644-dcbc/fetch/data-ANALYSIS/output-0.root to /home/gwatts/atlas/correctionlib_tests/results/repeated-timing/A-3/output.root
+Py:CPBaseRunner      INFO Moving /home/gwatts/atlas/correctionlib_tests/results/repeated-timing/A-3/workDir-2026-10-22-0644-dcbc/fetch/hist-output-0.root to /home/gwatts/atlas/correctionlib_tests/results/repeated-timing/A-3/hist-output.root

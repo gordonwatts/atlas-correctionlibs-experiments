@@ -1,0 +1,16 @@
+checking file CMakeLists.txt
+checking file include/correction_graph.h
+{
+  "passed": true,
+  "evaluator": "correctionlib-2.7.0+graph-1",
+  "module": "/home/gwatts/atlas/correctionlib_tests/path-d/build/_declarative.cpython-313-x86_64-linux-gnu.so",
+  "correctionlib_libraries": [
+    "/home/gwatts/atlas/correctionlib_tests/path-d/build/correctionlib/libcorrectionlib.so"
+  ],
+  "root": "6.38.04",
+  "python": "3.13.11 (main, Jul  3 2026, 00:04:11) [GCC 15.2.0]",
+  "compiler": "g++ (GCC) 15.2.0",
+  "fork_patch_reverse_dry_run": true,
+  "precision_patch_sha256": "3b428b8236b0972f613526417edb8a79848145e9f01b5759bb17cd20b81feedf",
+  "extension_patch_sha256": "e41953efc4ed31e91dfc8713a6e05ba01b7a9212b07df1be63ddcba1f756a27d"
+}

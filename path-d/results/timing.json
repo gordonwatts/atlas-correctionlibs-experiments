@@ -1,0 +1,47 @@
+{
+  "path": "D",
+  "events": 20000,
+  "jets": 196606,
+  "runs": 1,
+  "wall_seconds": 249.3159963500002,
+  "phases": [
+    {
+      "name": "nominal",
+      "seconds": 20.00723737699991,
+      "command": [
+        "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+        "path-d/scripts/run-nominal.py",
+        "--events",
+        "20000",
+        "--chunk-size",
+        "1000"
+      ]
+    },
+    {
+      "name": "systematics",
+      "seconds": 58.306834852000065,
+      "command": [
+        "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+        "path-d/scripts/run-systematics.py",
+        "--events",
+        "20000",
+        "--output",
+        "path-d/results/kinematics.root"
+      ]
+    },
+    {
+      "name": "jvt",
+      "seconds": 171.00189563099957,
+      "command": [
+        "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+        "path-d/scripts/run-jvt.py",
+        "--events",
+        "20000",
+        "--output",
+        "path-d/results/jvt.root"
+      ]
+    }
+  ],
+  "peak_child_rss_kib": 2231480,
+  "scope": "Complete three-stage diagnostic workflow after environment setup, including imports, input/feature preparation, repeated kinematic evaluation, output and reference comparisons. Warm caches possible. Single run, not an isolated kernel or repeated timing estimate."
+}

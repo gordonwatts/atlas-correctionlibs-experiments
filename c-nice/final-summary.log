@@ -1,0 +1,175 @@
+/home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/mplhep/utils.py:741: UserWarning: Integer weights indicate poissonian data. Will calculate Garwood interval if ``scipy`` is installed. Otherwise errors will be set to ``sqrt(w2)``.
+  self.errors()
+/home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/mplhep/utils.py:741: UserWarning: Integer weights indicate poissonian data. Will calculate Garwood interval if ``scipy`` is installed. Otherwise errors will be set to ``sqrt(w2)``.
+  self.errors()
+/home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/mplhep/utils.py:741: UserWarning: Integer weights indicate poissonian data. Will calculate Garwood interval if ``scipy`` is installed. Otherwise errors will be set to ``sqrt(w2)``.
+  self.errors()
+/home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/mplhep/utils.py:741: UserWarning: Integer weights indicate poissonian data. Will calculate Garwood interval if ``scipy`` is installed. Otherwise errors will be set to ``sqrt(w2)``.
+  self.errors()
+{
+  "workflow_runs_seconds": [
+    191.85626921,
+    187.13774943199996,
+    191.195840289,
+    187.264199631
+  ],
+  "workflow_mean": 188.53259645066666,
+  "workflow_sd": 2.307303235385882,
+  "plot_runs_seconds": [
+    29.170803968000087,
+    28.431775521999953,
+    28.58459836499992,
+    28.332073399000024
+  ],
+  "plot_mean": 28.44948242866663,
+  "records": [
+    {
+      "path": "C",
+      "iteration": 1,
+      "wall_seconds": 191.85626921,
+      "stage_seconds": [
+        30.152925494000016,
+        57.56402558899998,
+        104.13927229200002
+      ],
+      "commands": [
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-nominal.py",
+          "--events",
+          "20000",
+          "--chunk-size",
+          "1000"
+        ],
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-systematics.py",
+          "--events",
+          "20000",
+          "--output",
+          "results/columnar-kinematics.root"
+        ],
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-jvt.py",
+          "--events",
+          "20000",
+          "--output",
+          "results/columnar-jvt.root"
+        ]
+      ],
+      "events": 20000
+    },
+    {
+      "path": "C",
+      "iteration": 2,
+      "wall_seconds": 187.13774943199996,
+      "stage_seconds": [
+        28.57608124699999,
+        54.68149035900001,
+        103.88014030700003
+      ],
+      "commands": [
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-nominal.py",
+          "--events",
+          "20000",
+          "--chunk-size",
+          "1000"
+        ],
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-systematics.py",
+          "--events",
+          "20000",
+          "--output",
+          "results/columnar-kinematics.root"
+        ],
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-jvt.py",
+          "--events",
+          "20000",
+          "--output",
+          "results/columnar-jvt.root"
+        ]
+      ],
+      "events": 20000
+    },
+    {
+      "path": "C",
+      "iteration": 3,
+      "wall_seconds": 191.195840289,
+      "stage_seconds": [
+        28.87512764500002,
+        59.19066412099994,
+        103.13002906299994
+      ],
+      "commands": [
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-nominal.py",
+          "--events",
+          "20000",
+          "--chunk-size",
+          "1000"
+        ],
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-systematics.py",
+          "--events",
+          "20000",
+          "--output",
+          "results/columnar-kinematics.root"
+        ],
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-jvt.py",
+          "--events",
+          "20000",
+          "--output",
+          "results/columnar-jvt.root"
+        ]
+      ],
+      "events": 20000
+    },
+    {
+      "path": "C",
+      "iteration": 4,
+      "wall_seconds": 187.264199631,
+      "stage_seconds": [
+        27.357326507999915,
+        60.238392490000024,
+        99.66846325699998
+      ],
+      "commands": [
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-nominal.py",
+          "--events",
+          "20000",
+          "--chunk-size",
+          "1000"
+        ],
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-systematics.py",
+          "--events",
+          "20000",
+          "--output",
+          "results/columnar-kinematics.root"
+        ],
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-jvt.py",
+          "--events",
+          "20000",
+          "--output",
+          "results/columnar-jvt.root"
+        ]
+      ],
+      "events": 20000
+    }
+  ]
+}

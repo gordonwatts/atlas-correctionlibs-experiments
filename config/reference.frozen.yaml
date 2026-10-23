@@ -1,0 +1,41 @@
+CommonServices:
+  runSystematics: true
+  systematicsHistogram: systematics
+Jets:
+  - containerName: AnaJets
+    jetCollection: AntiKt4EMPFlowJets
+    recalibratePhyslite: true
+    runNNJvtUpdate: true
+    runJvtSelection: false
+    runJvtEfficiency: false
+    systematicsModelJES: Category
+    systematicsModelJER: Full
+    JVTWorkingPoint:
+      - selectionName: jvt
+        jvtWP: FixedEffPt
+        eventSF: true
+Output:
+  treeName: analysis
+  vars:
+    - EventInfo.eventNumber -> eventNumber
+    - EventInfo.runNumber -> runNumber
+    - AnaJets_%SYS%.NNJvt -> check_NNJvt_%SYS% type=float
+    - AnaJets_%SYS%.pt -> check_pt_%SYS%
+    - AnaJets_%SYS%.eta -> check_eta_%SYS%
+    - AnaJets_%SYS%.phi -> check_phi_%SYS%
+    - AnaJets_%SYS%.m -> check_m_%SYS%
+    - AnaJets_NOSYS.JetPileupScaleMomentum_pt -> JetPileupScaleMomentum_pt type=float
+    - AnaJets_NOSYS.JetPileupScaleMomentum_eta -> JetPileupScaleMomentum_eta type=float
+    - AnaJets_NOSYS.JetPileupScaleMomentum_phi -> JetPileupScaleMomentum_phi type=float
+    - AnaJets_NOSYS.JetPileupScaleMomentum_m -> JetPileupScaleMomentum_m type=float
+    - AnaJets_NOSYS.JetEtaJESScaleMomentum_pt -> JetEtaJESScaleMomentum_pt type=float
+    - AnaJets_NOSYS.JetEtaJESScaleMomentum_eta -> JetEtaJESScaleMomentum_eta type=float
+    - AnaJets_NOSYS.JetEtaJESScaleMomentum_phi -> JetEtaJESScaleMomentum_phi type=float
+    - AnaJets_NOSYS.JetEtaJESScaleMomentum_m -> JetEtaJESScaleMomentum_m type=float
+    - AnaJets_NOSYS.JetGSCScaleMomentum_pt -> JetGSCScaleMomentum_pt type=float
+    - AnaJets_NOSYS.JetGSCScaleMomentum_eta -> JetGSCScaleMomentum_eta type=float
+    - AnaJets_NOSYS.JetGSCScaleMomentum_phi -> JetGSCScaleMomentum_phi type=float
+    - AnaJets_NOSYS.JetGSCScaleMomentum_m -> JetGSCScaleMomentum_m type=float
+  containers:
+    jet_: AnaJets
+    '': EventInfo

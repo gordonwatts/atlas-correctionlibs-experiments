@@ -1,0 +1,14 @@
+{
+  "jets": 196606,
+  "jets_by_events": {
+    "1": 14,
+    "1000": 9909,
+    "5000": 49249,
+    "20000": 196606
+  },
+  "source_hashes": {
+    "backend.hxx": "13e46750f83498517c808ca876924594e3316285969de9382bd99ef3198ffbea",
+    "systematics.hxx": "a3944813c80fc0b86b476da5d6baa8ff1fe8dabf73ed43c89941d93d5e34fa6d",
+    "efficiency.hxx": "c7e1f10d4fb723b42bf278aec420dd9e3c0c99aa918e25e39c62119a19abb75e"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "iteration": 3,
+  "wall_seconds": 283.88790683899424,
+  "phases": {
+    "nominal": 25.16805210000166,
+    "systematics": 71.07075209599861,
+    "jvt": 187.64891550200264
+  },
+  "passed": true,
+  "commands": [
+    [
+      "path-d/scripts/run-nominal.py",
+      "--events",
+      "20000",
+      "--chunk-size",
+      "1000"
+    ],
+    [
+      "path-d/scripts/run-systematics.py",
+      "--events",
+      "20000",
+      "--output",
+      "path-d/results/kinematics.root"
+    ],
+    [
+      "path-d/scripts/run-jvt.py",
+      "--events",
+      "20000",
+      "--output",
+      "path-d/results/jvt.root"
+    ]
+  ]
+}

@@ -1,0 +1,5959 @@
+{
+  "events": 20000,
+  "branches": 1190,
+  "missing": [],
+  "unexpected": [],
+  "checks": {
+    "JetEtaJESScaleMomentum_eta": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetEtaJESScaleMomentum_m": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetEtaJESScaleMomentum_phi": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetEtaJESScaleMomentum_pt": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetGSCScaleMomentum_eta": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetGSCScaleMomentum_m": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetGSCScaleMomentum_phi": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetGSCScaleMomentum_pt": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetPileupScaleMomentum_eta": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetPileupScaleMomentum_m": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetPileupScaleMomentum_phi": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetPileupScaleMomentum_pt": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_BJES_Response__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_BJES_Response__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Detector1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Detector1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Detector2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Detector2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Mixed1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Mixed1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Mixed2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Mixed2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Mixed3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Mixed3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Modelling1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Modelling1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Modelling2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Modelling2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Modelling3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Modelling3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Modelling4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Modelling4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Statistical1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Statistical1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Statistical2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Statistical2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Statistical3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Statistical3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Statistical4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Statistical4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Statistical5__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Statistical5__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Statistical6__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EffectiveNP_Statistical6__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EtaIntercalibration_Modelling__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EtaIntercalibration_Modelling__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EtaIntercalibration_NonClosure_0p2_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EtaIntercalibration_NonClosure_0p2_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EtaIntercalibration_TotalStat__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_EtaIntercalibration_TotalStat__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_FCal_MC23_NonClosure_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_FCal_MC23_NonClosure_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_Flavor_Composition__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_Flavor_Composition__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_Flavor_Response__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_Flavor_Response__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_InSitu_NonClosure_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_InSitu_NonClosure_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JERUnc_Noise_PreRec_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JERUnc_Noise_PreRec_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JERUnc_Noise_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JERUnc_Noise_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_DataVsMC_MC16_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_DataVsMC_MC16_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_DataVsMC_MC16__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_DataVsMC_MC16__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_10_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_10_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_10__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_10__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_11_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_11_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_11__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_11__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_12restTerm_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_12restTerm_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_12restTerm__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_12restTerm__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_1_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_1_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_2_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_2_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_3_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_3_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_4_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_4_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_5_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_5_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_5__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_5__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_6_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_6_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_6__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_6__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_7_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_7_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_7__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_7__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_8_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_8_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_8__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_8__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_9_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_9_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_9__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JER_EffectiveNP_9__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JESUnc_Noise_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JESUnc_Noise_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JESUnc_VertexingAlg_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_JESUnc_VertexingAlg_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_Pileup_OffsetMu__1down": {
+      "max_abs": 1.1920928955078125e-07,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_Pileup_OffsetMu__1up": {
+      "max_abs": 1.1920928955078125e-07,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_Pileup_OffsetNPV__1down": {
+      "max_abs": 1.1920928955078125e-07,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_Pileup_OffsetNPV__1up": {
+      "max_abs": 1.1920928955078125e-07,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_Pileup_PtTerm__1down": {
+      "max_abs": 1.1920928955078125e-07,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_Pileup_PtTerm__1up": {
+      "max_abs": 1.1920928955078125e-07,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_Pileup_RhoTopology__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_Pileup_RhoTopology__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_SingleParticle_HighPt__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_JET_SingleParticle_HighPt__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_NNJvt_NOSYS": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_BJES_Response__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_BJES_Response__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Detector1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Detector1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Detector2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Detector2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Mixed1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Mixed1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Mixed2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Mixed2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Mixed3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Mixed3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Modelling1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Modelling1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Modelling2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Modelling2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Modelling3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Modelling3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Modelling4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Modelling4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Statistical1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Statistical1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Statistical2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Statistical2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Statistical3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Statistical3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Statistical4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Statistical4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Statistical5__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Statistical5__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Statistical6__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EffectiveNP_Statistical6__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EtaIntercalibration_Modelling__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EtaIntercalibration_Modelling__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EtaIntercalibration_NonClosure_0p2_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EtaIntercalibration_NonClosure_0p2_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EtaIntercalibration_TotalStat__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_EtaIntercalibration_TotalStat__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_FCal_MC23_NonClosure_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_FCal_MC23_NonClosure_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_Flavor_Composition__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_Flavor_Composition__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_Flavor_Response__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_Flavor_Response__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_InSitu_NonClosure_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_InSitu_NonClosure_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JERUnc_Noise_PreRec_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JERUnc_Noise_PreRec_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JERUnc_Noise_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JERUnc_Noise_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_DataVsMC_MC16_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_DataVsMC_MC16_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_DataVsMC_MC16__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_DataVsMC_MC16__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_10_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_10_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_10__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_10__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_11_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_11_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_11__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_11__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_12restTerm_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_12restTerm_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_12restTerm__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_12restTerm__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_1_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_1_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_2_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_2_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_3_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_3_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_4_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_4_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_5_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_5_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_5__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_5__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_6_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_6_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_6__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_6__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_7_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_7_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_7__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_7__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_8_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_8_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_8__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_8__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_9_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_9_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_9__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JER_EffectiveNP_9__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JESUnc_Noise_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JESUnc_Noise_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JESUnc_VertexingAlg_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_JESUnc_VertexingAlg_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_Pileup_OffsetMu__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_Pileup_OffsetMu__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_Pileup_OffsetNPV__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_Pileup_OffsetNPV__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_Pileup_PtTerm__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_Pileup_PtTerm__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_Pileup_RhoTopology__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_Pileup_RhoTopology__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_SingleParticle_HighPt__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_JET_SingleParticle_HighPt__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_eta_NOSYS": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_BJES_Response__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_BJES_Response__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Detector1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Detector1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Detector2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Detector2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Mixed1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Mixed1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Mixed2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Mixed2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Mixed3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Mixed3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Modelling1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Modelling1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Modelling2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Modelling2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Modelling3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Modelling3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Modelling4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Modelling4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Statistical1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Statistical1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Statistical2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Statistical2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Statistical3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Statistical3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Statistical4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Statistical4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Statistical5__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Statistical5__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Statistical6__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EffectiveNP_Statistical6__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EtaIntercalibration_Modelling__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EtaIntercalibration_Modelling__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EtaIntercalibration_NonClosure_0p2_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EtaIntercalibration_NonClosure_0p2_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EtaIntercalibration_TotalStat__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_EtaIntercalibration_TotalStat__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_FCal_MC23_NonClosure_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_FCal_MC23_NonClosure_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_Flavor_Composition__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_Flavor_Composition__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_Flavor_Response__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_Flavor_Response__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_InSitu_NonClosure_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_InSitu_NonClosure_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JERUnc_Noise_PreRec_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JERUnc_Noise_PreRec_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JERUnc_Noise_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JERUnc_Noise_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_DataVsMC_MC16_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_DataVsMC_MC16_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_DataVsMC_MC16__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_DataVsMC_MC16__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_10_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_10_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_10__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_10__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_11_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_11_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_11__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_11__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_12restTerm_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_12restTerm_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_12restTerm__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_12restTerm__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_1_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_1_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_2_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_2_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_3_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_3_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_4_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_4_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_5_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_5_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_5__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_5__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_6_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_6_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_6__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_6__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_7_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_7_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_7__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_7__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_8_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_8_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_8__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_8__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_9_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_9_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_9__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JER_EffectiveNP_9__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JESUnc_Noise_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JESUnc_Noise_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JESUnc_VertexingAlg_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_JESUnc_VertexingAlg_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_Pileup_OffsetMu__1down": {
+      "max_abs": 0.001953125,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_Pileup_OffsetMu__1up": {
+      "max_abs": 0.001953125,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_Pileup_OffsetNPV__1down": {
+      "max_abs": 0.001953125,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_Pileup_OffsetNPV__1up": {
+      "max_abs": 0.001953125,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_Pileup_PtTerm__1down": {
+      "max_abs": 0.00390625,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_Pileup_PtTerm__1up": {
+      "max_abs": 0.00390625,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_Pileup_RhoTopology__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_Pileup_RhoTopology__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_SingleParticle_HighPt__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_JET_SingleParticle_HighPt__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_m_NOSYS": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_BJES_Response__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_BJES_Response__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Detector1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Detector1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Detector2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Detector2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Mixed1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Mixed1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Mixed2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Mixed2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Mixed3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Mixed3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Modelling1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Modelling1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Modelling2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Modelling2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Modelling3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Modelling3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Modelling4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Modelling4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Statistical1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Statistical1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Statistical2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Statistical2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Statistical3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Statistical3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Statistical4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Statistical4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Statistical5__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Statistical5__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Statistical6__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EffectiveNP_Statistical6__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EtaIntercalibration_Modelling__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EtaIntercalibration_Modelling__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EtaIntercalibration_NonClosure_0p2_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EtaIntercalibration_NonClosure_0p2_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EtaIntercalibration_TotalStat__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_EtaIntercalibration_TotalStat__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_FCal_MC23_NonClosure_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_FCal_MC23_NonClosure_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_Flavor_Composition__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_Flavor_Composition__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_Flavor_Response__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_Flavor_Response__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_InSitu_NonClosure_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_InSitu_NonClosure_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JERUnc_Noise_PreRec_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JERUnc_Noise_PreRec_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JERUnc_Noise_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JERUnc_Noise_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_DataVsMC_MC16_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_DataVsMC_MC16_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_DataVsMC_MC16__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_DataVsMC_MC16__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_10_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_10_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_10__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_10__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_11_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_11_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_11__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_11__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_12restTerm_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_12restTerm_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_12restTerm__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_12restTerm__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_1_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_1_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_2_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_2_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_3_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_3_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_4_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_4_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_5_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_5_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_5__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_5__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_6_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_6_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_6__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_6__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_7_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_7_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_7__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_7__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_8_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_8_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_8__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_8__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_9_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_9_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_9__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JER_EffectiveNP_9__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JESUnc_Noise_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JESUnc_Noise_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JESUnc_VertexingAlg_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_JESUnc_VertexingAlg_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_Pileup_OffsetMu__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_Pileup_OffsetMu__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_Pileup_OffsetNPV__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_Pileup_OffsetNPV__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_Pileup_PtTerm__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_Pileup_PtTerm__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_Pileup_RhoTopology__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_Pileup_RhoTopology__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_SingleParticle_HighPt__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_JET_SingleParticle_HighPt__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_phi_NOSYS": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_BJES_Response__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_BJES_Response__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Detector1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Detector1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Detector2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Detector2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Mixed1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Mixed1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Mixed2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Mixed2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Mixed3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Mixed3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Modelling1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Modelling1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Modelling2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Modelling2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Modelling3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Modelling3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Modelling4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Modelling4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Statistical1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Statistical1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Statistical2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Statistical2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Statistical3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Statistical3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Statistical4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Statistical4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Statistical5__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Statistical5__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Statistical6__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EffectiveNP_Statistical6__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EtaIntercalibration_Modelling__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EtaIntercalibration_Modelling__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EtaIntercalibration_NonClosure_0p2_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EtaIntercalibration_NonClosure_0p2_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EtaIntercalibration_TotalStat__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_EtaIntercalibration_TotalStat__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_FCal_MC23_NonClosure_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_FCal_MC23_NonClosure_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_Flavor_Composition__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_Flavor_Composition__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_Flavor_Response__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_Flavor_Response__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_InSitu_NonClosure_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_InSitu_NonClosure_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JERUnc_Noise_PreRec_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JERUnc_Noise_PreRec_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JERUnc_Noise_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JERUnc_Noise_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_DataVsMC_MC16_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_DataVsMC_MC16_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_DataVsMC_MC16__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_DataVsMC_MC16__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_10_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_10_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_10__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_10__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_11_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_11_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_11__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_11__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_12restTerm_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_12restTerm_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_12restTerm__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_12restTerm__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_1_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_1_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_2_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_2_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_3_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_3_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_4_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_4_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_5_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_5_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_5__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_5__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_6_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_6_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_6__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_6__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_7_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_7_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_7__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_7__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_8_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_8_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_8__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_8__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_9_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_9_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_9__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JER_EffectiveNP_9__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JESUnc_Noise_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JESUnc_Noise_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JESUnc_VertexingAlg_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_JESUnc_VertexingAlg_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_Pileup_OffsetMu__1down": {
+      "max_abs": 0.03125,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_Pileup_OffsetMu__1up": {
+      "max_abs": 0.03125,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_Pileup_OffsetNPV__1down": {
+      "max_abs": 0.015625,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_Pileup_OffsetNPV__1up": {
+      "max_abs": 0.015625,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_Pileup_PtTerm__1down": {
+      "max_abs": 0.03125,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_Pileup_PtTerm__1up": {
+      "max_abs": 0.03125,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_Pileup_RhoTopology__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_Pileup_RhoTopology__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_SingleParticle_HighPt__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_JET_SingleParticle_HighPt__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "check_pt_NOSYS": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "eventNumber": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_BJES_Response__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_BJES_Response__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Detector1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Detector1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Detector2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Detector2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Mixed1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Mixed1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Mixed2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Mixed2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Mixed3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Mixed3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Modelling1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Modelling1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Modelling2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Modelling2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Modelling3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Modelling3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Modelling4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Modelling4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Statistical1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Statistical1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Statistical2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Statistical2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Statistical3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Statistical3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Statistical4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Statistical4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Statistical5__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Statistical5__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Statistical6__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EffectiveNP_Statistical6__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EtaIntercalibration_Modelling__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EtaIntercalibration_Modelling__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EtaIntercalibration_NonClosure_0p2_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EtaIntercalibration_NonClosure_0p2_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EtaIntercalibration_TotalStat__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_EtaIntercalibration_TotalStat__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_FCal_MC23_NonClosure_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_FCal_MC23_NonClosure_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_Flavor_Composition__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_Flavor_Composition__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_Flavor_Response__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_Flavor_Response__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_InSitu_NonClosure_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_InSitu_NonClosure_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JERUnc_Noise_PreRec_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JERUnc_Noise_PreRec_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JERUnc_Noise_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JERUnc_Noise_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_DataVsMC_MC16_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_DataVsMC_MC16_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_DataVsMC_MC16__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_DataVsMC_MC16__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_10_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_10_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_10__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_10__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_11_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_11_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_11__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_11__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_12restTerm_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_12restTerm_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_12restTerm__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_12restTerm__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_1_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_1_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_2_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_2_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_3_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_3_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_4_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_4_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_5_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_5_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_5__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_5__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_6_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_6_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_6__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_6__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_7_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_7_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_7__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_7__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_8_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_8_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_8__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_8__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_9_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_9_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_9__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JER_EffectiveNP_9__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JESUnc_Noise_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JESUnc_Noise_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JESUnc_VertexingAlg_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_JESUnc_VertexingAlg_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_Pileup_OffsetMu__1down": {
+      "max_abs": 0.25,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_Pileup_OffsetMu__1up": {
+      "max_abs": 0.25,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_Pileup_OffsetNPV__1down": {
+      "max_abs": 0.125,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_Pileup_OffsetNPV__1up": {
+      "max_abs": 0.125,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_Pileup_PtTerm__1down": {
+      "max_abs": 0.25,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_Pileup_PtTerm__1up": {
+      "max_abs": 0.25,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_Pileup_RhoTopology__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_Pileup_RhoTopology__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_SingleParticle_HighPt__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_JET_SingleParticle_HighPt__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_e_NOSYS": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_eta": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_BJES_Response__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_BJES_Response__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Detector1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Detector1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Detector2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Detector2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Mixed1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Mixed1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Mixed2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Mixed2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Mixed3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Mixed3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Modelling1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Modelling1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Modelling2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Modelling2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Modelling3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Modelling3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Modelling4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Modelling4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Statistical1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Statistical1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Statistical2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Statistical2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Statistical3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Statistical3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Statistical4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Statistical4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Statistical5__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Statistical5__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Statistical6__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EffectiveNP_Statistical6__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EtaIntercalibration_Modelling__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EtaIntercalibration_Modelling__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EtaIntercalibration_NonClosure_0p2_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EtaIntercalibration_NonClosure_0p2_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EtaIntercalibration_TotalStat__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_EtaIntercalibration_TotalStat__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_FCal_MC23_NonClosure_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_FCal_MC23_NonClosure_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_Flavor_Composition__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_Flavor_Composition__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_Flavor_Response__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_Flavor_Response__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_InSitu_NonClosure_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_InSitu_NonClosure_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JERUnc_Noise_PreRec_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JERUnc_Noise_PreRec_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JERUnc_Noise_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JERUnc_Noise_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_DataVsMC_MC16_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_DataVsMC_MC16_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_DataVsMC_MC16__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_DataVsMC_MC16__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_10_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_10_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_10__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_10__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_11_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_11_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_11__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_11__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_12restTerm_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_12restTerm_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_12restTerm__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_12restTerm__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_1_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_1_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_2_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_2_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_3_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_3_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_4_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_4_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_5_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_5_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_5__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_5__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_6_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_6_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_6__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_6__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_7_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_7_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_7__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_7__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_8_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_8_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_8__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_8__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_9_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_9_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_9__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JER_EffectiveNP_9__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JESUnc_Noise_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JESUnc_Noise_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JESUnc_VertexingAlg_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_JESUnc_VertexingAlg_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_NNJvtEfficiency__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_NNJvtEfficiency__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_Pileup_OffsetMu__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_Pileup_OffsetMu__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_Pileup_OffsetNPV__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_Pileup_OffsetNPV__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_Pileup_PtTerm__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_Pileup_PtTerm__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_Pileup_RhoTopology__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_Pileup_RhoTopology__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_SingleParticle_HighPt__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_JET_SingleParticle_HighPt__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_jvtEfficiency_FixedEffPt_NOSYS": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_phi": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_BJES_Response__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_BJES_Response__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Detector1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Detector1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Detector2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Detector2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Mixed1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Mixed1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Mixed2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Mixed2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Mixed3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Mixed3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Modelling1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Modelling1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Modelling2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Modelling2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Modelling3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Modelling3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Modelling4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Modelling4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Statistical1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Statistical1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Statistical2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Statistical2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Statistical3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Statistical3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Statistical4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Statistical4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Statistical5__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Statistical5__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Statistical6__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EffectiveNP_Statistical6__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EtaIntercalibration_Modelling__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EtaIntercalibration_Modelling__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EtaIntercalibration_NonClosure_0p2_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EtaIntercalibration_NonClosure_0p2_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EtaIntercalibration_TotalStat__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_EtaIntercalibration_TotalStat__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_FCal_MC23_NonClosure_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_FCal_MC23_NonClosure_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_Flavor_Composition__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_Flavor_Composition__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_Flavor_Response__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_Flavor_Response__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_InSitu_NonClosure_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_InSitu_NonClosure_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JERUnc_Noise_PreRec_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JERUnc_Noise_PreRec_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JERUnc_Noise_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JERUnc_Noise_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_DataVsMC_MC16_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_DataVsMC_MC16_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_DataVsMC_MC16__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_DataVsMC_MC16__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_10_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_10_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_10__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_10__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_11_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_11_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_11__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_11__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_12restTerm_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_12restTerm_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_12restTerm__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_12restTerm__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_1_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_1_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_2_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_2_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_3_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_3_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_4_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_4_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_5_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_5_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_5__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_5__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_6_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_6_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_6__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_6__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_7_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_7_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_7__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_7__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_8_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_8_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_8__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_8__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_9_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_9_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_9__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JER_EffectiveNP_9__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JESUnc_Noise_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JESUnc_Noise_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JESUnc_VertexingAlg_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_JESUnc_VertexingAlg_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_Pileup_OffsetMu__1down": {
+      "max_abs": 0.03125,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_Pileup_OffsetMu__1up": {
+      "max_abs": 0.03125,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_Pileup_OffsetNPV__1down": {
+      "max_abs": 0.015625,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_Pileup_OffsetNPV__1up": {
+      "max_abs": 0.015625,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_Pileup_PtTerm__1down": {
+      "max_abs": 0.03125,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_Pileup_PtTerm__1up": {
+      "max_abs": 0.03125,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_Pileup_RhoTopology__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_Pileup_RhoTopology__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_SingleParticle_HighPt__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_JET_SingleParticle_HighPt__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_pt_NOSYS": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_BJES_Response__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_BJES_Response__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Detector1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Detector1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Detector2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Detector2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Mixed1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Mixed1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Mixed2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Mixed2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Mixed3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Mixed3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Modelling1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Modelling1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Modelling2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Modelling2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Modelling3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Modelling3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Modelling4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Modelling4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Statistical1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Statistical1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Statistical2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Statistical2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Statistical3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Statistical3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Statistical4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Statistical4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Statistical5__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Statistical5__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Statistical6__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EffectiveNP_Statistical6__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EtaIntercalibration_Modelling__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EtaIntercalibration_Modelling__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EtaIntercalibration_NonClosure_0p2_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EtaIntercalibration_NonClosure_0p2_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EtaIntercalibration_TotalStat__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_EtaIntercalibration_TotalStat__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_FCal_MC23_NonClosure_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_FCal_MC23_NonClosure_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_Flavor_Composition__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_Flavor_Composition__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_Flavor_Response__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_Flavor_Response__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_InSitu_NonClosure_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_InSitu_NonClosure_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JERUnc_Noise_PreRec_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JERUnc_Noise_PreRec_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JERUnc_Noise_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JERUnc_Noise_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_DataVsMC_MC16_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_DataVsMC_MC16_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_DataVsMC_MC16__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_DataVsMC_MC16__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_10_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_10_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_10__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_10__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_11_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_11_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_11__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_11__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_12restTerm_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_12restTerm_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_12restTerm__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_12restTerm__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_1_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_1_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_2_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_2_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_3_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_3_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_4_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_4_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_5_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_5_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_5__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_5__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_6_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_6_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_6__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_6__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_7_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_7_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_7__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_7__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_8_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_8_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_8__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_8__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_9_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_9_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_9__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JER_EffectiveNP_9__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JESUnc_Noise_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JESUnc_Noise_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JESUnc_VertexingAlg_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_JESUnc_VertexingAlg_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_Pileup_OffsetMu__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_Pileup_OffsetMu__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_Pileup_OffsetNPV__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_Pileup_OffsetNPV__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_Pileup_PtTerm__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_Pileup_PtTerm__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_Pileup_RhoTopology__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_Pileup_RhoTopology__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_SingleParticle_HighPt__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_JET_SingleParticle_HighPt__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "jet_select_jvt_NOSYS": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "runNumber": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_BJES_Response__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_BJES_Response__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Detector1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Detector1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Detector2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Detector2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Mixed1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Mixed1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Mixed2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Mixed2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Mixed3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Mixed3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Modelling1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Modelling1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Modelling2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Modelling2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Modelling3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Modelling3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Modelling4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Modelling4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Statistical1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Statistical1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Statistical2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Statistical2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Statistical3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Statistical3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Statistical4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Statistical4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Statistical5__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Statistical5__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Statistical6__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EffectiveNP_Statistical6__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EtaIntercalibration_Modelling__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EtaIntercalibration_Modelling__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EtaIntercalibration_NonClosure_0p2_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EtaIntercalibration_NonClosure_0p2_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EtaIntercalibration_TotalStat__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_EtaIntercalibration_TotalStat__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_FCal_MC23_NonClosure_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_FCal_MC23_NonClosure_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_Flavor_Composition__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_Flavor_Composition__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_Flavor_Response__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_Flavor_Response__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_InSitu_NonClosure_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_InSitu_NonClosure_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JERUnc_Noise_PreRec_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JERUnc_Noise_PreRec_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JERUnc_Noise_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JERUnc_Noise_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_DataVsMC_MC16_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_DataVsMC_MC16_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_DataVsMC_MC16__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_DataVsMC_MC16__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_10_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_10_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_10__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_10__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_11_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_11_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_11__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_11__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_12restTerm_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_12restTerm_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_12restTerm__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_12restTerm__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_1_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_1_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_1__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_1__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_2_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_2_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_2__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_2__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_3_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_3_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_3__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_3__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_4_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_4_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_4__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_4__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_5_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_5_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_5__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_5__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_6_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_6_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_6__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_6__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_7_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_7_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_7__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_7__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_8_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_8_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_8__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_8__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_9_PseudoData__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_9_PseudoData__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_9__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JER_EffectiveNP_9__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JESUnc_Noise_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JESUnc_Noise_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JESUnc_VertexingAlg_PreRec__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_JESUnc_VertexingAlg_PreRec__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_NNJvtEfficiency__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_NNJvtEfficiency__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_Pileup_OffsetMu__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_Pileup_OffsetMu__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_Pileup_OffsetNPV__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_Pileup_OffsetNPV__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_Pileup_PtTerm__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_Pileup_PtTerm__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_Pileup_RhoTopology__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_Pileup_RhoTopology__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_SingleParticle_HighPt__1down": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_JET_SingleParticle_HighPt__1up": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "weight_jvt_effSF_FixedEffPt_NOSYS": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    }
+  },
+  "passed": true
+}

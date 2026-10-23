@@ -1,0 +1,213 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -18,7 +18,9 @@
+   SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/pybind11
+   CMAKE_ARGS "-DBUILD_TESTING=OFF -DPYBIND11_NOPYTHON=ON"
+   )
++if(NOT TARGET pybind11::module)
+ FetchContent_MakeAvailable(pybind11)
++endif()
+ 
+ set(THREADS_PREFER_PTHREAD_FLAG ON)
+ find_package(Threads)
+@@ -100,3 +102,6 @@
+   COMPATIBILITY AnyNewerVersion
+   )
+ install(FILES ${CMAKE_CURRENT_BINARY_DIR}/correctionlibConfig.cmake ${CMAKE_CURRENT_BINARY_DIR}/correctionlibConfigVersion.cmake DESTINATION ${PKG_INSTALL}/cmake)
++
++# Optional generic GraphSet extension (ROOT/lwtnn dependencies only for its consumers).
++install(FILES include/correction_graph.h DESTINATION ${PKG_INSTALL}/include)
+--- /dev/null
++++ b/include/correction_graph.h
+@@ -0,0 +1,191 @@
++#pragma once
++#include <correction.h>
++#include <nlohmann/json.hpp>
++#include <Math/Vector4D.h>
++#include <TLorentzVector.h>
++#include <TRandom3.h>
++#include <lwtnn/generic/FastGraph.hh>
++#include <lwtnn/parse_json.hh>
++#include <lwtnn/InputOrder.hh>
++#include <lwtnn/Stack.hh>
++#include <fstream>
++#include <filesystem>
++#include <set>
++#include <functional>
++#include <cmath>
++
++// Generic named-register graph extension. No jet/component/systematic knowledge.
++namespace correction {
++using Json=nlohmann::json;
++struct GraphInstruction {
++ std::string op,mode;
++ std::vector<size_t> in,out;
++ Correction::Ref correction;
++ CompoundCorrection::Ref compound;
++ std::vector<GraphInstruction> yes,no;
++ std::shared_ptr<lwt::generic::FastGraph<double>> network;
++ size_t networkOutput=0;
++ double constant=0;
++ std::function<std::vector<double>(const std::vector<double>&)> graphCall;
++ void run(std::vector<double>& r) const {
++  auto a=[&](size_t i){return r.at(in.at(i));};
++  auto put=[&](size_t i,double x){r.at(out.at(i))=x;};
++  if(op=="constant"){put(0,constant);return;}
++  if(op=="if"){for(const auto& n:(a(0)!=0?yes:no))n.run(r);return;}
++  if(op=="call"||op=="formula"){
++   std::vector<Variable::Type> args;args.reserve(in.size());
++   for(auto i:in)args.emplace_back(r.at(i));
++   put(0,correction?correction->evaluate(args):compound->evaluate(args));return;
++  }
++  if(op=="graph"){
++   std::vector<double> args;for(auto i:in)args.push_back(r.at(i));
++   auto values=graphCall(args);for(size_t i=0;i<values.size();++i)put(i,values[i]);return;
++  }
++  if(op=="cast"){
++   if(mode=="float32")put(0,double(float(a(0))));
++   else if(mode=="int64"){
++    if(!std::isfinite(a(0))||a(0)<-9.22e18||a(0)>9.22e18)throw std::domain_error("int64 conversion out of range");
++    put(0,double(static_cast<long long>(a(0))));
++   }else throw std::logic_error("Invalid cast");
++   return;
++  }
++  if(op=="assert"){if(a(0)==0)throw std::domain_error(mode);return;}
++  if(op=="gaussian"){
++   if(a(0)<=0||a(0)>4294967295.||a(0)!=std::floor(a(0)))throw std::domain_error("TRandom3 requires explicit nonzero uint32 seed");
++   if(!std::isfinite(a(1))||!std::isfinite(a(2))||a(2)<0)throw std::domain_error("Invalid Gaussian parameters");
++   TRandom3 random;random.SetSeed(static_cast<unsigned long>(a(0)));
++   double value;
++   for(size_t count=0;count<1000000;++count){value=random.Gaus(a(1),a(2));if(value>=a(3)){put(0,value);return;}}
++   throw std::runtime_error("Truncated Gaussian exceeded rejection limit");
++  }
++  if(op=="coordinates"){
++   using P4=ROOT::Math::PtEtaPhiMVector;
++   if(mode=="ptetaphim_properties"){
++    P4 p(a(0),a(1),a(2),a(3));put(0,p.E());put(1,p.P());
++   }else if(mode=="ptetaphim_normalize"){
++    P4 p(a(0),a(1),a(2),a(3));put(0,p.Pt());put(1,p.Eta());put(2,p.Phi());put(3,p.M());
++   }else if(mode=="ptetaphim_to_cartesian"){
++    TLorentzVector p;p.SetPtEtaPhiM(a(0),a(1),a(2),a(3));
++    put(0,p.Px());put(1,p.Py());put(2,p.Pz());put(3,p.E());
++   }else if(mode=="cartesian_to_ptetaphim"){
++    P4 p;p.SetPxPyPzE(a(0),a(1),a(2),a(3));
++    put(0,p.Pt());put(1,p.Eta());put(2,p.Phi());put(3,p.M());
++   }else throw std::logic_error("Invalid coordinate conversion");
++   return;
++  }
++  if(op=="inference"){
++   std::vector<double> f;for(auto i:in)f.push_back(r.at(i));
++   std::vector<lwt::VectorX<double>> scalars{lwt::build_vector(f)};
++   put(0,network->compute(scalars)(networkOutput));return;
++  }
++  throw std::logic_error("Unknown graph instruction");
++ }
++};
++struct GraphProgram {
++ std::vector<std::string> inputs;
++ std::map<std::string,size_t> registers;
++ std::vector<GraphInstruction> code;
++ std::vector<size_t> outputs;
++ std::vector<double> evaluate(const std::vector<double>& row)const{
++  if(row.size()!=inputs.size())throw std::invalid_argument("Graph input length mismatch");
++  for(double x:row)if(!std::isfinite(x))throw std::domain_error("Graph inputs must be finite");
++  std::vector<double> r(registers.size(),0.);
++  for(size_t i=0;i<row.size();++i)r[i]=row[i];
++  for(const auto& instruction:code)instruction.run(r);
++  std::vector<double> result;for(auto i:outputs){double x=r.at(i);if(!std::isfinite(x))throw std::domain_error("Nonfinite graph output");result.push_back(x);}return result;
++ }
++};
++class GraphSet {
++ std::unique_ptr<CorrectionSet> tables;
++ std::map<std::string,GraphProgram> graphs;
++ std::filesystem::path directory;
++ size_t ref(GraphProgram& g,const std::string& s,bool define=false){
++  auto found=g.registers.find(s);if(found!=g.registers.end())return found->second;
++  if(!define)throw std::runtime_error("Undefined register: "+s);
++  size_t i=g.registers.size();g.registers[s]=i;return i;
++ }
++ std::vector<GraphInstruction> parse(const Json& block,GraphProgram& g){
++  std::vector<GraphInstruction> result;
++  for(const auto& j:block){
++   GraphInstruction n;n.op=j.at("op");n.mode=j.value("mode",std::string());
++   for(const auto& s:j.value("inputs",std::vector<std::string>{}))n.in.push_back(ref(g,s));
++   for(const auto& s:j.value("outputs",std::vector<std::string>{}))n.out.push_back(ref(g,s,true));
++   auto arity=[&](size_t a,size_t b){if(n.in.size()!=a||n.out.size()!=b)throw std::runtime_error("Wrong primitive arity: "+n.op);};
++   if(n.op=="constant"){arity(0,1);n.constant=j.at("value");}
++   else if(n.op=="call"){
++    if(n.out.size()!=1)throw std::runtime_error("Calls are scalar");
++    std::string name=j.at("correction");
++    if(j.value("compound",false)){n.compound=tables->compound().at(name);if(n.in.size()!=n.compound->inputs().size())throw std::runtime_error("Call arity");}
++    else{n.correction=tables->at(name);if(n.in.size()!=n.correction->inputs().size())throw std::runtime_error("Call arity");}
++   }else if(n.op=="formula"){
++    if(n.in.size()>4||n.out.size()!=1)throw std::runtime_error("Formula arity");
++    Json vars=Json::array(),names=Json::array();
++    for(size_t i=0;i<n.in.size();++i){std::string name="v"+std::to_string(i);vars.push_back({{"name",name},{"type","real"}});names.push_back(name);}
++    Json corr={{"name","expression"},{"version",1},{"inputs",vars},{"output",{{"name","result"},{"type","real"}}},{"data",{{"nodetype","formula"},{"expression",j.at("expression")},{"parser","TFormula"},{"variables",names}}}};
++    Json set={{"schema_version",2},{"corrections",Json::array({corr})}};
++    n.correction=CorrectionSet::from_string(set.dump().c_str())->at("expression");
++   }else if(n.op=="graph"){
++    const auto* target=&graphs.at(j.at("graph").get<std::string>());
++    if(n.in.size()!=target->inputs.size()||n.out.size()!=target->outputs.size())throw std::runtime_error("Graph call arity");
++    n.graphCall=[target](const std::vector<double>& row){return target->evaluate(row);};
++   }else if(n.op=="if"){
++    arity(1,0);
++    // Both branches must define the same new registers before they can be read outside.
++    auto before=g.registers;n.yes=parse(j.at("then"),g);auto after=g.registers;
++    g.registers=before;n.no=parse(j.at("else"),g);
++    if(g.registers!=after)throw std::runtime_error("Branch register definitions must match");
++   }else if(n.op=="cast"){arity(1,1);if(n.mode!="float32"&&n.mode!="int64")throw std::runtime_error("Unknown cast");}
++   else if(n.op=="assert"){arity(1,0);n.mode=j.at("message");}
++   else if(n.op=="gaussian"){arity(4,1);if(j.at("algorithm")!="ROOT-TRandom3-Gaus")throw std::runtime_error("Unsupported PRNG");}
++   else if(n.op=="coordinates"){
++    arity(4,n.mode=="ptetaphim_properties"?2:4);
++    if(n.mode!="ptetaphim_properties"&&n.mode!="ptetaphim_normalize"&&n.mode!="ptetaphim_to_cartesian"&&n.mode!="cartesian_to_ptetaphim")throw std::runtime_error("Unsupported coordinates");
++   }else if(n.op=="inference"){
++    if(n.out.size()!=1)throw std::runtime_error("Inference output arity");
++    auto path=std::filesystem::path(j.at("model").get<std::string>());
++    if(path.is_absolute()||path.string().find("..")!=std::string::npos)throw std::runtime_error("Model must be bundle-relative");
++    std::ifstream input(directory/path);if(!input)throw std::runtime_error("Missing inference model");
++    auto cfg=lwt::parse_json_graph(input);lwt::InputOrder order;
++    auto features=j.at("features").get<std::vector<std::string>>();
++    if(features.size()!=n.in.size())throw std::runtime_error("Inference feature count");
++    order.scalar.emplace_back(j.at("input_node").get<std::string>(),features);
++    n.network=std::make_shared<lwt::generic::FastGraph<double>>(cfg,order);n.networkOutput=j.at("output_index");
++   }else throw std::runtime_error("Unknown graph primitive: "+n.op);
++   result.push_back(std::move(n));
++  }return result;
++ }
++public:
++ GraphSet(const std::string& path){
++  directory=std::filesystem::path(path).parent_path();std::ifstream input(path);if(!input)throw std::runtime_error("Missing graph bundle");Json j;input>>j;
++  if(j.at("graph_schema_version")!=1||j.at("requires")!="correctionlib-2.7.0+graph-1")throw std::runtime_error("Unsupported graph evaluator requirement");
++  auto tablePath=std::filesystem::path(j.at("correction_set_file").get<std::string>());
++  if(tablePath.is_absolute()||tablePath.string().find("..")!=std::string::npos)throw std::runtime_error("Tables must be bundle-relative");
++  tables=CorrectionSet::from_file((directory/tablePath).string());
++  std::set<std::string> loading;
++  std::function<void(const std::string&)> load;
++  std::function<void(const Json&)> dependencies;
++  dependencies=[&](const Json& block){
++   for(const auto& step:block){
++    if(step.at("op")=="graph")load(step.at("graph").get<std::string>());
++    if(step.at("op")=="if"){dependencies(step.at("then"));dependencies(step.at("else"));}
++   }
++  };
++  load=[&](const std::string& name){
++   if(graphs.count(name))return;
++   if(!loading.insert(name).second)throw std::runtime_error("Cyclic graph call: "+name);
++   const auto& program=j.at("graphs").at(name);dependencies(program.at("steps"));
++   GraphProgram g;g.inputs=program.at("inputs").get<std::vector<std::string>>();
++   for(const auto& s:g.inputs){if(g.registers.count(s))throw std::runtime_error("Duplicate input");ref(g,s,true);}
++   g.code=parse(program.at("steps"),g);
++   for(const auto& s:program.at("outputs"))g.outputs.push_back(ref(g,s.get<std::string>()));
++   graphs.emplace(name,std::move(g));loading.erase(name);
++  };
++  for(auto it=j.at("graphs").begin();it!=j.at("graphs").end();++it)load(it.key());
++ }
++ std::vector<std::string> names()const{std::vector<std::string> n;for(auto& [k,v]:graphs)n.push_back(k);return n;}
++ std::vector<double> evaluate(const std::string& name,const std::vector<double>& row)const{return graphs.at(name).evaluate(row);}
++ std::vector<std::vector<double>> batch(const std::string& name,const std::vector<std::vector<double>>& rows)const{
++  const auto& g=graphs.at(name);std::vector<std::vector<double>> out;out.reserve(rows.size());for(const auto& row:rows)out.push_back(g.evaluate(row));return out;
++ }
++};
++}

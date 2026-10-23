@@ -1,0 +1,85 @@
+[  0%] Built target atlas_tests
+[  1%] Built target JetUncertaintiesDictDictGen
+[  1%] Built target JetCalibToolsDictDictGen
+[  2%] Built target JetJvtEfficiencyDictDictGen
+[  3%] Built target JetUncertaintiesHeaderInstall
+[  4%] Building CXX object CorrectionLibSmoke/CMakeFiles/CorrectionLibSmoke.dir/src/CorrectionLibSmoke.cxx.o
+[  5%] Built target JetCalibToolsHeaderInstall
+[  6%] Built target JetJvtEfficiencyHeaderInstall
+[  9%] Built target JetCalibToolsDataInstall
+[ 12%] Built target JetCalibToolsPythonInstall
+[ 13%] Built target JetCalibToolsPyCompile
+[ 14%] Built target JetJvtEfficiencyPyCompile
+[ 15%] Running JetJvtEfficiencyPythonInstall post-command
+[ 21%] Built target JetUncertaintiesGenericInstall
+[ 22%] Built /home/gwatts/atlas/correctionlib_tests/build-athena/x86_64-el9-gcc15-opt/lib/CorrectionLibAthenaOverlay.rootmap
+/home/gwatts/atlas/correctionlib_tests/athena-overlay/CorrectionLibSmoke/src/CorrectionLibSmoke.cxx:12:13: error: 'StatusCode CorrectionLibSmoke::execute()' marked 'override', but does not override
+   12 |  StatusCode execute()override{return StatusCode::SUCCESS;}
+      |             ^~~~~~~
+[ 22%] Built target CorrectionLibAthenaOverlayRootMapMerge
+In file included from /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/memory:80,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/include/Gaudi/GaudiKernel/DataObject.h:16,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Control/AthenaKernel/AthenaKernel/DataBucketBase.h:16,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Control/AthenaKernel/AthenaKernel/DataBucket.h:10,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Control/AthenaKernel/AthenaKernel/StorableConversions.h:14,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Control/AthenaKernel/AthenaKernel/DataObjectSharedPtr.h:17,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Control/AthenaKernel/AthenaKernel/IProxyDict.h:14,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Control/StoreGate/StoreGate/VarHandleKey.h:17,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Control/StoreGate/StoreGate/VarHandleBase.h:19,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Control/AthenaBaseComps/AthenaBaseComps/HandleClassifier.h:18,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Control/AthenaBaseComps/AthenaBaseComps/AthCommonDataStore.h:38,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Control/AthenaBaseComps/AthenaBaseComps/AthCommonAlgorithm.h:19,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Control/AthenaBaseComps/AthenaBaseComps/AthAlgorithm.h:12,
+                 from /home/gwatts/atlas/correctionlib_tests/athena-overlay/CorrectionLibSmoke/src/CorrectionLibSmoke.cxx:1:
+/cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/unique_ptr.h: In instantiation of 'constexpr std::__detail::__unique_ptr_t<_Tp> std::make_unique(_Args&& ...) [with _Tp = CorrectionLibSmoke; _Args = {const __cxx11::basic_string<char, char_traits<char>, allocator<char> >, ISvcLocator*}; __detail::__unique_ptr_t<_Tp> = __detail::__unique_ptr_t<CorrectionLibSmoke>]':
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/include/Gaudi/Gaudi/Details/PluginServiceDetailsV2.h:219:39:   required from 'typename Gaudi::PluginService::v2::Factory<R(Args ...)>::ReturnType Gaudi::PluginService::v2::Details::DefaultFactory<T, Gaudi::PluginService::v2::Factory<R(Args ...)> >::operator()(Args ...) [with T = CorrectionLibSmoke; R = IAlgorithm*; Args = {const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, ISvcLocator*}; typename Gaudi::PluginService::v2::Factory<R(Args ...)>::ReturnType = std::unique_ptr<IAlgorithm, std::default_delete<IAlgorithm> >]'
+  219 |             return std::make_unique<T>( std::move( args )... );
+      |                    ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/invoke.h:63:36:   required from 'constexpr _Res std::__invoke_impl(__invoke_other, _Fn&&, _Args&& ...) [with _Res = unique_ptr<IAlgorithm, default_delete<IAlgorithm> >; _Fn = Gaudi::PluginService::v2::Details::DefaultFactory<CorrectionLibSmoke, Gaudi::PluginService::v2::Factory<IAlgorithm*(const __cxx11::basic_string<char>&, ISvcLocator*)> >&; _Args = {const __cxx11::basic_string<char, char_traits<char>, allocator<char> >&, ISvcLocator*}]'
+   63 |     { return std::forward<_Fn>(__f)(std::forward<_Args>(__args)...); }
+      |              ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/invoke.h:116:35:   required from 'constexpr std::enable_if_t<((bool)is_invocable_r_v<_Res, _Callable, _Args ...>), _Res> std::__invoke_r(_Callable&&, _Args&& ...) [with _Res = unique_ptr<IAlgorithm, default_delete<IAlgorithm> >; _Callable = Gaudi::PluginService::v2::Details::DefaultFactory<CorrectionLibSmoke, Gaudi::PluginService::v2::Factory<IAlgorithm*(const __cxx11::basic_string<char>&, ISvcLocator*)> >&; _Args = {const __cxx11::basic_string<char, char_traits<char>, allocator<char> >&, ISvcLocator*}; enable_if_t<((bool)is_invocable_r_v<_Res, _Callable, _Args ...>), _Res> = unique_ptr<IAlgorithm, default_delete<IAlgorithm> >]'
+  116 |         return std::__invoke_impl<__type>(__tag{},
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+  117 |                                           std::forward<_Callable>(__fn),
+      |                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  118 |                                           std::forward<_Args>(__args)...);
+      |                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/std_function.h:292:30:   required from 'static _Res std::_Function_handler<_Res(_ArgTypes ...), _Functor>::_M_invoke(const std::_Any_data&, _ArgTypes&& ...) [with _Res = std::unique_ptr<IAlgorithm, std::default_delete<IAlgorithm> >; _Functor = Gaudi::PluginService::v2::Details::DefaultFactory<CorrectionLibSmoke, Gaudi::PluginService::v2::Factory<IAlgorithm*(const std::__cxx11::basic_string<char>&, ISvcLocator*)> >; _ArgTypes = {const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, ISvcLocator*}]'
+  292 |         return std::__invoke_r<_Res>(*_Base::_M_get_pointer(__functor),
+      |                ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  293 |                                      std::forward<_ArgTypes>(__args)...);
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/std_function.h:453:21:   required from 'std::function<_Res(_ArgTypes ...)>::function(_Functor&&) [with _Functor = Gaudi::PluginService::v2::Details::DefaultFactory<CorrectionLibSmoke, Gaudi::PluginService::v2::Factory<IAlgorithm*(const std::__cxx11::basic_string<char>&, ISvcLocator*)> >; _Constraints = void; _Res = std::unique_ptr<IAlgorithm, std::default_delete<IAlgorithm> >; _ArgTypes = {const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, ISvcLocator*}]'
+  453 |               _M_invoker = &_My_handler::_M_invoke;
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~
+/home/gwatts/atlas/correctionlib_tests/athena-overlay/CorrectionLibSmoke/src/CorrectionLibSmoke.cxx:14:1:   required from here
+   14 | DECLARE_COMPONENT(CorrectionLibSmoke)
+      | ^~~~~~~~~~~~~~~~~
+/cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/unique_ptr.h:1085:30: error: invalid new-expression of abstract class type 'CorrectionLibSmoke'
+ 1085 |     { return unique_ptr<_Tp>(new _Tp(std::forward<_Args>(__args)...)); }
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/gwatts/atlas/correctionlib_tests/athena-overlay/CorrectionLibSmoke/src/CorrectionLibSmoke.cxx:3:7: note:   because the following virtual functions are pure within 'CorrectionLibSmoke':
+    3 | class CorrectionLibSmoke final:public AthAlgorithm{
+      |       ^~~~~~~~~~~~~~~~~~
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Control/AthenaBaseComps/AthenaBaseComps/AthAlgorithm.h:37:22: note:     'virtual StatusCode AthAlgorithm::execute(const EventContext&)'
+   37 |   virtual StatusCode execute(const EventContext& ctx) = 0;
+      |                      ^~~~~~~
+[ 23%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/JetUncertaintiesTool.cxx.o
+gmake[2]: *** [CorrectionLibSmoke/CMakeFiles/CorrectionLibSmoke.dir/build.make:79: CorrectionLibSmoke/CMakeFiles/CorrectionLibSmoke.dir/src/CorrectionLibSmoke.cxx.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:595: CorrectionLibSmoke/CMakeFiles/CorrectionLibSmoke.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 24%] Built target JetJvtEfficiencyPythonInstall
+In file included from /home/gwatts/atlas/correctionlib_tests/src/adapter_support.hxx:2,
+                 from /home/gwatts/atlas/correctionlib_tests/athena-overlay/JetUncertainties/Root/JetUncertaintiesTool.cxx:1:
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx: In member function 'std::vector<std::vector<double> > Nominal::batch(const std::vector<std::vector<double> >&) const':
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx:42:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   42 |   for(const auto& r:rows)out.push_back(evaluate(r));return out;
+      |   ^~~
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx:42:53: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   42 |   for(const auto& r:rows)out.push_back(evaluate(r));return out;
+      |                                                     ^~~~~~
+[ 25%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetUncertaintiesLib.so
+Detaching debug info of libJetUncertaintiesLib.so into libJetUncertaintiesLib.so.dbg
+[ 44%] Built target JetUncertaintiesLib
+gmake: *** [Makefile:156: all] Error 2

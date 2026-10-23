@@ -1,0 +1,10 @@
+{
+  "mode": "extra-inputs",
+  "iteration": 4,
+  "wall_seconds": 2.2332579139983864,
+  "command": [
+    "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+    "/home/gwatts/atlas/correctionlib_tests/c-nice/plot-stored-jets.py",
+    "--read-calibration-inputs"
+  ]
+}

@@ -1,0 +1,349 @@
+Using Athena/25.0.76 [cmake] with platform x86_64-el9-gcc15-opt
+	at /cvmfs/atlas.cern.ch/repo/sw/software/25.0
+Info: CERN ROOT Certificates may not be installed on machine
+      if you have SSL issues, install it https://cern.ch/fudpr
+      or use a container setupATLAS -c <container>
+Unchanged: COOL_ORA_ENABLE_ADAPTIVE_OPT=Y
+-- The CXX compiler identification is GNU 15.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Athena: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/cmake/AthenaConfig.cmake (found suitable exact version "25.0.76")
+-- Looking for a CUDA compiler
+-- Looking for a CUDA compiler - NOTFOUND
+-- Looking for a HIP compiler
+-- Looking for a HIP compiler - NOTFOUND
+-- Setting up LCG release "LCG_110_ATLAS_5" for platform: x86_64-el9-gcc15-opt
+-- Setting up LCG release using: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/LCG_externals_x86_64-el9-gcc15-opt.txt
+-- Setting up LCG release using: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/LCG_generators_x86_64-el9-gcc15-opt.txt
+-- Found VDT: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/vdt/0.4.4/x86_64-el9-gcc15-opt/include
+-- Found ACTS version 48.1.0 commit std::nullopt
+-- Found nlohmann_json: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/jsonmcpp/3.12.0/x86_64-el9-gcc15-opt/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found suitable exact version "3.12.0")
+-- Found Vdt: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/vdt/0.4.4/x86_64-el9-gcc15-opt/include (found version "0.4")
+-- Found GeoModelCore: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/cmake/GeoModelCore (found suitable exact version "6.32.0")
+-- Found GeoModelIO: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/cmake/GeoModelIO (found suitable exact version "6.32.0")
+-- Found vecmem: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/cmake/vecmem-1.28.0/vecmem-config.cmake (found suitable exact version "1.28.0")
+-- Performing Test VECMEM_SUPPORT_POSIX_ATOMIC_REF
+-- Performing Test VECMEM_SUPPORT_POSIX_ATOMIC_REF - Success
+-- Looking for a SYCL compiler
+-- Looking for a SYCL compiler - NOTFOUND
+-- Found actsvg: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/cmake/actsvg-0.4.51/actsvg-config.cmake (found suitable exact version "0.4.51")
+-- Found vecmem: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/cmake/vecmem-1.28.0/vecmem-config.cmake (found version "1.28.0")
+-- Found nlohmann_json: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/jsonmcpp/3.12.0/x86_64-el9-gcc15-opt/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found version "3.12.0")
+-- Found detray: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/cmake/detray-0.111.0/detray-config.cmake (found suitable exact version "0.111.0")
+-- loading components:
+--   Core
+--   Fatras
+--   PluginGeoModel
+--   PluginJson
+--   PluginGnn
+--   PluginDetray
+--   PluginCovfie
+--   PluginRoot
+-- Found libcudacxx: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/cmake/libcudacxx/libcudacxx-config.cmake (found suitable version "2.7.0.0", minimum required is "2.7.0.0")
+-- Found Thrust: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/cmake/thrust/thrust-config.cmake (found version "2.7.0.0")
+-- Found detray: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/cmake/detray-0.111.0/detray-config.cmake (found version "0.111.0")
+-- Found traccc: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/cmake/traccc-1.6.0/traccc-config.cmake (found version "1.6.0")
+-- Found Freetype: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/freetype/2.14.3/x86_64-el9-gcc15-opt/lib/libfreetype.so (found version "2.14.3")
+-- Found GTest: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/cmake/GTest/GTestConfig.cmake (found version "1.17.0")
+-- Could NOT find Geant4 (found version "10.6.3"), checked the following files:
+    /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/Geant4-10.6.3/Geant4Config.cmake (version 10.6.3)
+    Reason given by package: Geant4 could not be found because dependency EXPAT could not be found.
+
+-- Found Python: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/Python/3.13.11/x86_64-el9-gcc15-opt/bin/python3.13 (found version "3.13.11") found components: Interpreter
+-- Setting up the tdaq-common externals...
+-- Found tdaq-common: /cvmfs/atlas.cern.ch/repo/sw/tdaq/offline/tdaq-common/tdaq-common-14-00-00/installed/include
+-- Found attrs: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/attrs/25.1.0/x86_64-el9-gcc15-opt/lib/python3.13/site-packages
+-- Found pydantic: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/pydantic/2.13.3/x86_64-el9-gcc15-opt/lib/python3.13/site-packages
+-- Found python_dateutil: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/python_dateutil/2.9.0.post0/x86_64-el9-gcc15-opt/lib/python3.13/site-packages
+-- Found requests: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/requests/2.32.3/x86_64-el9-gcc15-opt/lib/python3.13/site-packages
+-- Found typing_extensions: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/typing_extensions/4.15.0/x86_64-el9-gcc15-opt/lib/python3.13/site-packages
+-- Found urllib3: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/urllib3/2.7.0/x86_64-el9-gcc15-opt/lib/python3.13/site-packages
+-- Found chai: /cvmfs/atlas.cern.ch/repo/sw/tdaq/offline/tdaq-common/tdaq-common-14-00-00/installed/external/x86_64-el9-gcc15-opt/lib/cmake/chai/chaiConfig.cmake
+-- Found AthenaExternals: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/cmake/AthenaExternalsConfig.cmake (found suitable exact version "25.0.76")
+-- Setting ATLAS specific build flags
+-- Found checker_gccplugins library under: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/libchecker_gccplugins.so
+-- Enabling Python code checker: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/bin/flake8_atlas
+-- Setting up LCG release "LCG_110_ATLAS_5" for platform: x86_64-el9-gcc15-opt
+-- Found TBB: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/tbb/2022.2.0/x86_64-el9-gcc15-opt (found version "2022.2")
+-- Found cppgsl: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/cppgsl/4.2.0/x86_64-el9-gcc15-opt/include
+-- Found AIDA: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/AIDA/3.2.1/x86_64-el9-gcc15-opt/src/cpp
+-- Found HepPDT: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/HepPDT/2.06.01/x86_64-el9-gcc15-opt/include
+-- Found CppUnit: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/CppUnit/1.15.1/x86_64-el9-gcc15-opt/include
+-- Found libunwind: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/libunwind/1.5.0/x86_64-el9-gcc15-opt/include
+-- Found ROOT: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/ROOT/6.40.02/x86_64-el9-gcc15-opt/cmake (found version 6.40.02)
+-- Found UUID: /usr/include
+--   Import target: UUID::uuid
+-- Found Threads: TRUE
+-- Found Rangev3: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/rangev3/0.12.0/x86_64-el9-gcc15-opt/include
+--   Import target: Rangev3::rangev3
+-- Found XercesC: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/XercesC/3.3.0/x86_64-el9-gcc15-opt/lib/libxerces-c.so (found version "3.3.0")
+-- Could NOT find zstd (missing: zstd_INCLUDE_DIR zstd_LIBRARY) (found version "")
+-- Found Gaudi: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/cmake/Gaudi (found version 41.0)
+-- Configuring ATLAS project with name "CorrectionLibAthenaOverlay" and version "1.0.0"
+-- Using build type: RelWithDebInfo
+-- Using platform name: x86_64-el9-gcc15-opt
+-- Cleaning stale files from build area
+-- Unit tests will be built by default
+-- Found 3 package(s)
+-- Could NOT find Geant4 (found version "10.6.3"), checked the following files:
+    /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/Geant4-10.6.3/Geant4Config.cmake (version 10.6.3)
+    Reason given by package: Geant4 could not be found because dependency EXPAT could not be found.
+
+CMake Warning (author) at /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/Geant4-10.6.3/Modules/FindTBB.cmake:109 (SET):
+  implicitly converting 'DOC' to 'STRING' type.
+Call Stack (most recent call first):
+  /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/cmake/modules/FindROOT.cmake:27 (find_package)
+  /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/cmake/PreConfig.cmake:76 (find_package)
+  /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/cmake/AthenaConfig.cmake:62 (include)
+  /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/cmake/modules/AtlasFunctions.cmake:284 (find_package)
+  CMakeLists.txt:4 (atlas_project)
+This warning is for project developers.  Use -Wno-author to suppress it.
+
+-- Considering package 1 / 3
+-- No package filtering rules read
+-- Configuring the build of package: JetCalibTools
+-- Found lwtnn: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/include
+-- Found Eigen: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/eigen/3.4.1/x86_64-el9-gcc15-opt/include/eigen3
+-- Found onnxruntime: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/include
+-- Configuring the build of package: JetJvtEfficiency
+-- Configuring the build of package: JetUncertainties
+-- Number of packages configured: 3
+-- Time for package configuration: 3 second(s)
+-- Generated file: /home/gwatts/atlas/correctionlib_tests/build-athena/x86_64-el9-gcc15-opt/packages.txt
+-- Could NOT find Geant4 (found version "10.6.3"), checked the following files:
+    /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/Geant4-10.6.3/Geant4Config.cmake (version 10.6.3)
+    Reason given by package: Geant4 could not be found because dependency EXPAT could not be found.
+
+-- Including the packages from project Athena - 25.0.76...
+-- Including the packages from project AthenaExternals - 25.0.76...
+-- Generated file: /home/gwatts/atlas/correctionlib_tests/build-athena/x86_64-el9-gcc15-opt/compilers.txt
+-- Generated file: /home/gwatts/atlas/correctionlib_tests/build-athena/x86_64-el9-gcc15-opt/ReleaseData
+-- Configuring done (122.0s)
+-- Generating done (3.0s)
+-- Build files have been written to: /home/gwatts/atlas/correctionlib_tests/build-athena
+[  0%] Built target atlas_tests
+[  0%] Generating JetUncertaintiesDictReflexDict.cxx
+[  1%] Generating JetJvtEfficiencyDictReflexDict.cxx
+[  1%] Built target JetJvtEfficiencyDictDictGen
+[  1%] Built target JetUncertaintiesDictDictGen
+[  3%] Generating ../x86_64-el9-gcc15-opt/include/JetUncertainties
+[  3%] Generating ../x86_64-el9-gcc15-opt/include/JetCalibTools
+[  3%] Built target JetCalibToolsHeaderInstall
+[  3%] Built target JetUncertaintiesHeaderInstall
+[  4%] Generating ../x86_64-el9-gcc15-opt/data/JetCalibTools/MC2MC_exceptions_DSID.json
+[  5%] Generating ../x86_64-el9-gcc15-opt/include/JetJvtEfficiency
+[  5%] Generating ../x86_64-el9-gcc15-opt/data/JetCalibTools/MC2MC_showerRemap.json
+[  5%] Built target JetJvtEfficiencyHeaderInstall
+[  5%] Running JetCalibToolsPythonInstall post-command
+[  6%] Generating ../x86_64-el9-gcc15-opt/data/JetCalibTools/calibConfigExample.yaml
+[  7%] Generating ../x86_64-el9-gcc15-opt/data/JetCalibTools/calibConfigExample_largeR.yaml
+[  7%] Built target JetCalibToolsDataInstall
+[  8%] Compiling python modules
+[  9%] Generating JetCalibToolsDictReflexDict.cxx
+[  9%] Built target JetCalibToolsPyCompile
+[  9%] Compiling python modules
+[  9%] Built target JetJvtEfficiencyPyCompile
+[  9%] Running JetJvtEfficiencyPythonInstall post-command
+[ 10%] Generating ../x86_64-el9-gcc15-opt/python/JetJvtEfficiency/JetJvtEfficiencyToolConfig.py
+[ 10%] Generating ../x86_64-el9-gcc15-opt/python/JetCalibTools/JetCalibStepsConfig.py
+[ 11%] Generating ../x86_64-el9-gcc15-opt/python/JetJvtEfficiency/__init__.py
+[ 12%] Generating ../x86_64-el9-gcc15-opt/python/JetCalibTools/JetCalibToolsCfg.py
+[ 12%] Built target JetJvtEfficiencyPythonInstall
+[ 13%] Generating ../x86_64-el9-gcc15-opt/python/JetCalibTools/JetCalibToolsConfig.py
+[ 14%] Generating ../x86_64-el9-gcc15-opt/share/JetUncertainties/JES_2011
+[ 15%] Generating ../x86_64-el9-gcc15-opt/python/JetCalibTools/JetResponseToolConfig.py
+[ 16%] Generating ../x86_64-el9-gcc15-opt/share/JetUncertainties/JES_2012
+[ 16%] Built target JetCalibToolsPythonInstall
+[ 17%] Generating ../x86_64-el9-gcc15-opt/share/JetUncertainties/JES_2015
+[ 17%] Generating ../x86_64-el9-gcc15-opt/share/JetUncertainties/JES_2016
+[ 18%] Generating ../x86_64-el9-gcc15-opt/share/JetUncertainties/TLA_2015
+[ 19%] Generating ../x86_64-el9-gcc15-opt/share/JetUncertainties/UJ_2012
+[ 20%] Generating ../x86_64-el9-gcc15-opt/share/JetUncertainties/UJ_2015
+[ 20%] Generating ../x86_64-el9-gcc15-opt/share/JetUncertainties/UJ_2016
+[ 21%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/ClosebyUncertaintyComponent.cxx.o
+[ 22%] Generating ../x86_64-el9-gcc15-opt/share/JetUncertainties/analysisInputs
+[ 22%] Built target JetUncertaintiesGenericInstall
+[ 23%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/BcidOffsetCorrection.cxx.o
+[ 23%] Built target JetCalibToolsDictDictGen
+[ 23%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/EtaJESCorrection.cxx.o
+[ 23%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/CombinedMassUncertaintyComponent.cxx.o
+[ 24%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/Generic4VecCorrection.cxx.o
+[ 25%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/GlobalLargeRDNNCalibration.cxx.o
+[ 26%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/ConfigHelper.cxx.o
+[ 27%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/CorrelationMatrix.cxx.o
+[ 28%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/GlobalNNCalibration.cxx.o
+[ 29%] Built /home/gwatts/atlas/correctionlib_tests/build-athena/x86_64-el9-gcc15-opt/lib/CorrectionLibAthenaOverlay.rootmap
+[ 29%] Built target CorrectionLibAthenaOverlayRootMapMerge
+[ 29%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/GlobalSequentialCorrection.cxx.o
+[ 30%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/ELogMassEtaUncertaintyComponent.cxx.o
+[ 30%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/ELogMassUncertaintyComponent.cxx.o
+[ 31%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/InsituDataCorrection.cxx.o
+[ 32%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/FFJetSmearingTool.cxx.o
+[ 33%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/JMSCorrection.cxx.o
+[ 34%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/JetCalibUtils.cxx.o
+[ 34%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/JetCalibrationStep.cxx.o
+[ 35%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/FlavourUncertaintyComponent.cxx.o
+[ 36%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/JetCalibrationTool.cxx.o
+[ 37%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/JetPileupCorrection.cxx.o
+In file included from /home/gwatts/atlas/correctionlib_tests/src/adapter_support.hxx:2,
+                 from /home/gwatts/atlas/correctionlib_tests/athena-overlay/JetCalibTools/Root/JetCalibrationTool.cxx:1:
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx: In member function 'std::vector<std::vector<double> > Nominal::batch(const std::vector<std::vector<double> >&) const':
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx:41:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   41 |   for(const auto& r:rows)out.push_back(evaluate(r));return out;
+      |   ^~~
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx:41:53: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   41 |   for(const auto& r:rows)out.push_back(evaluate(r));return out;
+      |                                                     ^~~~~~
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkEvent/TrkParametersBase/TrkParametersBase/CurvilinearParametersT.h:158,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkEvent/TrkNeutralParameters/TrkNeutralParameters/NeutralParameters.h:12,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkEvent/VxVertex/VxVertex/VxTrackAtVertex.h:35,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Event/xAOD/xAODTracking/xAODTracking/versions/Vertex_v1.h:21,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Event/xAOD/xAODTracking/xAODTracking/Vertex.h:12,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Event/xAOD/xAODTracking/xAODTracking/VertexContainer.h:9,
+                 from /home/gwatts/atlas/correctionlib_tests/athena-overlay/JetCalibTools/JetCalibTools/JetCalibrationTool.h:23,
+                 from /home/gwatts/atlas/correctionlib_tests/athena-overlay/JetCalibTools/Root/JetCalibrationTool.cxx:13:
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkEvent/TrkParametersBase/TrkParametersBase/CurvilinearParametersT.icc: In constructor 'Trk::CurvilinearParametersT<DIM, T, S>::CurvilinearParametersT(const Amg::Vector3D&, const Amg::Vector3D&, double, std::optional<Eigen::Matrix<double, DIM, DIM, 0, DIM, DIM> >, unsigned int)':
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkEvent/TrkParametersBase/TrkParametersBase/CurvilinearParametersT.icc:97:38: error: 'const Amg::Vector3D' {aka 'const class Eigen::Matrix<double, 3, 1>'} has no member named 'phi' [-Wtemplate-body]
+   97 |   this->m_parameters[Trk::phi] = mom.phi();
+      |                                      ^~~
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkEvent/TrkParametersBase/TrkParametersBase/CurvilinearParametersT.icc:98:40: error: 'const Amg::Vector3D' {aka 'const class Eigen::Matrix<double, 3, 1>'} has no member named 'theta' [-Wtemplate-body]
+   98 |   this->m_parameters[Trk::theta] = mom.theta();
+      |                                        ^~~~~
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkEvent/TrkParametersBase/TrkParametersBase/CurvilinearParametersT.icc:104:50: error: 'const Amg::Vector3D' {aka 'const class Eigen::Matrix<double, 3, 1>'} has no member named 'mag'; did you mean 'imag'? [-Wtemplate-body]
+  104 |   this->m_parameters[Trk::qOverP] = charge / mom.mag();
+      |                                                  ^~~
+      |                                                  imag
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/ConeBounds.h:172,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/ConeSurface.h:15,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkEvent/TrkNeutralParameters/TrkNeutralParameters/NeutralParameters.h:14:
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/ConeBounds.icc: In member function 'bool Trk::ConeBounds::inside(const Amg::Vector3D&, double, double) const':
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/ConeBounds.icc:39:25: error: 'const Amg::Vector3D' {aka 'const class Eigen::Matrix<double, 3, 1>'} has no member named 'perp'
+   39 |     Amg::Vector2D(glopo.perp() * glopo.phi(), glopo.z()), tol1, tol2);
+      |                         ^~~~
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/ConeBounds.icc:39:40: error: 'const Amg::Vector3D' {aka 'const class Eigen::Matrix<double, 3, 1>'} has no member named 'phi'
+   39 |     Amg::Vector2D(glopo.perp() * glopo.phi(), glopo.z()), tol1, tol2);
+      |                                        ^~~
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/ConeBounds.icc: In member function 'bool Trk::ConeBounds::inside(const Amg::Vector3D&, const Trk::BoundaryCheck&) const':
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/ConeBounds.icc:46:37: error: 'const Amg::Vector3D' {aka 'const class Eigen::Matrix<double, 3, 1>'} has no member named 'perp'
+   46 |   return inside(Amg::Vector2D(glopo.perp() * glopo.phi(), glopo.z()),
+      |                                     ^~~~
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/ConeBounds.icc:46:52: error: 'const Amg::Vector3D' {aka 'const class Eigen::Matrix<double, 3, 1>'} has no member named 'phi'
+   46 |   return inside(Amg::Vector2D(glopo.perp() * glopo.phi(), glopo.z()),
+      |                                                    ^~~
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/Surface.h:470,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/ConeSurface.h:16:
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/Surface.icc: In member function 'virtual double Trk::Surface::pathCorrection(const Amg::Vector3D&, const Amg::Vector3D&) const':
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/Surface.icc:86:25: error: 'const Amg::Vector3D' {aka 'const class Eigen::Matrix<double, 3, 1>'} has no member named 'unit'; did you mean 'Unit'?
+   86 |   Amg::Vector3D dir(mom.unit());
+      |                         ^~~~
+      |                         Unit
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/CylinderBounds.h:147,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/CylinderSurface.h:16,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkEvent/TrkNeutralParameters/TrkNeutralParameters/NeutralParameters.h:15:
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/CylinderBounds.icc: In member function 'bool Trk::CylinderBounds::inside3D(const Amg::Vector3D&, double, double) const':
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/CylinderBounds.icc:67:23: error: 'const Amg::Vector3D' {aka 'const class Eigen::Matrix<double, 3, 1>'} has no member named 'perp'
+   67 |   return inside(glopo.perp(), glopo.phi(), glopo.z(), tol1, tol2);
+      |                       ^~~~
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/CylinderBounds.icc:67:37: error: 'const Amg::Vector3D' {aka 'const class Eigen::Matrix<double, 3, 1>'} has no member named 'phi'
+   67 |   return inside(glopo.perp(), glopo.phi(), glopo.z(), tol1, tol2);
+      |                                     ^~~
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/CylinderSurface.h:297:
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/CylinderSurface.icc: In member function 'virtual double Trk::CylinderSurface::pathCorrection(const Amg::Vector3D&, const Amg::Vector3D&) const':
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/CylinderSurface.icc:73:29: error: 'using Amg::Vector3D = class Eigen::Matrix<double, 3, 1>' {aka 'class Eigen::Matrix<double, 3, 1>'} has no member named 'unit'; did you mean 'Unit'?
+   73 |   Amg::Vector3D normalT(pcT.unit()); // transverse normal
+      |                             ^~~~
+      |                             Unit
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/CylinderSurface.icc:74:37: error: 'const Amg::Vector3D' {aka 'const class Eigen::Matrix<double, 3, 1>'} has no member named 'unit'; did you mean 'Unit'?
+   74 |   double cosAlpha = normalT.dot(mom.unit());
+      |                                     ^~~~
+      |                                     Unit
+[ 37%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/Helpers.cxx.o
+[ 38%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/JetHelpers.cxx.o
+gmake[2]: *** [JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/build.make:219: JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/JetCalibrationTool.cxx.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[ 39%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/JetUncertaintiesTool.cxx.o
+[ 40%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/LargeRTopologyUncertaintyComponent.cxx.o
+gmake[1]: *** [CMakeFiles/Makefile2:572: JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 40%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/PerJetFlavourUncertaintyComponent.cxx.o
+In file included from /home/gwatts/atlas/correctionlib_tests/src/adapter_support.hxx:2,
+                 from /home/gwatts/atlas/correctionlib_tests/athena-overlay/JetUncertainties/Root/JetUncertaintiesTool.cxx:1:
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx: In member function 'std::vector<std::vector<double> > Nominal::batch(const std::vector<std::vector<double> >&) const':
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx:41:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   41 |   for(const auto& r:rows)out.push_back(evaluate(r));return out;
+      |   ^~~
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx:41:53: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   41 |   for(const auto& r:rows)out.push_back(evaluate(r));return out;
+      |                                                     ^~~~~~
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkEvent/TrkParametersBase/TrkParametersBase/CurvilinearParametersT.h:158,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkEvent/TrkNeutralParameters/TrkNeutralParameters/NeutralParameters.h:12,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkEvent/VxVertex/VxVertex/VxTrackAtVertex.h:35,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Event/xAOD/xAODTracking/xAODTracking/versions/Vertex_v1.h:21,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Event/xAOD/xAODTracking/xAODTracking/Vertex.h:12,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Event/xAOD/xAODTracking/xAODTracking/VertexContainer.h:9,
+                 from /home/gwatts/atlas/correctionlib_tests/athena-overlay/JetUncertainties/Root/JetUncertaintiesTool.cxx:40:
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkEvent/TrkParametersBase/TrkParametersBase/CurvilinearParametersT.icc: In constructor 'Trk::CurvilinearParametersT<DIM, T, S>::CurvilinearParametersT(const Amg::Vector3D&, const Amg::Vector3D&, double, std::optional<Eigen::Matrix<double, DIM, DIM, 0, DIM, DIM> >, unsigned int)':
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkEvent/TrkParametersBase/TrkParametersBase/CurvilinearParametersT.icc:97:38: error: 'const Amg::Vector3D' {aka 'const class Eigen::Matrix<double, 3, 1>'} has no member named 'phi' [-Wtemplate-body]
+   97 |   this->m_parameters[Trk::phi] = mom.phi();
+      |                                      ^~~
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkEvent/TrkParametersBase/TrkParametersBase/CurvilinearParametersT.icc:98:40: error: 'const Amg::Vector3D' {aka 'const class Eigen::Matrix<double, 3, 1>'} has no member named 'theta' [-Wtemplate-body]
+   98 |   this->m_parameters[Trk::theta] = mom.theta();
+      |                                        ^~~~~
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkEvent/TrkParametersBase/TrkParametersBase/CurvilinearParametersT.icc:104:50: error: 'const Amg::Vector3D' {aka 'const class Eigen::Matrix<double, 3, 1>'} has no member named 'mag'; did you mean 'imag'? [-Wtemplate-body]
+  104 |   this->m_parameters[Trk::qOverP] = charge / mom.mag();
+      |                                                  ^~~
+      |                                                  imag
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/ConeBounds.h:172,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/ConeSurface.h:15,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkEvent/TrkNeutralParameters/TrkNeutralParameters/NeutralParameters.h:14:
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/ConeBounds.icc: In member function 'bool Trk::ConeBounds::inside(const Amg::Vector3D&, double, double) const':
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/ConeBounds.icc:39:25: error: 'const Amg::Vector3D' {aka 'const class Eigen::Matrix<double, 3, 1>'} has no member named 'perp'
+   39 |     Amg::Vector2D(glopo.perp() * glopo.phi(), glopo.z()), tol1, tol2);
+      |                         ^~~~
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/ConeBounds.icc:39:40: error: 'const Amg::Vector3D' {aka 'const class Eigen::Matrix<double, 3, 1>'} has no member named 'phi'
+   39 |     Amg::Vector2D(glopo.perp() * glopo.phi(), glopo.z()), tol1, tol2);
+      |                                        ^~~
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/ConeBounds.icc: In member function 'bool Trk::ConeBounds::inside(const Amg::Vector3D&, const Trk::BoundaryCheck&) const':
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/ConeBounds.icc:46:37: error: 'const Amg::Vector3D' {aka 'const class Eigen::Matrix<double, 3, 1>'} has no member named 'perp'
+   46 |   return inside(Amg::Vector2D(glopo.perp() * glopo.phi(), glopo.z()),
+      |                                     ^~~~
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/ConeBounds.icc:46:52: error: 'const Amg::Vector3D' {aka 'const class Eigen::Matrix<double, 3, 1>'} has no member named 'phi'
+   46 |   return inside(Amg::Vector2D(glopo.perp() * glopo.phi(), glopo.z()),
+      |                                                    ^~~
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/Surface.h:470,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/ConeSurface.h:16:
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/Surface.icc: In member function 'virtual double Trk::Surface::pathCorrection(const Amg::Vector3D&, const Amg::Vector3D&) const':
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/Surface.icc:86:25: error: 'const Amg::Vector3D' {aka 'const class Eigen::Matrix<double, 3, 1>'} has no member named 'unit'; did you mean 'Unit'?
+   86 |   Amg::Vector3D dir(mom.unit());
+      |                         ^~~~
+      |                         Unit
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/CylinderBounds.h:147,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/CylinderSurface.h:16,
+                 from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkEvent/TrkNeutralParameters/TrkNeutralParameters/NeutralParameters.h:15:
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/CylinderBounds.icc: In member function 'bool Trk::CylinderBounds::inside3D(const Amg::Vector3D&, double, double) const':
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/CylinderBounds.icc:67:23: error: 'const Amg::Vector3D' {aka 'const class Eigen::Matrix<double, 3, 1>'} has no member named 'perp'
+   67 |   return inside(glopo.perp(), glopo.phi(), glopo.z(), tol1, tol2);
+      |                       ^~~~
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/CylinderBounds.icc:67:37: error: 'const Amg::Vector3D' {aka 'const class Eigen::Matrix<double, 3, 1>'} has no member named 'phi'
+   67 |   return inside(glopo.perp(), glopo.phi(), glopo.z(), tol1, tol2);
+      |                                     ^~~
+In file included from /cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/CylinderSurface.h:297:
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/CylinderSurface.icc: In member function 'virtual double Trk::CylinderSurface::pathCorrection(const Amg::Vector3D&, const Amg::Vector3D&) const':
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/CylinderSurface.icc:73:29: error: 'using Amg::Vector3D = class Eigen::Matrix<double, 3, 1>' {aka 'class Eigen::Matrix<double, 3, 1>'} has no member named 'unit'; did you mean 'Unit'?
+   73 |   Amg::Vector3D normalT(pcT.unit()); // transverse normal
+      |                             ^~~~
+      |                             Unit
+/cvmfs/atlas.cern.ch/repo/sw/software/25.0/Athena/25.0.76/InstallArea/x86_64-el9-gcc15-opt/src/Tracking/TrkDetDescr/TrkSurfaces/TrkSurfaces/CylinderSurface.icc:74:37: error: 'const Amg::Vector3D' {aka 'const class Eigen::Matrix<double, 3, 1>'} has no member named 'unit'; did you mean 'Unit'?
+   74 |   double cosAlpha = normalT.dot(mom.unit());
+      |                                     ^~~~
+      |                                     Unit
+[ 41%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/PileupUncertaintyComponent.cxx.o
+[ 42%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/PtAbsMassEtaUncertaintyComponent.cxx.o
+[ 43%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/PtAbsMassUncertaintyComponent.cxx.o
+gmake[2]: *** [JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/build.make:219: JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/JetUncertaintiesTool.cxx.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:1476: JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/all] Error 2
+gmake: *** [Makefile:156: all] Error 2

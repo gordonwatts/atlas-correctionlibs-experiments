@@ -1,0 +1,3093 @@
+{
+  "status": "tables-only-not-complete-systematic-evaluator",
+  "sources": {
+    "/cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_CategoryReduction_FullJER.config": {
+      "logical_path": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_CategoryReduction_FullJER.config",
+      "sha256": "4fae9959dbdc8fa1ded14930feba762be1fa48d7f4a011ced25c85c67a47dff6",
+      "size": 22265
+    },
+    "/cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root": {
+      "logical_path": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "sha256": "03b7335de536509eeb6afcceec6c90ea32f51fdd03578219b3bd63af1af19db7",
+      "size": 3563929
+    },
+    "/cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root": {
+      "logical_path": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "sha256": "f6165066e99a26c9f1db09ed711090dd7561aa00f3a6e1eef0ffe2e71ca74007",
+      "size": 8681
+    },
+    "/cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetJvtEfficiency/May2024/NNJvtSFFile_Run3_EMPFlow.root": {
+      "logical_path": "JetJvtEfficiency/May2024/NNJvtSFFile_Run3_EMPFlow.root",
+      "sha256": "732a52c13ae0dd9a51de3e3f53b10150e1426a4dddb52e99e3884770377cf10b",
+      "size": 14080
+    }
+  },
+  "settings": {
+    "UncertaintyRelease": "rel22_Winter2025_PreRec",
+    "SupportedJetDefs": "AntiKt4EMPFlow",
+    "SupportedMCTypes": "MC23",
+    "UncertaintyRootFile": "rel22/Winter2025_PreRec/R4_AllComponents.root",
+    "AnalysisRootFile": "analysisInputs/UnknownFlavourComp.root",
+    "Pileup.MuRef": "24.2",
+    "Pileup.NPVRef": "13.2",
+    "JESComponent.1.Name": "EffectiveNP_Statistical1",
+    "JESComponent.1.Desc": "Effective JES Uncertainty Statistical Component 1",
+    "JESComponent.1.Type": "Effective",
+    "JESComponent.1.Param": "Pt",
+    "JESComponent.1.Hists": "EffectiveNP_Statistical1",
+    "JESComponent.2.Name": "EffectiveNP_Statistical2",
+    "JESComponent.2.Desc": "Effective JES Uncertainty Statistical Component 2",
+    "JESComponent.2.Type": "Effective",
+    "JESComponent.2.Param": "Pt",
+    "JESComponent.2.Hists": "EffectiveNP_Statistical2",
+    "JESComponent.3.Name": "EffectiveNP_Statistical3",
+    "JESComponent.3.Desc": "Effective JES Uncertainty Statistical Component 3",
+    "JESComponent.3.Type": "Effective",
+    "JESComponent.3.Param": "Pt",
+    "JESComponent.3.Hists": "EffectiveNP_Statistical3",
+    "JESComponent.4.Name": "EffectiveNP_Statistical4",
+    "JESComponent.4.Desc": "Effective JES Uncertainty Statistical Component 4",
+    "JESComponent.4.Type": "Effective",
+    "JESComponent.4.Param": "Pt",
+    "JESComponent.4.Hists": "EffectiveNP_Statistical4",
+    "JESComponent.5.Name": "EffectiveNP_Statistical5",
+    "JESComponent.5.Desc": "Effective JES Uncertainty Statistical Component 5",
+    "JESComponent.5.Type": "Effective",
+    "JESComponent.5.Param": "Pt",
+    "JESComponent.5.Hists": "EffectiveNP_Statistical5",
+    "JESComponent.6.Name": "EffectiveNP_Statistical6",
+    "JESComponent.6.Desc": "Effective JES Uncertainty Statistical Component 6",
+    "JESComponent.6.Type": "Effective",
+    "JESComponent.6.Param": "Pt",
+    "JESComponent.6.Hists": "EffectiveNP_Statistical6",
+    "JESComponent.7.Name": "EffectiveNP_Modelling1",
+    "JESComponent.7.Desc": "Effective JES Uncertainty Modelling Component 1",
+    "JESComponent.7.Type": "Effective",
+    "JESComponent.7.Param": "Pt",
+    "JESComponent.7.Hists": "EffectiveNP_Modelling1",
+    "JESComponent.8.Name": "EffectiveNP_Modelling2",
+    "JESComponent.8.Desc": "Effective JES Uncertainty Modelling Component 2",
+    "JESComponent.8.Type": "Effective",
+    "JESComponent.8.Param": "Pt",
+    "JESComponent.8.Hists": "EffectiveNP_Modelling2",
+    "JESComponent.9.Name": "EffectiveNP_Modelling3",
+    "JESComponent.9.Desc": "Effective JES Uncertainty Modelling Component 3",
+    "JESComponent.9.Type": "Effective",
+    "JESComponent.9.Param": "Pt",
+    "JESComponent.9.Hists": "EffectiveNP_Modelling3",
+    "JESComponent.10.Name": "EffectiveNP_Modelling4",
+    "JESComponent.10.Desc": "Effective JES Uncertainty Modelling Component 4",
+    "JESComponent.10.Type": "Effective",
+    "JESComponent.10.Param": "Pt",
+    "JESComponent.10.Hists": "EffectiveNP_Modelling4",
+    "JESComponent.11.Name": "EffectiveNP_Detector1",
+    "JESComponent.11.Desc": "Effective JES Uncertainty Detector Component 1",
+    "JESComponent.11.Type": "Effective",
+    "JESComponent.11.Param": "Pt",
+    "JESComponent.11.Hists": "EffectiveNP_Detector1",
+    "JESComponent.12.Name": "EffectiveNP_Detector2",
+    "JESComponent.12.Desc": "Effective JES Uncertainty Detector Component 2",
+    "JESComponent.12.Type": "Effective",
+    "JESComponent.12.Param": "Pt",
+    "JESComponent.12.Hists": "EffectiveNP_Detector2",
+    "JESComponent.13.Name": "EffectiveNP_Mixed1",
+    "JESComponent.13.Desc": "Effective JES Uncertainty Mixed Component 1",
+    "JESComponent.13.Type": "Effective",
+    "JESComponent.13.Param": "Pt",
+    "JESComponent.13.Hists": "EffectiveNP_Mixed1",
+    "JESComponent.14.Name": "EffectiveNP_Mixed2",
+    "JESComponent.14.Desc": "Effective JES Uncertainty Mixed Component 2",
+    "JESComponent.14.Type": "Effective",
+    "JESComponent.14.Param": "Pt",
+    "JESComponent.14.Hists": "EffectiveNP_Mixed2",
+    "JESComponent.15.Name": "EffectiveNP_Mixed3",
+    "JESComponent.15.Desc": "Effective JES Uncertainty Mixed Component 3",
+    "JESComponent.15.Type": "Effective",
+    "JESComponent.15.Param": "Pt",
+    "JESComponent.15.Hists": "EffectiveNP_Mixed3",
+    "JESGroup.1.Name": "EtaIntercalibration_Modelling",
+    "JESGroup.1.Desc": "Eta intercalibration: MC generator modelling uncertainty",
+    "JESGroup.1.Type": "Modelling",
+    "JESGroup.1.Corr": "Correlated",
+    "JESGroup.1.Group": "1",
+    "JESGroup.1.Reducible": "False",
+    "JESComponent.99.Name": "EtaIntercalibration_Modelling_orig",
+    "JESComponent.99.Desc": "Eta intercalibration: MC generator modelling uncertainty",
+    "JESComponent.99.Type": "Modelling",
+    "JESComponent.99.Param": "PtEta",
+    "JESComponent.99.Hists": "EtaIntercalibration_Modelling",
+    "JESComponent.99.Group": "1",
+    "JESComponent.99.Reducible": "False",
+    "JESComponent.100.Name": "EtaIntercalibration_Modelling_prop",
+    "JESComponent.100.Desc": "Eta intercalibration: MC generator modelling uncertainty",
+    "JESComponent.100.Type": "Modelling",
+    "JESComponent.100.Param": "Pt",
+    "JESComponent.100.Hists": "InSituProp_EtaIntercalModelling",
+    "JESComponent.100.Group": "1",
+    "JESComponent.100.Reducible": "False",
+    "JESGroup.2.Name": "EtaIntercalibration_TotalStat",
+    "JESGroup.2.Desc": "Eta intercalibration: statistical uncertainty",
+    "JESGroup.2.Type": "Statistical",
+    "JESGroup.2.Corr": "Correlated",
+    "JESGroup.2.Group": "2",
+    "JESGroup.2.Reducible": "False",
+    "JESComponent.101.Name": "EtaIntercalibration_TotalStat_orig",
+    "JESComponent.101.Desc": "Eta intercalibration: statistical uncertainty",
+    "JESComponent.101.Type": "Statistical",
+    "JESComponent.101.Param": "PtEta",
+    "JESComponent.101.Hists": "EtaIntercalibration_TotalStat",
+    "JESComponent.101.Group": "2",
+    "JESComponent.101.Reducible": "False",
+    "JESComponent.102.Name": "EtaIntercalibration_TotalStat_prop",
+    "JESComponent.102.Desc": "Eta intercalibration: statistical uncertainty",
+    "JESComponent.102.Type": "Statistical",
+    "JESComponent.102.Param": "Pt",
+    "JESComponent.102.Hists": "InSituProp_EtaIntercalStat",
+    "JESComponent.102.Group": "2",
+    "JESComponent.102.Reducible": "False",
+    "JESComponent.109.Name": "SingleParticle_HighPt",
+    "JESComponent.109.Desc": "High pT term (r20.7 version)",
+    "JESComponent.109.Type": "Detector",
+    "JESComponent.109.Param": "Pt",
+    "JESComponent.109.Reducible": "False",
+    "JESGroup.3.Name": "Pileup_OffsetMu",
+    "JESGroup.3.Desc": "Pileup: Offset, mu term",
+    "JESGroup.3.Type": "Other",
+    "JESGroup.3.Corr": "Correlated",
+    "JESGroup.3.Group": "3",
+    "JESGroup.3.Reducible": "False",
+    "JESComponent.111.Name": "Pileup_OffsetMu_orig",
+    "JESComponent.111.Desc": "Pileup: Offset, mu term, independent",
+    "JESComponent.111.Type": "Other",
+    "JESComponent.111.Param": "PtEta",
+    "JESComponent.111.Special": "True",
+    "JESComponent.111.Hists": "Pileup_OffsetMu",
+    "JESComponent.111.Group": "3",
+    "JESComponent.111.Reducible": "False",
+    "JESComponent.112.Name": "Pileup_OffsetMu_prop",
+    "JESComponent.112.Desc": "Pileup: Offset, mu term, propagated through mjb",
+    "JESComponent.112.Type": "Other",
+    "JESComponent.112.Param": "Pt",
+    "JESComponent.112.Hists": "InSituProp_PileupOffsetMu",
+    "JESComponent.112.Group": "3",
+    "JESComponent.112.Reducible": "False",
+    "JESGroup.4.Name": "Pileup_OffsetNPV",
+    "JESGroup.4.Desc": "Pileup: Offset, NPV term",
+    "JESGroup.4.Type": "Other",
+    "JESGroup.4.Corr": "Correlated",
+    "JESGroup.4.Group": "4",
+    "JESGroup.4.Reducible": "False",
+    "JESComponent.113.Name": "Pileup_OffsetNPV_orig",
+    "JESComponent.113.Desc": "Pileup: Offset, NPV term, independent",
+    "JESComponent.113.Type": "Other",
+    "JESComponent.113.Param": "PtEta",
+    "JESComponent.113.Special": "True",
+    "JESComponent.113.Hists": "Pileup_OffsetNPV",
+    "JESComponent.113.Group": "4",
+    "JESComponent.113.Reducible": "False",
+    "JESComponent.114.Name": "Pileup_OffsetNPV_prop",
+    "JESComponent.114.Desc": "Pileup: Offset, NPV term, propagated through mjb",
+    "JESComponent.114.Type": "Other",
+    "JESComponent.114.Param": "Pt",
+    "JESComponent.114.Hists": "InSituProp_PileupOffsetNPV",
+    "JESComponent.114.Group": "4",
+    "JESComponent.114.Reducible": "False",
+    "JESGroup.5.Name": "Pileup_PtTerm",
+    "JESGroup.5.Desc": "Pileup: Offset, pT term",
+    "JESGroup.5.Type": "Other",
+    "JESGroup.5.Corr": "Correlated",
+    "JESGroup.5.Group": "5",
+    "JESGroup.5.Reducible": "False",
+    "JESComponent.115.Name": "Pileup_PtTerm_orig",
+    "JESComponent.115.Desc": "Pileup: Offset, pT term, independent",
+    "JESComponent.115.Type": "Other",
+    "JESComponent.115.Corr": "Correlated",
+    "JESComponent.115.Param": "PtEta",
+    "JESComponent.115.Special": "True",
+    "JESComponent.115.Hists": "Pileup_PtTerm_mu,Pileup_PtTerm_npv",
+    "JESComponent.115.Group": "5",
+    "JESComponent.115.Reducible": "False",
+    "JESComponent.116.Name": "Pileup_PtTerm_prop",
+    "JESComponent.116.Desc": "Pileup: Offset, pT term, propagated through mjb",
+    "JESComponent.116.Type": "Other",
+    "JESComponent.116.Param": "Pt",
+    "JESComponent.116.Hists": "InSituProp_PileupPtTerm",
+    "JESComponent.116.Group": "5",
+    "JESComponent.116.Reducible": "False",
+    "JESGroup.6.Name": "Pileup_RhoTopology",
+    "JESGroup.6.Desc": "Rho topology uncertainty (jet areas)",
+    "JESGroup.6.Type": "Other",
+    "JESGroup.6.Corr": "Correlated",
+    "JESGroup.6.Group": "6",
+    "JESGroup.6.Reducible": "False",
+    "JESComponent.117.Name": "Pileup_RhoTopology_orig",
+    "JESComponent.117.Desc": "Rho topology uncertainty (jet areas), independent",
+    "JESComponent.117.Type": "Other",
+    "JESComponent.117.Param": "PtEta",
+    "JESComponent.117.Special": "True",
+    "JESComponent.117.Hists": "Pileup_RhoTopology",
+    "JESComponent.117.Group": "6",
+    "JESComponent.117.Reducible": "False",
+    "JESComponent.118.Name": "Pileup_RhoTopology_prop",
+    "JESComponent.118.Desc": "Rho topology uncertainty (jet areas), independent",
+    "JESComponent.118.Type": "Other",
+    "JESComponent.118.Param": "Pt",
+    "JESComponent.118.Hists": "InSituProp_PileupRhoTopology",
+    "JESComponent.118.Group": "6",
+    "JESComponent.118.Reducible": "False",
+    "JESGroup.7.Name": "Flavor_Composition",
+    "JESGroup.7.Desc": "Flavor composition uncertainty",
+    "JESGroup.7.Type": "Modelling",
+    "JESGroup.7.Corr": "Correlated",
+    "JESGroup.7.Group": "7",
+    "JESGroup.7.Reducible": "False",
+    "JESComponent.119.Name": "Flavor_Composition_orig",
+    "JESComponent.119.Desc": "Flavor composition uncertainty, independent",
+    "JESComponent.119.Type": "Modelling",
+    "JESComponent.119.Corr": "Correlated",
+    "JESComponent.119.Param": "PtEta",
+    "JESComponent.119.Special": "True",
+    "JESComponent.119.Hists": "flavorCompGlu,flavorCompLight",
+    "JESComponent.119.Group": "7",
+    "JESComponent.119.Reducible": "False",
+    "JESComponent.120.Name": "Flavor_Composition_prop",
+    "JESComponent.120.Desc": "Flavor composition uncertainty, propagated through mjb",
+    "JESComponent.120.Type": "Modelling",
+    "JESComponent.120.Param": "Pt",
+    "JESComponent.120.Hists": "InSituProp_FlavorComposition",
+    "JESComponent.120.Group": "7",
+    "JESComponent.120.Reducible": "False",
+    "JESGroup.8.Name": "Flavor_Response",
+    "JESGroup.8.Desc": "Flavor response uncertainty (dominated by gluon response)",
+    "JESGroup.8.Type": "Other",
+    "JESGroup.8.Corr": "Correlated",
+    "JESGroup.8.Group": "8",
+    "JESGroup.8.Reducible": "False",
+    "JESComponent.121.Name": "Flavor_Response_orig",
+    "JESComponent.121.Desc": "Flavor response uncertainty, independent",
+    "JESComponent.121.Type": "Modelling",
+    "JESComponent.121.Param": "PtEta",
+    "JESComponent.121.Special": "True",
+    "JESComponent.121.Hists": "FlavorResponse",
+    "JESComponent.121.Group": "8",
+    "JESComponent.121.Reducible": "False",
+    "JESComponent.122.Name": "Flavor_Response_prop",
+    "JESComponent.122.Desc": "Flavor response uncertainty, propagated through mjb",
+    "JESComponent.122.Type": "Modelling",
+    "JESComponent.122.Param": "Pt",
+    "JESComponent.122.Hists": "InSituProp_FlavorResponse",
+    "JESComponent.122.Group": "8",
+    "JESComponent.122.Reducible": "False",
+    "JESComponent.123.Name": "BJES_Response",
+    "JESComponent.123.Desc": "JES uncertainty for b jets",
+    "JESComponent.123.Type": "Modelling",
+    "JESComponent.123.Param": "PtEta",
+    "JESComponent.123.Special": "True",
+    "JESComponent.123.Hists": "bJES",
+    "JESComponent.123.Reducible": "False",
+    "JESComponent.104.Name": "FCal_MC23_NonClosure_PreRec",
+    "JESComponent.104.Desc": "FCal calibration uncertainty, early Run3",
+    "JESComponent.104.Type": "Other",
+    "JESComponent.104.Param": "PtEta",
+    "JESComponent.104.Reducible": "False",
+    "JESComponent.103.Name": "EtaIntercalibration_NonClosure_0p2_PreRec",
+    "JESComponent.103.Desc": "Eta intercalibration non-closure uncertainty wrt rel22, early Run3, Gaussian smoothing 0p2, absolute values",
+    "JESComponent.103.Type": "Other",
+    "JESComponent.103.Param": "PtEta",
+    "JESComponent.103.Reducible": "False",
+    "JESComponent.125.Name": "InSitu_NonClosure_PreRec",
+    "JESComponent.125.Desc": "InSitu non-closure uncertainty derived in Z+jet rel22, early Run3 ",
+    "JESComponent.125.Type": "Other",
+    "JESComponent.125.Param": "Pt",
+    "JESComponent.125.Reducible": "False",
+    "JESComponent.126.Name": "JESUnc_Noise_PreRec",
+    "JESComponent.126.Desc": "Pre recommendation systematics for R22. Comparison of different noise threshold setting",
+    "JESComponent.126.Type": "Modelling",
+    "JESComponent.126.Param": "PtAbsEta",
+    "JESComponent.126.Reducible": "False",
+    "JESComponent.127.Name": "JESUnc_VertexingAlg_PreRec",
+    "JESComponent.127.Desc": "Pre recommendation systematics for R22. Comparisong of different Vertexing Algorithms",
+    "JESComponent.127.Type": "Other",
+    "JESComponent.127.Param": "PtAbsEta",
+    "JESComponent.127.Reducible": "False",
+    "ResolutionSmearOnlyMC": "False",
+    "NominalFourVecResData": "JER_Nominal_data,PtAbsEta,OnlyX",
+    "NominalFourVecResMC": "JER_Nominal_MC16,PtAbsEta,OnlyX",
+    "JESComponent.201.Name": "JER_DataVsMC_MC16",
+    "JESComponent.201.Desc": "NP covering when JER(data) < JER(MC)",
+    "JESComponent.201.Type": "Other",
+    "JESComponent.201.Param": "PtAbsEta",
+    "JESComponent.201.Scale": "FourVecResAbs",
+    "JESComponent.201.Interp": "OnlyX",
+    "JESComponent.202.Name": "JER_EffectiveNP_1",
+    "JESComponent.202.Desc": "Effective JER Uncertainty Component 1",
+    "JESComponent.202.Type": "Effective",
+    "JESComponent.202.Param": "PtAbsEta",
+    "JESComponent.202.Scale": "FourVecResAbs",
+    "JESComponent.202.Interp": "OnlyX",
+    "JESComponent.203.Name": "JER_EffectiveNP_2",
+    "JESComponent.203.Desc": "Effective JER Uncertainty Component 2",
+    "JESComponent.203.Type": "Effective",
+    "JESComponent.203.Param": "PtAbsEta",
+    "JESComponent.203.Scale": "FourVecResAbs",
+    "JESComponent.203.Interp": "OnlyX",
+    "JESComponent.204.Name": "JER_EffectiveNP_3",
+    "JESComponent.204.Desc": "Effective JER Uncertainty Component 3",
+    "JESComponent.204.Type": "Effective",
+    "JESComponent.204.Param": "PtAbsEta",
+    "JESComponent.204.Scale": "FourVecResAbs",
+    "JESComponent.204.Interp": "OnlyX",
+    "JESComponent.205.Name": "JER_EffectiveNP_4",
+    "JESComponent.205.Desc": "Effective JER Uncertainty Component 4",
+    "JESComponent.205.Type": "Effective",
+    "JESComponent.205.Param": "PtAbsEta",
+    "JESComponent.205.Scale": "FourVecResAbs",
+    "JESComponent.205.Interp": "OnlyX",
+    "JESComponent.206.Name": "JER_EffectiveNP_5",
+    "JESComponent.206.Desc": "Effective JER Uncertainty Component 5",
+    "JESComponent.206.Type": "Effective",
+    "JESComponent.206.Param": "PtAbsEta",
+    "JESComponent.206.Scale": "FourVecResAbs",
+    "JESComponent.206.Interp": "OnlyX",
+    "JESComponent.207.Name": "JER_EffectiveNP_6",
+    "JESComponent.207.Desc": "Effective JER Uncertainty Component 6",
+    "JESComponent.207.Type": "Effective",
+    "JESComponent.207.Param": "PtAbsEta",
+    "JESComponent.207.Scale": "FourVecResAbs",
+    "JESComponent.207.Interp": "OnlyX",
+    "JESComponent.208.Name": "JER_EffectiveNP_7",
+    "JESComponent.208.Desc": "Effective JER Uncertainty Component 7",
+    "JESComponent.208.Type": "Effective",
+    "JESComponent.208.Param": "PtAbsEta",
+    "JESComponent.208.Scale": "FourVecResAbs",
+    "JESComponent.208.Interp": "OnlyX",
+    "JESComponent.209.Name": "JER_EffectiveNP_8",
+    "JESComponent.209.Desc": "Effective JER Uncertainty Component 8",
+    "JESComponent.209.Type": "Effective",
+    "JESComponent.209.Param": "PtAbsEta",
+    "JESComponent.209.Scale": "FourVecResAbs",
+    "JESComponent.209.Interp": "OnlyX",
+    "JESComponent.210.Name": "JER_EffectiveNP_9",
+    "JESComponent.210.Desc": "Effective JER Uncertainty Component 9",
+    "JESComponent.210.Type": "Effective",
+    "JESComponent.210.Param": "PtAbsEta",
+    "JESComponent.210.Scale": "FourVecResAbs",
+    "JESComponent.210.Interp": "OnlyX",
+    "JESComponent.211.Name": "JER_EffectiveNP_10",
+    "JESComponent.211.Desc": "Effective JER Uncertainty Component 10",
+    "JESComponent.211.Type": "Effective",
+    "JESComponent.211.Param": "PtAbsEta",
+    "JESComponent.211.Scale": "FourVecResAbs",
+    "JESComponent.211.Interp": "OnlyX",
+    "JESComponent.212.Name": "JER_EffectiveNP_11",
+    "JESComponent.212.Desc": "Effective JER Uncertainty Component 11",
+    "JESComponent.212.Type": "Effective",
+    "JESComponent.212.Param": "PtAbsEta",
+    "JESComponent.212.Scale": "FourVecResAbs",
+    "JESComponent.212.Interp": "OnlyX",
+    "JESComponent.213.Name": "JER_EffectiveNP_12restTerm",
+    "JESComponent.213.Desc": "Effective JER Uncertainty Component 12",
+    "JESComponent.213.Type": "Effective",
+    "JESComponent.213.Param": "PtAbsEta",
+    "JESComponent.213.Scale": "FourVecResAbs",
+    "JESComponent.213.Interp": "OnlyX",
+    "JESComponent.215.Name": "JERUnc_Noise_PreRec",
+    "JESComponent.215.Desc": "Pre recommendation systematics for JER R22. Comparison of different noise threshold setting",
+    "JESComponent.215.Type": "Other ",
+    "JESComponent.215.Param": "PtAbsEta",
+    "JESComponent.215.Scale": "FourVecResAbs",
+    "JESComponent.215.Interp": "OnlyX"
+  },
+  "components": {
+    "1": {
+      "Name": "EffectiveNP_Statistical1",
+      "Desc": "Effective JES Uncertainty Statistical Component 1",
+      "Type": "Effective",
+      "Param": "Pt",
+      "Hists": "EffectiveNP_Statistical1"
+    },
+    "2": {
+      "Name": "EffectiveNP_Statistical2",
+      "Desc": "Effective JES Uncertainty Statistical Component 2",
+      "Type": "Effective",
+      "Param": "Pt",
+      "Hists": "EffectiveNP_Statistical2"
+    },
+    "3": {
+      "Name": "EffectiveNP_Statistical3",
+      "Desc": "Effective JES Uncertainty Statistical Component 3",
+      "Type": "Effective",
+      "Param": "Pt",
+      "Hists": "EffectiveNP_Statistical3"
+    },
+    "4": {
+      "Name": "EffectiveNP_Statistical4",
+      "Desc": "Effective JES Uncertainty Statistical Component 4",
+      "Type": "Effective",
+      "Param": "Pt",
+      "Hists": "EffectiveNP_Statistical4"
+    },
+    "5": {
+      "Name": "EffectiveNP_Statistical5",
+      "Desc": "Effective JES Uncertainty Statistical Component 5",
+      "Type": "Effective",
+      "Param": "Pt",
+      "Hists": "EffectiveNP_Statistical5"
+    },
+    "6": {
+      "Name": "EffectiveNP_Statistical6",
+      "Desc": "Effective JES Uncertainty Statistical Component 6",
+      "Type": "Effective",
+      "Param": "Pt",
+      "Hists": "EffectiveNP_Statistical6"
+    },
+    "7": {
+      "Name": "EffectiveNP_Modelling1",
+      "Desc": "Effective JES Uncertainty Modelling Component 1",
+      "Type": "Effective",
+      "Param": "Pt",
+      "Hists": "EffectiveNP_Modelling1"
+    },
+    "8": {
+      "Name": "EffectiveNP_Modelling2",
+      "Desc": "Effective JES Uncertainty Modelling Component 2",
+      "Type": "Effective",
+      "Param": "Pt",
+      "Hists": "EffectiveNP_Modelling2"
+    },
+    "9": {
+      "Name": "EffectiveNP_Modelling3",
+      "Desc": "Effective JES Uncertainty Modelling Component 3",
+      "Type": "Effective",
+      "Param": "Pt",
+      "Hists": "EffectiveNP_Modelling3"
+    },
+    "10": {
+      "Name": "EffectiveNP_Modelling4",
+      "Desc": "Effective JES Uncertainty Modelling Component 4",
+      "Type": "Effective",
+      "Param": "Pt",
+      "Hists": "EffectiveNP_Modelling4"
+    },
+    "11": {
+      "Name": "EffectiveNP_Detector1",
+      "Desc": "Effective JES Uncertainty Detector Component 1",
+      "Type": "Effective",
+      "Param": "Pt",
+      "Hists": "EffectiveNP_Detector1"
+    },
+    "12": {
+      "Name": "EffectiveNP_Detector2",
+      "Desc": "Effective JES Uncertainty Detector Component 2",
+      "Type": "Effective",
+      "Param": "Pt",
+      "Hists": "EffectiveNP_Detector2"
+    },
+    "13": {
+      "Name": "EffectiveNP_Mixed1",
+      "Desc": "Effective JES Uncertainty Mixed Component 1",
+      "Type": "Effective",
+      "Param": "Pt",
+      "Hists": "EffectiveNP_Mixed1"
+    },
+    "14": {
+      "Name": "EffectiveNP_Mixed2",
+      "Desc": "Effective JES Uncertainty Mixed Component 2",
+      "Type": "Effective",
+      "Param": "Pt",
+      "Hists": "EffectiveNP_Mixed2"
+    },
+    "15": {
+      "Name": "EffectiveNP_Mixed3",
+      "Desc": "Effective JES Uncertainty Mixed Component 3",
+      "Type": "Effective",
+      "Param": "Pt",
+      "Hists": "EffectiveNP_Mixed3"
+    },
+    "99": {
+      "Name": "EtaIntercalibration_Modelling_orig",
+      "Desc": "Eta intercalibration: MC generator modelling uncertainty",
+      "Type": "Modelling",
+      "Param": "PtEta",
+      "Hists": "EtaIntercalibration_Modelling",
+      "Group": "1",
+      "Reducible": "False"
+    },
+    "100": {
+      "Name": "EtaIntercalibration_Modelling_prop",
+      "Desc": "Eta intercalibration: MC generator modelling uncertainty",
+      "Type": "Modelling",
+      "Param": "Pt",
+      "Hists": "InSituProp_EtaIntercalModelling",
+      "Group": "1",
+      "Reducible": "False"
+    },
+    "101": {
+      "Name": "EtaIntercalibration_TotalStat_orig",
+      "Desc": "Eta intercalibration: statistical uncertainty",
+      "Type": "Statistical",
+      "Param": "PtEta",
+      "Hists": "EtaIntercalibration_TotalStat",
+      "Group": "2",
+      "Reducible": "False"
+    },
+    "102": {
+      "Name": "EtaIntercalibration_TotalStat_prop",
+      "Desc": "Eta intercalibration: statistical uncertainty",
+      "Type": "Statistical",
+      "Param": "Pt",
+      "Hists": "InSituProp_EtaIntercalStat",
+      "Group": "2",
+      "Reducible": "False"
+    },
+    "109": {
+      "Name": "SingleParticle_HighPt",
+      "Desc": "High pT term (r20.7 version)",
+      "Type": "Detector",
+      "Param": "Pt",
+      "Reducible": "False"
+    },
+    "111": {
+      "Name": "Pileup_OffsetMu_orig",
+      "Desc": "Pileup: Offset, mu term, independent",
+      "Type": "Other",
+      "Param": "PtEta",
+      "Special": "True",
+      "Hists": "Pileup_OffsetMu",
+      "Group": "3",
+      "Reducible": "False"
+    },
+    "112": {
+      "Name": "Pileup_OffsetMu_prop",
+      "Desc": "Pileup: Offset, mu term, propagated through mjb",
+      "Type": "Other",
+      "Param": "Pt",
+      "Hists": "InSituProp_PileupOffsetMu",
+      "Group": "3",
+      "Reducible": "False"
+    },
+    "113": {
+      "Name": "Pileup_OffsetNPV_orig",
+      "Desc": "Pileup: Offset, NPV term, independent",
+      "Type": "Other",
+      "Param": "PtEta",
+      "Special": "True",
+      "Hists": "Pileup_OffsetNPV",
+      "Group": "4",
+      "Reducible": "False"
+    },
+    "114": {
+      "Name": "Pileup_OffsetNPV_prop",
+      "Desc": "Pileup: Offset, NPV term, propagated through mjb",
+      "Type": "Other",
+      "Param": "Pt",
+      "Hists": "InSituProp_PileupOffsetNPV",
+      "Group": "4",
+      "Reducible": "False"
+    },
+    "115": {
+      "Name": "Pileup_PtTerm_orig",
+      "Desc": "Pileup: Offset, pT term, independent",
+      "Type": "Other",
+      "Corr": "Correlated",
+      "Param": "PtEta",
+      "Special": "True",
+      "Hists": "Pileup_PtTerm_mu,Pileup_PtTerm_npv",
+      "Group": "5",
+      "Reducible": "False"
+    },
+    "116": {
+      "Name": "Pileup_PtTerm_prop",
+      "Desc": "Pileup: Offset, pT term, propagated through mjb",
+      "Type": "Other",
+      "Param": "Pt",
+      "Hists": "InSituProp_PileupPtTerm",
+      "Group": "5",
+      "Reducible": "False"
+    },
+    "117": {
+      "Name": "Pileup_RhoTopology_orig",
+      "Desc": "Rho topology uncertainty (jet areas), independent",
+      "Type": "Other",
+      "Param": "PtEta",
+      "Special": "True",
+      "Hists": "Pileup_RhoTopology",
+      "Group": "6",
+      "Reducible": "False"
+    },
+    "118": {
+      "Name": "Pileup_RhoTopology_prop",
+      "Desc": "Rho topology uncertainty (jet areas), independent",
+      "Type": "Other",
+      "Param": "Pt",
+      "Hists": "InSituProp_PileupRhoTopology",
+      "Group": "6",
+      "Reducible": "False"
+    },
+    "119": {
+      "Name": "Flavor_Composition_orig",
+      "Desc": "Flavor composition uncertainty, independent",
+      "Type": "Modelling",
+      "Corr": "Correlated",
+      "Param": "PtEta",
+      "Special": "True",
+      "Hists": "flavorCompGlu,flavorCompLight",
+      "Group": "7",
+      "Reducible": "False"
+    },
+    "120": {
+      "Name": "Flavor_Composition_prop",
+      "Desc": "Flavor composition uncertainty, propagated through mjb",
+      "Type": "Modelling",
+      "Param": "Pt",
+      "Hists": "InSituProp_FlavorComposition",
+      "Group": "7",
+      "Reducible": "False"
+    },
+    "121": {
+      "Name": "Flavor_Response_orig",
+      "Desc": "Flavor response uncertainty, independent",
+      "Type": "Modelling",
+      "Param": "PtEta",
+      "Special": "True",
+      "Hists": "FlavorResponse",
+      "Group": "8",
+      "Reducible": "False"
+    },
+    "122": {
+      "Name": "Flavor_Response_prop",
+      "Desc": "Flavor response uncertainty, propagated through mjb",
+      "Type": "Modelling",
+      "Param": "Pt",
+      "Hists": "InSituProp_FlavorResponse",
+      "Group": "8",
+      "Reducible": "False"
+    },
+    "123": {
+      "Name": "BJES_Response",
+      "Desc": "JES uncertainty for b jets",
+      "Type": "Modelling",
+      "Param": "PtEta",
+      "Special": "True",
+      "Hists": "bJES",
+      "Reducible": "False"
+    },
+    "104": {
+      "Name": "FCal_MC23_NonClosure_PreRec",
+      "Desc": "FCal calibration uncertainty, early Run3",
+      "Type": "Other",
+      "Param": "PtEta",
+      "Reducible": "False"
+    },
+    "103": {
+      "Name": "EtaIntercalibration_NonClosure_0p2_PreRec",
+      "Desc": "Eta intercalibration non-closure uncertainty wrt rel22, early Run3, Gaussian smoothing 0p2, absolute values",
+      "Type": "Other",
+      "Param": "PtEta",
+      "Reducible": "False"
+    },
+    "125": {
+      "Name": "InSitu_NonClosure_PreRec",
+      "Desc": "InSitu non-closure uncertainty derived in Z+jet rel22, early Run3 ",
+      "Type": "Other",
+      "Param": "Pt",
+      "Reducible": "False"
+    },
+    "126": {
+      "Name": "JESUnc_Noise_PreRec",
+      "Desc": "Pre recommendation systematics for R22. Comparison of different noise threshold setting",
+      "Type": "Modelling",
+      "Param": "PtAbsEta",
+      "Reducible": "False"
+    },
+    "127": {
+      "Name": "JESUnc_VertexingAlg_PreRec",
+      "Desc": "Pre recommendation systematics for R22. Comparisong of different Vertexing Algorithms",
+      "Type": "Other",
+      "Param": "PtAbsEta",
+      "Reducible": "False"
+    },
+    "201": {
+      "Name": "JER_DataVsMC_MC16",
+      "Desc": "NP covering when JER(data) < JER(MC)",
+      "Type": "Other",
+      "Param": "PtAbsEta",
+      "Scale": "FourVecResAbs",
+      "Interp": "OnlyX"
+    },
+    "202": {
+      "Name": "JER_EffectiveNP_1",
+      "Desc": "Effective JER Uncertainty Component 1",
+      "Type": "Effective",
+      "Param": "PtAbsEta",
+      "Scale": "FourVecResAbs",
+      "Interp": "OnlyX"
+    },
+    "203": {
+      "Name": "JER_EffectiveNP_2",
+      "Desc": "Effective JER Uncertainty Component 2",
+      "Type": "Effective",
+      "Param": "PtAbsEta",
+      "Scale": "FourVecResAbs",
+      "Interp": "OnlyX"
+    },
+    "204": {
+      "Name": "JER_EffectiveNP_3",
+      "Desc": "Effective JER Uncertainty Component 3",
+      "Type": "Effective",
+      "Param": "PtAbsEta",
+      "Scale": "FourVecResAbs",
+      "Interp": "OnlyX"
+    },
+    "205": {
+      "Name": "JER_EffectiveNP_4",
+      "Desc": "Effective JER Uncertainty Component 4",
+      "Type": "Effective",
+      "Param": "PtAbsEta",
+      "Scale": "FourVecResAbs",
+      "Interp": "OnlyX"
+    },
+    "206": {
+      "Name": "JER_EffectiveNP_5",
+      "Desc": "Effective JER Uncertainty Component 5",
+      "Type": "Effective",
+      "Param": "PtAbsEta",
+      "Scale": "FourVecResAbs",
+      "Interp": "OnlyX"
+    },
+    "207": {
+      "Name": "JER_EffectiveNP_6",
+      "Desc": "Effective JER Uncertainty Component 6",
+      "Type": "Effective",
+      "Param": "PtAbsEta",
+      "Scale": "FourVecResAbs",
+      "Interp": "OnlyX"
+    },
+    "208": {
+      "Name": "JER_EffectiveNP_7",
+      "Desc": "Effective JER Uncertainty Component 7",
+      "Type": "Effective",
+      "Param": "PtAbsEta",
+      "Scale": "FourVecResAbs",
+      "Interp": "OnlyX"
+    },
+    "209": {
+      "Name": "JER_EffectiveNP_8",
+      "Desc": "Effective JER Uncertainty Component 8",
+      "Type": "Effective",
+      "Param": "PtAbsEta",
+      "Scale": "FourVecResAbs",
+      "Interp": "OnlyX"
+    },
+    "210": {
+      "Name": "JER_EffectiveNP_9",
+      "Desc": "Effective JER Uncertainty Component 9",
+      "Type": "Effective",
+      "Param": "PtAbsEta",
+      "Scale": "FourVecResAbs",
+      "Interp": "OnlyX"
+    },
+    "211": {
+      "Name": "JER_EffectiveNP_10",
+      "Desc": "Effective JER Uncertainty Component 10",
+      "Type": "Effective",
+      "Param": "PtAbsEta",
+      "Scale": "FourVecResAbs",
+      "Interp": "OnlyX"
+    },
+    "212": {
+      "Name": "JER_EffectiveNP_11",
+      "Desc": "Effective JER Uncertainty Component 11",
+      "Type": "Effective",
+      "Param": "PtAbsEta",
+      "Scale": "FourVecResAbs",
+      "Interp": "OnlyX"
+    },
+    "213": {
+      "Name": "JER_EffectiveNP_12restTerm",
+      "Desc": "Effective JER Uncertainty Component 12",
+      "Type": "Effective",
+      "Param": "PtAbsEta",
+      "Scale": "FourVecResAbs",
+      "Interp": "OnlyX"
+    },
+    "215": {
+      "Name": "JERUnc_Noise_PreRec",
+      "Desc": "Pre recommendation systematics for JER R22. Comparison of different noise threshold setting",
+      "Type": "Other ",
+      "Param": "PtAbsEta",
+      "Scale": "FourVecResAbs",
+      "Interp": "OnlyX"
+    }
+  },
+  "groups": {
+    "1": {
+      "Name": "EtaIntercalibration_Modelling",
+      "Desc": "Eta intercalibration: MC generator modelling uncertainty",
+      "Type": "Modelling",
+      "Corr": "Correlated",
+      "Group": "1",
+      "Reducible": "False"
+    },
+    "2": {
+      "Name": "EtaIntercalibration_TotalStat",
+      "Desc": "Eta intercalibration: statistical uncertainty",
+      "Type": "Statistical",
+      "Corr": "Correlated",
+      "Group": "2",
+      "Reducible": "False"
+    },
+    "3": {
+      "Name": "Pileup_OffsetMu",
+      "Desc": "Pileup: Offset, mu term",
+      "Type": "Other",
+      "Corr": "Correlated",
+      "Group": "3",
+      "Reducible": "False"
+    },
+    "4": {
+      "Name": "Pileup_OffsetNPV",
+      "Desc": "Pileup: Offset, NPV term",
+      "Type": "Other",
+      "Corr": "Correlated",
+      "Group": "4",
+      "Reducible": "False"
+    },
+    "5": {
+      "Name": "Pileup_PtTerm",
+      "Desc": "Pileup: Offset, pT term",
+      "Type": "Other",
+      "Corr": "Correlated",
+      "Group": "5",
+      "Reducible": "False"
+    },
+    "6": {
+      "Name": "Pileup_RhoTopology",
+      "Desc": "Rho topology uncertainty (jet areas)",
+      "Type": "Other",
+      "Corr": "Correlated",
+      "Group": "6",
+      "Reducible": "False"
+    },
+    "7": {
+      "Name": "Flavor_Composition",
+      "Desc": "Flavor composition uncertainty",
+      "Type": "Modelling",
+      "Corr": "Correlated",
+      "Group": "7",
+      "Reducible": "False"
+    },
+    "8": {
+      "Name": "Flavor_Response",
+      "Desc": "Flavor response uncertainty (dominated by gluon response)",
+      "Type": "Other",
+      "Corr": "Correlated",
+      "Group": "8",
+      "Reducible": "False"
+    }
+  },
+  "mapping": {
+    "file0__FCal_MC23_NonClosure_PreRec_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "FCal_MC23_NonClosure_PreRec_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__FCal_MC23_NonClosure_PreRec_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "FCal_MC23_NonClosure_PreRec_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__FCal_MC23_NonClosure_PreRec_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "FCal_MC23_NonClosure_PreRec_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EtaIntercalibration_NonClosure_0p2_PreRec_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EtaIntercalibration_NonClosure_0p2_PreRec_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EtaIntercalibration_NonClosure_0p2_PreRec_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EtaIntercalibration_NonClosure_0p2_PreRec_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EtaIntercalibration_NonClosure_0p2_PreRec_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EtaIntercalibration_NonClosure_0p2_PreRec_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__InSitu_NonClosure_PreRec_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSitu_NonClosure_PreRec_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__InSitu_NonClosure_PreRec_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSitu_NonClosure_PreRec_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__InSitu_NonClosure_PreRec_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSitu_NonClosure_PreRec_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__JESUnc_VertexingAlg_PreRec_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JESUnc_VertexingAlg_PreRec_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__JESUnc_VertexingAlg_PreRec_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JESUnc_VertexingAlg_PreRec_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__JESUnc_VertexingAlg_PreRec_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JESUnc_VertexingAlg_PreRec_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__JESUnc_Noise_PreRec_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JESUnc_Noise_PreRec_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__JESUnc_Noise_PreRec_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JESUnc_Noise_PreRec_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__JESUnc_Noise_PreRec_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JESUnc_Noise_PreRec_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__JERUnc_Noise_PreRec_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JERUnc_Noise_PreRec_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__JERUnc_Noise_PreRec_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JERUnc_Noise_PreRec_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__JERUnc_Noise_PreRec_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JERUnc_Noise_PreRec_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_1_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_1_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_1_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_1_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_1_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_1_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_2_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_2_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_2_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_2_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_2_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_2_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_3_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_3_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_3_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_3_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_3_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_3_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_4_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_4_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_4_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_4_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_4_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_4_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_5_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_5_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_5_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_5_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_5_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_5_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_6_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_6_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_6_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_6_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_6_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_6_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_7_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_7_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_7_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_7_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_7_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_7_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_8restTerm_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_8restTerm_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_8restTerm_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_8restTerm_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_8restTerm_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_8restTerm_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Detector1_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Detector1_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Detector1_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Detector1_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Detector1_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Detector1_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Detector2_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Detector2_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Detector2_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Detector2_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Detector2_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Detector2_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Mixed1_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Mixed1_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Mixed1_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Mixed1_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Mixed1_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Mixed1_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Mixed2_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Mixed2_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Mixed2_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Mixed2_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Mixed2_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Mixed2_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Mixed3_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Mixed3_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Mixed3_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Mixed3_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Mixed3_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Mixed3_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Modelling1_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Modelling1_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Modelling1_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Modelling1_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Modelling1_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Modelling1_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Modelling2_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Modelling2_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Modelling2_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Modelling2_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Modelling2_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Modelling2_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Modelling3_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Modelling3_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Modelling3_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Modelling3_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Modelling3_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Modelling3_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Modelling4_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Modelling4_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Modelling4_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Modelling4_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Modelling4_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Modelling4_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Statistical1_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Statistical1_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Statistical1_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Statistical1_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Statistical1_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Statistical1_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Statistical2_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Statistical2_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Statistical2_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Statistical2_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Statistical2_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Statistical2_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Statistical3_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Statistical3_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Statistical3_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Statistical3_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Statistical3_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Statistical3_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Statistical4_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Statistical4_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Statistical4_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Statistical4_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Statistical4_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Statistical4_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Statistical5_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Statistical5_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Statistical5_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Statistical5_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Statistical5_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Statistical5_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Statistical6_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Statistical6_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Statistical6_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Statistical6_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EffectiveNP_Statistical6_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EffectiveNP_Statistical6_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EtaIntercalibration_Modelling_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EtaIntercalibration_Modelling_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EtaIntercalibration_Modelling_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EtaIntercalibration_Modelling_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EtaIntercalibration_Modelling_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EtaIntercalibration_Modelling_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__EtaIntercalibration_TotalStat_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EtaIntercalibration_TotalStat_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__EtaIntercalibration_TotalStat_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EtaIntercalibration_TotalStat_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__EtaIntercalibration_TotalStat_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "EtaIntercalibration_TotalStat_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__FlavorResponse_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "FlavorResponse_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__FlavorResponse_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "FlavorResponse_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__FlavorResponse_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "FlavorResponse_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__InSituProp_EtaIntercalModelling_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSituProp_EtaIntercalModelling_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__InSituProp_EtaIntercalModelling_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSituProp_EtaIntercalModelling_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__InSituProp_EtaIntercalModelling_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSituProp_EtaIntercalModelling_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__InSituProp_EtaIntercalStat_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSituProp_EtaIntercalStat_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__InSituProp_EtaIntercalStat_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSituProp_EtaIntercalStat_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__InSituProp_EtaIntercalStat_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSituProp_EtaIntercalStat_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__InSituProp_FlavorComposition_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSituProp_FlavorComposition_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__InSituProp_FlavorComposition_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSituProp_FlavorComposition_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__InSituProp_FlavorComposition_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSituProp_FlavorComposition_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__InSituProp_FlavorResponse_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSituProp_FlavorResponse_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__InSituProp_FlavorResponse_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSituProp_FlavorResponse_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__InSituProp_FlavorResponse_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSituProp_FlavorResponse_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__InSituProp_PileupOffsetMu_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSituProp_PileupOffsetMu_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__InSituProp_PileupOffsetMu_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSituProp_PileupOffsetMu_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__InSituProp_PileupOffsetMu_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSituProp_PileupOffsetMu_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__InSituProp_PileupOffsetNPV_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSituProp_PileupOffsetNPV_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__InSituProp_PileupOffsetNPV_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSituProp_PileupOffsetNPV_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__InSituProp_PileupOffsetNPV_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSituProp_PileupOffsetNPV_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__InSituProp_PileupPtTerm_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSituProp_PileupPtTerm_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__InSituProp_PileupPtTerm_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSituProp_PileupPtTerm_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__InSituProp_PileupPtTerm_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSituProp_PileupPtTerm_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__InSituProp_PileupRhoTopology_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSituProp_PileupRhoTopology_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__InSituProp_PileupRhoTopology_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSituProp_PileupRhoTopology_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__InSituProp_PileupRhoTopology_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "InSituProp_PileupRhoTopology_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__Pileup_OffsetMu_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "Pileup_OffsetMu_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__Pileup_OffsetMu_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "Pileup_OffsetMu_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__Pileup_OffsetMu_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "Pileup_OffsetMu_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__Pileup_OffsetNPV_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "Pileup_OffsetNPV_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__Pileup_OffsetNPV_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "Pileup_OffsetNPV_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__Pileup_OffsetNPV_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "Pileup_OffsetNPV_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__Pileup_PtTerm_mu_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "Pileup_PtTerm_mu_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__Pileup_PtTerm_mu_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "Pileup_PtTerm_mu_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__Pileup_PtTerm_mu_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "Pileup_PtTerm_mu_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__Pileup_PtTerm_npv_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "Pileup_PtTerm_npv_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__Pileup_PtTerm_npv_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "Pileup_PtTerm_npv_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__Pileup_PtTerm_npv_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "Pileup_PtTerm_npv_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__Pileup_RhoTopology_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "Pileup_RhoTopology_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__Pileup_RhoTopology_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "Pileup_RhoTopology_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__Pileup_RhoTopology_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "Pileup_RhoTopology_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__SingleParticle_HighPt_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "SingleParticle_HighPt_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__SingleParticle_HighPt_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "SingleParticle_HighPt_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__SingleParticle_HighPt_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "SingleParticle_HighPt_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__bJES_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "bJES_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__bJES_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "bJES_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__bJES_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "bJES_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__flavorCompGlu_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "flavorCompGlu_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__flavorCompGlu_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "flavorCompGlu_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__flavorCompGlu_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "flavorCompGlu_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__flavorCompLight_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "flavorCompLight_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__flavorCompLight_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "flavorCompLight_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__flavorCompLight_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "flavorCompLight_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_10_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_10_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_10_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_10_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_10_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_10_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_11_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_11_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_11_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_11_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_11_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_11_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_12restTerm_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_12restTerm_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_12restTerm_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_12restTerm_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_12restTerm_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_12restTerm_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_1_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_1_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_1_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_1_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_1_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_1_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_2_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_2_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_2_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_2_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_2_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_2_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_3_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_3_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_3_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_3_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_3_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_3_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_4_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_4_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_4_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_4_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_4_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_4_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_5_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_5_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_5_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_5_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_5_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_5_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_6_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_6_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_6_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_6_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_6_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_6_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_7_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_7_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_7_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_7_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_7_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_7_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_7restTerm_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_7restTerm_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_7restTerm_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_7restTerm_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_7restTerm_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_7restTerm_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_8_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_8_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_8_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_8_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_8_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_8_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_9_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_9_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_9_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_9_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__JER_EffectiveNP_9_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_EffectiveNP_9_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__JER_Nominal_data_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_Nominal_data_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__JER_Nominal_data_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_Nominal_data_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__JER_Nominal_data_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_Nominal_data_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__JER_Nominal_MC16_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_Nominal_MC16_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__JER_Nominal_MC16_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_Nominal_MC16_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__JER_Nominal_MC16_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_Nominal_MC16_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file0__JER_DataVsMC_MC16_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_DataVsMC_MC16_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file0__JER_DataVsMC_MC16_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_DataVsMC_MC16_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file0__JER_DataVsMC_MC16_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root",
+      "object": "JER_DataVsMC_MC16_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file1__gluonFraction_AntiKt4EMTopo__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFraction_AntiKt4EMTopo",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file1__gluonFraction_AntiKt4EMTopo__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFraction_AntiKt4EMTopo",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file1__gluonFraction_AntiKt4EMTopo__None__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFraction_AntiKt4EMTopo",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file1__gluonFractionError_AntiKt4EMTopo__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFractionError_AntiKt4EMTopo",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file1__gluonFractionError_AntiKt4EMTopo__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFractionError_AntiKt4EMTopo",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file1__gluonFractionError_AntiKt4EMTopo__None__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFractionError_AntiKt4EMTopo",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file1__gluonFraction_AntiKt6EMTopo__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFraction_AntiKt6EMTopo",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file1__gluonFraction_AntiKt6EMTopo__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFraction_AntiKt6EMTopo",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file1__gluonFraction_AntiKt6EMTopo__None__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFraction_AntiKt6EMTopo",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file1__gluonFractionError_AntiKt6EMTopo__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFractionError_AntiKt6EMTopo",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file1__gluonFractionError_AntiKt6EMTopo__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFractionError_AntiKt6EMTopo",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file1__gluonFractionError_AntiKt6EMTopo__None__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFractionError_AntiKt6EMTopo",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file1__gluonFraction_AntiKt4LCTopo__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFraction_AntiKt4LCTopo",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file1__gluonFraction_AntiKt4LCTopo__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFraction_AntiKt4LCTopo",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file1__gluonFraction_AntiKt4LCTopo__None__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFraction_AntiKt4LCTopo",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file1__gluonFractionError_AntiKt4LCTopo__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFractionError_AntiKt4LCTopo",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file1__gluonFractionError_AntiKt4LCTopo__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFractionError_AntiKt4LCTopo",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file1__gluonFractionError_AntiKt4LCTopo__None__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFractionError_AntiKt4LCTopo",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file1__gluonFraction_AntiKt6LCTopo__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFraction_AntiKt6LCTopo",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file1__gluonFraction_AntiKt6LCTopo__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFraction_AntiKt6LCTopo",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file1__gluonFraction_AntiKt6LCTopo__None__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFraction_AntiKt6LCTopo",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file1__gluonFractionError_AntiKt6LCTopo__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFractionError_AntiKt6LCTopo",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file1__gluonFractionError_AntiKt6LCTopo__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFractionError_AntiKt6LCTopo",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file1__gluonFractionError_AntiKt6LCTopo__None__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFractionError_AntiKt6LCTopo",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file1__gluonFraction_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFraction_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file1__gluonFraction_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFraction_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file1__gluonFraction_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFraction_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file1__gluonFractionError_AntiKt4EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFractionError_AntiKt4EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file1__gluonFractionError_AntiKt4EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFractionError_AntiKt4EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file1__gluonFractionError_AntiKt4EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFractionError_AntiKt4EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file1__gluonFraction_AntiKt6EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFraction_AntiKt6EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file1__gluonFraction_AntiKt6EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFraction_AntiKt6EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file1__gluonFraction_AntiKt6EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFraction_AntiKt6EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file1__gluonFractionError_AntiKt6EMPFlow__Full__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFractionError_AntiKt6EMPFlow",
+      "mode": "Full",
+      "quantity": "content"
+    },
+    "file1__gluonFractionError_AntiKt6EMPFlow__OnlyX__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFractionError_AntiKt6EMPFlow",
+      "mode": "OnlyX",
+      "quantity": "content"
+    },
+    "file1__gluonFractionError_AntiKt6EMPFlow__None__content": {
+      "file": "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root",
+      "object": "gluonFractionError_AntiKt6EMPFlow",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file2__EffFixedEffPt__None__content": {
+      "file": "JetJvtEfficiency/May2024/NNJvtSFFile_Run3_EMPFlow.root",
+      "object": "EffFixedEffPt",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file2__EffFixedEffPt__None__error": {
+      "file": "JetJvtEfficiency/May2024/NNJvtSFFile_Run3_EMPFlow.root",
+      "object": "EffFixedEffPt",
+      "mode": "None",
+      "quantity": "error"
+    },
+    "file2__JvtFixedEffPt__None__content": {
+      "file": "JetJvtEfficiency/May2024/NNJvtSFFile_Run3_EMPFlow.root",
+      "object": "JvtFixedEffPt",
+      "mode": "None",
+      "quantity": "content"
+    },
+    "file2__JvtFixedEffPt__None__error": {
+      "file": "JetJvtEfficiency/May2024/NNJvtSFFile_Run3_EMPFlow.root",
+      "object": "JvtFixedEffPt",
+      "mode": "None",
+      "quantity": "error"
+    }
+  },
+  "inventory": {
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::FCal_MC23_NonClosure_PreRec_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        15.0,
+        2500.000000000002,
+        -4.5,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EtaIntercalibration_NonClosure_0p2_PreRec_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        15.0,
+        2500.000000000002,
+        -4.5,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::InSitu_NonClosure_PreRec_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.0,
+        617.0,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::JESUnc_VertexingAlg_PreRec_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        10.0,
+        2500.0,
+        0.0,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::JESUnc_Noise_PreRec_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        20.0,
+        2500.0,
+        0.0,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::JERUnc_Noise_PreRec_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        20.0,
+        2500.0,
+        0.0,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EffectiveNP_1_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.00000000000001,
+        2500.000000000002,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EffectiveNP_2_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.00000000000001,
+        2500.000000000002,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EffectiveNP_3_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.00000000000001,
+        2500.000000000002,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EffectiveNP_4_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.00000000000001,
+        2500.000000000002,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EffectiveNP_5_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.00000000000001,
+        2500.000000000002,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EffectiveNP_6_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.00000000000001,
+        2500.000000000002,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EffectiveNP_7_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.00000000000001,
+        2500.000000000002,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EffectiveNP_8restTerm_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.00000000000001,
+        2500.000000000002,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EffectiveNP_Detector1_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.00000000000001,
+        2500.000000000002,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EffectiveNP_Detector2_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.00000000000001,
+        2500.000000000002,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EffectiveNP_Mixed1_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.00000000000001,
+        2500.000000000002,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EffectiveNP_Mixed2_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.00000000000001,
+        2500.000000000002,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EffectiveNP_Mixed3_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.00000000000001,
+        2500.000000000002,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EffectiveNP_Modelling1_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.00000000000001,
+        2500.000000000002,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EffectiveNP_Modelling2_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.00000000000001,
+        2500.000000000002,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EffectiveNP_Modelling3_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.00000000000001,
+        2500.000000000002,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EffectiveNP_Modelling4_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.00000000000001,
+        2500.000000000002,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EffectiveNP_Statistical1_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.00000000000001,
+        2500.000000000002,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EffectiveNP_Statistical2_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.00000000000001,
+        2500.000000000002,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EffectiveNP_Statistical3_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.00000000000001,
+        2500.000000000002,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EffectiveNP_Statistical4_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.00000000000001,
+        2500.000000000002,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EffectiveNP_Statistical5_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.00000000000001,
+        2500.000000000002,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EffectiveNP_Statistical6_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.00000000000001,
+        2500.000000000002,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EtaIntercalibration_Modelling_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        15.0,
+        2500.000000000002,
+        -4.5,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::EtaIntercalibration_TotalStat_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        15.0,
+        2500.000000000002,
+        -4.5,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::FlavorResponse_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        20.0,
+        7000.0,
+        -4.5,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::InSituProp_EtaIntercalModelling_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.0,
+        2500.0,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::InSituProp_EtaIntercalStat_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.0,
+        2500.0,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::InSituProp_FlavorComposition_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.0,
+        2500.0,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::InSituProp_FlavorResponse_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.0,
+        2500.0,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::InSituProp_PileupOffsetMu_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.0,
+        2500.0,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::InSituProp_PileupOffsetNPV_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.0,
+        2500.0,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::InSituProp_PileupPtTerm_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.0,
+        2500.0,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::InSituProp_PileupRhoTopology_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        17.0,
+        2500.0,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::Pileup_OffsetMu_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        15.0,
+        2499.9999999999995,
+        -4.5,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::Pileup_OffsetNPV_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        15.0,
+        2499.9999999999995,
+        -4.5,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::Pileup_PtTerm_mu_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        15.0,
+        2500.0,
+        -4.900000095367432,
+        4.900000095367432
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::Pileup_PtTerm_npv_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        15.0,
+        2500.0,
+        -4.900000095367432,
+        4.900000095367432
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::Pileup_RhoTopology_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        0.0,
+        5000.0,
+        -4.5,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::SingleParticle_HighPt_AntiKt4EMPFlow": {
+      "classname": "TH1D",
+      "bounds": [
+        25.0,
+        5000.0,
+        0.0,
+        1.0
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::bJES_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        20.0,
+        7000.0,
+        -4.4,
+        4.4
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::flavorCompGlu_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        20.0,
+        7000.0,
+        -4.5,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::flavorCompLight_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        20.0,
+        7000.0,
+        -4.5,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::JER_EffectiveNP_10_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        17.0,
+        3000.0,
+        0.0,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::JER_EffectiveNP_11_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        17.0,
+        3000.0,
+        0.0,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::JER_EffectiveNP_12restTerm_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        17.0,
+        3000.0,
+        0.0,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::JER_EffectiveNP_1_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        17.0,
+        3000.0,
+        0.0,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::JER_EffectiveNP_2_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        17.0,
+        3000.0,
+        0.0,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::JER_EffectiveNP_3_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        17.0,
+        3000.0,
+        0.0,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::JER_EffectiveNP_4_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        17.0,
+        3000.0,
+        0.0,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::JER_EffectiveNP_5_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        17.0,
+        3000.0,
+        0.0,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::JER_EffectiveNP_6_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        17.0,
+        3000.0,
+        0.0,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::JER_EffectiveNP_7_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        17.0,
+        3000.0,
+        0.0,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::JER_EffectiveNP_7restTerm_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        17.0,
+        3000.0,
+        0.0,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::JER_EffectiveNP_8_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        17.0,
+        3000.0,
+        0.0,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::JER_EffectiveNP_9_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        17.0,
+        3000.0,
+        0.0,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::JER_Nominal_data_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        17.0,
+        3000.0,
+        0.0,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::JER_Nominal_MC16_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        17.0,
+        3000.0,
+        0.0,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_AllComponents.root::JER_DataVsMC_MC16_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        17.0,
+        3000.0,
+        0.0,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root::gluonFraction_AntiKt4EMTopo": {
+      "classname": "TH2D",
+      "bounds": [
+        15.0,
+        7000.0,
+        -4.5,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root::gluonFractionError_AntiKt4EMTopo": {
+      "classname": "TH2D",
+      "bounds": [
+        15.0,
+        7000.0,
+        -4.5,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root::gluonFraction_AntiKt6EMTopo": {
+      "classname": "TH2D",
+      "bounds": [
+        15.0,
+        7000.0,
+        -4.5,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root::gluonFractionError_AntiKt6EMTopo": {
+      "classname": "TH2D",
+      "bounds": [
+        15.0,
+        7000.0,
+        -4.5,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root::gluonFraction_AntiKt4LCTopo": {
+      "classname": "TH2D",
+      "bounds": [
+        15.0,
+        7000.0,
+        -4.5,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root::gluonFractionError_AntiKt4LCTopo": {
+      "classname": "TH2D",
+      "bounds": [
+        15.0,
+        7000.0,
+        -4.5,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root::gluonFraction_AntiKt6LCTopo": {
+      "classname": "TH2D",
+      "bounds": [
+        15.0,
+        7000.0,
+        -4.5,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root::gluonFractionError_AntiKt6LCTopo": {
+      "classname": "TH2D",
+      "bounds": [
+        15.0,
+        7000.0,
+        -4.5,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root::gluonFraction_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        15.0,
+        7000.0,
+        -4.5,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root::gluonFractionError_AntiKt4EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        15.0,
+        7000.0,
+        -4.5,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root::gluonFraction_AntiKt6EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        15.0,
+        7000.0,
+        -4.5,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetUncertainties/CalibArea-08/analysisInputs/UnknownFlavourComp.root::gluonFractionError_AntiKt6EMPFlow": {
+      "classname": "TH2D",
+      "bounds": [
+        15.0,
+        7000.0,
+        -4.5,
+        4.5
+      ],
+      "converted": true
+    },
+    "JetJvtEfficiency/May2024/NNJvtSFFile_Run3_EMPFlow.root::EffFixedEffPt": {
+      "classname": "TH2D",
+      "bounds": [
+        20000.0,
+        60000.0,
+        -2.5,
+        2.5
+      ],
+      "converted": true
+    },
+    "JetJvtEfficiency/May2024/NNJvtSFFile_Run3_EMPFlow.root::JvtFixedEffPt": {
+      "classname": "TH2D",
+      "bounds": [
+        20000.0,
+        60000.0,
+        -2.5,
+        2.5
+      ],
+      "converted": true
+    }
+  }
+}

@@ -1,0 +1,73 @@
+Py:CPBaseRunner      INFO EventLoopCPRunScript initialized
+Py:CPBaseRunner      INFO Initialized input files: ['/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1']
+Py:CPBaseRunner      INFO Found YAML config at: /home/gwatts/atlas/correctionlib_tests/a-stored-timing/a-stored.yaml
+Py:CPBaseRunner      INFO Setting up configuration based on YAML config:
+xAOD::Init                INFO    Environment initialised for data access
+Py:CPBaseRunner      INFO Adding files to the sample handler
+Py:CPBaseRunner      INFO =========================================================================
+Py:CPBaseRunner      INFO ====================FLAG CONFIGURATION====================
+Py:CPBaseRunner      INFO =========================================================================
+Py:AutoConfigFlags    INFO Obtaining metadata of auto-configuration by peeking into '/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1'
+Py:MetaReader        INFO Current mode used: lite
+Py:MetaReader        INFO Current filenames: ['/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1']
+Py:MetaReader        INFO MetaReader is called with the parameter "unique_tag_info_values" set to True. This is a workaround to remove all duplicate values from "/TagInfo" key
+Py:CPBaseRunner      INFO     Input files:     True
+Py:CPBaseRunner      INFO     RunNumber:       [410000]
+Py:CPBaseRunner      INFO     MCCampaign:      Campaign.MC23a
+Py:AutoConfigFlags    INFO Looking into the file in 'peeker' mode as the configuration requires more details: generators 
+Py:MetaReader        INFO Current mode used: peeker
+Py:MetaReader        INFO Current filenames: ['/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1']
+Py:MetaReader        INFO MetaReader is called with the parameter "unique_tag_info_values" set to True. This is a workaround to remove all duplicate values from "/TagInfo" key
+Py:CPBaseRunner      INFO     GeneratorInfo:   {'Powheg': '2_r3631', 'Pythia8': '308', 'EvtGen': '2.1.1'}
+Py:CPBaseRunner      INFO     MaxEvents:       20000
+Py:CPBaseRunner      INFO     SkipEvents:      0
+Py:CPBaseRunner      INFO =========================================================================
+Py:CPBaseRunner      INFO Configuring algorithms based on YAML file
+Py:CPBaseRunner      INFO Configuring common services
+Py:getRun3NavigationContainerFromInput    INFO Returning HLTNav_Summary_DAODSlimmed as the Run 3 trigger navigation collection to read in this job.
+Py:CPBaseRunner      INFO Configuring algorithms
+Py:CommonServices WARNING [91m
+  ________   _______  ______ _____ _______      __  __  ____  _____  ______       ______ _   _          ____  _      ______ _____
+ |  ____\ \ / /  __ \|  ____|  __ \__   __|    |  \/  |/ __ \|  __ \|  ____|     |  ____| \ | |   /\   |  _ \| |    |  ____|  __ \
+ | |__   \ V /| |__) | |__  | |__) | | |       | \  / | |  | | |  | | |__        | |__  |  \| |  /  \  | |_) | |    | |__  | |  | |
+ |  __|   > < |  ___/|  __| |  _  /  | |       | |\/| | |  | | |  | |  __|       |  __| | . ` | / /\ \ |  _ <| |    |  __| | |  | |
+ | |____ / . \| |    | |____| | \ \  | |       | |  | | |__| | |__| | |____      | |____| |\  |/ ____ \| |_) | |____| |____| |__| |
+ |______/_/ \_\_|    |______|_|  \_\ |_|       |_|  |_|\____/|_____/|______|     |______|_| \_/_/    \_\____/|______|______|_____/
+
+[0m
+Py:CommonServices WARNING [1m[93mThese settings are not recommended for analysis. Make sure you know what you're doing, or disable them with `enableExpertMode: False` in `CommonServices`.[0m
+Package.EventLoop        INFO    created submission directory /home/gwatts/atlas/correctionlib_tests/a-stored-timing/run-1/workDir-2026-10-23-1631-430b
+Package.EventLoop        INFO    created sym-link at: /home/gwatts/atlas/correctionlib_tests/a-stored-timing/run-1/workDir
+Package.EventLoop        INFO    submitting job in /home/gwatts/atlas/correctionlib_tests/a-stored-timing/run-1/workDir-2026-10-23-1631-430b
+xAOD::Init                INFO    Environment initialised for data access
+starting batch job initialization
+batch job user initialization finished
+PHYS-PROFWSN04
+/home/gwatts/atlas/correctionlib_tests/a-stored-timing/run-1/workDir-2026-10-23-1631-430b/tmp/0
+gwatts
+xAOD::Init                INFO    Environment initialised for data access
+/tmp/EventLoop-Worker-output-0-1792798305-71267
+Package.EventLoop        INFO    xAODInput = 1
+Package.EventLoop        INFO    calling firstInitialize on all modules
+Package.EventLoop        INFO    calling preFileInitialize on all modules
+Package.EventLoop        INFO    Opening file file:///cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1
+Package.xAOD::Event      INFO    Using aux mode kClassAccess for file /cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1
+Package.EventLoop        INFO    Processing events 0-20000 in file file:///cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1
+Package.EventLoop        INFO    Processed 10000 events
+Package.EventLoop        INFO    Processed 20000 events
+SystematicsSvc           INFO    no systematics were run.
+ELModule.LeakCheckModule INFO    Memory increase/change during the job:
+ELModule.LeakCheckModule INFO      - resident: -0.117406 kB/event (-2348 kB total)
+ELModule.LeakCheckModule INFO      - virtual : -1.87229 kB/event (-37444 kB total)
+Real time 0:00:00, CP time 0.630
+Package.EventLoop        INFO    worker finished successfully
+xAOD::TFileAccessTracer   INFO    Sending file access statistics to http://rucio-lb-prod.cern.ch:18762/traces/
+Package.EventLoop        INFO    retrieving batch job in location /home/gwatts/atlas/correctionlib_tests/a-stored-timing/run-1/workDir-2026-10-23-1631-430b
+Package.EventLoop        INFO    current job status: 1 success, 0 failure, 0 running/unknown
+Package.EventLoop        INFO    done
+Package.EventLoop        INFO    retrieving batch job in location workDir
+Package.EventLoop        INFO    current job status: 1 success, 0 failure, 0 running/unknown
+Package.EventLoop        INFO    done
+Py:CPBaseRunner      INFO Moving the analysis root file and the hist file to the top level.
+Py:CPBaseRunner      INFO Moving /home/gwatts/atlas/correctionlib_tests/a-stored-timing/run-1/workDir-2026-10-23-1631-430b/fetch/data-ANALYSIS/output-0.root to /home/gwatts/atlas/correctionlib_tests/a-stored-timing/run-1/output.root
+Py:CPBaseRunner      INFO Moving /home/gwatts/atlas/correctionlib_tests/a-stored-timing/run-1/workDir-2026-10-23-1631-430b/fetch/hist-output-0.root to /home/gwatts/atlas/correctionlib_tests/a-stored-timing/run-1/hist-output.root

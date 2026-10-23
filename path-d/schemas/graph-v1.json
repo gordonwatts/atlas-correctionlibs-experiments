@@ -1,0 +1,613 @@
+{
+  "$defs": {
+    "Assert": {
+      "additionalProperties": false,
+      "properties": {
+        "inputs": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Inputs",
+          "type": "array"
+        },
+        "outputs": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Outputs",
+          "type": "array"
+        },
+        "op": {
+          "const": "assert",
+          "title": "Op",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "op",
+        "message"
+      ],
+      "title": "Assert",
+      "type": "object"
+    },
+    "Branch": {
+      "additionalProperties": false,
+      "properties": {
+        "inputs": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Inputs",
+          "type": "array"
+        },
+        "outputs": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Outputs",
+          "type": "array"
+        },
+        "op": {
+          "const": "if",
+          "title": "Op",
+          "type": "string"
+        },
+        "then": {
+          "items": {
+            "discriminator": {
+              "mapping": {
+                "assert": "#/$defs/Assert",
+                "call": "#/$defs/Call",
+                "cast": "#/$defs/Cast",
+                "constant": "#/$defs/Constant",
+                "coordinates": "#/$defs/Coordinates",
+                "formula": "#/$defs/Formula",
+                "gaussian": "#/$defs/Gaussian",
+                "graph": "#/$defs/GraphCall",
+                "if": "#/$defs/Branch",
+                "inference": "#/$defs/Inference"
+              },
+              "propertyName": "op"
+            },
+            "oneOf": [
+              {
+                "$ref": "#/$defs/Constant"
+              },
+              {
+                "$ref": "#/$defs/Formula"
+              },
+              {
+                "$ref": "#/$defs/Call"
+              },
+              {
+                "$ref": "#/$defs/GraphCall"
+              },
+              {
+                "$ref": "#/$defs/Cast"
+              },
+              {
+                "$ref": "#/$defs/Assert"
+              },
+              {
+                "$ref": "#/$defs/Gaussian"
+              },
+              {
+                "$ref": "#/$defs/Coordinates"
+              },
+              {
+                "$ref": "#/$defs/Inference"
+              },
+              {
+                "$ref": "#/$defs/Branch"
+              }
+            ]
+          },
+          "title": "Then",
+          "type": "array"
+        },
+        "else": {
+          "items": {
+            "discriminator": {
+              "mapping": {
+                "assert": "#/$defs/Assert",
+                "call": "#/$defs/Call",
+                "cast": "#/$defs/Cast",
+                "constant": "#/$defs/Constant",
+                "coordinates": "#/$defs/Coordinates",
+                "formula": "#/$defs/Formula",
+                "gaussian": "#/$defs/Gaussian",
+                "graph": "#/$defs/GraphCall",
+                "if": "#/$defs/Branch",
+                "inference": "#/$defs/Inference"
+              },
+              "propertyName": "op"
+            },
+            "oneOf": [
+              {
+                "$ref": "#/$defs/Constant"
+              },
+              {
+                "$ref": "#/$defs/Formula"
+              },
+              {
+                "$ref": "#/$defs/Call"
+              },
+              {
+                "$ref": "#/$defs/GraphCall"
+              },
+              {
+                "$ref": "#/$defs/Cast"
+              },
+              {
+                "$ref": "#/$defs/Assert"
+              },
+              {
+                "$ref": "#/$defs/Gaussian"
+              },
+              {
+                "$ref": "#/$defs/Coordinates"
+              },
+              {
+                "$ref": "#/$defs/Inference"
+              },
+              {
+                "$ref": "#/$defs/Branch"
+              }
+            ]
+          },
+          "title": "Else",
+          "type": "array"
+        }
+      },
+      "required": [
+        "op",
+        "then",
+        "else"
+      ],
+      "title": "Branch",
+      "type": "object"
+    },
+    "Call": {
+      "additionalProperties": false,
+      "properties": {
+        "inputs": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Inputs",
+          "type": "array"
+        },
+        "outputs": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Outputs",
+          "type": "array"
+        },
+        "op": {
+          "const": "call",
+          "title": "Op",
+          "type": "string"
+        },
+        "correction": {
+          "title": "Correction",
+          "type": "string"
+        },
+        "compound": {
+          "default": false,
+          "title": "Compound",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "op",
+        "correction"
+      ],
+      "title": "Call",
+      "type": "object"
+    },
+    "Cast": {
+      "additionalProperties": false,
+      "properties": {
+        "inputs": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Inputs",
+          "type": "array"
+        },
+        "outputs": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Outputs",
+          "type": "array"
+        },
+        "op": {
+          "const": "cast",
+          "title": "Op",
+          "type": "string"
+        },
+        "mode": {
+          "enum": [
+            "float32",
+            "int64"
+          ],
+          "title": "Mode",
+          "type": "string"
+        }
+      },
+      "required": [
+        "op",
+        "mode"
+      ],
+      "title": "Cast",
+      "type": "object"
+    },
+    "Constant": {
+      "additionalProperties": false,
+      "properties": {
+        "inputs": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Inputs",
+          "type": "array"
+        },
+        "outputs": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Outputs",
+          "type": "array"
+        },
+        "op": {
+          "const": "constant",
+          "title": "Op",
+          "type": "string"
+        },
+        "value": {
+          "title": "Value",
+          "type": "number"
+        }
+      },
+      "required": [
+        "op",
+        "value"
+      ],
+      "title": "Constant",
+      "type": "object"
+    },
+    "Coordinates": {
+      "additionalProperties": false,
+      "properties": {
+        "inputs": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Inputs",
+          "type": "array"
+        },
+        "outputs": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Outputs",
+          "type": "array"
+        },
+        "op": {
+          "const": "coordinates",
+          "title": "Op",
+          "type": "string"
+        },
+        "mode": {
+          "enum": [
+            "ptetaphim_properties",
+            "ptetaphim_normalize",
+            "ptetaphim_to_cartesian",
+            "cartesian_to_ptetaphim"
+          ],
+          "title": "Mode",
+          "type": "string"
+        }
+      },
+      "required": [
+        "op",
+        "mode"
+      ],
+      "title": "Coordinates",
+      "type": "object"
+    },
+    "Formula": {
+      "additionalProperties": false,
+      "properties": {
+        "inputs": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Inputs",
+          "type": "array"
+        },
+        "outputs": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Outputs",
+          "type": "array"
+        },
+        "op": {
+          "const": "formula",
+          "title": "Op",
+          "type": "string"
+        },
+        "expression": {
+          "title": "Expression",
+          "type": "string"
+        }
+      },
+      "required": [
+        "op",
+        "expression"
+      ],
+      "title": "Formula",
+      "type": "object"
+    },
+    "Gaussian": {
+      "additionalProperties": false,
+      "properties": {
+        "inputs": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Inputs",
+          "type": "array"
+        },
+        "outputs": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Outputs",
+          "type": "array"
+        },
+        "op": {
+          "const": "gaussian",
+          "title": "Op",
+          "type": "string"
+        },
+        "algorithm": {
+          "const": "ROOT-TRandom3-Gaus",
+          "title": "Algorithm",
+          "type": "string"
+        }
+      },
+      "required": [
+        "op",
+        "algorithm"
+      ],
+      "title": "Gaussian",
+      "type": "object"
+    },
+    "GraphCall": {
+      "additionalProperties": false,
+      "properties": {
+        "inputs": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Inputs",
+          "type": "array"
+        },
+        "outputs": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Outputs",
+          "type": "array"
+        },
+        "op": {
+          "const": "graph",
+          "title": "Op",
+          "type": "string"
+        },
+        "graph": {
+          "title": "Graph",
+          "type": "string"
+        }
+      },
+      "required": [
+        "op",
+        "graph"
+      ],
+      "title": "GraphCall",
+      "type": "object"
+    },
+    "Inference": {
+      "additionalProperties": false,
+      "properties": {
+        "inputs": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Inputs",
+          "type": "array"
+        },
+        "outputs": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Outputs",
+          "type": "array"
+        },
+        "op": {
+          "const": "inference",
+          "title": "Op",
+          "type": "string"
+        },
+        "model": {
+          "title": "Model",
+          "type": "string"
+        },
+        "features": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Features",
+          "type": "array"
+        },
+        "input_node": {
+          "title": "Input Node",
+          "type": "string"
+        },
+        "output_index": {
+          "minimum": 0,
+          "title": "Output Index",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "op",
+        "model",
+        "features",
+        "input_node",
+        "output_index"
+      ],
+      "title": "Inference",
+      "type": "object"
+    },
+    "Program": {
+      "additionalProperties": false,
+      "properties": {
+        "inputs": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Inputs",
+          "type": "array"
+        },
+        "steps": {
+          "items": {
+            "discriminator": {
+              "mapping": {
+                "assert": "#/$defs/Assert",
+                "call": "#/$defs/Call",
+                "cast": "#/$defs/Cast",
+                "constant": "#/$defs/Constant",
+                "coordinates": "#/$defs/Coordinates",
+                "formula": "#/$defs/Formula",
+                "gaussian": "#/$defs/Gaussian",
+                "graph": "#/$defs/GraphCall",
+                "if": "#/$defs/Branch",
+                "inference": "#/$defs/Inference"
+              },
+              "propertyName": "op"
+            },
+            "oneOf": [
+              {
+                "$ref": "#/$defs/Constant"
+              },
+              {
+                "$ref": "#/$defs/Formula"
+              },
+              {
+                "$ref": "#/$defs/Call"
+              },
+              {
+                "$ref": "#/$defs/GraphCall"
+              },
+              {
+                "$ref": "#/$defs/Cast"
+              },
+              {
+                "$ref": "#/$defs/Assert"
+              },
+              {
+                "$ref": "#/$defs/Gaussian"
+              },
+              {
+                "$ref": "#/$defs/Coordinates"
+              },
+              {
+                "$ref": "#/$defs/Inference"
+              },
+              {
+                "$ref": "#/$defs/Branch"
+              }
+            ]
+          },
+          "title": "Steps",
+          "type": "array"
+        },
+        "outputs": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Outputs",
+          "type": "array"
+        }
+      },
+      "required": [
+        "inputs",
+        "steps",
+        "outputs"
+      ],
+      "title": "Program",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "graph_schema_version": {
+      "const": 1,
+      "title": "Graph Schema Version",
+      "type": "integer"
+    },
+    "requires": {
+      "const": "correctionlib-2.7.0+graph-1",
+      "title": "Requires",
+      "type": "string"
+    },
+    "correction_set_file": {
+      "title": "Correction Set File",
+      "type": "string"
+    },
+    "graphs": {
+      "additionalProperties": {
+        "$ref": "#/$defs/Program"
+      },
+      "title": "Graphs",
+      "type": "object"
+    }
+  },
+  "required": [
+    "graph_schema_version",
+    "requires",
+    "correction_set_file",
+    "graphs"
+  ],
+  "title": "GraphBundle",
+  "type": "object"
+}

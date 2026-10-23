@@ -1,0 +1,169 @@
+# NOTE: 
+# - This file is an EXAMPLE of the options available for each step. 
+# - It is NOT a recommended calibration sequence,
+
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Global calib tool settings - note no global properties are currently implemented
+# Global:
+#   SetDetectorEta: False # Switch off detector eta setting - copied from R21 but the functionality has not actually been ported (ie. this does nothing)
+
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Set calibration step ordering
+Sequence:
+  Run2: 
+    FullSim: [Residual, EtaJES, GSC, PtResidual, MC2MC, Smear]
+    AF3: [Residual, EtaJES, GSC, PtResidual, AF3, MC2MC, Smear]
+    Data: [Residual, EtaJES, GSC, PtResidual, Insitu]
+  Run3: 
+    FullSim: [Residual, EtaJES, GSC, PtResidual, MC2MC, Smear]
+    AF3: [Residual, EtaJES, GSC, PtResidual, AF3, MC2MC, Smear]
+    Data: [Residual, EtaJES, GSC, PtResidual, Insitu]
+
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Pile-up correction (area + residual)
+Residual:
+
+  # Apply the rho * area correction
+  DoJetArea: True
+  # Specification to rho
+  RhoKey: Kt4EMPFlowEventShape
+
+  # Residual offset (after jet areas) calibration factors for 21 p-flow jets
+  # Derived by: Josef Pacalt, June 2017
+
+  # These corrections should correspond to the
+  # conditions of the absolute JES calibration
+  DefaultMuRef: 0
+  DefaultNPVRef: 1
+  # mu-scale factor used (only for MC)
+  MuScaleFactor: 1.00
+  # should the beam-spot correction be applied (only for MC)
+  ApplyNPVBeamspotCorrection: 0
+  # Parameters for the residual pile-up correction 
+  AbsEtaBins: [0.0, 0.8, 1.2, 1.7, 2.1, 2.9, 3.3, 4.0, 4.3, 6.0]
+  MuTerm: [-0.014, -0.003, -0.004, -0.064, -0.058, -0.285, 0.186, -0.170, -0.008, 0.088]
+  NPVTerm: [-0.020, -0.001, 0.021, 0.077, 0.068, 0.565, -0.382, 0.203, 0.039, -0.214]
+
+  OutScale: "JetPileupScaleMomentum" # optional (OutScale is set to a sensible default for every step)
+  prereqs:
+    default: []
+
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Absolute Eta+JES
+EtaJES:
+
+  # Used by the python function etajesStep to configure variable retrieval
+  # MCJES derived in October 2017 for MC16
+  ParametrizedVars:
+    varE: "e"
+    varEta: "DetectorEta"
+
+  # All entries below are direct Properties of EtaJESCalibStep :
+
+  # The file with the absolute JES factors
+  CalibConstantFile: JetCalibTools/CalibArea-00-04-82/CalibrationFactors/MC16a_MCJES_4EMPFlow_Oct2017.config
+
+  FreezeJEScorrectionatHighE: True
+  LowPtJESExtrapolationMethod: 1
+  MinPtForETAJES: 15
+  UseSpline: False
+  OutScale: "JetEtaJESScaleMomentum" # optional (OutScale is set to a sensible default for every step)
+  OutputLevel: 3
+  prereqs:
+    default: []
+
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Global sequential calibration
+GSC:
+  fileGSC: 'JetCalibTools/CalibArea-00-04-82/CalibrationFactors/MC16a_GSC_R21_PF_28Nov2017.root'
+  histTool_EM3:
+    N_hist: 35
+    histNameBase: "AntiKt4EMPFlow_EM3_interpolation_resp_eta"
+  histTool_CharFrac:
+    N_hist: 27
+    histNameBase: "AntiKt4EMPFlow_chargedFraction_interpolation_resp_eta"
+  histTool_Tile0:
+    N_hist: 17
+    histNameBase: "AntiKt4EMPFlow_Tile0_interpolation_resp_eta"
+  histTool_nTrk:
+    N_hist: 25
+    histNameBase: "AntiKt4EMPFlow_nTrk_interpolation_resp_eta"
+  histTool_trackWIDTH:
+    N_hist: 25
+    histNameBase: "AntiKt4EMPFlow_trackWIDTH_interpolation_resp_eta"
+  histTool_PunchThrough:
+    N_hist: 2
+    histNameBase: "AntiKt4EMPFlow_PunchThrough_interpolation_resp_eta"
+  applyPunchThrough: True
+  PunchThroughEtaBins: [0.0, 1.3, 1.9]
+  OutScale: "JetGSCScaleMomentum" # optional (OutScale is set to a sensible default for every step)
+  prereqs:
+    default:
+      - mod:CaloEnergies
+      - mod:TrackMoments
+      - ghost:MuonSegment
+    TrigRun2:
+      - mod:CaloEnergies
+  
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Smearing step (MC only)
+Smear:
+  HistoReader:
+    histNameMC: "JER_Nominal_MC_AntiKt4EMPFlow"
+    histNameData: "JER_Nominal_data_AntiKt4EMPFlow"
+    inputFile: "JetCalibTools/CalibArea-00-04-82/CalibrationFactors/JER_Nominal_Aug2018.root"
+    InterpType: "OnlyX"
+    varX: "pt"
+    varY: "abseta"
+  OutScale: "JetSmearedMomentum" # optional (OutScale is set to a sensible default for every step)
+  SmearType: "FourVec"
+
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Time-Dependent Insitu Calibration (data only)
+Insitu:
+  fileInsitu:
+    - 'JetCalibTools/CalibArea-00-04-82/InsituCalibration/InsituCalibration_R21_2015_2016dataset_PFlow_08Feb2018.root'
+    - 'JetCalibTools/CalibArea-00-04-82/InsituCalibration/InsituCalibration_R21_2017dataset_PFlow_08Feb2018.root'
+  histEtaInterCalib:
+    histName: 'AntiKt4EMPFlow_EtaInterCalibration'
+    varX: 'pt'
+    varY: 'DetectorEta'
+  histAbsCalib:
+    histName: 'AntiKt4EMPFlow_InsituCalib'
+    varX: 'pt'
+  RunNumbers: [251102, 314199, 999999]
+  OutScale: "JetInsituScaleMomentum" # optional (OutScale is set to a sensible default for every step)
+  prereqs:
+    default: []
+
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Residual correction for AF3 (don't include for data or FullSim)
+AF3:
+  CalibConstantFile: "JetCalibTools/CalibArea-00-04-83/CalibrationFactors/AF3_MC20_AntiKt4EMPFlow_R22ConsolidatedApril25.root"
+  histoParams:
+    varX: "pt"
+    varY: "absrapidity"
+    histName: "h_respMap_recoPt_recoY"
+
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+# PtResidual correction after GSC
+PtResidual:
+  CalibConstantFile: 'JetCalibTools/CalibArea-00-04-83/CalibrationFactors/PtResidual_MC20_AntiKt4EMPFlow_R22ConsolidatedApril25.root'
+  useBinCenter: True # If set to False, varYHisto does not need to be defined and varY can be set directly to the correct eta variable
+  histoParams:
+    varX: "pt"
+    varY: "binCenterEta" #used to avoid interpolation along eta
+    varYHisto: "DetectorEta"
+    histName: "h_respMap_recoPt_DetEta"
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+# MC-to-MC correction
+MC2MC:
+  CalibConstantFileName: 'JetCalibTools/CalibArea-00-04-83/CalibrationFactors/MC2MC_MC20_AntiKt4EMPFlow_R22ConsolidatedApril25'
+  flavours: ['q','c','b','g']
+  PIDLabel: 'PartonTruthLabelID'
+  histoParams:
+    varX: "pt"
+    varY: "absrapidity"
+    histNameBase: "h_respMap_recoPt_recoY"
+  prereqs:
+    default: []

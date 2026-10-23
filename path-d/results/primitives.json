@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "float32_scalar_and_batch",
+      "passed": true
+    },
+    {
+      "name": "integer_truncation",
+      "passed": true
+    },
+    {
+      "name": "shared_call_and_formula",
+      "passed": true
+    },
+    {
+      "name": "named_graph_call_scalar_batch",
+      "passed": true
+    },
+    {
+      "name": "lazy_conditional",
+      "passed": true
+    },
+    {
+      "name": "exact_ROOT_gaussian_rejection_scalar_batch",
+      "passed": true
+    },
+    {
+      "name": "coordinate_scalar_batch",
+      "passed": true
+    },
+    {
+      "name": "invalid_payload_and_input_rejection",
+      "passed": true
+    }
+  ],
+  "graph_schema_version": 1,
+  "payload_sha256": "39ab149c18aee4eee686bd9dea47115d738ab4273ca529e7028f0c3323ca0ea3",
+  "serialized_roundtrip": true
+}

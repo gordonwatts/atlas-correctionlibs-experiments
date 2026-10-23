@@ -1,0 +1,29 @@
+Using AnalysisBase/25.2.100 [cmake] with platform x86_64-el9-gcc15-opt
+	at /cvmfs/atlas.cern.ch/repo/sw/software/25.2
+Info: CERN ROOT Certificates may not be installed on machine
+      if you have SSL issues, install it https://cern.ch/fudpr
+      or use a container setupATLAS -c <container>
+Unchanged: COOL_ORA_ENABLE_ADAPTIVE_OPT=Y
+CMake Warning (dev) at venv/lib/python3.13/site-packages/pybind11/share/cmake/pybind11/FindPythonLibsNew.cmake:101 (message):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning, or
+  preferably upgrade to using FindPython, either by calling it explicitly
+  before pybind11, or by setting PYBIND11_FINDPYTHON ON before pybind11.
+Call Stack (most recent call first):
+  venv/lib/python3.13/site-packages/pybind11/share/cmake/pybind11/pybind11Tools.cmake:44 (find_package)
+  venv/lib/python3.13/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:243 (include)
+  venv/lib/python3.13/site-packages/pybind11/share/cmake/pybind11/pybind11Config.cmake:257 (include)
+  CMakeLists.txt:8 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found pybind11: /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/pybind11/include (found version "3.1.0")
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/gwatts/atlas/correctionlib_tests/build
+[ 50%] Building CXX object CMakeFiles/_atlas_corrections.dir/src/nominal.cxx.o
+[100%] Linking CXX shared module _atlas_corrections.cpython-313-x86_64-linux-gnu.so
+[100%] Built target _atlas_corrections
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/gwatts/atlas/correctionlib_tests/install/python/_atlas_corrections.cpython-313-x86_64-linux-gnu.so
+-- Set non-toolchain portion of runtime path of "/home/gwatts/atlas/correctionlib_tests/install/python/_atlas_corrections.cpython-313-x86_64-linux-gnu.so" to ""

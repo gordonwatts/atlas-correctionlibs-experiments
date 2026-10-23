@@ -1,0 +1,12 @@
+{
+  "network": {
+    "source": "/cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetPileupTag/NNJvt/2022-03-22/NNJVT.Network.graph.Offline.Nonprompt_All_MaxWeight.json",
+    "sha256": "60abc79f5e724483f61967cd5bb2083c2c71255a62e6813f387c1d523dabecdb",
+    "bundle": "nnjvt-network.json"
+  },
+  "cuts": {
+    "source": "/cvmfs/atlas.cern.ch/repo/sw/database/GroupData/JetPileupTag/NNJvt/2022-03-22/NNJVT.Cuts.FixedEffPt.Offline.Nonprompt_All_MaxW.json",
+    "sha256": "a29154427f1da0c33095a587fcb2d110e63203713d0f39a4bc54a71f680f2e56",
+    "bundle": "nnjvt-cuts.json"
+  }
+}

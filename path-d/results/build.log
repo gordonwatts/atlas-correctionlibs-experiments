@@ -1,0 +1,36 @@
+Using AnalysisBase/25.2.100 [cmake] with platform x86_64-el9-gcc15-opt
+	at /cvmfs/atlas.cern.ch/repo/sw/software/25.2
+Info: CERN ROOT Certificates may not be installed on machine
+      if you have SSL issues, install it https://cern.ch/fudpr
+      or use a container setupATLAS -c <container>
+Unchanged: COOL_ORA_ENABLE_ADAPTIVE_OPT=Y
+CMake Warning (dev) at /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/pybind11/share/cmake/pybind11/FindPythonLibsNew.cmake:101 (message):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning, or
+  preferably upgrade to using FindPython, either by calling it explicitly
+  before pybind11, or by setting PYBIND11_FINDPYTHON ON before pybind11.
+Call Stack (most recent call first):
+  /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/pybind11/share/cmake/pybind11/pybind11Tools.cmake:44 (find_package)
+  /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:243 (include)
+  /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/pybind11/share/cmake/pybind11/pybind11Config.cmake:257 (include)
+  CMakeLists.txt:7 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found pybind11: /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/pybind11/include (found version "3.1.0")
+CMake Warning at /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/cmake/modules/LCGFunctions.cmake:418 (message):
+  There is no LCG_VERSION set?!?
+Call Stack (most recent call first):
+  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/cmake/modules/FindZLIB.cmake:15 (lcg_need_rpm)
+  /home/gwatts/atlas/correctionlib_tests/external/correctionlib-d/CMakeLists.txt:27 (find_package)
+
+
+-- Configuring done (1.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/gwatts/atlas/correctionlib_tests/path-d/build
+[ 33%] Built target correctionlib
+[ 55%] Built target demo
+[ 77%] Built target _core
+[ 88%] Building CXX object CMakeFiles/_declarative.dir/src/bindings.cxx.o
+[100%] Linking CXX shared module _declarative.cpython-313-x86_64-linux-gnu.so
+[100%] Built target _declarative

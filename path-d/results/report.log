@@ -1,0 +1,24 @@
+# Path D validation
+
+PASS: 20,000 events, 196,606 jets, all 117 kinematic and 119 NNJVT/weight states against untouched AnalysisBase A. No tolerance was changed.
+
+| Check | Result |
+|---|---|
+| Nominal intermediate four-vectors | Bitwise identical |
+| All JES/JER/NNJVT/jet and event weights | PASS |
+| Event numbers, original jet indices, per-event counts | Exact |
+| Original-tool JES boundaries | 110 cases, PASS |
+| Original-tool JVT boundaries/statuses | 672 cases, PASS |
+| Original-tool JES/JER boundaries/statuses | 8541 cases across 117 states, PASS |
+| Truth-match wrapped-angle/threshold cases | 108 cases, PASS |
+| Generic primitives and JSON-schema round trip | PASS |
+| Complete graph pipelines vs exposed stage calls | 119 states × 1,024 jets, exact |
+| Full nominal and all-state order/chunk/worker invariance | Exact |
+| Negative pile-up reset, small positive pt, GSC special inputs | PASS |
+
+The direct uncertainty edge oracle exposed and fixed negative-scale ROOT mass normalization and nonpositive-NPV sentinel behavior. A/B/C remain untouched.
+
+The full-sample reference does not record per-jet JES/JER statuses; their exact comparison is limited to the independent 8,541-case synthetic oracle. The original NN model remains a generic lwtnn inference boundary, and ROOT coordinates/TRandom3 remain explicit reusable primitives. See ../docs/design.md for architecture and limits.
+
+The machine-readable validation-summary.json links all per-state reports and records input/configuration/payload/source hashes.
+

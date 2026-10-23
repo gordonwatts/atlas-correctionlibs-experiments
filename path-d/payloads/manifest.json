@@ -1,0 +1,1098 @@
+{
+  "graph_schema_version": 1,
+  "graphs": [
+    "nominal",
+    "NOSYS",
+    "JET_BJES_Response__1up",
+    "JET_BJES_Response__1down",
+    "JET_EffectiveNP_Detector1__1up",
+    "JET_EffectiveNP_Detector1__1down",
+    "JET_EffectiveNP_Detector2__1up",
+    "JET_EffectiveNP_Detector2__1down",
+    "JET_EffectiveNP_Mixed1__1up",
+    "JET_EffectiveNP_Mixed1__1down",
+    "JET_EffectiveNP_Mixed2__1up",
+    "JET_EffectiveNP_Mixed2__1down",
+    "JET_EffectiveNP_Mixed3__1up",
+    "JET_EffectiveNP_Mixed3__1down",
+    "JET_EffectiveNP_Modelling1__1up",
+    "JET_EffectiveNP_Modelling1__1down",
+    "JET_EffectiveNP_Modelling2__1up",
+    "JET_EffectiveNP_Modelling2__1down",
+    "JET_EffectiveNP_Modelling3__1up",
+    "JET_EffectiveNP_Modelling3__1down",
+    "JET_EffectiveNP_Modelling4__1up",
+    "JET_EffectiveNP_Modelling4__1down",
+    "JET_EffectiveNP_Statistical1__1up",
+    "JET_EffectiveNP_Statistical1__1down",
+    "JET_EffectiveNP_Statistical2__1up",
+    "JET_EffectiveNP_Statistical2__1down",
+    "JET_EffectiveNP_Statistical3__1up",
+    "JET_EffectiveNP_Statistical3__1down",
+    "JET_EffectiveNP_Statistical4__1up",
+    "JET_EffectiveNP_Statistical4__1down",
+    "JET_EffectiveNP_Statistical5__1up",
+    "JET_EffectiveNP_Statistical5__1down",
+    "JET_EffectiveNP_Statistical6__1up",
+    "JET_EffectiveNP_Statistical6__1down",
+    "JET_EtaIntercalibration_Modelling__1up",
+    "JET_EtaIntercalibration_Modelling__1down",
+    "JET_EtaIntercalibration_NonClosure_0p2_PreRec__1up",
+    "JET_EtaIntercalibration_NonClosure_0p2_PreRec__1down",
+    "JET_EtaIntercalibration_TotalStat__1up",
+    "JET_EtaIntercalibration_TotalStat__1down",
+    "JET_FCal_MC23_NonClosure_PreRec__1up",
+    "JET_FCal_MC23_NonClosure_PreRec__1down",
+    "JET_Flavor_Composition__1up",
+    "JET_Flavor_Composition__1down",
+    "JET_Flavor_Response__1up",
+    "JET_Flavor_Response__1down",
+    "JET_InSitu_NonClosure_PreRec__1up",
+    "JET_InSitu_NonClosure_PreRec__1down",
+    "JET_JERUnc_Noise_PreRec__1up",
+    "JET_JERUnc_Noise_PreRec__1down",
+    "JET_JERUnc_Noise_PreRec_PseudoData__1up",
+    "JET_JERUnc_Noise_PreRec_PseudoData__1down",
+    "JET_JER_DataVsMC_MC16__1up",
+    "JET_JER_DataVsMC_MC16__1down",
+    "JET_JER_DataVsMC_MC16_PseudoData__1up",
+    "JET_JER_DataVsMC_MC16_PseudoData__1down",
+    "JET_JER_EffectiveNP_1__1up",
+    "JET_JER_EffectiveNP_1__1down",
+    "JET_JER_EffectiveNP_1_PseudoData__1up",
+    "JET_JER_EffectiveNP_1_PseudoData__1down",
+    "JET_JER_EffectiveNP_10__1up",
+    "JET_JER_EffectiveNP_10__1down",
+    "JET_JER_EffectiveNP_10_PseudoData__1up",
+    "JET_JER_EffectiveNP_10_PseudoData__1down",
+    "JET_JER_EffectiveNP_11__1up",
+    "JET_JER_EffectiveNP_11__1down",
+    "JET_JER_EffectiveNP_11_PseudoData__1up",
+    "JET_JER_EffectiveNP_11_PseudoData__1down",
+    "JET_JER_EffectiveNP_12restTerm__1up",
+    "JET_JER_EffectiveNP_12restTerm__1down",
+    "JET_JER_EffectiveNP_12restTerm_PseudoData__1up",
+    "JET_JER_EffectiveNP_12restTerm_PseudoData__1down",
+    "JET_JER_EffectiveNP_2__1up",
+    "JET_JER_EffectiveNP_2__1down",
+    "JET_JER_EffectiveNP_2_PseudoData__1up",
+    "JET_JER_EffectiveNP_2_PseudoData__1down",
+    "JET_JER_EffectiveNP_3__1up",
+    "JET_JER_EffectiveNP_3__1down",
+    "JET_JER_EffectiveNP_3_PseudoData__1up",
+    "JET_JER_EffectiveNP_3_PseudoData__1down",
+    "JET_JER_EffectiveNP_4__1up",
+    "JET_JER_EffectiveNP_4__1down",
+    "JET_JER_EffectiveNP_4_PseudoData__1up",
+    "JET_JER_EffectiveNP_4_PseudoData__1down",
+    "JET_JER_EffectiveNP_5__1up",
+    "JET_JER_EffectiveNP_5__1down",
+    "JET_JER_EffectiveNP_5_PseudoData__1up",
+    "JET_JER_EffectiveNP_5_PseudoData__1down",
+    "JET_JER_EffectiveNP_6__1up",
+    "JET_JER_EffectiveNP_6__1down",
+    "JET_JER_EffectiveNP_6_PseudoData__1up",
+    "JET_JER_EffectiveNP_6_PseudoData__1down",
+    "JET_JER_EffectiveNP_7__1up",
+    "JET_JER_EffectiveNP_7__1down",
+    "JET_JER_EffectiveNP_7_PseudoData__1up",
+    "JET_JER_EffectiveNP_7_PseudoData__1down",
+    "JET_JER_EffectiveNP_8__1up",
+    "JET_JER_EffectiveNP_8__1down",
+    "JET_JER_EffectiveNP_8_PseudoData__1up",
+    "JET_JER_EffectiveNP_8_PseudoData__1down",
+    "JET_JER_EffectiveNP_9__1up",
+    "JET_JER_EffectiveNP_9__1down",
+    "JET_JER_EffectiveNP_9_PseudoData__1up",
+    "JET_JER_EffectiveNP_9_PseudoData__1down",
+    "JET_JESUnc_Noise_PreRec__1up",
+    "JET_JESUnc_Noise_PreRec__1down",
+    "JET_JESUnc_VertexingAlg_PreRec__1up",
+    "JET_JESUnc_VertexingAlg_PreRec__1down",
+    "JET_Pileup_OffsetMu__1up",
+    "JET_Pileup_OffsetMu__1down",
+    "JET_Pileup_OffsetNPV__1up",
+    "JET_Pileup_OffsetNPV__1down",
+    "JET_Pileup_PtTerm__1up",
+    "JET_Pileup_PtTerm__1down",
+    "JET_Pileup_RhoTopology__1up",
+    "JET_Pileup_RhoTopology__1down",
+    "JET_SingleParticle_HighPt__1up",
+    "JET_SingleParticle_HighPt__1down",
+    "nnjvt",
+    "efficiency_-1",
+    "efficiency_0",
+    "efficiency_1",
+    "nominal_prepared",
+    "truth_match",
+    "jvt_-1",
+    "jvt_0",
+    "jvt_1",
+    "pipeline_NOSYS",
+    "pipeline_JET_BJES_Response__1up",
+    "pipeline_JET_BJES_Response__1down",
+    "pipeline_JET_EffectiveNP_Detector1__1up",
+    "pipeline_JET_EffectiveNP_Detector1__1down",
+    "pipeline_JET_EffectiveNP_Detector2__1up",
+    "pipeline_JET_EffectiveNP_Detector2__1down",
+    "pipeline_JET_EffectiveNP_Mixed1__1up",
+    "pipeline_JET_EffectiveNP_Mixed1__1down",
+    "pipeline_JET_EffectiveNP_Mixed2__1up",
+    "pipeline_JET_EffectiveNP_Mixed2__1down",
+    "pipeline_JET_EffectiveNP_Mixed3__1up",
+    "pipeline_JET_EffectiveNP_Mixed3__1down",
+    "pipeline_JET_EffectiveNP_Modelling1__1up",
+    "pipeline_JET_EffectiveNP_Modelling1__1down",
+    "pipeline_JET_EffectiveNP_Modelling2__1up",
+    "pipeline_JET_EffectiveNP_Modelling2__1down",
+    "pipeline_JET_EffectiveNP_Modelling3__1up",
+    "pipeline_JET_EffectiveNP_Modelling3__1down",
+    "pipeline_JET_EffectiveNP_Modelling4__1up",
+    "pipeline_JET_EffectiveNP_Modelling4__1down",
+    "pipeline_JET_EffectiveNP_Statistical1__1up",
+    "pipeline_JET_EffectiveNP_Statistical1__1down",
+    "pipeline_JET_EffectiveNP_Statistical2__1up",
+    "pipeline_JET_EffectiveNP_Statistical2__1down",
+    "pipeline_JET_EffectiveNP_Statistical3__1up",
+    "pipeline_JET_EffectiveNP_Statistical3__1down",
+    "pipeline_JET_EffectiveNP_Statistical4__1up",
+    "pipeline_JET_EffectiveNP_Statistical4__1down",
+    "pipeline_JET_EffectiveNP_Statistical5__1up",
+    "pipeline_JET_EffectiveNP_Statistical5__1down",
+    "pipeline_JET_EffectiveNP_Statistical6__1up",
+    "pipeline_JET_EffectiveNP_Statistical6__1down",
+    "pipeline_JET_EtaIntercalibration_Modelling__1up",
+    "pipeline_JET_EtaIntercalibration_Modelling__1down",
+    "pipeline_JET_EtaIntercalibration_NonClosure_0p2_PreRec__1up",
+    "pipeline_JET_EtaIntercalibration_NonClosure_0p2_PreRec__1down",
+    "pipeline_JET_EtaIntercalibration_TotalStat__1up",
+    "pipeline_JET_EtaIntercalibration_TotalStat__1down",
+    "pipeline_JET_FCal_MC23_NonClosure_PreRec__1up",
+    "pipeline_JET_FCal_MC23_NonClosure_PreRec__1down",
+    "pipeline_JET_Flavor_Composition__1up",
+    "pipeline_JET_Flavor_Composition__1down",
+    "pipeline_JET_Flavor_Response__1up",
+    "pipeline_JET_Flavor_Response__1down",
+    "pipeline_JET_InSitu_NonClosure_PreRec__1up",
+    "pipeline_JET_InSitu_NonClosure_PreRec__1down",
+    "pipeline_JET_JERUnc_Noise_PreRec__1up",
+    "pipeline_JET_JERUnc_Noise_PreRec__1down",
+    "pipeline_JET_JERUnc_Noise_PreRec_PseudoData__1up",
+    "pipeline_JET_JERUnc_Noise_PreRec_PseudoData__1down",
+    "pipeline_JET_JER_DataVsMC_MC16__1up",
+    "pipeline_JET_JER_DataVsMC_MC16__1down",
+    "pipeline_JET_JER_DataVsMC_MC16_PseudoData__1up",
+    "pipeline_JET_JER_DataVsMC_MC16_PseudoData__1down",
+    "pipeline_JET_JER_EffectiveNP_1__1up",
+    "pipeline_JET_JER_EffectiveNP_1__1down",
+    "pipeline_JET_JER_EffectiveNP_1_PseudoData__1up",
+    "pipeline_JET_JER_EffectiveNP_1_PseudoData__1down",
+    "pipeline_JET_JER_EffectiveNP_10__1up",
+    "pipeline_JET_JER_EffectiveNP_10__1down",
+    "pipeline_JET_JER_EffectiveNP_10_PseudoData__1up",
+    "pipeline_JET_JER_EffectiveNP_10_PseudoData__1down",
+    "pipeline_JET_JER_EffectiveNP_11__1up",
+    "pipeline_JET_JER_EffectiveNP_11__1down",
+    "pipeline_JET_JER_EffectiveNP_11_PseudoData__1up",
+    "pipeline_JET_JER_EffectiveNP_11_PseudoData__1down",
+    "pipeline_JET_JER_EffectiveNP_12restTerm__1up",
+    "pipeline_JET_JER_EffectiveNP_12restTerm__1down",
+    "pipeline_JET_JER_EffectiveNP_12restTerm_PseudoData__1up",
+    "pipeline_JET_JER_EffectiveNP_12restTerm_PseudoData__1down",
+    "pipeline_JET_JER_EffectiveNP_2__1up",
+    "pipeline_JET_JER_EffectiveNP_2__1down",
+    "pipeline_JET_JER_EffectiveNP_2_PseudoData__1up",
+    "pipeline_JET_JER_EffectiveNP_2_PseudoData__1down",
+    "pipeline_JET_JER_EffectiveNP_3__1up",
+    "pipeline_JET_JER_EffectiveNP_3__1down",
+    "pipeline_JET_JER_EffectiveNP_3_PseudoData__1up",
+    "pipeline_JET_JER_EffectiveNP_3_PseudoData__1down",
+    "pipeline_JET_JER_EffectiveNP_4__1up",
+    "pipeline_JET_JER_EffectiveNP_4__1down",
+    "pipeline_JET_JER_EffectiveNP_4_PseudoData__1up",
+    "pipeline_JET_JER_EffectiveNP_4_PseudoData__1down",
+    "pipeline_JET_JER_EffectiveNP_5__1up",
+    "pipeline_JET_JER_EffectiveNP_5__1down",
+    "pipeline_JET_JER_EffectiveNP_5_PseudoData__1up",
+    "pipeline_JET_JER_EffectiveNP_5_PseudoData__1down",
+    "pipeline_JET_JER_EffectiveNP_6__1up",
+    "pipeline_JET_JER_EffectiveNP_6__1down",
+    "pipeline_JET_JER_EffectiveNP_6_PseudoData__1up",
+    "pipeline_JET_JER_EffectiveNP_6_PseudoData__1down",
+    "pipeline_JET_JER_EffectiveNP_7__1up",
+    "pipeline_JET_JER_EffectiveNP_7__1down",
+    "pipeline_JET_JER_EffectiveNP_7_PseudoData__1up",
+    "pipeline_JET_JER_EffectiveNP_7_PseudoData__1down",
+    "pipeline_JET_JER_EffectiveNP_8__1up",
+    "pipeline_JET_JER_EffectiveNP_8__1down",
+    "pipeline_JET_JER_EffectiveNP_8_PseudoData__1up",
+    "pipeline_JET_JER_EffectiveNP_8_PseudoData__1down",
+    "pipeline_JET_JER_EffectiveNP_9__1up",
+    "pipeline_JET_JER_EffectiveNP_9__1down",
+    "pipeline_JET_JER_EffectiveNP_9_PseudoData__1up",
+    "pipeline_JET_JER_EffectiveNP_9_PseudoData__1down",
+    "pipeline_JET_JESUnc_Noise_PreRec__1up",
+    "pipeline_JET_JESUnc_Noise_PreRec__1down",
+    "pipeline_JET_JESUnc_VertexingAlg_PreRec__1up",
+    "pipeline_JET_JESUnc_VertexingAlg_PreRec__1down",
+    "pipeline_JET_Pileup_OffsetMu__1up",
+    "pipeline_JET_Pileup_OffsetMu__1down",
+    "pipeline_JET_Pileup_OffsetNPV__1up",
+    "pipeline_JET_Pileup_OffsetNPV__1down",
+    "pipeline_JET_Pileup_PtTerm__1up",
+    "pipeline_JET_Pileup_PtTerm__1down",
+    "pipeline_JET_Pileup_RhoTopology__1up",
+    "pipeline_JET_Pileup_RhoTopology__1down",
+    "pipeline_JET_SingleParticle_HighPt__1up",
+    "pipeline_JET_SingleParticle_HighPt__1down",
+    "pipeline_JET_NNJvtEfficiency__1up",
+    "pipeline_JET_NNJvtEfficiency__1down"
+  ],
+  "source_manifests": {
+    "payloads/nominal-manifest.json": "953d524e7cea08cc76449274231df95a5610a4a882a3e3b3f573def1119fd143",
+    "payloads/uncertainty-manifest.json": "0017dfd1a3ddbebd71a5bcf2dd9958c7fd0c04b9f99ec2deb37d759c4b59cb22",
+    "patches/correctionlib-full-precision-json.patch": "3b428b8236b0972f613526417edb8a79848145e9f01b5759bb17cd20b81feedf"
+  },
+  "runtime_boundaries": [
+    "ROOT coordinate conversions",
+    "ROOT TRandom3::Gaus",
+    "lwtnn FastGraph<double>"
+  ],
+  "base_commit": "fd69c2ef33edbe9a1d4bc714430d6ccda374be00",
+  "kinematic_states": [
+    "JET_BJES_Response__1down",
+    "JET_BJES_Response__1up",
+    "JET_EffectiveNP_Detector1__1down",
+    "JET_EffectiveNP_Detector1__1up",
+    "JET_EffectiveNP_Detector2__1down",
+    "JET_EffectiveNP_Detector2__1up",
+    "JET_EffectiveNP_Mixed1__1down",
+    "JET_EffectiveNP_Mixed1__1up",
+    "JET_EffectiveNP_Mixed2__1down",
+    "JET_EffectiveNP_Mixed2__1up",
+    "JET_EffectiveNP_Mixed3__1down",
+    "JET_EffectiveNP_Mixed3__1up",
+    "JET_EffectiveNP_Modelling1__1down",
+    "JET_EffectiveNP_Modelling1__1up",
+    "JET_EffectiveNP_Modelling2__1down",
+    "JET_EffectiveNP_Modelling2__1up",
+    "JET_EffectiveNP_Modelling3__1down",
+    "JET_EffectiveNP_Modelling3__1up",
+    "JET_EffectiveNP_Modelling4__1down",
+    "JET_EffectiveNP_Modelling4__1up",
+    "JET_EffectiveNP_Statistical1__1down",
+    "JET_EffectiveNP_Statistical1__1up",
+    "JET_EffectiveNP_Statistical2__1down",
+    "JET_EffectiveNP_Statistical2__1up",
+    "JET_EffectiveNP_Statistical3__1down",
+    "JET_EffectiveNP_Statistical3__1up",
+    "JET_EffectiveNP_Statistical4__1down",
+    "JET_EffectiveNP_Statistical4__1up",
+    "JET_EffectiveNP_Statistical5__1down",
+    "JET_EffectiveNP_Statistical5__1up",
+    "JET_EffectiveNP_Statistical6__1down",
+    "JET_EffectiveNP_Statistical6__1up",
+    "JET_EtaIntercalibration_Modelling__1down",
+    "JET_EtaIntercalibration_Modelling__1up",
+    "JET_EtaIntercalibration_NonClosure_0p2_PreRec__1down",
+    "JET_EtaIntercalibration_NonClosure_0p2_PreRec__1up",
+    "JET_EtaIntercalibration_TotalStat__1down",
+    "JET_EtaIntercalibration_TotalStat__1up",
+    "JET_FCal_MC23_NonClosure_PreRec__1down",
+    "JET_FCal_MC23_NonClosure_PreRec__1up",
+    "JET_Flavor_Composition__1down",
+    "JET_Flavor_Composition__1up",
+    "JET_Flavor_Response__1down",
+    "JET_Flavor_Response__1up",
+    "JET_InSitu_NonClosure_PreRec__1down",
+    "JET_InSitu_NonClosure_PreRec__1up",
+    "JET_JERUnc_Noise_PreRec_PseudoData__1down",
+    "JET_JERUnc_Noise_PreRec_PseudoData__1up",
+    "JET_JERUnc_Noise_PreRec__1down",
+    "JET_JERUnc_Noise_PreRec__1up",
+    "JET_JER_DataVsMC_MC16_PseudoData__1down",
+    "JET_JER_DataVsMC_MC16_PseudoData__1up",
+    "JET_JER_DataVsMC_MC16__1down",
+    "JET_JER_DataVsMC_MC16__1up",
+    "JET_JER_EffectiveNP_10_PseudoData__1down",
+    "JET_JER_EffectiveNP_10_PseudoData__1up",
+    "JET_JER_EffectiveNP_10__1down",
+    "JET_JER_EffectiveNP_10__1up",
+    "JET_JER_EffectiveNP_11_PseudoData__1down",
+    "JET_JER_EffectiveNP_11_PseudoData__1up",
+    "JET_JER_EffectiveNP_11__1down",
+    "JET_JER_EffectiveNP_11__1up",
+    "JET_JER_EffectiveNP_12restTerm_PseudoData__1down",
+    "JET_JER_EffectiveNP_12restTerm_PseudoData__1up",
+    "JET_JER_EffectiveNP_12restTerm__1down",
+    "JET_JER_EffectiveNP_12restTerm__1up",
+    "JET_JER_EffectiveNP_1_PseudoData__1down",
+    "JET_JER_EffectiveNP_1_PseudoData__1up",
+    "JET_JER_EffectiveNP_1__1down",
+    "JET_JER_EffectiveNP_1__1up",
+    "JET_JER_EffectiveNP_2_PseudoData__1down",
+    "JET_JER_EffectiveNP_2_PseudoData__1up",
+    "JET_JER_EffectiveNP_2__1down",
+    "JET_JER_EffectiveNP_2__1up",
+    "JET_JER_EffectiveNP_3_PseudoData__1down",
+    "JET_JER_EffectiveNP_3_PseudoData__1up",
+    "JET_JER_EffectiveNP_3__1down",
+    "JET_JER_EffectiveNP_3__1up",
+    "JET_JER_EffectiveNP_4_PseudoData__1down",
+    "JET_JER_EffectiveNP_4_PseudoData__1up",
+    "JET_JER_EffectiveNP_4__1down",
+    "JET_JER_EffectiveNP_4__1up",
+    "JET_JER_EffectiveNP_5_PseudoData__1down",
+    "JET_JER_EffectiveNP_5_PseudoData__1up",
+    "JET_JER_EffectiveNP_5__1down",
+    "JET_JER_EffectiveNP_5__1up",
+    "JET_JER_EffectiveNP_6_PseudoData__1down",
+    "JET_JER_EffectiveNP_6_PseudoData__1up",
+    "JET_JER_EffectiveNP_6__1down",
+    "JET_JER_EffectiveNP_6__1up",
+    "JET_JER_EffectiveNP_7_PseudoData__1down",
+    "JET_JER_EffectiveNP_7_PseudoData__1up",
+    "JET_JER_EffectiveNP_7__1down",
+    "JET_JER_EffectiveNP_7__1up",
+    "JET_JER_EffectiveNP_8_PseudoData__1down",
+    "JET_JER_EffectiveNP_8_PseudoData__1up",
+    "JET_JER_EffectiveNP_8__1down",
+    "JET_JER_EffectiveNP_8__1up",
+    "JET_JER_EffectiveNP_9_PseudoData__1down",
+    "JET_JER_EffectiveNP_9_PseudoData__1up",
+    "JET_JER_EffectiveNP_9__1down",
+    "JET_JER_EffectiveNP_9__1up",
+    "JET_JESUnc_Noise_PreRec__1down",
+    "JET_JESUnc_Noise_PreRec__1up",
+    "JET_JESUnc_VertexingAlg_PreRec__1down",
+    "JET_JESUnc_VertexingAlg_PreRec__1up",
+    "JET_Pileup_OffsetMu__1down",
+    "JET_Pileup_OffsetMu__1up",
+    "JET_Pileup_OffsetNPV__1down",
+    "JET_Pileup_OffsetNPV__1up",
+    "JET_Pileup_PtTerm__1down",
+    "JET_Pileup_PtTerm__1up",
+    "JET_Pileup_RhoTopology__1down",
+    "JET_Pileup_RhoTopology__1up",
+    "JET_SingleParticle_HighPt__1down",
+    "JET_SingleParticle_HighPt__1up",
+    "NOSYS"
+  ],
+  "states": [
+    {
+      "name": "JET_BJES_Response__1down",
+      "kinematic_graph": "JET_BJES_Response__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_BJES_Response__1up",
+      "kinematic_graph": "JET_BJES_Response__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Detector1__1down",
+      "kinematic_graph": "JET_EffectiveNP_Detector1__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Detector1__1up",
+      "kinematic_graph": "JET_EffectiveNP_Detector1__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Detector2__1down",
+      "kinematic_graph": "JET_EffectiveNP_Detector2__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Detector2__1up",
+      "kinematic_graph": "JET_EffectiveNP_Detector2__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Mixed1__1down",
+      "kinematic_graph": "JET_EffectiveNP_Mixed1__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Mixed1__1up",
+      "kinematic_graph": "JET_EffectiveNP_Mixed1__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Mixed2__1down",
+      "kinematic_graph": "JET_EffectiveNP_Mixed2__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Mixed2__1up",
+      "kinematic_graph": "JET_EffectiveNP_Mixed2__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Mixed3__1down",
+      "kinematic_graph": "JET_EffectiveNP_Mixed3__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Mixed3__1up",
+      "kinematic_graph": "JET_EffectiveNP_Mixed3__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Modelling1__1down",
+      "kinematic_graph": "JET_EffectiveNP_Modelling1__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Modelling1__1up",
+      "kinematic_graph": "JET_EffectiveNP_Modelling1__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Modelling2__1down",
+      "kinematic_graph": "JET_EffectiveNP_Modelling2__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Modelling2__1up",
+      "kinematic_graph": "JET_EffectiveNP_Modelling2__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Modelling3__1down",
+      "kinematic_graph": "JET_EffectiveNP_Modelling3__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Modelling3__1up",
+      "kinematic_graph": "JET_EffectiveNP_Modelling3__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Modelling4__1down",
+      "kinematic_graph": "JET_EffectiveNP_Modelling4__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Modelling4__1up",
+      "kinematic_graph": "JET_EffectiveNP_Modelling4__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Statistical1__1down",
+      "kinematic_graph": "JET_EffectiveNP_Statistical1__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Statistical1__1up",
+      "kinematic_graph": "JET_EffectiveNP_Statistical1__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Statistical2__1down",
+      "kinematic_graph": "JET_EffectiveNP_Statistical2__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Statistical2__1up",
+      "kinematic_graph": "JET_EffectiveNP_Statistical2__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Statistical3__1down",
+      "kinematic_graph": "JET_EffectiveNP_Statistical3__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Statistical3__1up",
+      "kinematic_graph": "JET_EffectiveNP_Statistical3__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Statistical4__1down",
+      "kinematic_graph": "JET_EffectiveNP_Statistical4__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Statistical4__1up",
+      "kinematic_graph": "JET_EffectiveNP_Statistical4__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Statistical5__1down",
+      "kinematic_graph": "JET_EffectiveNP_Statistical5__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Statistical5__1up",
+      "kinematic_graph": "JET_EffectiveNP_Statistical5__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Statistical6__1down",
+      "kinematic_graph": "JET_EffectiveNP_Statistical6__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EffectiveNP_Statistical6__1up",
+      "kinematic_graph": "JET_EffectiveNP_Statistical6__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EtaIntercalibration_Modelling__1down",
+      "kinematic_graph": "JET_EtaIntercalibration_Modelling__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EtaIntercalibration_Modelling__1up",
+      "kinematic_graph": "JET_EtaIntercalibration_Modelling__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EtaIntercalibration_NonClosure_0p2_PreRec__1down",
+      "kinematic_graph": "JET_EtaIntercalibration_NonClosure_0p2_PreRec__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EtaIntercalibration_NonClosure_0p2_PreRec__1up",
+      "kinematic_graph": "JET_EtaIntercalibration_NonClosure_0p2_PreRec__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EtaIntercalibration_TotalStat__1down",
+      "kinematic_graph": "JET_EtaIntercalibration_TotalStat__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_EtaIntercalibration_TotalStat__1up",
+      "kinematic_graph": "JET_EtaIntercalibration_TotalStat__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_FCal_MC23_NonClosure_PreRec__1down",
+      "kinematic_graph": "JET_FCal_MC23_NonClosure_PreRec__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_FCal_MC23_NonClosure_PreRec__1up",
+      "kinematic_graph": "JET_FCal_MC23_NonClosure_PreRec__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_Flavor_Composition__1down",
+      "kinematic_graph": "JET_Flavor_Composition__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_Flavor_Composition__1up",
+      "kinematic_graph": "JET_Flavor_Composition__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_Flavor_Response__1down",
+      "kinematic_graph": "JET_Flavor_Response__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_Flavor_Response__1up",
+      "kinematic_graph": "JET_Flavor_Response__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_InSitu_NonClosure_PreRec__1down",
+      "kinematic_graph": "JET_InSitu_NonClosure_PreRec__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_InSitu_NonClosure_PreRec__1up",
+      "kinematic_graph": "JET_InSitu_NonClosure_PreRec__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JERUnc_Noise_PreRec_PseudoData__1down",
+      "kinematic_graph": "JET_JERUnc_Noise_PreRec_PseudoData__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JERUnc_Noise_PreRec_PseudoData__1up",
+      "kinematic_graph": "JET_JERUnc_Noise_PreRec_PseudoData__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JERUnc_Noise_PreRec__1down",
+      "kinematic_graph": "JET_JERUnc_Noise_PreRec__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JERUnc_Noise_PreRec__1up",
+      "kinematic_graph": "JET_JERUnc_Noise_PreRec__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_DataVsMC_MC16_PseudoData__1down",
+      "kinematic_graph": "JET_JER_DataVsMC_MC16_PseudoData__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_DataVsMC_MC16_PseudoData__1up",
+      "kinematic_graph": "JET_JER_DataVsMC_MC16_PseudoData__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_DataVsMC_MC16__1down",
+      "kinematic_graph": "JET_JER_DataVsMC_MC16__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_DataVsMC_MC16__1up",
+      "kinematic_graph": "JET_JER_DataVsMC_MC16__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_10_PseudoData__1down",
+      "kinematic_graph": "JET_JER_EffectiveNP_10_PseudoData__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_10_PseudoData__1up",
+      "kinematic_graph": "JET_JER_EffectiveNP_10_PseudoData__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_10__1down",
+      "kinematic_graph": "JET_JER_EffectiveNP_10__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_10__1up",
+      "kinematic_graph": "JET_JER_EffectiveNP_10__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_11_PseudoData__1down",
+      "kinematic_graph": "JET_JER_EffectiveNP_11_PseudoData__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_11_PseudoData__1up",
+      "kinematic_graph": "JET_JER_EffectiveNP_11_PseudoData__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_11__1down",
+      "kinematic_graph": "JET_JER_EffectiveNP_11__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_11__1up",
+      "kinematic_graph": "JET_JER_EffectiveNP_11__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_12restTerm_PseudoData__1down",
+      "kinematic_graph": "JET_JER_EffectiveNP_12restTerm_PseudoData__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_12restTerm_PseudoData__1up",
+      "kinematic_graph": "JET_JER_EffectiveNP_12restTerm_PseudoData__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_12restTerm__1down",
+      "kinematic_graph": "JET_JER_EffectiveNP_12restTerm__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_12restTerm__1up",
+      "kinematic_graph": "JET_JER_EffectiveNP_12restTerm__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_1_PseudoData__1down",
+      "kinematic_graph": "JET_JER_EffectiveNP_1_PseudoData__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_1_PseudoData__1up",
+      "kinematic_graph": "JET_JER_EffectiveNP_1_PseudoData__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_1__1down",
+      "kinematic_graph": "JET_JER_EffectiveNP_1__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_1__1up",
+      "kinematic_graph": "JET_JER_EffectiveNP_1__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_2_PseudoData__1down",
+      "kinematic_graph": "JET_JER_EffectiveNP_2_PseudoData__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_2_PseudoData__1up",
+      "kinematic_graph": "JET_JER_EffectiveNP_2_PseudoData__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_2__1down",
+      "kinematic_graph": "JET_JER_EffectiveNP_2__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_2__1up",
+      "kinematic_graph": "JET_JER_EffectiveNP_2__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_3_PseudoData__1down",
+      "kinematic_graph": "JET_JER_EffectiveNP_3_PseudoData__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_3_PseudoData__1up",
+      "kinematic_graph": "JET_JER_EffectiveNP_3_PseudoData__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_3__1down",
+      "kinematic_graph": "JET_JER_EffectiveNP_3__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_3__1up",
+      "kinematic_graph": "JET_JER_EffectiveNP_3__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_4_PseudoData__1down",
+      "kinematic_graph": "JET_JER_EffectiveNP_4_PseudoData__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_4_PseudoData__1up",
+      "kinematic_graph": "JET_JER_EffectiveNP_4_PseudoData__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_4__1down",
+      "kinematic_graph": "JET_JER_EffectiveNP_4__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_4__1up",
+      "kinematic_graph": "JET_JER_EffectiveNP_4__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_5_PseudoData__1down",
+      "kinematic_graph": "JET_JER_EffectiveNP_5_PseudoData__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_5_PseudoData__1up",
+      "kinematic_graph": "JET_JER_EffectiveNP_5_PseudoData__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_5__1down",
+      "kinematic_graph": "JET_JER_EffectiveNP_5__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_5__1up",
+      "kinematic_graph": "JET_JER_EffectiveNP_5__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_6_PseudoData__1down",
+      "kinematic_graph": "JET_JER_EffectiveNP_6_PseudoData__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_6_PseudoData__1up",
+      "kinematic_graph": "JET_JER_EffectiveNP_6_PseudoData__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_6__1down",
+      "kinematic_graph": "JET_JER_EffectiveNP_6__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_6__1up",
+      "kinematic_graph": "JET_JER_EffectiveNP_6__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_7_PseudoData__1down",
+      "kinematic_graph": "JET_JER_EffectiveNP_7_PseudoData__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_7_PseudoData__1up",
+      "kinematic_graph": "JET_JER_EffectiveNP_7_PseudoData__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_7__1down",
+      "kinematic_graph": "JET_JER_EffectiveNP_7__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_7__1up",
+      "kinematic_graph": "JET_JER_EffectiveNP_7__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_8_PseudoData__1down",
+      "kinematic_graph": "JET_JER_EffectiveNP_8_PseudoData__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_8_PseudoData__1up",
+      "kinematic_graph": "JET_JER_EffectiveNP_8_PseudoData__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_8__1down",
+      "kinematic_graph": "JET_JER_EffectiveNP_8__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_8__1up",
+      "kinematic_graph": "JET_JER_EffectiveNP_8__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_9_PseudoData__1down",
+      "kinematic_graph": "JET_JER_EffectiveNP_9_PseudoData__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_9_PseudoData__1up",
+      "kinematic_graph": "JET_JER_EffectiveNP_9_PseudoData__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_9__1down",
+      "kinematic_graph": "JET_JER_EffectiveNP_9__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JER_EffectiveNP_9__1up",
+      "kinematic_graph": "JET_JER_EffectiveNP_9__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JESUnc_Noise_PreRec__1down",
+      "kinematic_graph": "JET_JESUnc_Noise_PreRec__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JESUnc_Noise_PreRec__1up",
+      "kinematic_graph": "JET_JESUnc_Noise_PreRec__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JESUnc_VertexingAlg_PreRec__1down",
+      "kinematic_graph": "JET_JESUnc_VertexingAlg_PreRec__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_JESUnc_VertexingAlg_PreRec__1up",
+      "kinematic_graph": "JET_JESUnc_VertexingAlg_PreRec__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_Pileup_OffsetMu__1down",
+      "kinematic_graph": "JET_Pileup_OffsetMu__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_Pileup_OffsetMu__1up",
+      "kinematic_graph": "JET_Pileup_OffsetMu__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_Pileup_OffsetNPV__1down",
+      "kinematic_graph": "JET_Pileup_OffsetNPV__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_Pileup_OffsetNPV__1up",
+      "kinematic_graph": "JET_Pileup_OffsetNPV__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_Pileup_PtTerm__1down",
+      "kinematic_graph": "JET_Pileup_PtTerm__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_Pileup_PtTerm__1up",
+      "kinematic_graph": "JET_Pileup_PtTerm__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_Pileup_RhoTopology__1down",
+      "kinematic_graph": "JET_Pileup_RhoTopology__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_Pileup_RhoTopology__1up",
+      "kinematic_graph": "JET_Pileup_RhoTopology__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_SingleParticle_HighPt__1down",
+      "kinematic_graph": "JET_SingleParticle_HighPt__1down",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_SingleParticle_HighPt__1up",
+      "kinematic_graph": "JET_SingleParticle_HighPt__1up",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "NOSYS",
+      "kinematic_graph": "NOSYS",
+      "sigma": 0,
+      "jvt_graph": "jvt_0"
+    },
+    {
+      "name": "JET_NNJvtEfficiency__1up",
+      "kinematic_graph": "NOSYS",
+      "sigma": 1,
+      "jvt_graph": "jvt_1"
+    },
+    {
+      "name": "JET_NNJvtEfficiency__1down",
+      "kinematic_graph": "NOSYS",
+      "sigma": -1,
+      "jvt_graph": "jvt_-1"
+    }
+  ],
+  "graph_sha256": "39ab149c18aee4eee686bd9dea47115d738ab4273ca529e7028f0c3323ca0ea3"
+}

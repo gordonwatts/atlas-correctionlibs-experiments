@@ -1,0 +1,75 @@
+{
+  "release": "AnalysisBase 25.2.100",
+  "base_commit": "fd69c2ef33edbe9a1d4bc714430d6ccda374be00",
+  "sources": {
+    "/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/src/Reconstruction/Jet/JetCalibTools/Root/JetPileupCorrection.cxx": {
+      "sha256": "686576c2bef6da9f5f071d9335111c040df615165f951595a08cd68b5673f431"
+    },
+    "/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/src/Reconstruction/Jet/JetCalibTools/Root/EtaJESCorrection.cxx": {
+      "sha256": "17a04de2e15b968be0f53d459b7ce9b91942fde692725de3bf1db49bb12f0bce"
+    },
+    "/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/src/Reconstruction/Jet/JetCalibTools/Root/GlobalSequentialCorrection.cxx": {
+      "sha256": "10851c6112843df18eee12f497379b05c460e7c582ce5e8e187c950bcaf61e03"
+    },
+    "/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/src/Reconstruction/Jet/JetUncertainties/Root/JetUncertaintiesTool.cxx": {
+      "sha256": "21d5895be2263f1339b081cce28e721993b4537868cb2112a53c8b83059b5a87"
+    },
+    "/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/src/Reconstruction/Jet/JetUncertainties/Root/UncertaintyComponent.cxx": {
+      "sha256": "39bbc83d3eacbaee68cc32561ebcecc9f0c65e1dbd3ab860e28c79ba68ae9af2"
+    },
+    "/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/src/Reconstruction/Jet/JetUncertainties/Root/PileupUncertaintyComponent.cxx": {
+      "sha256": "54a0505216e9eb48f51c7a602b92018b7578cad80a564470beaa2dcc952c032f"
+    },
+    "/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/src/Reconstruction/Jet/JetUncertainties/Root/FlavourUncertaintyComponent.cxx": {
+      "sha256": "d8403bb6d3393193480d7ed883f849a24d148902c9b0b5e8dd0c3693344afea3"
+    },
+    "/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/src/Reconstruction/Jet/JetUncertainties/Root/UncertaintyGroup.cxx": {
+      "sha256": "c37891913b901b740e1268b17abbe97692f55cecea49164477dc8893ca352b83"
+    },
+    "/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/src/Reconstruction/Jet/JetJvtEfficiency/Root/JvtEfficiencyToolBase.cxx": {
+      "sha256": "51770482da676ee2ed16abcb654965f8b0c56e7f6564e51cccf50b428203f40a"
+    },
+    "/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/src/Reconstruction/Jet/JetJvtEfficiency/Root/NNJvtSelectionTool.cxx": {
+      "sha256": "6b7534aec98ee833ef5d5fcde478f652585fda2c138bcefe497e3795a8c3f951"
+    },
+    "/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/src/Reconstruction/Jet/JetMomentTools/Root/JetVertexNNTagger.cxx": {
+      "sha256": "8344650f8a6efd3068f508c20b871091530803851f6e48d0f57aa1faad2d3be5"
+    },
+    "/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/src/Reconstruction/Jet/JetMomentTools/Root/NNJvtBinning.cxx": {
+      "sha256": "7606c651408a8d811c3b96929e3886fab4fcbca655922bea0b772d39e0dc241a"
+    },
+    "/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/src/PhysicsAnalysis/AnalysisCommon/ParticleJetTools/Root/JetPileupLabelingTool.cxx": {
+      "sha256": "23ea6807f838c8860d1c8702ccf52540552becc610b4c66ed3ebfd2b6748323d"
+    }
+  },
+  "correctionlib_core_unchanged_from_patched_base": true,
+  "graph_to_source": {
+    "nominal": [
+      "JetPileupCorrection.cxx",
+      "EtaJESCorrection.cxx",
+      "GlobalSequentialCorrection.cxx"
+    ],
+    "JET_*": [
+      "JetUncertaintiesTool.cxx",
+      "UncertaintyComponent.cxx",
+      "PileupUncertaintyComponent.cxx",
+      "FlavourUncertaintyComponent.cxx",
+      "UncertaintyGroup.cxx"
+    ],
+    "nnjvt": [
+      "JetVertexNNTagger.cxx",
+      "NNJvtBinning.cxx",
+      "NNJvtSelectionTool.cxx"
+    ],
+    "efficiency_*": [
+      "JvtEfficiencyToolBase.cxx"
+    ],
+    "truth_match": [
+      "JetPileupLabelingTool.cxx"
+    ]
+  },
+  "table_manifests": [
+    "payloads/nominal-manifest.json",
+    "payloads/uncertainty-manifest.json"
+  ]
+}

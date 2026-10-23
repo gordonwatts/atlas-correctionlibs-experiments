@@ -1,0 +1,1558 @@
+[
+  {
+    "path": "results/columnar-kinematics.root",
+    "bytes": 463353714
+  },
+  {
+    "path": "results/columnar-jvt.root",
+    "bytes": 120265734
+  },
+  {
+    "path": "results/jvt-inputs.npz",
+    "bytes": 13334788
+  },
+  {
+    "path": "results/columnar-nominal.npz",
+    "bytes": 19194940
+  },
+  {
+    "path": "results/columnar-inputs.npz",
+    "bytes": 22020134
+  },
+  {
+    "path": "results/reference/reference.root",
+    "bytes": 743543859
+  },
+  {
+    "path": "results/reference/hist-reference.root",
+    "bytes": 12791
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2304-a2fd/driver.root",
+    "bytes": 1301
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2304-a2fd/submit/config.root",
+    "bytes": 7028
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2304-a2fd/input/reference.root",
+    "bytes": 2016
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2304-a2fd/fetch/hist-reference-0.root",
+    "bytes": 815
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2304-a2fd/fetch/data-ANALYSIS/reference-0.root",
+    "bytes": 5160
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2304-a2fd/hist/reference.root",
+    "bytes": 1879
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2258-d6e3/driver.root",
+    "bytes": 1301
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2258-d6e3/submit/config.root",
+    "bytes": 6810
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2258-d6e3/input/reference.root",
+    "bytes": 2016
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2258-d6e3/hist/reference.root",
+    "bytes": 1878
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2258-d6e3/output-ANALYSIS/reference.root",
+    "bytes": 1667
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2306-612d/driver.root",
+    "bytes": 1301
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2306-612d/submit/config.root",
+    "bytes": 7043
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2306-612d/input/reference.root",
+    "bytes": 2016
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2306-612d/hist/reference.root",
+    "bytes": 1878
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2306-612d/output-ANALYSIS/reference.root",
+    "bytes": 1667
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2307-7a36/driver.root",
+    "bytes": 1301
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2307-7a36/submit/config.root",
+    "bytes": 7047
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2307-7a36/input/reference.root",
+    "bytes": 2016
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2307-7a36/hist/reference.root",
+    "bytes": 1878
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2307-7a36/output-ANALYSIS/reference.root",
+    "bytes": 1668
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2256-dd7a/driver.root",
+    "bytes": 1301
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2256-dd7a/submit/config.root",
+    "bytes": 6789
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2256-dd7a/input/reference.root",
+    "bytes": 2016
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2256-dd7a/fetch/hist-reference-0.root",
+    "bytes": 815
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2256-dd7a/fetch/data-ANALYSIS/reference-0.root",
+    "bytes": 5160
+  },
+  {
+    "path": "results/reference/workDir-2026-10-21-2256-dd7a/hist/reference.root",
+    "bytes": 1878
+  },
+  {
+    "path": "results/bundle-only/hist-bundle.root",
+    "bytes": 12768
+  },
+  {
+    "path": "results/bundle-only/bundle.root",
+    "bytes": 300160
+  },
+  {
+    "path": "results/bundle-only/workDir-2026-10-22-0008-24bb/driver.root",
+    "bytes": 1309
+  },
+  {
+    "path": "results/bundle-only/workDir-2026-10-22-0008-24bb/submit/config.root",
+    "bytes": 7055
+  },
+  {
+    "path": "results/bundle-only/workDir-2026-10-22-0008-24bb/input/bundle.root",
+    "bytes": 2012
+  },
+  {
+    "path": "results/bundle-only/workDir-2026-10-22-0008-24bb/hist/bundle.root",
+    "bytes": 1876
+  },
+  {
+    "path": "results/bundle-only/workDir-2026-10-22-0008-24bb/output-ANALYSIS/bundle.root",
+    "bytes": 1655
+  },
+  {
+    "path": "results/phys-replacement/hist-phys.root",
+    "bytes": 12811
+  },
+  {
+    "path": "results/phys-replacement/phys.root",
+    "bytes": 4019502
+  },
+  {
+    "path": "results/phys-replacement/workDir-2026-10-21-2351-dd6d/driver.root",
+    "bytes": 1329
+  },
+  {
+    "path": "results/phys-replacement/workDir-2026-10-21-2351-dd6d/submit/config.root",
+    "bytes": 7140
+  },
+  {
+    "path": "results/phys-replacement/workDir-2026-10-21-2351-dd6d/input/phys.root",
+    "bytes": 2019
+  },
+  {
+    "path": "results/phys-replacement/workDir-2026-10-21-2351-dd6d/hist/phys.root",
+    "bytes": 1892
+  },
+  {
+    "path": "results/phys-replacement/workDir-2026-10-21-2351-dd6d/output-ANALYSIS/phys.root",
+    "bytes": 1652
+  },
+  {
+    "path": "results/smoke/reference.root",
+    "bytes": 4018304
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetUncertainties-5000-2/hist-output.root",
+    "bytes": 12954
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetUncertainties-5000-2/output.root",
+    "bytes": 185982952
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetUncertainties-5000-2/workDir-2026-10-22-2330-fdcf/driver.root",
+    "bytes": 1449
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetUncertainties-5000-2/workDir-2026-10-22-2330-fdcf/submit/config.root",
+    "bytes": 7229
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetUncertainties-5000-2/workDir-2026-10-22-2330-fdcf/input/output.root",
+    "bytes": 2151
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetUncertainties-5000-2/workDir-2026-10-22-2330-fdcf/hist/output.root",
+    "bytes": 2047
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetUncertainties-5000-2/workDir-2026-10-22-2330-fdcf/output-ANALYSIS/output.root",
+    "bytes": 1686
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetJvtEfficiency-5000-2/hist-output.root",
+    "bytes": 12960
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetJvtEfficiency-5000-2/output.root",
+    "bytes": 185983887
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetJvtEfficiency-5000-2/workDir-2026-10-22-2328-53f9/driver.root",
+    "bytes": 1449
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetJvtEfficiency-5000-2/workDir-2026-10-22-2328-53f9/submit/config.root",
+    "bytes": 7234
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetJvtEfficiency-5000-2/workDir-2026-10-22-2328-53f9/input/output.root",
+    "bytes": 2151
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetJvtEfficiency-5000-2/workDir-2026-10-22-2328-53f9/hist/output.root",
+    "bytes": 2049
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetJvtEfficiency-5000-2/workDir-2026-10-22-2328-53f9/output-ANALYSIS/output.root",
+    "bytes": 1688
+  },
+  {
+    "path": "results/overhead-study-hybrids/A-hybrid-5000-2/hist-output.root",
+    "bytes": 12922
+  },
+  {
+    "path": "results/overhead-study-hybrids/A-hybrid-5000-2/output.root",
+    "bytes": 185981937
+  },
+  {
+    "path": "results/overhead-study-hybrids/A-hybrid-5000-2/workDir-2026-10-22-2333-7272/driver.root",
+    "bytes": 1417
+  },
+  {
+    "path": "results/overhead-study-hybrids/A-hybrid-5000-2/workDir-2026-10-22-2333-7272/submit/config.root",
+    "bytes": 7193
+  },
+  {
+    "path": "results/overhead-study-hybrids/A-hybrid-5000-2/workDir-2026-10-22-2333-7272/input/output.root",
+    "bytes": 2119
+  },
+  {
+    "path": "results/overhead-study-hybrids/A-hybrid-5000-2/workDir-2026-10-22-2333-7272/hist/output.root",
+    "bytes": 2006
+  },
+  {
+    "path": "results/overhead-study-hybrids/A-hybrid-5000-2/workDir-2026-10-22-2333-7272/output-ANALYSIS/output.root",
+    "bytes": 1677
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetJvtEfficiency-5000-1/hist-output.root",
+    "bytes": 12962
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetJvtEfficiency-5000-1/output.root",
+    "bytes": 185983887
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetJvtEfficiency-5000-1/workDir-2026-10-22-2327-8acf/driver.root",
+    "bytes": 1449
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetJvtEfficiency-5000-1/workDir-2026-10-22-2327-8acf/submit/config.root",
+    "bytes": 7235
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetJvtEfficiency-5000-1/workDir-2026-10-22-2327-8acf/input/output.root",
+    "bytes": 2151
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetJvtEfficiency-5000-1/workDir-2026-10-22-2327-8acf/hist/output.root",
+    "bytes": 2050
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetJvtEfficiency-5000-1/workDir-2026-10-22-2327-8acf/output-ANALYSIS/output.root",
+    "bytes": 1688
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetCalibTools-5000-2/hist-output.root",
+    "bytes": 12943
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetCalibTools-5000-2/output.root",
+    "bytes": 185982610
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetCalibTools-5000-2/workDir-2026-10-22-2331-e1a6/driver.root",
+    "bytes": 1437
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetCalibTools-5000-2/workDir-2026-10-22-2331-e1a6/submit/config.root",
+    "bytes": 7213
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetCalibTools-5000-2/workDir-2026-10-22-2331-e1a6/input/output.root",
+    "bytes": 2139
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetCalibTools-5000-2/workDir-2026-10-22-2331-e1a6/hist/output.root",
+    "bytes": 2033
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetCalibTools-5000-2/workDir-2026-10-22-2331-e1a6/output-ANALYSIS/output.root",
+    "bytes": 1684
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetUncertainties-5000-1/hist-output.root",
+    "bytes": 12963
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetUncertainties-5000-1/output.root",
+    "bytes": 185982952
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetUncertainties-5000-1/workDir-2026-10-22-2325-b495/driver.root",
+    "bytes": 1449
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetUncertainties-5000-1/workDir-2026-10-22-2325-b495/submit/config.root",
+    "bytes": 7229
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetUncertainties-5000-1/workDir-2026-10-22-2325-b495/input/output.root",
+    "bytes": 2151
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetUncertainties-5000-1/workDir-2026-10-22-2325-b495/hist/output.root",
+    "bytes": 2048
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetUncertainties-5000-1/workDir-2026-10-22-2325-b495/output-ANALYSIS/output.root",
+    "bytes": 1687
+  },
+  {
+    "path": "results/overhead-study-hybrids/A-hybrid-5000-1/hist-output.root",
+    "bytes": 12922
+  },
+  {
+    "path": "results/overhead-study-hybrids/A-hybrid-5000-1/output.root",
+    "bytes": 185981937
+  },
+  {
+    "path": "results/overhead-study-hybrids/A-hybrid-5000-1/workDir-2026-10-22-2323-8448/driver.root",
+    "bytes": 1417
+  },
+  {
+    "path": "results/overhead-study-hybrids/A-hybrid-5000-1/workDir-2026-10-22-2323-8448/submit/config.root",
+    "bytes": 7194
+  },
+  {
+    "path": "results/overhead-study-hybrids/A-hybrid-5000-1/workDir-2026-10-22-2323-8448/input/output.root",
+    "bytes": 2119
+  },
+  {
+    "path": "results/overhead-study-hybrids/A-hybrid-5000-1/workDir-2026-10-22-2323-8448/hist/output.root",
+    "bytes": 2008
+  },
+  {
+    "path": "results/overhead-study-hybrids/A-hybrid-5000-1/workDir-2026-10-22-2323-8448/output-ANALYSIS/output.root",
+    "bytes": 1678
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetCalibTools-5000-1/hist-output.root",
+    "bytes": 12944
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetCalibTools-5000-1/output.root",
+    "bytes": 185982610
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetCalibTools-5000-1/workDir-2026-10-22-2324-c38d/driver.root",
+    "bytes": 1437
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetCalibTools-5000-1/workDir-2026-10-22-2324-c38d/submit/config.root",
+    "bytes": 7215
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetCalibTools-5000-1/workDir-2026-10-22-2324-c38d/input/output.root",
+    "bytes": 2139
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetCalibTools-5000-1/workDir-2026-10-22-2324-c38d/hist/output.root",
+    "bytes": 2035
+  },
+  {
+    "path": "results/overhead-study-hybrids/JetCalibTools-5000-1/workDir-2026-10-22-2324-c38d/output-ANALYSIS/output.root",
+    "bytes": 1685
+  },
+  {
+    "path": "results/phys-reference/hist-phys.root",
+    "bytes": 12773
+  },
+  {
+    "path": "results/phys-reference/phys.root",
+    "bytes": 4019480
+  },
+  {
+    "path": "results/phys-reference/workDir-2026-10-21-2350-7e3f/driver.root",
+    "bytes": 1321
+  },
+  {
+    "path": "results/phys-reference/workDir-2026-10-21-2350-7e3f/submit/config.root",
+    "bytes": 7128
+  },
+  {
+    "path": "results/phys-reference/workDir-2026-10-21-2350-7e3f/input/phys.root",
+    "bytes": 2011
+  },
+  {
+    "path": "results/phys-reference/workDir-2026-10-21-2350-7e3f/hist/phys.root",
+    "bytes": 1883
+  },
+  {
+    "path": "results/phys-reference/workDir-2026-10-21-2350-7e3f/output-ANALYSIS/phys.root",
+    "bytes": 1650
+  },
+  {
+    "path": "results/phys-relonly/hist-phys.root",
+    "bytes": 12791
+  },
+  {
+    "path": "results/phys-relonly/phys.root",
+    "bytes": 4019484
+  },
+  {
+    "path": "results/phys-relonly/workDir-2026-10-21-2349-bdfc/driver.root",
+    "bytes": 1313
+  },
+  {
+    "path": "results/phys-relonly/workDir-2026-10-21-2349-bdfc/submit/config.root",
+    "bytes": 7119
+  },
+  {
+    "path": "results/phys-relonly/workDir-2026-10-21-2349-bdfc/input/phys.root",
+    "bytes": 2003
+  },
+  {
+    "path": "results/phys-relonly/workDir-2026-10-21-2349-bdfc/hist/phys.root",
+    "bytes": 1872
+  },
+  {
+    "path": "results/phys-relonly/workDir-2026-10-21-2349-bdfc/output-ANALYSIS/phys.root",
+    "bytes": 1650
+  },
+  {
+    "path": "results/phys-relonly/workDir-2026-10-21-2349-8fbe/driver.root",
+    "bytes": 1313
+  },
+  {
+    "path": "results/phys-relonly/workDir-2026-10-21-2349-8fbe/submit/config.root",
+    "bytes": 7119
+  },
+  {
+    "path": "results/phys-relonly/workDir-2026-10-21-2349-8fbe/input/phys.root",
+    "bytes": 2003
+  },
+  {
+    "path": "results/phys-relonly/workDir-2026-10-21-2349-8fbe/hist/phys.root",
+    "bytes": 1873
+  },
+  {
+    "path": "results/phys-relonly/workDir-2026-10-21-2349-8fbe/output-ANALYSIS/phys.root",
+    "bytes": 1649
+  },
+  {
+    "path": "results/overhead-study/A-1-2/hist-output.root",
+    "bytes": 12786
+  },
+  {
+    "path": "results/overhead-study/A-1-2/output.root",
+    "bytes": 300528
+  },
+  {
+    "path": "results/overhead-study/A-1-2/workDir-2026-10-22-2316-9346/driver.root",
+    "bytes": 1345
+  },
+  {
+    "path": "results/overhead-study/A-1-2/workDir-2026-10-22-2316-9346/submit/config.root",
+    "bytes": 7108
+  },
+  {
+    "path": "results/overhead-study/A-1-2/workDir-2026-10-22-2316-9346/input/output.root",
+    "bytes": 2047
+  },
+  {
+    "path": "results/overhead-study/A-1-2/workDir-2026-10-22-2316-9346/hist/output.root",
+    "bytes": 1922
+  },
+  {
+    "path": "results/overhead-study/A-1-2/workDir-2026-10-22-2316-9346/output-ANALYSIS/output.root",
+    "bytes": 1666
+  },
+  {
+    "path": "results/overhead-study/A-5000-2/hist-output.root",
+    "bytes": 12844
+  },
+  {
+    "path": "results/overhead-study/A-5000-2/output.root",
+    "bytes": 185982512
+  },
+  {
+    "path": "results/overhead-study/A-5000-2/workDir-2026-10-22-2319-988b/driver.root",
+    "bytes": 1357
+  },
+  {
+    "path": "results/overhead-study/A-5000-2/workDir-2026-10-22-2319-988b/submit/config.root",
+    "bytes": 7123
+  },
+  {
+    "path": "results/overhead-study/A-5000-2/workDir-2026-10-22-2319-988b/input/output.root",
+    "bytes": 2059
+  },
+  {
+    "path": "results/overhead-study/A-5000-2/workDir-2026-10-22-2319-988b/hist/output.root",
+    "bytes": 1938
+  },
+  {
+    "path": "results/overhead-study/A-5000-2/workDir-2026-10-22-2319-988b/output-ANALYSIS/output.root",
+    "bytes": 1671
+  },
+  {
+    "path": "results/overhead-study/A-1-1/hist-output.root",
+    "bytes": 12786
+  },
+  {
+    "path": "results/overhead-study/A-1-1/output.root",
+    "bytes": 300528
+  },
+  {
+    "path": "results/overhead-study/A-1-1/workDir-2026-10-22-2311-0139/driver.root",
+    "bytes": 1345
+  },
+  {
+    "path": "results/overhead-study/A-1-1/workDir-2026-10-22-2311-0139/submit/config.root",
+    "bytes": 7107
+  },
+  {
+    "path": "results/overhead-study/A-1-1/workDir-2026-10-22-2311-0139/input/output.root",
+    "bytes": 2047
+  },
+  {
+    "path": "results/overhead-study/A-1-1/workDir-2026-10-22-2311-0139/hist/output.root",
+    "bytes": 1922
+  },
+  {
+    "path": "results/overhead-study/A-1-1/workDir-2026-10-22-2311-0139/output-ANALYSIS/output.root",
+    "bytes": 1665
+  },
+  {
+    "path": "results/overhead-study/B-1-2/hist-output.root",
+    "bytes": 12815
+  },
+  {
+    "path": "results/overhead-study/B-1-2/output.root",
+    "bytes": 300528
+  },
+  {
+    "path": "results/overhead-study/B-1-2/workDir-2026-10-22-2315-8d61/driver.root",
+    "bytes": 1345
+  },
+  {
+    "path": "results/overhead-study/B-1-2/workDir-2026-10-22-2315-8d61/submit/config.root",
+    "bytes": 7107
+  },
+  {
+    "path": "results/overhead-study/B-1-2/workDir-2026-10-22-2315-8d61/input/output.root",
+    "bytes": 2047
+  },
+  {
+    "path": "results/overhead-study/B-1-2/workDir-2026-10-22-2315-8d61/hist/output.root",
+    "bytes": 1922
+  },
+  {
+    "path": "results/overhead-study/B-1-2/workDir-2026-10-22-2315-8d61/output-ANALYSIS/output.root",
+    "bytes": 1666
+  },
+  {
+    "path": "results/overhead-study/B-1000-2/hist-output.root",
+    "bytes": 12874
+  },
+  {
+    "path": "results/overhead-study/B-1000-2/output.root",
+    "bytes": 37611408
+  },
+  {
+    "path": "results/overhead-study/B-1000-2/workDir-2026-10-22-2316-063c/driver.root",
+    "bytes": 1357
+  },
+  {
+    "path": "results/overhead-study/B-1000-2/workDir-2026-10-22-2316-063c/submit/config.root",
+    "bytes": 7120
+  },
+  {
+    "path": "results/overhead-study/B-1000-2/workDir-2026-10-22-2316-063c/input/output.root",
+    "bytes": 2059
+  },
+  {
+    "path": "results/overhead-study/B-1000-2/workDir-2026-10-22-2316-063c/hist/output.root",
+    "bytes": 1937
+  },
+  {
+    "path": "results/overhead-study/B-1000-2/workDir-2026-10-22-2316-063c/output-ANALYSIS/output.root",
+    "bytes": 1670
+  },
+  {
+    "path": "results/overhead-study/B-5000-2/hist-output.root",
+    "bytes": 12869
+  },
+  {
+    "path": "results/overhead-study/B-5000-2/output.root",
+    "bytes": 185983805
+  },
+  {
+    "path": "results/overhead-study/B-5000-2/workDir-2026-10-22-2317-f810/driver.root",
+    "bytes": 1357
+  },
+  {
+    "path": "results/overhead-study/B-5000-2/workDir-2026-10-22-2317-f810/submit/config.root",
+    "bytes": 7121
+  },
+  {
+    "path": "results/overhead-study/B-5000-2/workDir-2026-10-22-2317-f810/input/output.root",
+    "bytes": 2059
+  },
+  {
+    "path": "results/overhead-study/B-5000-2/workDir-2026-10-22-2317-f810/hist/output.root",
+    "bytes": 1938
+  },
+  {
+    "path": "results/overhead-study/B-5000-2/workDir-2026-10-22-2317-f810/output-ANALYSIS/output.root",
+    "bytes": 1671
+  },
+  {
+    "path": "results/overhead-study/A-1000-2/hist-output.root",
+    "bytes": 12848
+  },
+  {
+    "path": "results/overhead-study/A-1000-2/output.root",
+    "bytes": 37611007
+  },
+  {
+    "path": "results/overhead-study/A-1000-2/workDir-2026-10-22-2317-ce66/driver.root",
+    "bytes": 1357
+  },
+  {
+    "path": "results/overhead-study/A-1000-2/workDir-2026-10-22-2317-ce66/submit/config.root",
+    "bytes": 7120
+  },
+  {
+    "path": "results/overhead-study/A-1000-2/workDir-2026-10-22-2317-ce66/input/output.root",
+    "bytes": 2059
+  },
+  {
+    "path": "results/overhead-study/A-1000-2/workDir-2026-10-22-2317-ce66/hist/output.root",
+    "bytes": 1937
+  },
+  {
+    "path": "results/overhead-study/A-1000-2/workDir-2026-10-22-2317-ce66/output-ANALYSIS/output.root",
+    "bytes": 1669
+  },
+  {
+    "path": "results/overhead-study/B-5000-1/hist-output.root",
+    "bytes": 12869
+  },
+  {
+    "path": "results/overhead-study/B-5000-1/output.root",
+    "bytes": 185983805
+  },
+  {
+    "path": "results/overhead-study/B-5000-1/workDir-2026-10-22-2314-02d5/driver.root",
+    "bytes": 1357
+  },
+  {
+    "path": "results/overhead-study/B-5000-1/workDir-2026-10-22-2314-02d5/submit/config.root",
+    "bytes": 7122
+  },
+  {
+    "path": "results/overhead-study/B-5000-1/workDir-2026-10-22-2314-02d5/input/output.root",
+    "bytes": 2059
+  },
+  {
+    "path": "results/overhead-study/B-5000-1/workDir-2026-10-22-2314-02d5/hist/output.root",
+    "bytes": 1937
+  },
+  {
+    "path": "results/overhead-study/B-5000-1/workDir-2026-10-22-2314-02d5/output-ANALYSIS/output.root",
+    "bytes": 1670
+  },
+  {
+    "path": "results/overhead-study/A-5000-1/hist-output.root",
+    "bytes": 12842
+  },
+  {
+    "path": "results/overhead-study/A-5000-1/output.root",
+    "bytes": 185982512
+  },
+  {
+    "path": "results/overhead-study/A-5000-1/workDir-2026-10-22-2312-b57e/driver.root",
+    "bytes": 1357
+  },
+  {
+    "path": "results/overhead-study/A-5000-1/workDir-2026-10-22-2312-b57e/submit/config.root",
+    "bytes": 7124
+  },
+  {
+    "path": "results/overhead-study/A-5000-1/workDir-2026-10-22-2312-b57e/input/output.root",
+    "bytes": 2059
+  },
+  {
+    "path": "results/overhead-study/A-5000-1/workDir-2026-10-22-2312-b57e/hist/output.root",
+    "bytes": 1937
+  },
+  {
+    "path": "results/overhead-study/A-5000-1/workDir-2026-10-22-2312-b57e/output-ANALYSIS/output.root",
+    "bytes": 1670
+  },
+  {
+    "path": "results/overhead-study/B-1000-1/hist-output.root",
+    "bytes": 12876
+  },
+  {
+    "path": "results/overhead-study/B-1000-1/output.root",
+    "bytes": 37611408
+  },
+  {
+    "path": "results/overhead-study/B-1000-1/workDir-2026-10-22-2312-9b42/driver.root",
+    "bytes": 1357
+  },
+  {
+    "path": "results/overhead-study/B-1000-1/workDir-2026-10-22-2312-9b42/submit/config.root",
+    "bytes": 7120
+  },
+  {
+    "path": "results/overhead-study/B-1000-1/workDir-2026-10-22-2312-9b42/input/output.root",
+    "bytes": 2059
+  },
+  {
+    "path": "results/overhead-study/B-1000-1/workDir-2026-10-22-2312-9b42/hist/output.root",
+    "bytes": 1937
+  },
+  {
+    "path": "results/overhead-study/B-1000-1/workDir-2026-10-22-2312-9b42/output-ANALYSIS/output.root",
+    "bytes": 1670
+  },
+  {
+    "path": "results/overhead-study/B-1-1/hist-output.root",
+    "bytes": 12815
+  },
+  {
+    "path": "results/overhead-study/B-1-1/output.root",
+    "bytes": 300528
+  },
+  {
+    "path": "results/overhead-study/B-1-1/workDir-2026-10-22-2311-e305/driver.root",
+    "bytes": 1345
+  },
+  {
+    "path": "results/overhead-study/B-1-1/workDir-2026-10-22-2311-e305/submit/config.root",
+    "bytes": 7106
+  },
+  {
+    "path": "results/overhead-study/B-1-1/workDir-2026-10-22-2311-e305/input/output.root",
+    "bytes": 2047
+  },
+  {
+    "path": "results/overhead-study/B-1-1/workDir-2026-10-22-2311-e305/hist/output.root",
+    "bytes": 1922
+  },
+  {
+    "path": "results/overhead-study/B-1-1/workDir-2026-10-22-2311-e305/output-ANALYSIS/output.root",
+    "bytes": 1666
+  },
+  {
+    "path": "results/overhead-study/A-1000-1/hist-output.root",
+    "bytes": 12847
+  },
+  {
+    "path": "results/overhead-study/A-1000-1/output.root",
+    "bytes": 37611007
+  },
+  {
+    "path": "results/overhead-study/A-1000-1/workDir-2026-10-22-2311-8f85/driver.root",
+    "bytes": 1357
+  },
+  {
+    "path": "results/overhead-study/A-1000-1/workDir-2026-10-22-2311-8f85/submit/config.root",
+    "bytes": 7121
+  },
+  {
+    "path": "results/overhead-study/A-1000-1/workDir-2026-10-22-2311-8f85/input/output.root",
+    "bytes": 2059
+  },
+  {
+    "path": "results/overhead-study/A-1000-1/workDir-2026-10-22-2311-8f85/hist/output.root",
+    "bytes": 1938
+  },
+  {
+    "path": "results/overhead-study/A-1000-1/workDir-2026-10-22-2311-8f85/output-ANALYSIS/output.root",
+    "bytes": 1670
+  },
+  {
+    "path": "results/repeated-timing/B-1/hist-output.root",
+    "bytes": 12852
+  },
+  {
+    "path": "results/repeated-timing/B-1/output.root",
+    "bytes": 743543805
+  },
+  {
+    "path": "results/repeated-timing/B-1/workDir-2026-10-22-0622-973c/driver.root",
+    "bytes": 1341
+  },
+  {
+    "path": "results/repeated-timing/B-1/workDir-2026-10-22-0622-973c/submit/config.root",
+    "bytes": 7097
+  },
+  {
+    "path": "results/repeated-timing/B-1/workDir-2026-10-22-0622-973c/input/output.root",
+    "bytes": 2043
+  },
+  {
+    "path": "results/repeated-timing/B-1/workDir-2026-10-22-0622-973c/hist/output.root",
+    "bytes": 1915
+  },
+  {
+    "path": "results/repeated-timing/B-1/workDir-2026-10-22-0622-973c/output-ANALYSIS/output.root",
+    "bytes": 1663
+  },
+  {
+    "path": "results/repeated-timing/B-3/hist-output.root",
+    "bytes": 12852
+  },
+  {
+    "path": "results/repeated-timing/B-3/output.root",
+    "bytes": 743543805
+  },
+  {
+    "path": "results/repeated-timing/B-3/workDir-2026-10-22-0648-36ab/driver.root",
+    "bytes": 1341
+  },
+  {
+    "path": "results/repeated-timing/B-3/workDir-2026-10-22-0648-36ab/submit/config.root",
+    "bytes": 7099
+  },
+  {
+    "path": "results/repeated-timing/B-3/workDir-2026-10-22-0648-36ab/input/output.root",
+    "bytes": 2043
+  },
+  {
+    "path": "results/repeated-timing/B-3/workDir-2026-10-22-0648-36ab/hist/output.root",
+    "bytes": 1916
+  },
+  {
+    "path": "results/repeated-timing/B-3/workDir-2026-10-22-0648-36ab/output-ANALYSIS/output.root",
+    "bytes": 1664
+  },
+  {
+    "path": "results/repeated-timing/A-4/hist-output.root",
+    "bytes": 12823
+  },
+  {
+    "path": "results/repeated-timing/A-4/output.root",
+    "bytes": 743544575
+  },
+  {
+    "path": "results/repeated-timing/A-4/workDir-2026-10-22-0656-423e/driver.root",
+    "bytes": 1341
+  },
+  {
+    "path": "results/repeated-timing/A-4/workDir-2026-10-22-0656-423e/submit/config.root",
+    "bytes": 7100
+  },
+  {
+    "path": "results/repeated-timing/A-4/workDir-2026-10-22-0656-423e/input/output.root",
+    "bytes": 2043
+  },
+  {
+    "path": "results/repeated-timing/A-4/workDir-2026-10-22-0656-423e/hist/output.root",
+    "bytes": 1916
+  },
+  {
+    "path": "results/repeated-timing/A-4/workDir-2026-10-22-0656-423e/output-ANALYSIS/output.root",
+    "bytes": 1663
+  },
+  {
+    "path": "results/repeated-timing/A-2/hist-output.root",
+    "bytes": 12825
+  },
+  {
+    "path": "results/repeated-timing/A-2/output.root",
+    "bytes": 743544575
+  },
+  {
+    "path": "results/repeated-timing/A-2/workDir-2026-10-22-0631-6449/driver.root",
+    "bytes": 1341
+  },
+  {
+    "path": "results/repeated-timing/A-2/workDir-2026-10-22-0631-6449/submit/config.root",
+    "bytes": 7100
+  },
+  {
+    "path": "results/repeated-timing/A-2/workDir-2026-10-22-0631-6449/input/output.root",
+    "bytes": 2043
+  },
+  {
+    "path": "results/repeated-timing/A-2/workDir-2026-10-22-0631-6449/hist/output.root",
+    "bytes": 1916
+  },
+  {
+    "path": "results/repeated-timing/A-2/workDir-2026-10-22-0631-6449/output-ANALYSIS/output.root",
+    "bytes": 1664
+  },
+  {
+    "path": "results/repeated-timing/A-1/hist-output.root",
+    "bytes": 12825
+  },
+  {
+    "path": "results/repeated-timing/A-1/output.root",
+    "bytes": 743544575
+  },
+  {
+    "path": "results/repeated-timing/A-1/workDir-2026-10-22-0618-d3b6/driver.root",
+    "bytes": 1341
+  },
+  {
+    "path": "results/repeated-timing/A-1/workDir-2026-10-22-0618-d3b6/submit/config.root",
+    "bytes": 7100
+  },
+  {
+    "path": "results/repeated-timing/A-1/workDir-2026-10-22-0618-d3b6/input/output.root",
+    "bytes": 2043
+  },
+  {
+    "path": "results/repeated-timing/A-1/workDir-2026-10-22-0618-d3b6/hist/output.root",
+    "bytes": 1917
+  },
+  {
+    "path": "results/repeated-timing/A-1/workDir-2026-10-22-0618-d3b6/output-ANALYSIS/output.root",
+    "bytes": 1663
+  },
+  {
+    "path": "results/repeated-timing/B-2/hist-output.root",
+    "bytes": 12852
+  },
+  {
+    "path": "results/repeated-timing/B-2/output.root",
+    "bytes": 743543805
+  },
+  {
+    "path": "results/repeated-timing/B-2/workDir-2026-10-22-0635-9732/driver.root",
+    "bytes": 1341
+  },
+  {
+    "path": "results/repeated-timing/B-2/workDir-2026-10-22-0635-9732/submit/config.root",
+    "bytes": 7099
+  },
+  {
+    "path": "results/repeated-timing/B-2/workDir-2026-10-22-0635-9732/input/output.root",
+    "bytes": 2043
+  },
+  {
+    "path": "results/repeated-timing/B-2/workDir-2026-10-22-0635-9732/hist/output.root",
+    "bytes": 1916
+  },
+  {
+    "path": "results/repeated-timing/B-2/workDir-2026-10-22-0635-9732/output-ANALYSIS/output.root",
+    "bytes": 1664
+  },
+  {
+    "path": "results/repeated-timing/C-4/results/columnar-kinematics.root",
+    "bytes": 463353714
+  },
+  {
+    "path": "results/repeated-timing/C-4/results/columnar-jvt.root",
+    "bytes": 120265734
+  },
+  {
+    "path": "results/repeated-timing/C-4/results/jvt-inputs.npz",
+    "bytes": 13334788
+  },
+  {
+    "path": "results/repeated-timing/C-4/results/columnar-nominal.npz",
+    "bytes": 19194940
+  },
+  {
+    "path": "results/repeated-timing/C-4/results/columnar-inputs.npz",
+    "bytes": 22020134
+  },
+  {
+    "path": "results/repeated-timing/C-3/results/columnar-kinematics.root",
+    "bytes": 463353714
+  },
+  {
+    "path": "results/repeated-timing/C-3/results/columnar-jvt.root",
+    "bytes": 120265734
+  },
+  {
+    "path": "results/repeated-timing/C-3/results/jvt-inputs.npz",
+    "bytes": 13334788
+  },
+  {
+    "path": "results/repeated-timing/C-3/results/columnar-nominal.npz",
+    "bytes": 19194940
+  },
+  {
+    "path": "results/repeated-timing/C-3/results/columnar-inputs.npz",
+    "bytes": 22020134
+  },
+  {
+    "path": "results/repeated-timing/C-1/results/columnar-kinematics.root",
+    "bytes": 463353714
+  },
+  {
+    "path": "results/repeated-timing/C-1/results/columnar-jvt.root",
+    "bytes": 120265734
+  },
+  {
+    "path": "results/repeated-timing/C-1/results/jvt-inputs.npz",
+    "bytes": 13334788
+  },
+  {
+    "path": "results/repeated-timing/C-1/results/columnar-nominal.npz",
+    "bytes": 19194940
+  },
+  {
+    "path": "results/repeated-timing/C-1/results/columnar-inputs.npz",
+    "bytes": 22020134
+  },
+  {
+    "path": "results/repeated-timing/A-3/hist-output.root",
+    "bytes": 12825
+  },
+  {
+    "path": "results/repeated-timing/A-3/output.root",
+    "bytes": 743544575
+  },
+  {
+    "path": "results/repeated-timing/A-3/workDir-2026-10-22-0644-dcbc/driver.root",
+    "bytes": 1341
+  },
+  {
+    "path": "results/repeated-timing/A-3/workDir-2026-10-22-0644-dcbc/submit/config.root",
+    "bytes": 7100
+  },
+  {
+    "path": "results/repeated-timing/A-3/workDir-2026-10-22-0644-dcbc/input/output.root",
+    "bytes": 2043
+  },
+  {
+    "path": "results/repeated-timing/A-3/workDir-2026-10-22-0644-dcbc/hist/output.root",
+    "bytes": 1917
+  },
+  {
+    "path": "results/repeated-timing/A-3/workDir-2026-10-22-0644-dcbc/output-ANALYSIS/output.root",
+    "bytes": 1663
+  },
+  {
+    "path": "results/repeated-timing/C-2/results/columnar-kinematics.root",
+    "bytes": 463353714
+  },
+  {
+    "path": "results/repeated-timing/C-2/results/columnar-jvt.root",
+    "bytes": 120265734
+  },
+  {
+    "path": "results/repeated-timing/C-2/results/jvt-inputs.npz",
+    "bytes": 13334788
+  },
+  {
+    "path": "results/repeated-timing/C-2/results/columnar-nominal.npz",
+    "bytes": 19194940
+  },
+  {
+    "path": "results/repeated-timing/C-2/results/columnar-inputs.npz",
+    "bytes": 22020134
+  },
+  {
+    "path": "results/repeated-timing/B-4/hist-output.root",
+    "bytes": 12842
+  },
+  {
+    "path": "results/repeated-timing/B-4/output.root",
+    "bytes": 743543805
+  },
+  {
+    "path": "results/repeated-timing/B-4/workDir-2026-10-22-0701-f2f4/driver.root",
+    "bytes": 1341
+  },
+  {
+    "path": "results/repeated-timing/B-4/workDir-2026-10-22-0701-f2f4/submit/config.root",
+    "bytes": 7098
+  },
+  {
+    "path": "results/repeated-timing/B-4/workDir-2026-10-22-0701-f2f4/input/output.root",
+    "bytes": 2043
+  },
+  {
+    "path": "results/repeated-timing/B-4/workDir-2026-10-22-0701-f2f4/hist/output.root",
+    "bytes": 1916
+  },
+  {
+    "path": "results/repeated-timing/B-4/workDir-2026-10-22-0701-f2f4/output-ANALYSIS/output.root",
+    "bytes": 1664
+  },
+  {
+    "path": "results/replacement/hist-replacement.root",
+    "bytes": 12839
+  },
+  {
+    "path": "results/replacement/replacement.root",
+    "bytes": 743543077
+  },
+  {
+    "path": "results/replacement/workDir-2026-10-21-2346-37e8/driver.root",
+    "bytes": 1309
+  },
+  {
+    "path": "results/replacement/workDir-2026-10-21-2346-37e8/submit/config.root",
+    "bytes": 7052
+  },
+  {
+    "path": "results/replacement/workDir-2026-10-21-2346-37e8/input/replacement.root",
+    "bytes": 2034
+  },
+  {
+    "path": "results/replacement/workDir-2026-10-21-2346-37e8/hist/replacement.root",
+    "bytes": 1898
+  },
+  {
+    "path": "results/replacement/workDir-2026-10-21-2346-37e8/output-ANALYSIS/replacement.root",
+    "bytes": 1680
+  },
+  {
+    "path": "results/replacement/workDir-2026-10-21-2347-2d16/driver.root",
+    "bytes": 1309
+  },
+  {
+    "path": "results/replacement/workDir-2026-10-21-2347-2d16/submit/config.root",
+    "bytes": 7059
+  },
+  {
+    "path": "results/replacement/workDir-2026-10-21-2347-2d16/input/replacement.root",
+    "bytes": 2034
+  },
+  {
+    "path": "results/replacement/workDir-2026-10-21-2347-2d16/hist/replacement.root",
+    "bytes": 1898
+  },
+  {
+    "path": "results/replacement/workDir-2026-10-21-2347-2d16/output-ANALYSIS/replacement.root",
+    "bytes": 1679
+  },
+  {
+    "path": "c-nice/results/C-4/results/columnar-kinematics.root",
+    "bytes": 463353714
+  },
+  {
+    "path": "c-nice/results/C-4/results/columnar-jvt.root",
+    "bytes": 120265734
+  },
+  {
+    "path": "c-nice/results/C-4/results/jvt-inputs.npz",
+    "bytes": 13334788
+  },
+  {
+    "path": "c-nice/results/C-4/results/columnar-nominal.npz",
+    "bytes": 19194940
+  },
+  {
+    "path": "c-nice/results/C-4/results/columnar-inputs.npz",
+    "bytes": 22020134
+  },
+  {
+    "path": "c-nice/results/C-3/results/columnar-kinematics.root",
+    "bytes": 463353714
+  },
+  {
+    "path": "c-nice/results/C-3/results/columnar-jvt.root",
+    "bytes": 120265734
+  },
+  {
+    "path": "c-nice/results/C-3/results/jvt-inputs.npz",
+    "bytes": 13334788
+  },
+  {
+    "path": "c-nice/results/C-3/results/columnar-nominal.npz",
+    "bytes": 19194940
+  },
+  {
+    "path": "c-nice/results/C-3/results/columnar-inputs.npz",
+    "bytes": 22020134
+  },
+  {
+    "path": "c-nice/results/C-1/results/columnar-kinematics.root",
+    "bytes": 463353714
+  },
+  {
+    "path": "c-nice/results/C-1/results/columnar-jvt.root",
+    "bytes": 120265734
+  },
+  {
+    "path": "c-nice/results/C-1/results/jvt-inputs.npz",
+    "bytes": 13334788
+  },
+  {
+    "path": "c-nice/results/C-1/results/columnar-nominal.npz",
+    "bytes": 19194940
+  },
+  {
+    "path": "c-nice/results/C-1/results/columnar-inputs.npz",
+    "bytes": 22020134
+  },
+  {
+    "path": "c-nice/results/C-2/results/columnar-kinematics.root",
+    "bytes": 463353714
+  },
+  {
+    "path": "c-nice/results/C-2/results/columnar-jvt.root",
+    "bytes": 120265734
+  },
+  {
+    "path": "c-nice/results/C-2/results/jvt-inputs.npz",
+    "bytes": 13334788
+  },
+  {
+    "path": "c-nice/results/C-2/results/columnar-nominal.npz",
+    "bytes": 19194940
+  },
+  {
+    "path": "c-nice/results/C-2/results/columnar-inputs.npz",
+    "bytes": 22020134
+  },
+  {
+    "path": "c-nice/array-timing/results/C-4/results/columnar-kinematics.root",
+    "bytes": 463353714
+  },
+  {
+    "path": "c-nice/array-timing/results/C-4/results/columnar-jvt.root",
+    "bytes": 120265734
+  },
+  {
+    "path": "c-nice/array-timing/results/C-4/results/jvt-inputs.npz",
+    "bytes": 13334788
+  },
+  {
+    "path": "c-nice/array-timing/results/C-4/results/columnar-nominal.npz",
+    "bytes": 19194940
+  },
+  {
+    "path": "c-nice/array-timing/results/C-4/results/columnar-inputs.npz",
+    "bytes": 22020134
+  },
+  {
+    "path": "c-nice/array-timing/results/C-3/results/columnar-kinematics.root",
+    "bytes": 463353714
+  },
+  {
+    "path": "c-nice/array-timing/results/C-3/results/columnar-jvt.root",
+    "bytes": 120265734
+  },
+  {
+    "path": "c-nice/array-timing/results/C-3/results/jvt-inputs.npz",
+    "bytes": 13334788
+  },
+  {
+    "path": "c-nice/array-timing/results/C-3/results/columnar-nominal.npz",
+    "bytes": 19194940
+  },
+  {
+    "path": "c-nice/array-timing/results/C-3/results/columnar-inputs.npz",
+    "bytes": 22020134
+  },
+  {
+    "path": "c-nice/array-timing/results/C-1/results/columnar-kinematics.root",
+    "bytes": 463353714
+  },
+  {
+    "path": "c-nice/array-timing/results/C-1/results/columnar-jvt.root",
+    "bytes": 120265734
+  },
+  {
+    "path": "c-nice/array-timing/results/C-1/results/jvt-inputs.npz",
+    "bytes": 13334788
+  },
+  {
+    "path": "c-nice/array-timing/results/C-1/results/columnar-nominal.npz",
+    "bytes": 19194940
+  },
+  {
+    "path": "c-nice/array-timing/results/C-1/results/columnar-inputs.npz",
+    "bytes": 22020134
+  },
+  {
+    "path": "c-nice/array-timing/results/C-2/results/columnar-kinematics.root",
+    "bytes": 463353714
+  },
+  {
+    "path": "c-nice/array-timing/results/C-2/results/columnar-jvt.root",
+    "bytes": 120265734
+  },
+  {
+    "path": "c-nice/array-timing/results/C-2/results/jvt-inputs.npz",
+    "bytes": 13334788
+  },
+  {
+    "path": "c-nice/array-timing/results/C-2/results/columnar-nominal.npz",
+    "bytes": 19194940
+  },
+  {
+    "path": "c-nice/array-timing/results/C-2/results/columnar-inputs.npz",
+    "bytes": 22020134
+  },
+  {
+    "path": "path-d/results/kinematics.root",
+    "bytes": 466908458
+  },
+  {
+    "path": "path-d/results/jvt-inputs.npz",
+    "bytes": 13334788
+  },
+  {
+    "path": "path-d/results/jvt.root",
+    "bytes": 123879784
+  },
+  {
+    "path": "path-d/results/columnar-nominal.npz",
+    "bytes": 19194940
+  },
+  {
+    "path": "path-d/results/columnar-inputs.npz",
+    "bytes": 25165830
+  },
+  {
+    "path": "path-d/results/repeated-timing/run-2/path-d/results/kinematics.root",
+    "bytes": 466908458
+  },
+  {
+    "path": "path-d/results/repeated-timing/run-2/path-d/results/jvt-inputs.npz",
+    "bytes": 13334788
+  },
+  {
+    "path": "path-d/results/repeated-timing/run-2/path-d/results/jvt.root",
+    "bytes": 123879784
+  },
+  {
+    "path": "path-d/results/repeated-timing/run-2/path-d/results/columnar-nominal.npz",
+    "bytes": 19194940
+  },
+  {
+    "path": "path-d/results/repeated-timing/run-2/path-d/results/columnar-inputs.npz",
+    "bytes": 25165830
+  },
+  {
+    "path": "path-d/results/repeated-timing/run-1/path-d/results/kinematics.root",
+    "bytes": 466908458
+  },
+  {
+    "path": "path-d/results/repeated-timing/run-1/path-d/results/jvt-inputs.npz",
+    "bytes": 13334788
+  },
+  {
+    "path": "path-d/results/repeated-timing/run-1/path-d/results/jvt.root",
+    "bytes": 123879784
+  },
+  {
+    "path": "path-d/results/repeated-timing/run-1/path-d/results/columnar-nominal.npz",
+    "bytes": 19194940
+  },
+  {
+    "path": "path-d/results/repeated-timing/run-1/path-d/results/columnar-inputs.npz",
+    "bytes": 25165830
+  },
+  {
+    "path": "path-d/results/repeated-timing/run-3/path-d/results/kinematics.root",
+    "bytes": 466908458
+  },
+  {
+    "path": "path-d/results/repeated-timing/run-3/path-d/results/jvt-inputs.npz",
+    "bytes": 13334788
+  },
+  {
+    "path": "path-d/results/repeated-timing/run-3/path-d/results/jvt.root",
+    "bytes": 123879784
+  },
+  {
+    "path": "path-d/results/repeated-timing/run-3/path-d/results/columnar-nominal.npz",
+    "bytes": 19194940
+  },
+  {
+    "path": "path-d/results/repeated-timing/run-3/path-d/results/columnar-inputs.npz",
+    "bytes": 25165830
+  },
+  {
+    "path": "path-d/results/repeated-timing/run-4/path-d/results/kinematics.root",
+    "bytes": 466908458
+  },
+  {
+    "path": "path-d/results/repeated-timing/run-4/path-d/results/jvt-inputs.npz",
+    "bytes": 13334788
+  },
+  {
+    "path": "path-d/results/repeated-timing/run-4/path-d/results/jvt.root",
+    "bytes": 123879784
+  },
+  {
+    "path": "path-d/results/repeated-timing/run-4/path-d/results/columnar-nominal.npz",
+    "bytes": 19194940
+  },
+  {
+    "path": "path-d/results/repeated-timing/run-4/path-d/results/columnar-inputs.npz",
+    "bytes": 25165830
+  },
+  {
+    "path": "a-stored-timing/run-2/hist-output.root",
+    "bytes": 10977
+  },
+  {
+    "path": "a-stored-timing/run-2/output.root",
+    "bytes": 1784299
+  },
+  {
+    "path": "a-stored-timing/run-2/workDir-2026-10-23-1631-1cb9/driver.root",
+    "bytes": 1317
+  },
+  {
+    "path": "a-stored-timing/run-2/workDir-2026-10-23-1631-1cb9/submit/config.root",
+    "bytes": 5126
+  },
+  {
+    "path": "a-stored-timing/run-2/workDir-2026-10-23-1631-1cb9/input/output.root",
+    "bytes": 2019
+  },
+  {
+    "path": "a-stored-timing/run-2/workDir-2026-10-23-1631-1cb9/hist/output.root",
+    "bytes": 1887
+  },
+  {
+    "path": "a-stored-timing/run-2/workDir-2026-10-23-1631-1cb9/output-ANALYSIS/output.root",
+    "bytes": 1662
+  },
+  {
+    "path": "a-stored-timing/run-1/hist-output.root",
+    "bytes": 10976
+  },
+  {
+    "path": "a-stored-timing/run-1/output.root",
+    "bytes": 1784299
+  },
+  {
+    "path": "a-stored-timing/run-1/workDir-2026-10-23-1631-430b/driver.root",
+    "bytes": 1317
+  },
+  {
+    "path": "a-stored-timing/run-1/workDir-2026-10-23-1631-430b/submit/config.root",
+    "bytes": 5126
+  },
+  {
+    "path": "a-stored-timing/run-1/workDir-2026-10-23-1631-430b/input/output.root",
+    "bytes": 2019
+  },
+  {
+    "path": "a-stored-timing/run-1/workDir-2026-10-23-1631-430b/hist/output.root",
+    "bytes": 1888
+  },
+  {
+    "path": "a-stored-timing/run-1/workDir-2026-10-23-1631-430b/output-ANALYSIS/output.root",
+    "bytes": 1662
+  },
+  {
+    "path": "a-stored-timing/run-3/hist-output.root",
+    "bytes": 10977
+  },
+  {
+    "path": "a-stored-timing/run-3/output.root",
+    "bytes": 1784299
+  },
+  {
+    "path": "a-stored-timing/run-3/workDir-2026-10-23-1632-1204/driver.root",
+    "bytes": 1317
+  },
+  {
+    "path": "a-stored-timing/run-3/workDir-2026-10-23-1632-1204/submit/config.root",
+    "bytes": 5127
+  },
+  {
+    "path": "a-stored-timing/run-3/workDir-2026-10-23-1632-1204/input/output.root",
+    "bytes": 2019
+  },
+  {
+    "path": "a-stored-timing/run-3/workDir-2026-10-23-1632-1204/hist/output.root",
+    "bytes": 1888
+  },
+  {
+    "path": "a-stored-timing/run-3/workDir-2026-10-23-1632-1204/output-ANALYSIS/output.root",
+    "bytes": 1662
+  },
+  {
+    "path": "a-stored-timing/run-4/hist-output.root",
+    "bytes": 10977
+  },
+  {
+    "path": "a-stored-timing/run-4/output.root",
+    "bytes": 1784299
+  },
+  {
+    "path": "a-stored-timing/run-4/workDir-2026-10-23-1632-6f4f/driver.root",
+    "bytes": 1317
+  },
+  {
+    "path": "a-stored-timing/run-4/workDir-2026-10-23-1632-6f4f/submit/config.root",
+    "bytes": 5127
+  },
+  {
+    "path": "a-stored-timing/run-4/workDir-2026-10-23-1632-6f4f/input/output.root",
+    "bytes": 2019
+  },
+  {
+    "path": "a-stored-timing/run-4/workDir-2026-10-23-1632-6f4f/hist/output.root",
+    "bytes": 1887
+  },
+  {
+    "path": "a-stored-timing/run-4/workDir-2026-10-23-1632-6f4f/output-ANALYSIS/output.root",
+    "bytes": 1662
+  }
+]

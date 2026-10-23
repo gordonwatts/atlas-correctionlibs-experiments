@@ -1,0 +1,18 @@
+{
+  "iteration": 3,
+  "job_seconds": 8.402787863000412,
+  "plot_seconds": 0.7853904439980397,
+  "total_seconds": 9.188178306998452,
+  "passed": true,
+  "command": [
+    "CPRun.py",
+    "-i",
+    "/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1",
+    "-t",
+    "/home/gwatts/atlas/correctionlib_tests/a-stored-timing/a-stored.yaml",
+    "-o",
+    "output.root",
+    "-e",
+    "20000"
+  ]
+}

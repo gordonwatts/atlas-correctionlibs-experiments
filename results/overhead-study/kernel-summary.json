@@ -1,0 +1,160 @@
+{
+  "cached-metadata": {
+    "init_seconds": 0.755683956,
+    "retained_total_seconds": [
+      2.0346357259999994,
+      2.044770778,
+      2.0554894519999993
+    ],
+    "mean_seconds": 2.0449653186666663,
+    "stdev_seconds": 0.01042822403739046,
+    "all_output_hashes_match_baseline": true,
+    "states_checked": 117
+  },
+  "combined": {
+    "init_seconds": 0.876207327,
+    "retained_total_seconds": [
+      1.415528801,
+      1.4855287700000002,
+      1.6218509120000006
+    ],
+    "mean_seconds": 1.5076361610000002,
+    "stdev_seconds": 0.10492261874588486,
+    "all_output_hashes_match_baseline": true,
+    "states_checked": 117
+  },
+  "early-jer": {
+    "init_seconds": 0.815843774,
+    "retained_total_seconds": [
+      2.261612320999999,
+      2.265922747,
+      2.271511147
+    ],
+    "mean_seconds": 2.266348738333333,
+    "stdev_seconds": 0.004963143208353983,
+    "all_output_hashes_match_baseline": true,
+    "states_checked": 117
+  },
+  "jvt": {
+    "init_seconds": 0.7898979,
+    "retained_total_seconds": [
+      0.005417149,
+      0.005437678,
+      0.005410796
+    ],
+    "mean_seconds": 0.005421874333333333,
+    "stdev_seconds": 1.4050162359678659e-05
+  },
+  "nominal": {
+    "init_seconds": 2.633013845,
+    "retained_total_seconds": [
+      0.14576587,
+      0.14457751,
+      0.147917615
+    ],
+    "mean_seconds": 0.14608699833333333,
+    "stdev_seconds": 0.0016930498833786177
+  },
+  "reuse-rng": {
+    "init_seconds": 0.804046538,
+    "retained_total_seconds": [
+      2.081153645000001,
+      2.1449392420000004,
+      2.2724257800000003
+    ],
+    "mean_seconds": 2.1661728890000007,
+    "stdev_seconds": 0.09738792651327448,
+    "all_output_hashes_match_baseline": true,
+    "states_checked": 117
+  },
+  "systematics": {
+    "init_seconds": 0.861263301,
+    "retained_total_seconds": [
+      2.499465968999999,
+      2.4983182260000003,
+      2.5387614219999994
+    ],
+    "mean_seconds": 2.512181872333333,
+    "stdev_seconds": 0.023025717662227243
+  },
+  "systematic_categories": {
+    "NOSYS": {
+      "states_per_repeat": 1,
+      "mean_seconds": 0.00019121633333333334
+    },
+    "JES": {
+      "states_per_repeat": 60,
+      "mean_seconds": 0.7269953323333334
+    },
+    "JER changes some jets": {
+      "states_per_repeat": 50,
+      "mean_seconds": 1.6886983726666664
+    },
+    "JER unchanged on sample": {
+      "states_per_repeat": 6,
+      "mean_seconds": 0.096296951
+    }
+  },
+  "slowest_states": [
+    [
+      "JET_JER_EffectiveNP_1_PseudoData__1down",
+      0.04966625266666667
+    ],
+    [
+      "JET_JER_EffectiveNP_12restTerm_PseudoData__1down",
+      0.04922326233333333
+    ],
+    [
+      "JET_JER_EffectiveNP_12restTerm__1up",
+      0.048979145
+    ],
+    [
+      "JET_JER_EffectiveNP_1__1up",
+      0.048978431333333336
+    ],
+    [
+      "JET_JER_EffectiveNP_3__1down",
+      0.045315634333333334
+    ],
+    [
+      "JET_JER_EffectiveNP_3_PseudoData__1up",
+      0.045072379333333336
+    ],
+    [
+      "JET_JER_EffectiveNP_9_PseudoData__1down",
+      0.044080790333333335
+    ],
+    [
+      "JET_JER_EffectiveNP_9__1up",
+      0.043740957
+    ],
+    [
+      "JET_JERUnc_Noise_PreRec__1down",
+      0.043496471333333335
+    ],
+    [
+      "JET_JERUnc_Noise_PreRec_PseudoData__1up",
+      0.043325541
+    ],
+    [
+      "JET_JER_EffectiveNP_2_PseudoData__1down",
+      0.041464575000000004
+    ],
+    [
+      "JET_JER_EffectiveNP_2__1up",
+      0.04124057766666667
+    ],
+    [
+      "JET_JER_EffectiveNP_6_PseudoData__1up",
+      0.038792542
+    ],
+    [
+      "JET_JER_EffectiveNP_6__1down",
+      0.038632272
+    ],
+    [
+      "JET_JER_EffectiveNP_4_PseudoData__1up",
+      0.037613314333333335
+    ]
+  ]
+}

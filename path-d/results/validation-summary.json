@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "path": "D",
+  "events": 20000,
+  "jets": 196606,
+  "kinematic_states": 117,
+  "weight_states": 119,
+  "nominal_bitwise_identical": true,
+  "identity": {
+    "kinematics": {
+      "states": 117,
+      "entry_exact": true,
+      "eventNumber_exact": true,
+      "originalJetIndex_exact": true,
+      "jet_counts_exact": true
+    },
+    "jvt": {
+      "states": 119,
+      "entry_exact": true,
+      "eventNumber_exact": true,
+      "originalJetIndex_exact": true,
+      "jet_counts_exact": true
+    }
+  },
+  "reports": {
+    "nominal-comparison": "nominal-comparison.json",
+    "systematics-comparison": "systematics-comparison.json",
+    "jvt-comparison": "jvt-comparison.json",
+    "jes-boundaries": "jes-boundaries.json",
+    "jvt-boundaries": "jvt-boundaries.json",
+    "uncertainty-boundaries": "uncertainty-boundaries.json",
+    "primitives": "primitives.json",
+    "pipelines": "pipelines.json",
+    "systematic-determinism": "systematic-determinism.json",
+    "table-edges": "table-edges.json",
+    "architecture": "architecture.json",
+    "reproducibility": "reproducibility.json",
+    "truth-boundaries": "truth-boundaries.json",
+    "runtime": "runtime.json"
+  },
+  "hashes": {
+    "path-d/payloads/graphs.json": "39ab149c18aee4eee686bd9dea47115d738ab4273ca529e7028f0c3323ca0ea3",
+    "path-d/payloads/corrections.json.gz": "5280ec67d7ea8999d00b031ef2ee77ac8eeb3308c5a47ada222f822550a80f85",
+    "path-d/payloads/nnjvt-network.json": "60abc79f5e724483f61967cd5bb2083c2c71255a62e6813f387c1d523dabecdb",
+    "path-d/payloads/manifest.json": "2a3c872c6b642aa4360fbd3eb063c2b46484ba5468f2669beeae3d902bec2398",
+    "path-d/python/compile_graphs.py": "320ed541f497c8ad8d7e9f60a44ba530add831f84055759d01a9c7bd4a07031e",
+    "path-d/python/adapters.py": "e428d1226631f38411a896f686bde5797ccdf54d85c5faf1f86164576f1dffb5",
+    "path-d/python/schema.py": "426c7e17d296f41cef32f96f8beb933d13881a81224de8a7a7a191d359419f88",
+    "external/correctionlib-d/include/correction_graph.h": "2395858810d226c1259cb4e8c35d5efc979044bbf9bbbbae90b5b504aa5efc41",
+    "patches/correctionlib-full-precision-json.patch": "3b428b8236b0972f613526417edb8a79848145e9f01b5759bb17cd20b81feedf",
+    "config/reference.yaml": "4d84aa237b6a1796c05e9a38fa341e89993f1b8c582bc99da7b1624b4ed46ca8",
+    "path-d/patches/correctionlib-graph-v1.patch": "e41953efc4ed31e91dfc8713a6e05ba01b7a9212b07df1be63ddcba1f756a27d"
+  },
+  "input_sha256": "017e408002b0153df1de695d8c2ace325e0731b658cbd5ca695a349eb0a059c0",
+  "limitations": [
+    "Full-sample original reference has no per-jet JES/JER statuses; synthetic oracle tests those statuses.",
+    "Collection extraction, vertex counts, pair enumeration and event reductions remain Python.",
+    "Optional graph schema extension; not standard schema-v2 and not a JIT.",
+    "One pinned recommendation bundle; Gaussian rejection has an explicit one-million-draw bound."
+  ]
+}

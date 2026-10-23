@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.25)
+project(CorrectionLibOverlay VERSION 1.0.0 LANGUAGES CXX)
+find_package(AnalysisBase 25.2.100 EXACT REQUIRED)
+atlas_project(USE AnalysisBase 25.2.100)
+atlas_cpack_setup()

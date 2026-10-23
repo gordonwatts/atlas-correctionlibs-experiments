@@ -1,0 +1,6 @@
+{
+  "commit": "fd69c2ef33edbe9a1d4bc714430d6ccda374be00",
+  "remote": "https://github.com/cms-nanoAOD/correctionlib.git",
+  "submodules": " b85d8c89cef68c80faf6d7ba3ffc048e58aa6f5b cpp-peglib (v1.3.5)\n 428802d1a5634f96bcd0705fab379ff0113bcf13 pcg-cpp (v0.98.1-70-g428802d)\n a2e59f0e7065404b44dfe92a28aca47ba1378dc4 pybind11 (v2.11.0-182-ga2e59f0e)\n 24b5e7a8b27f42fa16b96fc70aade9106cf7102f rapidjson (v1.1.0-763-g24b5e7a)\n ba96d0b1161f540656efdaed035b3c062b60e006 rapidjson/thirdparty/gtest (release-1.8.0-1003-gba96d0b1)\n 35b0373c697b5f160d3db26b1cbb45a0d5ba788c xxhash (v0.7.4-343-g35b0373)\n",
+  "status": " M src/correction.cc\n"
+}

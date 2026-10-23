@@ -1,0 +1,11 @@
+{
+  "cases": 110,
+  "maximum_absolute_differences": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "failures": [],
+  "passed": true
+}

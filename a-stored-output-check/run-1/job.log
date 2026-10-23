@@ -1,0 +1,86 @@
+Py:CPBaseRunner      INFO EventLoopCPRunScript initialized
+Py:CPBaseRunner      INFO Initialized input files: ['/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1']
+Py:CPBaseRunner      INFO Found YAML config at: /home/gwatts/atlas/correctionlib_tests/a-stored-timing/a-stored.yaml
+Py:CPBaseRunner      INFO Setting up configuration based on YAML config:
+xAOD::Init                INFO    Environment initialised for data access
+Py:CPBaseRunner      INFO Adding files to the sample handler
+Py:CPBaseRunner      INFO =========================================================================
+Py:CPBaseRunner      INFO ====================FLAG CONFIGURATION====================
+Py:CPBaseRunner      INFO =========================================================================
+Py:AutoConfigFlags    INFO Obtaining metadata of auto-configuration by peeking into '/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1'
+Py:MetaReader        INFO Current mode used: lite
+Py:MetaReader        INFO Current filenames: ['/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1']
+Py:MetaReader        INFO MetaReader is called with the parameter "unique_tag_info_values" set to True. This is a workaround to remove all duplicate values from "/TagInfo" key
+Py:CPBaseRunner      INFO     Input files:     True
+Py:CPBaseRunner      INFO     RunNumber:       [410000]
+Py:CPBaseRunner      INFO     MCCampaign:      Campaign.MC23a
+Py:AutoConfigFlags    INFO Looking into the file in 'peeker' mode as the configuration requires more details: generators 
+Py:MetaReader        INFO Current mode used: peeker
+Py:MetaReader        INFO Current filenames: ['/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1']
+Py:MetaReader        INFO MetaReader is called with the parameter "unique_tag_info_values" set to True. This is a workaround to remove all duplicate values from "/TagInfo" key
+Py:CPBaseRunner      INFO     GeneratorInfo:   {'Powheg': '2_r3631', 'Pythia8': '308', 'EvtGen': '2.1.1'}
+Py:CPBaseRunner      INFO     MaxEvents:       20000
+Py:CPBaseRunner      INFO     SkipEvents:      0
+Py:CPBaseRunner      INFO =========================================================================
+Py:CPBaseRunner      INFO Configuring algorithms based on YAML file
+Py:CPBaseRunner      INFO Configuring common services
+Py:getRun3NavigationContainerFromInput    INFO Returning HLTNav_Summary_DAODSlimmed as the Run 3 trigger navigation collection to read in this job.
+Py:CPBaseRunner      INFO Configuring algorithms
+Py:CommonServices WARNING [91m
+  ________   _______  ______ _____ _______      __  __  ____  _____  ______       ______ _   _          ____  _      ______ _____
+ |  ____\ \ / /  __ \|  ____|  __ \__   __|    |  \/  |/ __ \|  __ \|  ____|     |  ____| \ | |   /\   |  _ \| |    |  ____|  __ \
+ | |__   \ V /| |__) | |__  | |__) | | |       | \  / | |  | | |  | | |__        | |__  |  \| |  /  \  | |_) | |    | |__  | |  | |
+ |  __|   > < |  ___/|  __| |  _  /  | |       | |\/| | |  | | |  | |  __|       |  __| | . ` | / /\ \ |  _ <| |    |  __| | |  | |
+ | |____ / . \| |    | |____| | \ \  | |       | |  | | |__| | |__| | |____      | |____| |\  |/ ____ \| |_) | |____| |____| |__| |
+ |______/_/ \_\_|    |______|_|  \_\ |_|       |_|  |_|\____/|_____/|______|     |______|_| \_/_/    \_\____/|______|______|_____/
+
+[0m
+Py:CommonServices WARNING [1m[93mThese settings are not recommended for analysis. Make sure you know what you're doing, or disable them with `enableExpertMode: False` in `CommonServices`.[0m
+Package.EventLoop        INFO    created submission directory /home/gwatts/atlas/correctionlib_tests/a-stored-timing/run-1/workDir-2026-10-23-1631-2aa6
+Package.EventLoop        INFO    created sym-link at: /home/gwatts/atlas/correctionlib_tests/a-stored-timing/run-1/workDir
+Package.EventLoop        INFO    submitting job in /home/gwatts/atlas/correctionlib_tests/a-stored-timing/run-1/workDir-2026-10-23-1631-2aa6
+xAOD::Init                INFO    Environment initialised for data access
+starting batch job initialization
+batch job user initialization finished
+PHYS-PROFWSN04
+/home/gwatts/atlas/correctionlib_tests/a-stored-timing/run-1/workDir-2026-10-23-1631-2aa6/tmp/0
+gwatts
+xAOD::Init                INFO    Environment initialised for data access
+/tmp/EventLoop-Worker-output-0-1792798271-68157
+Package.EventLoop        INFO    xAODInput = 1
+Package.EventLoop        INFO    calling firstInitialize on all modules
+Package.EventLoop        INFO    calling preFileInitialize on all modules
+Package.EventLoop        INFO    Opening file file:///cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1
+Package.xAOD::Event      INFO    Using aux mode kClassAccess for file /cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1
+Package.EventLoop        INFO    Processing events 0-20000 in file file:///cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1
+xAOD::THolder::getAs      WARNING User class "SG::AuxVectorBase" is not a valid base of "xAOD::EventInfo_v1"
+xAOD::TEvent             WARNING Could not retrieve object with key "EventInfo" as "SG::AuxVectorBase"
+xAOD::TEvent             WARNING Couldn't (const) retrieve "SG::AuxVectorBase/EventInfo"
+CP::TreeBranchHelpers:...ERROR   Couldn't retrieve container with key "EventInfo"
+CP::TreeBranchHelpers:...ERROR   /build/atnight/localbuilds/nightlies/AnalysisBase/main/athena/PhysicsAnalysis/Algorithms/AsgAnalysisAlgorithms/Root/TreeBranchHelpers.cxx:904 (StatusCode CP::TreeBranchHelpers::ContainerProcessorRegular::retrieveProcess(CP::TreeBranchHelpers::StoreType&)): Failed to retrieve container "EventInfo"
+seq1_NTupleMaker_analysisERROR   /build/atnight/localbuilds/nightlies/AnalysisBase/main/athena/PhysicsAnalysis/Algorithms/AsgAnalysisAlgorithms/Root/TreeBranchHelpers.cxx:1149 (StatusCode CP::TreeBranchHelpers::ProcessorList::process(CP::TreeBranchHelpers::StoreType&)): Failed to call "processor->retrieveProcess (evtStore)"
+seq1_NTupleMaker_analysisERROR   /build/atnight/localbuilds/nightlies/AnalysisBase/main/athena/PhysicsAnalysis/Algorithms/AsgAnalysisAlgorithms/Root/AsgxAODNTupleMakerAlg.cxx:58 (StatusCode CP::AsgxAODNTupleMakerAlg::execute(const EventContext&)): Failed to call "m_processorList.process (*evtStore())"
+Package.EventLoopComp_...ERROR   /build/atnight/localbuilds/nightlies/AnalysisBase/main/athena/PhysicsAnalysis/D3PDTools/AnaAlgorithm/Root/AnaAlgorithmWrapper.cxx:88 (StatusCode EL::AnaAlgorithmWrapper::execute(const EventContext&)): failed to call execute() on algorithm: seq1_NTupleMaker_analysis
+ELModule.AlgorithmStat...ERROR   /build/atnight/localbuilds/nightlies/AnalysisBase/main/athena/PhysicsAnalysis/D3PDTools/EventLoop/Root/AlgorithmStateModule.cxx:156 (StatusCode EL::Detail::AlgorithmStateModule::onExecute(EL::Detail::ModuleData&)): while calling execute() on algorithm seq1_NTupleMaker_analysis
+Package.EventLoop        ERROR   /build/atnight/localbuilds/nightlies/AnalysisBase/main/athena/PhysicsAnalysis/D3PDTools/EventLoop/Root/Worker.cxx:625 (StatusCode EL::Worker::processEvents(EL::EventRange&)): processing event 0 on file DAOD_PHYSLITE.49568713._001693.pool.root.1
+ELModule.BatchInputModuleERROR   /build/atnight/localbuilds/nightlies/AnalysisBase/main/athena/PhysicsAnalysis/D3PDTools/EventLoop/Root/BatchInputModule.cxx:66 (StatusCode EL::Detail::BatchInputModule::processInputs(EL::Detail::ModuleData&, EL::Detail::IInputModuleActions&)): Failed to call "actions.processEvents (eventRange)"
+Package.EventLoop        ERROR   /build/atnight/localbuilds/nightlies/AnalysisBase/main/athena/PhysicsAnalysis/D3PDTools/EventLoop/Root/Worker.cxx:506 (StatusCode EL::Worker::processInputs()): Failed to call "module->processInputs (*this, *this)"
+Package.EventLoop        ERROR   /build/atnight/localbuilds/nightlies/AnalysisBase/main/athena/PhysicsAnalysis/D3PDTools/EventLoop/Root/Worker.cxx:922 (StatusCode EL::Worker::batchExecute(unsigned int, const char*)): Failed to call "processInputs ()"
+Package.UserCode         ERROR   /build/atnight/localbuilds/nightlies/AnalysisBase/main/athena/PhysicsAnalysis/D3PDTools/EventLoop/util/eventloop_batch_worker.cxx:36 (int main(int, char**)): Failed to call "worker.batchExecute (job_id, confFile)"
+xAOD::TFileAccessTracer   INFO    Sending file access statistics to http://rucio-lb-prod.cern.ch:18762/traces/
+abort EL_JOBID=0
+/build/atnight/localbuilds/nightlies/AnalysisBase/main/athena/PhysicsAnalysis/D3PDTools/RootCoreUtils/Root/ShellExec.cxx:29:exception: command failed: cd /home/gwatts/atlas/correctionlib_tests/a-stored-timing/run-1/workDir-2026-10-23-1631-2aa6/tmp/0 && /home/gwatts/atlas/correctionlib\_tests/a-stored-timing/run-1/workDir-2026-10-23-1631-2aa6/submit/run 0
+Package.UserCode         ERROR   /build/atnight/localbuilds/nightlies/AnalysisBase/main/athena/PhysicsAnalysis/D3PDTools/EventLoop/util/eventloop_exec_worker.cxx:55 (main(int, char**)::<lambda(std::size_t)>): exception in job 0: /build/atnight/localbuilds/nightlies/AnalysisBase/main/athena/PhysicsAnalysis/D3PDTools/RootCoreUtils/Root/ShellExec.cxx:29:exception: command failed: cd /home/gwatts/atlas/correctionlib_tests/a-stored-timing/run-1/workDir-2026-10-23-1631-2aa6/tmp/0 && /home/gwatts/atlas/correctionlib\_tests/a-stored-timing/run-1/workDir-2026-10-23-1631-2aa6/submit/run 0
+Package.EventLoop        ERROR   /build/atnight/localbuilds/nightlies/AnalysisBase/main/athena/PhysicsAnalysis/D3PDTools/EventLoop/Root/RetrieveManager.cxx:56 (StatusCode EL::Detail::RetrieveManager::doManagerStep(EL::Detail::ManagerData&) const): job submission was unsuccessful
+Package.EventLoop        ERROR   /build/atnight/localbuilds/nightlies/AnalysisBase/main/athena/PhysicsAnalysis/D3PDTools/EventLoop/Root/ManagerData.cxx:67 (StatusCode EL::Detail::ManagerData::run()): while performing manager step 24
+Package.EventLoop        ERROR   /build/atnight/localbuilds/nightlies/AnalysisBase/main/athena/PhysicsAnalysis/D3PDTools/EventLoop/Root/ManagerData.cxx:68 (StatusCode EL::Detail::ManagerData::run()): on submission directory workDir
+Traceback (most recent call last):
+  File "/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/bin/CPRun.py", line 16, in <module>
+    script.run()
+    ~~~~~~~~~~^^
+  File "/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/python/AnalysisAlgorithmsConfig/EventLoopCPRunScript.py", line 166, in run
+    exitCode = self.getExitCode()
+  File "/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/python/AnalysisAlgorithmsConfig/EventLoopCPRunScript.py", line 126, in getExitCode
+    statusCode = ROOT.EL.Driver.retrieve(self.args.work_dir if self.args.work_dir else 'workDir')
+cppyy.gbl.std.runtime_error: static bool EL::Driver::retrieve(const string& location) =>
+    runtime_error: failed to retrieve job

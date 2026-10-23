@@ -1,0 +1,24 @@
+{
+  "review_date": "2026-10-22",
+  "scope": "Implementation-log source review, not exhaustive production review",
+  "files": {
+    "src/backend.hxx": "13e46750f83498517c808ca876924594e3316285969de9382bd99ef3198ffbea",
+    "src/systematics.hxx": "a3944813c80fc0b86b476da5d6baa8ff1fe8dabf73ed43c89941d93d5e34fa6d",
+    "src/efficiency.hxx": "c7e1f10d4fb723b42bf278aec420dd9e3c0c99aa918e25e39c62119a19abb75e",
+    "src/nnjvt.hxx": "4fd6b21d69510f3ef83208a672a25e277d18700c656b5622cbef0f8de206e72e",
+    "src/nominal.cxx": "b82323eefd30e099136879b6097ed874ec14cc7c23308781c900772ab64e8372",
+    "src/adapter_support.hxx": "ce63e9893a9f3c32cc838c16e1cb69fd9f62b15fbb1465d20b70ae6a39362457",
+    "python/atlas_correctionlib/nodes.py": "eaa55c33640e7b4a6dec6561c82fc6eb96558a9adf287835a5f0109be5206776",
+    "python/atlas_correctionlib/compile_nominal.py": "4db5de3f999e0c6537a5d0d62b55c1de80f96d68ecdef4be55ec64d3331f3794",
+    "python/atlas_correctionlib/compile_uncertainties.py": "b0520b14684b23ed94213554794378ab05d5b31433d0b2fa7e3af0224110e334",
+    "python/atlas_correctionlib/systematics.py": "8af685142d4f8f807b7d7b0ffc25135e33da684de26dafc439d1c09744060307",
+    "python/atlas_correctionlib/jvt.py": "b6f92f1c35f2817ea8a814928731b445e6330249dc2bba532b2c544ae3a451d5",
+    "scripts/prepare-overlay.py": "94aa00513d5a83cd8011f4e41c567e66dcb298adf13972a2b9fee55e8873655a",
+    "scripts/run-columnar-nominal.py": "5cfa81c692f93795ee7aa254d045cd0d946c817dd6c094b07e22b833b4d8f0c9",
+    "scripts/run-columnar-systematics.py": "dea267687e18e35b6fa5b2cf210734274e32f2c8dda09b52c3c82ccb657443f9",
+    "scripts/run-columnar-jvt.py": "30e6678a93e3f2f98083444c53dd3362a62577309e262dff5df83736ff1e0b69",
+    "scripts/repeated-timing.py": "19ea823548f690425bdbe0014f75c03a22d352f75013319fb79bb94a76d74e2f"
+  },
+  "kernel": "6.18.33.2-microsoft-standard-WSL2",
+  "cpu_model": "Intel(R) Core(TM) Ultra 7 265T"
+}

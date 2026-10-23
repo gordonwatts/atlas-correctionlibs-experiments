@@ -1,0 +1,367 @@
+{
+  "events": 20000,
+  "jets": 196606,
+  "run_order": "A1 B1 C1 A2 B2 C2 A3 B3 C3 A4 B4 C4; sequential",
+  "discarded_run": 1,
+  "rows": {
+    "A": {
+      "runs_seconds": [
+        242.02842290799998,
+        237.90408804599997,
+        236.16341488600006,
+        237.72217028400019
+      ],
+      "average_seconds": 237.2632244053334,
+      "stdev_seconds": 0.956796348312921
+    },
+    "B": {
+      "runs_seconds": [
+        294.24059292000004,
+        291.069265071,
+        289.553268912,
+        291.48016171100016
+      ],
+      "average_seconds": 290.7008985646667,
+      "stdev_seconds": 1.014888849554863
+    },
+    "C": {
+      "runs_seconds": [
+        168.912936413,
+        167.8529406749999,
+        168.56905474600035,
+        166.67837397699986
+      ],
+      "average_seconds": 167.7001231326667,
+      "stdev_seconds": 0.954559240435413
+    }
+  },
+  "records": [
+    {
+      "path": "A",
+      "iteration": 1,
+      "wall_seconds": 242.02842290799998,
+      "stage_seconds": [
+        242.02841523700002
+      ],
+      "commands": [
+        [
+          "CPRun.py",
+          "-i",
+          "/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1",
+          "-t",
+          "/home/gwatts/atlas/correctionlib_tests/config/reference.yaml",
+          "-o",
+          "output.root",
+          "-e",
+          "20000"
+        ]
+      ],
+      "events": 20000
+    },
+    {
+      "path": "A",
+      "iteration": 2,
+      "wall_seconds": 237.90408804599997,
+      "stage_seconds": [
+        237.90408054800014
+      ],
+      "commands": [
+        [
+          "CPRun.py",
+          "-i",
+          "/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1",
+          "-t",
+          "/home/gwatts/atlas/correctionlib_tests/config/reference.yaml",
+          "-o",
+          "output.root",
+          "-e",
+          "20000"
+        ]
+      ],
+      "events": 20000
+    },
+    {
+      "path": "A",
+      "iteration": 3,
+      "wall_seconds": 236.16341488600006,
+      "stage_seconds": [
+        236.16340529900003
+      ],
+      "commands": [
+        [
+          "CPRun.py",
+          "-i",
+          "/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1",
+          "-t",
+          "/home/gwatts/atlas/correctionlib_tests/config/reference.yaml",
+          "-o",
+          "output.root",
+          "-e",
+          "20000"
+        ]
+      ],
+      "events": 20000
+    },
+    {
+      "path": "A",
+      "iteration": 4,
+      "wall_seconds": 237.72217028400019,
+      "stage_seconds": [
+        237.72216333899996
+      ],
+      "commands": [
+        [
+          "CPRun.py",
+          "-i",
+          "/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1",
+          "-t",
+          "/home/gwatts/atlas/correctionlib_tests/config/reference.yaml",
+          "-o",
+          "output.root",
+          "-e",
+          "20000"
+        ]
+      ],
+      "events": 20000
+    },
+    {
+      "path": "B",
+      "iteration": 1,
+      "wall_seconds": 294.24059292000004,
+      "stage_seconds": [
+        294.240586223
+      ],
+      "commands": [
+        [
+          "CPRun.py",
+          "-i",
+          "/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1",
+          "-t",
+          "/home/gwatts/atlas/correctionlib_tests/config/reference.yaml",
+          "-o",
+          "output.root",
+          "-e",
+          "20000"
+        ]
+      ],
+      "events": 20000
+    },
+    {
+      "path": "B",
+      "iteration": 2,
+      "wall_seconds": 291.069265071,
+      "stage_seconds": [
+        291.069258109
+      ],
+      "commands": [
+        [
+          "CPRun.py",
+          "-i",
+          "/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1",
+          "-t",
+          "/home/gwatts/atlas/correctionlib_tests/config/reference.yaml",
+          "-o",
+          "output.root",
+          "-e",
+          "20000"
+        ]
+      ],
+      "events": 20000
+    },
+    {
+      "path": "B",
+      "iteration": 3,
+      "wall_seconds": 289.553268912,
+      "stage_seconds": [
+        289.5532531890001
+      ],
+      "commands": [
+        [
+          "CPRun.py",
+          "-i",
+          "/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1",
+          "-t",
+          "/home/gwatts/atlas/correctionlib_tests/config/reference.yaml",
+          "-o",
+          "output.root",
+          "-e",
+          "20000"
+        ]
+      ],
+      "events": 20000
+    },
+    {
+      "path": "B",
+      "iteration": 4,
+      "wall_seconds": 291.48016171100016,
+      "stage_seconds": [
+        291.4801556710004
+      ],
+      "commands": [
+        [
+          "CPRun.py",
+          "-i",
+          "/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1",
+          "-t",
+          "/home/gwatts/atlas/correctionlib_tests/config/reference.yaml",
+          "-o",
+          "output.root",
+          "-e",
+          "20000"
+        ]
+      ],
+      "events": 20000
+    },
+    {
+      "path": "C",
+      "iteration": 1,
+      "wall_seconds": 168.912936413,
+      "stage_seconds": [
+        19.460884655000086,
+        55.277440175999914,
+        94.17452562199992
+      ],
+      "commands": [
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-nominal.py",
+          "--events",
+          "20000",
+          "--chunk-size",
+          "1000"
+        ],
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-systematics.py",
+          "--events",
+          "20000",
+          "--output",
+          "results/columnar-kinematics.root"
+        ],
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-jvt.py",
+          "--events",
+          "20000",
+          "--output",
+          "results/columnar-jvt.root"
+        ]
+      ],
+      "events": 20000
+    },
+    {
+      "path": "C",
+      "iteration": 2,
+      "wall_seconds": 167.8529406749999,
+      "stage_seconds": [
+        19.46521078800015,
+        54.152236166999955,
+        94.23547626900017
+      ],
+      "commands": [
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-nominal.py",
+          "--events",
+          "20000",
+          "--chunk-size",
+          "1000"
+        ],
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-systematics.py",
+          "--events",
+          "20000",
+          "--output",
+          "results/columnar-kinematics.root"
+        ],
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-jvt.py",
+          "--events",
+          "20000",
+          "--output",
+          "results/columnar-jvt.root"
+        ]
+      ],
+      "events": 20000
+    },
+    {
+      "path": "C",
+      "iteration": 3,
+      "wall_seconds": 168.56905474600035,
+      "stage_seconds": [
+        19.897043962000225,
+        53.940246359999946,
+        94.73174034900012
+      ],
+      "commands": [
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-nominal.py",
+          "--events",
+          "20000",
+          "--chunk-size",
+          "1000"
+        ],
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-systematics.py",
+          "--events",
+          "20000",
+          "--output",
+          "results/columnar-kinematics.root"
+        ],
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-jvt.py",
+          "--events",
+          "20000",
+          "--output",
+          "results/columnar-jvt.root"
+        ]
+      ],
+      "events": 20000
+    },
+    {
+      "path": "C",
+      "iteration": 4,
+      "wall_seconds": 166.67837397699986,
+      "stage_seconds": [
+        19.07818657400003,
+        53.73053887799961,
+        93.8696294880001
+      ],
+      "commands": [
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-nominal.py",
+          "--events",
+          "20000",
+          "--chunk-size",
+          "1000"
+        ],
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-systematics.py",
+          "--events",
+          "20000",
+          "--output",
+          "results/columnar-kinematics.root"
+        ],
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-jvt.py",
+          "--events",
+          "20000",
+          "--output",
+          "results/columnar-jvt.root"
+        ]
+      ],
+      "events": 20000
+    }
+  ],
+  "scope": "Wall time after environment setup; imports, initialization, input preparation, computation and output included. C also includes reference comparisons and recalculates kinematics in its JVT stage. A/B comparisons are outside timed jobs. These measure existing workflows, not isolated evaluator speed.",
+  "cache": "No cache flushing; first run discarded per path; CVMFS/OS caches may already be warm.",
+  "all_12_runs_validated": true
+}

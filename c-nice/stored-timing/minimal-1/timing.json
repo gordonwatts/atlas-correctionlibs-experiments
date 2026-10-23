@@ -1,0 +1,9 @@
+{
+  "mode": "minimal",
+  "iteration": 1,
+  "wall_seconds": 1.4989090460003354,
+  "command": [
+    "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+    "/home/gwatts/atlas/correctionlib_tests/c-nice/plot-stored-jets.py"
+  ]
+}

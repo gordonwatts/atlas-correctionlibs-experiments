@@ -1,0 +1,22 @@
+Running kernel-nominal.log
+Running kernel-jvt.log
+Running kernel-systematics.log
+Running kernel-reuse-rng.log
+Running kernel-early-jer.log
+Running kernel-cached-metadata.log
+Running kernel-combined.log
+Running callgrind.log
+Running callgrind-inclusive.txt
+Running callgrind-exclusive.txt
+Running kernel-analysis.log
+Traceback (most recent call last):
+  File "/mnt/c/Users/gwatts/OneDrive/Documents/ATLAS/Computing/AMG/CorrectionLib/timing-study/run_kernels.py", line 23, in <module>
+    run(['python',HERE/'analyze_kernels.py',OUT],'kernel-analysis.log')
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/gwatts/OneDrive/Documents/ATLAS/Computing/AMG/CorrectionLib/timing-study/run_kernels.py", line 15, in run
+    subprocess.run([str(x) for x in command],cwd=ROOT,stdout=log,stderr=subprocess.STDOUT,check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['python', '/mnt/c/Users/gwatts/OneDrive/Documents/ATLAS/Computing/AMG/CorrectionLib/timing-study/analyze_kernels.py', '/home/gwatts/atlas/correctionlib_tests/results/overhead-study']' returned non-zero exit status 1.

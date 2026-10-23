@@ -1,0 +1,25 @@
+annotated-types==0.8.0
+awkward==2.14.0
+awkward_cpp==57
+cramjam==2.14.0
+fsspec==2026.9.0
+iniconfig==2.3.1
+markdown-it-py==4.2.0
+mdurl==0.1.2
+packaging==26.3
+pathspec==1.1.1
+pluggy==1.7.0
+pybind11==3.1.0
+pydantic==2.14.1
+pydantic_core==2.50.1
+Pygments==2.21.0
+pytest==9.1.1
+rich==15.0.0
+scikit_build_core==1.1.1
+setuptools-scm==10.3.4
+typing_extensions==4.16.0
+typing-inspection==0.4.4
+uproot==5.7.7
+vcs-versioning==2.6.0
+xxhash==4.0.2
+Could not fetch URL https://pypi.org/simple/pip/: There was a problem confirming the ssl certificate: HTTPSConnectionPool(host='pypi.org', port=443): Max retries exceeded with url: /simple/pip/ (Caused by SSLError("Can't connect to HTTPS URL because the SSL module is not available.")) - skipping

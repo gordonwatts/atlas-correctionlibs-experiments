@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.25)
+project(CorrectionLibAthenaOverlay VERSION 1.0.0 LANGUAGES CXX)
+find_package(Athena 25.0.76 EXACT REQUIRED)
+atlas_project(USE Athena 25.0.76)
+atlas_cpack_setup()

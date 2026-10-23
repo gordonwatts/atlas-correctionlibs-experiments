@@ -1,0 +1,2 @@
+/home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/mplhep/utils.py:741: UserWarning: Integer weights indicate poissonian data. Will calculate Garwood interval if ``scipy`` is installed. Otherwise errors will be set to ``sqrt(w2)``.
+  self.errors()

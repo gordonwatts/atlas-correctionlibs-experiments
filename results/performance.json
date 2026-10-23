@@ -1,0 +1,17 @@
+{
+  "scope": "component-benchmark-not-end-to-end-throughput",
+  "events": 1000,
+  "jets": 9909,
+  "input_cache": "warm CVMFS/OS caches possible",
+  "feature_preparation": "Features computed from original columns by validated runners; this benchmark loads their cache and does not time reconstruction.",
+  "timings": {
+    "initialization_seconds": 6.552897063003911,
+    "direct_input_read_seconds": 0.1870118690058007,
+    "cached_feature_load_seconds": 0.054373398001189344,
+    "nominal_evaluation_seconds": 0.08643630600272445,
+    "all_117_kinematic_states_seconds": 1.6894112130175927,
+    "nnjvt_and_weights_for_117_states_seconds": 1.8010294239720679,
+    "two_weight_only_variations_seconds": 0.029118452002876438
+  },
+  "peak_resident_bytes": 2471043072
+}

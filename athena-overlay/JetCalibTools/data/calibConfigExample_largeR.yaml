@@ -1,0 +1,84 @@
+# NOTE: 
+# - This file is an EXAMPLE of the options available for each step. 
+# - It is NOT a recommended calibration sequence,
+
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Set calibration step ordering
+Sequence:
+  Run2: 
+    FullSim: [EtaJES, JMS]
+    AF3: [EtaJES, JMS]
+    Data: [EtaJES, JMS, Insitu]
+  Run3: 
+    FullSim: [EtaJES, JMS]
+    AF3: [EtaJES, JMS]
+    Data: [EtaJES, JMS, Insitu]
+
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Absolute JES and eta calibration
+EtaJES:
+
+  # Used by the python function etajesStep to configure variable retrieval
+  ParametrizedVars:
+    varE: "e"
+    varEta: "DetectorEta"
+
+  JetAlgo: AntiKt10UFOCSSKSoftDropBeta100Zcut10
+
+  # Txt file with the eta calibration factors and freeze values for calibrations
+  # If splines are *not* used, this file will also contain the absolute JES calibration factors
+  CalibConstantFile: JetCalibTools/CalibArea-00-04-83/CalibrationFactors/AntiKt10UFOCSSKSoftDropBeta100Zcut10_JES_constants.config
+  # Histograme file with JES constants when using splines :
+  HistoFile: JetCalibTools/CalibArea-00-04-83/CalibrationFactors/AntiKt10UFOCSSKSoftDropBeta100Zcut10_JES_calibrationFactors.root
+
+  EtaBins: [-3.0,-2.9,-2.8,-2.7,-2.6,-2.5,-2.4,-2.3,-2.2,-2.1,-2.0,-1.9,-1.8,-1.7,-1.6,-1.5,-1.4,-1.3,-1.2,-1.1,-1.0,-0.9,-0.8,-0.7,-0.6,-0.5,-0.4,-0.3,-0.2,-0.1,0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0,1.1,1.2,1.3,1.4,1.5,1.6,1.7,1.8,1.9,2.0,2.1,2.2,2.3,2.4,2.5,2.6,2.7,2.8,2.9,3.0]
+
+  FreezeJEScorrectionatHighE: False
+  LowPtJESExtrapolationMethod: 1
+  MinPtForETAJES: 50
+  UseSpline: True
+  prereqs:
+    default: []
+
+
+
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Absolute JMS calibration
+JMS:
+  # The file with the 3D JMS calibration factors
+  HistoFile: JetCalibTools/CalibArea-00-04-83/CalibrationFactors/AntiKt10UFOCSSKSoftDropBeta100Zcut10_JMSmCalo_calibFactors.root
+  # Define parameterisation used for the 3D histogram
+  histoParams:
+    histName: 'AntiKt10UFOCSSKSoftDropBeta100Zcut10_JMS_e_LOGmOe_eta'
+    varX: 'e'
+    varY: 'LOGmOe'
+    varZ: 'absDetEta'
+
+  # Other parameters:
+  MinValueForJMS: 180.
+
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Insitu + InsituJMS calibration
+Insitu:
+  fileInsitu:
+    - JetCalibTools/CalibArea-00-04-83/InsituCalibration/InsituCalibration_AntiKt10UFOCSSKSoftDropBeta100Zcut10_Precision_Sep2022_1516.root
+    - JetCalibTools/CalibArea-00-04-83/InsituCalibration/InsituCalibration_AntiKt10UFOCSSKSoftDropBeta100Zcut10_Precision_Sep2022_17.root
+    - JetCalibTools/CalibArea-00-04-83/InsituCalibration/InsituCalibration_AntiKt10UFOCSSKSoftDropBeta100Zcut10_Precision_Sep2022_18.root
+  histEtaInterCalib:
+    histName: 'AntiKt10UFOCSSKSoftDropBeta100Zcut10_EtaInterCalibration'
+    varX: 'pt'
+    varY: 'DetectorEta'
+  histAbsCalib:
+    histName: 'AntiKt10UFOCSSKSoftDropBeta100Zcut10_InsituCalib'
+    varX: 'pt'
+  RunNumbers: [251102, 314199, 341649, 999999]
+  useOriginalHistCombination: false
+  CalibrateMC: False
+  prereqs:
+    default: []
+  JMS:
+    inputFile: "JetCalibTools/CalibArea-00-04-83/InsituCalibration/InsituJMSCalibration_140ifb_15161718_Sep_2024_10UFO_Precision.root"
+    histName: "AntiKt10UFOCSSKSoftDropBeta100Zcut10_InsituCalibJMS_CaloMass"
+    InterpType: "Full"
+    varX: "pt"
+    varY: "M"

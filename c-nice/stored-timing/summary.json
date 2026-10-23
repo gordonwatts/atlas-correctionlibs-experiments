@@ -1,0 +1,108 @@
+{
+  "rows": {
+    "minimal": {
+      "runs_seconds": [
+        1.4989090460003354,
+        1.136862621999171,
+        1.052591179999581,
+        1.0616310219993466
+      ],
+      "mean": 1.0836949413326995,
+      "sd": 0.04626587712811785
+    },
+    "extra-inputs": {
+      "runs_seconds": [
+        2.823379132001719,
+        2.191649024000071,
+        2.221239227001206,
+        2.2332579139983864
+      ],
+      "mean": 2.2153820549998877,
+      "sd": 0.021413892210729493
+    }
+  },
+  "records": [
+    {
+      "mode": "minimal",
+      "iteration": 1,
+      "wall_seconds": 1.4989090460003354,
+      "command": [
+        "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+        "/home/gwatts/atlas/correctionlib_tests/c-nice/plot-stored-jets.py"
+      ]
+    },
+    {
+      "mode": "extra-inputs",
+      "iteration": 1,
+      "wall_seconds": 2.823379132001719,
+      "command": [
+        "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+        "/home/gwatts/atlas/correctionlib_tests/c-nice/plot-stored-jets.py",
+        "--read-calibration-inputs"
+      ]
+    },
+    {
+      "mode": "minimal",
+      "iteration": 2,
+      "wall_seconds": 1.136862621999171,
+      "command": [
+        "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+        "/home/gwatts/atlas/correctionlib_tests/c-nice/plot-stored-jets.py"
+      ]
+    },
+    {
+      "mode": "extra-inputs",
+      "iteration": 2,
+      "wall_seconds": 2.191649024000071,
+      "command": [
+        "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+        "/home/gwatts/atlas/correctionlib_tests/c-nice/plot-stored-jets.py",
+        "--read-calibration-inputs"
+      ]
+    },
+    {
+      "mode": "minimal",
+      "iteration": 3,
+      "wall_seconds": 1.052591179999581,
+      "command": [
+        "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+        "/home/gwatts/atlas/correctionlib_tests/c-nice/plot-stored-jets.py"
+      ]
+    },
+    {
+      "mode": "extra-inputs",
+      "iteration": 3,
+      "wall_seconds": 2.221239227001206,
+      "command": [
+        "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+        "/home/gwatts/atlas/correctionlib_tests/c-nice/plot-stored-jets.py",
+        "--read-calibration-inputs"
+      ]
+    },
+    {
+      "mode": "minimal",
+      "iteration": 4,
+      "wall_seconds": 1.0616310219993466,
+      "command": [
+        "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+        "/home/gwatts/atlas/correctionlib_tests/c-nice/plot-stored-jets.py"
+      ]
+    },
+    {
+      "mode": "extra-inputs",
+      "iteration": 4,
+      "wall_seconds": 2.2332579139983864,
+      "command": [
+        "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+        "/home/gwatts/atlas/correctionlib_tests/c-nice/plot-stored-jets.py",
+        "--read-calibration-inputs"
+      ]
+    }
+  ],
+  "events": 20000,
+  "jets": 196606,
+  "selected_jets": 98850,
+  "discarded_run": 1,
+  "histogram_identical_across_modes_and_runs": true,
+  "scope": "Wall time includes process startup/imports, ROOT reading, array selection, Hist filling, PNG and histogram JSON output; environment setup excluded. No correction backend imported. No cache flushing."
+}

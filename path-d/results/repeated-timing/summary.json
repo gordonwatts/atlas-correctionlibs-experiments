@@ -1,0 +1,160 @@
+{
+  "path": "D",
+  "events": 20000,
+  "jets": 196606,
+  "discarded_run": 1,
+  "runs": [
+    {
+      "iteration": 1,
+      "wall_seconds": 255.9120054149971,
+      "phases": {
+        "nominal": 21.827797090001695,
+        "systematics": 60.978110313997604,
+        "jvt": 173.10586438700557
+      },
+      "passed": true,
+      "commands": [
+        [
+          "path-d/scripts/run-nominal.py",
+          "--events",
+          "20000",
+          "--chunk-size",
+          "1000"
+        ],
+        [
+          "path-d/scripts/run-systematics.py",
+          "--events",
+          "20000",
+          "--output",
+          "path-d/results/kinematics.root"
+        ],
+        [
+          "path-d/scripts/run-jvt.py",
+          "--events",
+          "20000",
+          "--output",
+          "path-d/results/jvt.root"
+        ]
+      ]
+    },
+    {
+      "iteration": 2,
+      "wall_seconds": 305.23174211800506,
+      "phases": {
+        "nominal": 21.448620414004836,
+        "systematics": 65.26400562799972,
+        "jvt": 218.518942652001
+      },
+      "passed": true,
+      "commands": [
+        [
+          "path-d/scripts/run-nominal.py",
+          "--events",
+          "20000",
+          "--chunk-size",
+          "1000"
+        ],
+        [
+          "path-d/scripts/run-systematics.py",
+          "--events",
+          "20000",
+          "--output",
+          "path-d/results/kinematics.root"
+        ],
+        [
+          "path-d/scripts/run-jvt.py",
+          "--events",
+          "20000",
+          "--output",
+          "path-d/results/jvt.root"
+        ]
+      ]
+    },
+    {
+      "iteration": 3,
+      "wall_seconds": 283.88790683899424,
+      "phases": {
+        "nominal": 25.16805210000166,
+        "systematics": 71.07075209599861,
+        "jvt": 187.64891550200264
+      },
+      "passed": true,
+      "commands": [
+        [
+          "path-d/scripts/run-nominal.py",
+          "--events",
+          "20000",
+          "--chunk-size",
+          "1000"
+        ],
+        [
+          "path-d/scripts/run-systematics.py",
+          "--events",
+          "20000",
+          "--output",
+          "path-d/results/kinematics.root"
+        ],
+        [
+          "path-d/scripts/run-jvt.py",
+          "--events",
+          "20000",
+          "--output",
+          "path-d/results/jvt.root"
+        ]
+      ]
+    },
+    {
+      "iteration": 4,
+      "wall_seconds": 260.50067080799636,
+      "phases": {
+        "nominal": 25.073209800000768,
+        "systematics": 65.7320303499946,
+        "jvt": 169.69521556299878
+      },
+      "passed": true,
+      "commands": [
+        [
+          "path-d/scripts/run-nominal.py",
+          "--events",
+          "20000",
+          "--chunk-size",
+          "1000"
+        ],
+        [
+          "path-d/scripts/run-systematics.py",
+          "--events",
+          "20000",
+          "--output",
+          "path-d/results/kinematics.root"
+        ],
+        [
+          "path-d/scripts/run-jvt.py",
+          "--events",
+          "20000",
+          "--output",
+          "path-d/results/jvt.root"
+        ]
+      ]
+    }
+  ],
+  "total": {
+    "mean": 283.20677325499855,
+    "sample_sd": 22.37331317339267
+  },
+  "phases": {
+    "nominal": {
+      "mean": 23.896627438002422,
+      "sample_sd": 2.120566565242294
+    },
+    "systematics": {
+      "mean": 67.35559602466431,
+      "sample_sd": 3.225918514296151
+    },
+    "jvt": {
+      "mean": 191.95435790566748,
+      "sample_sd": 24.69497332320483
+    }
+  },
+  "all_passed": true,
+  "scope": "Sequential full diagnostic workflow after environment setup; includes imports, initialization, input/feature preparation, repeated kinematic evaluation, writing and reference comparisons. No cache flush; first run excluded. A/B/C timings are prior measurements, not interleaved with these D runs."
+}

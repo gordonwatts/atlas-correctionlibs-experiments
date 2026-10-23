@@ -1,0 +1,24 @@
+ApplicationMgr     SUCCESS 
+====================================================================================================================================
+                                                   Welcome to ApplicationMgr (GaudiCoreSvc v41r0)
+                                          running on PHYS-PROFWSN04 on Thu Oct 22 00:05:34 2026
+====================================================================================================================================
+ApplicationMgr        INFO Application Manager Configured successfully
+Py:ComponentAccumulator    INFO Athena job with pid 2328412
+CoreDumpSvc                                          INFO Handling signals: 11(Segmentation fault) 7(Bus error) 4(Illegal instruction) 6(Aborted) 14(Alarm clock) 
+AthenaEventLoopMgr                                   INFO Initializing AthenaEventLoopMgr
+CorrectionLibSmoke.CorrectionLibCalib                INFO Initializing CorrectionLibSmoke.CorrectionLibCalib to calibrate AntiKt4EMPFlowJets
+CorrectionLibSmoke.CorrectionLibCalib                INFO Reading global JES settings from: JetCalibTools/CalibArea-00-04-83/CalibrationConfigs/AntiKt4EMPFlow_MC23a_PreRecR22_Phase2_CalibConfig_ResPU_EtaJES_GSC_241208_InSitu.config
+CorrectionLibSmoke.CorrectionLibCalib                INFO   Calibration sequence: JetArea_Residual_EtaJES_GSC
+ClassIDSvc                                           INFO getRegistryEntries: read 7338 CLIDRegistry entries for module ALL
+CorrectionLibSmoke                                   INFO CorrectionLib Athena adapters initialized successfully: 5 tools
+ApplicationMgr                                       INFO Application Manager Initialized successfully
+ApplicationMgr                                       INFO Application Manager Started successfully
+ApplicationMgr                                       INFO Application Manager Stopped successfully
+ToolSvc                                              INFO Removing all tools created by ToolSvc
+FPEAuditor                                           INFO FPE summary for this job
+FPEAuditor                                           INFO  FPE OVERFLOWs  : 0
+FPEAuditor                                           INFO  FPE INVALIDs   : 0
+FPEAuditor                                           INFO  FPE DIVBYZEROs : 0
+ApplicationMgr                                       INFO Application Manager Finalized successfully
+ApplicationMgr                                       INFO Application Manager Terminated successfully

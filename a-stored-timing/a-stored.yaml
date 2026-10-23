@@ -1,0 +1,24 @@
+CommonServices:
+  enableExpertMode: true
+  runSystematics: false
+Jets:
+  - containerName: AnaJets
+    jetCollection: AntiKt4EMPFlowJets
+    recalibratePhyslite: false
+    runUncertainties: false
+    runNNJvtUpdate: false
+    runJvtUpdate: false
+    runJvtSelection: false
+    runJvtEfficiency: false
+    runFJvtSelection: false
+    runFJvtEfficiency: false
+    runTruthJetTagging: false
+    runGhostMuonAssociation: false
+Output:
+  nonContainers: [EventInfo]
+  treeName: analysis
+  vars:
+    - EventInfo.eventNumber -> eventNumber
+    - AnaJets_%SYS%.pt -> stored_pt_%SYS%
+    - AnaJets_%SYS%.eta -> stored_eta_%SYS%
+  containers: {}

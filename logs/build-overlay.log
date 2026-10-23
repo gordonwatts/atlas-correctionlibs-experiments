@@ -1,0 +1,143 @@
+Using AnalysisBase/25.2.100 [cmake] with platform x86_64-el9-gcc15-opt
+	at /cvmfs/atlas.cern.ch/repo/sw/software/25.2
+Info: CERN ROOT Certificates may not be installed on machine
+      if you have SSL issues, install it https://cern.ch/fudpr
+      or use a container setupATLAS -c <container>
+Unchanged: COOL_ORA_ENABLE_ADAPTIVE_OPT=Y
+Prepared release-specific adapters ['JetCalibTools', 'JetUncertainties', 'JetJvtEfficiency']
+-- Using the LCG modules without setting up a release
+-- Setting ATLAS specific build flags
+-- checker_gccplugins library not found
+-- Using the LCG modules without setting up a release
+-- Configuring ATLAS project with name "CorrectionLibOverlay" and version "1.0.0"
+-- Using build type: RelWithDebInfo
+-- Using platform name: x86_64-el9-gcc15-opt
+-- Cleaning stale files from build area
+-- Unit tests will be built by default
+-- Found 3 package(s)
+-- Considering package 1 / 3
+-- No package filtering rules read
+-- Configuring the build of package: JetCalibTools
+-- Configuring the build of package: JetJvtEfficiency
+-- Configuring the build of package: JetUncertainties
+-- Number of packages configured: 3
+-- Time for package configuration: 1 second(s)
+-- Generated file: /home/gwatts/atlas/correctionlib_tests/build-overlay/x86_64-el9-gcc15-opt/packages.txt
+-- Including the packages from project AnalysisBase - 25.2.100...
+-- Including the packages from project AnalysisBaseExternals - 25.2.100...
+-- Generated file: /home/gwatts/atlas/correctionlib_tests/build-overlay/x86_64-el9-gcc15-opt/compilers.txt
+-- Generated file: /home/gwatts/atlas/correctionlib_tests/build-overlay/x86_64-el9-gcc15-opt/ReleaseData
+CMake Warning at /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/cmake/modules/AtlasInternals.cmake:623 (message):
+  CPack packaging will only work correctly with
+  CMAKE_INSTALL_PREFIX=/CorrectionLibOverlay/1.0.0/InstallArea/x86_64-el9-gcc15-opt
+Call Stack (most recent call first):
+  CMakeLists.txt:5 (atlas_cpack_setup)
+
+
+-- Configuring done (2.2s)
+-- Generating done (0.2s)
+-- Build files have been written to: /home/gwatts/atlas/correctionlib_tests/build-overlay
+[  0%] Built target atlas_tests
+[  1%] Generating JetUncertaintiesDictReflexDict.cxx
+[  1%] Generating JetCalibToolsDictReflexDict.cxx
+[  2%] Generating JetJvtEfficiencyDictReflexDict.cxx
+[  2%] Built target JetUncertaintiesDictDictGen
+[  3%] Generating ../x86_64-el9-gcc15-opt/include/JetUncertainties
+[  3%] Built target JetUncertaintiesHeaderInstall
+[  4%] Generating ../x86_64-el9-gcc15-opt/include/JetCalibTools
+[  4%] Built target JetCalibToolsHeaderInstall
+[  4%] Generating ../x86_64-el9-gcc15-opt/include/JetJvtEfficiency
+[  4%] Built target JetJvtEfficiencyHeaderInstall
+[  5%] Generating ../x86_64-el9-gcc15-opt/data/JetCalibTools/MC2MC_exceptions_DSID.json
+[  6%] Generating ../x86_64-el9-gcc15-opt/data/JetCalibTools/MC2MC_showerRemap.json
+[  6%] Generating ../x86_64-el9-gcc15-opt/data/JetCalibTools/calibConfigExample.yaml
+[  7%] Generating ../x86_64-el9-gcc15-opt/data/JetCalibTools/calibConfigExample_largeR.yaml
+[  7%] Built target JetCalibToolsDataInstall
+[  8%] Generating ../x86_64-el9-gcc15-opt/python/JetCalibTools/JetCalibStepsConfig.py
+[  9%] Generating ../x86_64-el9-gcc15-opt/python/JetCalibTools/JetCalibToolsCfg.py
+[  9%] Generating ../x86_64-el9-gcc15-opt/python/JetCalibTools/JetCalibToolsConfig.py
+[ 10%] Generating ../x86_64-el9-gcc15-opt/python/JetCalibTools/JetResponseToolConfig.py
+[ 10%] Built target JetCalibToolsPythonInstall
+[ 11%] Compiling python modules
+[ 11%] Built target JetJvtEfficiencyDictDictGen
+[ 12%] Compiling python modules
+[ 12%] Built target JetCalibToolsPyCompile
+[ 12%] Generating ../x86_64-el9-gcc15-opt/python/JetJvtEfficiency/JetJvtEfficiencyToolConfig.py
+[ 13%] Generating ../x86_64-el9-gcc15-opt/python/JetJvtEfficiency/__init__.py
+[ 13%] Built target JetJvtEfficiencyPythonInstall
+[ 13%] Generating ../x86_64-el9-gcc15-opt/share/JetUncertainties/JES_2011
+[ 14%] Generating ../x86_64-el9-gcc15-opt/share/JetUncertainties/JES_2012
+[ 15%] Generating ../x86_64-el9-gcc15-opt/share/JetUncertainties/JES_2015
+[ 16%] Generating ../x86_64-el9-gcc15-opt/share/JetUncertainties/JES_2016
+[ 16%] Generating ../x86_64-el9-gcc15-opt/share/JetUncertainties/TLA_2015
+[ 17%] Generating ../x86_64-el9-gcc15-opt/share/JetUncertainties/UJ_2012
+[ 18%] Generating ../x86_64-el9-gcc15-opt/share/JetUncertainties/UJ_2015
+[ 19%] Generating ../x86_64-el9-gcc15-opt/share/JetUncertainties/UJ_2016
+[ 19%] Generating ../x86_64-el9-gcc15-opt/share/JetUncertainties/analysisInputs
+[ 19%] Built target JetUncertaintiesGenericInstall
+[ 20%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/ClosebyUncertaintyComponent.cxx.o
+[ 20%] Built target JetJvtEfficiencyPyCompile
+[ 21%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/BcidOffsetCorrection.cxx.o
+[ 21%] Built target JetCalibToolsDictDictGen
+[ 22%] Built /home/gwatts/atlas/correctionlib_tests/build-overlay/x86_64-el9-gcc15-opt/lib/CorrectionLibOverlay.rootmap
+[ 22%] Built target CorrectionLibOverlayRootMapMerge
+[ 23%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/CombinedMassUncertaintyComponent.cxx.o
+[ 23%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/ConfigHelper.cxx.o
+[ 24%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/EtaJESCorrection.cxx.o
+[ 25%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/CorrelationMatrix.cxx.o
+[ 26%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/ELogMassEtaUncertaintyComponent.cxx.o
+[ 27%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/ELogMassUncertaintyComponent.cxx.o
+[ 27%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/Generic4VecCorrection.cxx.o
+[ 27%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/FFJetSmearingTool.cxx.o
+[ 28%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/FlavourUncertaintyComponent.cxx.o
+[ 29%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/Helpers.cxx.o
+[ 30%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/GlobalLargeRDNNCalibration.cxx.o
+[ 31%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/JetHelpers.cxx.o
+[ 31%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/JetUncertaintiesTool.cxx.o
+/home/gwatts/atlas/correctionlib_tests/atlas-overlay/JetUncertainties/Root/JetUncertaintiesTool.cxx:1:10: fatal error: adapter_support.hxx: No such file or directory
+    1 | #include "adapter_support.hxx"
+      |          ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[2]: *** [JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/build.make:219: JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/JetUncertaintiesTool.cxx.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[ 32%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/GlobalNNCalibration.cxx.o
+gmake[1]: *** [CMakeFiles/Makefile2:1226: JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 33%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/GlobalSequentialCorrection.cxx.o
+[ 33%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/InsituDataCorrection.cxx.o
+[ 34%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/JMSCorrection.cxx.o
+[ 35%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/JetCalibUtils.cxx.o
+[ 36%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/JetCalibrationStep.cxx.o
+[ 36%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/JetCalibrationTool.cxx.o
+[ 37%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/JetPileupCorrection.cxx.o
+In file included from /home/gwatts/atlas/correctionlib_tests/src/adapter_support.hxx:2,
+                 from /home/gwatts/atlas/correctionlib_tests/atlas-overlay/JetCalibTools/Root/JetCalibrationTool.cxx:1:
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx: In member function 'std::vector<std::vector<double> > Nominal::batch(const std::vector<std::vector<double> >&) const':
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx:41:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   41 |   for(const auto& r:rows)out.push_back(evaluate(r));return out;
+      |   ^~~
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx:41:53: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   41 |   for(const auto& r:rows)out.push_back(evaluate(r));return out;
+      |                                                     ^~~~~~
+[ 38%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/JetSmearingCorrection.cxx.o
+[ 39%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/NPVBeamspotCorrection.cxx.o
+[ 39%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/ResidualOffsetCorrection.cxx.o
+[ 40%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/RootHelpers.cxx.o
+[ 41%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/src/BJetCorrectionTool.cxx.o
+[ 42%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/src/EtaJESCalibStep.cxx.o
+[ 42%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/src/GSCCalibStep.cxx.o
+[ 43%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/src/Generic4VecCorrectionStep.cxx.o
+[ 44%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/src/InSituCalibStep.cxx.o
+[ 45%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/src/InSituJMSCalibStep.cxx.o
+[ 45%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/src/JMSCalibStep.cxx.o
+[ 46%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/src/JetCalibTool.cxx.o
+[ 47%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/src/JetResponseTool.cxx.o
+[ 48%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/src/MuonInJetCorrectionTool.cxx.o
+[  4%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/src/Pileup1DResidualCalibStep.cxx.o
+[ 24%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/src/PileupAreaCalibStep.cxx.o
+[ 25%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/src/PileupAreaResidualCalibStep.cxx.o
+[ 28%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/src/SmearingCalibStep.cxx.o
+[ 31%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetCalibToolsLib.so
+Detaching debug info of libJetCalibToolsLib.so into libJetCalibToolsLib.so.dbg
+[ 50%] Built target JetCalibToolsLib
+gmake: *** [Makefile:156: all] Error 2

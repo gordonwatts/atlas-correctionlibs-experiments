@@ -1,0 +1,31 @@
+annotated-types==0.8.0
+awkward==2.14.0
+awkward_cpp==57
+correctionlib @ file:///home/gwatts/atlas/correctionlib_tests/external/correctionlib
+cramjam==2.14.0
+Cython==3.1.1
+fsspec==2026.9.0
+iniconfig==2.3.1
+markdown-it-py==4.2.0
+mdurl==0.1.2
+nanobind==2.10.2
+numpy @ file:///build/atnight/localbuilds/nightlies/AnalysisBase/main/build/build/AnalysisBaseExternals/src/numpy
+packaging==26.3
+pathspec==1.1.1
+pluggy==1.7.0
+pybind11==3.1.0
+pydantic==2.14.1
+pydantic_core==2.50.1
+Pygments==2.21.0
+pytest==9.1.1
+PyYAML==6.0.2
+rich==15.0.0
+scikit_build_core==1.1.1
+setuptools==75.8.0.post20260703
+setuptools-scm==10.3.4
+typing-inspection==0.4.4
+typing_extensions==4.16.0
+uproot==5.7.7
+vcs-versioning==2.6.0
+wheel @ file:///build/atnight/localbuilds/nightlies/AnalysisBase/main/build/build/AnalysisBaseExternals/src/wheel
+xxhash==4.0.2

@@ -1,0 +1,8 @@
+{
+  "events": 20000,
+  "jets": 196606,
+  "input_differences": 0,
+  "output_differences": 0,
+  "max_absolute_delta": 0.0,
+  "passed": true
+}

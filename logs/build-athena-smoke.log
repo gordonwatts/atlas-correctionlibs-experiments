@@ -1,0 +1,87 @@
+Using Athena/25.0.76 [cmake] with platform x86_64-el9-gcc15-opt
+	at /cvmfs/atlas.cern.ch/repo/sw/software/25.0
+Info: CERN ROOT Certificates may not be installed on machine
+      if you have SSL issues, install it https://cern.ch/fudpr
+      or use a container setupATLAS -c <container>
+Unchanged: COOL_ORA_ENABLE_ADAPTIVE_OPT=Y
+-- Setting up LCG release "LCG_110_ATLAS_5" for platform: x86_64-el9-gcc15-opt
+-- Found ACTS version 48.1.0 commit std::nullopt
+-- Found nlohmann_json: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/jsonmcpp/3.12.0/x86_64-el9-gcc15-opt/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found suitable exact version "3.12.0")
+-- Found vecmem: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/cmake/vecmem-1.28.0/vecmem-config.cmake (found suitable exact version "1.28.0")
+-- Found vecmem: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/cmake/vecmem-1.28.0/vecmem-config.cmake (found version "1.28.0")
+-- Found nlohmann_json: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/jsonmcpp/3.12.0/x86_64-el9-gcc15-opt/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found version "3.12.0")
+-- Found detray: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/cmake/detray-0.111.0/detray-config.cmake (found suitable exact version "0.111.0")
+-- loading components:
+--   Core
+--   Fatras
+--   PluginGeoModel
+--   PluginJson
+--   PluginGnn
+--   PluginDetray
+--   PluginCovfie
+--   PluginRoot
+-- Found detray: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/cmake/detray-0.111.0/detray-config.cmake (found version "0.111.0")
+-- Could NOT find Geant4 (found version "10.6.3"), checked the following files:
+    /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/Geant4-10.6.3/Geant4Config.cmake (version 10.6.3)
+    Reason given by package: Geant4 could not be found because dependency EXPAT could not be found.
+
+-- Found Python: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/Python/3.13.11/x86_64-el9-gcc15-opt/bin/python3.13 (found suitable version "3.13.11", minimum required is "3.13") found components: Interpreter
+-- Setting up the tdaq-common externals...
+-- Setting ATLAS specific build flags
+-- Found checker_gccplugins library under: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/libchecker_gccplugins.so
+-- Enabling Python code checker: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/bin/flake8_atlas
+-- Setting up LCG release "LCG_110_ATLAS_5" for platform: x86_64-el9-gcc15-opt
+-- Found ROOT: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/sw/lcg/releases/LCG_110_ATLAS_5/ROOT/6.40.02/x86_64-el9-gcc15-opt/cmake (found version 6.40.02)
+-- Could NOT find zstd (missing: zstd_INCLUDE_DIR zstd_LIBRARY) (found version "")
+-- Found Gaudi: /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/cmake/Gaudi (found version 41.0)
+-- Configuring ATLAS project with name "CorrectionLibAthenaOverlay" and version "1.0.0"
+-- Using build type: RelWithDebInfo
+-- Using platform name: x86_64-el9-gcc15-opt
+-- Cleaning stale files from build area
+-- Unit tests will be built by default
+-- Found 4 package(s)
+-- Could NOT find Geant4 (found version "10.6.3"), checked the following files:
+    /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/Geant4-10.6.3/Geant4Config.cmake (version 10.6.3)
+    Reason given by package: Geant4 could not be found because dependency EXPAT could not be found.
+
+-- Considering package 1 / 4
+-- No package filtering rules read
+-- Configuring the build of package: CorrectionLibSmoke
+-- Configuring the build of package: JetCalibTools
+-- Configuring the build of package: JetJvtEfficiency
+-- Configuring the build of package: JetUncertainties
+-- Number of packages configured: 4
+-- Time for package configuration: 1 second(s)
+-- Generated file: /home/gwatts/atlas/correctionlib_tests/build-athena/x86_64-el9-gcc15-opt/packages.txt
+-- Could NOT find Geant4 (found version "10.6.3"), checked the following files:
+    /cvmfs/atlas.cern.ch/repo/sw/software/25.0/AthenaExternals/25.0.76/InstallArea/x86_64-el9-gcc15-opt/lib/Geant4-10.6.3/Geant4Config.cmake (version 10.6.3)
+    Reason given by package: Geant4 could not be found because dependency EXPAT could not be found.
+
+-- Including the packages from project Athena - 25.0.76...
+-- Including the packages from project AthenaExternals - 25.0.76...
+-- Generated file: /home/gwatts/atlas/correctionlib_tests/build-athena/x86_64-el9-gcc15-opt/compilers.txt
+-- Generated file: /home/gwatts/atlas/correctionlib_tests/build-athena/x86_64-el9-gcc15-opt/ReleaseData
+-- Configuring done (39.8s)
+-- Generating done (0.4s)
+-- Build files have been written to: /home/gwatts/atlas/correctionlib_tests/build-athena
+[  0%] Built target atlas_tests
+[  1%] Built target JetUncertaintiesDictDictGen
+[  1%] Built target JetCalibToolsDictDictGen
+[  2%] Built target JetJvtEfficiencyDictDictGen
+[  3%] Built target JetUncertaintiesHeaderInstall
+[  4%] Building CXX object CorrectionLibSmoke/CMakeFiles/CorrectionLibSmoke.dir/src/CorrectionLibSmoke.cxx.o
+[  5%] Built target JetCalibToolsHeaderInstall
+[  6%] Built target JetJvtEfficiencyHeaderInstall
+[  9%] Built target JetCalibToolsDataInstall
+[ 12%] Built target JetCalibToolsPythonInstall
+/home/gwatts/atlas/correctionlib_tests/athena-overlay/CorrectionLibSmoke/src/CorrectionLibSmoke.cxx:3:10: fatal error: GaudiKernel/DeclareFactoryEntries.h: No such file or directory
+    3 | #include "GaudiKernel/DeclareFactoryEntries.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[2]: *** [CorrectionLibSmoke/CMakeFiles/CorrectionLibSmoke.dir/build.make:79: CorrectionLibSmoke/CMakeFiles/CorrectionLibSmoke.dir/src/CorrectionLibSmoke.cxx.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:595: CorrectionLibSmoke/CMakeFiles/CorrectionLibSmoke.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 13%] Built target JetCalibToolsPyCompile
+[ 14%] Compiling python modules
+[ 14%] Built target JetJvtEfficiencyPyCompile
+gmake: *** [Makefile:156: all] Error 2

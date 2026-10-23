@@ -1,0 +1,377 @@
+-- Using the LCG modules without setting up a release
+-- Setting ATLAS specific build flags
+-- checker_gccplugins library not found
+-- Using the LCG modules without setting up a release
+-- Configuring ATLAS project with name "CorrectionLibOverlay" and version "1.0.0"
+-- Using build type: RelWithDebInfo
+-- Using platform name: x86_64-el9-gcc15-opt
+-- Cleaning stale files from build area
+-- Unit tests will be built by default
+-- Found 3 package(s)
+-- Considering package 1 / 3
+-- No package filtering rules read
+-- Configuring the build of package: JetCalibTools
+-- Configuring the build of package: JetJvtEfficiency
+-- Configuring the build of package: JetUncertainties
+-- Number of packages configured: 3
+-- Time for package configuration: 2 second(s)
+-- Generated file: /home/gwatts/atlas/correctionlib_tests/build-overlay/x86_64-el9-gcc15-opt/packages.txt
+-- Including the packages from project AnalysisBase - 25.2.100...
+-- Including the packages from project AnalysisBaseExternals - 25.2.100...
+-- Generated file: /home/gwatts/atlas/correctionlib_tests/build-overlay/x86_64-el9-gcc15-opt/compilers.txt
+-- Generated file: /home/gwatts/atlas/correctionlib_tests/build-overlay/x86_64-el9-gcc15-opt/ReleaseData
+CMake Warning at /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/cmake/modules/AtlasInternals.cmake:623 (message):
+  CPack packaging will only work correctly with
+  CMAKE_INSTALL_PREFIX=/CorrectionLibOverlay/1.0.0/InstallArea/x86_64-el9-gcc15-opt
+Call Stack (most recent call first):
+  CMakeLists.txt:5 (atlas_cpack_setup)
+
+
+-- Configuring done (2.8s)
+-- Generating done (0.3s)
+-- Build files have been written to: /home/gwatts/atlas/correctionlib_tests/build-overlay
+[  0%] Built target atlas_tests
+[  0%] Built target JetCalibToolsDictDictGen
+[  1%] Built target JetUncertaintiesDictDictGen
+[  2%] Built target JetCalibToolsHeaderInstall
+[  3%] Built target JetUncertaintiesHeaderInstall
+[  4%] Built target JetJvtEfficiencyDictDictGen
+[  4%] Built target JetJvtEfficiencyHeaderInstall
+[  7%] Built target JetCalibToolsDataInstall
+[ 10%] Built target JetCalibToolsPythonInstall
+[ 11%] Built target JetCalibToolsPyCompile
+[ 12%] Built target JetJvtEfficiencyPyCompile
+[ 13%] Built target JetJvtEfficiencyPythonInstall
+[ 19%] Built target JetUncertaintiesGenericInstall
+[ 20%] Built /home/gwatts/atlas/correctionlib_tests/build-overlay/x86_64-el9-gcc15-opt/lib/CorrectionLibOverlay.rootmap
+[ 20%] Built target CorrectionLibOverlayRootMapMerge
+[ 21%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/CombinedMassUncertaintyComponent.cxx.o
+[ 22%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/ClosebyUncertaintyComponent.cxx.o
+[ 23%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/src/JetResponseTool.cxx.o
+[ 24%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/ConfigHelper.cxx.o
+[ 26%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/CorrelationMatrix.cxx.o
+[ 27%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/ELogMassEtaUncertaintyComponent.cxx.o
+[ 29%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/src/MuonInJetCorrectionTool.cxx.o
+[ 30%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/ELogMassUncertaintyComponent.cxx.o
+[ 30%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/src/PileupAreaResidualCalibStep.cxx.o
+[ 30%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/FFJetSmearingTool.cxx.o
+[ 31%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/FlavourUncertaintyComponent.cxx.o
+[ 32%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/Helpers.cxx.o
+[ 50%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/src/SmearingCalibStep.cxx.o
+[ 51%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/JetHelpers.cxx.o
+[ 51%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/JetUncertaintiesTool.cxx.o
+[ 52%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/LargeRTopologyUncertaintyComponent.cxx.o
+In file included from /home/gwatts/atlas/correctionlib_tests/src/adapter_support.hxx:2,
+                 from /home/gwatts/atlas/correctionlib_tests/atlas-overlay/JetUncertainties/Root/JetUncertaintiesTool.cxx:1:
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx: In member function 'std::vector<std::vector<double> > Nominal::batch(const std::vector<std::vector<double> >&) const':
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx:41:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   41 |   for(const auto& r:rows)out.push_back(evaluate(r));return out;
+      |   ^~~
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx:41:53: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   41 |   for(const auto& r:rows)out.push_back(evaluate(r));return out;
+      |                                                     ^~~~~~
+[ 53%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/PerJetFlavourUncertaintyComponent.cxx.o
+[ 53%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetCalibToolsLib.so
+Detaching debug info of libJetCalibToolsLib.so into libJetCalibToolsLib.so.dbg
+[ 53%] Built target JetCalibToolsLib
+[ 54%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/PileupUncertaintyComponent.cxx.o
+[ 54%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/PtAbsMassEtaUncertaintyComponent.cxx.o
+[ 55%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/PtAbsMassUncertaintyComponent.cxx.o
+[ 56%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/PtEtaUncertaintyComponent.cxx.o
+[ 57%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/PtLogPtMassForTagSFUncertaintyComponent.cxx.o
+[ 57%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/PtMassEtaUncertaintyComponent.cxx.o
+[ 58%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/PtMassUncertaintyComponent.cxx.o
+[ 59%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/PtUncertaintyComponent.cxx.o
+[ 60%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/PunchthroughUncertaintyComponent.cxx.o
+[ 60%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/ResolutionHelper.cxx.o
+[ 61%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/UncertaintyComponent.cxx.o
+[ 62%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/UncertaintyEnum.cxx.o
+[ 63%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/UncertaintyGroup.cxx.o
+[ 63%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/UncertaintyHistogram.cxx.o
+[ 64%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/UncertaintySet.cxx.o
+[ 65%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/ValidityHistogram.cxx.o
+[ 66%] Building CXX object JetCalibTools/CMakeFiles/JetCalibTools.dir/src/components/JetCalibTools_entries.cxx.o
+[ 67%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsDict.dir/CMakeFiles/JetCalibToolsDictReflexDict.cxx.o
+[ 68%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetUncertaintiesLib.so
+Detaching debug info of libJetUncertaintiesLib.so into libJetUncertaintiesLib.so.dbg
+[ 68%] Built target JetUncertaintiesLib
+[ 69%] Building CXX object JetCalibTools/CMakeFiles/JetCalibTools_Example.dir/util/JetCalibTools_Example.cxx.o
+[ 69%] Linking CXX shared module ../x86_64-el9-gcc15-opt/lib/libJetCalibTools.so
+Detaching debug info of libJetCalibTools.so into libJetCalibTools.so.dbg
+[ 69%] Built target JetCalibTools
+[ 69%] Building CXX object JetCalibTools/CMakeFiles/JetCalibTools_PlotJESFactors.dir/util/JetCalibTools_PlotJESFactors.cxx.o
+[ 70%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetCalibToolsDict.so
+Detaching debug info of libJetCalibToolsDict.so into libJetCalibToolsDict.so.dbg
+[ 70%] Built target JetCalibToolsDict
+[ 71%] Building CXX object JetCalibTools/CMakeFiles/JetCalibTools_PlotJMSFactors.dir/util/JetCalibTools_PlotJMSFactors.cxx.o
+[ 72%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/JetCalibTools_Example
+[ 73%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/JetCalibTools_PlotJESFactors
+Detaching debug info of JetCalibTools_PlotJESFactors into JetCalibTools_PlotJESFactors.dbg
+Detaching debug info of JetCalibTools_Example into JetCalibTools_Example.dbg
+[ 73%] Built target JetCalibTools_PlotJESFactors
+[ 73%] Built target JetCalibTools_Example
+[ 73%] Building CXX object JetCalibTools/CMakeFiles/JetCalibTools_SmearingPlots.dir/util/JetCalibTools_SmearingPlots.cxx.o
+[ 74%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesDict.dir/CMakeFiles/JetUncertaintiesDictReflexDict.cxx.o
+[ 75%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/JetCalibTools_PlotJMSFactors
+Detaching debug info of JetCalibTools_PlotJMSFactors into JetCalibTools_PlotJMSFactors.dbg
+[ 75%] Built target JetCalibTools_PlotJMSFactors
+[ 75%] Building CXX object JetUncertainties/CMakeFiles/MakeCorrelationMatrixPlots.dir/util/MakeCorrelationMatrixPlots.cxx.o
+[ 76%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetUncertaintiesDict.so
+Detaching debug info of libJetUncertaintiesDict.so into libJetUncertaintiesDict.so.dbg
+[ 76%] Built target JetUncertaintiesDict
+[ 77%] Building CXX object JetUncertainties/CMakeFiles/MakeUncertaintyPlots.dir/util/MakeUncertaintyPlots.cxx.o
+[ 78%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/MakeCorrelationMatrixPlots
+[ 79%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/JetCalibTools_SmearingPlots
+Detaching debug info of MakeCorrelationMatrixPlots into MakeCorrelationMatrixPlots.dbg
+[ 79%] Built target MakeCorrelationMatrixPlots
+[ 80%] Building CXX object JetUncertainties/CMakeFiles/JetUncertainties_testTool.dir/util/testTool.cxx.o
+Detaching debug info of JetCalibTools_SmearingPlots into JetCalibTools_SmearingPlots.dbg
+[ 80%] Built target JetCalibTools_SmearingPlots
+[ 80%] Building CXX object JetUncertainties/CMakeFiles/JetUncertainties_testResolution.dir/util/testResolution.cxx.o
+[ 81%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/JetUncertainties_testTool
+[ 82%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/MakeUncertaintyPlots
+Detaching debug info of JetUncertainties_testTool into JetUncertainties_testTool.dbg
+[ 82%] Built target JetUncertainties_testTool
+[ 83%] Building CXX object JetUncertainties/CMakeFiles/FFJetSmearingTool_MyExample.dir/util/FFJetSmearingTool_MyExample.cxx.o
+Detaching debug info of MakeUncertaintyPlots into MakeUncertaintyPlots.dbg
+[ 83%] Built target MakeUncertaintyPlots
+[ 84%] Building CXX object JetUncertainties/CMakeFiles/JMR_MakeUncertaintyPlots.dir/util/JMR_MakeUncertaintyPlots.cxx.o
+[ 85%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/JetUncertainties_testResolution
+Detaching debug info of JetUncertainties_testResolution into JetUncertainties_testResolution.dbg
+[ 85%] Built target JetUncertainties_testResolution
+[ 86%] Building CXX object JetUncertainties/CMakeFiles/JetUncertainties.dir/src/components/JetUncertainties_entries.cxx.o
+[ 87%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/JMR_MakeUncertaintyPlots
+[ 88%] Linking CXX shared module ../x86_64-el9-gcc15-opt/lib/libJetUncertainties.so
+Detaching debug info of libJetUncertainties.so into libJetUncertainties.so.dbg
+[ 88%] Built target JetUncertainties
+[ 89%] Generating ../x86_64-el9-gcc15-opt/lib/libJetCalibTools.asgcomponents
+Detaching debug info of JMR_MakeUncertaintyPlots into JMR_MakeUncertaintyPlots.dbg
+[ 89%] Built target JMR_MakeUncertaintyPlots
+[ 90%] Building CXX object JetJvtEfficiency/CMakeFiles/JetJvtEfficiencyLib.dir/Root/FJvtEfficiencyTool.cxx.o
+[ 90%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/FFJetSmearingTool_MyExample
+cling::DynamicLibraryManager::loadLibrary(): libcorrectionlib.so: cannot open shared object file: No such file or directory
+Package.AsgTools.Compo...FATAL   /build/atnight/localbuilds/nightlies/AnalysisBase/main/athena/Control/AthToolSupport/AsgTools/Root/AsgComponentFactories.cxx:152 (void asg::loadComponentFactoryModule(const std::string&, const std::string&)): failed to preload component factory module libJetCalibTools.so
+terminate called without an active exception
+ *** Break *** abort
+Detaching debug info of FFJetSmearingTool_MyExample into FFJetSmearingTool_MyExample.dbg
+[ 90%] Built target FFJetSmearingTool_MyExample
+[ 90%] Generating ../x86_64-el9-gcc15-opt/lib/libJetUncertainties.asgcomponents
+cling::DynamicLibraryManager::loadLibrary(): libcorrectionlib.so: cannot open shared object file: No such file or directory
+Package.AsgTools.Compo...FATAL   /build/atnight/localbuilds/nightlies/AnalysisBase/main/athena/Control/AthToolSupport/AsgTools/Root/AsgComponentFactories.cxx:152 (void asg::loadComponentFactoryModule(const std::string&, const std::string&)): failed to preload component factory module libJetUncertainties.so
+terminate called without an active exception
+ *** Break *** abort
+[ 91%] Building CXX object JetJvtEfficiency/CMakeFiles/JetJvtEfficiencyLib.dir/Root/FJvtSelectionTool.cxx.o
+[ 91%] Building CXX object JetJvtEfficiency/CMakeFiles/JetJvtEfficiencyLib.dir/Root/JvtEfficiencyTool.cxx.o
+
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+#0  0x000079e7d2d1829a in wait4 () from /lib64/libc.so.6
+#1  0x000079e7d2c6195b in do_system () from /lib64/libc.so.6
+#2  0x000079e7d291bb68 in TUnixSystem::StackTrace() () from /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCore.so
+#3  0x000079e7d0dafddb in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/./libCPyCppyy.so
+#4  0x000079e7d291b381 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCore.so
+#5  <signal handler called>
+#6  0x000079e7d2ca154c in __pthread_kill_implementation () from /lib64/libc.so.6
+#7  0x000079e7d2c54d46 in raise () from /lib64/libc.so.6
+#8  0x000079e7d2c287f3 in abort () from /lib64/libc.so.6
+#9  0x000079e7d30aaca4 in ?? () from /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6
+#10 0x000079e7d30bce5a in ?? () from /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6
+#11 0x000079e7d30aa82e in std::terminate() () from /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6
+#12 0x000079e7d3429fc9 in asg::loadComponentFactoryModule(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) () from /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAsgTools.so
+#13 0x0000000000402978 in main ()
+===========================================================
+
+
+The lines below might hint at the cause of the crash. If you see question
+marks as part of the stack trace, try to recompile with debugging information
+enabled and export CLING_DEBUG=1 environment variable before running.
+You may get help by asking at the ROOT forum https://root.cern/forum
+preferably using the command (.forum bug) in the ROOT prompt.
+Only if you are really convinced it is a bug in ROOT then please submit a
+report at https://root.cern/bugs or (preferably) using the command (.gh bug) in
+the ROOT prompt. Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#6  0x000079e7d2ca154c in __pthread_kill_implementation () from /lib64/libc.so.6
+#7  0x000079e7d2c54d46 in raise () from /lib64/libc.so.6
+#8  0x000079e7d2c287f3 in abort () from /lib64/libc.so.6
+#9  0x000079e7d30aaca4 in ?? () from /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6
+#10 0x000079e7d30bce5a in ?? () from /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6
+#11 0x000079e7d30aa82e in std::terminate() () from /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6
+#12 0x000079e7d3429fc9 in asg::loadComponentFactoryModule(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) () from /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAsgTools.so
+#13 0x0000000000402978 in main ()
+===========================================================
+
+
+ *** Break *** abort
+
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+#0  0x00007cc57cf1829a in wait4 () from /lib64/libc.so.6
+#1  0x00007cc57ce6195b in do_system () from /lib64/libc.so.6
+#2  0x00007cc57cb1bb68 in TUnixSystem::StackTrace() () from /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCore.so
+#3  0x00007cc57afafddb in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/./libCPyCppyy.so
+#4  0x00007cc57cb1b381 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCore.so
+#5  <signal handler called>
+#6  0x00007cc57cea154c in __pthread_kill_implementation () from /lib64/libc.so.6
+#7  0x00007cc57ce54d46 in raise () from /lib64/libc.so.6
+#8  0x00007cc57ce287f3 in abort () from /lib64/libc.so.6
+#9  0x00007cc57d2aaca4 in ?? () from /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6
+#10 0x00007cc57d2bce5a in ?? () from /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6
+#11 0x00007cc57d2aa82e in std::terminate() () from /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6
+#12 0x00007cc57d62ffc9 in asg::loadComponentFactoryModule(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) () from /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAsgTools.so
+#13 0x0000000000402978 in main ()
+===========================================================
+
+
+The lines below might hint at the cause of the crash. If you see question
+marks as part of the stack trace, try to recompile with debugging information
+enabled and export CLING_DEBUG=1 environment variable before running.
+You may get help by asking at the ROOT forum https://root.cern/forum
+preferably using the command (.forum bug) in the ROOT prompt.
+Only if you are really convinced it is a bug in ROOT then please submit a
+report at https://root.cern/bugs or (preferably) using the command (.gh bug) in
+the ROOT prompt. Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#6  0x00007cc57cea154c in __pthread_kill_implementation () from /lib64/libc.so.6
+#7  0x00007cc57ce54d46 in raise () from /lib64/libc.so.6
+#8  0x00007cc57ce287f3 in abort () from /lib64/libc.so.6
+#9  0x00007cc57d2aaca4 in ?? () from /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6
+#10 0x00007cc57d2bce5a in ?? () from /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6
+#11 0x00007cc57d2aa82e in std::terminate() () from /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6
+#12 0x00007cc57d62ffc9 in asg::loadComponentFactoryModule(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) () from /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAsgTools.so
+#13 0x0000000000402978 in main ()
+===========================================================
+
+
+ *** Break *** abort
+
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+#0  0x00007cc57cf1829a in wait4 () from /lib64/libc.so.6
+#1  0x00007cc57ce6195b in do_system () from /lib64/libc.so.6
+#2  0x00007cc57cb1bb68 in TUnixSystem::StackTrace() () from /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCore.so
+#3  0x00007cc57afafd0d in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/./libCPyCppyy.so
+#4  0x00007cc57cb1b381 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCore.so
+#5  <signal handler called>
+#6  0x00007cc57cea154c in __pthread_kill_implementation () from /lib64/libc.so.6
+#7  0x00007cc57ce54d46 in raise () from /lib64/libc.so.6
+#8  0x00007cc57ce287f3 in abort () from /lib64/libc.so.6
+#9  0x00007cc57d2aaca4 in ?? () from /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6
+#10 0x00007cc57d2bce5a in ?? () from /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6
+#11 0x00007cc57d2aa82e in std::terminate() () from /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6
+#12 0x00007cc57d62ffc9 in asg::loadComponentFactoryModule(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) () from /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAsgTools.so
+#13 0x0000000000402978 in main ()
+===========================================================
+
+
+The lines below might hint at the cause of the crash. If you see question
+marks as part of the stack trace, try to recompile with debugging information
+enabled and export CLING_DEBUG=1 environment variable before running.
+You may get help by asking at the ROOT forum https://root.cern/forum
+preferably using the command (.forum bug) in the ROOT prompt.
+Only if you are really convinced it is a bug in ROOT then please submit a
+report at https://root.cern/bugs or (preferably) using the command (.gh bug) in
+the ROOT prompt. Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#6  0x00007cc57cea154c in __pthread_kill_implementation () from /lib64/libc.so.6
+#7  0x00007cc57ce54d46 in raise () from /lib64/libc.so.6
+#8  0x00007cc57ce287f3 in abort () from /lib64/libc.so.6
+#9  0x00007cc57d2aaca4 in ?? () from /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6
+#10 0x00007cc57d2bce5a in ?? () from /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6
+#11 0x00007cc57d2aa82e in std::terminate() () from /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6
+#12 0x00007cc57d62ffc9 in asg::loadComponentFactoryModule(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) () from /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAsgTools.so
+#13 0x0000000000402978 in main ()
+===========================================================
+
+
+#0  0x000079e7d2d1829a in wait4 () from /lib64/libc.so.6
+#1  0x000079e7d2c6195b in do_system () from /lib64/libc.so.6
+#2  0x000079e7d291bb68 in TUnixSystem::StackTrace() () from /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCore.so
+#3  0x000079e7d0dafd0d in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/./libCPyCppyy.so
+#4  0x000079e7d291b381 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCore.so
+#5  <signal handler called>
+#6  0x000079e7d2ca154c in __pthread_kill_implementation () from /lib64/libc.so.6
+#7  0x000079e7d2c54d46 in raise () from /lib64/libc.so.6
+#8  0x000079e7d2c287f3 in abort () from /lib64/libc.so.6
+#9  0x000079e7d30aaca4 in ?? () from /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6
+#10 0x000079e7d30bce5a in ?? () from /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6
+#11 0x000079e7d30aa82e in std::terminate() () from /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6
+#12 0x000079e7d3429fc9 in asg::loadComponentFactoryModule(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) () from /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAsgTools.so
+#13 0x0000000000402978 in main ()
+===========================================================
+
+
+The lines below might hint at the cause of the crash. If you see question
+marks as part of the stack trace, try to recompile with debugging information
+enabled and export CLING_DEBUG=1 environment variable before running.
+You may get help by asking at the ROOT forum https://root.cern/forum
+preferably using the command (.forum bug) in the ROOT prompt.
+Only if you are really convinced it is a bug in ROOT then please submit a
+report at https://root.cern/bugs or (preferably) using the command (.gh bug) in
+the ROOT prompt. Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#6  0x000079e7d2ca154c in __pthread_kill_implementation () from /lib64/libc.so.6
+#7  0x000079e7d2c54d46 in raise () from /lib64/libc.so.6
+#8  0x000079e7d2c287f3 in abort () from /lib64/libc.so.6
+#9  0x000079e7d30aaca4 in ?? () from /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6
+#10 0x000079e7d30bce5a in ?? () from /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6
+#11 0x000079e7d30aa82e in std::terminate() () from /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6
+#12 0x000079e7d3429fc9 in asg::loadComponentFactoryModule(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) () from /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAsgTools.so
+#13 0x0000000000402978 in main ()
+===========================================================
+
+
+gmake[2]: *** [JetUncertainties/CMakeFiles/JetUncertaintiesComponentsList.dir/build.make:74: x86_64-el9-gcc15-opt/lib/libJetUncertainties.asgcomponents] Error 133
+gmake[1]: *** [CMakeFiles/Makefile2:1322: JetUncertainties/CMakeFiles/JetUncertaintiesComponentsList.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [JetCalibTools/CMakeFiles/JetCalibToolsComponentsList.dir/build.make:74: x86_64-el9-gcc15-opt/lib/libJetCalibTools.asgcomponents] Error 133
+gmake[1]: *** [CMakeFiles/Makefile2:544: JetCalibTools/CMakeFiles/JetCalibToolsComponentsList.dir/all] Error 2
+[ 92%] Building CXX object JetJvtEfficiency/CMakeFiles/JetJvtEfficiencyLib.dir/Root/JvtEfficiencyToolBase.cxx.o
+[ 93%] Building CXX object JetJvtEfficiency/CMakeFiles/JetJvtEfficiencyLib.dir/Root/JvtSelectionTool.cxx.o
+In file included from /home/gwatts/atlas/correctionlib_tests/src/adapter_support.hxx:2,
+                 from /home/gwatts/atlas/correctionlib_tests/atlas-overlay/JetJvtEfficiency/Root/JvtEfficiencyToolBase.cxx:1:
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx: In member function 'std::vector<std::vector<double> > Nominal::batch(const std::vector<std::vector<double> >&) const':
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx:41:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   41 |   for(const auto& r:rows)out.push_back(evaluate(r));return out;
+      |   ^~~
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx:41:53: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   41 |   for(const auto& r:rows)out.push_back(evaluate(r));return out;
+      |                                                     ^~~~~~
+[ 94%] Building CXX object JetJvtEfficiency/CMakeFiles/JetJvtEfficiencyLib.dir/Root/JvtSelectionToolBase.cxx.o
+[ 94%] Building CXX object JetJvtEfficiency/CMakeFiles/JetJvtEfficiencyLib.dir/Root/NNJvtEfficiencyTool.cxx.o
+/home/gwatts/atlas/correctionlib_tests/atlas-overlay/JetJvtEfficiency/Root/JvtEfficiencyToolBase.cxx: At global scope:
+/home/gwatts/atlas/correctionlib_tests/atlas-overlay/JetJvtEfficiency/Root/JvtEfficiencyToolBase.cxx:17:10: warning: 'bool {anonymous}::getBinContentAndError(const TH2&, float, float, float&, float&)' defined but not used [-Wunused-function]
+   17 |     bool getBinContentAndError(const TH2 &h, float x, float y, float &content, float &error) {
+      |          ^~~~~~~~~~~~~~~~~~~~~
+[ 95%] Building CXX object JetJvtEfficiency/CMakeFiles/JetJvtEfficiencyLib.dir/Root/NNJvtSelectionTool.cxx.o
+[ 96%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetJvtEfficiencyLib.so
+Detaching debug info of libJetJvtEfficiencyLib.so into libJetJvtEfficiencyLib.so.dbg
+[ 96%] Built target JetJvtEfficiencyLib
+gmake: *** [Makefile:156: all] Error 2

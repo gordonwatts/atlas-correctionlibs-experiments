@@ -1,0 +1,1195 @@
+--------------------------------------------------------------------------------
+Profile data file '/home/gwatts/atlas/correctionlib_tests/results/overhead-study/callgrind-systematics.out' (creator: callgrind-3.19.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 305850947
+Trigger: Program termination
+Profiled target:  /home/gwatts/atlas/correctionlib_tests/results/overhead-study/kernel-benchmark /home/gwatts/atlas/correctionlib_tests systematics 100 (PID 1590047, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       80
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+912,250,248 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+184,487,780 (20.22%)  ???:__memcpy_avx_unaligned_erms [/usr/lib64/libc.so.6]
+122,148,480 (13.39%)  ???:TRandom3::SetSeed(unsigned long) [/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libMathCore.so]
+ 56,625,536 ( 6.21%)  ???:_int_free [/usr/lib64/libc.so.6]
+ 56,433,968 ( 6.19%)  ???:__memcmp_avx2_movbe [/usr/lib64/libc.so.6]
+ 53,342,728 ( 5.85%)  ???:TRandom3::Rndm() [/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libMathCore.so]
+ 36,343,754 ( 3.98%)  ???:_int_malloc [/usr/lib64/libc.so.6]
+ 34,942,874 ( 3.83%)  ???:malloc [/usr/lib64/libc.so.6]
+ 33,349,464 ( 3.66%)  ???:correction::FormulaAst::evaluate(std::vector<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&, std::vector<double, std::allocator<double> > const&) const'2 [/home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/correctionlib/lib/libcorrectionlib.so]
+ 26,971,264 ( 2.96%)  ???:__strlen_avx2 [/usr/lib64/libc.so.6]
+ 24,248,800 ( 2.66%)  ???:0x000000000003adf0 [/home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/correctionlib/lib/libcorrectionlib.so]
+ 20,315,600 ( 2.23%)  ???:free [/usr/lib64/libc.so.6]
+ 19,914,944 ( 2.18%)  /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/basic_string.h:JetSystematics::table(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, double, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int) const
+ 12,715,360 ( 1.39%)  /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/char_traits.h:JetSystematics::table(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, double, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int) const
+  9,751,488 ( 1.07%)  ???:operator new(unsigned long) [/cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6.0.34]
+  9,379,840 ( 1.03%)  /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/basic_string.tcc:std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) [/home/gwatts/atlas/correctionlib_tests/results/overhead-study/kernel-benchmark]
+  7,512,128 ( 0.82%)  /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/basic_string.h:std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::append(char const*) [/home/gwatts/atlas/correctionlib_tests/results/overhead-study/kernel-benchmark]
+  7,207,976 ( 0.79%)  ???:correction::Correction::evaluate(std::vector<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&) const [/home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/correctionlib/lib/libcorrectionlib.so]
+  6,979,080 ( 0.77%)  ???:correction::Binning::evaluate(std::vector<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&) const [/home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/correctionlib/lib/libcorrectionlib.so]
+  4,990,448 ( 0.55%)  src/systematics.hxx:JetSystematics::evaluate(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<double, std::allocator<double> > const&) const [/home/gwatts/atlas/correctionlib_tests/results/overhead-study/kernel-benchmark]
+  4,912,640 ( 0.54%)  /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/basic_string.h:std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [clone .constprop.0] [/home/gwatts/atlas/correctionlib_tests/results/overhead-study/kernel-benchmark]
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: src/systematics.hxx
+--------------------------------------------------------------------------------
+Ir                 
+
+        .           #pragma once
+        .           #include <nlohmann/json.hpp>
+        .           #include <map>
+        .           class JetSystematics {
+        .            using Json=nlohmann::json;
+        .            std::unique_ptr<correction::CorrectionSet> tables;
+        .            Json manifest;
+        .            std::map<std::string,std::vector<Json>> recipes;
+1,101,760 ( 0.12%)   double table(const std::string& name,double pt,double eta,const std::string& mode="Full",int file=0)const{
+        .             auto c=tables->at("file"+std::to_string(file)+"__"+name+"_AntiKt4EMPFlow__"+mode+"__content");
+  460,320 ( 0.05%)    if(c->inputs().size()==1)return c->evaluate({pt});
+157,592,398 (17.28%)  => ???:correction::Correction::evaluate(std::vector<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&) const (20,000x)
+2,240,000 ( 0.25%)  => /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/stl_vector.h:std::vector<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::vector(std::initializer_list<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) (20,000x)
+2,420,000 ( 0.27%)  => /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/stl_vector.h:std::vector<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::~vector() (20,000x)
+1,442,884 ( 0.16%)    return c->evaluate({pt,eta});
+168,422,670 (18.46%)  => ???:correction::Correction::evaluate(std::vector<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&) const (80,160x)
+9,939,840 ( 1.09%)  => /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/stl_vector.h:std::vector<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::vector(std::initializer_list<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) (80,160x)
+    1,775 ( 0.00%)  => /usr/src/debug/glibc-2.34-60.el9_2.7.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave (1x)
+  901,440 ( 0.10%)   }
+  739,200 ( 0.08%)   double component(const Json& c,double pt,double eta,double mu,double npv,bool bjet)const{
+  844,800 ( 0.09%)    std::string name=c.at("Name"),hist=c.value("Hists",name),mode=c.value("Interp",std::string("Full"));
+20,633,924 ( 2.26%)  => /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/nlohmann/json.hpp:std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > nlohmann::json_abi_v3_12_0::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::json_abi_v3_12_0::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> >, void>::value<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const (&) [6], std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, 0>(char const (&) [6], std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) const (52,800x)
+16,539,200 ( 1.81%)  => /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/nlohmann/json.hpp:std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > nlohmann::json_abi_v3_12_0::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::json_abi_v3_12_0::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> >, void>::value<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, char const (&) [7], std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, 0>(char const (&) [7], std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&) const (52,800x)
+13,331,200 ( 1.46%)  => /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/nlohmann/json.hpp:nlohmann::json_abi_v3_12_0::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::json_abi_v3_12_0::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> >, void> const& nlohmann::json_abi_v3_12_0::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::json_abi_v3_12_0::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> >, void>::at<char const (&) [5], 0>(char const (&) [5]) const (52,800x)
+3,432,000 ( 0.38%)  => /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/basic_string.h:std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [clone .constprop.0] (52,800x)
+  398,400 ( 0.04%)    double y=c.at("Param")=="PtAbsEta"?std::abs(eta):eta;
+12,908,800 ( 1.42%)  => /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/nlohmann/json.hpp:nlohmann::json_abi_v3_12_0::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::json_abi_v3_12_0::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> >, void> const& nlohmann::json_abi_v3_12_0::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::json_abi_v3_12_0::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> >, void>::at<char const (&) [6], 0>(char const (&) [6]) const (52,800x)
+  374,208 ( 0.04%)    auto h=[&](const std::string& key){return table(key,pt,y,mode);};
+327,048,716 (35.85%)  => src/systematics.hxx:JetSystematics::table(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, double, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int) const (51,200x)
+  264,000 ( 0.03%)    if(c.value("Special",std::string())!="True")return h(hist);
+16,566,400 ( 1.82%)  => /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/nlohmann/json.hpp:std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > nlohmann::json_abi_v3_12_0::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::json_abi_v3_12_0::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> >, void>::value<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, char const (&) [8], std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, 0>(char const (&) [8], std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&) const (52,800x)
+   22,400 ( 0.00%)    const auto& s=manifest.at("settings");
+1,685,600 ( 0.18%)  => /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/nlohmann/json.hpp:nlohmann::json_abi_v3_12_0::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::json_abi_v3_12_0::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> >, void> const& nlohmann::json_abi_v3_12_0::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::json_abi_v3_12_0::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> >, void>::at<char const (&) [9], 0>(char const (&) [9]) const (5,600x)
+   33,600 ( 0.00%)    double dm=mu-std::stod(s.at("Pileup.MuRef").get<std::string>());
+4,233,600 ( 0.46%)  => /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/nlohmann/json.hpp:nlohmann::json_abi_v3_12_0::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::json_abi_v3_12_0::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> >, void> const& nlohmann::json_abi_v3_12_0::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::json_abi_v3_12_0::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> >, void>::at<char const (&) [13], 0>(char const (&) [13]) const (5,600x)
+   31,200 ( 0.00%)    double dn=npv-std::stod(s.at("Pileup.NPVRef").get<std::string>());
+3,606,400 ( 0.40%)  => /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/nlohmann/json.hpp:nlohmann::json_abi_v3_12_0::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::json_abi_v3_12_0::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> >, void> const& nlohmann::json_abi_v3_12_0::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::json_abi_v3_12_0::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> >, void>::at<char const (&) [14], 0>(char const (&) [14]) const (5,600x)
+   50,528 ( 0.01%)    if(name=="Pileup_OffsetMu_orig")return dm*h(hist);
+   24,000 ( 0.00%)    if(name=="Pileup_OffsetNPV_orig")return dn*h(hist);
+  167,200 ( 0.02%)  => /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/basic_string.h:bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) (4,800x)
+   33,600 ( 0.00%)    if(name=="Pileup_PtTerm_orig"){auto split=hist.find(',');return dm*h(hist.substr(0,split))+dn*h(hist.substr(split+1));}
+  143,200 ( 0.02%)  => /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/basic_string.h:bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) (4,000x)
+  172,800 ( 0.02%)  => /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/basic_string.h:std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::substr(unsigned long, unsigned long) const (1,600x)
+   16,000 ( 0.00%)    if(name=="Pileup_RhoTopology_orig")return h(hist);
+  144,800 ( 0.02%)  => /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/basic_string.h:bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) (3,200x)
+   16,896 ( 0.00%)    if(name=="BJES_Response")return bjet?h(hist):0.;
+  613,539 ( 0.07%)  => src/systematics.hxx:JetSystematics::component(nlohmann::json_abi_v3_12_0::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::json_abi_v3_12_0::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> >, void> const&, double, double, double, double, bool) const::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)#1}::operator()(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const [clone .isra.0] (128x)
+   95,200 ( 0.01%)  => /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/basic_string.h:bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) (2,400x)
+    3,200 ( 0.00%)    if(bjet)return 0.;
+   20,160 ( 0.00%)    double fg=table("gluonFraction",pt,std::abs(eta),"Full",1);
+2,533,440 ( 0.28%)  => src/systematics.hxx:JetSystematics::table(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, double, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int) const (1,344x)
+  172,032 ( 0.02%)  => /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/basic_string.h:std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [clone .constprop.0] (2,688x)
+   15,840 ( 0.00%)    if(name=="Flavor_Response_orig")return h(hist)*fg;
+3,159,336 ( 0.35%)  => src/systematics.hxx:JetSystematics::component(nlohmann::json_abi_v3_12_0::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::json_abi_v3_12_0::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> >, void> const&, double, double, double, double, bool) const::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)#1}::operator()(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const [clone .isra.0] (672x)
+   59,808 ( 0.01%)  => /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/basic_string.h:bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) (1,344x)
+    3,360 ( 0.00%)    if(name=="Flavor_Composition_orig"){
+   39,648 ( 0.00%)  => /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/basic_string.h:bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) (672x)
+   16,800 ( 0.00%)     auto split=hist.find(',');double rg=h(hist.substr(0,split)),rq=h(hist.substr(split+1));
+6,394,094 ( 0.70%)  => src/systematics.hxx:JetSystematics::component(nlohmann::json_abi_v3_12_0::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::json_abi_v3_12_0::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> >, void> const&, double, double, double, double, bool) const::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)#1}::operator()(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const [clone .isra.0] (1,344x)
+   61,824 ( 0.01%)  => /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/basic_string.h:std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::substr(unsigned long, unsigned long) const (1,344x)
+    9,408 ( 0.00%)     double df=table("gluonFractionError",pt,std::abs(eta),"Full",1);
+1,276,800 ( 0.14%)  => src/systematics.hxx:JetSystematics::table(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, double, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int) const (672x)
+  124,320 ( 0.01%)  => /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/basic_string.h:std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [clone .constprop.0] (1,344x)
+    9,408 ( 0.00%)     return df*std::abs(rq-rg)/(fg*rg+(1-fg)*rq);
+        .             }
+        .             throw std::invalid_argument("Unsupported special uncertainty component: "+name);
+  475,200 ( 0.05%)   }
+        .           public:
+        .            JetSystematics(const std::string& payload,const std::string& config):tables(correction::CorrectionSet::from_file(payload)){
+        .             std::ifstream input(config);if(!input)throw std::runtime_error("Missing uncertainty manifest");input>>manifest;
+        .             for(const auto& c:manifest.at("components"))if(!c.contains("Group"))recipes[c.at("Name")].push_back(c);
+        .             for(auto it=manifest.at("groups").begin();it!=manifest.at("groups").end();++it){
+        .              const auto& g=it.value();if(g.at("Corr")!="Correlated")throw std::invalid_argument("Unsupported group correlation");
+        .              for(const auto& c:manifest.at("components"))if(c.value("Group",std::string())==it.key())recipes[g.at("Name")].push_back(c);
+        .             }
+-- line 44 ----------------------------------------
+-- line 47 ----------------------------------------
+        .             std::vector<std::string> out{"NOSYS"};
+        .             for(const auto& [name,cs]:recipes){
+        .              bool jer=cs.front().value("Scale",std::string())=="FourVecResAbs";
+        .              for(int data=0;data<=(jer?1:0);++data)for(const auto& sign:{"up","down"})out.push_back("JET_"+name+(data?"_PseudoData":"")+"__1"+sign);
+        .             }
+        .             return out;
+        .            }
+        .            // pt,eta,phi,m,mu,npv,isBjet. Status 0 is CorrectionCode::Ok.
+  421,200 ( 0.05%)   std::vector<double> evaluate(const std::string& sys,const std::vector<double>& r)const{
+   93,600 ( 0.01%)    if(r.size()!=7)throw std::invalid_argument("Systematics requires seven inputs");
+    2,000 ( 0.00%)    if(sys=="NOSYS")return {r[0],r[1],r[2],r[3],0.};
+        .             if(sys.rfind("JET_",0)!=0)throw std::invalid_argument("Invalid systematic name");
+   92,800 ( 0.01%)    auto split=sys.find("__1");if(split==std::string::npos)throw std::invalid_argument("Invalid systematic direction");
+   92,800 ( 0.01%)    std::string name=sys.substr(4,split-4),direction=sys.substr(split+3);
+  162,400 ( 0.02%)    if(direction!="up"&&direction!="down")throw std::invalid_argument("Unsupported systematic direction");
+1,368,800 ( 0.15%)  => /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/basic_string.h:bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) (23,200x)
+  197,600 ( 0.02%)    double sign=direction=="up"?1.:-1.;bool data=false;
+  139,200 ( 0.02%)    const std::string suffix="_PseudoData";
+2,923,200 ( 0.32%)  => /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/basic_string.h:std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [clone .constprop.0] (46,400x)
+  161,600 ( 0.02%)    if(name.size()>suffix.size()&&name.substr(name.size()-suffix.size())==suffix){data=true;name.resize(name.size()-suffix.size());}
+        .             const auto& cs=recipes.at(name);
+  185,600 ( 0.02%)    const double pt=r[0]*double(float(.001)),eta=r[1];
+1,334,400 ( 0.15%)    double unc=0;for(const auto& c:cs)unc+=component(c,pt,eta,r[4],r[5],r[6]!=0);
+483,767,407 (53.03%)  => src/systematics.hxx:JetSystematics::component(nlohmann::json_abi_v3_12_0::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::json_abi_v3_12_0::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> >, void> const&, double, double, double, double, bool) const (52,800x)
+  164,800 ( 0.02%)    double scale=1+sign*unc;
+  232,000 ( 0.03%)    if(cs.front().value("Scale",std::string())=="FourVecResAbs"){
+15,487,200 ( 1.70%)  => /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/nlohmann/json.hpp:std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > nlohmann::json_abi_v3_12_0::basic_json<std::map, std::vector, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, long, unsigned long, double, std::allocator, nlohmann::json_abi_v3_12_0::adl_serializer, std::vector<unsigned char, std::allocator<unsigned char> >, void>::value<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, char const (&) [6], std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, 0>(char const (&) [6], std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&) const (46,400x)
+  649,600 ( 0.07%)     double sigma=std::max(table("JER_Nominal_MC16",pt,std::abs(eta),"OnlyX"),table("JER_Nominal_data",pt,std::abs(eta),"OnlyX"));
+156,384,816 (17.14%)  => src/systematics.hxx:JetSystematics::table(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, double, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int) const (44,800x)
+8,288,000 ( 0.91%)  => /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/basic_string.h:std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [clone .constprop.0] (89,600x)
+   10,848 ( 0.00%)     scale=smear(r[2],sigma,sign*unc,data);
+   72,000 ( 0.01%)    }else if(data)throw std::invalid_argument("PseudoData is only supported for resolution variations");
+  556,800 ( 0.06%)    return {double(float(r[0]*scale)),r[1],r[2],double(float(r[3]*scale)),0.};
+  421,200 ( 0.05%)   }
+        .            std::vector<std::vector<double>> batch(const std::string& sys,const std::vector<std::vector<double>>& rows)const{
+        .             std::vector<std::vector<double>> out;out.reserve(rows.size());for(const auto& r:rows)out.push_back(evaluate(sys,r));return out;
+        .            }
+        .           };
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/basic_string.tcc
+--------------------------------------------------------------------------------
+Ir                 
+
+-- line 140 ----------------------------------------
+        .             template<typename _CharT, typename _Traits, typename _Alloc>
+        .               _GLIBCXX20_CONSTEXPR
+        .               typename basic_string<_CharT, _Traits, _Alloc>::pointer
+        .               basic_string<_CharT, _Traits, _Alloc>::
+        .               _M_create(size_type& __capacity, size_type __old_capacity)
+        .               {
+        .                 // _GLIBCXX_RESOLVE_LIB_DEFECTS
+        .                 // 83.  String::npos vs. string::max_size()
+  605,760 ( 0.07%)        if (__capacity > max_size())
+        .           	std::__throw_length_error(__N("basic_string::_M_create"));
+        .           
+        .                 // The below implements an exponential growth policy, necessary to
+        .                 // meet amortized linear time requirements of the library: see
+        .                 // http://gcc.gnu.org/ml/libstdc++/2001-07/msg00085.html.
+1,034,240 ( 0.11%)        if (__capacity > __old_capacity && __capacity < 2 * __old_capacity)
+        .           	{
+  252,320 ( 0.03%)  	  __capacity = 2 * __old_capacity;
+        .           	  // Never allocate a string bigger than max_size.
+  200,320 ( 0.02%)  	  if (__capacity > max_size())
+  600,960 ( 0.07%)  	    __capacity = max_size();
+        .           	}
+        .           
+        .                 // NB: Need an array of char_type[__capacity], plus a terminating
+        .                 // null char_type() element.
+  564,352 ( 0.06%)        return _S_allocate(_M_get_allocator(), __capacity + 1);
+        .               }
+        .           
+        .             // NB: This is the special case for Input Iterators, used in
+        .             // istreambuf_iterators, etc.
+        .             // Input Iterators have a cost structure very different from
+        .             // pointers, calling for a different coding style.
+        .             template<typename _CharT, typename _Traits, typename _Alloc>
+        .               template<typename _InIterator>
+-- line 172 ----------------------------------------
+-- line 225 ----------------------------------------
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 void
+        .                 basic_string<_CharT, _Traits, _Alloc>::
+        .                 _M_construct(_InIterator __beg, _InIterator __end,
+        .           		   std::forward_iterator_tag)
+        .                 {
+        .           	size_type __dnew = static_cast<size_type>(std::distance(__beg, __end));
+        .           
+  775,552 ( 0.09%)  	if (__dnew > size_type(_S_local_capacity))
+        .           	  {
+        .           	    _M_data(_M_create(__dnew, size_type(0)));
+        .           	    _M_capacity(__dnew);
+        .           	  }
+        .           	else
+        .           	  _M_init_local_buf();
+        .           
+        .           	// Check for out_of_range and length_error exceptions.
+-- line 241 ----------------------------------------
+-- line 281 ----------------------------------------
+        .             // than difference between iterators.
+        .             template<typename _CharT, typename _Traits, typename _Alloc>
+        .               template<bool _Terminated>
+        .               _GLIBCXX20_CONSTEXPR 
+        .               void
+        .               basic_string<_CharT, _Traits, _Alloc>::
+        .               _M_construct(const _CharT* __str, size_type __n)
+        .               {
+   54,400 ( 0.01%)        if (__n > size_type(_S_local_capacity))
+        .           	{
+        .           	  _M_data(_M_create(__n, size_type(0)));
+        .           	  _M_capacity(__n);
+        .           	}
+        .                 else
+        .           	_M_init_local_buf();
+        .           
+        .                 if (__n || _Terminated)
+-- line 297 ----------------------------------------
+-- line 303 ----------------------------------------
+        .               }
+        .           
+        .             template<typename _CharT, typename _Traits, typename _Alloc>
+        .               _GLIBCXX20_CONSTEXPR
+        .               void
+        .               basic_string<_CharT, _Traits, _Alloc>::
+        .               _M_assign(const basic_string& __str)
+        .               {
+  280,000 ( 0.03%)        if (this != std::__addressof(__str))
+        .           	{
+        .           	  const size_type __rsize = __str.length();
+        .           	  const size_type __capacity = capacity();
+        .           
+  280,000 ( 0.03%)  	  if (__rsize > __capacity)
+        .           	    {
+  156,000 ( 0.02%)  	      size_type __new_capacity = __rsize;
+        .           	      pointer __tmp = _M_create(__new_capacity, __capacity);
+        .           	      _M_dispose();
+        .           	      _M_data(__tmp);
+        .           	      _M_capacity(__new_capacity);
+        .           	    }
+        .           
+  129,600 ( 0.01%)  	  if (__rsize)
+        .           	    this->_S_copy(_M_data(), __str._M_data(), __rsize);
+        .           
+        .           	  _M_set_length(__rsize);
+        .           	}
+        .               }
+        .           
+        .             template<typename _CharT, typename _Traits, typename _Alloc>
+        .               _GLIBCXX20_CONSTEXPR
+        .               void
+  701,120 ( 0.08%)      basic_string<_CharT, _Traits, _Alloc>::
+        .               reserve(size_type __res)
+        .               {
+        .                 const size_type __capacity = capacity();
+        .                 // _GLIBCXX_RESOLVE_LIB_DEFECTS
+        .                 // 2968. Inconsistencies between basic_string reserve and
+        .                 // vector/unordered_map/unordered_set reserve functions
+        .                 // P0966 reserve should not shrink
+  200,320 ( 0.02%)        if (__res <= __capacity)
+        .           	return;
+        .           
+        .                 pointer __tmp = _M_create(__res, __capacity);
+        .                 this->_S_copy(__tmp, _M_data(), length() + 1);
+        .                 _M_dispose();
+        .                 _M_data(__tmp);
+        .                 _M_capacity(__res);
+  600,960 ( 0.07%)      }
+        .           
+        .             template<typename _CharT, typename _Traits, typename _Alloc>
+        .               _GLIBCXX20_CONSTEXPR
+        .               void
+1,802,880 ( 0.20%)      basic_string<_CharT, _Traits, _Alloc>::
+        .               _M_mutate(size_type __pos, size_type __len1, const _CharT* __s,
+        .           	      size_type __len2)
+        .               {
+  400,640 ( 0.04%)        const size_type __how_much = length() - __pos - __len1;
+        .           
+  600,960 ( 0.07%)        size_type __new_capacity = length() + __len2 - __len1;
+        .                 pointer __r = _M_create(__new_capacity, capacity());
+        .           
+  801,280 ( 0.09%)        if (__pos)
+        .           	this->_S_copy(__r, _M_data(), __pos);
+  801,280 ( 0.09%)        if (__s && __len2)
+  200,320 ( 0.02%)  	this->_S_copy(__r + __pos, __s, __len2);
+  400,640 ( 0.04%)        if (__how_much)
+        .           	this->_S_copy(__r + __pos + __len2,
+        .           		      _M_data() + __pos + __len1, __how_much);
+        .           
+        .                 _M_dispose();
+        .                 _M_data(__r);
+        .                 _M_capacity(__new_capacity);
+1,602,560 ( 0.18%)      }
+        .           
+        .             template<typename _CharT, typename _Traits, typename _Alloc>
+        .               _GLIBCXX20_CONSTEXPR
+        .               void
+        .               basic_string<_CharT, _Traits, _Alloc>::
+        .               _M_erase(size_type __pos, size_type __n)
+        .               {
+        .                 const size_type __how_much = length() - __pos - __n;
+-- line 384 ----------------------------------------
+-- line 429 ----------------------------------------
+        .               _GLIBCXX20_CONSTEXPR
+        .               void
+        .               basic_string<_CharT, _Traits, _Alloc>::
+        .               resize(size_type __n, _CharT __c)
+        .               {
+        .                 const size_type __size = this->size();
+        .                 if (__size < __n)
+        .           	this->append(__n - __size, __c);
+   22,400 ( 0.00%)        else if (__n < __size)
+        .           	this->_M_set_length(__n);
+        .               }
+        .           
+        .             template<typename _CharT, typename _Traits, typename _Alloc>
+        .               _GLIBCXX20_CONSTEXPR
+        .               basic_string<_CharT, _Traits, _Alloc>&
+        .               basic_string<_CharT, _Traits, _Alloc>::
+        .               _M_append(const _CharT* __s, size_type __n)
+        .               {
+  600,960 ( 0.07%)        const size_type __len = __n + this->size();
+        .           
+1,201,920 ( 0.13%)        if (__len <= this->capacity())
+        .           	{
+  600,960 ( 0.07%)  	  if (__n)
+  300,480 ( 0.03%)  	    this->_S_copy(this->_M_data() + this->size(), __s, __n);
+        .           	}
+        .                 else
+1,001,472 ( 0.11%)  	this->_M_mutate(this->size(), size_type(0), __s, __n);
+16,095,972 ( 1.76%)  => /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/basic_string.tcc:std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (100,160x)
+        .           
+        .                 this->_M_set_length(__len);
+        .                 return *this;
+        .               }
+        .           
+        .             template<typename _CharT, typename _Traits, typename _Alloc>
+        .               template<typename _InputIterator>
+        .                 _GLIBCXX20_CONSTEXPR
+-- line 463 ----------------------------------------
+-- line 541 ----------------------------------------
+        .               basic_string<_CharT, _Traits, _Alloc>&
+        .               basic_string<_CharT, _Traits, _Alloc>::
+        .               _M_replace(size_type __pos, size_type __len1, const _CharT* __s,
+        .           	       const size_type __len2)
+        .               {
+        .                 _M_check_length(__len1, __len2, "basic_string::_M_replace");
+        .           
+        .                 const size_type __old_size = this->size();
+  100,160 ( 0.01%)        const size_type __new_size = __old_size + __len2 - __len1;
+        .           
+  200,320 ( 0.02%)        if (__new_size <= this->capacity())
+        .           	{
+        .           	  pointer __p = this->_M_data() + __pos;
+        .           
+        .           	  const size_type __how_much = __old_size - __pos - __len1;
+        .           #if __cpp_lib_is_constant_evaluated
+        .           	  if (std::is_constant_evaluated())
+        .           	    {
+        .           	      auto __newp = _S_allocate(_M_get_allocator(), __new_size);
+-- line 559 ----------------------------------------
+-- line 562 ----------------------------------------
+        .           	      _S_copy(__newp + __pos + __len2, __p + __len1, __how_much);
+        .           	      _S_copy(this->_M_data(), __newp, __new_size);
+        .           	      this->_M_get_allocator().deallocate(__newp, __new_size);
+        .           	    }
+        .           	  else
+        .           #endif
+        .           	  if (__builtin_expect(_M_disjunct(__s), true))
+        .           	    {
+  200,320 ( 0.02%)  	      if (__how_much && __len1 != __len2)
+        .           		this->_S_move(__p + __len2, __p + __len1, __how_much);
+        .           	      if (__len2)
+        .           		this->_S_copy(__p, __s, __len2);
+        .           	    }
+        .           	  else
+        .           	    _M_replace_cold(__p, __len1, __s, __len2, __how_much);
+        .           	}
+        .                 else
+-- line 578 ----------------------------------------
+-- line 613 ----------------------------------------
+        .               _GLIBCXX20_CONSTEXPR void
+        .               basic_string<_CharT, _Traits, _Alloc>::
+        .           #ifdef __glibcxx_string_resize_and_overwrite // C++ >= 23
+        .               resize_and_overwrite(const size_type __n, _Operation __op)
+        .           #else
+        .               __resize_and_overwrite(const size_type __n, _Operation __op)
+        .           #endif
+        .               {
+  300,480 ( 0.03%)        reserve(__n);
+1,903,040 ( 0.21%)  => /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/basic_string.tcc:std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::reserve(unsigned long) (100,160x)
+        .                 _CharT* const __p = _M_data();
+        .           #if __cpp_lib_is_constant_evaluated
+        .                 if (std::__is_constant_evaluated() && __n > size())
+        .           	traits_type::assign(__p + size(), __n - size(), _CharT());
+        .           #endif
+        .                 struct _Terminator {
+        .           	_GLIBCXX20_CONSTEXPR ~_Terminator() { _M_this->_M_set_length(_M_r); }
+        .           	basic_string* _M_this;
+-- line 629 ----------------------------------------
+-- line 663 ----------------------------------------
+        .           
+        .                 if (__n == 0)
+        .           	return __pos <= __size ? __pos : npos;
+        .                 if (__pos >= __size)
+        .           	return npos;
+        .           
+        .                 const _CharT __elem0 = __s[0];
+        .                 const _CharT* const __data = data();
+   46,400 ( 0.01%)        const _CharT* __first = __data + __pos;
+   46,400 ( 0.01%)        const _CharT* const __last = __data + __size;
+   46,400 ( 0.01%)        size_type __len = __size - __pos;
+        .           
+  264,000 ( 0.03%)        while (__len >= __n)
+        .           	{
+        .           	  // Find the first occurrence of __elem0:
+  178,400 ( 0.02%)  	  __first = traits_type::find(__first, __len - __n + 1, __elem0);
+  356,800 ( 0.04%)  	  if (!__first)
+        .           	    return npos;
+        .           	  // Compare the full strings from the first occurrence of __elem0.
+        .           	  // We already know that __first[0] == __s[0] but compare them again
+        .           	  // anyway because __s is probably aligned, which helps memcmp.
+        .           	  if (traits_type::compare(__first, __s, __n) == 0)
+   92,800 ( 0.01%)  	    return __first - __data;
+  396,000 ( 0.04%)  	  __len = __last - ++__first;
+        .           	}
+        .                 return npos;
+        .               }
+        .           
+        .             template<typename _CharT, typename _Traits, typename _Alloc>
+        .               _GLIBCXX_STRING_CONSTEXPR
+        .               typename basic_string<_CharT, _Traits, _Alloc>::size_type
+        .               basic_string<_CharT, _Traits, _Alloc>::
+        .               find(_CharT __c, size_type __pos) const _GLIBCXX_NOEXCEPT
+        .               {
+    1,472 ( 0.00%)        size_type __ret = npos;
+        .                 const size_type __size = this->size();
+    4,416 ( 0.00%)        if (__pos < __size)
+        .           	{
+        .           	  const _CharT* __data = _M_data();
+        .           	  const size_type __n = __size - __pos;
+        .           	  const _CharT* __p = traits_type::find(__data + __pos, __n, __c);
+        .           	  if (__p)
+    5,888 ( 0.00%)  	    __ret = __p - __data;
+        .           	}
+        .                 return __ret;
+        .               }
+        .           
+        .             template<typename _CharT, typename _Traits, typename _Alloc>
+        .               _GLIBCXX_STRING_CONSTEXPR
+        .               typename basic_string<_CharT, _Traits, _Alloc>::size_type
+        .               basic_string<_CharT, _Traits, _Alloc>::
+        .               rfind(const _CharT* __s, size_type __pos, size_type __n) const
+        .               _GLIBCXX_NOEXCEPT
+        .               {
+        .                 __glibcxx_requires_string_len(__s, __n);
+        .                 const size_type __size = this->size();
+  139,200 ( 0.02%)        if (__n <= __size)
+        .           	{
+        .           	  __pos = std::min(size_type(__size - __n), __pos);
+        .           	  const _CharT* __data = _M_data();
+        .           	  do
+        .           	    {
+   92,800 ( 0.01%)  	      if (traits_type::compare(__data + __pos, __s, __n) == 0)
+        .           		return __pos;
+        .           	    }
+        .           	  while (__pos-- > 0);
+        .           	}
+        .                 return npos;
+        .               }
+        .           
+        .             template<typename _CharT, typename _Traits, typename _Alloc>
+-- line 733 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/char_traits.h
+--------------------------------------------------------------------------------
+Ir                  
+
+-- line 344 ----------------------------------------
+         .                 static _GLIBCXX17_CONSTEXPR void
+         .                 assign(char_type& __c1, const char_type& __c2) _GLIBCXX_NOEXCEPT
+         .                 {
+         .           #if __cpp_constexpr_dynamic_alloc
+         .           	if (std::__is_constant_evaluated())
+         .           	  std::construct_at(__builtin_addressof(__c1), __c2);
+         .           	else
+         .           #endif
+ 2,740,256 ( 0.30%)  	__c1 = __c2;
+   100,160 ( 0.01%)        }
+         .           
+         .                 static _GLIBCXX_CONSTEXPR bool
+         .                 eq(const char_type& __c1, const char_type& __c2) _GLIBCXX_NOEXCEPT
+         .                 { return __c1 == __c2; }
+         .           
+         .                 static _GLIBCXX_CONSTEXPR bool
+         .                 lt(const char_type& __c1, const char_type& __c2) _GLIBCXX_NOEXCEPT
+         .                 {
+-- line 361 ----------------------------------------
+-- line 362 ----------------------------------------
+         .           	// LWG 467.
+         .           	return (static_cast<unsigned char>(__c1)
+         .           		< static_cast<unsigned char>(__c2));
+         .                 }
+         .           
+         .                 static _GLIBCXX17_CONSTEXPR int
+         .                 compare(const char_type* __s1, const char_type* __s2, size_t __n)
+         .                 {
+ 5,848,768 ( 0.64%)  	if (__n == 0)
+         .           	  return 0;
+         .           #if __cplusplus >= 201703L
+         .           	if (std::__is_constant_evaluated())
+         .           	  {
+         .           	    for (size_t __i = 0; __i < __n; ++__i)
+         .           	      if (lt(__s1[__i], __s2[__i]))
+         .           		return -1;
+         .           	      else if (lt(__s2[__i], __s1[__i]))
+         .           		return 1;
+         .           	    return 0;
+         .           	  }
+         .           #endif
+10,580,640 ( 1.16%)  	return __builtin_memcmp(__s1, __s2, __n);
+ 3,863,200 ( 0.42%)  => ???:__memcmp_avx2_movbe (155,200x)
+         .                 }
+         .           
+         .                 static _GLIBCXX17_CONSTEXPR size_t
+         .                 length(const char_type* __s)
+         .                 {
+         .           #if __cplusplus >= 201703L
+         .           	if (std::__is_constant_evaluated())
+         .           	  return __gnu_cxx::char_traits<char_type>::length(__s);
+         .           #endif
+ 7,368,448 ( 0.81%)  	return __builtin_strlen(__s);
+ 2,172,800 ( 0.24%)  => ???:__strlen_avx2 (155,200x)
+         .                 }
+         .           
+         .                 static _GLIBCXX17_CONSTEXPR const char_type*
+         .                 find(const char_type* __s, size_t __n, const char_type& __a)
+         .                 {
+         .           	if (__n == 0)
+         .           	  return 0;
+         .           #if __cplusplus >= 201703L
+         .           	if (std::__is_constant_evaluated())
+         .           	  return __gnu_cxx::char_traits<char_type>::find(__s, __n, __a);
+         .           #endif
+   541,092 ( 0.06%)  	return static_cast<const char_type*>(__builtin_memchr(__s, __a, __n));
+    27,968 ( 0.00%)  => ???:__memchr_avx2 (1,472x)
+         .                 }
+         .           
+         .                 static _GLIBCXX20_CONSTEXPR char_type*
+         .                 move(char_type* __s1, const char_type* __s2, size_t __n)
+         .                 {
+         .           	if (__n == 0)
+         .           	  return __s1;
+         .           #if __cplusplus >= 202002L
+-- line 413 ----------------------------------------
+-- line 415 ----------------------------------------
+         .           	  return __gnu_cxx::char_traits<char_type>::move(__s1, __s2, __n);
+         .           #endif
+         .           	return static_cast<char_type*>(__builtin_memmove(__s1, __s2, __n));
+         .                 }
+         .           
+         .                 static _GLIBCXX20_CONSTEXPR char_type*
+         .                 copy(char_type* __s1, const char_type* __s2, size_t __n)
+         .                 {
+   595,008 ( 0.07%)  	if (__n == 0)
+         .           	  return __s1;
+         .           #if __cplusplus >= 202002L
+         .           	if (std::__is_constant_evaluated())
+         .           	  return __gnu_cxx::char_traits<char_type>::copy(__s1, __s2, __n);
+         .           #endif
+12,355,968 ( 1.35%)  	return static_cast<char_type*>(__builtin_memcpy(__s1, __s2, __n));
+   300,000 ( 0.03%)  => ???:__memcpy_avx_unaligned_erms (27,200x)
+         .                 }
+         .           
+         .                 static _GLIBCXX20_CONSTEXPR char_type*
+         .                 assign(char_type* __s, size_t __n, char_type __a)
+         .                 {
+         .           	if (__n == 0)
+         .           	  return __s;
+         .           #if __cplusplus >= 202002L
+-- line 437 ----------------------------------------
+-- line 993 ----------------------------------------
+         .               template<typename _ChTraits>
+         .                 constexpr auto
+         .                 __char_traits_cmp_cat(int __cmp) noexcept
+         .                 {
+         .           	if constexpr (requires { typename _ChTraits::comparison_category; })
+         .           	  {
+         .           	    using _Cat = typename _ChTraits::comparison_category;
+         .           	    static_assert( !is_void_v<common_comparison_category_t<_Cat>> );
+ 6,084,640 ( 0.67%)  	    return static_cast<_Cat>(__cmp <=> 0);
+         .           	  }
+         .           	else
+         .           	  return static_cast<weak_ordering>(__cmp <=> 0);
+         .                 }
+         .             } // namespace __detail
+         .           #endif // C++20
+         .           
+         .           #pragma GCC diagnostic pop
+-- line 1009 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/basic_string.h
+--------------------------------------------------------------------------------
+Ir                 
+
+-- line 197 ----------------------------------------
+        .                 struct _Alloc_hider : allocator_type // TODO check __is_final
+        .                 {
+        .           #if __cplusplus < 201103L
+        .           	_Alloc_hider(pointer __dat, const _Alloc& __a = _Alloc())
+        .           	: allocator_type(__a), _M_p(__dat) { }
+        .           #else
+        .           	_GLIBCXX20_CONSTEXPR
+        .           	_Alloc_hider(pointer __dat, const _Alloc& __a)
+  245,632 ( 0.03%)  	: allocator_type(__a), _M_p(__dat) { }
+        .           
+        .           	_GLIBCXX20_CONSTEXPR
+        .           	_Alloc_hider(pointer __dat, _Alloc&& __a = _Alloc())
+2,597,824 ( 0.28%)  	: allocator_type(std::move(__a)), _M_p(__dat) { }
+        .           #endif
+        .           
+        .           	pointer _M_p; // The actual data.
+        .                 };
+        .           
+        .                 _Alloc_hider	_M_dataplus;
+        .                 size_type		_M_string_length;
+        .           
+-- line 217 ----------------------------------------
+-- line 221 ----------------------------------------
+        .                 {
+        .           	_CharT           _M_local_buf[_S_local_capacity + 1];
+        .           	size_type        _M_allocated_capacity;
+        .                 };
+        .           
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 void
+        .                 _M_data(pointer __p)
+1,696,384 ( 0.19%)        { _M_dataplus._M_p = __p; }
+        .           
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 void
+        .                 _M_length(size_type __length)
+3,514,016 ( 0.39%)        { _M_string_length = __length; }
+        .           
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 pointer
+        .                 _M_data() const
+4,847,952 ( 0.53%)        { return _M_dataplus._M_p; }
+        .           
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 pointer
+        .                 _M_local_data()
+        .                 {
+        .           #if __cplusplus >= 201103L
+  618,976 ( 0.07%)  	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
+        .           #else
+        .           	return pointer(_M_local_buf);
+        .           #endif
+        .                 }
+        .           
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 const_pointer
+        .                 _M_local_data() const
+        .                 {
+        .           #if __cplusplus >= 201103L
+1,642,336 ( 0.18%)  	return std::pointer_traits<const_pointer>::pointer_to(*_M_local_buf);
+        .           #else
+        .           	return const_pointer(_M_local_buf);
+        .           #endif
+        .                 }
+        .           
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 void
+        .                 _M_capacity(size_type __capacity)
+1,266,816 ( 0.14%)        { _M_allocated_capacity = __capacity; }
+        .           
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 void
+        .                 _M_set_length(size_type __n)
+        .                 {
+        .           	_M_length(__n);
+        .           	traits_type::assign(_M_data()[__n], _CharT());
+        .                 }
+        .           
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 bool
+        .                 _M_is_local() const
+        .                 {
+6,833,792 ( 0.75%)  	if (_M_data() == _M_local_data())
+        .           	  {
+  300,480 ( 0.03%)  	    if (_M_string_length > _S_local_capacity)
+        .           	      __builtin_unreachable();
+        .           	    return true;
+        .           	  }
+        .           	return false;
+        .                 }
+        .           
+        .                 // Create & Destroy
+        .                 _GLIBCXX20_CONSTEXPR
+-- line 290 ----------------------------------------
+-- line 292 ----------------------------------------
+        .                 _M_create(size_type&, size_type);
+        .           
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 void
+        .                 _M_dispose()
+        .                 {
+        .           	if (!_M_is_local())
+        .           	  _M_destroy(_M_allocated_capacity);
+  348,704 ( 0.04%)        }
+        .           
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 void
+        .                 _M_destroy(size_type __size) throw()
+  785,984 ( 0.09%)        { _Alloc_traits::deallocate(_M_get_allocator(), _M_data(), __size + 1); }
+        .           
+        .           #if __cplusplus < 201103L || defined _GLIBCXX_DEFINING_STRING_INSTANTIATIONS
+        .                 // _M_construct_aux is used to implement the 21.3.1 para 15 which
+        .                 // requires special behaviour if _InIterator is an integral type
+        .                 template<typename _InIterator>
+        .                   void
+        .                   _M_construct_aux(_InIterator __beg, _InIterator __end,
+        .           			 std::__false_type)
+-- line 313 ----------------------------------------
+-- line 403 ----------------------------------------
+        .                 template<typename _Tp>
+        .           	struct __enable_if_not_native_iterator<_Tp, false> { };
+        .           #endif
+        .           
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 size_type
+        .                 _M_check(size_type __pos, const char* __s) const
+        .                 {
+  101,632 ( 0.01%)  	if (__pos > this->size())
+        .           	  __throw_out_of_range_fmt(__N("%s: __pos (which is %zu) > "
+        .           				       "this->size() (which is %zu)"),
+        .           				   __s, __pos, this->size());
+        .           	return __pos;
+        .                 }
+        .           
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 void
+        .                 _M_check_length(size_type __n1, size_type __n2, const char* __s) const
+        .                 {
+2,504,000 ( 0.27%)  	if (this->max_size() - (this->size() - __n1) < __n2)
+        .           	  __throw_length_error(__N(__s));
+        .                 }
+        .           
+        .           
+        .                 // NB: _M_limit doesn't check for a bad __pos value.
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 size_type
+        .                 _M_limit(size_type __pos, size_type __off) const _GLIBCXX_NOEXCEPT
+        .                 {
+   49,344 ( 0.01%)  	const bool __testoff =  __off < this->size() - __pos;
+   98,688 ( 0.01%)  	return __testoff ? __off : this->size() - __pos;
+        .                 }
+        .           
+        .                 // True if _Rep and source do not overlap.
+        .                 bool
+        .                 _M_disjunct(const _CharT* __s) const _GLIBCXX_NOEXCEPT
+        .                 {
+        .           	return (less<const _CharT*>()(__s, _M_data())
+  200,320 ( 0.02%)  		|| less<const _CharT*>()(_M_data() + this->size(), __s));
+        .                 }
+        .           
+        .                 // When __n = 1 way faster than the general multichar
+        .                 // traits_type::copy/move/assign.
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 static void
+   75,200 ( 0.01%)        _S_copy(_CharT* __d, const _CharT* __s, size_type __n)
+        .                 {
+2,126,848 ( 0.23%)  	if (__n == 1)
+        .           	  traits_type::assign(*__d, *__s);
+        .           	else
+        .           	  traits_type::copy(__d, __s, __n);
+  200,320 ( 0.02%)        }
+        .           
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 static void
+        .                 _S_move(_CharT* __d, const _CharT* __s, size_type __n)
+        .                 {
+  200,320 ( 0.02%)  	if (__n == 1)
+        .           	  traits_type::assign(*__d, *__s);
+        .           	else
+        .           	  traits_type::move(__d, __s, __n);
+        .                 }
+        .           
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 static void
+        .                 _S_assign(_CharT* __d, size_type __n, _CharT __c)
+-- line 468 ----------------------------------------
+-- line 545 ----------------------------------------
+        .           	    }
+        .           	}
+        .           #endif
+        .           
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 static int
+        .                 _S_compare(size_type __n1, size_type __n2) _GLIBCXX_NOEXCEPT
+        .                 {
+  742,720 ( 0.08%)  	const difference_type __d = difference_type(__n1 - __n2);
+        .           
+1,386,240 ( 0.15%)  	if (__d > __gnu_cxx::__numeric_traits<int>::__max)
+        .           	  return __gnu_cxx::__numeric_traits<int>::__max;
+1,386,240 ( 0.15%)  	else if (__d < __gnu_cxx::__numeric_traits<int>::__min)
+        .           	  return __gnu_cxx::__numeric_traits<int>::__min;
+        .           	else
+  693,120 ( 0.08%)  	  return int(__d);
+        .                 }
+        .           
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 void
+        .                 _M_assign(const basic_string&);
+        .           
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 void
+-- line 568 ----------------------------------------
+-- line 642 ----------------------------------------
+        .                  *  @param  __pos  Index of first character to copy from.
+        .                  *  @param  __n  Number of characters to copy.
+        .                  */
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 basic_string(const basic_string& __str, size_type __pos,
+        .           		   size_type __n)
+        .                 : _M_dataplus(_M_local_data())
+        .                 {
+  287,232 ( 0.03%)  	const _CharT* __start = __str._M_data()
+        .           	  + __str._M_check(__pos, "basic_string::basic_string");
+        .           	_M_construct(__start, __start + __str._M_limit(__pos, __n),
+        .           		     std::forward_iterator_tag());
+        .                 }
+        .           
+        .                 /**
+        .                  *  @brief  Construct string as copy of a substring.
+        .                  *  @param  __str  Source string.
+-- line 658 ----------------------------------------
+-- line 698 ----------------------------------------
+        .                  *  @param  __a  Allocator to use (default is default allocator).
+        .                  */
+        .           #if __cpp_deduction_guides && ! defined _GLIBCXX_DEFINING_STRING_INSTANTIATIONS
+        .                 // _GLIBCXX_RESOLVE_LIB_DEFECTS
+        .                 // 3076. basic_string CTAD ambiguity
+        .                 template<typename = _RequireAllocator<_Alloc>>
+        .           #endif
+        .                 _GLIBCXX20_CONSTEXPR
+1,228,160 ( 0.13%)        basic_string(const _CharT* __s, const _Alloc& __a = _Alloc())
+        .                 : _M_dataplus(_M_local_data(), __a)
+        .                 {
+        .           	// NB: Not required, but considered best practice.
+  736,896 ( 0.08%)  	if (__s == 0)
+        .           	  std::__throw_logic_error(__N("basic_string: "
+        .           				       "construction from null is not valid"));
+        .           	const _CharT* __end = __s + traits_type::length(__s);
+        .           	_M_construct(__s, __end, forward_iterator_tag());
+1,473,792 ( 0.16%)        }
+        .           
+        .                 /**
+        .                  *  @brief  Construct string as multiple characters.
+        .                  *  @param  __n  Number of characters.
+        .                  *  @param  __c  Character to use.
+        .                  *  @param  __a  Allocator to use (default is default allocator).
+        .                  */
+        .           #if __cpp_deduction_guides && ! defined _GLIBCXX_DEFINING_STRING_INSTANTIATIONS
+-- line 723 ----------------------------------------
+-- line 740 ----------------------------------------
+        .                  */
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 basic_string(basic_string&& __str) noexcept
+        .                 : _M_dataplus(_M_local_data(), std::move(__str._M_get_allocator()))
+        .                 {
+        .           	if (__str._M_is_local())
+        .           	  {
+        .           	    _M_init_local_buf();
+  503,808 ( 0.06%)  	    traits_type::copy(_M_local_buf, __str._M_local_buf,
+        .           			      __str.length() + 1);
+        .           	  }
+        .           	else
+        .           	  {
+        .           	    _M_data(__str._M_data());
+        .           	    _M_capacity(__str._M_allocated_capacity);
+        .           	  }
+        .           
+-- line 756 ----------------------------------------
+-- line 888 ----------------------------------------
+        .           	: basic_string(__sv_wrapper(_S_to_string_view(__t)), __a) { }
+        .           #endif // C++17
+        .           
+        .                 /**
+        .                  *  @brief  Destroy the string instance.
+        .                  */
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 ~basic_string()
+  825,152 ( 0.09%)        { _M_dispose(); }
+  264,000 ( 0.03%)  => /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/basic_string.h:std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose() (52,800x)
+        .           
+        .                 /**
+        .                  *  @brief  Assign the value of @a str to this string.
+        .                  *  @param  __str  Source string.
+        .                  */
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 basic_string&
+        .                 operator=(const basic_string& __str)
+-- line 904 ----------------------------------------
+-- line 1155 ----------------------------------------
+        .           #endif
+        .           
+        .               public:
+        .                 // Capacity:
+        .                 ///  Returns the number of characters in the string, not including any
+        .                 ///  null-termination.
+        .                 _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
+        .                 size_type
+   86,400 ( 0.01%)        size() const _GLIBCXX_NOEXCEPT
+        .                 {
+1,328,080 ( 0.15%)  	size_type __sz = _M_string_length;
+        .           	if (__sz > max_size ())
+        .           	  __builtin_unreachable ();
+        .           	return __sz;
+        .                 }
+        .           
+        .                 ///  Returns the number of characters in the string, not including any
+        .                 ///  null-termination.
+        .                 _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
+-- line 1173 ----------------------------------------
+-- line 1271 ----------------------------------------
+        .                 /**
+        .                  *  Returns the total number of characters that the %string can hold
+        .                  *  before needing to allocate more memory.
+        .                  */
+        .                 _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
+        .                 size_type
+        .                 capacity() const _GLIBCXX_NOEXCEPT
+        .                 {
+1,602,688 ( 0.18%)  	size_t __sz = _M_is_local() ? size_type(_S_local_capacity)
+        .           				     : _M_allocated_capacity;
+        .           	if (__sz < _S_local_capacity || __sz > max_size ())
+        .           	  __builtin_unreachable ();
+        .           	return __sz;
+        .                 }
+        .           
+        .                 /**
+        .                  *  @brief  Attempt to preallocate enough memory for specified number of
+-- line 1287 ----------------------------------------
+-- line 1572 ----------------------------------------
+        .           
+        .                 /**
+        .                  *  @brief  Append a C string.
+        .                  *  @param __s  The C string to append.
+        .                  *  @return  Reference to this string.
+        .                  */
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 basic_string&
+1,502,400 ( 0.16%)        append(const _CharT* __s)
+        .                 {
+        .           	__glibcxx_requires_string(__s);
+        .           	const size_type __n = traits_type::length(__s);
+        .           	_M_check_length(size_type(0), __n, "basic_string::append");
+        .           	return _M_append(__s, __n);
+1,502,400 ( 0.16%)        }
+        .           
+        .                 /**
+        .                  *  @brief  Append multiple characters.
+        .                  *  @param __n  The number of characters to append.
+        .                  *  @param __c  The character to use.
+        .                  *  @return  Reference to this string.
+        .                  *
+        .                  *  Appends __n copies of __c to this string.
+-- line 1594 ----------------------------------------
+-- line 3433 ----------------------------------------
+        .                  *
+        .                  *  Construct and return a new string using the @a __n
+        .                  *  characters starting at @a __pos.  If the string is too
+        .                  *  short, use the remainder of the characters.  If @a __pos is
+        .                  *  beyond the end of the string, out_of_range is thrown.
+        .                 */
+        .                 _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
+        .                 basic_string
+    8,832 ( 0.00%)        substr(size_type __pos = 0, size_type __n = npos) const
+        .                 { return basic_string(*this,
+   14,720 ( 0.00%)  			    _M_check(__pos, "basic_string::substr"), __n); }
+        .           
+        .                 /**
+        .                  *  @brief  Compare to a string.
+        .                  *  @param __str  String to compare against.
+        .                  *  @return  Integer < 0, 0, or > 0.
+        .                  *
+        .                  *  Returns an integer < 0 if this string is ordered before @a
+        .                  *  __str, 0 if their values are equivalent, or > 0 if this
+-- line 3451 ----------------------------------------
+-- line 3460 ----------------------------------------
+        .                 int
+        .                 compare(const basic_string& __str) const
+        .                 {
+        .           	const size_type __size = this->size();
+        .           	const size_type __osize = __str.size();
+        .           	const size_type __len = std::min(__size, __osize);
+        .           
+        .           	int __r = traits_type::compare(_M_data(), __str.data(), __len);
+2,846,080 ( 0.31%)  	if (!__r)
+        .           	  __r = _S_compare(__size, __osize);
+        .           	return __r;
+        .                 }
+        .           
+        .           #ifdef __glibcxx_string_view // >= C++17
+        .                 /**
+        .                  *  @brief  Compare to a string_view.
+        .                  *  @param __svt An object convertible to string_view to compare against.
+-- line 3476 ----------------------------------------
+-- line 3625 ----------------------------------------
+        .                 int
+        .                 compare(const _CharT* __s) const _GLIBCXX_NOEXCEPT
+        .                 {
+        .           	__glibcxx_requires_string(__s);
+        .           	const size_type __size = this->size();
+        .           	const size_type __osize = traits_type::length(__s);
+        .           	const size_type __len = std::min(__size, __osize);
+        .           	int __r = traits_type::compare(_M_data(), __s, __len);
+2,804,800 ( 0.31%)  	if (!__r)
+        .           	  __r = _S_compare(__size, __osize);
+        .           	return __r;
+        .                 }
+        .           
+        .                 // _GLIBCXX_RESOLVE_LIB_DEFECTS
+        .                 // 5 String::compare specification questionable
+        .                 /**
+        .                  *  @brief  Compare substring to a C string.
+-- line 3641 ----------------------------------------
+-- line 3969 ----------------------------------------
+        .           	      basic_string<_CharT, _Traits, _Alloc>&& __rhs)
+        .               { return std::move(__rhs.insert(0, 1, __lhs)); }
+        .           
+        .             template<typename _CharT, typename _Traits, typename _Alloc>
+        .               _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
+        .               inline basic_string<_CharT, _Traits, _Alloc>
+        .               operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+        .           	      const _CharT* __rhs)
+  901,440 ( 0.10%)      { return std::move(__lhs.append(__rhs)); }
+45,470,818 ( 4.98%)  => /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/basic_string.h:std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::append(char const*) (300,480x)
+        .           
+        .             template<typename _CharT, typename _Traits, typename _Alloc>
+        .               _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
+        .               inline basic_string<_CharT, _Traits, _Alloc>
+        .               operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+        .           	      _CharT __rhs)
+        .               { return std::move(__lhs.append(1, __rhs)); }
+        .           #endif
+-- line 3985 ----------------------------------------
+-- line 4042 ----------------------------------------
+        .             template<typename _CharT, typename _Traits, typename _Alloc>
+        .               _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
+        .               inline bool
+        .               operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+        .           	       const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+        .               _GLIBCXX_NOEXCEPT
+        .               {
+        .                 return __lhs.size() == __rhs.size()
+  363,200 ( 0.04%)  	       && !_Traits::compare(__lhs.data(), __rhs.data(), __lhs.size());
+        .               }
+        .           
+        .             /**
+        .              *  @brief  Test equivalence of string and C string.
+        .              *  @param __lhs  String.
+        .              *  @param __rhs  C string.
+        .              *  @return  True if @a __lhs.compare(@a __rhs) == 0.  False otherwise.
+        .              */
+        .             template<typename _CharT, typename _Traits, typename _Alloc>
+        .               _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
+        .               inline bool
+  198,080 ( 0.02%)      operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+        .           	       const _CharT* __rhs)
+        .               {
+        .                 return __lhs.size() == _Traits::length(__rhs)
+  710,880 ( 0.08%)  	       && !_Traits::compare(__lhs.data(), __rhs, __lhs.size());
+  158,464 ( 0.02%)      }
+        .           
+        .           #if __cpp_lib_three_way_comparison
+        .             /**
+        .              *  @brief  Three-way comparison of a string and a C string.
+        .              *  @param __lhs  A string.
+        .              *  @param __rhs  A null-terminated string.
+        .              *  @return  A value indicating whether `__lhs` is less than, equal to,
+        .              *	       greater than, or incomparable with `__rhs`.
+        .              */
+        .             template<typename _CharT, typename _Traits, typename _Alloc>
+        .               [[nodiscard]]
+        .               constexpr auto
+  586,240 ( 0.06%)      operator<=>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+        .           		const basic_string<_CharT, _Traits, _Alloc>& __rhs) noexcept
+        .               -> decltype(__detail::__char_traits_cmp_cat<_Traits>(0))
+  586,240 ( 0.06%)      { return __detail::__char_traits_cmp_cat<_Traits>(__lhs.compare(__rhs)); }
+        .           
+        .             /**
+        .              *  @brief  Three-way comparison of a string and a C string.
+        .              *  @param __lhs  A string.
+        .              *  @param __rhs  A null-terminated string.
+        .              *  @return  A value indicating whether `__lhs` is less than, equal to,
+        .              *	       greater than, or incomparable with `__rhs`.
+        .              */
+        .             template<typename _CharT, typename _Traits, typename _Alloc>
+        .               [[nodiscard]]
+        .               constexpr auto
+1,638,400 ( 0.18%)      operator<=>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+        .           		const _CharT* __rhs) noexcept
+        .               -> decltype(__detail::__char_traits_cmp_cat<_Traits>(0))
+1,433,600 ( 0.16%)      { return __detail::__char_traits_cmp_cat<_Traits>(__lhs.compare(__rhs)); }
+        .           #else
+        .             /**
+        .              *  @brief  Test equivalence of C string and string.
+        .              *  @param __lhs  C string.
+        .              *  @param __rhs  String.
+        .              *  @return  True if @a __rhs.compare(@a __lhs) == 0.  False otherwise.
+        .              */
+        .             template<typename _CharT, typename _Traits, typename _Alloc>
+-- line 4106 ----------------------------------------
+-- line 4482 ----------------------------------------
+        .           
+        .             inline unsigned long long
+        .             stoull(const string& __str, size_t* __idx = 0, int __base = 10)
+        .             { return std::stoul(__str, __idx, __base); }
+        .           #endif
+        .           
+        .             inline double
+        .             stod(const string& __str, size_t* __idx = 0)
+   61,600 ( 0.01%)    { return __gnu_cxx::__stoa(&std::strtod, "stod", __str.c_str(), __idx); }
+8,299,200 ( 0.91%)  => /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/ext/string_conversions.h:double __gnu_cxx::__stoa<double, double, char>(double (*)(char const*, char**), char const*, char const*, unsigned long*) (11,200x)
+        .           
+        .           #if _GLIBCXX_HAVE_STRTOF
+        .             // NB: strtof vs strtod.
+        .             inline float
+        .             stof(const string& __str, size_t* __idx = 0)
+        .             { return __gnu_cxx::__stoa(&std::strtof, "stof", __str.c_str(), __idx); }
+        .           #else
+        .             inline float
+-- line 4498 ----------------------------------------
+-- line 4527 ----------------------------------------
+        .           
+        .             _GLIBCXX_NODISCARD
+        .             inline string
+        .             to_string(int __val)
+        .           #if _GLIBCXX_USE_CXX11_ABI && (__CHAR_BIT__ * __SIZEOF_INT__) <= 32
+        .             noexcept // any 32-bit value fits in the SSO buffer
+        .           #endif
+        .             {
+  200,320 ( 0.02%)      const bool __neg = __val < 0;
+  300,480 ( 0.03%)      const unsigned __uval = __neg ? (unsigned)~__val + 1u : __val;
+        .               const auto __len = __detail::__to_chars_len(__uval);
+        .               string __str;
+  100,160 ( 0.01%)      __str.__resize_and_overwrite(__neg + __len, [=](char* __p, size_t __n) {
+  100,160 ( 0.01%)        __p[0] = '-';
+  400,640 ( 0.04%)        __detail::__to_chars_10_impl(__p + (int)__neg, __len, __uval);
+        .                 return __n;
+        .               });
+        .               return __str;
+        .             }
+        .           
+        .             _GLIBCXX_NODISCARD
+        .             inline string
+        .             to_string(unsigned __val)
+-- line 4549 ----------------------------------------
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+136,716,184 (14.99%)  events annotated
+

@@ -1,0 +1,60 @@
+{
+  "correctionlib_base_commit": "fd69c2ef33edbe9a1d4bc714430d6ccda374be00",
+  "required_patch": "patches/correctionlib-full-precision-json.patch",
+  "patch_sha256": "3b428b8236b0972f613526417edb8a79848145e9f01b5759bb17cd20b81feedf",
+  "schema_version": 2,
+  "files": {
+    "JetCalibTools/CalibArea-00-04-83/CalibrationConfigs/AntiKt4EMPFlow_MC23a_PreRecR22_Phase2_CalibConfig_ResPU_EtaJES_GSC_241208_InSitu.config": {
+      "sha256": "30d6965c9a8d717334f9edca3bef95ef011d6775aa479cff437a56a40afcedb2",
+      "size": 3898
+    },
+    "JetCalibTools/CalibArea-00-04-83/CalibrationFactors/AntiKt4EMPFlow_MC23a_PreRecR22_Phase2_JES_constants.config": {
+      "sha256": "c6ad90d31ab8e014906c0ce3df8864fd58b8c7a3a19d9ed79063f5203e4fd67b",
+      "size": 16892
+    },
+    "JetCalibTools/CalibArea-00-04-83/CalibrationFactors/AntiKt4EMPFlow_MC23a_PreRecR22_Phase2_ResidualPileUp_20240205.config": {
+      "sha256": "ac2321fd5563fd2eb1d72e19c8cd1f838f3d9f8b6067cb3635b3008f91d1d27f",
+      "size": 1356
+    },
+    "JetPileupTag/NNJvt/2022-03-22/NNJVT.Cuts.FixedEffPt.Offline.Nonprompt_All_MaxW.json": {
+      "sha256": "a29154427f1da0c33095a587fcb2d110e63203713d0f39a4bc54a71f680f2e56",
+      "size": 666
+    },
+    "JetPileupTag/NNJvt/2022-03-22/NNJVT.Network.graph.Offline.Nonprompt_All_MaxWeight.json": {
+      "sha256": "60abc79f5e724483f61967cd5bb2083c2c71255a62e6813f387c1d523dabecdb",
+      "size": 5916
+    },
+    "JetUncertainties/CalibArea-08/rel22/Winter2025_PreRec/R4_CategoryReduction_FullJER.config": {
+      "sha256": "4fae9959dbdc8fa1ded14930feba762be1fa48d7f4a011ced25c85c67a47dff6",
+      "size": 22265
+    },
+    "nnjvt-cuts.json": {
+      "sha256": "a29154427f1da0c33095a587fcb2d110e63203713d0f39a4bc54a71f680f2e56",
+      "size": 666
+    },
+    "nnjvt-manifest.json": {
+      "sha256": "8392d81321756ca7d549515df519d8caeb7354612f0c8962a7e75f5f19e01099",
+      "size": 571
+    },
+    "nnjvt-network.json": {
+      "sha256": "60abc79f5e724483f61967cd5bb2083c2c71255a62e6813f387c1d523dabecdb",
+      "size": 5916
+    },
+    "nominal-manifest.json": {
+      "sha256": "953d524e7cea08cc76449274231df95a5610a4a882a3e3b3f573def1119fd143",
+      "size": 12254
+    },
+    "nominal.json.gz": {
+      "sha256": "f230ad682a24e3564bc4ee1ac769886a30d1866c6115589df8c3fc8014a901f5",
+      "size": 62956591
+    },
+    "uncertainty-manifest.json": {
+      "sha256": "0017dfd1a3ddbebd71a5bcf2dd9958c7fd0c04b9f99ec2deb37d759c4b59cb22",
+      "size": 118366
+    },
+    "uncertainty-tables.json.gz": {
+      "sha256": "7701a65da5544b839c7b2cdcde048fcd0576eda801d6dce632aabd48013bfdb0",
+      "size": 21317968
+    }
+  }
+}
