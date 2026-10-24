@@ -32,3 +32,6 @@ A/B process all stages within one ATLAS job, so separate phase costs are unavail
 D is interpreted graph execution with a versioned optional extension, not stock schema-v2-only functionality or JIT compilation. ROOT coordinate/TRandom3 operations and lwtnn inference remain explicit reusable primitives.
 
 D raw measurements: path-d/results/repeated-timing/summary.json. A/B/C raw measurements: results/repeated-timing/summary.json. All isolated D run logs and outputs are retained beside its summary.
+
+
+The subsequent exact-result single-core campaign selected **26.44 ± 0.42 s** (1.88× versus 49.63 s; 1.78× versus its rebuilt control). See [the per-change table and acceptance report](x2-optimization.md). All A comparisons and outputs remain enabled, final C arrays match the prior checkpoint byte for byte, and B passed with unchanged configuration. The 5,000-event chunk experiment was reverted; 1,000-event chunks remain selected.

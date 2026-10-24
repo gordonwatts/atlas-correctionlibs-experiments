@@ -358,14 +358,14 @@ The second mode reads the original 14 C-nice input branches in addition to store
 | Step | Full C-nice wall seconds | Change and code reference | WSL implementation commit |
 |---|---:|---|---|
 | 00-baseline | 155.86 ± 0.51 | Fresh array-preparation baseline; unchanged evaluator and diagnostic outputs; [source](c-nice/atlas_jet_corrections.py) | `5997af7d848dc290e5c4f46d74c7ef79ba943416` |
-| 01-array-bindings | 112.06 ± 0.42 | Native dense-array batch bindings eliminate Python scalar/list transfer; shared evaluators unchanged; [source](src/nominal.cxx) | `c6764e198e0259a2d81732d685dc115ca2665873` |
-| 02-event-products | 108.25 ± 0.77 | Replace per-event Python weight products with float64 Awkward reductions; [source](scripts/run-columnar-jvt.py) | `0992cd9608f2b492e56e65d5f9445abb14b32972` |
-| 03-compiled-metadata | 100.79 ± 0.33 | Parse uncertainty component metadata and reference constants once at construction; [source](src/systematics.hxx) | `d7667fb696d3fd2d382aab9f7d280aa53e8260ca` |
-| 04-reuse-kinematics | 83.21 ± 0.88 | Reuse validated kinematics from the systematic stage in the JVT stage; [source](scripts/run-columnar-jvt.py) | `efecd4aeab0cda89e91b2e5a1afd94fd698c7959` |
-| 05-parallel-batches | 61.05 ± 0.09 | Evaluate independent native batch slices on four threads; preserve scalar physics and ordering; [source](python/atlas_correctionlib/parallel.py) | `9d2af94fe7ead89669f018a87d36595c3cab8616` |
-| 06-array-jvt-inputs | 54.41 ± 0.68 | Replace Python event loops for primary-vertex inputs and truth matching with Awkward arrays; [source](scripts/run-columnar-jvt.py) | `153f82cf579085f9acc148e52d9f2ab74b13f5c7` |
-| 07-lz4-output | 43.26 ± 0.10 | Use LZ4 for the same ROOT output columns instead of default ZLIB; [source](scripts/run-columnar-systematics.py) | `2f2c39a78209c261a5acc3a6f2b9f4b5d5f3dd8d` |
-| 08-lazy-metadata | 38.72 ± 0.29 | Load optional Python table/range inspection data only on access; native evaluator payloads unchanged; [source](python/atlas_correctionlib/jvt.py) | `492f657b4ecea85630d9df1f5ee733aded10870e` |
+| 01-array-bindings | 112.06 ± 0.42 | Native dense-array batch bindings eliminate Python scalar/list transfer; shared evaluators unchanged; [source](columnar-source/src/nominal.cxx) | `c6764e198e0259a2d81732d685dc115ca2665873` |
+| 02-event-products | 108.25 ± 0.77 | Replace per-event Python weight products with float64 Awkward reductions; [source](columnar-source/scripts/run-columnar-jvt.py) | `0992cd9608f2b492e56e65d5f9445abb14b32972` |
+| 03-compiled-metadata | 100.79 ± 0.33 | Parse uncertainty component metadata and reference constants once at construction; [source](columnar-source/src/systematics.hxx) | `d7667fb696d3fd2d382aab9f7d280aa53e8260ca` |
+| 04-reuse-kinematics | 83.21 ± 0.88 | Reuse validated kinematics from the systematic stage in the JVT stage; [source](columnar-source/scripts/run-columnar-jvt.py) | `efecd4aeab0cda89e91b2e5a1afd94fd698c7959` |
+| 05-parallel-batches | 61.05 ± 0.09 | Evaluate independent native batch slices on four threads; preserve scalar physics and ordering; [source](columnar-source/python/atlas_correctionlib/parallel.py) | `9d2af94fe7ead89669f018a87d36595c3cab8616` |
+| 06-array-jvt-inputs | 54.41 ± 0.68 | Replace Python event loops for primary-vertex inputs and truth matching with Awkward arrays; [source](columnar-source/scripts/run-columnar-jvt.py) | `153f82cf579085f9acc148e52d9f2ab74b13f5c7` |
+| 07-lz4-output | 43.26 ± 0.10 | Use LZ4 for the same ROOT output columns instead of default ZLIB; [source](columnar-source/scripts/run-columnar-systematics.py) | `2f2c39a78209c261a5acc3a6f2b9f4b5d5f3dd8d` |
+| 08-lazy-metadata | 38.72 ± 0.29 | Load optional Python table/range inspection data only on access; native evaluator payloads unchanged; [source](columnar-source/python/atlas_correctionlib/jvt.py) | `492f657b4ecea85630d9df1f5ee733aded10870e` |
 
 Every row passed all full-sample nominal, systematic and JVT reference comparisons. Per-run reports and raw timings are retained in `optimization-results/`. The facade remains nominal-only; full systematic timings refer to its nominal stage followed by the established C systematic/JVT runners. B shares the physics implementation. B configuration is unchanged; any shared-backend change also requires its own B integration validation before acceptance.
 
@@ -395,9 +395,9 @@ Each checkpoint processes the same 20,000 events / 196,606 jets and all 117 kine
 
 | Change, cumulative | Full workflow seconds | Shared source | WSL implementation commit |
 |---|---:|---|---|
-| Default to one native worker; benchmark on one CPU with numerical library threads capped at one | 56.27 ± 0.03 | [source](python/atlas_correctionlib/parallel.py) | `b79d363fe0a2d350a963802c912a3a543a4e18d9` |
-| Construct TRandom3 with its final seed, eliminating redundant default seeding | 54.08 ± 0.42 | [source](src/backend.hxx) | `b9b6bd2990b621240099fe4e9fcbcce41219a3f8` |
-| Cache the first standard Gaussian by original seed; preserve rejection and ROOT stream exactly | 49.63 ± 0.39 | [source](src/backend.hxx) | `1813b4e8136d8539b74fdca469742ef277a86530` |
+| Default to one native worker; benchmark on one CPU with numerical library threads capped at one | 56.27 ± 0.03 | [source](columnar-source/python/atlas_correctionlib/parallel.py) | `b79d363fe0a2d350a963802c912a3a543a4e18d9` |
+| Construct TRandom3 with its final seed, eliminating redundant default seeding | 54.08 ± 0.42 | [source](columnar-source/src/backend.hxx) | `b9b6bd2990b621240099fe4e9fcbcce41219a3f8` |
+| Cache the first standard Gaussian by original seed; preserve rejection and ROOT stream exactly | 49.63 ± 0.39 | [source](columnar-source/src/backend.hxx) | `1813b4e8136d8539b74fdca469742ef277a86530` |
 
 ## What the profiles show
 
@@ -428,3 +428,26 @@ C-nice retains its existing nominal facade call, and the full workflow still com
 Reports: `optimization-results/09-profile/` and `optimization-results/11-profile/` contain before/after Python and native profiles. `optimization-results/11-B-integration/` contains the B check. Source profiling harnesses and raw generated artifacts remain in WSL `optimization-campaign/`. Timing summaries record the commit before the uncommitted candidate was measured; the table records the committed candidate that includes its measurements.
 
 Reproduce a new timing checkpoint using `bash optimization-campaign/single-thread-campaign.sh NEW-LABEL` in the authoritative WSL checkout. Existing labels are protected from overwrite. Optional multi-thread support remains available explicitly, but all current reported timings use one CPU. All changes and reports are committed locally; nothing is pushed.
+
+
+## Exact-result optimization toward 2×
+
+The selected full-systematics workflow takes **26.44 ± 0.42 s** on one CPU for 20,000 events (196,606 jets), down from **49.63 ± 0.39 s**: **1.88× faster**, or **46.7% less time**. It remains 1.63 s above the 24.81 s target. Against the freshly rebuilt unchanged control (47.13 s), the speedup is **1.78×**. No numerical approximation, seed change, tolerance change, systematic reduction, or dropped output/check was used.
+
+The selected code is checkpoint 20. The larger-chunk experiment at checkpoint 21 showed no useful improvement and was reverted; its results remain preserved. The exact JVT cache at checkpoint 18 has no separately established speedup: its apparent gain is smaller than the observed timing variation.
+
+
+| Step | Seconds | Change and source | Authoritative WSL commit |
+|---|---:|---|---|
+| 12-rebuild-control | 47.13 ± 0.03 | Rebuild unchanged full-precision CorrectionLib with a reproducible Release configuration [Source](vendor-patches/existing-full-precision-json.patch) | `dc6d525e21d1fb49b72d7f74a1cfc0169e987af9` |
+| 13-bin-edge-reference | 42.97 ± 0.00 | Reference non-uniform bin edges instead of copying their vector on every lookup [Source](vendor-patches/bin-edge-reference.patch) | `eb8b0a0c184b4c43a9c6a808d62e516e477903f9` |
+| 14-bound-tables | 37.88 ± 0.55 | Resolve shared systematic correction objects once at construction [Source](columnar-source/src/systematics.hxx) | `abc0c38557e0073706bda25c232ba50c1919af19` |
+| 15-paired-systematics | 34.90 ± 0.04 | Reuse exact shared uncertainty evaluation between related systematic states [Source](columnar-source/src/systematics.hxx) | `2c016e4457f5abdeed7254a1e337483a1bddc3ea` |
+| 16-integrated-workflow-v2 | 31.71 ± 0.14 | Share loaded arrays and payloads between stages while retaining all outputs and checks [Source](columnar-source/scripts/run-columnar-full.py) | `a12daa8f55a67ca74d98fa64fce2c7d70e9fa383` |
+| 17-batched-reference | 30.45 ± 0.19 | Read validation reference branches in bounded groups of 16 [Source](columnar-source/python/atlas_correctionlib/reference.py) | `21ca2601b2c3b39ae5c515a52cfb028494b6e8dc` |
+| 18-exact-jvt-reuse | 30.35 ± 0.99 | Reuse JVT results only for exactly identical effective inputs **Gain inconclusive.** [Source](columnar-source/python/atlas_correctionlib/jvt.py) | `d0624b98d559e9945db30e06f680961205841e77` |
+| 19-flat-group-buffers | 28.48 ± 0.12 | Write grouped native results directly into contiguous NumPy storage [Source](columnar-source/src/nominal.cxx) | `03888d2720da6d1d5f2ae30710cd02ae2a8237a8` |
+| 20-flat-adapters | 26.44 ± 0.42 | Reuse one native input row and write scalar outputs directly into NumPy buffers [Source](columnar-source/src/nominal.cxx) | `38935839d523edfad166fcb740fdcb79deb8ed88` |
+| 21-larger-read-chunks | 26.64 ± 0.41 | Read nominal inputs in 5000-event chunks instead of 1000; same full sample and outputs **Reverted: no useful gain.** [Source](columnar-source/scripts/run-columnar-full.py) | `eab8381bcf2cd209ea60e91230f8dfcca504af9f` |
+
+The implementation changes and validation details are in [the complete campaign report](x2-optimization.md). B passed again with its original configuration; all final C physics buffers match checkpoint 11 byte for byte. All changes are local commits; nothing was pushed.

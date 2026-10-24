@@ -27,4 +27,7 @@ The subsequent full-systematics optimization campaign is recorded in [the checkp
 
 The JVT runner accepts `--kinematics results/columnar-kinematics.root` to reuse the preceding systematic output. It validates input and payload/backend fingerprints, state names, event IDs, jet ordering and statuses before reuse. Omitting this option retains the recomputation path. This cache is local to the diagnostic workflow and is not a new facade requirement. Array-based truth matching constructs per-event jet/truth pairs and can consume more temporary memory in high-multiplicity samples.
 
-Current full-systematics single-core timing is **49.63 ± 0.39 s**. See [the RNG and profiling follow-up](../single-thread-profiling.md). The shared smearing implementation retains ROOT's exact random stream while avoiding redundant seeding and reusing first Gaussian draws with width-dependent rejection preserved.
+The earlier full-systematics single-core timing was **49.63 ± 0.39 s**. See [the RNG and profiling follow-up](../single-thread-profiling.md). The shared smearing implementation retains ROOT's exact random stream while avoiding redundant seeding and reusing first Gaussian draws with width-dependent rejection preserved.
+
+
+The subsequent exact-result single-core campaign selected **26.44 ± 0.42 s** (1.88× versus 49.63 s; 1.78× versus its rebuilt control). See [the per-change table and acceptance report](../x2-optimization.md). All A comparisons and outputs remain enabled, final C arrays match the prior checkpoint byte for byte, and B passed with unchanged configuration. The 5,000-event chunk experiment was reverted; 1,000-event chunks remain selected.

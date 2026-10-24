@@ -6,9 +6,9 @@ Each checkpoint processes the same 20,000 events / 196,606 jets and all 117 kine
 
 | Change, cumulative | Full workflow seconds | Shared source | WSL implementation commit |
 |---|---:|---|---|
-| Default to one native worker; benchmark on one CPU with numerical library threads capped at one | 56.27 ± 0.03 | [source](python/atlas_correctionlib/parallel.py) | `b79d363fe0a2d350a963802c912a3a543a4e18d9` |
-| Construct TRandom3 with its final seed, eliminating redundant default seeding | 54.08 ± 0.42 | [source](src/backend.hxx) | `b9b6bd2990b621240099fe4e9fcbcce41219a3f8` |
-| Cache the first standard Gaussian by original seed; preserve rejection and ROOT stream exactly | 49.63 ± 0.39 | [source](src/backend.hxx) | `1813b4e8136d8539b74fdca469742ef277a86530` |
+| Default to one native worker; benchmark on one CPU with numerical library threads capped at one | 56.27 ± 0.03 | [source](columnar-source/python/atlas_correctionlib/parallel.py) | `b79d363fe0a2d350a963802c912a3a543a4e18d9` |
+| Construct TRandom3 with its final seed, eliminating redundant default seeding | 54.08 ± 0.42 | [source](columnar-source/src/backend.hxx) | `b9b6bd2990b621240099fe4e9fcbcce41219a3f8` |
+| Cache the first standard Gaussian by original seed; preserve rejection and ROOT stream exactly | 49.63 ± 0.39 | [source](columnar-source/src/backend.hxx) | `1813b4e8136d8539b74fdca469742ef277a86530` |
 
 ## What the profiles show
 
@@ -39,3 +39,6 @@ C-nice retains its existing nominal facade call, and the full workflow still com
 Reports: `optimization-results/09-profile/` and `optimization-results/11-profile/` contain before/after Python and native profiles. `optimization-results/11-B-integration/` contains the B check. Source profiling harnesses and raw generated artifacts remain in WSL `optimization-campaign/`. Timing summaries record the commit before the uncommitted candidate was measured; the table records the committed candidate that includes its measurements.
 
 Reproduce a new timing checkpoint using `bash optimization-campaign/single-thread-campaign.sh NEW-LABEL` in the authoritative WSL checkout. Existing labels are protected from overwrite. Optional multi-thread support remains available explicitly, but all current reported timings use one CPU. All changes and reports are committed locally; nothing is pushed.
+
+
+The subsequent exact-result single-core campaign selected **26.44 ± 0.42 s** (1.88× versus 49.63 s; 1.78× versus its rebuilt control). See [the per-change table and acceptance report](x2-optimization.md). All A comparisons and outputs remain enabled, final C arrays match the prior checkpoint byte for byte, and B passed with unchanged configuration. The 5,000-event chunk experiment was reverted; 1,000-event chunks remain selected.
