@@ -1,0 +1,13 @@
+diff --git a/src/correction.cc b/src/correction.cc
+index 25c5eb9..4808e30 100644
+--- a/src/correction.cc
++++ b/src/correction.cc
+@@ -184,7 +184,7 @@ namespace {
+ 
+     // otherwise we have non-uniform binning
+     using namespace std::string_literals;
+-    const auto bins = std::get<_NonUniformBins>(bins_);
++    const auto& bins = std::get<_NonUniformBins>(bins_);
+     if ( flow == _FlowBehavior::wrap ) {
+       double low = bins[0];
+       double high = bins[bins.size() - 1];

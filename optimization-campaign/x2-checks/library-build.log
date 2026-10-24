@@ -1,4 +1,3 @@
 [ 33%] Building CXX object CMakeFiles/correctionlib.dir/src/correction.cc.o
-[ 66%] Building CXX object CMakeFiles/correctionlib.dir/src/formula_ast.cc.o
-[100%] Linking CXX shared library libcorrectionlib.so
+[ 66%] Linking CXX shared library libcorrectionlib.so
 [100%] Built target correctionlib
