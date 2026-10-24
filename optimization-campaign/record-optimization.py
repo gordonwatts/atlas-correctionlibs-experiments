@@ -10,6 +10,7 @@ descriptions={
 '03-compiled-metadata':('Parse uncertainty component metadata and reference constants once at construction','src/systematics.hxx'),
 '04-reuse-kinematics':('Reuse validated kinematics from the systematic stage in the JVT stage','scripts/run-columnar-jvt.py'),
 '05-parallel-batches':('Evaluate independent native batch slices on four threads; preserve scalar physics and ordering','python/atlas_correctionlib/parallel.py'),
+'06-array-jvt-inputs':('Replace Python event loops for primary-vertex inputs and truth matching with Awkward arrays','scripts/run-columnar-jvt.py'),
 }
 description,ref=descriptions[label]
 folder=root/'optimization-campaign'/label
@@ -41,5 +42,12 @@ for r in records:
     link=r['code'] if r['code'].startswith('c-nice/') else 'columnar-source/'+r['code']
     lines.append(f'| {r["label"]} | {r["mean"]:.2f} ± {r["sd"]:.2f} | {r["description"]}; [source]({link}) | `{r["commit"]}` |')
 lines += ['','Every row passed all full-sample nominal, systematic and JVT reference comparisons. Per-run reports and raw timings are retained in `optimization-results/`. The facade remains nominal-only; full systematic timings refer to its nominal stage followed by the established C systematic/JVT runners. B shares the physics implementation. B configuration is unchanged; any shared-backend change also requires its own B integration validation before acceptance.']
+integration=root/'optimization-campaign/03-B-integration'
+if (integration/'summary.json').exists():
+    b=json.loads((integration/'summary.json').read_text())
+    destination=windows/'optimization-results/B-integration';destination.mkdir(exist_ok=True)
+    for name in ('summary.json','comparison.json','loaded-libraries.txt'):
+        shutil.copy2(integration/name,destination/name)
+    lines += ['',f'B integration after step 03: all 20,000 events passed comparison with A using unchanged `config/reference.yaml` (SHA-256 `{b["config_sha256"]}`). One run took {b["wall_seconds"]:.2f} s; this is an integration check, not a repeated speedup measurement. Saved worker memory mappings confirm the rebuilt overlay libraries were loaded. Subsequent Python-only steps leave this shared C++ implementation unchanged.']
 (windows/'c-nice-optimization.md').write_text('\n'.join(lines)+'\n')
 print(commit,summary['mean'],flush=True)

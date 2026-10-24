@@ -1,0 +1,6 @@
+[ 50%] Building CXX object CMakeFiles/_atlas_corrections.dir/src/nominal.cxx.o
+[100%] Linking CXX shared module _atlas_corrections.cpython-313-x86_64-linux-gnu.so
+[100%] Built target _atlas_corrections
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/gwatts/atlas/correctionlib_tests/install/python/_atlas_corrections.cpython-313-x86_64-linux-gnu.so
+-- Set non-toolchain portion of runtime path of "/home/gwatts/atlas/correctionlib_tests/install/python/_atlas_corrections.cpython-313-x86_64-linux-gnu.so" to ""

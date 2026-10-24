@@ -5,20 +5,28 @@ class JetSystematics {
  using Json=nlohmann::json;
  std::unique_ptr<correction::CorrectionSet> tables;
  Json manifest;
- std::map<std::string,std::vector<Json>> recipes;
+
+ struct CompiledComponent {
+  std::string name,hist,mode;bool absEta,special,resolution;
+  CompiledComponent(const Json& c):name(c.at("Name")),hist(c.value("Hists",name)),
+   mode(c.value("Interp",std::string("Full"))),absEta(c.at("Param")=="PtAbsEta"),
+   special(c.value("Special",std::string())=="True"),
+   resolution(c.value("Scale",std::string())=="FourVecResAbs"){}
+ };
+ double muRef,npvRef;
+ std::map<std::string,std::vector<CompiledComponent>> recipes;
  double table(const std::string& name,double pt,double eta,const std::string& mode="Full",int file=0)const{
   auto c=tables->at("file"+std::to_string(file)+"__"+name+"_AntiKt4EMPFlow__"+mode+"__content");
   if(c->inputs().size()==1)return c->evaluate({pt});
   return c->evaluate({pt,eta});
  }
- double component(const Json& c,double pt,double eta,double mu,double npv,bool bjet)const{
-  std::string name=c.at("Name"),hist=c.value("Hists",name),mode=c.value("Interp",std::string("Full"));
-  double y=c.at("Param")=="PtAbsEta"?std::abs(eta):eta;
+ double component(const CompiledComponent& c,double pt,double eta,double mu,double npv,bool bjet)const{
+  const std::string &name=c.name,&hist=c.hist,&mode=c.mode;
+  double y=c.absEta?std::abs(eta):eta;
   auto h=[&](const std::string& key){return table(key,pt,y,mode);};
-  if(c.value("Special",std::string())!="True")return h(hist);
-  const auto& s=manifest.at("settings");
-  double dm=mu-std::stod(s.at("Pileup.MuRef").get<std::string>());
-  double dn=npv-std::stod(s.at("Pileup.NPVRef").get<std::string>());
+  if(!c.special)return h(hist);
+  double dm=mu-muRef;
+  double dn=npv-npvRef;
   if(name=="Pileup_OffsetMu_orig")return dm*h(hist);
   if(name=="Pileup_OffsetNPV_orig")return dn*h(hist);
   if(name=="Pileup_PtTerm_orig"){auto split=hist.find(',');return dm*h(hist.substr(0,split))+dn*h(hist.substr(split+1));}
@@ -37,6 +45,8 @@ class JetSystematics {
 public:
  JetSystematics(const std::string& payload,const std::string& config):tables(correction::CorrectionSet::from_file(payload)){
   std::ifstream input(config);if(!input)throw std::runtime_error("Missing uncertainty manifest");input>>manifest;
+  muRef=std::stod(manifest.at("settings").at("Pileup.MuRef").get<std::string>());
+  npvRef=std::stod(manifest.at("settings").at("Pileup.NPVRef").get<std::string>());
   for(const auto& c:manifest.at("components"))if(!c.contains("Group"))recipes[c.at("Name")].push_back(c);
   for(auto it=manifest.at("groups").begin();it!=manifest.at("groups").end();++it){
    const auto& g=it.value();if(g.at("Corr")!="Correlated")throw std::invalid_argument("Unsupported group correlation");
@@ -46,7 +56,7 @@ public:
  std::vector<std::string> names()const{
   std::vector<std::string> out{"NOSYS"};
   for(const auto& [name,cs]:recipes){
-   bool jer=cs.front().value("Scale",std::string())=="FourVecResAbs";
+   bool jer=cs.front().resolution;
    for(int data=0;data<=(jer?1:0);++data)for(const auto& sign:{"up","down"})out.push_back("JET_"+name+(data?"_PseudoData":"")+"__1"+sign);
   }
   return out;
@@ -66,7 +76,7 @@ public:
   const double pt=r[0]*double(float(.001)),eta=r[1];
   double unc=0;for(const auto& c:cs)unc+=component(c,pt,eta,r[4],r[5],r[6]!=0);
   double scale=1+sign*unc;
-  if(cs.front().value("Scale",std::string())=="FourVecResAbs"){
+  if(cs.front().resolution){
    double sigma=std::max(table("JER_Nominal_MC16",pt,std::abs(eta),"OnlyX"),table("JER_Nominal_data",pt,std::abs(eta),"OnlyX"));
    scale=smear(r[2],sigma,sign*unc,data);
   }else if(data)throw std::invalid_argument("PseudoData is only supported for resolution variations");
