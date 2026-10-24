@@ -1,0 +1,1 @@
+{"path": "C", "iteration": 1, "wall_seconds": 27.620302190000075, "stage_seconds": [27.62029543799872], "commands": [["/home/gwatts/atlas/correctionlib_tests/venv/bin/python", "/mnt/c/Users/gwatts/OneDrive/Documents/ATLAS/Computing/AMG/CorrectionLib/scoped-profile-x2.py", "scripts/run-columnar-full.py", "--events", "20000", "--chunk-size", "1000"]], "events": 20000}

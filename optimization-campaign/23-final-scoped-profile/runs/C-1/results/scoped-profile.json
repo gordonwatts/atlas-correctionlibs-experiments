@@ -1,0 +1,38 @@
+{
+  "run_path_seconds": 26.86373967200052,
+  "sections": {
+    "Nominal tool load": {
+      "calls": 1,
+      "seconds": 2.301785662995826
+    },
+    "Nominal input preparation and native evaluation": {
+      "calls": 20,
+      "seconds": 0.7073000519958441
+    },
+    "Systematic tool load": {
+      "calls": 1,
+      "seconds": 0.6842900330011616
+    },
+    "Systematic variation production": {
+      "calls": 117,
+      "seconds": 1.62965915298264
+    },
+    "ROOT output assignment": {
+      "calls": 237,
+      "seconds": 2.5513901349404478
+    },
+    "A reference reads": {
+      "calls": 940,
+      "seconds": 7.52715057702153
+    },
+    "JVT tool load": {
+      "calls": 1,
+      "seconds": 0.7622544059995562
+    },
+    "JVT evaluate including array preparation and exact cache": {
+      "calls": 119,
+      "seconds": 4.424375423994206
+    }
+  },
+  "note": "Imports precede run_path timer; outer worker wall time includes imports. Section timings are wall time and are not cProfile timings."
+}

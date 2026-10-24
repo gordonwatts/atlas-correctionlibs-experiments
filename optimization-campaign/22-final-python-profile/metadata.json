@@ -1,0 +1,8 @@
+{
+  "cpu_affinity": [
+    0
+  ],
+  "threads": "1",
+  "git_head": "b8fe42da5bf97dd3852b4b9356902d5bec7711ac",
+  "profile": "cProfile; timings include instrumentation overhead; native calls opaque"
+}

@@ -1,0 +1,110 @@
+Fri Oct 23 20:45:37 2026    /home/gwatts/atlas/correctionlib_tests/optimization-campaign/22-final-python-profile/runs/C-1/profile-0.pstats
+
+         52618534 function calls (49365251 primitive calls) in 40.022 seconds
+
+   Ordered by: cumulative time
+   List reduced from 4608 to 50 due to restriction <50>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      940    0.003    0.000   13.684    0.015 /home/gwatts/atlas/correctionlib_tests/optimization-campaign/22-final-python-profile/runs/C-1/python/atlas_correctionlib/reference.py:13(read)
+   112688    0.658    0.000    6.744    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/models/TBasket.py:215(read_members)
+      472    0.117    0.000    6.516    0.014 /home/gwatts/atlas/correctionlib_tests/optimization-campaign/22-final-python-profile/runs/C-1/scripts/run-columnar-jvt.py:52(compare)
+   110533    0.343    0.000    4.562    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/compression.py:365(decompress)
+108552/11    0.325    0.000    3.458    0.314 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/behaviors/TBranch.py:3705(basket_to_array)
+   243/11    0.003    0.000    3.433    0.312 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/interpretation/objects.py:144(basket_array)
+  4326/14    3.670    0.001    3.285    0.235 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/interpretation/objects.py:206(basket_array_forth)
+   102973    0.043    0.000    3.219    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/compression.py:94(decompress)
+      237    0.001    0.000    3.055    0.013 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/writing/writable.py:996(__setitem__)
+      237    0.004    0.000    3.053    0.013 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/writing/writable.py:2125(update)
+      237    0.002    0.000    3.042    0.013 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/writing/identify.py:35(add_to_directory)
+  472/236    0.004    0.000    2.960    0.013 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/writing/writable.py:1901(mkrntuple)
+   102973    2.773    0.000    2.773    0.000 {built-in method zlib.decompress}
+      236    0.003    0.000    2.720    0.012 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/writing/writable.py:3056(extend)
+      236    0.040    0.000    2.717    0.012 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/writing/_cascadentuple.py:907(extend)
+        1    2.371    2.371    2.372    2.372 /home/gwatts/atlas/correctionlib_tests/c-nice/atlas_jet_corrections.py:13(load)
+     2950    0.055    0.000    1.718    0.001 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/compression.py:521(compress)
+     2950    0.002    0.000    1.621    0.001 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/compression.py:293(compress)
+     2950    1.619    0.001    1.619    0.001 {built-in method lz4.compress_block}
+       45    1.587    0.035    1.587    0.035 /home/gwatts/atlas/correctionlib_tests/optimization-campaign/22-final-python-profile/runs/C-1/python/atlas_correctionlib/systematics.py:83(<lambda>)
+   742053    0.258    0.000    1.279    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/source/chunk.py:421(get)
+3025525/2997913    0.433    0.000    1.173    0.000 {built-in method builtins.isinstance}
+       82    0.069    0.001    1.108    0.014 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/behaviors/TBranch.py:3116(_keys_deep)
+      117    0.013    0.000    1.049    0.009 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/behaviors/RNTuple.py:659(arrays)
+   400066    0.161    0.000    1.044    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/source/cursor.py:175(fields)
+   225721    0.228    0.000    0.977    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/source/chunk.py:377(wait)
+      120    0.000    0.000    0.937    0.008 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/reading.py:2093(__getitem__)
+      120    0.001    0.000    0.936    0.008 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/reading.py:2488(get)
+       82    0.007    0.000    0.906    0.011 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/interpretation/objects.py:446(final_array)
+   4442/2    0.007    0.000    0.895    0.448 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/model.py:1304(read)
+        2    0.000    0.000    0.890    0.445 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/models/TTree.py:688(read_members)
+13673/4441    0.015    0.000    0.883    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/deserialization.py:194(read_object_any)
+ 4570/130    0.011    0.000    0.875    0.007 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/models/TObjArray.py:31(read_members)
+      164    0.000    0.000    0.866    0.005 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/awkward/operations/ak_concatenate.py:33(concatenate)
+       82    0.005    0.000    0.865    0.011 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/awkward/operations/ak_concatenate.py:109(_impl)
+1660114/785398    0.499    0.000    0.816    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/model.py:555(member)
+    94142    0.016    0.000    0.815    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/behaviors/TBranch.py:1835(itervalues)
+193399/95333    0.162    0.000    0.814    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/behaviors/TBranch.py:1872(iteritems)
+     4944    0.017    0.000    0.790    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/awkward/operations/ak_from_buffers.py:134(_impl)
+        1    0.788    0.788    0.790    0.790 /home/gwatts/atlas/correctionlib_tests/optimization-campaign/22-final-python-profile/runs/C-1/python/atlas_correctionlib/jvt.py:8(__init__)
+       94    0.003    0.000    0.788    0.008 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/source/fsspec.py:130(chunks)
+       82    0.000    0.000    0.758    0.009 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/awkward/_do.py:220(mergemany)
+   164/82    0.001    0.000    0.758    0.009 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/awkward/contents/listoffsetarray.py:643(_mergemany)
+     4446    0.004    0.000    0.754    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/awkward/operations/ak_from_buffers.py:28(from_buffers)
+338064/337737    0.288    0.000    0.748    0.000 /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/python3.13/queue.py:137(put)
+   164/82    0.040    0.000    0.747    0.009 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/awkward/contents/listarray.py:1131(_mergemany)
+26183/3066    1.317    0.000    0.745    0.000 {method 'read' of '_io.BufferedReader' objects}
+     1521    0.007    0.000    0.716    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/models/RNTuple.py:822(read_cluster_range)
+2043/1915    0.011    0.000    0.711    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/models/TBranch.py:746(read_members)
+        1    0.694    0.694    0.694    0.694 /home/gwatts/atlas/correctionlib_tests/optimization-campaign/22-final-python-profile/runs/C-1/python/atlas_correctionlib/systematics.py:68(__init__)
+
+
+Fri Oct 23 20:45:37 2026    /home/gwatts/atlas/correctionlib_tests/optimization-campaign/22-final-python-profile/runs/C-1/profile-0.pstats
+
+         52618534 function calls (49365251 primitive calls) in 40.022 seconds
+
+   Ordered by: internal time
+   List reduced from 4608 to 40 due to restriction <40>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+  4326/14    3.670    0.001    3.285    0.235 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/interpretation/objects.py:206(basket_array_forth)
+    155/0    3.327    0.021    0.000          /home/gwatts/atlas/correctionlib_tests/optimization-campaign/22-final-python-profile/runs/C-1/python/atlas_correctionlib/parallel.py:12(batch)
+   102973    2.773    0.000    2.773    0.000 {built-in method zlib.decompress}
+        1    2.371    2.371    2.372    2.372 /home/gwatts/atlas/correctionlib_tests/c-nice/atlas_jet_corrections.py:13(load)
+     2950    1.619    0.001    1.619    0.001 {built-in method lz4.compress_block}
+       45    1.587    0.035    1.587    0.035 /home/gwatts/atlas/correctionlib_tests/optimization-campaign/22-final-python-profile/runs/C-1/python/atlas_correctionlib/systematics.py:83(<lambda>)
+26183/3066    1.317    0.000    0.745    0.000 {method 'read' of '_io.BufferedReader' objects}
+95865/413    1.192    0.000    0.012    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/interpretation/jagged.py:140(basket_array)
+        1    0.788    0.788    0.790    0.790 /home/gwatts/atlas/correctionlib_tests/optimization-campaign/22-final-python-profile/runs/C-1/python/atlas_correctionlib/jvt.py:8(__init__)
+        1    0.694    0.694    0.694    0.694 /home/gwatts/atlas/correctionlib_tests/optimization-campaign/22-final-python-profile/runs/C-1/python/atlas_correctionlib/systematics.py:68(__init__)
+   112688    0.658    0.000    6.744    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/models/TBasket.py:215(read_members)
+154322/78    0.597    0.000    0.438    0.006 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/model.py:778(read)
+      111    0.594    0.005    0.594    0.005 /home/gwatts/atlas/correctionlib_tests/optimization-campaign/22-final-python-profile/runs/C-1/python/atlas_correctionlib/jvt.py:37(<lambda>)
+25557/2349    0.528    0.000    0.247    0.000 {built-in method _io.open}
+      360    0.512    0.001    0.520    0.001 /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/python3.13/site-packages/numpy/lib/_shape_base_impl.py:621(column_stack)
+1660114/785398    0.499    0.000    0.816    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/model.py:555(member)
+     72/0    0.435    0.006    0.000          /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/behaviors/TBranch.py:3619(_ranges_or_baskets_to_arrays)
+3025525/2997913    0.433    0.000    1.173    0.000 {built-in method builtins.isinstance}
+   110533    0.343    0.000    4.562    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/compression.py:365(decompress)
+108552/11    0.325    0.000    3.458    0.314 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/behaviors/TBranch.py:3705(basket_to_array)
+     1522    0.323    0.000    0.323    0.000 {built-in method lz4.decompress_block}
+    11752    0.318    0.000    0.318    0.000 {method 'write' of '_io.BufferedRandom' objects}
+1710433/1177890    0.316    0.000    0.316    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/model.py:542(has_member)
+338064/337737    0.288    0.000    0.748    0.000 /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/python3.13/queue.py:137(put)
+2940446/2837195    0.281    0.000    0.317    0.000 {built-in method builtins.len}
+   742053    0.258    0.000    1.279    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/source/chunk.py:421(get)
+      982    0.252    0.000    0.421    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/interpretation/jagged.py:223(final_array)
+226782/2604    0.232    0.000    0.008    0.000 /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/python3.13/queue.py:177(get)
+   225721    0.228    0.000    0.977    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/source/chunk.py:377(wait)
+  1180768    0.208    0.000    0.323    0.000 {built-in method _abc._abc_instancecheck}
+      116    0.193    0.002    0.193    0.002 {method 'update' of '_sha2.SHA256Type' objects}
+    97347    0.191    0.000    0.191    0.000 {method 'cumsum' of 'numpy.ndarray' objects}
+   724952    0.183    0.000    0.418    0.000 /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/python3.13/typing.py:2116(__instancecheck__)
+    10252    0.164    0.000    0.613    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/awkward/_kernels.py:92(__call__)
+    38882    0.164    0.000    0.164    0.000 {built-in method numpy.ascontiguousarray}
+112677/77    0.164    0.000    0.008    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/behaviors/TBranch.py:3684(chunk_to_basket)
+  1180768    0.162    0.000    0.485    0.000 <frozen abc>:117(__instancecheck__)
+193399/95333    0.162    0.000    0.814    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/behaviors/TBranch.py:1872(iteritems)
+   400066    0.161    0.000    1.044    0.000 /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/uproot/source/cursor.py:175(fields)
+  1469216    0.160    0.000    0.160    0.000 {method 'get' of 'dict' objects}
+
+
