@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "jets": 512,
+  "checks": [
+    "exact repeat",
+    "returned-array mutation",
+    "each effective input changed",
+    "sigma up/down",
+    "in-place input mutation",
+    "engine replacement",
+    "empty batch"
+  ]
+}
