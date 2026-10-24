@@ -47,8 +47,22 @@ inline double smear(double phi,double sigmaNom,double variation,bool data) {
  const double width=std::sqrt(std::pow(sigmaNom+std::abs(variation),2)-std::pow(sigmaNom,2));
  long long seed=(data?1.23e5:2.00e5)*std::abs(phi);
  if(!seed)seed=data?34545654:45583453;
+ // The same phi seed is reused across resolution states. Cache only the
+ // first standard-normal draw, preserving ROOT's stream and width-dependent
+ // rejection. Direct-mapped storage bounds memory; a full seed tag handles
+ // collisions and fallback seeds. Each thread owns its cache.
+ struct Entry {long long seed=0;double gaussian=0;};
+ static thread_local std::vector<Entry> cache(1u<<20);
+ auto& entry=cache[static_cast<unsigned long long>(seed)&(cache.size()-1)];
+ if(entry.seed!=seed){
+  TRandom3 random(seed);entry.gaussian=random.Gaus(0.,1.);entry.seed=seed;
+ }
+ double value=1.+width*entry.gaussian;
+ if(value>=0)return value;
+ // Recreate the original stream when its first draw is rejected. Rejection
+ // depends on width, so caching an accepted draw would change correlations.
  TRandom3 random(seed);
- double value=-1;while(value<0)value=random.Gaus(1.,width);return value;
+ value=-1;while(value<0)value=random.Gaus(1.,width);return value;
 }
 inline std::vector<double> smearBatch(const std::vector<double>& phi,const std::vector<double>& sigma,const std::vector<double>& variation,bool data){
  if(phi.size()!=sigma.size()||phi.size()!=variation.size())throw std::invalid_argument("smear array lengths differ");
