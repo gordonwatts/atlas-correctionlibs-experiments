@@ -1,0 +1,68 @@
+{
+  "label": "29-uniform-binning/control",
+  "mean": 24.945100283497595,
+  "sd": 0.024761467379769298,
+  "records": [
+    {
+      "path": "C",
+      "iteration": 1,
+      "wall_seconds": 25.888452594997943,
+      "stage_seconds": [
+        25.88844633899862
+      ],
+      "commands": [
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-full.py",
+          "--events",
+          "20000",
+          "--chunk-size",
+          "1000"
+        ]
+      ],
+      "events": 20000
+    },
+    {
+      "path": "C",
+      "iteration": 2,
+      "wall_seconds": 24.96260928499396,
+      "stage_seconds": [
+        24.96260297000117
+      ],
+      "commands": [
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-full.py",
+          "--events",
+          "20000",
+          "--chunk-size",
+          "1000"
+        ]
+      ],
+      "events": 20000
+    },
+    {
+      "path": "C",
+      "iteration": 3,
+      "wall_seconds": 24.92759128200123,
+      "stage_seconds": [
+        24.92758397301077
+      ],
+      "commands": [
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-full.py",
+          "--events",
+          "20000",
+          "--chunk-size",
+          "1000"
+        ]
+      ],
+      "events": 20000
+    }
+  ],
+  "passed": true,
+  "cpu_affinity": [
+    0
+  ]
+}
