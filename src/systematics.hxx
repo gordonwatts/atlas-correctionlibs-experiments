@@ -6,7 +6,20 @@ class JetSystematics {
  std::unique_ptr<correction::CorrectionSet> tables;
  Json manifest;
 
+ struct Table {
+  correction::Correction::Ref correction;
+  bool oneInput=false;
+  double operator()(double pt,double eta)const{
+   return oneInput?correction->evaluate({pt}):correction->evaluate({pt,eta});
+  }
+ };
+ Table bind(const std::string& name,const std::string& mode="Full",int file=0)const{
+  auto c=tables->at("file"+std::to_string(file)+"__"+name+"_AntiKt4EMPFlow__"+mode+"__content");
+  return {c,c->inputs().size()==1};
+ }
+ Table gluonFraction,gluonFractionError,jerMC,jerData;
  struct CompiledComponent {
+  Table first,second;
   std::string name,hist,mode;bool absEta,special,resolution;
   CompiledComponent(const Json& c):name(c.at("Name")),hist(c.value("Hists",name)),
    mode(c.value("Interp",std::string("Full"))),absEta(c.at("Param")=="PtAbsEta"),
@@ -15,29 +28,24 @@ class JetSystematics {
  };
  double muRef,npvRef;
  std::map<std::string,std::vector<CompiledComponent>> recipes;
- double table(const std::string& name,double pt,double eta,const std::string& mode="Full",int file=0)const{
-  auto c=tables->at("file"+std::to_string(file)+"__"+name+"_AntiKt4EMPFlow__"+mode+"__content");
-  if(c->inputs().size()==1)return c->evaluate({pt});
-  return c->evaluate({pt,eta});
- }
  double component(const CompiledComponent& c,double pt,double eta,double mu,double npv,bool bjet)const{
   const std::string &name=c.name,&hist=c.hist,&mode=c.mode;
   double y=c.absEta?std::abs(eta):eta;
-  auto h=[&](const std::string& key){return table(key,pt,y,mode);};
-  if(!c.special)return h(hist);
+
+  if(!c.special)return c.first(pt,y);
   double dm=mu-muRef;
   double dn=npv-npvRef;
-  if(name=="Pileup_OffsetMu_orig")return dm*h(hist);
-  if(name=="Pileup_OffsetNPV_orig")return dn*h(hist);
-  if(name=="Pileup_PtTerm_orig"){auto split=hist.find(',');return dm*h(hist.substr(0,split))+dn*h(hist.substr(split+1));}
-  if(name=="Pileup_RhoTopology_orig")return h(hist);
-  if(name=="BJES_Response")return bjet?h(hist):0.;
+  if(name=="Pileup_OffsetMu_orig")return dm*c.first(pt,y);
+  if(name=="Pileup_OffsetNPV_orig")return dn*c.first(pt,y);
+  if(name=="Pileup_PtTerm_orig"){return dm*c.first(pt,y)+dn*c.second(pt,y);}
+  if(name=="Pileup_RhoTopology_orig")return c.first(pt,y);
+  if(name=="BJES_Response")return bjet?c.first(pt,y):0.;
   if(bjet)return 0.;
-  double fg=table("gluonFraction",pt,std::abs(eta),"Full",1);
-  if(name=="Flavor_Response_orig")return h(hist)*fg;
+  double fg=gluonFraction(pt,std::abs(eta));
+  if(name=="Flavor_Response_orig")return c.first(pt,y)*fg;
   if(name=="Flavor_Composition_orig"){
-   auto split=hist.find(',');double rg=h(hist.substr(0,split)),rq=h(hist.substr(split+1));
-   double df=table("gluonFractionError",pt,std::abs(eta),"Full",1);
+   double rg=c.first(pt,y),rq=c.second(pt,y);
+   double df=gluonFractionError(pt,std::abs(eta));
    return df*std::abs(rq-rg)/(fg*rg+(1-fg)*rq);
   }
   throw std::invalid_argument("Unsupported special uncertainty component: "+name);
@@ -51,6 +59,19 @@ public:
   for(auto it=manifest.at("groups").begin();it!=manifest.at("groups").end();++it){
    const auto& g=it.value();if(g.at("Corr")!="Correlated")throw std::invalid_argument("Unsupported group correlation");
    for(const auto& c:manifest.at("components"))if(c.value("Group",std::string())==it.key())recipes[g.at("Name")].push_back(c);
+  }
+  // Bind immutable correction objects once. Per-jet evaluation retains the
+  // same values, dimensions and arithmetic order without constructing keys.
+  for(auto& [name,cs]:recipes)for(auto& c:cs){
+   if(c.special && (c.name=="Pileup_PtTerm_orig" || c.name=="Flavor_Composition_orig")){
+    auto split=c.hist.find(',');
+    c.first=bind(c.hist.substr(0,split),c.mode);
+    c.second=bind(c.hist.substr(split+1),c.mode);
+   }else c.first=bind(c.hist,c.mode);
+   if(c.special && (c.name=="Flavor_Response_orig" || c.name=="Flavor_Composition_orig"))
+    gluonFraction=bind("gluonFraction","Full",1);
+   if(c.special && c.name=="Flavor_Composition_orig")gluonFractionError=bind("gluonFractionError","Full",1);
+   if(c.resolution){jerMC=bind("JER_Nominal_MC16","OnlyX");jerData=bind("JER_Nominal_data","OnlyX");}
   }
  }
  std::vector<std::string> names()const{
@@ -77,7 +98,7 @@ public:
   double unc=0;for(const auto& c:cs)unc+=component(c,pt,eta,r[4],r[5],r[6]!=0);
   double scale=1+sign*unc;
   if(cs.front().resolution){
-   double sigma=std::max(table("JER_Nominal_MC16",pt,std::abs(eta),"OnlyX"),table("JER_Nominal_data",pt,std::abs(eta),"OnlyX"));
+   double sigma=std::max(jerMC(pt,std::abs(eta)),jerData(pt,std::abs(eta)));
    scale=smear(r[2],sigma,sign*unc,data);
   }else if(data)throw std::invalid_argument("PseudoData is only supported for resolution variations");
   return {double(float(r[0]*scale)),r[1],r[2],double(float(r[3]*scale)),0.};
