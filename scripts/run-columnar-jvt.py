@@ -6,9 +6,12 @@ from atlas_correctionlib.systematics import Systematics
 from atlas_correctionlib.jvt import Jvt
 from atlas_correctionlib.kinematic_cache import fingerprint,read as read_kinematics
 p=argparse.ArgumentParser();p.add_argument("--events",type=int,default=100);p.add_argument("--reference",default="results/reference/reference.root");p.add_argument("--report",default="results/jvt-comparison.json");p.add_argument("--output");p.add_argument("--kinematics");a=p.parse_args()
-stored=np.load(r/"results/columnar-nominal.npz");counts=stored["counts"][:a.events];n=int(counts.sum());p4=stored["values"][:n,8:12]
+stored=globals().get("shared_nominal")
+if stored is None:stored=np.load(r/"results/columnar-nominal.npz")
+counts=stored["counts"][:a.events];n=int(counts.sum());p4=stored["values"][:n,8:12]
 inputfile=Path("/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/src/AsgExternal/Asg_Test/cmt/TestFileLiteR3MC.txt").read_text().strip()
-t=uproot.open(inputfile)["CollectionTree"]
+t=globals().get("shared_input_tree")
+if t is None:t=uproot.open(inputfile)["CollectionTree"]
 fields=["EventInfoAuxDyn.averageInteractionsPerCrossing","PrimaryVerticesAuxDyn.trackParticleLinks","AnalysisJetsAuxDyn.PartonTruthLabelID","EventInfoAuxDyn.eventNumber","PrimaryVerticesAuxDyn.vertexType","AnalysisJetsAuxDyn.SumPtTrkPt500","AnalysisJetsAuxDyn.JVFCorr"]
 fields += [f"{prefix}.{x}" for prefix in ["AnalysisJetsAuxDyn","AntiKt4TruthDressedWZJetsAuxDyn"] for x in ["pt","eta","phi"]]
 arr=t.arrays(fields,entry_stop=a.events,how=dict)
@@ -36,8 +39,11 @@ dr=ak.values_astype(np.sqrt((pairs.reco.eta-pairs.truth.eta)**2+dp**2),np.float3
 ishs=ak.to_numpy(ak.flatten(ak.any((dr<np.float32(.3))&(pairs.truth.pt>10000),axis=2),axis=1))
 jvfcorr=ak.to_numpy(ak.flatten(arr[fields[6]])).astype(float)
 np.savez(r/"results/jvt-inputs.npz",p4=p4,mu=mu,npv=npv,bjet=bjet,sumpt=sumpt,jvfcorr=jvfcorr,haspv=haspv,ishs=ishs,counts=counts)
-ref=uproot.open(r/a.reference)["analysis"]
-engine=Systematics(r/"payloads");jvt=Jvt(r/"payloads",None);checks={}
+ref=globals().get("shared_reference")
+if ref is None:ref=uproot.open(r/a.reference)["analysis"]
+engine=globals().get("shared_systematics")
+if engine is None:engine=Systematics(r/"payloads")
+jvt=Jvt(r/"payloads",None);checks={}
 writer=uproot.recreate(r/a.output,compression=uproot.LZ4(1)) if a.output else None
 def compare(name,v,exact=False,event=False):
  truth=ref[name].array(entry_stop=a.events)

@@ -1,0 +1,67 @@
+{
+  "label": "16-integrated-workflow-v2",
+  "mean": 31.711435961999086,
+  "sd": 0.13529697995402548,
+  "records": [
+    {
+      "path": "C",
+      "iteration": 1,
+      "wall_seconds": 31.482405433998792,
+      "stage_seconds": [
+        31.482399165997776
+      ],
+      "commands": [
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-full.py",
+          "--events",
+          "20000",
+          "--chunk-size",
+          "1000"
+        ]
+      ],
+      "events": 20000
+    },
+    {
+      "path": "C",
+      "iteration": 2,
+      "wall_seconds": 31.615766549999535,
+      "stage_seconds": [
+        31.615760336000676
+      ],
+      "commands": [
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-full.py",
+          "--events",
+          "20000",
+          "--chunk-size",
+          "1000"
+        ]
+      ],
+      "events": 20000
+    },
+    {
+      "path": "C",
+      "iteration": 3,
+      "wall_seconds": 31.80710537399864,
+      "stage_seconds": [
+        31.807099056997686
+      ],
+      "commands": [
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-full.py",
+          "--events",
+          "20000",
+          "--chunk-size",
+          "1000"
+        ]
+      ],
+      "events": 20000
+    }
+  ],
+  "discarded_run": 1,
+  "git_head": "2c016e4457f5abdeed7254a1e337483a1bddc3ea",
+  "passed": true
+}

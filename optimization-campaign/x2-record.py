@@ -8,7 +8,8 @@ descriptions={
  '13-bin-edge-reference':('Reference non-uniform bin edges instead of copying their vector on every lookup','vendor-patches/bin-edge-reference.patch'),
  '14-bound-tables':('Resolve shared systematic correction objects once at construction','src/systematics.hxx'),
  '15-paired-systematics':('Reuse exact shared uncertainty evaluation between related systematic states','src/systematics.hxx'),
- '16-integrated-workflow':('Share loaded arrays and payloads between stages while retaining all outputs and checks','scripts/run-columnar-full.py'),
+ '17-batched-reference':('Read validation reference branches in bounded groups of 16','python/atlas_correctionlib/reference.py'),
+ '16-integrated-workflow-v2':('Share loaded arrays and payloads between stages while retaining all outputs and checks','scripts/run-columnar-full.py'),
 }
 description,code=descriptions[label]
 folder=r/'optimization-campaign'/label
@@ -25,6 +26,8 @@ dest=w/'optimization-results'/label;dest.mkdir(exist_ok=True)
 for name in ('summary.json','implementation.json'):shutil.copy2(folder/name,dest/name)
 for i in range(1,4):
  d=dest/f'run-{i}';d.mkdir(exist_ok=True)
+ timing=folder/f'runs/C-{i}/results/full-stage-timing.json'
+ if timing.exists():shutil.copy2(timing,d/'stage-timing.json')
  for stage in ('nominal','systematics','jvt'):
   shutil.copy2(folder/f'runs/C-{i}/results/{stage}-comparison.json',d/f'{stage}.json')
 for base in ('src','python/atlas_correctionlib','scripts'):
@@ -46,3 +49,5 @@ for row in rows:
 lines+=['','Every repetition passed nominal, kinematic-systematic and JVT comparisons against A. Library source commits and installed library SHA-256 hashes are retained in each checkpoint’s `implementation.json`. The rebuild control preserves the pre-existing full-precision JSON parsing patch. Changes to the shared backend also require final B integration validation.']
 (w/'x2-optimization.md').write_text('\n'.join(lines)+'\n')
 print(commit,summary['mean'],flush=True)
+
+

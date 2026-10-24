@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/home/gwatts/atlas/correctionlib_tests/optimization-campaign/16-integrated-workflow/worker.py", line 30, in <module>
+    if len(sys.argv)>1:worker(sys.argv[1],int(sys.argv[2]));sys.exit()
+                       ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gwatts/atlas/correctionlib_tests/optimization-campaign/16-integrated-workflow/worker.py", line 20, in worker
+    with (work/("stage-"+str(i)+".log")).open("w") as log:subprocess.run(cmd,cwd=work,stdout=log,stderr=subprocess.STDOUT,check=True)
+                                                          ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/home/gwatts/atlas/correctionlib_tests/venv/bin/python', 'scripts/run-columnar-full.py', '--events', '20000', '--chunk-size', '1000']' returned non-zero exit status 1.

@@ -7,10 +7,12 @@ sys.path[:0]=[str(r/"python"),str(r/"install/python")]
 from atlas_correctionlib.systematics import Systematics
 from atlas_correctionlib.kinematic_cache import fingerprint
 p=argparse.ArgumentParser();p.add_argument("--events",type=int,default=100);p.add_argument("--reference",default="results/reference/reference.root");p.add_argument("--report",default="results/systematics-comparison.json");p.add_argument("--output");a=p.parse_args()
-stored=np.load(r/"results/columnar-nominal.npz")
+stored=globals().get("shared_nominal")
+if stored is None:stored=np.load(r/"results/columnar-nominal.npz")
 counts=stored["counts"][:a.events];n=int(counts.sum());p4=stored["values"][:n,8:12]
 inputfile=Path("/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/src/AsgExternal/Asg_Test/cmt/TestFileLiteR3MC.txt").read_text().strip()
-t=uproot.open(inputfile)["CollectionTree"]
+t=globals().get("shared_input_tree")
+if t is None:t=uproot.open(inputfile)["CollectionTree"]
 fields=["EventInfoAuxDyn.averageInteractionsPerCrossing","PrimaryVerticesAuxDyn.trackParticleLinks","AnalysisJetsAuxDyn.PartonTruthLabelID","EventInfoAuxDyn.eventNumber"]
 arr=t.arrays(fields,entry_stop=a.events,how=dict)
 assert np.array_equal(ak.to_numpy(arr[fields[3]]),stored["eventNumber"][:a.events])
@@ -18,7 +20,8 @@ assert np.array_equal(ak.to_numpy(ak.num(arr[fields[2]])),counts)
 mu=np.repeat(ak.to_numpy(arr[fields[0]]).astype(float),counts)
 npv=np.repeat(ak.to_numpy(ak.sum(ak.num(arr[fields[1]],axis=2)>1,axis=1)).astype(float),counts)
 bjet=ak.to_numpy(ak.flatten(arr[fields[2]]))==5
-ref=uproot.open(r/a.reference)["analysis"]
+ref=globals().get("shared_reference")
+if ref is None:ref=uproot.open(r/a.reference)["analysis"]
 engine=Systematics(r/"payloads");checks={};seen=[]
 writer=uproot.recreate(r/a.output,compression=uproot.LZ4(1)) if a.output else None
 for name,out in engine.variations(p4,mu,npv,bjet):

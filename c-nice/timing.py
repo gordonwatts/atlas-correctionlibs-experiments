@@ -12,11 +12,8 @@ def worker(path,iteration):
   (work/"scripts").mkdir();(work/"results").mkdir()
   for name in ("install","python","payloads"):(work/name).symlink_to(ROOT/name,target_is_directory=True)
   (work/"results/reference").symlink_to(ROOT/"results/reference",target_is_directory=True)
-  for name in ("nominal","systematics","jvt"):shutil.copy2(ROOT/("c-nice" if name == "nominal" else "scripts")/("run-columnar-"+name+".py"),work/"scripts")
-  commands=[
-   [sys.executable,"scripts/run-columnar-nominal.py","--events","20000","--chunk-size","1000"],
-   [sys.executable,"scripts/run-columnar-systematics.py","--events","20000","--output","results/columnar-kinematics.root"],
-   [sys.executable,"scripts/run-columnar-jvt.py","--events","20000","--output","results/columnar-jvt.root","--kinematics","results/columnar-kinematics.root"]]
+  for name in ("nominal","systematics","jvt","full"):shutil.copy2(ROOT/("c-nice" if name == "nominal" else "scripts")/("run-columnar-"+name+".py"),work/"scripts")
+  commands=[[sys.executable,"scripts/run-columnar-full.py","--events","20000","--chunk-size","1000"]]
  stages=[];begin=time.perf_counter()
  for i,cmd in enumerate(commands):
   start=time.perf_counter()

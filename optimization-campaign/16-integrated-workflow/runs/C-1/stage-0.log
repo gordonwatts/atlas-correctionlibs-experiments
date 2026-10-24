@@ -1,0 +1,217 @@
+Processed 1000 events
+Processed 2000 events
+Processed 3000 events
+Processed 4000 events
+Processed 5000 events
+Processed 6000 events
+Processed 7000 events
+Processed 8000 events
+Processed 9000 events
+Processed 10000 events
+Processed 11000 events
+Processed 12000 events
+Processed 13000 events
+Processed 14000 events
+Processed 15000 events
+Processed 16000 events
+Processed 17000 events
+Processed 18000 events
+Processed 19000 events
+Processed 20000 events
+{
+  "events": 20000,
+  "jets": 196606,
+  "chunk_size": 1000,
+  "scope": "nominal-only",
+  "checks": {
+    "JetPileupScaleMomentum_pt": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetPileupScaleMomentum_eta": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetPileupScaleMomentum_phi": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetPileupScaleMomentum_m": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetEtaJESScaleMomentum_pt": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetEtaJESScaleMomentum_eta": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetEtaJESScaleMomentum_phi": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetEtaJESScaleMomentum_m": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetGSCScaleMomentum_pt": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetGSCScaleMomentum_eta": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetGSCScaleMomentum_phi": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetGSCScaleMomentum_m": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    }
+  },
+  "passed": true
+}
+NOSYS 0
+JET_BJES_Response__1up 0
+JET_BJES_Response__1down 0
+JET_EffectiveNP_Detector1__1up 0
+JET_EffectiveNP_Detector1__1down 0
+JET_EffectiveNP_Detector2__1up 0
+JET_EffectiveNP_Detector2__1down 0
+JET_EffectiveNP_Mixed1__1up 0
+JET_EffectiveNP_Mixed1__1down 0
+JET_EffectiveNP_Mixed2__1up 0
+JET_EffectiveNP_Mixed2__1down 0
+JET_EffectiveNP_Mixed3__1up 0
+JET_EffectiveNP_Mixed3__1down 0
+JET_EffectiveNP_Modelling1__1up 0
+JET_EffectiveNP_Modelling1__1down 0
+JET_EffectiveNP_Modelling2__1up 0
+JET_EffectiveNP_Modelling2__1down 0
+JET_EffectiveNP_Modelling3__1up 0
+JET_EffectiveNP_Modelling3__1down 0
+JET_EffectiveNP_Modelling4__1up 0
+JET_EffectiveNP_Modelling4__1down 0
+JET_EffectiveNP_Statistical1__1up 0
+JET_EffectiveNP_Statistical1__1down 0
+JET_EffectiveNP_Statistical2__1up 0
+JET_EffectiveNP_Statistical2__1down 0
+JET_EffectiveNP_Statistical3__1up 0
+JET_EffectiveNP_Statistical3__1down 0
+JET_EffectiveNP_Statistical4__1up 0
+JET_EffectiveNP_Statistical4__1down 0
+JET_EffectiveNP_Statistical5__1up 0
+JET_EffectiveNP_Statistical5__1down 0
+JET_EffectiveNP_Statistical6__1up 0
+JET_EffectiveNP_Statistical6__1down 0
+JET_EtaIntercalibration_Modelling__1up 0
+JET_EtaIntercalibration_Modelling__1down 0
+JET_EtaIntercalibration_NonClosure_0p2_PreRec__1up 0
+JET_EtaIntercalibration_NonClosure_0p2_PreRec__1down 0
+JET_EtaIntercalibration_TotalStat__1up 0
+JET_EtaIntercalibration_TotalStat__1down 0
+JET_FCal_MC23_NonClosure_PreRec__1up 0
+JET_FCal_MC23_NonClosure_PreRec__1down 0
+JET_Flavor_Composition__1up 0
+JET_Flavor_Composition__1down 0
+JET_Flavor_Response__1up 0
+JET_Flavor_Response__1down 0
+JET_InSitu_NonClosure_PreRec__1up 0
+JET_InSitu_NonClosure_PreRec__1down 0
+JET_JERUnc_Noise_PreRec__1up 0
+JET_JERUnc_Noise_PreRec__1down 0
+JET_JERUnc_Noise_PreRec_PseudoData__1up 0
+JET_JERUnc_Noise_PreRec_PseudoData__1down 0
+JET_JER_DataVsMC_MC16__1up 0
+JET_JER_DataVsMC_MC16__1down 0
+JET_JER_DataVsMC_MC16_PseudoData__1up 0
+JET_JER_DataVsMC_MC16_PseudoData__1down 0
+JET_JER_EffectiveNP_1__1up 0
+JET_JER_EffectiveNP_1__1down 0
+JET_JER_EffectiveNP_1_PseudoData__1up 0
+JET_JER_EffectiveNP_1_PseudoData__1down 0
+JET_JER_EffectiveNP_10__1up 0
+JET_JER_EffectiveNP_10__1down 0
+JET_JER_EffectiveNP_10_PseudoData__1up 0
+JET_JER_EffectiveNP_10_PseudoData__1down 0
+JET_JER_EffectiveNP_11__1up 0
+JET_JER_EffectiveNP_11__1down 0
+JET_JER_EffectiveNP_11_PseudoData__1up 0
+JET_JER_EffectiveNP_11_PseudoData__1down 0
+JET_JER_EffectiveNP_12restTerm__1up 0
+JET_JER_EffectiveNP_12restTerm__1down 0
+JET_JER_EffectiveNP_12restTerm_PseudoData__1up 0
+JET_JER_EffectiveNP_12restTerm_PseudoData__1down 0
+JET_JER_EffectiveNP_2__1up 0
+JET_JER_EffectiveNP_2__1down 0
+JET_JER_EffectiveNP_2_PseudoData__1up 0
+JET_JER_EffectiveNP_2_PseudoData__1down 0
+JET_JER_EffectiveNP_3__1up 0
+JET_JER_EffectiveNP_3__1down 0
+JET_JER_EffectiveNP_3_PseudoData__1up 0
+JET_JER_EffectiveNP_3_PseudoData__1down 0
+JET_JER_EffectiveNP_4__1up 0
+JET_JER_EffectiveNP_4__1down 0
+JET_JER_EffectiveNP_4_PseudoData__1up 0
+JET_JER_EffectiveNP_4_PseudoData__1down 0
+JET_JER_EffectiveNP_5__1up 0
+JET_JER_EffectiveNP_5__1down 0
+JET_JER_EffectiveNP_5_PseudoData__1up 0
+JET_JER_EffectiveNP_5_PseudoData__1down 0
+JET_JER_EffectiveNP_6__1up 0
+JET_JER_EffectiveNP_6__1down 0
+JET_JER_EffectiveNP_6_PseudoData__1up 0
+JET_JER_EffectiveNP_6_PseudoData__1down 0
+JET_JER_EffectiveNP_7__1up 0
+JET_JER_EffectiveNP_7__1down 0
+JET_JER_EffectiveNP_7_PseudoData__1up 0
+JET_JER_EffectiveNP_7_PseudoData__1down 0
+JET_JER_EffectiveNP_8__1up 0
+JET_JER_EffectiveNP_8__1down 0
+JET_JER_EffectiveNP_8_PseudoData__1up 0
+JET_JER_EffectiveNP_8_PseudoData__1down 0
+JET_JER_EffectiveNP_9__1up 0
+JET_JER_EffectiveNP_9__1down 0
+JET_JER_EffectiveNP_9_PseudoData__1up 0
+JET_JER_EffectiveNP_9_PseudoData__1down 0
+JET_JESUnc_Noise_PreRec__1up 0
+JET_JESUnc_Noise_PreRec__1down 0
+JET_JESUnc_VertexingAlg_PreRec__1up 0
+JET_JESUnc_VertexingAlg_PreRec__1down 0
+JET_Pileup_OffsetMu__1up 0
+JET_Pileup_OffsetMu__1down 0
+JET_Pileup_OffsetNPV__1up 0
+JET_Pileup_OffsetNPV__1down 0
+JET_Pileup_PtTerm__1up 0
+JET_Pileup_PtTerm__1down 0
+JET_Pileup_RhoTopology__1up 0
+JET_Pileup_RhoTopology__1down 0
+JET_SingleParticle_HighPt__1up 0
+JET_SingleParticle_HighPt__1down 0
+Traceback (most recent call last):
+  File "/home/gwatts/atlas/correctionlib_tests/optimization-campaign/16-integrated-workflow/runs/C-1/scripts/run-columnar-full.py", line 36, in <module>
+    stage("jvt",["--events",str(args.events),"--output","results/columnar-jvt.root","--kinematics","results/columnar-kinematics.root"],shared)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gwatts/atlas/correctionlib_tests/optimization-campaign/16-integrated-workflow/runs/C-1/scripts/run-columnar-full.py", line 20, in stage
+    try:exec(compile(path.read_text(),str(path),"exec"),namespace)
+        ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gwatts/atlas/correctionlib_tests/optimization-campaign/16-integrated-workflow/runs/C-1/scripts/run-columnar-jvt.py", line 18, in <module>
+    assert np.array_equal(ak.to_numpy(ak.num(arr[fields[2]])),counts)
+                                                              ^^^^^^
+NameError: name 'counts' is not defined
