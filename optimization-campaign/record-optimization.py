@@ -56,6 +56,6 @@ if (integration/'summary.json').exists():
     lines += ['',f'B integration after step 03: all 20,000 events passed comparison with A using unchanged `config/reference.yaml` (SHA-256 `{b["config_sha256"]}`). One run took {b["wall_seconds"]:.2f} s; this is an integration check, not a repeated speedup measurement. Saved worker memory mappings confirm the rebuilt overlay libraries were loaded. Subsequent Python-only steps leave this shared C++ implementation unchanged.']
 report_path=windows/'c-nice-optimization.md'
 previous=report_path.read_text() if report_path.exists() else ''
-tail=previous[previous.index('\n## Outcome'):] if '\n## Outcome' in previous else ''
+tail=previous[previous.index('\n## '):] if '\n## ' in previous else ''
 report_path.write_text('\n'.join(lines)+'\n'+tail)
 print(commit,summary['mean'],flush=True)

@@ -1,5 +1,7 @@
 # Four-path implementation and timing comparison
 
+**Current single-threaded result: 49.63 ± 0.39 s.** The earlier 38.72 s result used four native workers. See [single-threaded timings and profiling](single-thread-profiling.md) for the current default, isolated RNG changes, and validation.
+
 Subsequent C-nice optimization: **38.72 ± 0.29 s** for the full systematic diagnostic workflow. See [the individual checkpoint table](c-nice-optimization.md) for scope, source references, commits and validation. The table below preserves the earlier campaign.
 
 Additional no-correction baseline (23 October 2026): original Path A framework with systematics, nominal recalibration, uncertainties and JVT processing explicitly disabled takes **8.75 ± 0.37 s** to read the same 20,000 events and write stored pT/eta to a tree, or **9.58 ± 0.37 s** including a subsequent Hist plot. Direct columnar stored-pT/eta-to-Hist takes **1.08 ± 0.05 s**, without the intermediate tree. These are different output workflows, not isolated reader benchmarks. Turning off systematics alone does not disable nominal recalibration in this release. See `correctionlib-interface-handoff.md` and `a-stored-timing/summary.json` for configuration, scope and validation.

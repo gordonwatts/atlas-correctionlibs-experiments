@@ -1,6 +1,10 @@
 # C-nice full-systematics optimization campaign
 
+**Current single-threaded result: 49.63 ± 0.39 s.** The earlier 38.72 s result used four native workers. See [single-threaded timings and profiling](single-thread-profiling.md) for the current default, isolated RNG changes, and validation.
+
 20,000 events / 196,606 jets; all 117 kinematic and 119 JVT/weight states. Three sequential runs per step; first discarded, mean and sample SD of the remaining two. Setup and compilation excluded. Existing imports, input preparation, numerical evaluation, ROOT outputs and A-reference comparisons remain included. No random-seed changes. Timing differences include run-to-run machine variation.
+
+Rows 05–08 use four native workers. Rows 09–11 use one native worker and one-CPU affinity. The change in execution policy is intentional.
 
 | Step | Full C-nice wall seconds | Change and code reference | WSL implementation commit |
 |---|---:|---|---|
@@ -13,12 +17,15 @@
 | 06-array-jvt-inputs | 54.41 ± 0.68 | Replace Python event loops for primary-vertex inputs and truth matching with Awkward arrays; [source](scripts/run-columnar-jvt.py) | `153f82cf579085f9acc148e52d9f2ab74b13f5c7` |
 | 07-lz4-output | 43.26 ± 0.10 | Use LZ4 for the same ROOT output columns instead of default ZLIB; [source](scripts/run-columnar-systematics.py) | `2f2c39a78209c261a5acc3a6f2b9f4b5d5f3dd8d` |
 | 08-lazy-metadata | 38.72 ± 0.29 | Load optional Python table/range inspection data only on access; native evaluator payloads unchanged; [source](python/atlas_correctionlib/jvt.py) | `492f657b4ecea85630d9df1f5ee733aded10870e` |
+| 09-single-thread | 56.27 ± 0.03 | Default to one native worker; benchmark on one CPU with numerical library threads capped at one; [source](python/atlas_correctionlib/parallel.py) | `b79d363fe0a2d350a963802c912a3a543a4e18d9` |
+| 10-rng-construction | 54.08 ± 0.42 | Construct TRandom3 with its final seed, eliminating redundant default seeding; [source](src/backend.hxx) | `b9b6bd2990b621240099fe4e9fcbcce41219a3f8` |
+| 11-cached-gaussian | 49.63 ± 0.39 | Cache the first standard Gaussian by original seed; preserve rejection and ROOT stream exactly; [source](src/backend.hxx) | `1813b4e8136d8539b74fdca469742ef277a86530` |
 
 Every row passed all full-sample nominal, systematic and JVT reference comparisons. Per-run reports and raw timings are retained in `optimization-results/`. The facade remains nominal-only; full systematic timings refer to its nominal stage followed by the established C systematic/JVT runners. B shares the physics implementation. B configuration is unchanged; any shared-backend change also requires its own B integration validation before acceptance.
 
-B integration after step 03: all 20,000 events passed comparison with A using unchanged `config/reference.yaml` (SHA-256 `4d84aa237b6a1796c05e9a38fa341e89993f1b8c582bc99da7b1624b4ed46ca8`). One run took 288.82 s; this is an integration check, not a repeated speedup measurement. Saved worker memory mappings confirm the rebuilt overlay libraries were loaded. Subsequent Python-only steps leave this shared C++ implementation unchanged.
+B integration after step 03: all 20,000 events passed comparison with A using unchanged `config/reference.yaml` (SHA-256 `4d84aa237b6a1796c05e9a38fa341e89993f1b8c582bc99da7b1624b4ed46ca8`). One run took 288.82 s; this is an integration check, not a repeated speedup measurement. Saved worker memory mappings confirm the rebuilt overlay libraries were loaded. Steps 04–08 leave this shared C++ implementation unchanged. The subsequent RNG changes and final B revalidation are documented in the single-thread follow-up.
 
-## Outcome and acceptance evidence
+## Historical four-thread outcome and acceptance evidence
 
 The full-systematics workflow fell from **155.86 ± 0.51 s** to **38.72 ± 0.29 s**, a **4.03× speedup** and **75.2% reduction** on this frozen sample and host. These are sequential checkpoint measurements with two retained observations each, not an interleaved statistical study or a claim about every input sample. Nominal recalibration, all systematic states, output writing and reference comparisons remain enabled. Neither the seeds nor the acceptance tolerances changed.
 
