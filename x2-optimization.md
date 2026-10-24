@@ -6,7 +6,7 @@ Checkpoint 26 is selected. Checkpoint 21’s larger input chunks were reverted. 
 
 The table includes every optimization checkpoint from the original 155.86 s baseline. Steps 05–08 used four native workers; steps 09 onward use one worker pinned to one CPU. Earlier steps 00–04 used one native worker without the later affinity policy. Do not interpret the thread-policy transitions as isolated implementation gains. Historical A/B/C/D, nominal-only and no-calibration comparisons remain in [the four-path comparison](four-path-timing-comparison.md). Profiling runs 22–24 are diagnostic studies, not additional accepted benchmark checkpoints.
 
-Three runs per checkpoint; discard the first and report mean/sample SD of the remaining two. Runs were sequential, not interleaved, with no forced OS-cache flush. These are short checkpoint measurements on one frozen sample, not precision estimates of production throughput. One-CPU affinity, one native worker and one BLAS/OpenMP thread were enforced. Setup and builds are outside the timer; Python startup, nominal recalibration, all systematic/JVT processing, input/output and every A reference comparison are inside. Nominal-only plots and no-calibration timing were not rerun.
+Three runs per checkpoint; discard the first and report mean/sample SD of the remaining two. Runs were sequential, not interleaved, with no forced OS-cache flush. These are short checkpoint measurements on one frozen sample, not precision estimates of production throughput. For checkpoints 09 onward, one-CPU affinity, one native worker and one BLAS/OpenMP thread were enforced. Setup and builds are outside the timer; Python startup, nominal recalibration, all systematic/JVT processing, input/output and every A reference comparison are inside. Nominal-only plots and no-calibration timing were not rerun.
 
 | Step | Seconds | Change and source | Authoritative WSL commit |
 |---|---:|---|---|
@@ -93,3 +93,4 @@ These are individual validation runs, not repeated benchmark means.
 | 11 | 281.61 | Full A comparison passed |
 | 20 | 271.04 | Full A comparison passed |
 | 26 | 268.07 | Full A comparison passed; optimized NN tagger loaded |
+
