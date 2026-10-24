@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-set -eo pipefail
 cd /home/gwatts/atlas/correctionlib_tests
 source setup-replacement.sh >/dev/null 2>&1
+set -eo pipefail
 export ATLAS_CORRECTIONLIB_THREADS=1 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1
 mkdir optimization-campaign/27-final-B-timing
 git rev-parse HEAD > optimization-campaign/27-final-B-timing/source-commit.txt
