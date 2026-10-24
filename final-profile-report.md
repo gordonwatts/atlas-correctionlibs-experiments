@@ -30,3 +30,5 @@ The fresh cProfile run is retained for inspection, but some entries have inconsi
 [Scoped measurements](optimization-campaign/23-final-scoped-profile/scoped-profile.json), [outer timing](optimization-campaign/23-final-scoped-profile/timing.json), [cProfile text](optimization-campaign/22-final-python-profile/python-stage-0.txt), and [all recorded Python functions](optimization-campaign/22-final-python-profile/functions.json). The raw pstats file remains in WSL under `optimization-campaign/22-final-python-profile/runs/C-1/profile-0.pstats`.
 
 The instrumentation is confined to separate profiling scripts and directories; the selected physics implementation and benchmark configuration were not changed. Profiles, comparisons and this report are preserved with local commits. Nothing was pushed.
+
+The subsequent [native calculation study](calculation-profile-report.md) resolves NNJVT, efficiency and grouped-systematic costs, including internal allocations and exact repeated NN features.

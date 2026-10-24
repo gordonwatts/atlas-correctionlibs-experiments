@@ -44,3 +44,5 @@ The selected uninstrumented stage means are nominal **4.43 s**, systematics **9.
 All implementation checkpoints, the reverted experiment, verification evidence and reports are preserved in local Git. The authoritative source/build is WSL `atlas_al9:/home/gwatts/atlas/correctionlib_tests`; Windows contains synchronized inspection sources and lightweight results. Raw generated ROOT files remain in their original WSL campaign folders. The external CorrectionLib change is also committed in its own repository and exported as patches. Nothing was pushed. The timer summaries record the pre-change HEAD; the table gives the candidate commit containing the implementation and its measurements.
 
 A fresh profile of the selected implementation is available in [the final profile report](final-profile-report.md), with direct wall-time attribution for reference reads, JVT, tool loading and output.
+
+The subsequent [native calculation study](calculation-profile-report.md) resolves NNJVT, efficiency and grouped-systematic costs, including internal allocations and exact repeated NN features.
