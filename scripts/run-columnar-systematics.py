@@ -20,7 +20,7 @@ npv=np.repeat(ak.to_numpy(ak.sum(ak.num(arr[fields[1]],axis=2)>1,axis=1)).astype
 bjet=ak.to_numpy(ak.flatten(arr[fields[2]]))==5
 ref=uproot.open(r/a.reference)["analysis"]
 engine=Systematics(r/"payloads");checks={};seen=[]
-writer=uproot.recreate(r/a.output) if a.output else None
+writer=uproot.recreate(r/a.output,compression=uproot.LZ4(1)) if a.output else None
 for name,out in engine.variations(p4,mu,npv,bjet):
  seen.append(name);summary={}
  if writer is not None:

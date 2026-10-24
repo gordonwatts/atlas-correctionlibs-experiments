@@ -38,7 +38,7 @@ jvfcorr=ak.to_numpy(ak.flatten(arr[fields[6]])).astype(float)
 np.savez(r/"results/jvt-inputs.npz",p4=p4,mu=mu,npv=npv,bjet=bjet,sumpt=sumpt,jvfcorr=jvfcorr,haspv=haspv,ishs=ishs,counts=counts)
 ref=uproot.open(r/a.reference)["analysis"]
 engine=Systematics(r/"payloads");jvt=Jvt(r/"payloads",engine.tables);checks={}
-writer=uproot.recreate(r/a.output) if a.output else None
+writer=uproot.recreate(r/a.output,compression=uproot.LZ4(1)) if a.output else None
 def compare(name,v,exact=False,event=False):
  truth=ref[name].array(entry_stop=a.events)
  truth=ak.to_numpy(truth if event else ak.flatten(truth))
