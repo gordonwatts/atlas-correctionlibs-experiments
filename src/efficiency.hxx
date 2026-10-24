@@ -39,14 +39,15 @@ public:
   float sf=(1-base*eff)/(1-eff);
   return {double(sf),0.};
  }
+ std::vector<double> evaluate_row(const std::vector<double>& r,int sigma)const{
+  if(r.size()!=4)throw std::invalid_argument("JVT efficiency expects pt, eta, pass, truthHS");
+  if(r[0]<20000||r[0]>60000||std::abs(float(r[1]))>2.5)return {-1.,1.};
+  if(r[3]==0)return {1.,0.};
+  return evaluate(float(r[0]),float(r[1]),r[2]!=0,sigma);
+ }
  std::vector<std::vector<double>> batch(const std::vector<std::vector<double>>& rows,int sigma)const{
   std::vector<std::vector<double>> out;out.reserve(rows.size());
-  for(const auto& r:rows){
-   if(r.size()!=4)throw std::invalid_argument("JVT efficiency expects pt, eta, pass, truthHS");
-   if(r[0]<20000||r[0]>60000||std::abs(float(r[1]))>2.5){out.push_back({-1.,1.});continue;}
-   if(r[3]==0){out.push_back({1.,0.});continue;}
-   out.push_back(evaluate(float(r[0]),float(r[1]),r[2]!=0,sigma));
-  }
+  for(const auto& r:rows)out.push_back(evaluate_row(r,sigma));
   return out;
  }
 };

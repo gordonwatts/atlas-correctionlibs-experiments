@@ -1,3 +1,4 @@
+#include <array>
 #pragma once
 #include <lwtnn/generic/FastGraph.hh>
 #include <lwtnn/parse_json.hh>
@@ -24,9 +25,7 @@ public:
   graph=std::make_unique<lwt::generic::FastGraph<double>>(cfg,order);
  }
  // pt, eta, DetectorEta, sumPtTrkPV, JVFCorr, hasPV
- std::vector<std::vector<double>> batch(const std::vector<std::vector<double>>& rows) const {
-  std::vector<std::vector<double>> out;out.reserve(rows.size());
-  for(const auto& r:rows){
+ std::array<double,2> evaluate_row(const std::vector<double>& r) const {
    if(r.size()!=6)throw std::invalid_argument("NNJVT requires six inputs");
    float score=-1;size_t ip=0,ie=0;
    if(r[5]!=0 && r[0]<=60000 && bins(float(r[0]),float(r[1]),ip,ie)){
@@ -38,8 +37,11 @@ public:
    float cut=-1;
    if(bins(float(r[0]),float(r[2]),ip,ie))cut=cuts.at(ip).at(ie);
    bool inRange=r[0]>=20000&&r[0]<=60000&&std::abs(float(r[2]))<=2.5;
-   out.push_back({score,(!inRange||score>cut)?1.:0.});
-  }
+   return {score,(!inRange||score>cut)?1.:0.};
+ }
+ std::vector<std::vector<double>> batch(const std::vector<std::vector<double>>& rows) const {
+  std::vector<std::vector<double>> out;out.reserve(rows.size());
+  for(const auto& r:rows){const auto result=evaluate_row(r);out.emplace_back(result.begin(),result.end());}
   return out;
  }
 };

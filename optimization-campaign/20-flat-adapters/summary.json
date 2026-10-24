@@ -1,0 +1,67 @@
+{
+  "label": "20-flat-adapters",
+  "mean": 26.441527813502034,
+  "sd": 0.41888900995119444,
+  "records": [
+    {
+      "path": "C",
+      "iteration": 1,
+      "wall_seconds": 26.27446271000008,
+      "stage_seconds": [
+        26.274455646002025
+      ],
+      "commands": [
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-full.py",
+          "--events",
+          "20000",
+          "--chunk-size",
+          "1000"
+        ]
+      ],
+      "events": 20000
+    },
+    {
+      "path": "C",
+      "iteration": 2,
+      "wall_seconds": 26.145328554001026,
+      "stage_seconds": [
+        26.145322168998973
+      ],
+      "commands": [
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-full.py",
+          "--events",
+          "20000",
+          "--chunk-size",
+          "1000"
+        ]
+      ],
+      "events": 20000
+    },
+    {
+      "path": "C",
+      "iteration": 3,
+      "wall_seconds": 26.737727073003043,
+      "stage_seconds": [
+        26.7377199520015
+      ],
+      "commands": [
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-full.py",
+          "--events",
+          "20000",
+          "--chunk-size",
+          "1000"
+        ]
+      ],
+      "events": 20000
+    }
+  ],
+  "discarded_run": 1,
+  "git_head": "03888d2720da6d1d5f2ae30710cd02ae2a8237a8",
+  "passed": true
+}

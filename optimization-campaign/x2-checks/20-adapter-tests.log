@@ -1,0 +1,2 @@
+117 states: bitwise legacy/array equality; strided inputs, empty batches, shapes and JVT PASS
+Nominal legacy/array raw-byte parity, strided/empty batches PASS
