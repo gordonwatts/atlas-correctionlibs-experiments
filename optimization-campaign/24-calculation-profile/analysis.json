@@ -1,0 +1,83 @@
+{
+  "nn_batches": 111,
+  "jets_per_batch": 2048,
+  "nn_row_evaluations": 227328,
+  "network_inferences": 117430,
+  "distinct_features_per_jet_summed": 76611,
+  "repeated_features_within_jet": 40819,
+  "active_matches_first_batch": 40749,
+  "active_matches_previous_batch": 25082,
+  "feature_key": "bitwise float32 Rpt, JVFCorr, pt-bin, eta-bin; only active inference rows",
+  "sample_only": true,
+  "nn": {
+    "total_instructions": 678982406,
+    "malloc_free_int_free_exclusive": 279953120,
+    "allocation_percent": 41.23127750087828,
+    "matrix_vector_kernel_exclusive": 98171480,
+    "matrix_vector_percent": 14.458619123630134
+  },
+  "efficiency": {
+    "total_instructions": 133599044,
+    "malloc_free_int_free_exclusive": 45207888,
+    "allocation_percent": 33.8384816585963,
+    "matrix_vector_kernel_exclusive": 0,
+    "matrix_vector_percent": 0.0
+  },
+  "systematics": {
+    "total_instructions": 274467729,
+    "malloc_free_int_free_exclusive": 30921320,
+    "allocation_percent": 11.26592190370038,
+    "matrix_vector_kernel_exclusive": 0,
+    "matrix_vector_percent": 0.0
+  },
+  "network_layers": [
+    {
+      "architecture": "dense",
+      "activation": "linear",
+      "weights": 32,
+      "bias": 8
+    },
+    {
+      "architecture": "dense",
+      "activation": "rectified",
+      "weights": 0,
+      "bias": 0
+    },
+    {
+      "architecture": "dense",
+      "activation": "linear",
+      "weights": 40,
+      "bias": 5
+    },
+    {
+      "architecture": "dense",
+      "activation": "rectified",
+      "weights": 0,
+      "bias": 0
+    },
+    {
+      "architecture": "dense",
+      "activation": "linear",
+      "weights": 15,
+      "bias": 3
+    },
+    {
+      "architecture": "dense",
+      "activation": "rectified",
+      "weights": 0,
+      "bias": 0
+    },
+    {
+      "architecture": "dense",
+      "activation": "linear",
+      "weights": 3,
+      "bias": 1
+    },
+    {
+      "architecture": "dense",
+      "activation": "sigmoid",
+      "weights": 0,
+      "bias": 0
+    }
+  ]
+}

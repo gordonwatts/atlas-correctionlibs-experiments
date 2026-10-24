@@ -1,0 +1,9 @@
+{
+  "git_head": "eb99e3b854874b692280c95cfcf3a65a14d3279c",
+  "cpu_affinity": [
+    0
+  ],
+  "sample": "2048 evenly spaced jets from each actual native batch; full workflow unchanged",
+  "metric": "Callgrind instruction counts, not wall time",
+  "compile": "-O2 -g -std=c++23; current shared headers and installed libraries"
+}

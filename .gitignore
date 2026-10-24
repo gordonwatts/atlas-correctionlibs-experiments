@@ -28,3 +28,5 @@ wheels/
 /optimization-campaign/**/*.bin
 
 /build-correctionlib-x2/
+
+/optimization-campaign/**/profile-native

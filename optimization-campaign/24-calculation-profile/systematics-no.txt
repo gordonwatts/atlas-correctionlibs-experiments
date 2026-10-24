@@ -1,0 +1,67 @@
+--------------------------------------------------------------------------------
+Profile data file '/home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/systematics.callgrind.1' (creator: callgrind-3.19.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 54182764
+Trigger: Client Request
+Profiled target:  /home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native systematics /home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/runs/C-1/results/systematics.bin (PID 242594, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  off
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+274,467,729 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                   file:function
+--------------------------------------------------------------------------------
+72,284,839 (26.34%)  ???:correction::FormulaAst::evaluate(std::vector<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&, std::vector<double, std::allocator<double> > const&) const'2 [/home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/correctionlib/lib/libcorrectionlib.so]
+29,896,853 (10.89%)  ???:(anonymous namespace)::find_bin_idx(std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::variant<correction::_UniformBins, std::vector<double, std::allocator<double> > > const&, correction::_FlowBehavior const&, unsigned long, char const*) [/home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/correctionlib/lib/libcorrectionlib.so]
+22,964,770 ( 8.37%)  ???:TRandom3::SetSeed(unsigned long) [/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libMathCore.so]
+20,066,873 ( 7.31%)  ???:TRandom3::Rndm() [/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libMathCore.so]
+14,992,128 ( 5.46%)  ???:_int_free [/usr/lib64/libc.so.6]
+12,997,421 ( 4.74%)  src/systematics.hxx:JetSystematics::batch_group_into(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&, double const*, unsigned long, double*) const [/home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native]
+11,977,103 ( 4.36%)  ???:correction::Correction::evaluate(std::vector<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&) const [/home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/correctionlib/lib/libcorrectionlib.so]
+11,193,601 ( 4.08%)  ???:correction::Binning::evaluate(std::vector<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&) const [/home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/correctionlib/lib/libcorrectionlib.so]
+10,072,892 ( 3.67%)  ???:malloc [/usr/lib64/libc.so.6]
+ 7,223,350 ( 2.63%)  ???:correction::Variable::validate(std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > const&) const [/home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/correctionlib/lib/libcorrectionlib.so]
+ 6,646,922 ( 2.42%)  ???:correction::FormulaAst::evaluate(std::vector<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&, std::vector<double, std::allocator<double> > const&) const [/home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/correctionlib/lib/libcorrectionlib.so]
+ 5,856,300 ( 2.13%)  ???:free [/usr/lib64/libc.so.6]
+ 4,743,614 ( 1.73%)  src/systematics.hxx:JetSystematics::Table::operator()(double, double) const [/home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native]
+ 3,736,728 ( 1.36%)  ???:correction::Transform::evaluate(std::vector<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&) const [/home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/correctionlib/lib/libcorrectionlib.so]
+ 3,736,728 ( 1.36%)  ???:correction::Transform::evaluate(std::vector<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&) const'2 [/home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/correctionlib/lib/libcorrectionlib.so]
+ 3,635,476 ( 1.32%)  /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/variant:JetSystematics::Table::operator()(double, double) const
+ 3,258,803 ( 1.19%)  src/backend.hxx:smear(double, double, double, bool) [/home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native]
+ 3,145,731 ( 1.15%)  /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/stl_uninitialized.h:smear(double, double, double, bool)
+ 2,811,036 ( 1.02%)  ???:operator new(unsigned long) [/cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6.0.34]
+ 2,669,872 ( 0.97%)  /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/stl_vector.h:JetSystematics::Table::operator()(double, double) const
+ 2,496,207 ( 0.91%)  /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/stl_uninitialized.h:JetSystematics::Table::operator()(double, double) const
+ 2,122,218 ( 0.77%)  /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/stl_algobase.h:JetSystematics::batch_group_into(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&, double const*, unsigned long, double*) const
+ 2,097,152 ( 0.76%)  /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/stl_construct.h:smear(double, double, double, bool)
+ 1,510,062 ( 0.55%)  src/systematics.hxx:JetSystematics::component(JetSystematics::CompiledComponent const&, double, double, double, double, bool) const [/home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native]
+ 1,428,203 ( 0.52%)  /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/new_allocator.h:JetSystematics::Table::operator()(double, double) const
+ 1,206,936 ( 0.44%)  /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/stl_construct.h:JetSystematics::Table::operator()(double, double) const
+   778,330 ( 0.28%)  /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/stl_iterator.h:JetSystematics::batch_group_into(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&, double const*, unsigned long, double*) const
+   770,931 ( 0.28%)  ???:TString::Replace(int, int, char const*, int) [/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCore.so]
+   699,680 ( 0.25%)  ???:correction::FormulaRef::evaluate(std::vector<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&) const [/home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/correctionlib/lib/libcorrectionlib.so]
+   533,706 ( 0.19%)  ???:__strlen_avx2 [/usr/lib64/libc.so.6]
+   524,761 ( 0.19%)  ???:correction::Formula::evaluate(std::vector<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::variant<int, double, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&, std::vector<double, std::allocator<double> > const&) const [/home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/correctionlib/lib/libcorrectionlib.so]
+   468,506 ( 0.17%)  ???:0x0000000005a70130 [???]
+   468,504 ( 0.17%)  ???:0x0000000005a70340 [???]
+   468,504 ( 0.17%)  ???:0x0000000005a70b70 [???]
+   468,504 ( 0.17%)  ???:operator delete(void*) [/cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6.0.34]
+   452,188 ( 0.16%)  ???:operator delete(void*, unsigned long) [/cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6.0.34]
+   340,134 ( 0.12%)  /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/shared_ptr_base.h:JetSystematics::Table::operator()(double, double) const
+   332,968 ( 0.12%)  /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/stl_vector.h:smear(double, double, double, bool)
+   280,203 ( 0.10%)  /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/basic_string.h:bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [/home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native]
+   247,641 ( 0.09%)  ???:__memcpy_avx_unaligned_erms [/usr/lib64/libc.so.6]
+   240,661 ( 0.09%)  ???:TString::Init(int, int) [/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCore.so]
+

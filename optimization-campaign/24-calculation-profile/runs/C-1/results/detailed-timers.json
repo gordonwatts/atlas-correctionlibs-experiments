@@ -1,0 +1,22 @@
+{
+  "systematics_native_batch": {
+    "calls": 45,
+    "seconds": 1.5935571040026844
+  },
+  "nn": {
+    "calls": 111,
+    "seconds": 3.145122608038946
+  },
+  "efficiency": {
+    "calls": 111,
+    "seconds": 0.5945063469916931
+  },
+  "jvt_total": {
+    "calls": 119,
+    "seconds": 4.289636961017095
+  },
+  "jvt_cache_equality": {
+    "calls": 148,
+    "seconds": 0.06849579197296407
+  }
+}

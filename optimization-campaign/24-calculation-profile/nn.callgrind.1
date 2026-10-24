@@ -1,0 +1,1936 @@
+# callgrind format
+version: 1
+creator: callgrind-3.19.0
+pid: 242520
+cmd:  /home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native nn /home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/runs/C-1/results/nn.bin
+part: 1
+
+
+desc: I1 cache: 
+desc: D1 cache: 
+desc: LL cache: 
+
+desc: Timerange: Basic block 0 - 131409974
+desc: Trigger: Client Request
+
+positions: line
+events: Ir
+summary: 0
+
+
+ob=(7) /usr/lib64/ld-linux-x86-64.so.2
+fl=(4) /usr/src/debug/glibc-2.34-60.el9_2.7.x86_64/elf/dl-runtime.c
+fn=(10) _dl_fixup
+46 32
++2 20
++1 4
++6 4
+fi=(46) /usr/src/debug/glibc-2.34-60.el9_2.7.x86_64/elf/../sysdeps/x86_64/dl-runtime.h
+-27 4
+fe=(4)
++21 4
++5 4
++1 4
+-6 4
++6 8
++1 4
++2 4
+-2 4
++2 4
+-2 20
++7 8
++4 8
++4 12
++4 12
++1 16
+-7 16
++16 4
+-1 4
++1 8
++10 40
+cfi=(5) /usr/src/debug/glibc-2.34-60.el9_2.7.x86_64/elf/dl-lookup.c
+cfn=(12) _dl_lookup_symbol_x
+calls=4 835 
+* 4534
+* 4
++4 20
++10 40
++15 16
++9 12
++26 12
+fi=(10) /usr/src/debug/glibc-2.34-60.el9_2.7.x86_64/elf/../sysdeps/x86_64/dl-machine.h
++78 4
+fe=(4)
+-74 24
+-1 8
+fi=(8) /usr/src/debug/glibc-2.34-60.el9_2.7.x86_64/elf/../sysdeps/x86_64/dl-irel.h
+32 1
+cob=(5) /usr/lib64/libc.so.6
+cfi=(9) ???
+cfn=(24) memmove
+calls=1 -32 
+* 22
+fe=(4)
++93 2
+
+fl=(6) /usr/src/debug/glibc-2.34-60.el9_2.7.x86_64/string/../sysdeps/x86_64/strcmp.S
+fn=(18) strcmp
+109 7
++33 7
++1 7
++2 7
++1 7
++21 7
++1 7
++1 6
++1 6
++1 5
++1 5
++1 5
++1 5
++17 5
++1 5
++1 5
++1 5
++1 5
++1 5
++1 5
++5 2
++1 6
++9 2
++1 2
++1 2
++1 2
++1 2
++1 2
++1 2
++1 2
+-7 2
++1 2
++1 2
++1 2
++1 2
++1 2
++1 2
++1 2
++1 3
++1 1
++1 1
++1 1
++2 1
++1 1
++1 1
++1 1
++1 1
++1 1
+-5 2
++1 2
++1 2
++1 2
++1 2
++1 2
++10 1
++1 1
++1 1
++2 1
++6 1
++1 1
++1 1
++1 1
++1 1
++5 1
++2 1
++1 1
++1 2
++8 1
++1 1
++3 1
++1 1
++1 1
++1 1
++1 1
++1 1
+-9 2
++1 2
++3 2
++1 2
++1 2
++1 2
++1 2
++1 2
++6 3
++1 3
++1 3
++3 3
++1 3
++1 3
++1 3
++1 3
++1 3
++5 2
++1 2
+565 1
++1 1
++1 1
++1 1
++1 1
++2 1
++1 1
++1 1
++1 1
++1 1
++1 1
++1 1
++1 1
++4 1
++1 1
++1 1
++6 1
++1 1
++1 2
++4 1
++1 1
++3 1
++1 1
++1 1
++3 1
++1 1
++1 1
++6 1
++1 1
++1 1
++1 1
++1 1
++1 1
+1065 1
++1 1
++1 1
++1 1
++1 1
++2 1
++1 1
++1 1
++1 1
++1 1
++1 1
++1 1
++1 1
++4 1
++1 1
++1 1
++6 1
++1 1
++1 2
++4 1
++1 1
++3 1
++1 1
++1 1
++3 1
++1 1
++1 1
++6 1
++1 1
++1 1
++1 1
++1 1
++1 1
++7 1
++1 1
++2 1
++1 1
++2 1
++1 1
++1 1
++3 1
++1 1
++1 1
++6 1
++1 1
++1 1
++1 1
++1 1
++1 1
+1815 1
++1 1
++1 1
++1 1
++1 1
++2 1
++1 1
++1 1
++1 1
++1 1
++1 1
++1 1
++1 1
++4 1
++1 1
++1 1
++6 1
++1 1
++1 2
++4 1
++1 1
++3 1
++1 1
++1 1
++3 1
++1 1
++1 1
++6 1
++1 1
++1 1
++1 1
++1 1
++1 1
+2194 4
++2 4
++1 4
++1 4
++1 4
++1 2
++5 1
++6 1
++1 1
++8 1
++1 1
+-16 6
++6 6
++1 6
++8 6
++1 6
+
+fl=(3) /usr/src/debug/glibc-2.34-60.el9_2.7.x86_64/elf/../sysdeps/x86_64/dl-trampoline.h
+fn=(8) _dl_runtime_resolve_xsave
+67 4
++5 4
++3 4
++2 4
++10 4
++6 4
++1 4
++1 4
++1 4
++1 4
++1 4
++1 4
++4 4
++1 4
++3 4
++1 4
++2 4
++1 4
++1 4
++1 4
++1 4
++1 4
++2 4
++7 4
++1 4
++1 4
+cfi=(4)
+cfn=(10)
+calls=4 -80 
+* 4951
++1 4
++5 4
++1 4
++1 4
++2 4
++1 4
++1 4
++1 4
++1 4
++1 4
++1 4
++2 4
++2 4
++4 4
++3 4
+
+fl=(5)
+fn=(14) do_lookup_x
+362 28
++1 4
+-1 28
++48 8
+-41 4
++41 20
+-16 114
++8 38
+-4 38
++1 38
++3 152
++1 114
++3 38
++1 76
++7 38
+-3 76
+-2 38
++5 152
++3 266
+565 102
+373 76
++3 76
++4 152
++4 76
++4 76
++88 8
+fi=(7) /usr/src/debug/glibc-2.34-60.el9_2.7.x86_64/elf/../sysdeps/generic/ldsodefs.h
+138 12
+fe=(5)
+527 8
++3 28
++16 8
++1 4
++1 8
+421 24
+-1 12
++2 12
++2 66
++13 9
+-10 35
++3 5
+-1 10
++1 10
+-1 5
++2 10
+-1 55
+cfn=(16) check_match
+calls=5 69 
+* 711
++4 15
++3 2
+569 32
+-35 3
+-66 4
+170 14
+451 32
+
+fn=(12)
+835 56
+576 16
+-1 8
++2 4
+-1 4
++1 12
+-1 12
++1 145
+-1 145
++1 435
+-1 435
++2 4
+841 4
+-4 4
++8 4
+-8 4
++1 8
++7 8
++3 4
++2 8
+-2 4
++6 8
+-7 24
++8 56
+cfn=(14)
+calls=4 362 
+* 2970
+* 12
++28 4
+-23 4
++23 4
+-23 8
++24 24
++7 4
+-7 4
++40 16
++79 8
+-65 12
++3 12
+-62 4
++69 36
+
+fn=(16)
+69 5
++3 5
+-3 60
++3 20
++13 5
+-13 5
++13 5
+-13 5
++13 15
++3 30
+cfi=(6)
+cfn=(18)
+calls=5 +21 
+* 328
+* 10
++4 5
++1 10
++2 6
++19 6
++1 24
++2 2
+-40 4
++84 24
+-18 4
++2 4
++1 2
+-1 4
++1 6
+-1 4
++9 1
++7 6
+-45 6
+cfi=(6)
+cfn=(18)
+calls=2 -7 
+* 96
+* 4
+
+ob=(21) /usr/lib64/libm.so.6
+fl=(43) ???
+fn=(206) exp
+0 469720
+cob=(2) ???
+cfi=(2) ???
+cfn=(208) 0x0000000005c56360
+calls=117430 0 
+0 4462340
+0 1409160
+
+fn=(210) 0x00000000000694a0
+0 4227480
+
+ob=(5)
+fl=(9)
+fn=(46) malloc
+0 89481660
+
+fn=(30) __memcpy_avx_unaligned_erms
+0 4137096
+
+fn=(148) __memset_avx2_unaligned_erms
+0 5636640
+
+fn=(88) _int_free
+0 135279360
+
+fn=(24)
+0 22
+
+fn=(86) free
+0 44036250
+cfn=(88)
+calls=2113740 0 
+0 135279360
+0 11155850
+
+ob=(4) /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/liblwtnn.so
+fl=(16) /build/atnight/localbuilds/nightlies/AnalysisBase/main/build/build/AnalysisBaseExternals/src/lwtnn/src/Stack.cxx
+fn=(54) lwt::build_vector(std::vector<double, std::allocator<double> > const&)
+35 234860
++1 117430
+cob=(1) /home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native
+cfi=(17) /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/lwtnn/generic/Stack.tcc
+cfn=(62) Eigen::Matrix<double, -1, 1, 0, -1, 1> lwt::generic::build_vector<double, double>(std::vector<double, std::allocator<double> > const&)
+calls=117430 977 
+* 13739310
+cob=(7)
+cfi=(3)
+cfn=(8)
+calls=1 +31 
+* 1328
+* 117434
++1 352290
+
+ob=(3) /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6.0.34
+fl=(14) ???
+fn=(42) operator new(unsigned long)
+0 1878880
+cob=(2)
+cfi=(2)
+cfn=(44) 0x0000000005a70130
+calls=234860 0 
+0 10568700
+0 939440
+
+fn=(224) operator delete(void*, unsigned long)
+0 469720
+cob=(2)
+cfi=(2)
+cfn=(226) 0x0000000005a70340
+calls=234860 0 
+0 22311700
+
+fn=(228) operator delete(void*)
+0 469720
+cob=(2)
+cfi=(2)
+cfn=(230) 0x0000000005a70b70
+calls=234860 0 
+0 21372260
+
+ob=(2)
+fl=(2)
+fn=(44)
+0 469720
+cob=(5)
+cfi=(9)
+cfn=(46)
+calls=234860 0 
+0 10098980
+
+fn=(226)
+0 469720
+cob=(3)
+cfi=(14)
+cfn=(228)
+calls=234860 0 
+0 21841980
+
+fn=(230)
+0 469720
+cob=(5)
+cfi=(9)
+cfn=(86)
+calls=234860 0 
+0 20902540
+
+fn=(208)
+0 234860
+cob=(21)
+cfi=(43)
+cfn=(210)
+calls=117430 0 
+0 4227480
+
+ob=(1)
+fl=(29) /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/PlainObjectBase.h
+fn=(122) Eigen::PlainObjectBase<Eigen::Matrix<double, -1, 1, 0, -1, 1> >::resize(long, long)
+271 1174300
++2 2935750
+fi=(19) /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/DenseStorage.h
+635 1174300
+fi=(18) /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/util/Memory.h
+203 1761450
+cob=(5)
+cfi=(9)
+cfn=(86)
+calls=587150 0 
+* 2348600
+* 587150
+fi=(19)
+638 1761450
+fi=(18)
+357 1761450
++97 1174300
+182 1761450
+cob=(5)
+cfi=(9)
+cfn=(46)
+calls=587150 0 
+* 24777730
+* 587150
++3 1761450
++6 1174300
+fi=(19)
+639 587150
++5 587150
+fe=(29)
+287 1761450
+fi=(18)
+185 939440
+fe=(29)
+
+fl=(19)
+fn=(76) Eigen::DenseStorage<double, -1, -1, 1, 0>::DenseStorage(Eigen::DenseStorage<double, -1, -1, 1, 0> const&)
+588 587150
++1 117430
+fi=(18)
+451 234860
+-94 587150
++97 117430
+182 234860
+cob=(5)
+cfi=(9)
+cfn=(46)
+calls=117430 0 
+* 5049490
+* 117430
++3 234860
++6 234860
+fe=(19)
+589 117430
+fi=(18)
+-23 352290
+fe=(19)
++24 117430
++4 587150
+fi=(18)
+-28 117430
+cob=(5)
+cfi=(9)
+cfn=(30)
+calls=117430 0 
+* 1409160
+* 117430
+185 234860
+fe=(19)
+
+fl=(1) /mnt/c/Users/gwatts/OneDrive/Documents/ATLAS/Computing/AMG/CorrectionLib/profile-native-x2.cxx
+fn=(0) main
+17 2
+fi=(13) /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/stl_iterator.h
+1058 1
+fe=(1)
+10 2
++8 780
+fi=(13)
+1059 111
+fe=(1)
+18 333
+fi=(12) /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/stl_algobase.h
+551 444
+cob=(5)
+cfi=(9)
+cfn=(30)
+calls=111 0 
+* 1332
+cob=(7)
+cfi=(3)
+cfn=(8)
+calls=1 67 
+* 1515
+* 115
+* 908868
+cob=(5)
+cfi=(9)
+cfn=(30)
+calls=227217 0 
+* 2726604
+* 227217
+fe=(1)
+18 681984
+cfi=(11) /home/gwatts/atlas/correctionlib_tests/src/nnjvt.hxx
+cfn=(32) NNJvt::evaluate_row(std::vector<double, std::allocator<double> > const&) const
+calls=227328 +10 
+* 672841580
+* 1591296
+fi=(13)
+1104 222
+fe=(1)
+
+fl=(27) /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/lwtnn/generic/FastInputPreprocessor.tcc
+fn=(110) lwt::generic::FastInputPreprocessor<double>::operator()(Eigen::Matrix<double, -1, 1, 0, -1, 1> const&) const
+37 822010
+fi=(15) /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/stl_vector.h
+1119 234860
+fi=(19)
+635 352290
+fi=(15)
+1119 117430
+fe=(27)
+40 234860
+fi=(19)
+626 352290
+fe=(27)
+40 117430
++1 352290
+-1 352290
++1 1056870
+fi=(20) /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h
+181 1878880
+427 939440
+fe=(27)
+46 469720
+fi=(13)
+1103 469720
+fe=(27)
+46 939440
++1 469720
+-7 939440
+fi=(28) /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h
++76 469720
+fi=(19)
+580 117430
+fi=(29)
+367 352290
+fi=(19)
+580 117430
+fi=(29)
+367 117430
+cfn=(122)
+calls=117430 -96 
+* 9864120
+fi=(19)
+646 234860
+-20 234860
+fi=(30) /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/AssignEvaluator.h
+763 234860
+432 117430
+fi=(19)
+646 117430
+fi=(30)
+436 117430
+-4 234860
++4 469720
+fi=(31) /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib/gcc/x86_64-pc-linux-gnu/15.2.0/include/emmintrin.h
+252 234860
++24 117430
+170 117430
+fi=(30)
+436 352290
+fi=(31)
+252 234860
++24 117430
+170 117430
+fi=(30)
+436 352290
+-26 234860
+fi=(18)
+203 234860
+cob=(5)
+cfi=(9)
+cfn=(86)
+calls=117430 0 
+* 10451270
+* 117430
+fe=(27)
+50 704580
+fi=(18)
+182 704580
+cob=(5)
+cfi=(9)
+cfn=(46)
+calls=117430 0 
+* 5049490
+* 117430
++3 469720
+-3 117430
++3 469720
++6 234860
+fe=(27)
+
+fl=(26) /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/lwtnn/generic/FastGraph.tcc
+fn=(106) lwt::generic::internal::LazySource<double>::at(unsigned long) const
+55 704580
++2 117430
+fi=(15)
+1332 117430
+1119 587150
+1292 234860
+-9 117430
+fe=(26)
+58 117430
+fi=(15)
+1283 117430
++49 117430
+1119 352290
+1292 234860
+fe=(26)
+58 117430
++1 117430
+fi=(15)
+1119 469720
+fe=(26)
+59 234860
+fi=(15)
+1283 117430
+fe=(26)
+65 234860
+fi=(15)
+1283 117430
+fe=(26)
+65 117430
+cfi=(27)
+cfn=(110)
+calls=117430 -28 
+* 43449100
++1 587150
+
+fl=(23) /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/lwtnn/generic/Graph.tcc
+fn=(102) lwt::generic::FeedForwardNode<double>::compute(lwt::generic::ISource<double> const&) const
+116 587150
++1 587150
+cfn=(103) lwt::generic::FeedForwardNode<double>::compute(lwt::generic::ISource<double> const&) const'2
+calls=117430 -1 
+* 476530940
+fi=(13)
+1059 234860
+fi=(17)
+53 352290
++1 587150
+cfn=(194) lwt::generic::SigmoidLayer<double>::compute(Eigen::Matrix<double, -1, 1, 0, -1, 1> const&) const
+calls=117430 217 
+* 18437833
+fi=(35) /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/move.h
+236 117430
+-1 117430
+fi=(17)
+53 117430
+fi=(35)
+236 352290
+fi=(18)
+-33 117430
+cob=(5)
+cfi=(9)
+cfn=(86)
+calls=117430 0 
+* 10451270
+* 117430
+fi=(17)
+53 234860
+fi=(19)
+607 234860
++1 234860
+fe=(23)
+118 704580
+
+fn=(103)
+116 4110050
++1 4110050
+cfn=(104) lwt::generic::InputNode<double>::compute(lwt::generic::ISource<double> const&) const
+calls=117430 -26 
+* 51904060
+cfn=(103)
+calls=704580 -1 
+* 1689230550
+fi=(13)
+1059 1644020
+fi=(17)
+53 2466030
++1 4110050
+cfn=(170) lwt::generic::ReLULayer<double>::compute(Eigen::Matrix<double, -1, 1, 0, -1, 1> const&) const
+calls=352290 212 
+* 46737140
+cfn=(138) lwt::generic::MatrixLayer<double>::compute(Eigen::Matrix<double, -1, 1, 0, -1, 1> const&) const
+calls=469720 278 
+* 169216630
+* 2348600
+cfn=(158) lwt::generic::BiasLayer<double>::compute(Eigen::Matrix<double, -1, 1, 0, -1, 1> const&) const
+calls=469720 266 
+* 53782940
+fi=(35)
+236 1291730
+-1 1291730
+fi=(17)
+53 1291730
+fi=(35)
+236 3875190
+fi=(18)
+-33 1291730
+cob=(5)
+cfi=(9)
+cfn=(86)
+calls=1291730 0 
+* 114963970
+* 1291730
+fi=(17)
+53 2583460
+fi=(19)
+607 1644020
++1 1644020
+fe=(23)
+118 4932060
+
+fn=(104)
+91 1174300
++1 704580
+cfi=(26)
+cfn=(106)
+calls=117430 -37 
+* 48381160
+fi=(19)
+626 117430
+fe=(23)
+93 234860
++1 234860
++7 1056870
+
+fn=(92) lwt::generic::Graph<double>::compute(lwt::generic::ISource<double> const&, unsigned long) const
+399 704580
+fi=(24) /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/hashtable.h
+1991 117430
+fe=(23)
+399 117430
+fi=(24)
+1991 117430
+fe=(23)
+399 117430
+fi=(24)
+1991 117430
+cfn=(94) std::_Hashtable<unsigned long, std::pair<unsigned long const, lwt::generic::INode<double>*>, std::allocator<std::pair<unsigned long const, lwt::generic::INode<double>*> >, std::__detail::_Select1st, std::equal_to<unsigned long>, std::hash<unsigned long>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::find(unsigned long const&) const
+calls=117430 2266 
+* 2231170
++1 234860
+fi=(25) /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/hashtable_policy.h
+869 352290
+cfi=(24)
+cfn=(94)
+calls=117430 2266 
+* 2231170
++1 234860
+fe=(23)
+408 587150
+cfn=(102)
+calls=117430 116 
+* 510117243
++1 704580
+
+fl=(33) /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h
+fn=(150) Eigen::internal::general_matrix_vector_product<long, double, Eigen::internal::const_blas_data_mapper<double, long, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, long, 1>, false, 0>::run(long, long, Eigen::internal::const_blas_data_mapper<double, long, 0> const&, Eigen::internal::const_blas_data_mapper<double, long, 1> const&, double*, long, double) [clone .isra.0]
+108 4227480
++39 352290
+-39 352290
++12 352290
++27 352290
+-27 1056870
++18 352290
++1 352290
++1 352290
+fi=(31)
+-64 704580
+fe=(33)
++65 352290
++1 352290
+-3 352290
+fi=(31)
+-63 1409160
+fe=(33)
++64 1056870
++2 704580
+-1 352290
++62 1761450
++1 704580
++1 704580
++1 352290
++2 704580
+-2 352290
++17 1761450
++1 704580
++1 352290
++2 704580
+-2 352290
++15 1761450
++1 352290
++1 704580
+-1 704580
++11 352290
++1 1056870
+-1 352290
++1 2466030
+fi=(12)
+-14 1056870
+fe=(33)
+-83 704580
++32 1056870
++22 1056870
++19 1056870
++15 1056870
++33 2231170
++2 234860
++1 469720
+fi=(34) /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/util/BlasUtil.h
+-87 469720
+fe=(33)
++86 939440
+fi=(34)
+-86 234860
+fe=(33)
++87 704580
+fi=(37) /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/GenericPacketMath.h
+-43 469720
+fe=(33)
++43 704580
++1 234860
+-1 469720
+fi=(37)
+-43 2583460
+fe=(33)
++43 3875190
++1 1291730
+-1 2583460
++2 234860
+-5 234860
++5 469720
+-5 1174300
+152 1056870
+285 2818320
+-38 234860
+fi=(34)
+-54 234860
+fe=(33)
++53 822010
++1 704580
+fi=(31)
+76 117430
+276 117430
+fe=(33)
+-29 352290
+fi=(31)
+76 117430
+276 117430
+-24 117430
+fe=(33)
+-5 234860
+fi=(31)
+76 469720
+276 469720
+fe=(33)
+-29 1409160
+fi=(31)
+76 469720
+276 469720
+-24 469720
+fe=(33)
+-5 939440
+fi=(31)
+135 117430
+276 117430
+135 117430
+252 117430
+135 117430
+252 117430
+-75 234860
+fe=(33)
++57 234860
+fi=(34)
+-41 234860
+fe=(33)
++39 117430
+-1 587150
++3 469720
+fi=(31)
+76 117430
++59 117430
+fe=(33)
++99 234860
+fi=(31)
+76 117430
+276 117430
+-24 117430
++24 117430
+fe=(33)
+-42 117430
+fi=(31)
++42 117430
+-24 117430
+fe=(33)
+-18 234860
+fi=(31)
+76 822010
++59 822010
+fe=(33)
++99 1644020
+fi=(31)
+76 822010
+276 822010
+-24 822010
++24 822010
+fe=(33)
+-42 822010
+fi=(31)
++42 822010
+-24 822010
+fe=(33)
+-18 1644020
+fi=(31)
+-99 117430
+276 234860
+135 117430
+252 234860
+-75 117430
+-42 234860
+252 117430
+135 117430
+252 117430
+-75 234860
+fe=(33)
++18 234860
+fi=(34)
+-2 352290
+fe=(33)
+-1 117430
+-1 117430
+-1 587150
++5 352290
+fi=(31)
+76 117430
++59 117430
+fe=(33)
++60 234860
+fi=(31)
++81 117430
+76 117430
+276 117430
+-24 117430
+135 117430
+276 117430
+-24 117430
+135 117430
+fe=(33)
++60 117430
+fi=(31)
++81 234860
+-24 234860
+fe=(33)
+-57 234860
+fi=(31)
+76 352290
++59 352290
+fe=(33)
++60 704580
+fi=(31)
++81 352290
+76 352290
+276 352290
+-24 352290
+135 352290
+276 352290
+-24 352290
+135 352290
+fe=(33)
++60 352290
+fi=(31)
++81 704580
+-24 704580
+fe=(33)
+-57 704580
+fi=(31)
+-60 117430
+276 234860
+135 117430
+276 234860
+-24 234860
+-75 117430
+-42 234860
+252 234860
+-75 117430
+-42 234860
+252 234860
+-75 117430
+-42 234860
+252 117430
+135 117430
+252 117430
+-75 234860
+fe=(33)
+-25 1409160
+
+fl=(11)
+fn=(32)
+28 1818624
+fi=(15)
+1119 681984
+fe=(11)
+29 681984
+fi=(13)
+1059 227328
+fe=(11)
+31 454656
+fi=(13)
+1340 227328
+fe=(11)
+31 454656
+fi=(13)
+1340 681984
+fe=(11)
+31 227328
+fi=(13)
+1340 227328
+fe=(11)
+31 227328
+-1 227328
++1 227328
++7 234860
+fi=(12)
+1504 234860
+fe=(11)
+30 227328
+fi=(12)
+1502 454656
++11 203273
+fi=(13)
+1103 203273
+fi=(12)
+1513 203273
+-9 406546
++2 1357480
++3 1357480
++7 475467
+-12 950934
+fi=(13)
+1059 454656
+1340 454656
+fi=(12)
+1504 454656
+fi=(13)
+1340 227328
+fe=(11)
+14 227328
+fi=(13)
+1340 681984
+fi=(12)
+1513 289821
+fi=(13)
+1103 289821
+fi=(12)
+1513 289821
+-9 579642
++2 1306026
++3 1306026
++7 363192
+-12 726384
+fi=(13)
+1340 227328
+fe=(11)
+16 227328
+fi=(13)
+1340 681984
+fe=(11)
+16 454656
++1 1287722
++1 490767
+fi=(15)
+1119 163589
+fe=(11)
+18 327178
+fi=(15)
+1119 654356
+1292 327178
+-9 327178
++49 163589
+1119 490767
+1292 327178
+fe=(11)
+39 163589
++1 163589
+-2 163589
++2 163589
+-1 569546
+fi=(45) /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/std_abs.h
++43 83904
+fe=(11)
+-43 167808
++1 83904
+-1 83904
++1 137220
+-1 63739
++1 63739
+-3 63739
++3 63739
+-1 63739
++1 143424
++1 1818624
+-10 681984
++7 109898
+-8 109898
++8 109898
+fi=(12)
+1504 747535
+-2 351826
++11 102490
+fi=(13)
+1103 102490
+fi=(12)
+1513 102490
+-9 204980
++2 1055478
++3 1055478
++7 425249
+-12 850498
+fi=(13)
+1059 351826
+1340 351826
+fi=(12)
+1504 351826
+fi=(13)
+1340 175913
+fe=(11)
+14 175913
++17 175913
+fi=(13)
+1340 351826
+fe=(11)
+31 351826
+fi=(12)
+1513 218833
+fi=(13)
+1103 218833
+fi=(12)
+1513 218833
+-9 437666
++2 999998
++3 999998
++7 281166
+-12 562332
+fi=(13)
+1340 175913
+fe=(11)
+16 175913
+fi=(13)
+1340 351826
+fe=(11)
+16 351826
++1 993992
++1 234860
++14 117430
+-14 234860
++14 352290
++1 1878880
+fi=(21) /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/new_allocator.h
+151 117430
+fi=(15)
+-45 117430
+fe=(11)
+-73 117430
+fi=(15)
++73 234860
+fi=(21)
++45 117430
+cob=(3)
+cfi=(14)
+cfn=(42)
+calls=117430 0 
+* 6693510
+* 117430
+fi=(15)
+1987 117430
+fe=(11)
+41 117430
+fi=(47) /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/stl_uninitialized.h
+273 117430
+fi=(15)
+1986 117430
+fe=(11)
+41 117430
+fi=(15)
+1987 117430
+fi=(47)
+273 234860
+fi=(15)
+1989 117430
+fi=(47)
+273 117430
+fe=(11)
+41 117430
+cob=(4)
+cfi=(16)
+cfn=(54)
+calls=117430 -6 
+* 14562652
+cob=(7)
+cfi=(3)
+cfn=(8)
+calls=1 +26 
+* 953
+* 117434
+fi=(21)
+151 234860
+cob=(3)
+cfi=(14)
+cfn=(42)
+calls=117430 0 
+* 6693510
+* 117430
+fi=(15)
+1986 117430
++1 117430
+fi=(29)
+512 234860
+fi=(15)
+1986 117430
++1 117430
+-1 117430
+fi=(29)
+512 117430
+cfi=(19)
+cfn=(76)
+calls=117430 +76 
+* 10568700
+fi=(18)
+203 117430
+fi=(15)
+1989 117430
+fi=(26)
+50 117430
+fi=(18)
+203 117430
+cob=(5)
+cfi=(9)
+cfn=(86)
+calls=117430 0 
+* 10451270
+* 117430
+fi=(22) /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/unique_ptr.h
+-10 117430
+fe=(11)
+35 117430
+fi=(26)
++16 234860
+fe=(11)
+-16 117430
+fi=(26)
++16 117430
++96 117430
+-2 117430
+-7 117430
++9 117430
+fe=(11)
+35 117430
+fi=(26)
+145 234860
+-94 117430
++94 117430
++1 117430
+-96 117430
++96 117430
+-95 117430
++96 117430
+cfi=(23)
+cfn=(92)
+calls=117430 399 
+* 517985053
+fi=(20)
+427 234860
+fi=(19)
+646 117430
+fe=(11)
+35 352290
+fi=(18)
+203 117430
+cob=(5)
+cfi=(9)
+cfn=(86)
+calls=117430 0 
+* 10451270
+* 117430
+fi=(15)
+802 234860
+fi=(44) /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/stl_construct.h
+211 352290
+fi=(15)
+395 234860
+802 234860
+fi=(44)
+211 704580
+fi=(18)
+-8 117430
+fi=(44)
++8 117430
+fi=(18)
+-8 117430
+cob=(5)
+cfi=(9)
+cfn=(86)
+calls=117430 0 
+* 10451270
+* 117430
+fi=(44)
++8 234860
+fi=(15)
+376 469720
++19 234860
+-19 117430
+fi=(21)
+172 234860
+fi=(15)
+376 117430
+fi=(21)
+172 117430
+cob=(3)
+cfi=(14)
+cfn=(224)
+calls=117430 0 
+* 11390710
+* 117430
+* 117430
+fi=(15)
+805 352290
+cfn=(232) std::_Vector_base<double, std::allocator<double> >::~_Vector_base()
+calls=117430 373 
+* 12330150
+1283 117430
+fi=(13)
+1059 117430
+fe=(11)
+38 117430
+fi=(13)
+1340 234860
+fe=(11)
+38 117430
+fi=(13)
+1340 234860
+fe=(11)
+38 117430
+fi=(13)
+1340 234860
+fe=(11)
+32 352290
++1 234860
+
+fl=(17)
+fn=(158)
+266 1409160
+fi=(28)
+116 1409160
+fi=(19)
+580 939440
++46 469720
+fi=(29)
+271 469720
+fi=(19)
+580 469720
+fi=(29)
+273 939440
+fi=(19)
+635 469720
++11 939440
+-2 469720
+-18 469720
+fi=(30)
+763 939440
+432 469720
+fi=(19)
+646 469720
+fi=(30)
+436 469720
+-4 939440
++4 1996310
+fi=(31)
+252 704580
+-82 352290
+fi=(30)
+436 1056870
+fi=(31)
+252 939440
+-82 469720
+fi=(30)
+436 1409160
+-26 1291730
+fi=(48) /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h
+42 704580
+fi=(49) /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h
+-18 352290
+fi=(30)
+410 1056870
+fe=(17)
+268 2348600
+fi=(18)
++89 1409160
++97 1878880
+182 939440
+cob=(5)
+cfi=(9)
+cfn=(46)
+calls=469720 0 
+* 19728240
+* 469720
++3 2348600
++6 939440
+fi=(19)
+639 939440
+fi=(18)
+185 704580
+fe=(17)
+
+fn=(194)
+217 704580
+fi=(19)
+580 117430
++46 117430
+-46 117430
+fi=(29)
+273 352290
+fi=(19)
+635 117430
+fi=(18)
+357 352290
++97 234860
+182 234860
+cob=(5)
+cfi=(9)
+cfn=(46)
+calls=117430 0 
+* 4579770
+* 117430
++3 352290
++6 234860
+fi=(19)
+644 117430
+-18 117430
++13 117430
++7 117430
+fi=(30)
+763 234860
+fi=(19)
+646 234860
+fi=(30)
+517 117430
+fe=(17)
+226 234860
+fi=(36) /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/CoreEvaluators.h
+589 117430
+fe=(17)
+225 352290
++1 352290
+874 234860
+cob=(21)
+cfi=(43)
+cfn=(206)
+calls=117430 0 
+* 6341220
+cob=(7)
+cfi=(3)
+cfn=(8)
+calls=1 67 
+* 1319
+* 117434
+* 587150
+fi=(49)
+24 117430
+fi=(30)
+517 352290
+fe=(17)
+229 939440
+
+fn=(62)
+977 587150
+fi=(15)
+1119 234860
+fi=(19)
+580 234860
++55 117430
+fi=(13)
+1059 234860
+fi=(15)
++60 117430
+fe=(17)
+983 117430
+fi=(19)
+644 117430
+fe=(17)
+984 352290
+fi=(20)
+427 939440
+fe=(17)
+985 939440
+-1 469720
++1 469720
++1 469720
+-2 939440
++5 587150
+fi=(18)
+182 469720
+cob=(5)
+cfi=(9)
+cfn=(46)
+calls=117430 0 
+* 5049490
+* 117430
++3 469720
++6 234860
+fi=(19)
+639 234860
+fi=(18)
+185 234860
+fe=(17)
+
+fn=(138)
+278 1878880
+fi=(50) /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/Product.h
+96 1409160
+fi=(19)
+580 2348600
+fi=(29)
+367 1409160
+cfn=(122)
+calls=469720 -96 
+* 38751900
+fi=(19)
+472 469720
+626 469720
+fi=(42) /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/ProductEvaluators.h
+145 939440
+fi=(32) /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h
+-74 939440
+fi=(19)
+647 469720
+fi=(12)
+1143 469720
+924 939440
++1 1409160
+cob=(5)
+cfi=(9)
+cfn=(148)
+calls=469720 0 
+* 5636640
+* 469720
+* 469720
+fi=(19)
+472 469720
++22 469720
+-21 469720
+fi=(42)
+-94 939440
+fi=(19)
+646 352290
+fi=(51) /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/GeneralProduct.h
+253 704580
+fi=(34)
+-82 1056870
+fi=(51)
++82 352290
+fi=(34)
+-82 352290
+fi=(51)
++82 352290
+cfi=(33)
+cfn=(150)
+calls=352290 108 
+* 98171480
+fe=(17)
++27 2113740
+fi=(38) /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/Block.h
++65 234860
+fi=(39) /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/MapBase.h
+176 234860
+fi=(19)
+646 117430
+-20 117430
+fi=(38)
+345 234860
+fi=(39)
+176 234860
+fi=(40) /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/Dot.h
+-99 234860
+fi=(41) /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/Redux.h
+462 117430
+-1 234860
+fi=(37)
+237 234860
+fi=(41)
+-34 587150
+fi=(37)
++34 234860
+fi=(41)
+-34 117430
+fi=(48)
+42 117430
+fi=(41)
+203 234860
+fi=(37)
++34 234860
+fi=(41)
+-34 117430
+fi=(48)
+42 117430
+fi=(41)
+203 234860
+fi=(42)
+380 117430
+fe=(17)
+280 117430
+fi=(42)
+380 117430
+fe=(17)
+280 587150
+
+fn=(170)
+212 1409160
+fi=(19)
+580 352290
++46 352290
+-46 352290
+fi=(29)
+273 1056870
+fi=(19)
+635 352290
+fi=(18)
+357 1056870
++97 704580
+182 352290
+454 352290
+182 704580
+cob=(5)
+cfi=(9)
+cfn=(46)
+calls=352290 0 
+* 15148470
+* 352290
++3 1409160
++6 704580
+fi=(19)
+639 352290
++7 352290
+-2 352290
+-18 352290
+fi=(30)
+763 704580
+fi=(19)
+646 352290
+fi=(30)
+517 352290
+fi=(49)
+24 1761450
+fi=(36)
+589 352290
+fi=(49)
+24 1409160
+fi=(30)
+517 1056870
+fi=(36)
++72 1526590
+fi=(49)
+24 6106360
+fi=(30)
+517 4579770
+fe=(17)
+214 1761450
+fi=(18)
+-29 704580
+fe=(17)
+
+fl=(15)
+fn=(232)
+373 117430
++3 117430
++19 234860
+-19 234860
+fi=(21)
+172 117430
+cob=(3)
+cfi=(14)
+cfn=(224)
+calls=117430 0 
+* 11390710
+* 117430
+fe=(15)
+
+fl=(24)
+fn=(94)
+2266 469720
+fi=(25)
+1071 234860
+fe=(24)
+811 234860
+fi=(25)
+584 704580
+fe=(24)
+2205 469720
+fi=(25)
+584 234860
+fe=(24)
+2206 469720
++3 234860
+fi=(52) /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/stl_function.h
+375 234860
+fe=(24)
+2212 469720
+879 234860
+1929 469720
+
+totals: 678982406

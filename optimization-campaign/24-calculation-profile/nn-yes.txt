@@ -1,0 +1,79 @@
+--------------------------------------------------------------------------------
+Profile data file '/home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/nn.callgrind.1' (creator: callgrind-3.19.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 131409974
+Trigger: Client Request
+Profiled target:  /home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native nn /home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/runs/C-1/results/nn.bin (PID 242520, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  off
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+678,982,406 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                      file:function
+--------------------------------------------------------------------------------
+2,165,761,490 (319.0%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/lwtnn/generic/Graph.tcc:lwt::generic::FeedForwardNode<double>::compute(lwt::generic::ISource<double> const&) const'2 [/home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native]
+  675,115,977 (99.43%)  /mnt/c/Users/gwatts/OneDrive/Documents/ATLAS/Computing/AMG/CorrectionLib/profile-native-x2.cxx:main [/home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native]
+  672,841,580 (99.10%)  /home/gwatts/atlas/correctionlib_tests/src/nnjvt.hxx:NNJvt::evaluate_row(std::vector<double, std::allocator<double> > const&) const
+  519,981,363 (76.58%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/lwtnn/generic/FastGraph.tcc:NNJvt::evaluate_row(std::vector<double, std::allocator<double> > const&) const
+  517,985,053 (76.29%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/lwtnn/generic/Graph.tcc:lwt::generic::Graph<double>::compute(lwt::generic::ISource<double> const&, unsigned long) const [/home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native]
+  510,117,243 (75.13%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/lwtnn/generic/Graph.tcc:lwt::generic::FeedForwardNode<double>::compute(lwt::generic::ISource<double> const&) const [/home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native]
+  282,536,580 (41.61%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/lwtnn/generic/Stack.tcc:lwt::generic::FeedForwardNode<double>::compute(lwt::generic::ISource<double> const&) const'2
+  190,471,460 (28.05%)  ???:free [/usr/lib64/libc.so.6]
+  169,216,630 (24.92%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/lwtnn/generic/Stack.tcc:lwt::generic::MatrixLayer<double>::compute(Eigen::Matrix<double, -1, 1, 0, -1, 1> const&) const [/home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native]
+  135,279,360 (19.92%)  ???:_int_free [/usr/lib64/libc.so.6]
+  117,547,430 (17.31%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/util/Memory.h:lwt::generic::FeedForwardNode<double>::compute(lwt::generic::ISource<double> const&) const'2
+   99,580,640 (14.67%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/GeneralProduct.h:lwt::generic::MatrixLayer<double>::compute(Eigen::Matrix<double, -1, 1, 0, -1, 1> const&) const
+   98,171,480 (14.46%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h:Eigen::internal::general_matrix_vector_product<long, double, Eigen::internal::const_blas_data_mapper<double, long, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, long, 1>, false, 0>::run(long, long, Eigen::internal::const_blas_data_mapper<double, long, 0> const&, Eigen::internal::const_blas_data_mapper<double, long, 1> const&, double*, long, double) [clone .isra.0] [/home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native]
+   89,481,660 (13.18%)  ???:malloc [/usr/lib64/libc.so.6]
+   53,782,940 ( 7.92%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/lwtnn/generic/Stack.tcc:lwt::generic::BiasLayer<double>::compute(Eigen::Matrix<double, -1, 1, 0, -1, 1> const&) const [/home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native]
+   51,904,060 ( 7.64%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/lwtnn/generic/Graph.tcc:lwt::generic::InputNode<double>::compute(lwt::generic::ISource<double> const&) const [/home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native]
+   48,616,020 ( 7.16%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/PlainObjectBase.h:Eigen::PlainObjectBase<Eigen::Matrix<double, -1, 1, 0, -1, 1> >::resize(long, long) [/home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native]
+   48,381,160 ( 7.13%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/lwtnn/generic/FastGraph.tcc:lwt::generic::internal::LazySource<double>::at(unsigned long) const [/home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native]
+   46,737,140 ( 6.88%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/lwtnn/generic/Stack.tcc:lwt::generic::ReLULayer<double>::compute(Eigen::Matrix<double, -1, 1, 0, -1, 1> const&) const [/home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native]
+   43,449,100 ( 6.40%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/lwtnn/generic/FastInputPreprocessor.tcc:lwt::generic::FastInputPreprocessor<double>::operator()(Eigen::Matrix<double, -1, 1, 0, -1, 1> const&) const [/home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native]
+   40,161,060 ( 5.91%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/PlainObjectBase.h:lwt::generic::MatrixLayer<double>::compute(Eigen::Matrix<double, -1, 1, 0, -1, 1> const&) const
+   38,634,470 ( 5.69%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/util/Memory.h:Eigen::PlainObjectBase<Eigen::Matrix<double, -1, 1, 0, -1, 1> >::resize(long, long)
+   34,624,040 ( 5.10%)  src/nnjvt.hxx:NNJvt::evaluate_row(std::vector<double, std::allocator<double> > const&) const [/home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native]
+   32,293,250 ( 4.76%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/util/Memory.h:NNJvt::evaluate_row(std::vector<double, std::allocator<double> > const&) const
+   28,418,060 ( 4.19%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/util/Memory.h:lwt::generic::BiasLayer<double>::compute(Eigen::Matrix<double, -1, 1, 0, -1, 1> const&) const
+   26,069,460 ( 3.84%)  /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/new_allocator.h:NNJvt::evaluate_row(std::vector<double, std::allocator<double> > const&) const
+   24,777,730 ( 3.65%)  /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib/gcc/x86_64-pc-linux-gnu/15.2.0/include/emmintrin.h:Eigen::internal::general_matrix_vector_product<long, double, Eigen::internal::const_blas_data_mapper<double, long, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, long, 1>, false, 0>::run(long, long, Eigen::internal::const_blas_data_mapper<double, long, 0> const&, Eigen::internal::const_blas_data_mapper<double, long, 1> const&, double*, long, double) [clone .isra.0]
+   22,781,420 ( 3.36%)  ???:operator delete(void*, unsigned long) [/cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6.0.34]
+   22,311,700 ( 3.29%)  ???:0x0000000005a70340 [???]
+   21,841,980 ( 3.22%)  ???:operator delete(void*) [/cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6.0.34]
+   21,489,690 ( 3.16%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/util/Memory.h:lwt::generic::ReLULayer<double>::compute(Eigen::Matrix<double, -1, 1, 0, -1, 1> const&) const
+   21,372,260 ( 3.15%)  ???:0x0000000005a70b70 [???]
+   19,926,213 ( 2.93%)  /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/stl_algobase.h:NNJvt::evaluate_row(std::vector<double, std::allocator<double> > const&) const
+   19,729,563 ( 2.91%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/lwtnn/generic/Stack.tcc:lwt::generic::FeedForwardNode<double>::compute(lwt::generic::ISource<double> const&) const
+   19,106,299 ( 2.81%)  /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/stl_vector.h:NNJvt::evaluate_row(std::vector<double, std::allocator<double> > const&) const
+   18,437,833 ( 2.72%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/lwtnn/generic/Stack.tcc:lwt::generic::SigmoidLayer<double>::compute(Eigen::Matrix<double, -1, 1, 0, -1, 1> const&) const [/home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native]
+   17,966,790 ( 2.65%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/util/Memory.h:lwt::generic::FastInputPreprocessor<double>::operator()(Eigen::Matrix<double, -1, 1, 0, -1, 1> const&) const
+   14,562,652 ( 2.14%)  /build/atnight/localbuilds/nightlies/AnalysisBase/main/build/build/AnalysisBaseExternals/src/lwtnn/src/Stack.cxx:lwt::build_vector(std::vector<double, std::allocator<double> > const&) [/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/liblwtnn.so]
+   13,739,310 ( 2.02%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/lwtnn/generic/Stack.tcc:Eigen::Matrix<double, -1, 1, 0, -1, 1> lwt::generic::build_vector<double, double>(std::vector<double, std::allocator<double> > const&) [/home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native]
+   13,387,020 ( 1.97%)  ???:operator new(unsigned long) [/cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6.0.34]
+   12,330,150 ( 1.82%)  /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/stl_vector.h:std::_Vector_base<double, std::allocator<double> >::~_Vector_base() [/home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native]
+   11,625,570 ( 1.71%)  /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/new_allocator.h:std::_Vector_base<double, std::allocator<double> >::~_Vector_base()
+   10,920,990 ( 1.61%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/PlainObjectBase.h:NNJvt::evaluate_row(std::vector<double, std::allocator<double> > const&) const
+   10,686,130 ( 1.57%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/util/Memory.h:lwt::generic::FeedForwardNode<double>::compute(lwt::generic::ISource<double> const&) const
+   10,568,700 ( 1.56%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/DenseStorage.h:Eigen::DenseStorage<double, -1, -1, 1, 0>::DenseStorage(Eigen::DenseStorage<double, -1, -1, 1, 0> const&) [/home/gwatts/atlas/correctionlib_tests/optimization-campaign/24-calculation-profile/profile-native]
+   10,568,700 ( 1.56%)  ???:0x0000000005a70130 [???]
+   10,333,840 ( 1.52%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/PlainObjectBase.h:lwt::generic::FastInputPreprocessor<double>::operator()(Eigen::Matrix<double, -1, 1, 0, -1, 1> const&) const
+    9,629,260 ( 1.42%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/AssignEvaluator.h:lwt::generic::BiasLayer<double>::compute(Eigen::Matrix<double, -1, 1, 0, -1, 1> const&) const
+    9,394,400 ( 1.38%)  /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/stl_algobase.h:lwt::generic::MatrixLayer<double>::compute(Eigen::Matrix<double, -1, 1, 0, -1, 1> const&) const
+    9,276,970 ( 1.37%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h:lwt::generic::ReLULayer<double>::compute(Eigen::Matrix<double, -1, 1, 0, -1, 1> const&) const
+    9,042,110 ( 1.33%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/util/Memory.h:Eigen::DenseStorage<double, -1, -1, 1, 0>::DenseStorage(Eigen::DenseStorage<double, -1, -1, 1, 0> const&)
+    7,487,461 ( 1.10%)  /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/bits/stl_iterator.h:NNJvt::evaluate_row(std::vector<double, std::allocator<double> > const&) const
+    6,693,510 ( 0.99%)  /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/include/eigen3/Eigen/src/Core/AssignEvaluator.h:lwt::generic::ReLULayer<double>::compute(Eigen::Matrix<double, -1, 1, 0, -1, 1> const&) const
+
