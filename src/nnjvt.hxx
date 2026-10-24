@@ -1,13 +1,13 @@
 #include <array>
 #pragma once
-#include <lwtnn/generic/FastGraph.hh>
+#include "nn_graph.hxx"
 #include <lwtnn/parse_json.hh>
 #include <lwtnn/InputOrder.hh>
 #include <lwtnn/Stack.hh>
 #include <fstream>
 #include <algorithm>
 class NNJvt {
- std::unique_ptr<lwt::generic::FastGraph<double>> graph;
+ std::unique_ptr<CachedNNGraph> graph;
  std::vector<float> ptEdges,etaEdges;
  std::vector<std::vector<float>> cuts;
  bool bins(float pt,float eta,size_t& ip,size_t& ie) const {
@@ -22,7 +22,7 @@ public:
   std::ifstream input(path);if(!input)throw std::runtime_error("Cannot open NNJVT network");
   auto cfg=lwt::parse_json_graph(input);
   lwt::InputOrder order;order.scalar.emplace_back(cfg.inputs.at(0).name,std::vector<std::string>{"Rpt","JVFCorr","ptbin","etabin"});
-  graph=std::make_unique<lwt::generic::FastGraph<double>>(cfg,order);
+  graph=std::make_unique<CachedNNGraph>(cfg,order);
  }
  // pt, eta, DetectorEta, sumPtTrkPV, JVFCorr, hasPV
  std::array<double,2> evaluate_row(const std::vector<double>& r) const {
@@ -30,9 +30,7 @@ public:
    float score=-1;size_t ip=0,ie=0;
    if(r[5]!=0 && r[0]<=60000 && bins(float(r[0]),float(r[1]),ip,ie)){
     float rpt=r[0]!=0?float(r[3]/r[0]):0;
-    std::vector<double> f{rpt,float(r[4]),float(ip),float(ie)};
-    std::vector<lwt::VectorX<double>> scalars{lwt::build_vector(f)};
-    score=graph->compute(scalars)(0);
+    score=graph->score4({rpt,float(r[4]),float(ip),float(ie)});
    }
    float cut=-1;
    if(bins(float(r[0]),float(r[2]),ip,ie))cut=cuts.at(ip).at(ie);

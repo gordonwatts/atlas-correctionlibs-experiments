@@ -1,0 +1,25 @@
+<lcgdict>
+<class name="JetCaloQualityTool"/>
+<class name="JetCaloEnergies"/>
+<class name="JetClusterMomentsTool"/>
+<class name="JetConstitFourMomTool"/>
+<class name="JetECPSFractionTool"/>
+<class name="JetForwardJvtTool"/>
+<class name="JetForwardPFlowJvtTool"/>
+<class name="JetBalancePFlowJvtTool"/>
+<class name="JetLArHVTool"/>
+<class name="JetMuonSegmentMomentsTool"/>
+<class name="JetNumConstitTool"/>
+<class name="JetOriginCorrectionTool"/>
+<class name="JetPtAssociationTool"/>
+<class name="JetTrackMomentsTool"/>
+<class name="JetTrackSumMomentsTool"/>
+<class name="JetVertexFractionTool"/>
+<class name="JetVertexTaggerTool"/>
+<class name="JetPileupTag::JetVertexNNTagger"/>
+<class name="JetWidthTool"/>
+<class name="JetQGTaggerVariableTool"/>
+<class name="JetEMScaleMomTool"/>
+<class name="JetConstituentFrac"/>
+<class name="JetGroomMRatio"/>
+</lcgdict>

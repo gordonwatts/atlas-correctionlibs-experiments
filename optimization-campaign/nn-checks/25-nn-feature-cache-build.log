@@ -1,0 +1,180 @@
+[ 50%] Building CXX object CMakeFiles/_atlas_corrections.dir/src/nominal.cxx.o
+[100%] Linking CXX shared module _atlas_corrections.cpython-313-x86_64-linux-gnu.so
+[100%] Built target _atlas_corrections
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/gwatts/atlas/correctionlib_tests/install/python/_atlas_corrections.cpython-313-x86_64-linux-gnu.so
+-- Set non-toolchain portion of runtime path of "/home/gwatts/atlas/correctionlib_tests/install/python/_atlas_corrections.cpython-313-x86_64-linux-gnu.so" to ""
+-- Using the LCG modules without setting up a release
+-- Setting ATLAS specific build flags
+-- checker_gccplugins library not found
+-- Using the LCG modules without setting up a release
+-- Configuring ATLAS project with name "CorrectionLibOverlay" and version "1.0.0"
+-- Using build type: RelWithDebInfo
+-- Using platform name: x86_64-el9-gcc15-opt
+-- Cleaning stale files from build area
+-- Unit tests will be built by default
+-- Found 4 package(s)
+-- Considering package 1 / 4
+-- No package filtering rules read
+-- Configuring the build of package: JetCalibTools
+-- Configuring the build of package: JetJvtEfficiency
+-- Configuring the build of package: JetMomentTools
+-- Found FastJet: /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/bin/fastjet-config (found version "3.5.0")
+-- Found nlohmann_json: /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found version "3.12.0")
+-- Configuring the build of package: JetUncertainties
+-- Number of packages configured: 4
+-- Time for package configuration: 4 second(s)
+-- Generated file: /home/gwatts/atlas/correctionlib_tests/build-overlay/x86_64-el9-gcc15-opt/packages.txt
+-- Including the packages from project AnalysisBase - 25.2.100...
+-- Including the packages from project AnalysisBaseExternals - 25.2.100...
+-- Generated file: /home/gwatts/atlas/correctionlib_tests/build-overlay/x86_64-el9-gcc15-opt/compilers.txt
+-- Generated file: /home/gwatts/atlas/correctionlib_tests/build-overlay/x86_64-el9-gcc15-opt/ReleaseData
+CMake Warning at /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/cmake/modules/AtlasInternals.cmake:623 (message):
+  CPack packaging will only work correctly with
+  CMAKE_INSTALL_PREFIX=/CorrectionLibOverlay/1.0.0/InstallArea/x86_64-el9-gcc15-opt
+Call Stack (most recent call first):
+  CMakeLists.txt:5 (atlas_cpack_setup)
+
+
+-- Configuring done (4.7s)
+-- Generating done (0.4s)
+-- Build files have been written to: /home/gwatts/atlas/correctionlib_tests/build-overlay
+[  1%] Generating test-bin/JetJVTNN_TestCfg.exe
+[  1%] Built target JetMomentToolsTestScriptInstall
+[  1%] Built target JetUncertaintiesDictDictGen
+[  2%] Built target JetCalibToolsDictDictGen
+[  3%] Built target JetJvtEfficiencyDictDictGen
+[  4%] Built target JetUncertaintiesHeaderInstall
+[  4%] Built target JetCalibToolsHeaderInstall
+[  4%] Built target JetJvtEfficiencyHeaderInstall
+[  5%] Generating ../x86_64-el9-gcc15-opt/include/JetMomentTools
+[  7%] Built target JetCalibToolsDataInstall
+[  7%] Built target JetMomentToolsHeaderInstall
+[ 10%] Built target JetCalibToolsPythonInstall
+[ 10%] Built target JetCalibToolsPyCompile
+[ 11%] Built target JetJvtEfficiencyPyCompile
+[ 12%] Built target JetJvtEfficiencyPythonInstall
+[ 12%] Running JetMomentToolsPythonInstall post-command
+[ 12%] Compiling python modules
+[ 13%] Generating ../x86_64-el9-gcc15-opt/python/JetMomentTools/JetMomentToolsConfig.py
+[ 13%] Built target JetMomentToolsPythonInstall
+[ 13%] Generating ../x86_64-el9-gcc15-opt/data/JetMomentTools/JVTlikelihood_20140805.root
+[ 13%] Built target JetMomentToolsDataInstall
+[ 14%] Building CXX object JetMomentTools/CMakeFiles/JetJVTNN_testCfg.exe.dir/util/JetJvtNN_testCfg.cxx.o
+[ 14%] Built target JetMomentToolsPyCompile
+[ 19%] Built target JetUncertaintiesGenericInstall
+[ 19%] Built target Package_JetMomentTools_tests
+[ 36%] Built target JetUncertaintiesLib
+[ 54%] Built target JetCalibToolsLib
+[ 55%] Built target JetUncertaintiesDict
+[ 56%] Built target MakeCorrelationMatrixPlots
+[ 58%] Built target MakeUncertaintyPlots
+[ 59%] Built target JetUncertainties_testTool
+[ 60%] Built target JetUncertainties_testResolution
+[ 61%] Built target FFJetSmearingTool_MyExample
+[ 62%] Built target JMR_MakeUncertaintyPlots
+[ 62%] Built target atlas_tests
+[ 63%] Built target JetUncertainties
+[ 64%] Built target JetCalibTools
+[ 64%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/BoostedJetTaggerTool.cxx.o
+[ 64%] Generating JetMomentToolsDictReflexDict.cxx
+[ 64%] Built target JetMomentToolsDictDictGen
+[ 65%] Built target JetCalibToolsDict
+[ 66%] Built target JetCalibTools_Example
+[ 67%] Built target JetCalibTools_PlotJESFactors
+[ 68%] Built target JetCalibTools_PlotJMSFactors
+[ 69%] Built target JetCalibTools_SmearingPlots
+[ 70%] Built /home/gwatts/atlas/correctionlib_tests/build-overlay/x86_64-el9-gcc15-opt/lib/CorrectionLibOverlay.rootmap
+[ 70%] Built target CorrectionLibOverlayRootMapMerge
+[ 71%] Built target JetUncertaintiesComponentsList
+[ 72%] Built target JetCalibToolsComponentsList
+[ 72%] Built target Package_JetUncertainties
+[ 72%] Built target Package_JetCalibTools
+[ 73%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetBalancePFlowJvtTool.cxx.o
+[ 73%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetCaloEnergies.cxx.o
+[ 74%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetCaloQualityTool.cxx.o
+[ 74%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetCaloQualityToolFE.cxx.o
+[ 74%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/JetJVTNN_testCfg.exe
+Detaching debug info of JetJVTNN_testCfg.exe into JetJVTNN_testCfg.exe.dbg
+[ 74%] Built target JetJVTNN_testCfg.exe
+[ 75%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetClusterMomentsTool.cxx.o
+[ 76%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetConstitFourMomTool.cxx.o
+[ 76%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetConstituentFrac.cxx.o
+[ 77%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetDRTrackAssocTool.cxx.o
+[ 77%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetECPSFractionTool.cxx.o
+[ 78%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetEMScaleMomTool.cxx.o
+[ 78%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetForwardJvtTool.cxx.o
+[ 79%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetForwardJvtToolBDT.cxx.o
+[ 80%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetForwardPFlowJvtTool.cxx.o
+[ 80%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetGroomMRatio.cxx.o
+[ 81%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetLArHVTool.cxx.o
+[ 81%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetNumConstitsTool.cxx.o
+[ 82%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetOriginCorrectionTool.cxx.o
+[ 82%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetPtAssociationTool.cxx.o
+[ 83%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetQGTaggerVariableTool.cxx.o
+[ 84%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetTrackMomentsTool.cxx.o
+[ 84%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetTrackSumMomentsTool.cxx.o
+[ 85%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetVertexFractionTool.cxx.o
+[ 85%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetVertexNNTagger.cxx.o
+[ 86%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetVertexTaggerTool.cxx.o
+[ 86%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetWidthTool.cxx.o
+[ 87%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/NNJvtBinning.cxx.o
+[ 88%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetMomentToolsLib.so
+Detaching debug info of libJetMomentToolsLib.so into libJetMomentToolsLib.so.dbg
+[ 88%] Built target JetMomentToolsLib
+[ 89%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsDict.dir/CMakeFiles/JetMomentToolsDictReflexDict.cxx.o
+[ 90%] Building CXX object JetMomentTools/CMakeFiles/JetMomentTools.dir/src/components/JetMomentTools_entries.cxx.o
+[ 91%] Building CXX object JetJvtEfficiency/CMakeFiles/JetJvtEfficiencyLib.dir/Root/FJvtEfficiencyTool.cxx.o
+[ 91%] Building CXX object JetJvtEfficiency/CMakeFiles/JetJvtEfficiencyLib.dir/Root/FJvtSelectionTool.cxx.o
+[ 92%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetMomentToolsDict.so
+Detaching debug info of libJetMomentToolsDict.so into libJetMomentToolsDict.so.dbg
+[ 92%] Built target JetMomentToolsDict
+[ 93%] Building CXX object JetJvtEfficiency/CMakeFiles/JetJvtEfficiencyLib.dir/Root/JvtEfficiencyTool.cxx.o
+[ 93%] Linking CXX shared module ../x86_64-el9-gcc15-opt/lib/libJetMomentTools.so
+Detaching debug info of libJetMomentTools.so into libJetMomentTools.so.dbg
+[ 93%] Built target JetMomentTools
+[ 94%] Building CXX object JetJvtEfficiency/CMakeFiles/JetJvtEfficiencyLib.dir/Root/JvtEfficiencyToolBase.cxx.o
+[ 94%] Building CXX object JetJvtEfficiency/CMakeFiles/JetJvtEfficiencyLib.dir/Root/JvtSelectionTool.cxx.o
+[ 95%] Building CXX object JetJvtEfficiency/CMakeFiles/JetJvtEfficiencyLib.dir/Root/JvtSelectionToolBase.cxx.o
+In file included from /home/gwatts/atlas/correctionlib_tests/src/adapter_support.hxx:2,
+                 from /home/gwatts/atlas/correctionlib_tests/atlas-overlay/JetJvtEfficiency/Root/JvtEfficiencyToolBase.cxx:1:
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx: In member function 'std::vector<std::vector<double> > Nominal::batch(const std::vector<std::vector<double> >&) const':
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx:42:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   42 |   for(const auto& r:rows)out.push_back(evaluate(r));return out;
+      |   ^~~
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx:42:53: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   42 |   for(const auto& r:rows)out.push_back(evaluate(r));return out;
+      |                                                     ^~~~~~
+In file included from /home/gwatts/atlas/correctionlib_tests/src/backend.hxx:73:
+/home/gwatts/atlas/correctionlib_tests/src/systematics.hxx: In member function 'double JetSystematics::component(const CompiledComponent&, double, double, double, double, bool) const':
+/home/gwatts/atlas/correctionlib_tests/src/systematics.hxx:32:35: warning: unused variable 'hist' [-Wunused-variable]
+   32 |   const std::string &name=c.name,&hist=c.hist,&mode=c.mode;
+      |                                   ^~~~
+/home/gwatts/atlas/correctionlib_tests/src/systematics.hxx:32:48: warning: unused variable 'mode' [-Wunused-variable]
+   32 |   const std::string &name=c.name,&hist=c.hist,&mode=c.mode;
+      |                                                ^~~~
+[ 95%] Building CXX object JetJvtEfficiency/CMakeFiles/JetJvtEfficiencyLib.dir/Root/NNJvtEfficiencyTool.cxx.o
+/home/gwatts/atlas/correctionlib_tests/atlas-overlay/JetJvtEfficiency/Root/JvtEfficiencyToolBase.cxx: At global scope:
+/home/gwatts/atlas/correctionlib_tests/atlas-overlay/JetJvtEfficiency/Root/JvtEfficiencyToolBase.cxx:17:10: warning: 'bool {anonymous}::getBinContentAndError(const TH2&, float, float, float&, float&)' defined but not used [-Wunused-function]
+   17 |     bool getBinContentAndError(const TH2 &h, float x, float y, float &content, float &error) {
+      |          ^~~~~~~~~~~~~~~~~~~~~
+[ 96%] Building CXX object JetJvtEfficiency/CMakeFiles/JetJvtEfficiencyLib.dir/Root/NNJvtSelectionTool.cxx.o
+[ 97%] Generating ../x86_64-el9-gcc15-opt/lib/libJetMomentTools.asgcomponents
+[ 97%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetJvtEfficiencyLib.so
+Detaching debug info of libJetJvtEfficiencyLib.so into libJetJvtEfficiencyLib.so.dbg
+[ 97%] Built target JetMomentToolsComponentsList
+[ 97%] Built target Package_JetMomentTools
+[ 97%] Built target JetJvtEfficiencyLib
+[ 98%] Building CXX object JetJvtEfficiency/CMakeFiles/JetJvtEfficiency.dir/src/components/JetJvtEfficiency_entries.cxx.o
+[ 99%] Building CXX object JetJvtEfficiency/CMakeFiles/JetJvtEfficiencyDict.dir/CMakeFiles/JetJvtEfficiencyDictReflexDict.cxx.o
+[ 99%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetJvtEfficiencyDict.so
+Detaching debug info of libJetJvtEfficiencyDict.so into libJetJvtEfficiencyDict.so.dbg
+[ 99%] Built target JetJvtEfficiencyDict
+[ 99%] Linking CXX shared module ../x86_64-el9-gcc15-opt/lib/libJetJvtEfficiency.so
+Detaching debug info of libJetJvtEfficiency.so into libJetJvtEfficiency.so.dbg
+[ 99%] Built target JetJvtEfficiency
+[100%] Generating ../x86_64-el9-gcc15-opt/lib/libJetJvtEfficiency.asgcomponents
+[100%] Built target JetJvtEfficiencyComponentsList
+[100%] Built /home/gwatts/atlas/correctionlib_tests/build-overlay/x86_64-el9-gcc15-opt/lib/CorrectionLibOverlay.asgcomponents
+[100%] Built target Package_JetJvtEfficiency
+[100%] Built target CorrectionLibOverlayComponentsMerge
