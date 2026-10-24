@@ -1,0 +1,51 @@
+{
+  "path": "C",
+  "iteration": 1,
+  "wall_seconds": 63.95740454200131,
+  "stage_seconds": [
+    8.676006875000894,
+    29.972300364999683,
+    25.309076777000882
+  ],
+  "commands": [
+    [
+      "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+      "-m",
+      "cProfile",
+      "-o",
+      "/home/gwatts/atlas/correctionlib_tests/optimization-campaign/11-profile/runs/C-1/profile-0.pstats",
+      "scripts/run-columnar-nominal.py",
+      "--events",
+      "20000",
+      "--chunk-size",
+      "1000"
+    ],
+    [
+      "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+      "-m",
+      "cProfile",
+      "-o",
+      "/home/gwatts/atlas/correctionlib_tests/optimization-campaign/11-profile/runs/C-1/profile-1.pstats",
+      "scripts/run-columnar-systematics.py",
+      "--events",
+      "20000",
+      "--output",
+      "results/columnar-kinematics.root"
+    ],
+    [
+      "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+      "-m",
+      "cProfile",
+      "-o",
+      "/home/gwatts/atlas/correctionlib_tests/optimization-campaign/11-profile/runs/C-1/profile-2.pstats",
+      "scripts/run-columnar-jvt.py",
+      "--events",
+      "20000",
+      "--output",
+      "results/columnar-jvt.root",
+      "--kinematics",
+      "results/columnar-kinematics.root"
+    ]
+  ],
+  "events": 20000
+}

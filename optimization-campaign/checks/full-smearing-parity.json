@@ -1,0 +1,12 @@
+{
+  "columnar-kinematics.root": {
+    "states": 117,
+    "fields": 819,
+    "bitwise_equal": true
+  },
+  "columnar-jvt.root": {
+    "states": 119,
+    "fields": 833,
+    "bitwise_equal": true
+  }
+}

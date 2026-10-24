@@ -1,0 +1,15 @@
+==139495== Callgrind, a call-graph generating cache profiler
+==139495== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==139495== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==139495== Command: /home/gwatts/atlas/correctionlib_tests/optimization-campaign/11-profile/profile-systematics /home/gwatts/atlas/correctionlib_tests/optimization-campaign/11-profile/rows.bin
+==139495== 
+==139495== For interactive control, run 'callgrind_control -h'.
+==139495== brk segment overflow in thread #1: can't grow to 0x4838000
+==139495== (see section Limitations in user manual)
+==139495== NOTE: further instances of this message will not be shown
+2048 jets, 117 states, checksum 1.03767e+10
+==139495== 
+==139495== Events    : Ir
+==139495== Collected : 3013840027
+==139495== 
+==139495== I   refs:      3,013,840,027
