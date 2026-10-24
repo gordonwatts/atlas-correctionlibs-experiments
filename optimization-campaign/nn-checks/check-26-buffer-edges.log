@@ -1,0 +1,2 @@
+PASS buffered path active; no Eigen allocations after warmup; unsupported-activation fallback and permuted input order
+PASS302104 exact comparisons: repeats, collisions, reverse traversal, thread isolation, model replacement, extreme/signed-zero inputs

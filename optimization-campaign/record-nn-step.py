@@ -20,7 +20,7 @@ descriptions={
 description,code=descriptions[label]
 folder=r/'optimization-campaign'/label
 summary=json.loads((folder/'summary.json').read_text());assert summary['passed']
-for name in ('record-nn-step.py','build-nn-step.sh','check-nn-graph.cxx','check-nn-graph.py','check-nn-graph.sh','implement-nn-cache.py'):
+for name in ('record-nn-step.py','build-nn-step.sh','check-nn-graph.cxx','check-nn-graph.py','check-nn-graph.sh','implement-nn-cache.py','implement-nn-buffers.py'):
  shutil.copy2(w/name,r/'optimization-campaign'/name)
 lib=r/'venv/lib/python3.13/site-packages/correctionlib/lib/libcorrectionlib.so'
 metadata=dict(library_sha256=hashlib.sha256(lib.read_bytes()).hexdigest(),library_source_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=r/'external/correctionlib',text=True).strip(),single_core=True)
@@ -55,3 +55,4 @@ row=rows[-1];link='columnar-source/'+row['code']
 line=f"| {row['label']} | {row['mean']:.2f} ± {row['sd']:.2f} | {row['description']} [Source]({link}) | `{row['commit']}` |"
 s=s[:end]+'\n'+line+s[end:];p.write_text(s)
 print(commit,summary['mean'],flush=True)
+

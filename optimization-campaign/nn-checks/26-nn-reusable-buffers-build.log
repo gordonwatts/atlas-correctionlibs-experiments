@@ -1,0 +1,109 @@
+[ 50%] Building CXX object CMakeFiles/_atlas_corrections.dir/src/nominal.cxx.o
+[100%] Linking CXX shared module _atlas_corrections.cpython-313-x86_64-linux-gnu.so
+[100%] Built target _atlas_corrections
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/gwatts/atlas/correctionlib_tests/install/python/_atlas_corrections.cpython-313-x86_64-linux-gnu.so
+-- Set non-toolchain portion of runtime path of "/home/gwatts/atlas/correctionlib_tests/install/python/_atlas_corrections.cpython-313-x86_64-linux-gnu.so" to ""
+-- Using the LCG modules without setting up a release
+-- Setting ATLAS specific build flags
+-- checker_gccplugins library not found
+-- Using the LCG modules without setting up a release
+-- Configuring ATLAS project with name "CorrectionLibOverlay" and version "1.0.0"
+-- Using build type: RelWithDebInfo
+-- Using platform name: x86_64-el9-gcc15-opt
+-- Cleaning stale files from build area
+-- Unit tests will be built by default
+-- Found 4 package(s)
+-- Considering package 1 / 4
+-- No package filtering rules read
+-- Configuring the build of package: JetCalibTools
+-- Configuring the build of package: JetJvtEfficiency
+-- Configuring the build of package: JetMomentTools
+-- Configuring the build of package: JetUncertainties
+-- Number of packages configured: 4
+-- Time for package configuration: 2 second(s)
+-- Generated file: /home/gwatts/atlas/correctionlib_tests/build-overlay/x86_64-el9-gcc15-opt/packages.txt
+-- Including the packages from project AnalysisBase - 25.2.100...
+-- Including the packages from project AnalysisBaseExternals - 25.2.100...
+-- Generated file: /home/gwatts/atlas/correctionlib_tests/build-overlay/x86_64-el9-gcc15-opt/compilers.txt
+-- Generated file: /home/gwatts/atlas/correctionlib_tests/build-overlay/x86_64-el9-gcc15-opt/ReleaseData
+CMake Warning at /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/cmake/modules/AtlasInternals.cmake:623 (message):
+  CPack packaging will only work correctly with
+  CMAKE_INSTALL_PREFIX=/CorrectionLibOverlay/1.0.0/InstallArea/x86_64-el9-gcc15-opt
+Call Stack (most recent call first):
+  CMakeLists.txt:5 (atlas_cpack_setup)
+
+
+-- Configuring done (2.7s)
+-- Generating done (0.3s)
+-- Build files have been written to: /home/gwatts/atlas/correctionlib_tests/build-overlay
+[  1%] Built target JetMomentToolsTestScriptInstall
+[  1%] Built target JetUncertaintiesDictDictGen
+[  2%] Built target JetJvtEfficiencyDictDictGen
+[  3%] Built target JetCalibToolsDictDictGen
+[  4%] Built target JetUncertaintiesHeaderInstall
+[  4%] Built target JetCalibToolsHeaderInstall
+[  4%] Built target JetJvtEfficiencyHeaderInstall
+[  4%] Built target JetMomentToolsDictDictGen
+[  5%] Built target JetMomentToolsHeaderInstall
+[  7%] Built target JetCalibToolsDataInstall
+[ 10%] Built target JetCalibToolsPythonInstall
+[ 10%] Built target JetCalibToolsPyCompile
+[ 11%] Built target JetJvtEfficiencyPyCompile
+[ 12%] Built target JetJvtEfficiencyPythonInstall
+[ 13%] Built target JetMomentToolsPythonInstall
+[ 13%] Built target JetMomentToolsPyCompile
+[ 13%] Built target JetMomentToolsDataInstall
+[ 18%] Built target JetUncertaintiesGenericInstall
+[ 18%] Built target Package_JetMomentTools_tests
+[ 19%] Built target JetJVTNN_testCfg.exe
+[ 20%] Built /home/gwatts/atlas/correctionlib_tests/build-overlay/x86_64-el9-gcc15-opt/lib/CorrectionLibOverlay.rootmap
+[ 20%] Built target CorrectionLibOverlayRootMapMerge
+[ 20%] Built target atlas_tests
+[ 37%] Built target JetUncertaintiesLib
+[ 38%] Built target JetUncertainties
+[ 39%] Built target JetUncertaintiesDict
+[ 45%] Built target MakeUncertaintyPlots
+[ 59%] Built target JetCalibToolsLib
+[ 60%] Built target MakeCorrelationMatrixPlots
+[ 61%] Built target JetUncertainties_testTool
+[ 62%] Built target JetUncertainties_testResolution
+[ 63%] Built target FFJetSmearingTool_MyExample
+[ 64%] Built target JetUncertaintiesComponentsList
+[ 65%] Built target JMR_MakeUncertaintyPlots
+[ 66%] Built target JetCalibTools
+[ 67%] Built target JetCalibToolsDict
+[ 69%] Built target JetCalibTools_Example
+[ 69%] Built target JetCalibTools_PlotJESFactors
+[ 70%] Built target JetCalibTools_PlotJMSFactors
+[ 71%] Built target JetCalibTools_SmearingPlots
+[ 71%] Built target Package_JetUncertainties
+[ 72%] Built target JetCalibToolsComponentsList
+[ 72%] Built target Package_JetCalibTools
+[ 72%] Building CXX object JetMomentTools/CMakeFiles/JetMomentToolsLib.dir/Root/JetVertexNNTagger.cxx.o
+[ 73%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetMomentToolsLib.so
+Detaching debug info of libJetMomentToolsLib.so into libJetMomentToolsLib.so.dbg
+[ 88%] Built target JetMomentToolsLib
+[ 89%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetMomentToolsDict.so
+[ 89%] Linking CXX shared module ../x86_64-el9-gcc15-opt/lib/libJetMomentTools.so
+[ 89%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetJvtEfficiencyLib.so
+Detaching debug info of libJetMomentTools.so into libJetMomentTools.so.dbg
+Detaching debug info of libJetMomentToolsDict.so into libJetMomentToolsDict.so.dbg
+[ 90%] Built target JetMomentTools
+[ 91%] Generating ../x86_64-el9-gcc15-opt/lib/libJetMomentTools.asgcomponents
+[ 92%] Built target JetMomentToolsDict
+Detaching debug info of libJetJvtEfficiencyLib.so into libJetJvtEfficiencyLib.so.dbg
+[ 97%] Built target JetJvtEfficiencyLib
+[ 97%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetJvtEfficiencyDict.so
+[ 97%] Linking CXX shared module ../x86_64-el9-gcc15-opt/lib/libJetJvtEfficiency.so
+Detaching debug info of libJetJvtEfficiency.so into libJetJvtEfficiency.so.dbg
+Detaching debug info of libJetJvtEfficiencyDict.so into libJetJvtEfficiencyDict.so.dbg
+[ 98%] Built target JetJvtEfficiencyDict
+[ 99%] Built target JetJvtEfficiency
+[100%] Generating ../x86_64-el9-gcc15-opt/lib/libJetJvtEfficiency.asgcomponents
+[100%] Built target JetMomentToolsComponentsList
+[100%] Built target Package_JetMomentTools
+[100%] Built target JetJvtEfficiencyComponentsList
+[100%] Built target Package_JetJvtEfficiency
+[100%] Built /home/gwatts/atlas/correctionlib_tests/build-overlay/x86_64-el9-gcc15-opt/lib/CorrectionLibOverlay.asgcomponents
+[100%] Built target CorrectionLibOverlayComponentsMerge

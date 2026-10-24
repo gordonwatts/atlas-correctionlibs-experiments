@@ -1,6 +1,7 @@
 #pragma once
 #include <lwtnn/generic/FastGraph.hh>
 #include <lwtnn/Stack.hh>
+#include "nn_buffered.hxx"
 #include <array>
 #include <atomic>
 #include <cmath>
@@ -17,6 +18,7 @@ class CachedNNGraph {
  inline static std::atomic<uint64_t> nextId{1};
  const uint64_t id=nextId.fetch_add(1);
  lwt::generic::FastGraph<double> graph;
+ BufferedNN buffered;
  bool supported;
  bool cacheEnabled;
  static Key key(const std::array<double,4>& input){Key out;std::memcpy(out.data(),input.data(),sizeof(out));return out;}
@@ -26,20 +28,24 @@ class CachedNNGraph {
   return h&((1u<<18)-1);
  }
 public:
- CachedNNGraph(const lwt::GraphConfig& cfg,const lwt::InputOrder& order,bool enabled=true):graph(cfg,order),
+ CachedNNGraph(const lwt::GraphConfig& cfg,const lwt::InputOrder& order,bool enabled=true):graph(cfg,order),buffered(cfg,order),
   supported(cfg.inputs.size()==1&&cfg.inputs[0].variables.size()==4&&cfg.input_sequences.empty()&&cfg.outputs.size()==1&&cfg.outputs.begin()->second.labels.size()==1),cacheEnabled(enabled){}
  double reference_score4(const std::array<double,4>& input)const{
   std::vector<double> f(input.begin(),input.end());std::vector<lwt::VectorX<double>> nodes{lwt::build_vector(f)};
   return graph.compute(nodes)(0);
  }
+ double uncached_score4(const std::array<double,4>& input)const{
+  return buffered.supported()?buffered.evaluate(input,id):reference_score4(input);
+ }
  double score4(const std::array<double,4>& input)const{
-  if(!supported||!cacheEnabled)return reference_score4(input);
+  if(!supported)return reference_score4(input);
+  if(!cacheEnabled)return uncached_score4(input);
   for(double x:input)if(!std::isfinite(x))return reference_score4(input);
   static thread_local Cache cache;
   if(cache.owner!=id){cache.entries.assign(1u<<18,Entry{});cache.owner=id;}
   const auto k=key(input);auto& entry=cache.entries[slot(k)];
   if(entry.valid&&entry.key==k)return entry.score;
-  const double value=reference_score4(input);
+  const double value=uncached_score4(input);
   // Retain the first feature tuple in each slot, favoring nominal inputs.
   // Collisions always evaluate normally; no hash-only equality is allowed.
   if(!entry.valid)entry={k,value,true};

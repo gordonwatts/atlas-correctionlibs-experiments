@@ -1,0 +1,19 @@
+{
+  "path": "C",
+  "iteration": 3,
+  "wall_seconds": 25.394126257000607,
+  "stage_seconds": [
+    25.394119994001812
+  ],
+  "commands": [
+    [
+      "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+      "scripts/run-columnar-full.py",
+      "--events",
+      "20000",
+      "--chunk-size",
+      "1000"
+    ]
+  ],
+  "events": 20000
+}
