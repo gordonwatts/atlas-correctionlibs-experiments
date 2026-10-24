@@ -11,6 +11,7 @@ descriptions={
 '04-reuse-kinematics':('Reuse validated kinematics from the systematic stage in the JVT stage','scripts/run-columnar-jvt.py'),
 '05-parallel-batches':('Evaluate independent native batch slices on four threads; preserve scalar physics and ordering','python/atlas_correctionlib/parallel.py'),
 '06-array-jvt-inputs':('Replace Python event loops for primary-vertex inputs and truth matching with Awkward arrays','scripts/run-columnar-jvt.py'),
+'07-lz4-output':('Use LZ4 for the same ROOT output columns instead of default ZLIB','scripts/run-columnar-systematics.py'),
 }
 description,ref=descriptions[label]
 folder=root/'optimization-campaign'/label

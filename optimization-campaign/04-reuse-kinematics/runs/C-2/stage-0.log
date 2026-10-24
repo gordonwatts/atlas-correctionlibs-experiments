@@ -1,0 +1,89 @@
+Processed 1000 events
+Processed 2000 events
+Processed 3000 events
+Processed 4000 events
+Processed 5000 events
+Processed 6000 events
+Processed 7000 events
+Processed 8000 events
+Processed 9000 events
+Processed 10000 events
+Processed 11000 events
+Processed 12000 events
+Processed 13000 events
+Processed 14000 events
+Processed 15000 events
+Processed 16000 events
+Processed 17000 events
+Processed 18000 events
+Processed 19000 events
+Processed 20000 events
+{
+  "events": 20000,
+  "jets": 196606,
+  "chunk_size": 1000,
+  "scope": "nominal-only",
+  "checks": {
+    "JetPileupScaleMomentum_pt": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetPileupScaleMomentum_eta": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetPileupScaleMomentum_phi": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetPileupScaleMomentum_m": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetEtaJESScaleMomentum_pt": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetEtaJESScaleMomentum_eta": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetEtaJESScaleMomentum_phi": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetEtaJESScaleMomentum_m": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetGSCScaleMomentum_pt": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetGSCScaleMomentum_eta": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetGSCScaleMomentum_phi": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    },
+    "JetGSCScaleMomentum_m": {
+      "max_abs": 0.0,
+      "mismatches": 0,
+      "first_bad": []
+    }
+  },
+  "passed": true
+}

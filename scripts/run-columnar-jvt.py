@@ -1,10 +1,11 @@
-import argparse,json,sys
+import argparse,json,sys,itertools
 from pathlib import Path
 import numpy as np,uproot,awkward as ak
 r=Path(__file__).resolve().parents[1];sys.path[:0]=[str(r/"python"),str(r/"install/python")]
 from atlas_correctionlib.systematics import Systematics
 from atlas_correctionlib.jvt import Jvt
-p=argparse.ArgumentParser();p.add_argument("--events",type=int,default=100);p.add_argument("--reference",default="results/reference/reference.root");p.add_argument("--report",default="results/jvt-comparison.json");p.add_argument("--output");a=p.parse_args()
+from atlas_correctionlib.kinematic_cache import fingerprint,read as read_kinematics
+p=argparse.ArgumentParser();p.add_argument("--events",type=int,default=100);p.add_argument("--reference",default="results/reference/reference.root");p.add_argument("--report",default="results/jvt-comparison.json");p.add_argument("--output");p.add_argument("--kinematics");a=p.parse_args()
 stored=np.load(r/"results/columnar-nominal.npz");counts=stored["counts"][:a.events];n=int(counts.sum());p4=stored["values"][:n,8:12]
 inputfile=Path("/cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/src/AsgExternal/Asg_Test/cmt/TestFileLiteR3MC.txt").read_text().strip()
 t=uproot.open(inputfile)["CollectionTree"]
@@ -36,8 +37,8 @@ def compare(name,v,exact=False,event=False):
  delta=np.abs(v.astype(float)-truth.astype(float));tol=0 if exact else 1e-7+2e-6*np.abs(truth)
  bad=(delta>tol)|~np.isfinite(delta)
  return dict(max_abs=float(delta.max(initial=0)),mismatches=int(bad.sum()),first_bad=np.flatnonzero(bad)[:5].tolist())
-variations=list(engine.variations(p4,mu,npv,bjet))
-variations.extend([("JET_NNJvtEfficiency__1up",p4),("JET_NNJvtEfficiency__1down",p4)])
+kinematics=read_kinematics(r/a.kinematics,fingerprint(r/"payloads",p4=p4,mu=mu,npv=npv,bjet=bjet,counts=counts,events=stored["eventNumber"][:len(counts)]),engine.engine.names(),counts,stored["eventNumber"][:len(counts)]) if a.kinematics else engine.variations(p4,mu,npv,bjet)
+variations=itertools.chain(kinematics,[("JET_NNJvtEfficiency__1up",p4),("JET_NNJvtEfficiency__1down",p4)])
 for name,out in variations:
  sigma=(1 if name.endswith("up") else -1) if "NNJvtEfficiency" in name else 0
  score,passed,sf,valid=jvt.evaluate(out,sumpt,jvfcorr,haspv,np.asarray(ishs),sigma)

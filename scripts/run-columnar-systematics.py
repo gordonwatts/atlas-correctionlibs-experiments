@@ -5,6 +5,7 @@ import numpy as np,uproot,awkward as ak
 r=Path(__file__).resolve().parents[1]
 sys.path[:0]=[str(r/"python"),str(r/"install/python")]
 from atlas_correctionlib.systematics import Systematics
+from atlas_correctionlib.kinematic_cache import fingerprint
 p=argparse.ArgumentParser();p.add_argument("--events",type=int,default=100);p.add_argument("--reference",default="results/reference/reference.root");p.add_argument("--report",default="results/systematics-comparison.json");p.add_argument("--output");a=p.parse_args()
 stored=np.load(r/"results/columnar-nominal.npz")
 counts=stored["counts"][:a.events];n=int(counts.sum());p4=stored["values"][:n,8:12]
@@ -37,7 +38,9 @@ for name,out in engine.variations(p4,mu,npv,bjet):
   summary[coord]=dict(max_abs=float(delta.max(initial=0)),mismatches=int(bad.sum()),first_bad=np.flatnonzero(bad)[:5].tolist())
  checks[name]=summary
  print(name,sum(x["mismatches"] for x in summary.values()),flush=True)
-if writer is not None:writer.close()
+if writer is not None:
+ writer["__kinematic_cache__"]=json.dumps(dict(version=1,fingerprint=fingerprint(r/"payloads",p4=p4,mu=mu,npv=npv,bjet=bjet,counts=counts,events=stored["eventNumber"][:len(counts)]),names=engine.engine.names()))
+ writer.close()
 expected={k.removeprefix("check_pt_") for k in ref.keys() if k.startswith("check_pt_")}
 report=dict(scope="kinematics-only-prototype",events=len(counts),jets=n,systematics=len(seen),missing=sorted(expected-set(seen)),unexpected=sorted(set(seen)-expected),checks=checks)
 report["passed"]=not(report["missing"] or report["unexpected"]) and all(v["mismatches"]==0 for s in checks.values() for v in s.values())

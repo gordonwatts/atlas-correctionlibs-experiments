@@ -16,7 +16,7 @@ def worker(path,iteration):
   commands=[
    [sys.executable,"scripts/run-columnar-nominal.py","--events","20000","--chunk-size","1000"],
    [sys.executable,"scripts/run-columnar-systematics.py","--events","20000","--output","results/columnar-kinematics.root"],
-   [sys.executable,"scripts/run-columnar-jvt.py","--events","20000","--output","results/columnar-jvt.root"]]
+   [sys.executable,"scripts/run-columnar-jvt.py","--events","20000","--output","results/columnar-jvt.root","--kinematics","results/columnar-kinematics.root"]]
  stages=[];begin=time.perf_counter()
  for i,cmd in enumerate(commands):
   start=time.perf_counter()
