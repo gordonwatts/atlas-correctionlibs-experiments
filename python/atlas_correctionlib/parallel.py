@@ -9,8 +9,8 @@ if workers < 1:
     raise ValueError("ATLAS_CORRECTIONLIB_THREADS must be positive")
 _pool=ThreadPoolExecutor(max_workers=workers,thread_name_prefix="corrections") if workers>1 else None
 
-def batch(evaluate, rows):
+def batch(evaluate, rows, axis=0):
     if _pool is None or len(rows)<4096:
         return evaluate(rows)
     pieces=np.array_split(rows,workers,axis=0)
-    return np.concatenate(list(_pool.map(evaluate,pieces)),axis=0)
+    return np.concatenate(list(_pool.map(evaluate,pieces)),axis=axis)

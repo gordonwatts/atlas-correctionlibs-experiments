@@ -74,18 +74,22 @@ public:
    if(c.resolution){jerMC=bind("JER_Nominal_MC16","OnlyX");jerData=bind("JER_Nominal_data","OnlyX");}
   }
  }
- std::vector<std::string> names()const{
-  std::vector<std::string> out{"NOSYS"};
+ std::vector<std::vector<std::string>> groups()const{
+  std::vector<std::vector<std::string>> out{{"NOSYS"}};
   for(const auto& [name,cs]:recipes){
+   std::vector<std::string> group;
    bool jer=cs.front().resolution;
-   for(int data=0;data<=(jer?1:0);++data)for(const auto& sign:{"up","down"})out.push_back("JET_"+name+(data?"_PseudoData":"")+"__1"+sign);
+   for(int data=0;data<=(jer?1:0);++data)for(const auto& sign:{"up","down"})group.push_back("JET_"+name+(data?"_PseudoData":"")+"__1"+sign);
+   out.push_back(std::move(group));
   }
   return out;
  }
- // pt,eta,phi,m,mu,npv,isBjet. Status 0 is CorrectionCode::Ok.
- std::vector<double> evaluate(const std::string& sys,const std::vector<double>& r)const{
-  if(r.size()!=7)throw std::invalid_argument("Systematics requires seven inputs");
-  if(sys=="NOSYS")return {r[0],r[1],r[2],r[3],0.};
+ std::vector<std::string> names()const{
+  std::vector<std::string> out;for(const auto& group:groups())out.insert(out.end(),group.begin(),group.end());return out;
+ }
+private:
+ struct Variation {const std::vector<CompiledComponent>* components;double sign;bool data;};
+ Variation resolve(const std::string& sys)const{
   if(sys.rfind("JET_",0)!=0)throw std::invalid_argument("Invalid systematic name");
   auto split=sys.find("__1");if(split==std::string::npos)throw std::invalid_argument("Invalid systematic direction");
   std::string name=sys.substr(4,split-4),direction=sys.substr(split+3);
@@ -93,15 +97,43 @@ public:
   double sign=direction=="up"?1.:-1.;bool data=false;
   const std::string suffix="_PseudoData";
   if(name.size()>suffix.size()&&name.substr(name.size()-suffix.size())==suffix){data=true;name.resize(name.size()-suffix.size());}
-  const auto& cs=recipes.at(name);
+  return {&recipes.at(name),sign,data};
+ }
+ std::array<double,2> amounts(const Variation& variation,const std::vector<double>& r)const{
+  if(r.size()!=7)throw std::invalid_argument("Systematics requires seven inputs");
+  const auto& cs=*variation.components;
   const double pt=r[0]*double(float(.001)),eta=r[1];
   double unc=0;for(const auto& c:cs)unc+=component(c,pt,eta,r[4],r[5],r[6]!=0);
-  double scale=1+sign*unc;
-  if(cs.front().resolution){
-   double sigma=std::max(jerMC(pt,std::abs(eta)),jerData(pt,std::abs(eta)));
-   scale=smear(r[2],sigma,sign*unc,data);
-  }else if(data)throw std::invalid_argument("PseudoData is only supported for resolution variations");
+  double sigma=cs.front().resolution?std::max(jerMC(pt,std::abs(eta)),jerData(pt,std::abs(eta))):0.;
+  return {unc,sigma};
+ }
+ std::vector<double> apply(const Variation& variation,const std::array<double,2>& prepared,const std::vector<double>& r)const{
+  double scale=1+variation.sign*prepared[0];
+  if(variation.components->front().resolution)scale=smear(r[2],prepared[1],variation.sign*prepared[0],variation.data);
+  else if(variation.data)throw std::invalid_argument("PseudoData is only supported for resolution variations");
   return {double(float(r[0]*scale)),r[1],r[2],double(float(r[3]*scale)),0.};
+ }
+public:
+ // Both scalar B evaluation and grouped C evaluation use the same arithmetic.
+ std::vector<double> evaluate(const std::string& sys,const std::vector<double>& r)const{
+  if(r.size()!=7)throw std::invalid_argument("Systematics requires seven inputs");
+  if(sys=="NOSYS")return {r[0],r[1],r[2],r[3],0.};
+  const auto variation=resolve(sys);return apply(variation,amounts(variation,r),r);
+ }
+ std::vector<std::vector<std::vector<double>>> batch_group(const std::vector<std::string>& names,const std::vector<std::vector<double>>& rows)const{
+  if(names.empty())throw std::invalid_argument("Empty systematic group");
+  if(names.front()=="NOSYS"){
+   if(names.size()!=1)throw std::invalid_argument("NOSYS must be evaluated alone");
+   return {batch("NOSYS",rows)};
+  }
+  std::vector<Variation> variations;for(const auto& name:names)variations.push_back(resolve(name));
+  for(const auto& variation:variations)if(variation.components!=variations.front().components)throw std::invalid_argument("Group must use one uncertainty recipe");
+  std::vector<std::vector<std::vector<double>>> out(names.size());for(auto& state:out)state.reserve(rows.size());
+  for(const auto& row:rows){
+   const auto prepared=amounts(variations.front(),row);
+   for(size_t i=0;i<variations.size();++i)out[i].push_back(apply(variations[i],prepared,row));
+  }
+  return out;
  }
  std::vector<std::vector<double>> batch(const std::string& sys,const std::vector<std::vector<double>>& rows)const{
   std::vector<std::vector<double>> out;out.reserve(rows.size());for(const auto& r:rows)out.push_back(evaluate(sys,r));return out;

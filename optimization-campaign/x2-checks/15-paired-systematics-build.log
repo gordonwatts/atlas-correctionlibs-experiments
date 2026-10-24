@@ -1,0 +1,146 @@
+[ 50%] Building CXX object CMakeFiles/_atlas_corrections.dir/src/nominal.cxx.o
+[100%] Linking CXX shared module _atlas_corrections.cpython-313-x86_64-linux-gnu.so
+[100%] Built target _atlas_corrections
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/gwatts/atlas/correctionlib_tests/install/python/_atlas_corrections.cpython-313-x86_64-linux-gnu.so
+-- Set non-toolchain portion of runtime path of "/home/gwatts/atlas/correctionlib_tests/install/python/_atlas_corrections.cpython-313-x86_64-linux-gnu.so" to ""
+[  0%] Built target atlas_tests
+[  2%] Built target JetUncertaintiesDictDictGen
+[  2%] Built target JetJvtEfficiencyDictDictGen
+[  2%] Built target JetCalibToolsDictDictGen
+[  4%] Built target JetCalibToolsHeaderInstall
+[  4%] Built target JetUncertaintiesHeaderInstall
+[  4%] Built target JetJvtEfficiencyHeaderInstall
+[  7%] Built target JetCalibToolsDataInstall
+[ 10%] Built target JetCalibToolsPythonInstall
+[ 11%] Built target JetCalibToolsPyCompile
+[ 12%] Built target JetJvtEfficiencyPyCompile
+[ 13%] Built target JetJvtEfficiencyPythonInstall
+[ 19%] Built target JetUncertaintiesGenericInstall
+[ 20%] Built target CorrectionLibOverlayRootMapMerge
+[ 20%] Building CXX object JetUncertainties/CMakeFiles/JetUncertaintiesLib.dir/Root/JetUncertaintiesTool.cxx.o
+[ 20%] Building CXX object JetCalibTools/CMakeFiles/JetCalibToolsLib.dir/Root/JetCalibrationTool.cxx.o
+In file included from /home/gwatts/atlas/correctionlib_tests/src/adapter_support.hxx:2,
+                 from /home/gwatts/atlas/correctionlib_tests/atlas-overlay/JetUncertainties/Root/JetUncertaintiesTool.cxx:1:
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx: In member function 'std::vector<std::vector<double> > Nominal::batch(const std::vector<std::vector<double> >&) const':
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx:42:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   42 |   for(const auto& r:rows)out.push_back(evaluate(r));return out;
+      |   ^~~
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx:42:53: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   42 |   for(const auto& r:rows)out.push_back(evaluate(r));return out;
+      |                                                     ^~~~~~
+In file included from /home/gwatts/atlas/correctionlib_tests/src/adapter_support.hxx:2,
+                 from /home/gwatts/atlas/correctionlib_tests/atlas-overlay/JetCalibTools/Root/JetCalibrationTool.cxx:1:
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx: In member function 'std::vector<std::vector<double> > Nominal::batch(const std::vector<std::vector<double> >&) const':
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx:42:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   42 |   for(const auto& r:rows)out.push_back(evaluate(r));return out;
+      |   ^~~
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx:42:53: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   42 |   for(const auto& r:rows)out.push_back(evaluate(r));return out;
+      |                                                     ^~~~~~
+In file included from /home/gwatts/atlas/correctionlib_tests/src/backend.hxx:73:
+/home/gwatts/atlas/correctionlib_tests/src/systematics.hxx: In member function 'double JetSystematics::component(const CompiledComponent&, double, double, double, double, bool) const':
+/home/gwatts/atlas/correctionlib_tests/src/systematics.hxx:32:35: warning: unused variable 'hist' [-Wunused-variable]
+   32 |   const std::string &name=c.name,&hist=c.hist,&mode=c.mode;
+      |                                   ^~~~
+/home/gwatts/atlas/correctionlib_tests/src/systematics.hxx:32:48: warning: unused variable 'mode' [-Wunused-variable]
+   32 |   const std::string &name=c.name,&hist=c.hist,&mode=c.mode;
+      |                                                ^~~~
+In file included from /home/gwatts/atlas/correctionlib_tests/src/backend.hxx:73:
+/home/gwatts/atlas/correctionlib_tests/src/systematics.hxx: In member function 'double JetSystematics::component(const CompiledComponent&, double, double, double, double, bool) const':
+/home/gwatts/atlas/correctionlib_tests/src/systematics.hxx:32:35: warning: unused variable 'hist' [-Wunused-variable]
+   32 |   const std::string &name=c.name,&hist=c.hist,&mode=c.mode;
+      |                                   ^~~~
+/home/gwatts/atlas/correctionlib_tests/src/systematics.hxx:32:48: warning: unused variable 'mode' [-Wunused-variable]
+   32 |   const std::string &name=c.name,&hist=c.hist,&mode=c.mode;
+      |                                                ^~~~
+[ 20%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetCalibToolsLib.so
+[ 21%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetUncertaintiesLib.so
+Detaching debug info of libJetUncertaintiesLib.so into libJetUncertaintiesLib.so.dbg
+Detaching debug info of libJetCalibToolsLib.so into libJetCalibToolsLib.so.dbg
+[ 43%] Built target JetUncertaintiesLib
+[ 44%] Linking CXX shared module ../x86_64-el9-gcc15-opt/lib/libJetUncertainties.so
+[ 45%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetUncertaintiesDict.so
+Detaching debug info of libJetUncertainties.so into libJetUncertainties.so.dbg
+Detaching debug info of libJetUncertaintiesDict.so into libJetUncertaintiesDict.so.dbg
+[ 46%] Built target JetUncertainties
+[ 47%] Built target JetUncertaintiesDict
+[ 48%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/MakeCorrelationMatrixPlots
+[ 49%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/MakeUncertaintyPlots
+[ 72%] Built target JetCalibToolsLib
+[ 73%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/JetUncertainties_testTool
+Detaching debug info of MakeCorrelationMatrixPlots into MakeCorrelationMatrixPlots.dbg
+[ 73%] Built target MakeCorrelationMatrixPlots
+[ 74%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/JetUncertainties_testResolution
+Detaching debug info of MakeUncertaintyPlots into MakeUncertaintyPlots.dbg
+[ 75%] Built target MakeUncertaintyPlots
+[ 75%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/FFJetSmearingTool_MyExample
+Detaching debug info of JetUncertainties_testTool into JetUncertainties_testTool.dbg
+[ 76%] Built target JetUncertainties_testTool
+[ 77%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/JMR_MakeUncertaintyPlots
+Detaching debug info of JetUncertainties_testResolution into JetUncertainties_testResolution.dbg
+[ 77%] Built target JetUncertainties_testResolution
+[ 77%] Generating ../x86_64-el9-gcc15-opt/lib/libJetUncertainties.asgcomponents
+Detaching debug info of FFJetSmearingTool_MyExample into FFJetSmearingTool_MyExample.dbg
+[ 78%] Built target FFJetSmearingTool_MyExample
+[ 78%] Linking CXX shared module ../x86_64-el9-gcc15-opt/lib/libJetCalibTools.so
+Detaching debug info of JMR_MakeUncertaintyPlots into JMR_MakeUncertaintyPlots.dbg
+[ 79%] Built target JMR_MakeUncertaintyPlots
+[ 80%] Building CXX object JetJvtEfficiency/CMakeFiles/JetJvtEfficiencyLib.dir/Root/JvtEfficiencyToolBase.cxx.o
+Detaching debug info of libJetCalibTools.so into libJetCalibTools.so.dbg
+[ 81%] Built target JetCalibTools
+[ 82%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetCalibToolsDict.so
+Detaching debug info of libJetCalibToolsDict.so into libJetCalibToolsDict.so.dbg
+[ 82%] Built target JetUncertaintiesComponentsList
+[ 83%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/JetCalibTools_Example
+[ 84%] Built target JetCalibToolsDict
+[ 85%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/JetCalibTools_PlotJESFactors
+In file included from /home/gwatts/atlas/correctionlib_tests/src/adapter_support.hxx:2,
+                 from /home/gwatts/atlas/correctionlib_tests/atlas-overlay/JetJvtEfficiency/Root/JvtEfficiencyToolBase.cxx:1:
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx: In member function 'std::vector<std::vector<double> > Nominal::batch(const std::vector<std::vector<double> >&) const':
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx:42:3: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   42 |   for(const auto& r:rows)out.push_back(evaluate(r));return out;
+      |   ^~~
+/home/gwatts/atlas/correctionlib_tests/src/backend.hxx:42:53: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   42 |   for(const auto& r:rows)out.push_back(evaluate(r));return out;
+      |                                                     ^~~~~~
+Detaching debug info of JetCalibTools_PlotJESFactors into JetCalibTools_PlotJESFactors.dbg
+[ 85%] Built target JetCalibTools_PlotJESFactors
+Detaching debug info of JetCalibTools_Example into JetCalibTools_Example.dbg
+[ 86%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/JetCalibTools_PlotJMSFactors
+[ 87%] Built target JetCalibTools_Example
+[ 88%] Linking CXX executable ../x86_64-el9-gcc15-opt/bin/JetCalibTools_SmearingPlots
+In file included from /home/gwatts/atlas/correctionlib_tests/src/backend.hxx:73:
+/home/gwatts/atlas/correctionlib_tests/src/systematics.hxx: In member function 'double JetSystematics::component(const CompiledComponent&, double, double, double, double, bool) const':
+/home/gwatts/atlas/correctionlib_tests/src/systematics.hxx:32:35: warning: unused variable 'hist' [-Wunused-variable]
+   32 |   const std::string &name=c.name,&hist=c.hist,&mode=c.mode;
+      |                                   ^~~~
+/home/gwatts/atlas/correctionlib_tests/src/systematics.hxx:32:48: warning: unused variable 'mode' [-Wunused-variable]
+   32 |   const std::string &name=c.name,&hist=c.hist,&mode=c.mode;
+      |                                                ^~~~
+Detaching debug info of JetCalibTools_PlotJMSFactors into JetCalibTools_PlotJMSFactors.dbg
+[ 89%] Built target JetCalibTools_PlotJMSFactors
+[ 89%] Built target Package_JetUncertainties
+[ 90%] Generating ../x86_64-el9-gcc15-opt/lib/libJetCalibTools.asgcomponents
+Detaching debug info of JetCalibTools_SmearingPlots into JetCalibTools_SmearingPlots.dbg
+[ 90%] Built target JetCalibTools_SmearingPlots
+[ 90%] Built target JetCalibToolsComponentsList
+[ 90%] Built target Package_JetCalibTools
+/home/gwatts/atlas/correctionlib_tests/atlas-overlay/JetJvtEfficiency/Root/JvtEfficiencyToolBase.cxx: At global scope:
+/home/gwatts/atlas/correctionlib_tests/atlas-overlay/JetJvtEfficiency/Root/JvtEfficiencyToolBase.cxx:17:10: warning: 'bool {anonymous}::getBinContentAndError(const TH2&, float, float, float&, float&)' defined but not used [-Wunused-function]
+   17 |     bool getBinContentAndError(const TH2 &h, float x, float y, float &content, float &error) {
+      |          ^~~~~~~~~~~~~~~~~~~~~
+[ 91%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetJvtEfficiencyLib.so
+Detaching debug info of libJetJvtEfficiencyLib.so into libJetJvtEfficiencyLib.so.dbg
+[ 96%] Built target JetJvtEfficiencyLib
+[ 98%] Linking CXX shared module ../x86_64-el9-gcc15-opt/lib/libJetJvtEfficiency.so
+[ 98%] Linking CXX shared library ../x86_64-el9-gcc15-opt/lib/libJetJvtEfficiencyDict.so
+Detaching debug info of libJetJvtEfficiency.so into libJetJvtEfficiency.so.dbg
+Detaching debug info of libJetJvtEfficiencyDict.so into libJetJvtEfficiencyDict.so.dbg
+[ 99%] Built target JetJvtEfficiency
+[100%] Built target JetJvtEfficiencyDict
+[100%] Generating ../x86_64-el9-gcc15-opt/lib/libJetJvtEfficiency.asgcomponents
+[100%] Built target JetJvtEfficiencyComponentsList
+[100%] Built target Package_JetJvtEfficiency
+[100%] Built /home/gwatts/atlas/correctionlib_tests/build-overlay/x86_64-el9-gcc15-opt/lib/CorrectionLibOverlay.asgcomponents
+[100%] Built target CorrectionLibOverlayComponentsMerge

@@ -79,7 +79,7 @@ class Systematics:
   return self._tables
  def variations(self,p4,mu,npv,bjet):
   rows=np.column_stack([p4,mu,npv,bjet])
-  for name in self.engine.names():
-   values=np.asarray(parallel_batch(lambda chunk:self.engine.batch_array(name,chunk),rows))
-   if np.any(values[:,4]!=0):raise RuntimeError("Unsuccessful systematic correction status")
-   yield name,values[:,:4]
+  for names in self.engine.groups():
+   grouped=np.asarray(parallel_batch(lambda chunk:self.engine.batch_group_array(names,chunk),rows,axis=1))
+   if np.any(grouped[:,:,4]!=0):raise RuntimeError("Unsuccessful systematic correction status")
+   for name,values in zip(names,grouped):yield name,values[:,:4]
