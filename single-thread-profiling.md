@@ -6,9 +6,9 @@ Each checkpoint processes the same 20,000 events / 196,606 jets and all 117 kine
 
 | Change, cumulative | Full workflow seconds | Shared source | WSL implementation commit |
 |---|---:|---|---|
-| Default to one native worker; benchmark on one CPU with numerical library threads capped at one | 56.27 ± 0.03 | [source](columnar-source/python/atlas_correctionlib/parallel.py) | `b79d363fe0a2d350a963802c912a3a543a4e18d9` |
-| Construct TRandom3 with its final seed, eliminating redundant default seeding | 54.08 ± 0.42 | [source](columnar-source/src/backend.hxx) | `b9b6bd2990b621240099fe4e9fcbcce41219a3f8` |
-| Cache the first standard Gaussian by original seed; preserve rejection and ROOT stream exactly | 49.63 ± 0.39 | [source](columnar-source/src/backend.hxx) | `1813b4e8136d8539b74fdca469742ef277a86530` |
+| Default to one native worker; benchmark on one CPU with numerical library threads capped at one | 56.27 ± 0.03 | [source](python/atlas_correctionlib/parallel.py) | `b79d363fe0a2d350a963802c912a3a543a4e18d9` |
+| Construct TRandom3 with its final seed, eliminating redundant default seeding | 54.08 ± 0.42 | [source](src/backend.hxx) | `b9b6bd2990b621240099fe4e9fcbcce41219a3f8` |
+| Cache the first standard Gaussian by original seed; preserve rejection and ROOT stream exactly | 49.63 ± 0.39 | [source](src/backend.hxx) | `1813b4e8136d8539b74fdca469742ef277a86530` |
 
 ## What the profiles show
 
@@ -30,13 +30,13 @@ The RNG algorithm, seed mapping, sign rules and systematic correlations are unch
 
 Both RNG steps passed 96,060 exact reference comparisons covering zero/fallback seeds, physical and nonphysical phi values, forced collisions, active/inactive signs, large widths with rejection, and reversed traversal order. The existing six backend tests passed. Every timing repetition passed the existing full-sample nominal, systematic and JVT comparisons against A, without changing tolerances or seeds.
 
-A direct comparison against the uncached single-thread checkpoint also found every saved physics-output buffer bitwise identical across all 117 kinematic states and 119 JVT/weight states, including event and jet identities. The intentionally changed backend fingerprint is excluded from this physics comparison. See `optimization-results/checks/full-smearing-parity.json`.
+A direct comparison against the uncached single-thread checkpoint also found every saved physics-output buffer bitwise identical across all 117 kinematic states and 119 JVT/weight states, including event and jet identities. The intentionally changed backend fingerprint is excluded from this physics comparison. See `optimization-campaign/checks/full-smearing-parity.json`.
 
 The shared B overlay was rebuilt after each RNG change. The final full B integration passed against A on all 20,000 events using unchanged `config/reference.yaml` (SHA-256 `4d84aa237b6a1796c05e9a38fa341e89993f1b8c582bc99da7b1624b4ed46ca8`). A single, CPU-affinity-restricted B integration run took **281.61 s**; this is validation evidence, not a repeated B speedup measurement. Loaded-library mappings are retained with the report.
 
 C-nice retains its existing nominal facade call, and the full workflow still composes that facade with the C systematic/JVT runners. The shared physics implementation is used by B and C; no Path D code is involved.
 
-Reports: `optimization-results/09-profile/` and `optimization-results/11-profile/` contain before/after Python and native profiles. `optimization-results/11-B-integration/` contains the B check. Source profiling harnesses and raw generated artifacts remain in WSL `optimization-campaign/`. Timing summaries record the commit before the uncommitted candidate was measured; the table records the committed candidate that includes its measurements.
+Reports: `optimization-campaign/09-profile/` and `optimization-campaign/11-profile/` contain before/after Python and native profiles. `optimization-campaign/11-B-integration/` contains the B check. Source profiling harnesses and raw generated artifacts remain in WSL `optimization-campaign/`. Timing summaries record the commit before the uncommitted candidate was measured; the table records the committed candidate that includes its measurements.
 
 Reproduce a new timing checkpoint using `bash optimization-campaign/single-thread-campaign.sh NEW-LABEL` in the authoritative WSL checkout. Existing labels are protected from overwrite. Optional multi-thread support remains available explicitly, but all current reported timings use one CPU. All changes and reports are committed locally; nothing is pushed.
 

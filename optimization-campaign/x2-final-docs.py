@@ -46,9 +46,10 @@ for name in ('c-nice-optimization.md','single-thread-profiling.md','four-path-ti
  link='../x2-optimization.md' if name.startswith('c-nice/') else 'x2-optimization.md'
  s+=f'\n\nThe subsequent exact-result single-core campaign selected **{mean:.2f} ± {sd:.2f} s** ({old/mean:.2f}× versus 49.63 s; {fresh/mean:.2f}× versus its rebuilt control). See [the per-change table and acceptance report]({link}). All A comparisons and outputs remain enabled, final C arrays match the prior checkpoint byte for byte, and B passed with unchanged configuration. The 5,000-event chunk experiment was reverted; 1,000-event chunks remain selected.\n';p.write_text(s)
 for name in ('x2-optimization.md','correctionlib-interface-handoff.md','c-nice-optimization.md','single-thread-profiling.md','four-path-timing-comparison.md','c-nice/README.md'):
- shutil.copy2(w/name,r/name)
+ (r/name).write_text((w/name).read_text().replace('columnar-source/','').replace('optimization-results/','optimization-campaign/'))
 shutil.copy2(w/'x2-final-docs.py',r/'optimization-campaign/x2-final-docs.py')
 subprocess.run(['git','add','x2-optimization.md','correctionlib-interface-handoff.md','c-nice-optimization.md','single-thread-profiling.md','four-path-timing-comparison.md','c-nice/README.md','optimization-campaign/x2-final-docs.py'],cwd=r,check=True)
 subprocess.run(['git','commit','-q','-m','Document 1.88x exact-result single-core campaign, individual commits and final B acceptance'],cwd=r,check=True)
 print(json.dumps({'selected_mean':mean,'speedup_old':old/mean,'speedup_control':fresh/mean,'B_seconds':b['wall_seconds'],'phases':phases},indent=2))
+
 
