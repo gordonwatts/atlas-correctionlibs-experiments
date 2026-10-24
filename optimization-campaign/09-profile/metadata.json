@@ -1,0 +1,8 @@
+{
+  "cpu_affinity": [
+    0
+  ],
+  "threads": "1",
+  "native_sample_jets": 2048,
+  "git_head": "b79d363fe0a2d350a963802c912a3a543a4e18d9"
+}

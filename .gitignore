@@ -21,3 +21,8 @@ wheels/
 /external/plot-wheels/
 /external/pip*.whl
 /external/pip.pyz
+
+/optimization-campaign/**/profile-systematics
+/optimization-campaign/checks/*-exact
+/optimization-campaign/**/*.pstats
+/optimization-campaign/**/*.bin
