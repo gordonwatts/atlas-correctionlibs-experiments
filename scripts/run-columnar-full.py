@@ -6,7 +6,7 @@ import numpy as np
 root=Path(__file__).resolve().parents[1]
 parser=argparse.ArgumentParser()
 parser.add_argument("--events",type=int,default=100)
-parser.add_argument("--chunk-size",type=int,default=5000)
+parser.add_argument("--chunk-size",type=int,default=1000)
 args=parser.parse_args()
 times={}
 
