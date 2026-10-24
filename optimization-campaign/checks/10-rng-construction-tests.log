@@ -1,0 +1,3 @@
+PASS: 96060 bitwise-equal ROOT reference draws, including rejection and changed traversal order
+......                                                                   [100%]
+6 passed in 4.57s

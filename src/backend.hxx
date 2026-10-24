@@ -47,7 +47,7 @@ inline double smear(double phi,double sigmaNom,double variation,bool data) {
  const double width=std::sqrt(std::pow(sigmaNom+std::abs(variation),2)-std::pow(sigmaNom,2));
  long long seed=(data?1.23e5:2.00e5)*std::abs(phi);
  if(!seed)seed=data?34545654:45583453;
- TRandom3 random;random.SetSeed(seed);
+ TRandom3 random(seed);
  double value=-1;while(value<0)value=random.Gaus(1.,width);return value;
 }
 inline std::vector<double> smearBatch(const std::vector<double>& phi,const std::vector<double>& sigma,const std::vector<double>& variation,bool data){
