@@ -1,0 +1,21 @@
+{
+  "columnar-nominal.npz": {
+    "bitwise_equal": true
+  },
+  "columnar-inputs.npz": {
+    "bitwise_equal": true
+  },
+  "jvt-inputs.npz": {
+    "bitwise_equal": true
+  },
+  "columnar-kinematics.root": {
+    "states": 117,
+    "bitwise_equal": true
+  },
+  "columnar-jvt.root": {
+    "states": 119,
+    "bitwise_equal": true
+  },
+  "before": "20-flat-adapters",
+  "after": "21-larger-read-chunks"
+}
