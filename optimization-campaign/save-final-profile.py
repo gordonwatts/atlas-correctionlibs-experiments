@@ -12,6 +12,8 @@ for label in ('22-final-python-profile','23-final-scoped-profile'):
   if item.exists():shutil.copy2(item,dest/name)
  shutil.copy2(source/'runs/C-1/timing.json',dest/'timing.json')
  for stage in ('nominal','systematics','jvt'):assert json.loads((source/f'runs/C-1/results/{stage}-comparison.json').read_text())['passed']
+shutil.copy2(p/'results/scoped-profile.json',p.parents[1]/'scoped-profile.json')
+shutil.copy2(p/'timing.json',p.parents[1]/'timing.json')
 sections=s['sections'];load=sum(sections[key]['seconds'] for key in ('Nominal tool load','Systematic tool load','JVT tool load'))
 rows=[('Read A references for systematics and JVT',sections['A reference reads']['seconds']),('JVT evaluation, including array preparation and cache',sections['JVT evaluate including array preparation and exact cache']['seconds']),('Load nominal, systematic and JVT tools',load),('Write ROOT output objects',sections['ROOT output assignment']['seconds']),('Produce all 117 systematic variations',sections['Systematic variation production']['seconds']),('Nominal input preparation and evaluation',sections['Nominal input preparation and native evaluation']['seconds'])]
 remainder=wall-sum(value for _,value in rows)
@@ -34,3 +36,4 @@ for name in ('profile-x2-final.py','profile-x2-final.sh','scoped-profile-x2.py',
 subprocess.run(['git','add','optimization-campaign','final-profile-report.md','x2-optimization.md'],cwd=r,check=True)
 subprocess.run(['git','commit','-q','-m','Profile selected C-nice workflow with scoped wall timers and retained cProfile diagnostics'],cwd=r,check=True)
 print(json.dumps({'wall_seconds':wall,'remainder':remainder,'passed':True}))
+
