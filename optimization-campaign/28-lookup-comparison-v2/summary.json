@@ -1,0 +1,99 @@
+{
+  "1D-Full": {
+    "atlas": {
+      "median_ns": 33.38130718289371,
+      "mean_seconds": 0.1638920405,
+      "sample_sd_seconds": 0.0009355789318976285
+    },
+    "correctionlib": {
+      "median_ns": 40.81902902251203,
+      "mean_seconds": 0.20157368266666667,
+      "sample_sd_seconds": 0.002827256965897555
+    },
+    "correctionlib_reused_arguments": {
+      "median_ns": 34.52876972218549,
+      "mean_seconds": 0.17049036566666667,
+      "sample_sd_seconds": 0.002109888454052552
+    }
+  },
+  "2D-Full": {
+    "atlas": {
+      "median_ns": 104.89356617086068,
+      "mean_seconds": 0.364387713,
+      "sample_sd_seconds": 0.02458930176255436
+    },
+    "correctionlib": {
+      "median_ns": 130.10153436164654,
+      "mean_seconds": 0.4511751296666667,
+      "sample_sd_seconds": 0.03550038564571849
+    },
+    "correctionlib_reused_arguments": {
+      "median_ns": 119.09966065304691,
+      "mean_seconds": 0.400015087,
+      "sample_sd_seconds": 0.00574828970717147
+    }
+  },
+  "2D-OnlyX": {
+    "atlas": {
+      "median_ns": 57.22496929137463,
+      "mean_seconds": 0.18501046283333333,
+      "sample_sd_seconds": 0.011358053344074494
+    },
+    "correctionlib": {
+      "median_ns": 61.79740572515588,
+      "mean_seconds": 0.1987656365,
+      "sample_sd_seconds": 0.011995079682437822
+    },
+    "correctionlib_reused_arguments": {
+      "median_ns": 51.225435007069976,
+      "mean_seconds": 0.16594480866666667,
+      "sample_sd_seconds": 0.010849443509598282
+    }
+  },
+  "JvtFixedEffPt content + error": {
+    "atlas": {
+      "median_ns": 24.783236719932965,
+      "mean_seconds": 0.0928642245,
+      "sample_sd_seconds": 0.0014542785696306953
+    },
+    "correctionlib": {
+      "median_ns": 54.20174132738997,
+      "mean_seconds": 0.20388055933333332,
+      "sample_sd_seconds": 0.0006455127367637827
+    },
+    "correctionlib_reused_arguments": {
+      "median_ns": 36.63987308492268,
+      "mean_seconds": 0.13806031433333332,
+      "sample_sd_seconds": 0.000823052543613267
+    }
+  },
+  "EffFixedEffPt content + error": {
+    "atlas": {
+      "median_ns": 24.41652785634687,
+      "mean_seconds": 0.09339299000000001,
+      "sample_sd_seconds": 0.0028163153461330994
+    },
+    "correctionlib": {
+      "median_ns": 54.094622072621945,
+      "mean_seconds": 0.20322181883333335,
+      "sample_sd_seconds": 0.001135316282582329
+    },
+    "correctionlib_reused_arguments": {
+      "median_ns": 37.00888687326675,
+      "mean_seconds": 0.13932953916666668,
+      "sample_sd_seconds": 0.0015554420329497915
+    }
+  },
+  "shared_systematics": {
+    "atlas": {
+      "mean": 1.11461387,
+      "sd": 0.011666766784648402,
+      "median": 1.1098072165
+    },
+    "correctionlib": {
+      "mean": 1.3074437933333334,
+      "sd": 0.07363443987550367,
+      "median": 1.2945557325000001
+    }
+  }
+}

@@ -1,0 +1,595 @@
+00400000-00407000 r--p 00000000 08:30 571362                             /home/gwatts/atlas/correctionlib_tests/optimization-campaign/28-lookup-comparison-v2/benchmark
+00407000-00428000 r-xp 00007000 08:30 571362                             /home/gwatts/atlas/correctionlib_tests/optimization-campaign/28-lookup-comparison-v2/benchmark
+00428000-00430000 r--p 00028000 08:30 571362                             /home/gwatts/atlas/correctionlib_tests/optimization-campaign/28-lookup-comparison-v2/benchmark
+00430000-00431000 r--p 00030000 08:30 571362                             /home/gwatts/atlas/correctionlib_tests/optimization-campaign/28-lookup-comparison-v2/benchmark
+00431000-00432000 rw-p 00031000 08:30 571362                             /home/gwatts/atlas/correctionlib_tests/optimization-campaign/28-lookup-comparison-v2/benchmark
+0c448000-2cee9000 rw-p 00000000 00:00 0                                  [heap]
+75eed5e00000-75eed5e76000 r--p 00000000 00:4a 99088                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libGraf.so
+75eed5e76000-75eed5f95000 r-xp 00076000 00:4a 99088                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libGraf.so
+75eed5f95000-75eed5fe7000 r--p 00195000 00:4a 99088                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libGraf.so
+75eed5fe7000-75eed5ffb000 r--p 001e7000 00:4a 99088                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libGraf.so
+75eed5ffb000-75eed5fff000 rw-p 001fb000 00:4a 99088                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libGraf.so
+75eed5fff000-75eed600d000 rw-p 00000000 00:00 0 
+75eed6056000-75eed60a1000 r--p 00000000 00:4a 98933                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libGpad.so
+75eed60a1000-75eed6119000 r-xp 0004b000 00:4a 98933                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libGpad.so
+75eed6119000-75eed6136000 r--p 000c3000 00:4a 98933                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libGpad.so
+75eed6136000-75eed6140000 r--p 000e0000 00:4a 98933                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libGpad.so
+75eed6140000-75eed6142000 rw-p 000ea000 00:4a 98933                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libGpad.so
+75eed6142000-75eed6144000 rw-p 00000000 00:00 0 
+75eed6144000-75eed615c000 r--p 00000000 00:4a 99069                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libHistPainter.so
+75eed615c000-75eed61ec000 r-xp 00018000 00:4a 99069                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libHistPainter.so
+75eed61ec000-75eed61fa000 r--p 000a8000 00:4a 99069                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libHistPainter.so
+75eed61fa000-75eed61fc000 r--p 000b6000 00:4a 99069                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libHistPainter.so
+75eed61fc000-75eed61fe000 rw-p 000b8000 00:4a 99069                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libHistPainter.so
+75eed61fe000-75eed6600000 rw-p 00000000 00:00 0 
+75eed6691000-75eed6791000 r--p 00000000 00:4a 97143                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/ROOTTreeViewer.pcm
+75eed6791000-75eed6930000 r--p 00000000 00:4a 111783                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Gdml.pcm
+75eed6930000-75eed6a00000 r--p 00000000 00:4a 98689                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Recorder.pcm
+75eed6a00000-75eed741d000 r--p 00000000 00:4a 101042                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/ROOTTMVASofie.pcm
+75eed7453000-75eed7506000 r--p 00000000 00:4a 100689                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/X3d.pcm
+75eed7506000-75eed75bf000 r--p 00000000 00:4a 98132                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/RootAuth.pcm
+75eed75bf000-75eed766b000 r--p 00000000 00:4a 109791                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/GX11TTF.pcm
+75eed766b000-75eed774d000 r--p 00000000 00:4a 100440                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/SQLIO.pcm
+75eed774d000-75eed7800000 r--p 00000000 00:4a 109728                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/DCache.pcm
+75eed7800000-75eed7c0a000 r--p 00000000 00:4a 98977                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/RooFitXRooFit.pcm
+75eed7c54000-75eed7d01000 r--p 00000000 00:4a 112220                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/RHTTPSniff.pcm
+75eed7d01000-75eed7e15000 r--p 00000000 00:4a 109470                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/NetxNG.pcm
+75eed7e15000-75eed7eca000 r--p 00000000 00:4a 101102                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/RooFitCodegen.pcm
+75eed7eca000-75eed7fbf000 r--p 00000000 00:4a 98753                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/TreeViewer.pcm
+75eed7fbf000-75eed8098000 r--p 00000000 00:4a 98692                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/TMVAGui.pcm
+75eed8098000-75eed8200000 r--p 00000000 00:4a 109840                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/HistPainter.pcm
+75eed8200000-75eed920d000 r--p 00000000 00:4a 103951                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/ROOTEve.pcm
+75eed925c000-75eed932e000 r--p 00000000 00:4a 115787                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/GuiBld.pcm
+75eed932e000-75eed9400000 r--p 00000000 00:4a 98740                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/ROOTTPython.pcm
+75eed9400000-75eeda7e6000 r--p 00000000 00:4a 100776                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/TMVA.pcm
+75eeda800000-75eedac94000 r--p 00000000 00:4a 99083                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/TMVAUtils.pcm
+75eedac9e000-75eedae00000 r--p 00000000 00:4a 100717                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/XMLIO.pcm
+75eedae00000-75eedb0e6000 r--p 00000000 00:4a 98834                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/WebGui6.pcm
+75eedb11c000-75eedb200000 r--p 00000000 00:4a 114369                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/RDAVIX.pcm
+75eedb200000-75eedb845000 r--p 00000000 00:4a 116440                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Eve.pcm
+75eedb866000-75eedb945000 r--p 00000000 00:4a 112094                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/GuiHtml.pcm
+75eedb945000-75eedba00000 r--p 00000000 00:4a 114283                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/MLP.pcm
+75eedba00000-75eedc076000 r--p 00000000 00:4a 114045                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/RGL.pcm
+75eedc0d9000-75eedc1af000 r--p 00000000 00:4a 105702                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/EG.pcm
+75eedc1af000-75eedc2f1000 r--p 00000000 00:4a 105956                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Ged.pcm
+75eedc2f1000-75eedc3b8000 r--p 00000000 00:4a 109847                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Gviz3d.pcm
+75eedc3b8000-75eedc48c000 r--p 00000000 00:4a 116422                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/ASImage.pcm
+75eedc48c000-75eedc600000 r--p 00000000 00:4a 95263                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/ROOTFitPanelv7.pcm
+75eedc600000-75eedc9bc000 r--p 00000000 00:4a 98853                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Smatrix.pcm
+75eedca00000-75eedcf80000 r--p 00000000 00:4a 100796                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/ROOTNTupleUtil.pcm
+75eedd000000-75eedd40e000 r--p 00000000 00:4a 100744                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/ROOTNTupleBrowse.pcm
+75eedd476000-75eedd528000 r--p 00000000 00:4a 111319                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/ASImageGui.pcm
+75eedd528000-75eedd600000 r--p 00000000 00:4a 98938                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Spectrum.pcm
+75eedd600000-75eedd9dc000 r--p 00000000 00:4a 113410                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Gui.pcm
+75eedd9fe000-75eeddaf4000 r--p 00000000 00:4a 111671                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/FitPanel.pcm
+75eeddaf4000-75eeddbb6000 r--p 00000000 00:4a 98821                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/ROOTTreeMap.pcm
+75eeddbb6000-75eeddc69000 r--p 00000000 00:4a 113872                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Fumili.pcm
+75eeddc69000-75eeddd4a000 rw-p 00000000 00:00 0 
+75eeddd4a000-75eedde00000 r--p 00000000 00:4a 116439                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/GeomChecker.pcm
+75eedde00000-75eede1d9000 r--p 00000000 00:4a 111551                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Geom.pcm
+75eede26a000-75eede400000 r--p 00000000 00:4a 98251                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/ROOTGeomViewer.pcm
+75eede400000-75eedebdd000 r--p 00000000 00:4a 95649                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/ROOTGpadv7.pcm
+75eedec27000-75eedecdf000 r--p 00000000 00:4a 106015                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/GeomPainter.pcm
+75eedecdf000-75eeded9c000 r--p 00000000 00:4a 108956                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Genetic.pcm
+75eeded9c000-75eedeef2000 r--p 00000000 00:4a 98800                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/ROOTGraphicsPrimitives.pcm
+75eedeef2000-75eedefb6000 r--p 00000000 00:4a 110929                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Postscript.pcm
+75eedefb6000-75eedf124000 r--p 00000000 00:4a 111484                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/MathMore.pcm
+75eedf124000-75eedf200000 r--p 00000000 00:4a 112320                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Quadp.pcm
+75eedf200000-75eedf4c3000 r--p 00000000 00:4a 101735                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/ROOTHist.pcm
+75eedf4e0000-75eedf600000 r--p 00000000 00:4a 116441                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Graf3d.pcm
+75eedf600000-75eedfb32000 r--p 00000000 00:4a 116446                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Minuit2.pcm
+75eedfb45000-75eedfc00000 r--p 00000000 00:4a 108574                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/GX11.pcm
+75eedfc00000-75eedff40000 r--p 00000000 00:4a 111184                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/GenVector.pcm
+75eedff45000-75eee0000000 r--p 00000000 00:4a 96477                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/RooFitMore.pcm
+75eee0000000-75eee0215000 r--p 00000000 00:4a 110621                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/RHTTP.pcm
+75eee0241000-75eee02f6000 r--p 00000000 00:4a 108387                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/FFTW.pcm
+75eee02f6000-75eee0400000 r--p 00000000 00:4a 111290                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Physics.pcm
+75eee0400000-75eee06a3000 r--p 00000000 00:4a 98513                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/ROOTWebDisplay.pcm
+75eee06b6000-75eee0851000 r--p 00000000 00:4a 114393                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/ROOTBrowsable.pcm
+75eee0851000-75eee0a00000 r--p 00000000 00:4a 101025                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/ROOTBrowserv7.pcm
+75eee0a00000-75eee1057000 r--p 00000000 00:4a 99059                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/RooStats.pcm
+75eee10ae000-75eee1154000 r--p 00000000 00:4a 116444                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/RCsg.pcm
+75eee1154000-75eee1200000 r--p 00000000 00:4a 98972                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/SPlot.pcm
+75eee1200000-75eee3260000 r--p 00000000 00:4a 101363                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/RooFitCore.pcm
+75eee3269000-75eee3400000 r--p 00000000 00:4a 101089                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/RooFitJSONInterface.pcm
+75eee3400000-75eee4644000 r--p 00000000 00:4a 99066                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/RooFit.pcm
+75eee46c1000-75eee4800000 r--p 00000000 00:4a 114357                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Gpad.pcm
+75eee4800000-75eee4bc2000 r--p 00000000 00:4a 111088                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/HistFactory.pcm
+75eee4c00000-75eee6812000 r--p 00000000 00:4a 101060                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/ROOTNTuple.pcm
+75eee689e000-75eee6a00000 r--p 00000000 00:4a 110807                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Graf.pcm
+75eee6a00000-75eee6ce2000 r--p 00000000 00:4a 101125                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/ROOTVecOps.pcm
+75eee6d18000-75eee6e00000 rw-p 00000000 00:00 0 
+75eee6e00000-75eee73fc000 r--p 00000000 00:4a 98973                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/TreePlayer.pcm
+75eee7400000-75eee77e5000 r--p 00000000 00:4a 101265                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Tree.pcm
+75eee7800000-75eee8f12000 r--p 00000000 00:4a 99507                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/ROOTDataFrame.pcm
+75eee8f31000-75eee9000000 r--p 00000000 00:4a 112366                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Minuit.pcm
+75eee9000000-75eee9238000 r--p 00000000 00:4a 112317                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Matrix.pcm
+75eee92dc000-75eee9400000 r--p 00000000 00:4a 100518                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/RooFitHS3.pcm
+75eee9400000-75eee9dc2000 r--p 00000000 00:4a 116442                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Hist.pcm
+75eee9dd4000-75eee9e96000 r--p 00000000 00:4a 111621                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Foam.pcm
+75eee9e96000-75eeea000000 r--p 00000000 00:4a 114358                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Net.pcm
+75eeea000000-75eeea212000 r--p 00000000 00:4a 106399                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Imt.pcm
+75eeea269000-75eeea400000 r--p 00000000 00:4a 111499                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/MultiProc.pcm
+75eeea400000-75eeeb405000 r--p 00000000 00:4a 116450                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/MathCore.pcm
+75eeeb443000-75eeeb600000 r--p 00000000 00:4a 98859                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Thread.pcm
+75eeeb600000-75eeebad0000 r--p 00000000 00:4a 112298                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/RIO.pcm
+75eeebb4d000-75eeebc00000 r--p 00000000 00:4a 98624                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/SpectrumPainter.pcm
+75eeebc00000-75eeec75f000 r--p 00000000 00:4a 112354                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Core.pcm
+75eeec7b0000-75eeec800000 rw-p 00000000 00:00 0 
+75eeec800000-75eeecd89000 r--p 00000000 00:4a 100731                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/_Builtin_intrinsics.pcm
+75eeecd97000-75eeece4a000 r--p 00000000 00:4a 98279                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/XMLParser.pcm
+75eeece4a000-75eeed000000 r--p 00000000 00:4a 111722                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Cling_Runtime.pcm
+75eeed000000-75eeed262000 r--p 00000000 00:4a 100739                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libc.pcm
+75eeed264000-75eeed26a000 r--p 00000000 00:4a 99373                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libtbbmalloc.so.2.16
+75eeed26a000-75eeed281000 r-xp 00006000 00:4a 99373                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libtbbmalloc.so.2.16
+75eeed281000-75eeed286000 r--p 0001d000 00:4a 99373                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libtbbmalloc.so.2.16
+75eeed286000-75eeed287000 r--p 00021000 00:4a 99373                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libtbbmalloc.so.2.16
+75eeed287000-75eeed289000 rw-p 00022000 00:4a 99373                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libtbbmalloc.so.2.16
+75eeed289000-75eeed2aa000 rw-p 00000000 00:00 0 
+75eeed2aa000-75eeed353000 r--p 00000000 00:4a 96996                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Rint.pcm
+75eeed353000-75eeed400000 r--p 00000000 00:4a 98955                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/ROOT_Foundation_Stage1_NoRTTI.pcm
+75eeed400000-75eeefa05000 r--p 00000000 00:4a 102733                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/std.pcm
+75eeefa15000-75eeefa46000 r--p 00000000 00:4a 98806                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/ROOT_Rtypes.pcm
+75eeefa46000-75eeefb38000 rw-p 00000000 00:00 0 
+75eeefb43000-75eeefbb1000 r--p 00000000 00:4a 99787                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/ROOT_Foundation_C.pcm
+75eeefbb1000-75eeefc00000 rw-p 00000000 00:00 0 
+75eeefc00000-75eef0245000 r--p 00000000 00:4a 113023                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCling.so
+75eef0245000-75eef52d5000 r-xp 00645000 00:4a 113023                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCling.so
+75eef52d5000-75eef6442000 r--p 056d5000 00:4a 113023                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCling.so
+75eef6442000-75eef6790000 r--p 06842000 00:4a 113023                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCling.so
+75eef6790000-75eef67d8000 rw-p 06b90000 00:4a 113023                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCling.so
+75eef67d8000-75eef686e000 rw-p 00000000 00:00 0 
+75eef6874000-75eef6898000 r--p 00000000 00:4a 96648                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/ROOT_Config.pcm
+75eef6898000-75eef68af000 r--p 00000000 00:4a 113515                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/Cling_Runtime_Extra.pcm
+75eef68af000-75eef68e7000 r--p 00000000 00:4a 99098                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCPyCppyy.so
+75eef68e7000-75eef69c1000 r-xp 00038000 00:4a 99098                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCPyCppyy.so
+75eef69c1000-75eef69f2000 r--p 00112000 00:4a 99098                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCPyCppyy.so
+75eef69f2000-75eef69f9000 r--p 00143000 00:4a 99098                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCPyCppyy.so
+75eef69f9000-75eef69fe000 rw-p 0014a000 00:4a 99098                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCPyCppyy.so
+75eef69fe000-75eef6a00000 rw-p 00000000 00:00 0 
+75eef6a00000-75eef6a86000 r--p 00000000 00:4a 107320                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libpython3.13.so.1.0
+75eef6a86000-75eef6d59000 r-xp 00086000 00:4a 107320                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libpython3.13.so.1.0
+75eef6d59000-75eef6ec3000 r--p 00359000 00:4a 107320                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libpython3.13.so.1.0
+75eef6ec3000-75eef6f10000 r--p 004c3000 00:4a 107320                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libpython3.13.so.1.0
+75eef6f10000-75eef6f94000 rw-p 00510000 00:4a 107320                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libpython3.13.so.1.0
+75eef6f94000-75eef7006000 rw-p 00000000 00:00 0 
+75eef7007000-75eef7008000 rw-p 00000000 00:00 0 
+75eef7008000-75eef7009000 r--p 00000000 00:00 0 
+75eef7009000-75eef700a000 r-xp 00000000 00:00 0 
+75eef700a000-75eef700b000 rw-p 00000000 00:00 0 
+75eef700b000-75eef700c000 r--p 00000000 00:00 0 
+75eef700c000-75eef700d000 r-xp 00000000 00:00 0 
+75eef700d000-75eef700e000 rw-p 00000000 00:00 0 
+75eef700e000-75eef700f000 r--p 00000000 00:00 0 
+75eef700f000-75eef7010000 r-xp 00000000 00:00 0 
+75eef7010000-75eef7011000 rw-p 00000000 00:00 0 
+75eef7011000-75eef7012000 r--p 00000000 00:00 0 
+75eef7012000-75eef7013000 r-xp 00000000 00:00 0 
+75eef7013000-75eef7014000 rw-p 00000000 00:00 0 
+75eef7014000-75eef7015000 r--p 00000000 00:00 0 
+75eef7015000-75eef7016000 r-xp 00000000 00:00 0 
+75eef7016000-75eef7068000 r--p 00000000 00:4a 100917                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/modules.idx
+75eef7068000-75eef706f000 r--p 00000000 00:4a 98976                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/_Builtin_stddef.pcm
+75eef706f000-75eef709c000 rw-p 00000000 00:00 0 
+75eef709c000-75eef709d000 r--p 00000000 00:00 0 
+75eef709d000-75eef709e000 r-xp 00000000 00:00 0 
+75eef709e000-75eef709f000 rw-p 00000000 00:00 0 
+75eef709f000-75eef70a0000 r--p 00000000 00:00 0 
+75eef70a0000-75eef70a1000 r-xp 00000000 00:00 0 
+75eef70a1000-75eef70a2000 rw-p 00000000 00:00 0 
+75eef70a2000-75eef70a3000 r--p 00000000 00:00 0 
+75eef70a3000-75eef70a4000 r-xp 00000000 00:00 0 
+75eef70a4000-75eef70a5000 rw-p 00000000 00:00 0 
+75eef70a5000-75eef70a6000 r--p 00000000 00:00 0 
+75eef70a6000-75eef70a7000 r-xp 00000000 00:00 0 
+75eef70a7000-75eef70a8000 rw-p 00000000 00:00 0 
+75eef70a8000-75eef70a9000 r--p 00000000 00:00 0 
+75eef70a9000-75eef70aa000 r-xp 00000000 00:00 0 
+75eef70aa000-75eef70ab000 rw-p 00000000 00:00 0 
+75eef70ab000-75eef70ac000 r--p 00000000 00:00 0 
+75eef70ac000-75eef70ad000 r-xp 00000000 00:00 0 
+75eef70ad000-75eef70ae000 rw-p 00000000 00:00 0 
+75eef70ae000-75eef70af000 r--p 00000000 00:00 0 
+75eef70af000-75eef70b0000 r-xp 00000000 00:00 0 
+75eef70b0000-75eef70b1000 rw-p 00000000 00:00 0 
+75eef70b1000-75eef70b2000 r--p 00000000 00:00 0 
+75eef70b2000-75eef70b3000 r-xp 00000000 00:00 0 
+75eef70b3000-75eef70b4000 rw-p 00000000 00:00 0 
+75eef70b4000-75eef70b5000 r--p 00000000 00:00 0 
+75eef70b5000-75eef70b6000 r-xp 00000000 00:00 0 
+75eef70b6000-75eef70b7000 rw-p 00000000 00:00 0 
+75eef70b7000-75eef70b8000 r--p 00000000 00:00 0 
+75eef70b8000-75eef70b9000 r-xp 00000000 00:00 0 
+75eef70b9000-75eef70ba000 rw-p 00000000 00:00 0 
+75eef70ba000-75eef70bb000 r--p 00000000 00:00 0 
+75eef70bb000-75eef70bc000 r-xp 00000000 00:00 0 
+75eef70bc000-75eef70bd000 rw-p 00000000 00:00 0 
+75eef70bd000-75eef70cc000 r--p 00000000 00:4c 2943                       /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/include/c++/15.2.0/x86_64-pc-linux-gnu/bits/c++config.h
+75eef70cc000-75eef711b000 rw-p 00000000 00:00 0 
+75eef711b000-75eef7121000 r--p 00000000 08:30 10073                      /usr/lib64/libselinux.so.1
+75eef7121000-75eef713c000 r-xp 00006000 08:30 10073                      /usr/lib64/libselinux.so.1
+75eef713c000-75eef7144000 r--p 00021000 08:30 10073                      /usr/lib64/libselinux.so.1
+75eef7144000-75eef7145000 r--p 00028000 08:30 10073                      /usr/lib64/libselinux.so.1
+75eef7145000-75eef7146000 rw-p 00029000 08:30 10073                      /usr/lib64/libselinux.so.1
+75eef7146000-75eef7148000 rw-p 00000000 00:00 0 
+75eef7148000-75eef7179000 r--p 00000000 00:4a 99072                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libROOTVecOps.so
+75eef7179000-75eef71e1000 r-xp 00031000 00:4a 99072                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libROOTVecOps.so
+75eef71e1000-75eef71fc000 r--p 00099000 00:4a 99072                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libROOTVecOps.so
+75eef71fc000-75eef71fe000 r--p 000b3000 00:4a 99072                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libROOTVecOps.so
+75eef71fe000-75eef71ff000 rw-p 000b5000 00:4a 99072                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libROOTVecOps.so
+75eef71ff000-75eef7200000 rw-p 00000000 00:00 0 
+75eef7200000-75eef7285000 r--p 00000000 00:4a 100661                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libROOTNTuple.so
+75eef7285000-75eef743e000 r-xp 00085000 00:4a 100661                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libROOTNTuple.so
+75eef743e000-75eef74b0000 r--p 0023e000 00:4a 100661                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libROOTNTuple.so
+75eef74b0000-75eef74c2000 r--p 002af000 00:4a 100661                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libROOTNTuple.so
+75eef74c2000-75eef74c5000 rw-p 002c1000 00:4a 100661                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libROOTNTuple.so
+75eef74c5000-75eef74c7000 rw-p 00000000 00:00 0 
+75eef74c7000-75eef74c8000 r--p 00000000 00:00 0 
+75eef74c8000-75eef74ca000 rw-p 00000000 00:00 0 
+75eef74ca000-75eef74cd000 r--p 00000000 00:4a 17867                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libcalg.so
+75eef74cd000-75eef74d2000 r-xp 00003000 00:4a 17867                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libcalg.so
+75eef74d2000-75eef74d4000 r--p 00008000 00:4a 17867                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libcalg.so
+75eef74d4000-75eef74d5000 r--p 00009000 00:4a 17867                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libcalg.so
+75eef74d5000-75eef74d6000 rw-p 0000a000 00:4a 17867                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libcalg.so
+75eef74d6000-75eef74da000 r--p 00000000 08:30 10056                      /usr/lib64/libresolv.so.2
+75eef74da000-75eef74e3000 r-xp 00004000 08:30 10056                      /usr/lib64/libresolv.so.2
+75eef74e3000-75eef74e6000 r--p 0000d000 08:30 10056                      /usr/lib64/libresolv.so.2
+75eef74e6000-75eef74e7000 r--p 0000f000 08:30 10056                      /usr/lib64/libresolv.so.2
+75eef74e7000-75eef74e8000 rw-p 00010000 08:30 10056                      /usr/lib64/libresolv.so.2
+75eef74e8000-75eef74ea000 rw-p 00000000 00:00 0 
+75eef74ea000-75eef74ec000 r--p 00000000 08:30 9894                       /usr/lib64/libkeyutils.so.1.10
+75eef74ec000-75eef74ee000 r-xp 00002000 08:30 9894                       /usr/lib64/libkeyutils.so.1.10
+75eef74ee000-75eef74ef000 r--p 00004000 08:30 9894                       /usr/lib64/libkeyutils.so.1.10
+75eef74ef000-75eef74f0000 r--p 00004000 08:30 9894                       /usr/lib64/libkeyutils.so.1.10
+75eef74f0000-75eef74f1000 rw-p 00000000 00:00 0 
+75eef74f1000-75eef74f5000 r--p 00000000 08:30 9902                       /usr/lib64/libkrb5support.so.0.1
+75eef74f5000-75eef74fd000 r-xp 00004000 08:30 9902                       /usr/lib64/libkrb5support.so.0.1
+75eef74fd000-75eef7500000 r--p 0000c000 08:30 9902                       /usr/lib64/libkrb5support.so.0.1
+75eef7500000-75eef7501000 r--p 0000e000 08:30 9902                       /usr/lib64/libkrb5support.so.0.1
+75eef7501000-75eef7502000 rw-p 0000f000 08:30 9902                       /usr/lib64/libkrb5support.so.0.1
+75eef7502000-75eef7505000 r--p 00000000 00:4a 99074                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libboost_chrono.so.1.90.0
+75eef7505000-75eef750b000 r-xp 00003000 00:4a 99074                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libboost_chrono.so.1.90.0
+75eef750b000-75eef750d000 r--p 00009000 00:4a 99074                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libboost_chrono.so.1.90.0
+75eef750d000-75eef750e000 r--p 0000a000 00:4a 99074                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libboost_chrono.so.1.90.0
+75eef750e000-75eef750f000 rw-p 0000b000 00:4a 99074                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libboost_chrono.so.1.90.0
+75eef750f000-75eef7510000 r--p 00000000 00:4a 100691                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libboost_atomic.so.1.90.0
+75eef7510000-75eef7512000 r-xp 00001000 00:4a 100691                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libboost_atomic.so.1.90.0
+75eef7512000-75eef7513000 r--p 00003000 00:4a 100691                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libboost_atomic.so.1.90.0
+75eef7513000-75eef7514000 r--p 00003000 00:4a 100691                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libboost_atomic.so.1.90.0
+75eef7514000-75eef7515000 rw-p 00004000 00:4a 100691                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libboost_atomic.so.1.90.0
+75eef7515000-75eef7519000 rw-p 00000000 00:00 0 
+75eef7519000-75eef751d000 r--p 00000000 00:4a 100831                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libboost_container.so.1.90.0
+75eef751d000-75eef752a000 r-xp 00004000 00:4a 100831                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libboost_container.so.1.90.0
+75eef752a000-75eef752d000 r--p 00011000 00:4a 100831                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libboost_container.so.1.90.0
+75eef752d000-75eef752e000 r--p 00013000 00:4a 100831                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libboost_container.so.1.90.0
+75eef752e000-75eef752f000 rw-p 00014000 00:4a 100831                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libboost_container.so.1.90.0
+75eef752f000-75eef7551000 r--p 00000000 08:30 9900                       /usr/lib64/libkrb5.so.3.3
+75eef7551000-75eef75bb000 r-xp 00022000 08:30 9900                       /usr/lib64/libkrb5.so.3.3
+75eef75bb000-75eef75f9000 r--p 0008c000 08:30 9900                       /usr/lib64/libkrb5.so.3.3
+75eef75f9000-75eef75fa000 ---p 000ca000 08:30 9900                       /usr/lib64/libkrb5.so.3.3
+75eef75fa000-75eef7608000 r--p 000ca000 08:30 9900                       /usr/lib64/libkrb5.so.3.3
+75eef7608000-75eef760a000 rw-p 000d8000 08:30 9900                       /usr/lib64/libkrb5.so.3.3
+75eef760a000-75eef7616000 r--p 00000000 08:30 9827                       /usr/lib64/libgssapi_krb5.so.2.2
+75eef7616000-75eef7651000 r-xp 0000c000 08:30 9827                       /usr/lib64/libgssapi_krb5.so.2.2
+75eef7651000-75eef765d000 r--p 00047000 08:30 9827                       /usr/lib64/libgssapi_krb5.so.2.2
+75eef765d000-75eef765e000 ---p 00053000 08:30 9827                       /usr/lib64/libgssapi_krb5.so.2.2
+75eef765e000-75eef7660000 r--p 00053000 08:30 9827                       /usr/lib64/libgssapi_krb5.so.2.2
+75eef7660000-75eef7661000 rw-p 00055000 08:30 9827                       /usr/lib64/libgssapi_krb5.so.2.2
+75eef7661000-75eef7666000 r--p 00000000 08:30 9963                       /usr/lib64/libnghttp2.so.14.20.1
+75eef7666000-75eef767b000 r-xp 00005000 08:30 9963                       /usr/lib64/libnghttp2.so.14.20.1
+75eef767b000-75eef7687000 r--p 0001a000 08:30 9963                       /usr/lib64/libnghttp2.so.14.20.1
+75eef7687000-75eef768a000 r--p 00025000 08:30 9963                       /usr/lib64/libnghttp2.so.14.20.1
+75eef768a000-75eef768b000 rw-p 00028000 08:30 9963                       /usr/lib64/libnghttp2.so.14.20.1
+75eef768b000-75eef770f000 r--p 00000000 00:4a 101139                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libTree.so
+75eef770f000-75eef77e7000 r-xp 00084000 00:4a 101139                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libTree.so
+75eef77e7000-75eef7825000 r--p 0015c000 00:4a 101139                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libTree.so
+75eef7825000-75eef7835000 r--p 00199000 00:4a 101139                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libTree.so
+75eef7835000-75eef7838000 rw-p 001a9000 00:4a 101139                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libTree.so
+75eef7838000-75eef783c000 rw-p 00000000 00:00 0 
+75eef783c000-75eef7860000 r--p 00000000 00:4a 23974                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODCaloEvent.so
+75eef7860000-75eef788b000 r-xp 00024000 00:4a 23974                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODCaloEvent.so
+75eef788b000-75eef7899000 r--p 0004f000 00:4a 23974                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODCaloEvent.so
+75eef7899000-75eef789c000 r--p 0005c000 00:4a 23974                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODCaloEvent.so
+75eef789c000-75eef789d000 rw-p 0005f000 00:4a 23974                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODCaloEvent.so
+75eef789d000-75eef789e000 rw-p 00000000 00:00 0 
+75eef789e000-75eef7919000 r--p 00000000 00:4a 25191                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODTrigger.so
+75eef7919000-75eef7a15000 r-xp 0007b000 00:4a 25191                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODTrigger.so
+75eef7a15000-75eef7a61000 r--p 00177000 00:4a 25191                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODTrigger.so
+75eef7a61000-75eef7a6b000 r--p 001c3000 00:4a 25191                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODTrigger.so
+75eef7a6b000-75eef7a6d000 rw-p 001cd000 00:4a 25191                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODTrigger.so
+75eef7a6d000-75eef7a70000 rw-p 00000000 00:00 0 
+75eef7a70000-75eef7ab2000 r--p 00000000 00:4a 26464                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODPFlow.so
+75eef7ab2000-75eef7af8000 r-xp 00042000 00:4a 26464                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODPFlow.so
+75eef7af8000-75eef7b0c000 r--p 00088000 00:4a 26464                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODPFlow.so
+75eef7b0c000-75eef7b11000 r--p 0009c000 00:4a 26464                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODPFlow.so
+75eef7b11000-75eef7b12000 rw-p 000a1000 00:4a 26464                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODPFlow.so
+75eef7b12000-75eef7b14000 rw-p 00000000 00:00 0 
+75eef7b14000-75eef7b3f000 r--p 00000000 00:4a 18695                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODCore.so
+75eef7b3f000-75eef7b6b000 r-xp 0002b000 00:4a 18695                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODCore.so
+75eef7b6b000-75eef7b7c000 r--p 00057000 00:4a 18695                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODCore.so
+75eef7b7c000-75eef7b80000 r--p 00067000 00:4a 18695                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODCore.so
+75eef7b80000-75eef7b81000 rw-p 0006b000 00:4a 18695                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODCore.so
+75eef7b81000-75eef7b82000 rw-p 00000000 00:00 0 
+75eef7b82000-75eef7b8d000 r--p 00000000 08:30 9684                       /usr/lib64/libcurl.so.4.7.0
+75eef7b8d000-75eef7be5000 r-xp 0000b000 08:30 9684                       /usr/lib64/libcurl.so.4.7.0
+75eef7be5000-75eef7bfa000 r--p 00063000 08:30 9684                       /usr/lib64/libcurl.so.4.7.0
+75eef7bfa000-75eef7bfb000 ---p 00078000 08:30 9684                       /usr/lib64/libcurl.so.4.7.0
+75eef7bfb000-75eef7bfd000 r--p 00078000 08:30 9684                       /usr/lib64/libcurl.so.4.7.0
+75eef7bfd000-75eef7bff000 rw-p 0007a000 08:30 9684                       /usr/lib64/libcurl.so.4.7.0
+75eef7bff000-75eef7c00000 rw-p 00000000 00:00 0 
+75eef7c00000-75eef7cad000 r--p 00000000 08:30 9673                       /usr/lib64/libcrypto.so.3.0.7
+75eef7cad000-75eef7f08000 r-xp 000ad000 08:30 9673                       /usr/lib64/libcrypto.so.3.0.7
+75eef7f08000-75eef7fd4000 r--p 00308000 08:30 9673                       /usr/lib64/libcrypto.so.3.0.7
+75eef7fd4000-75eef7fd5000 ---p 003d4000 08:30 9673                       /usr/lib64/libcrypto.so.3.0.7
+75eef7fd5000-75eef802b000 r--p 003d4000 08:30 9673                       /usr/lib64/libcrypto.so.3.0.7
+75eef802b000-75eef802e000 rw-p 0042a000 08:30 9673                       /usr/lib64/libcrypto.so.3.0.7
+75eef802e000-75eef8035000 rw-p 00000000 00:00 0 
+75eef8035000-75eef8036000 r--p 00000000 00:4a 26476                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAthDSoCallBacks.so
+75eef8036000-75eef8037000 r-xp 00001000 00:4a 26476                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAthDSoCallBacks.so
+75eef8037000-75eef8038000 r--p 00002000 00:4a 26476                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAthDSoCallBacks.so
+75eef8038000-75eef8039000 r--p 00002000 00:4a 26476                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAthDSoCallBacks.so
+75eef8039000-75eef803a000 rw-p 00003000 00:4a 26476                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAthDSoCallBacks.so
+75eef803a000-75eef804a000 r--p 00000000 00:4a 16515                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libRootUtils.so
+75eef804a000-75eef8053000 r-xp 00010000 00:4a 16515                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libRootUtils.so
+75eef8053000-75eef8057000 r--p 00019000 00:4a 16515                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libRootUtils.so
+75eef8057000-75eef8059000 r--p 0001d000 00:4a 16515                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libRootUtils.so
+75eef8059000-75eef805a000 rw-p 0001f000 00:4a 16515                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libRootUtils.so
+75eef805a000-75eef805f000 r--p 00000000 08:30 10320                      /usr/lib64/libzstd.so.1.5.1
+75eef805f000-75eef811e000 r-xp 00005000 08:30 10320                      /usr/lib64/libzstd.so.1.5.1
+75eef811e000-75eef812e000 r--p 000c4000 08:30 10320                      /usr/lib64/libzstd.so.1.5.1
+75eef812e000-75eef812f000 ---p 000d4000 08:30 10320                      /usr/lib64/libzstd.so.1.5.1
+75eef812f000-75eef8130000 r--p 000d4000 08:30 10320                      /usr/lib64/libzstd.so.1.5.1
+75eef8130000-75eef8131000 rw-p 000d5000 08:30 10320                      /usr/lib64/libzstd.so.1.5.1
+75eef8131000-75eef8133000 r--p 00000000 08:30 10011                      /usr/lib64/libpcre2-8.so.0.11.0
+75eef8133000-75eef81a0000 r-xp 00002000 08:30 10011                      /usr/lib64/libpcre2-8.so.0.11.0
+75eef81a0000-75eef81cb000 r--p 0006f000 08:30 10011                      /usr/lib64/libpcre2-8.so.0.11.0
+75eef81cb000-75eef81cc000 r--p 00099000 08:30 10011                      /usr/lib64/libpcre2-8.so.0.11.0
+75eef81cc000-75eef81cd000 rw-p 0009a000 08:30 10011                      /usr/lib64/libpcre2-8.so.0.11.0
+75eef81cd000-75eef81eb000 r--p 00000000 08:30 10097                      /usr/lib64/libssl.so.3.0.7
+75eef81eb000-75eef8248000 r-xp 0001e000 08:30 10097                      /usr/lib64/libssl.so.3.0.7
+75eef8248000-75eef8265000 r--p 0007b000 08:30 10097                      /usr/lib64/libssl.so.3.0.7
+75eef8265000-75eef826f000 r--p 00097000 08:30 10097                      /usr/lib64/libssl.so.3.0.7
+75eef826f000-75eef8273000 rw-p 000a1000 08:30 10097                      /usr/lib64/libssl.so.3.0.7
+75eef8273000-75eef8280000 r--p 00000000 00:4a 100949                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libtbb.so.12.16
+75eef8280000-75eef82ab000 r-xp 0000d000 00:4a 100949                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libtbb.so.12.16
+75eef82ab000-75eef82b6000 r--p 00038000 00:4a 100949                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libtbb.so.12.16
+75eef82b6000-75eef82b8000 r--p 00043000 00:4a 100949                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libtbb.so.12.16
+75eef82b8000-75eef82bb000 rw-p 00045000 00:4a 100949                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libtbb.so.12.16
+75eef82bb000-75eef82d1000 rw-p 00000000 00:00 0 
+75eef82d1000-75eef8349000 r--p 00000000 00:4a 21914                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAthContainers.so
+75eef8349000-75eef83ca000 r-xp 00078000 00:4a 21914                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAthContainers.so
+75eef83ca000-75eef83f4000 r--p 000f9000 00:4a 21914                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAthContainers.so
+75eef83f4000-75eef83fe000 r--p 00123000 00:4a 21914                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAthContainers.so
+75eef83fe000-75eef8400000 rw-p 0012d000 00:4a 21914                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAthContainers.so
+75eef8400000-75eef8559000 r--p 00000000 00:4a 100488                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libHist.so
+75eef8559000-75eef87c8000 r-xp 00159000 00:4a 100488                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libHist.so
+75eef87c8000-75eef8866000 r--p 003c8000 00:4a 100488                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libHist.so
+75eef8866000-75eef8895000 r--p 00465000 00:4a 100488                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libHist.so
+75eef8895000-75eef8899000 rw-p 00494000 00:4a 100488                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libHist.so
+75eef8899000-75eef88a7000 rw-p 00000000 00:00 0 
+75eef88a7000-75eef88a8000 r--p 00000000 00:4a 100777                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libboost_date_time.so.1.90.0
+75eef88a8000-75eef88a9000 r-xp 00001000 00:4a 100777                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libboost_date_time.so.1.90.0
+75eef88a9000-75eef88aa000 r--p 00002000 00:4a 100777                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libboost_date_time.so.1.90.0
+75eef88aa000-75eef88ab000 r--p 00002000 00:4a 100777                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libboost_date_time.so.1.90.0
+75eef88ab000-75eef88ac000 rw-p 00003000 00:4a 100777                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libboost_date_time.so.1.90.0
+75eef88ac000-75eef88ae000 r--p 00000000 00:4a 100741                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libvdt.so
+75eef88ae000-75eef88b3000 r-xp 00002000 00:4a 100741                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libvdt.so
+75eef88b3000-75eef88b4000 r--p 00007000 00:4a 100741                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libvdt.so
+75eef88b4000-75eef88b5000 r--p 00008000 00:4a 100741                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libvdt.so
+75eef88b5000-75eef88b6000 rw-p 00009000 00:4a 100741                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libvdt.so
+75eef88b6000-75eef88b7000 r--p 00000000 00:4a 26477                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCaloGeoHelpers.so
+75eef88b7000-75eef88b8000 r-xp 00001000 00:4a 26477                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCaloGeoHelpers.so
+75eef88b8000-75eef88b9000 r--p 00002000 00:4a 26477                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCaloGeoHelpers.so
+75eef88b9000-75eef88ba000 r--p 00002000 00:4a 26477                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCaloGeoHelpers.so
+75eef88ba000-75eef88bb000 rw-p 00003000 00:4a 26477                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCaloGeoHelpers.so
+75eef88bb000-75eef88c2000 r--p 00000000 00:4a 107397                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libboost_thread.so.1.90.0
+75eef88c2000-75eef88d2000 r-xp 00007000 00:4a 107397                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libboost_thread.so.1.90.0
+75eef88d2000-75eef88d7000 r--p 00017000 00:4a 107397                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libboost_thread.so.1.90.0
+75eef88d7000-75eef88d9000 r--p 0001b000 00:4a 107397                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libboost_thread.so.1.90.0
+75eef88d9000-75eef88da000 rw-p 0001d000 00:4a 107397                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libboost_thread.so.1.90.0
+75eef88da000-75eef8929000 r--p 00000000 00:4a 23997                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODRootAccess.so
+75eef8929000-75eef89c8000 r-xp 0004f000 00:4a 23997                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODRootAccess.so
+75eef89c8000-75eef89f6000 r--p 000ee000 00:4a 23997                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODRootAccess.so
+75eef89f6000-75eef89fc000 r--p 0011c000 00:4a 23997                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODRootAccess.so
+75eef89fc000-75eef89ff000 rw-p 00122000 00:4a 23997                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODRootAccess.so
+75eef89ff000-75eef8a00000 rw-p 00000000 00:00 0 
+75eef8a00000-75eef8a28000 r--p 00000000 08:30 9649                       /usr/lib64/libc.so.6
+75eef8a28000-75eef8b9d000 r-xp 00028000 08:30 9649                       /usr/lib64/libc.so.6
+75eef8b9d000-75eef8bf5000 r--p 0019d000 08:30 9649                       /usr/lib64/libc.so.6
+75eef8bf5000-75eef8bf6000 ---p 001f5000 08:30 9649                       /usr/lib64/libc.so.6
+75eef8bf6000-75eef8bfa000 r--p 001f5000 08:30 9649                       /usr/lib64/libc.so.6
+75eef8bfa000-75eef8bfc000 rw-p 001f9000 08:30 9649                       /usr/lib64/libc.so.6
+75eef8bfc000-75eef8c0d000 rw-p 00000000 00:00 0 
+75eef8c0d000-75eef8c12000 r--p 00000000 08:30 9882                       /usr/lib64/libk5crypto.so.3.1
+75eef8c12000-75eef8c1f000 r-xp 00005000 08:30 9882                       /usr/lib64/libk5crypto.so.3.1
+75eef8c1f000-75eef8c23000 r--p 00012000 08:30 9882                       /usr/lib64/libk5crypto.so.3.1
+75eef8c23000-75eef8c25000 r--p 00015000 08:30 9882                       /usr/lib64/libk5crypto.so.3.1
+75eef8c25000-75eef8c26000 rw-p 00000000 00:00 0 
+75eef8c26000-75eef8c2f000 r--p 00000000 00:4a 100124                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libROOTTPython.so
+75eef8c2f000-75eef8c38000 r-xp 00009000 00:4a 100124                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libROOTTPython.so
+75eef8c38000-75eef8c3b000 r--p 00012000 00:4a 100124                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libROOTTPython.so
+75eef8c3b000-75eef8c3c000 r--p 00015000 00:4a 100124                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libROOTTPython.so
+75eef8c3c000-75eef8c3d000 rw-p 00016000 00:4a 100124                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libROOTTPython.so
+75eef8c3d000-75eef8c5d000 r--p 00000000 00:4a 17638                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAsgTools.so
+75eef8c5d000-75eef8cb3000 r-xp 00020000 00:4a 17638                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAsgTools.so
+75eef8cb3000-75eef8ccb000 r--p 00076000 00:4a 17638                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAsgTools.so
+75eef8ccb000-75eef8ccd000 r--p 0008e000 00:4a 17638                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAsgTools.so
+75eef8ccd000-75eef8ccf000 rw-p 00090000 00:4a 17638                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAsgTools.so
+75eef8ccf000-75eef8d28000 r--p 00000000 00:4a 25175                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODTracking.so
+75eef8d28000-75eef8dc7000 r-xp 00059000 00:4a 25175                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODTracking.so
+75eef8dc7000-75eef8df3000 r--p 000f8000 00:4a 25175                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODTracking.so
+75eef8df3000-75eef8dfb000 r--p 00124000 00:4a 25175                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODTracking.so
+75eef8dfb000-75eef8dfc000 rw-p 0012c000 00:4a 25175                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODTracking.so
+75eef8dfc000-75eef8e00000 rw-p 00000000 00:00 0 
+75eef8e00000-75eef8ea2000 r--p 00000000 00:4c 3814                       /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6.0.34
+75eef8ea2000-75eef8fd6000 r-xp 000a2000 00:4c 3814                       /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6.0.34
+75eef8fd6000-75eef9064000 r--p 001d6000 00:4c 3814                       /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6.0.34
+75eef9064000-75eef9073000 r--p 00263000 00:4c 3814                       /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6.0.34
+75eef9073000-75eef9076000 rw-p 00272000 00:4c 3814                       /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libstdc++.so.6.0.34
+75eef9076000-75eef907e000 rw-p 00000000 00:00 0 
+75eef907e000-75eef9080000 r--p 00000000 08:30 9664                       /usr/lib64/libcom_err.so.2.1
+75eef9080000-75eef9082000 r-xp 00002000 08:30 9664                       /usr/lib64/libcom_err.so.2.1
+75eef9082000-75eef9083000 r--p 00004000 08:30 9664                       /usr/lib64/libcom_err.so.2.1
+75eef9083000-75eef9084000 r--p 00004000 08:30 9664                       /usr/lib64/libcom_err.so.2.1
+75eef9084000-75eef9085000 rw-p 00005000 08:30 9664                       /usr/lib64/libcom_err.so.2.1
+75eef9085000-75eef908a000 r--p 00000000 00:4a 23983                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libRootCoreUtils.so
+75eef908a000-75eef9096000 r-xp 00005000 00:4a 23983                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libRootCoreUtils.so
+75eef9096000-75eef9099000 r--p 00011000 00:4a 23983                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libRootCoreUtils.so
+75eef9099000-75eef909a000 r--p 00013000 00:4a 23983                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libRootCoreUtils.so
+75eef909a000-75eef909b000 rw-p 00014000 00:4a 23983                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libRootCoreUtils.so
+75eef909b000-75eef909e000 r--p 00000000 08:30 10318                      /usr/lib64/libz.so.1.2.11
+75eef909e000-75eef90ac000 r-xp 00003000 08:30 10318                      /usr/lib64/libz.so.1.2.11
+75eef90ac000-75eef90b2000 r--p 00011000 08:30 10318                      /usr/lib64/libz.so.1.2.11
+75eef90b2000-75eef90b3000 ---p 00017000 08:30 10318                      /usr/lib64/libz.so.1.2.11
+75eef90b3000-75eef90b4000 r--p 00017000 08:30 10318                      /usr/lib64/libz.so.1.2.11
+75eef90b4000-75eef90b5000 rw-p 00000000 00:00 0 
+75eef90b5000-75eef90c6000 r--p 00000000 00:4a 26469                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCxxUtils.so
+75eef90c6000-75eef90f6000 r-xp 00011000 00:4a 26469                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCxxUtils.so
+75eef90f6000-75eef9104000 r--p 00041000 00:4a 26469                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCxxUtils.so
+75eef9104000-75eef9105000 r--p 0004e000 00:4a 26469                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCxxUtils.so
+75eef9105000-75eef9106000 rw-p 0004f000 00:4a 26469                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCxxUtils.so
+75eef9106000-75eef9107000 rw-p 00000000 00:00 0 
+75eef9107000-75eef9120000 r--p 00000000 00:4a 21123                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODJet.so
+75eef9120000-75eef9145000 r-xp 00019000 00:4a 21123                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODJet.so
+75eef9145000-75eef914f000 r--p 0003e000 00:4a 21123                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODJet.so
+75eef914f000-75eef9151000 r--p 00048000 00:4a 21123                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODJet.so
+75eef9151000-75eef9152000 rw-p 0004a000 00:4a 21123                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODJet.so
+75eef9152000-75eef9154000 rw-p 00000000 00:00 0 
+75eef9154000-75eef9193000 r--p 00000000 00:4a 21957                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODEventInfo.so
+75eef9193000-75eef91e0000 r-xp 0003f000 00:4a 21957                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODEventInfo.so
+75eef91e0000-75eef91f9000 r--p 0008c000 00:4a 21957                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODEventInfo.so
+75eef91f9000-75eef91fe000 r--p 000a5000 00:4a 21957                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODEventInfo.so
+75eef91fe000-75eef91ff000 rw-p 000aa000 00:4a 21957                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODEventInfo.so
+75eef91ff000-75eef9200000 rw-p 00000000 00:00 0 
+75eef9200000-75eef9371000 r--p 00000000 00:4a 101470                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCore.so
+75eef9371000-75eef95da000 r-xp 00171000 00:4a 101470                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCore.so
+75eef95da000-75eef96ab000 r--p 003da000 00:4a 101470                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCore.so
+75eef96ab000-75eef96d5000 r--p 004aa000 00:4a 101470                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCore.so
+75eef96d5000-75eef96db000 rw-p 004d4000 00:4a 101470                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libCore.so
+75eef96db000-75eef9713000 rw-p 00000000 00:00 0 
+75eef9713000-75eef9715000 r--p 00000000 00:4a 21030                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODEventFormat.so
+75eef9715000-75eef9719000 r-xp 00002000 00:4a 21030                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODEventFormat.so
+75eef9719000-75eef971a000 r--p 00006000 00:4a 21030                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODEventFormat.so
+75eef971a000-75eef971b000 r--p 00006000 00:4a 21030                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODEventFormat.so
+75eef971b000-75eef971c000 rw-p 00007000 00:4a 21030                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODEventFormat.so
+75eef971c000-75eef9720000 rw-p 00000000 00:00 0 
+75eef9720000-75eef9721000 r--p 00000000 00:4a 16919                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODRootAccessInterfaces.so
+75eef9721000-75eef9722000 r-xp 00001000 00:4a 16919                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODRootAccessInterfaces.so
+75eef9722000-75eef9723000 r--p 00002000 00:4a 16919                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODRootAccessInterfaces.so
+75eef9723000-75eef9724000 r--p 00002000 00:4a 16919                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODRootAccessInterfaces.so
+75eef9724000-75eef9725000 rw-p 00003000 00:4a 16919                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libxAODRootAccessInterfaces.so
+75eef9725000-75eef9727000 r--p 00000000 00:4a 24223                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAthLinks.so
+75eef9727000-75eef9728000 r-xp 00002000 00:4a 24223                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAthLinks.so
+75eef9728000-75eef9729000 r--p 00003000 00:4a 24223                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAthLinks.so
+75eef9729000-75eef972a000 r--p 00003000 00:4a 24223                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAthLinks.so
+75eef972a000-75eef972b000 rw-p 00004000 00:4a 24223                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAthLinks.so
+75eef972b000-75eef973a000 r--p 00000000 00:4a 25192                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAsgMessagingLib.so
+75eef973a000-75eef9752000 r-xp 0000f000 00:4a 25192                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAsgMessagingLib.so
+75eef9752000-75eef9758000 r--p 00027000 00:4a 25192                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAsgMessagingLib.so
+75eef9758000-75eef9759000 r--p 0002c000 00:4a 25192                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAsgMessagingLib.so
+75eef9759000-75eef975a000 rw-p 0002d000 00:4a 25192                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libAsgMessagingLib.so
+75eef975a000-75eef9772000 r--p 00000000 00:4a 16425                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libPATInterfaces.so
+75eef9772000-75eef979c000 r-xp 00018000 00:4a 16425                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libPATInterfaces.so
+75eef979c000-75eef97a9000 r--p 00042000 00:4a 16425                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libPATInterfaces.so
+75eef97a9000-75eef97ab000 r--p 0004e000 00:4a 16425                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libPATInterfaces.so
+75eef97ab000-75eef97ac000 rw-p 00050000 00:4a 16425                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libPATInterfaces.so
+75eef97ac000-75eef97ad000 rw-p 00000000 00:00 0 
+75eef97ad000-75eef97b5000 r--p 00000000 00:4a 18818                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libPathResolver.so
+75eef97b5000-75eef97c9000 r-xp 00008000 00:4a 18818                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libPathResolver.so
+75eef97c9000-75eef97d1000 r--p 0001c000 00:4a 18818                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libPathResolver.so
+75eef97d1000-75eef97d2000 r--p 00023000 00:4a 18818                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libPathResolver.so
+75eef97d2000-75eef97d3000 rw-p 00024000 00:4a 18818                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libPathResolver.so
+75eef97d3000-75eef97d7000 r--p 00000000 00:4c 3798                       /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libgcc_s.so.1
+75eef97d7000-75eef97fa000 r-xp 00004000 00:4c 3798                       /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libgcc_s.so.1
+75eef97fa000-75eef97fe000 r--p 00027000 00:4c 3798                       /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libgcc_s.so.1
+75eef97fe000-75eef97ff000 r--p 0002a000 00:4c 3798                       /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libgcc_s.so.1
+75eef97ff000-75eef9800000 rw-p 0002b000 00:4c 3798                       /cvmfs/sft.cern.ch/lcg/releases/gcc/15.2.0-35657/x86_64-el9/lib64/libgcc_s.so.1
+75eef9800000-75eef98fc000 r--p 00000000 00:4a 101658                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libRIO.so
+75eef98fc000-75eef9c78000 r-xp 000fc000 00:4a 101658                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libRIO.so
+75eef9c78000-75eef9d0a000 r--p 00478000 00:4a 101658                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libRIO.so
+75eef9d0a000-75eef9d1b000 r--p 0050a000 00:4a 101658                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libRIO.so
+75eef9d1b000-75eef9d1e000 rw-p 0051b000 00:4a 101658                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libRIO.so
+75eef9d1e000-75eef9d25000 rw-p 00000000 00:00 0 
+75eef9d25000-75eef9d32000 r--p 00000000 08:30 9926                       /usr/lib64/libm.so.6
+75eef9d32000-75eef9da2000 r-xp 0000d000 08:30 9926                       /usr/lib64/libm.so.6
+75eef9da2000-75eef9dfe000 r--p 0007d000 08:30 9926                       /usr/lib64/libm.so.6
+75eef9dfe000-75eef9dff000 r--p 000d8000 08:30 9926                       /usr/lib64/libm.so.6
+75eef9dff000-75eef9e00000 rw-p 000d9000 08:30 9926                       /usr/lib64/libm.so.6
+75eef9e00000-75eef9e7f000 r--p 00000000 00:4a 101237                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libMathCore.so
+75eef9e7f000-75eef9f79000 r-xp 0007f000 00:4a 101237                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libMathCore.so
+75eef9f79000-75eefa03f000 r--p 00179000 00:4a 101237                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libMathCore.so
+75eefa03f000-75eefa04a000 r--p 0023f000 00:4a 101237                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libMathCore.so
+75eefa04a000-75eefa04c000 rw-p 0024a000 00:4a 101237                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libMathCore.so
+75eefa04c000-75eefa05d000 rw-p 00000000 00:00 0 
+75eefa05d000-75eefa05e000 r-xp 00000000 00:00 0 
+75eefa05e000-75eefa05f000 rw-p 00000000 00:00 0 
+75eefa05f000-75eefa060000 r--p 00000000 00:00 0 
+75eefa060000-75eefa061000 r-xp 00000000 00:00 0 
+75eefa061000-75eefa062000 rw-p 00000000 00:00 0 
+75eefa062000-75eefa063000 r--p 00000000 00:00 0 
+75eefa063000-75eefa089000 r--p 00000000 00:4a 100795                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libThread.so
+75eefa089000-75eefa0a3000 r-xp 00026000 00:4a 100795                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libThread.so
+75eefa0a3000-75eefa0af000 r--p 00040000 00:4a 100795                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libThread.so
+75eefa0af000-75eefa0b3000 r--p 0004b000 00:4a 100795                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libThread.so
+75eefa0b3000-75eefa0b4000 rw-p 0004f000 00:4a 100795                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libThread.so
+75eefa0b4000-75eefa0b6000 rw-p 00000000 00:00 0 
+75eefa0b6000-75eefa10e000 r--p 00000000 00:4a 99108                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libNet.so
+75eefa10e000-75eefa160000 r-xp 00058000 00:4a 99108                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libNet.so
+75eefa160000-75eefa180000 r--p 000aa000 00:4a 99108                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libNet.so
+75eefa180000-75eefa18c000 r--p 000c9000 00:4a 99108                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libNet.so
+75eefa18c000-75eefa18e000 rw-p 000d5000 00:4a 99108                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libNet.so
+75eefa18e000-75eefa197000 rw-p 00000000 00:00 0 
+75eefa197000-75eefa19b000 r--p 00000000 00:4a 99193                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libMultiProc.so
+75eefa19b000-75eefa1a2000 r-xp 00004000 00:4a 99193                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libMultiProc.so
+75eefa1a2000-75eefa1a4000 r--p 0000b000 00:4a 99193                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libMultiProc.so
+75eefa1a4000-75eefa1a5000 r--p 0000c000 00:4a 99193                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libMultiProc.so
+75eefa1a5000-75eefa1a6000 rw-p 0000d000 00:4a 99193                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libMultiProc.so
+75eefa1a6000-75eefa1af000 r--p 00000000 00:4a 99002                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libImt.so
+75eefa1af000-75eefa1b7000 r-xp 00009000 00:4a 99002                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libImt.so
+75eefa1b7000-75eefa1bb000 r--p 00011000 00:4a 99002                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libImt.so
+75eefa1bb000-75eefa1bc000 r--p 00015000 00:4a 99002                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libImt.so
+75eefa1bc000-75eefa1bd000 rw-p 00016000 00:4a 99002                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libImt.so
+75eefa1bd000-75eefa1dc000 r--p 00000000 00:4a 100792                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libGenVector.so
+75eefa1dc000-75eefa22a000 r-xp 0001f000 00:4a 100792                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libGenVector.so
+75eefa22a000-75eefa242000 r--p 0006d000 00:4a 100792                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libGenVector.so
+75eefa242000-75eefa244000 r--p 00085000 00:4a 100792                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libGenVector.so
+75eefa244000-75eefa245000 rw-p 00087000 00:4a 100792                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libGenVector.so
+75eefa245000-75eefa24e000 rw-p 00000000 00:00 0 
+75eefa24e000-75eefa2b1000 r--p 00000000 00:4a 101065                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libMatrix.so
+75eefa2b1000-75eefa3be000 r-xp 00063000 00:4a 101065                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libMatrix.so
+75eefa3be000-75eefa3f3000 r--p 00170000 00:4a 101065                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libMatrix.so
+75eefa3f3000-75eefa3fb000 r--p 001a4000 00:4a 101065                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libMatrix.so
+75eefa3fb000-75eefa3fd000 rw-p 001ac000 00:4a 101065                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libMatrix.so
+75eefa3fd000-75eefa403000 rw-p 00000000 00:00 0 
+75eefa403000-75eefa41c000 r--p 00000000 00:4a 98996                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libPhysics.so
+75eefa41c000-75eefa444000 r-xp 00019000 00:4a 98996                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libPhysics.so
+75eefa444000-75eefa44f000 r--p 00041000 00:4a 98996                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libPhysics.so
+75eefa44f000-75eefa452000 r--p 0004b000 00:4a 98996                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libPhysics.so
+75eefa452000-75eefa453000 rw-p 0004e000 00:4a 98996                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libPhysics.so
+75eefa453000-75eefa454000 rw-p 00000000 00:00 0 
+75eefa454000-75eefa485000 r--p 00000000 08:30 331165                     /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/correctionlib/lib/libcorrectionlib.so
+75eefa485000-75eefa4eb000 r-xp 00031000 08:30 331165                     /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/correctionlib/lib/libcorrectionlib.so
+75eefa4eb000-75eefa501000 r--p 00097000 08:30 331165                     /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/correctionlib/lib/libcorrectionlib.so
+75eefa501000-75eefa504000 r--p 000ad000 08:30 331165                     /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/correctionlib/lib/libcorrectionlib.so
+75eefa504000-75eefa505000 rw-p 000b0000 08:30 331165                     /home/gwatts/atlas/correctionlib_tests/venv/lib/python3.13/site-packages/correctionlib/lib/libcorrectionlib.so
+75eefa505000-75eefa51c000 r--p 00000000 00:4a 101548                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/liblwtnn.so
+75eefa51c000-75eefa554000 r-xp 00017000 00:4a 101548                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/liblwtnn.so
+75eefa554000-75eefa561000 r--p 0004f000 00:4a 101548                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/liblwtnn.so
+75eefa561000-75eefa563000 r--p 0005b000 00:4a 101548                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/liblwtnn.so
+75eefa563000-75eefa564000 rw-p 0005d000 00:4a 101548                     /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBaseExternals/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/liblwtnn.so
+75eefa564000-75eefa59d000 r--p 00000000 00:4a 16315                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libJetUncertaintiesLib.so
+75eefa59d000-75eefa626000 r-xp 00039000 00:4a 16315                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libJetUncertaintiesLib.so
+75eefa626000-75eefa64d000 r--p 000c2000 00:4a 16315                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libJetUncertaintiesLib.so
+75eefa64d000-75eefa652000 r--p 000e9000 00:4a 16315                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libJetUncertaintiesLib.so
+75eefa652000-75eefa654000 rw-p 000ee000 00:4a 16315                      /cvmfs/atlas.cern.ch/repo/sw/software/25.2/AnalysisBase/25.2.100/InstallArea/x86_64-el9-gcc15-opt/lib/libJetUncertaintiesLib.so
+75eefa654000-75eefa656000 rw-p 00000000 00:00 0 
+75eefa656000-75eefa65a000 r--p 00000000 00:00 0                          [vvar]
+75eefa65a000-75eefa65c000 r--p 00000000 00:00 0                          [vvar_vclock]
+75eefa65c000-75eefa65e000 r-xp 00000000 00:00 0                          [vdso]
+75eefa65e000-75eefa660000 r--p 00000000 08:30 9491                       /usr/lib64/ld-linux-x86-64.so.2
+75eefa660000-75eefa686000 r-xp 00002000 08:30 9491                       /usr/lib64/ld-linux-x86-64.so.2
+75eefa686000-75eefa691000 r--p 00028000 08:30 9491                       /usr/lib64/ld-linux-x86-64.so.2
+75eefa691000-75eefa692000 r-xp 00000000 00:00 0 
+75eefa692000-75eefa694000 r--p 00033000 08:30 9491                       /usr/lib64/ld-linux-x86-64.so.2
+75eefa694000-75eefa696000 rw-p 00035000 08:30 9491                       /usr/lib64/ld-linux-x86-64.so.2
+7ffd5966d000-7ffd59692000 rw-p 00000000 00:00 0                          [stack]

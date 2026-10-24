@@ -1,0 +1,217 @@
+{
+  "cpu": 0,
+  "jets": 196606,
+  "lookup_categories": {
+    "1D-Full": {
+      "boundary_validation": {
+        "bad": 0,
+        "count": 71361,
+        "max_abs": 0.0,
+        "max_rel": 0.0,
+        "unequal": 0
+      },
+      "lookups_per_sweep": 4915150,
+      "rounds": [
+        {
+          "atlas": 0.164191073,
+          "correctionlib": 0.200712677,
+          "correctionlib_reused_arguments": 0.169824203
+        },
+        {
+          "atlas": 0.163134416,
+          "correctionlib": 0.200566674,
+          "correctionlib_reused_arguments": 0.169529072
+        },
+        {
+          "atlas": 0.162492285,
+          "correctionlib": 0.201426669,
+          "correctionlib_reused_arguments": 0.168311632
+        },
+        {
+          "atlas": 0.164099603,
+          "correctionlib": 0.200134838,
+          "correctionlib_reused_arguments": 0.172691196
+        },
+        {
+          "atlas": 0.16449895,
+          "correctionlib": 0.207186243,
+          "correctionlib_reused_arguments": 0.173516436
+        },
+        {
+          "atlas": 0.164048661,
+          "correctionlib": 0.199431045,
+          "correctionlib_reused_arguments": 0.169899093
+        },
+        {
+          "atlas": 0.165078328,
+          "correctionlib": 0.200696627,
+          "correctionlib_reused_arguments": 0.168994765
+        }
+      ],
+      "sample_validation": {
+        "bad": 0,
+        "count": 4915150,
+        "max_abs": 0.0,
+        "max_rel": 0.0,
+        "unequal": 0
+      },
+      "tables": 25
+    },
+    "2D-Full": {
+      "boundary_validation": {
+        "bad": 0,
+        "count": 17016,
+        "max_abs": 2.220446049250313e-16,
+        "max_rel": 1.2936003320298651e-14,
+        "unequal": 7665
+      },
+      "lookups_per_sweep": 3342302,
+      "rounds": [
+        {
+          "atlas": 0.352271969,
+          "correctionlib": 0.431587259,
+          "correctionlib_reused_arguments": 0.395544521
+        },
+        {
+          "atlas": 0.34953071,
+          "correctionlib": 0.433878195,
+          "correctionlib_reused_arguments": 0.396687451
+        },
+        {
+          "atlas": 0.351120256,
+          "correctionlib": 0.432512468,
+          "correctionlib_reused_arguments": 0.398274546
+        },
+        {
+          "atlas": 0.350051696,
+          "correctionlib": 0.43518695,
+          "correctionlib_reused_arguments": 0.397226168
+        },
+        {
+          "atlas": 0.349427014,
+          "correctionlib": 0.434490287,
+          "correctionlib_reused_arguments": 0.398367084
+        },
+        {
+          "atlas": 0.37653821,
+          "correctionlib": 0.522671299,
+          "correctionlib_reused_arguments": 0.397859522
+        },
+        {
+          "atlas": 0.409658392,
+          "correctionlib": 0.448311579,
+          "correctionlib_reused_arguments": 0.411675751
+        }
+      ],
+      "sample_validation": {
+        "bad": 0,
+        "count": 3342302,
+        "max_abs": 6.661338147750939e-16,
+        "max_rel": 1.437129322929806e-12,
+        "unequal": 1604197
+      },
+      "tables": 17
+    },
+    "2D-OnlyX": {
+      "boundary_validation": {
+        "bad": 0,
+        "count": 9555,
+        "max_abs": 8.673617379884035e-19,
+        "max_rel": 4.971660774545834e-16,
+        "unequal": 8
+      },
+      "lookups_per_sweep": 3145696,
+      "rounds": [
+        {
+          "atlas": 0.179974258,
+          "correctionlib": 0.19276786,
+          "correctionlib_reused_arguments": 0.161388398
+        },
+        {
+          "atlas": 0.207863515,
+          "correctionlib": 0.223149628,
+          "correctionlib_reused_arguments": 0.186883979
+        },
+        {
+          "atlas": 0.180323561,
+          "correctionlib": 0.193308924,
+          "correctionlib_reused_arguments": 0.168373324
+        },
+        {
+          "atlas": 0.179701153,
+          "correctionlib": 0.194900416,
+          "correctionlib_reused_arguments": 0.160067819
+        },
+        {
+          "atlas": 0.179367738,
+          "correctionlib": 0.192178294,
+          "correctionlib_reused_arguments": 0.162211473
+        },
+        {
+          "atlas": 0.178687987,
+          "correctionlib": 0.193891288,
+          "correctionlib_reused_arguments": 0.159806499
+        },
+        {
+          "atlas": 0.184118823,
+          "correctionlib": 0.195165269,
+          "correctionlib_reused_arguments": 0.158325758
+        }
+      ],
+      "sample_validation": {
+        "bad": 0,
+        "count": 3145696,
+        "max_abs": 0.0,
+        "max_rel": 0.0,
+        "unequal": 0
+      },
+      "tables": 16
+    }
+  },
+  "lookup_tolerance": {
+    "atol": 1e-10,
+    "rtol": 1e-09
+  },
+  "passed": true,
+  "shared_systematics": {
+    "groups": 45,
+    "rounds": [
+      {
+        "atlas": 1.179706754,
+        "correctionlib": 1.26897885
+      },
+      {
+        "atlas": 1.109347787,
+        "correctionlib": 1.30137998
+      },
+      {
+        "atlas": 1.107877237,
+        "correctionlib": 1.249431728
+      },
+      {
+        "atlas": 1.110266646,
+        "correctionlib": 1.450703553
+      },
+      {
+        "atlas": 1.107859371,
+        "correctionlib": 1.254036034
+      },
+      {
+        "atlas": 1.114418234,
+        "correctionlib": 1.294683015
+      },
+      {
+        "atlas": 1.137913945,
+        "correctionlib": 1.29442845
+      }
+    ],
+    "states": 117,
+    "validation": {
+      "bad": 0,
+      "count": 115014510,
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "unequal": 0
+    }
+  }
+}

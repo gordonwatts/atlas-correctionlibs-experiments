@@ -1,0 +1,18 @@
+{
+  "source_commit": "f4b7c762d003ada4fd180b573fd1664d77aba48e",
+  "hashes": {
+    "payloads/uncertainty-tables.json.gz": "7701a65da5544b839c7b2cdcde048fcd0576eda801d6dce632aabd48013bfdb0",
+    "payloads/uncertainty-manifest.json": "0017dfd1a3ddbebd71a5bcf2dd9958c7fd0c04b9f99ec2deb37d759c4b59cb22",
+    "results/overhead-study/kernel-inputs.bin": "fc715f62f958c78f179ec895cb4650c9e4f5c022b2202da3f4f054bffc9baa0f",
+    "src/backend.hxx": "4aa39b68f54e865176e819086c12c68a9b8297d4ee811d9f8cf9d00ec488ea9f",
+    "src/systematics.hxx": "1493577dacb7a0ca4d3b0b44d50c1cdeac07b0e70f280ac10c1dde5edc1f3db9",
+    "src/efficiency.hxx": "94a89cf94cc888d1a887d2a8a567383c526ce9176474d62f80435bb0364499e2"
+  },
+  "production_modified": false,
+  "rounds": 7,
+  "discarded_rounds": [
+    0
+  ],
+  "order": "rotated for lookups; alternating for shared evaluator",
+  "input": "196606 nominal jets from existing full-sample native replay; systematic inputs are 7 columns of the 21-column binary"
+}

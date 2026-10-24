@@ -110,3 +110,7 @@ The final shared backend takes **257.80 ± 4.10 s** in Path B, compared with the
 Four sequential runs of 20,000 events, full systematics and unchanged `config/reference.yaml`; first run excluded, no forced cache flush. One-CPU affinity and one native/BLAS/OpenMP worker. Environment setup is outside the timer; process startup, tool initialization, computation and ROOT output are inside. The library-observation loop polls every 0.5 s, adding up to roughly 0.5 s of finish-detection delay. All four full A comparisons passed outside the timed jobs. Loaded-library records confirm the rebuilt JetMomentTools and JetUncertainties overlays and expected CorrectionLib library.
 
 No physics implementation or configuration changed for this measurement. This updates the end-of-campaign B measurement only; earlier checkpoints were not rerun. Raw ROOT outputs and logs remain in WSL. [Run summaries and provenance](optimization-campaign/27-final-B-timing/summary.json).
+
+## Matched lookup comparison (24 October 2026)
+
+A test-only swap inside the shared systematic backend measured 1.115 ± 0.012 s with original ATLAS histogram lookups versus 1.307 ± 0.074 s with CorrectionLib. All 117 states matched exactly on the replay sample. This is a native calculation study, not a new C-nice optimization checkpoint or end-to-end timing. See [the lookup comparison](lookup-comparison.md) for the direct interpolation and JVT lookup measurements, scope and validation.
