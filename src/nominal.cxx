@@ -36,10 +36,7 @@ py::array_t<double> groupArray(const JetSystematics& engine,const std::vector<st
  const double* source=input.data();double* target=out.mutable_data();
  {
   py::gil_scoped_release release;
-  std::vector<std::vector<double>> rows;rows.reserve(n);
-  for(py::ssize_t i=0;i<n;++i)rows.emplace_back(source+i*7,source+(i+1)*7);
-  const auto values=engine.batch_group(names,rows);
-  for(py::ssize_t k=0;k<states;++k)for(py::ssize_t i=0;i<n;++i)std::copy(values[k][i].begin(),values[k][i].end(),target+(k*n+i)*5);
+  engine.batch_group_into(names,source,static_cast<size_t>(n),target);
  }
  return out;
 }

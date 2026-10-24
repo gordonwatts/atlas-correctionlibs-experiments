@@ -107,7 +107,7 @@ private:
   double sigma=cs.front().resolution?std::max(jerMC(pt,std::abs(eta)),jerData(pt,std::abs(eta))):0.;
   return {unc,sigma};
  }
- std::vector<double> apply(const Variation& variation,const std::array<double,2>& prepared,const std::vector<double>& r)const{
+ std::array<double,5> apply(const Variation& variation,const std::array<double,2>& prepared,const std::vector<double>& r)const{
   double scale=1+variation.sign*prepared[0];
   if(variation.components->front().resolution)scale=smear(r[2],prepared[1],variation.sign*prepared[0],variation.data);
   else if(variation.data)throw std::invalid_argument("PseudoData is only supported for resolution variations");
@@ -118,7 +118,27 @@ public:
  std::vector<double> evaluate(const std::string& sys,const std::vector<double>& r)const{
   if(r.size()!=7)throw std::invalid_argument("Systematics requires seven inputs");
   if(sys=="NOSYS")return {r[0],r[1],r[2],r[3],0.};
-  const auto variation=resolve(sys);return apply(variation,amounts(variation,r),r);
+  const auto variation=resolve(sys);const auto result=apply(variation,amounts(variation,r),r);return {result.begin(),result.end()};
+ }
+ // Contiguous NumPy storage: no per-jet input or output heap allocations.
+ void batch_group_into(const std::vector<std::string>& names,const double* input,size_t n,double* output)const{
+  if(names.empty())throw std::invalid_argument("Empty systematic group");
+  std::vector<double> row(7);
+  if(names.front()=="NOSYS"){
+   if(names.size()!=1)throw std::invalid_argument("NOSYS must be evaluated alone");
+   for(size_t i=0;i<n;++i){std::copy_n(input+7*i,4,output+5*i);output[5*i+4]=0.;}
+   return;
+  }
+  std::vector<Variation> variations;for(const auto& name:names)variations.push_back(resolve(name));
+  for(const auto& variation:variations)if(variation.components!=variations.front().components)throw std::invalid_argument("Group must use one uncertainty recipe");
+  for(size_t i=0;i<n;++i){
+   std::copy_n(input+7*i,7,row.begin());
+   const auto prepared=amounts(variations.front(),row);
+   for(size_t k=0;k<variations.size();++k){
+    const auto result=apply(variations[k],prepared,row);
+    std::copy(result.begin(),result.end(),output+(k*n+i)*5);
+   }
+  }
  }
  std::vector<std::vector<std::vector<double>>> batch_group(const std::vector<std::string>& names,const std::vector<std::vector<double>>& rows)const{
   if(names.empty())throw std::invalid_argument("Empty systematic group");
@@ -131,7 +151,7 @@ public:
   std::vector<std::vector<std::vector<double>>> out(names.size());for(auto& state:out)state.reserve(rows.size());
   for(const auto& row:rows){
    const auto prepared=amounts(variations.front(),row);
-   for(size_t i=0;i<variations.size();++i)out[i].push_back(apply(variations[i],prepared,row));
+   for(size_t i=0;i<variations.size();++i){const auto result=apply(variations[i],prepared,row);out[i].emplace_back(result.begin(),result.end());}
   }
   return out;
  }
