@@ -68,8 +68,15 @@ class Systematics:
  def __init__(self,payload):
   from _atlas_corrections import JetSystematics
   payload=Path(payload)
-  self.tables=correctionlib.CorrectionSet.from_file(str(payload/"uncertainty-tables.json.gz"))
+  self._payload=payload
+  self._tables=None
   self.engine=JetSystematics(str(payload/"uncertainty-tables.json.gz"),str(payload/"uncertainty-manifest.json"))
+ @property
+ def tables(self):
+  # Compatibility/inspection access; active calculations use the shared C++ set.
+  if self._tables is None:
+   self._tables=correctionlib.CorrectionSet.from_file(str(self._payload/"uncertainty-tables.json.gz"))
+  return self._tables
  def variations(self,p4,mu,npv,bjet):
   rows=np.column_stack([p4,mu,npv,bjet])
   for name in self.engine.names():

@@ -12,11 +12,17 @@ class Jvt:
   cuts=[[c["cuts"][f"({i}, {j})"] for j in range(len(eta)-1)] for i in range(len(pt)-1)]
   self.nn=NNJvt(str(payload/"nnjvt-network.json"),pt,eta,cuts);self.tables=tables
   self.efficiency=JvtEfficiency(str(payload/"uncertainty-tables.json.gz"),str(payload/"uncertainty-manifest.json"))
-  with gzip.open(payload/"uncertainty-tables.json.gz","rt") as f:data=json.load(f)
-  self.ranges={}
-  for h in ["JvtFixedEffPt","EffFixedEffPt"]:
-   node=next(x for x in data["corrections"] if x["name"]==f"file2__{h}__None__content")["data"]
-   self.ranges[h]=(node["edges"][0],node["edges"][-1],node["content"][0]["edges"][0],node["content"][0]["edges"][-1])
+  self._payload=payload
+  self._ranges=None
+ @property
+ def ranges(self):
+  if self._ranges is None:
+    with gzip.open(self._payload/"uncertainty-tables.json.gz","rt") as f:data=json.load(f)
+    self._ranges={}
+    for h in ["JvtFixedEffPt","EffFixedEffPt"]:
+     node=next(x for x in data["corrections"] if x["name"]==f"file2__{h}__None__content")["data"]
+     self._ranges[h]=(node["edges"][0],node["edges"][-1],node["content"][0]["edges"][0],node["content"][0]["edges"][-1])
+  return self._ranges
  def evaluate(self,p4,sumpt,jvfcorr,haspv,ishs,sigma=0):
   # Both NNJVT selection and efficiency use the configured default JetEtaName='eta'.
   rows=np.column_stack([p4[:,0],p4[:,1],p4[:,1],sumpt,jvfcorr,haspv])

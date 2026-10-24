@@ -1,0 +1,1 @@
+PASS: lazy properties preserve payload tables and exact ranges; repeated access is cached
