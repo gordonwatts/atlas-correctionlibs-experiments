@@ -1,6 +1,6 @@
 # Four-path implementation and timing comparison
 
-**Current single-threaded result: 49.63 ± 0.39 s.** The earlier 38.72 s result used four native workers. See [single-threaded timings and profiling](single-thread-profiling.md) for the current default, isolated RNG changes, and validation.
+**Selected full-systematics result: 25.61 ± 0.31 s on one CPU.** Both NN changes are implemented in the shared B/C inference backend. This is 1.94× faster than the 49.63 s checkpoint and 0.83 s below the pre-NN 26.44 s checkpoint. These are short sequential measurements, not a controlled estimate of each change’s isolated gain. See the [complete timing history](x2-optimization.md).
 
 Subsequent C-nice optimization: **38.72 ± 0.29 s** for the full systematic diagnostic workflow. See [the individual checkpoint table](c-nice-optimization.md) for scope, source references, commits and validation. The table below preserves the earlier campaign.
 

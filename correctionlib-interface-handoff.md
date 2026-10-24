@@ -451,3 +451,8 @@ The selected code is checkpoint 20. The larger-chunk experiment at checkpoint 21
 | 21-larger-read-chunks | 26.64 ± 0.41 | Read nominal inputs in 5000-event chunks instead of 1000; same full sample and outputs **Reverted: no useful gain.** [Source](scripts/run-columnar-full.py) | `eab8381bcf2cd209ea60e91230f8dfcca504af9f` |
 
 The implementation changes and validation details are in [the complete campaign report](x2-optimization.md). B passed again with its original configuration; all final C physics buffers match checkpoint 11 byte for byte. All changes are local commits; nothing was pushed.
+
+
+## Shared NN optimization update
+
+**Selected full-systematics result: 25.61 ± 0.31 s on one CPU.** Both NN changes are implemented in the shared B/C inference backend. This is 1.94× faster than the 49.63 s checkpoint and 0.83 s below the pre-NN 26.44 s checkpoint. These are short sequential measurements, not a controlled estimate of each change’s isolated gain. Full details and validation: [NN optimization report](nn-optimization.md).

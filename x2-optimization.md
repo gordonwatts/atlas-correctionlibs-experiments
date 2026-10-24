@@ -1,8 +1,8 @@
 # Complete C-nice optimization timing history
 
-The selected full-systematics workflow takes **26.44 ± 0.42 s** on one CPU for 20,000 events (196,606 jets), down from **49.63 ± 0.39 s**: **1.88× faster**, or **46.7% less time**. It remains 1.63 s above the 24.81 s target. Against the freshly rebuilt unchanged control (47.13 s), the speedup is **1.78×**. No numerical approximation, seed change, tolerance change, systematic reduction, or dropped output/check was used.
+**Selected full-systematics result: 25.61 ± 0.31 s on one CPU.** Both NN changes are implemented in the shared B/C inference backend. This is 1.94× faster than the 49.63 s checkpoint and 0.83 s below the pre-NN 26.44 s checkpoint. These are short sequential measurements, not a controlled estimate of each change’s isolated gain.
 
-The selected code is checkpoint 20. The larger-chunk experiment at checkpoint 21 showed no useful improvement and was reverted; its results remain preserved. The exact JVT cache at checkpoint 18 has no separately established speedup: its apparent gain is smaller than the observed timing variation.
+Checkpoint 26 is selected. Checkpoint 21’s larger input chunks were reverted. Checkpoints 18 and 25 have no individually established performance gain. See [the NN implementation and acceptance report](nn-optimization.md).
 
 The table includes every optimization checkpoint from the original 155.86 s baseline. Steps 05–08 used four native workers; steps 09 onward use one worker pinned to one CPU. Earlier steps 00–04 used one native worker without the later affinity policy. Do not interpret the thread-policy transitions as isolated implementation gains. Historical A/B/C/D, nominal-only and no-calibration comparisons remain in [the four-path comparison](four-path-timing-comparison.md). Profiling runs 22–24 are diagnostic studies, not additional accepted benchmark checkpoints.
 
@@ -32,8 +32,10 @@ Three runs per checkpoint; discard the first and report mean/sample SD of the re
 | 19-flat-group-buffers | 28.48 ± 0.12 | Write grouped native results directly into contiguous NumPy storage [Source](src/nominal.cxx) | `03888d2720da6d1d5f2ae30710cd02ae2a8237a8` |
 | 20-flat-adapters | 26.44 ± 0.42 | Reuse one native input row and write scalar outputs directly into NumPy buffers [Source](src/nominal.cxx) | `38935839d523edfad166fcb740fdcb79deb8ed88` |
 | 21-larger-read-chunks | 26.64 ± 0.41 | Read nominal inputs in 5000-event chunks instead of 1000; same full sample and outputs **Reverted: no useful gain.** [Source](scripts/run-columnar-full.py) | `eab8381bcf2cd209ea60e91230f8dfcca504af9f` |
+| 25-nn-feature-cache | 27.01 ± 1.00 | Cache exact NN input tuples in a bounded model-scoped native cache shared by B and C. **Gain inconclusive.** [Source](src/nn_graph.hxx) | `e35bd9d9a171aee5eeecf68016f44aea058b0e1f` |
+| 26-nn-reusable-buffers | 25.61 ± 0.31 | Reuse NN intermediate buffers with matching Eigen operations in the shared B/C backend [Source](src/nn_graph.hxx) | `2d8cad68da093634555819df49ea7190e4285023` |
 
-## What changed
+## Earlier campaign through checkpoint 20
 
 The earlier profile identified table evaluation as the dominant remaining native work. The first change removes a copy of the non-uniform bin-edge vector on every lookup. The original full-precision JSON patch was preserved separately before rebuilding. The 49.63-to-47.13-second control shift is not credited to the bin-copy fix. The library was built with the same Release settings before and after that fix; exact external-source commits and installed library SHA-256 hashes are retained in each checkpoint’s implementation metadata.
 
@@ -45,18 +47,49 @@ The C-nice facade remains nominal-only and its call is unchanged. Full-systemati
 
 Keeping arrays and tools alive trades memory for startup/read savings. The JVT anchor is proportional to one batch and the reference reader retains one 16-branch block. Grouped native output holds at most four states at once; temporary per-jet vectors have been removed from the array adapters. Peak resident memory was not measured, and multiplicity-dependent truth matching remains a memory consideration. The selected input chunk size is still 1,000 events.
 
-## Validation and remaining cost
+## Validation and remaining cost at checkpoint 20
 
 Every repetition passed the full A nominal, systematic and JVT comparisons. Final raw-byte comparisons against checkpoint 11 passed for all prepared input arrays, nominal stages, 117 kinematic states and 119 JVT/weight states, including dtype, event/jet identities and statuses. Only the intentionally changed backend-provenance metadata is excluded. Evidence: [final parity](optimization-campaign/x2-checks/11-cached-gaussian-to-20-flat-adapters-parity.json).
 
 The existing six backend tests passed after each native build. The grouped API was checked against scalar evaluation across all 117 states, including empty/strided/malformed inputs and invalid groups. Dense adapters were checked against legacy bindings, including nominal stages. JVT-cache checks covered changed inputs, mutation, sigma shifts, replacement tools and empty batches. The initial integrated-runner attempt failed because counts initialization was accidentally conditional on disk loading; this was fixed before acceptance, and its failed logs remain under `16-integrated-workflow`.
 
-Final B integration passed all 20,000 events against A with unchanged `config/reference.yaml` (SHA-256 `4d84aa237b6a1796c05e9a38fa341e89993f1b8c582bc99da7b1624b4ed46ca8`). The one-core B run took **271.04 s**. This is a single integration measurement, not a repeated B speedup estimate. Process mappings confirm the rebuilt overlay and expected CorrectionLib library were loaded. See [B summary](optimization-campaign/x2-B-integration/summary.json) and [loaded libraries](optimization-campaign/x2-B-integration/loaded-libraries.txt).
+B integration at checkpoint 20 passed all 20,000 events against A with unchanged `config/reference.yaml` (SHA-256 `4d84aa237b6a1796c05e9a38fa341e89993f1b8c582bc99da7b1624b4ed46ca8`). The one-core B run took **271.04 s**. This is a single integration measurement, not a repeated B speedup estimate. Process mappings confirm the rebuilt overlay and expected CorrectionLib library were loaded. See [B summary](optimization-campaign/x2-B-integration/summary.json) and [loaded libraries](optimization-campaign/x2-B-integration/loaded-libraries.txt).
 
-The selected uninstrumented stage means are nominal **4.43 s**, systematics **9.86 s**, and JVT **11.74 s**, plus process startup/teardown. Each stage includes its own I/O and validation, so these are not pure kernel times. A further 2× claim needs another 6.2% reduction from the selected result. Before accepting approximations, the next useful experiment is a fresh profile separating JVT computation from reading/writing/reference comparison, under matched production-like output requirements.
+The checkpoint-20 uninstrumented stage means are nominal **4.43 s**, systematics **9.86 s**, and JVT **11.74 s**, plus process startup/teardown. Each stage includes its own I/O and validation, so these are not pure kernel times. At checkpoint 20, a further 2× claim needed another 6.2% reduction from the selected result. Before accepting approximations, the next useful experiment is a fresh profile separating JVT computation from reading/writing/reference comparison, under matched production-like output requirements.
 
 All implementation checkpoints, the reverted experiment, verification evidence and reports are preserved in local Git. The authoritative source/build is WSL `atlas_al9:/home/gwatts/atlas/correctionlib_tests`; Windows contains synchronized inspection sources and lightweight results. Raw generated ROOT files remain in their original WSL campaign folders. The external CorrectionLib change is also committed in its own repository and exported as patches. Nothing was pushed. The timer summaries record the pre-change HEAD; the table gives the candidate commit containing the implementation and its measurements.
 
 A fresh profile of the selected implementation is available in [the final profile report](final-profile-report.md), with direct wall-time attribution for reference reads, JVT, tool loading and output.
 
 The subsequent [native calculation study](calculation-profile-report.md) resolves NNJVT, efficiency and grouped-systematic costs, including internal allocations and exact repeated NN features.
+
+
+## Earlier cross-path, plotting and no-calibration timings
+
+These are historical measurements with different scopes; none was remeasured for the NN changes. A/B full-job reference comparisons are outside their timers, while C/C-nice/D diagnostic comparisons are inside. Nominal plotting reruns nominal calibration. Stored-jet rows bypass calibration; the A stored-jet plot uses an intermediate tree. Do not treat these rows as matched reader or facade-overhead benchmarks.
+
+| Path / workflow | Mean wall seconds | Sample SD | Measurement |
+|---|---:|---:|---|
+| A: original ATLAS, full workflow | 237.26 | 0.96 | Previous baseline |
+| B: shared backend in ATLAS, full workflow | 290.70 | 1.01 | Previous baseline; backend unchanged |
+| C-nice: array facade nominal + C systematics/JVT | 161.89 | 3.55 | Remeasured after array update |
+| C-nice: array nominal file-to-Hist plot only | 8.05 | 0.06 | Remeasured; smaller scope |
+| Stored PHYSLITE pT/eta to Hist; no calibration | 1.08 | 0.05 | Two input branches |
+| Stored PHYSLITE to Hist; also read C-nice inputs | 2.22 | 0.02 | I/O control; no calibration |
+| A: stored jets, no calibration/systematics, write tree | 8.75 | 0.37 | New CPRun measurement |
+| A: above job plus Hist plot of output tree | 9.58 | 0.37 | Includes intermediate tree I/O |
+| Initial C-nice before array update: full workflow | 188.53 | 2.31 | Earlier campaign |
+| Initial C-nice before array update: nominal plot | 28.45 | 0.13 | Earlier campaign |
+| Original C: full workflow | 167.70 | 0.95 | Historical four-path campaign |
+| D: full workflow | 283.21 | 22.37 | Historical four-path campaign |
+
+## B integration timings after backend changes
+
+These are individual validation runs, not repeated benchmark means.
+
+| After checkpoint | B wall seconds | Validation |
+|---|---:|---|
+| 03 | 288.82 | Full A comparison passed |
+| 11 | 281.61 | Full A comparison passed |
+| 20 | 271.04 | Full A comparison passed |
+| 26 | 268.07 | Full A comparison passed; optimized NN tagger loaded |

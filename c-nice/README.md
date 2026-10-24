@@ -31,3 +31,8 @@ The earlier full-systematics single-core timing was **49.63 ± 0.39 s**. See [th
 
 
 The subsequent exact-result single-core campaign selected **26.44 ± 0.42 s** (1.88× versus 49.63 s; 1.78× versus its rebuilt control). See [the per-change table and acceptance report](../x2-optimization.md). All A comparisons and outputs remain enabled, final C arrays match the prior checkpoint byte for byte, and B passed with unchanged configuration. The 5,000-event chunk experiment was reverted; 1,000-event chunks remain selected.
+
+
+## Shared NN optimization update
+
+**Selected full-systematics result: 25.61 ± 0.31 s on one CPU.** Both NN changes are implemented in the shared B/C inference backend. This is 1.94× faster than the 49.63 s checkpoint and 0.83 s below the pre-NN 26.44 s checkpoint. These are short sequential measurements, not a controlled estimate of each change’s isolated gain. Full details and validation: [NN optimization report](../nn-optimization.md).

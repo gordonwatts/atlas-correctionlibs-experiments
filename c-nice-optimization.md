@@ -1,6 +1,6 @@
 # C-nice full-systematics optimization campaign
 
-**Selected single-threaded result: 26.44 ± 0.42 s.** See the [complete timing history, starting at the original 155.86 s baseline](x2-optimization.md). This report retains the first campaign’s detailed evidence.
+**Selected full-systematics result: 25.61 ± 0.31 s on one CPU.** Both NN changes are implemented in the shared B/C inference backend. This is 1.94× faster than the 49.63 s checkpoint and 0.83 s below the pre-NN 26.44 s checkpoint. These are short sequential measurements, not a controlled estimate of each change’s isolated gain. See the [complete timing history](x2-optimization.md).
 
 20,000 events / 196,606 jets; all 117 kinematic and 119 JVT/weight states. Three sequential runs per step; first discarded, mean and sample SD of the remaining two. Setup and compilation excluded. Existing imports, input preparation, numerical evaluation, ROOT outputs and A-reference comparisons remain included. No random-seed changes. Timing differences include run-to-run machine variation.
 
