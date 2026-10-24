@@ -17,15 +17,23 @@ assert np.array_equal(ak.to_numpy(ak.num(arr[fields[2]])),counts)
 mu=np.repeat(ak.to_numpy(arr[fields[0]]).astype(float),counts)
 npv=np.repeat(ak.to_numpy(ak.sum(ak.num(arr[fields[1]],axis=2)>1,axis=1)).astype(float),counts)
 bjet=ak.to_numpy(ak.flatten(arr[fields[2]]))==5
-sumpt=[];haspv=[];ishs=[]
-for i,count in enumerate(counts):
- types=ak.to_list(arr[fields[4]][i]);pv=next((k for k,v in enumerate(types) if v==1),0)
- sumpt.extend([v[pv] for v in ak.to_list(arr[fields[5]][i])]);haspv.extend([types[pv]==1]*count)
- rp={x:ak.to_numpy(arr["AnalysisJetsAuxDyn."+x][i]).astype(float) for x in ["eta","phi"]}
- tp={x:ak.to_numpy(arr["AntiKt4TruthDressedWZJetsAuxDyn."+x][i]).astype(float) for x in ["pt","eta","phi"]}
- dp=(rp["phi"][:,None]-tp["phi"][None,:]+np.pi)%(2*np.pi)-np.pi
- dr=np.sqrt((rp["eta"][:,None]-tp["eta"][None,:])**2+dp**2).astype(np.float32)
- ishs.extend(np.any((dr<np.float32(.3))&(tp["pt"][None,:]>10000),axis=1))
+# Prepare all event/jet features with Awkward arrays.
+types=arr[fields[4]]
+if bool(ak.any((ak.num(types,axis=1)==0)&(counts>0))):
+ raise ValueError("Jets require a nonempty vertex collection")
+pv=ak.fill_none(ak.firsts(ak.local_index(types)[types==1]),0)
+jetpv=np.repeat(ak.to_numpy(pv).astype(np.int64),counts)
+tracks=ak.flatten(arr[fields[5]],axis=1)
+if bool(ak.any(ak.num(tracks,axis=1)<=jetpv)):
+ raise ValueError("Missing per-vertex SumPtTrkPt500")
+sumpt=ak.to_numpy(ak.firsts(tracks[ak.local_index(tracks,axis=1)==jetpv[:,None]])).astype(float)
+haspv=np.repeat(ak.to_numpy(ak.any(types==1,axis=1)),counts)
+reco=ak.zip({x:ak.values_astype(arr["AnalysisJetsAuxDyn."+x],np.float64) for x in ("eta","phi")})
+truth=ak.zip({x:ak.values_astype(arr["AntiKt4TruthDressedWZJetsAuxDyn."+x],np.float64) for x in ("pt","eta","phi")})
+pairs=ak.cartesian({"reco":reco,"truth":truth},axis=1,nested=True)
+dp=(pairs.reco.phi-pairs.truth.phi+np.pi)%(2*np.pi)-np.pi
+dr=ak.values_astype(np.sqrt((pairs.reco.eta-pairs.truth.eta)**2+dp**2),np.float32)
+ishs=ak.to_numpy(ak.flatten(ak.any((dr<np.float32(.3))&(pairs.truth.pt>10000),axis=2),axis=1))
 jvfcorr=ak.to_numpy(ak.flatten(arr[fields[6]])).astype(float)
 np.savez(r/"results/jvt-inputs.npz",p4=p4,mu=mu,npv=npv,bjet=bjet,sumpt=sumpt,jvfcorr=jvfcorr,haspv=haspv,ishs=ishs,counts=counts)
 ref=uproot.open(r/a.reference)["analysis"]

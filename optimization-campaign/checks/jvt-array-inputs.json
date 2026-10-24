@@ -1,0 +1,11 @@
+{
+  "p4": true,
+  "mu": true,
+  "npv": true,
+  "bjet": true,
+  "sumpt": true,
+  "jvfcorr": true,
+  "haspv": true,
+  "ishs": true,
+  "counts": true
+}
