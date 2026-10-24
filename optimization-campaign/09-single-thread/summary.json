@@ -1,0 +1,127 @@
+{
+  "label": "09-single-thread",
+  "mean": 56.26952876300129,
+  "sd": 0.03320414345220564,
+  "records": [
+    {
+      "path": "C",
+      "iteration": 1,
+      "wall_seconds": 56.427497876000416,
+      "stage_seconds": [
+        5.829249243997765,
+        31.531213329999446,
+        19.06702002899692
+      ],
+      "commands": [
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-nominal.py",
+          "--events",
+          "20000",
+          "--chunk-size",
+          "1000"
+        ],
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-systematics.py",
+          "--events",
+          "20000",
+          "--output",
+          "results/columnar-kinematics.root"
+        ],
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-jvt.py",
+          "--events",
+          "20000",
+          "--output",
+          "results/columnar-jvt.root",
+          "--kinematics",
+          "results/columnar-kinematics.root"
+        ]
+      ],
+      "events": 20000
+    },
+    {
+      "path": "C",
+      "iteration": 2,
+      "wall_seconds": 56.246049888002744,
+      "stage_seconds": [
+        5.823180679999496,
+        32.06843630000003,
+        18.354418471000827
+      ],
+      "commands": [
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-nominal.py",
+          "--events",
+          "20000",
+          "--chunk-size",
+          "1000"
+        ],
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-systematics.py",
+          "--events",
+          "20000",
+          "--output",
+          "results/columnar-kinematics.root"
+        ],
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-jvt.py",
+          "--events",
+          "20000",
+          "--output",
+          "results/columnar-jvt.root",
+          "--kinematics",
+          "results/columnar-kinematics.root"
+        ]
+      ],
+      "events": 20000
+    },
+    {
+      "path": "C",
+      "iteration": 3,
+      "wall_seconds": 56.293007637999835,
+      "stage_seconds": [
+        5.775259394999011,
+        32.33174029600195,
+        18.185992673999863
+      ],
+      "commands": [
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-nominal.py",
+          "--events",
+          "20000",
+          "--chunk-size",
+          "1000"
+        ],
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-systematics.py",
+          "--events",
+          "20000",
+          "--output",
+          "results/columnar-kinematics.root"
+        ],
+        [
+          "/home/gwatts/atlas/correctionlib_tests/venv/bin/python",
+          "scripts/run-columnar-jvt.py",
+          "--events",
+          "20000",
+          "--output",
+          "results/columnar-jvt.root",
+          "--kinematics",
+          "results/columnar-kinematics.root"
+        ]
+      ],
+      "events": 20000
+    }
+  ],
+  "discarded_run": 1,
+  "git_head": "f314420935f5fc4276e15465fb257c222a5df264",
+  "passed": true
+}

@@ -4,7 +4,7 @@ import os
 import numpy as np
 
 available=len(os.sched_getaffinity(0)) if hasattr(os,"sched_getaffinity") else (os.cpu_count() or 1)
-workers=int(os.environ.get("ATLAS_CORRECTIONLIB_THREADS",str(min(4,available))))
+workers=int(os.environ.get("ATLAS_CORRECTIONLIB_THREADS","1"))
 if workers < 1:
     raise ValueError("ATLAS_CORRECTIONLIB_THREADS must be positive")
 _pool=ThreadPoolExecutor(max_workers=workers,thread_name_prefix="corrections") if workers>1 else None

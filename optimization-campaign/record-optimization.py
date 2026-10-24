@@ -13,6 +13,9 @@ descriptions={
 '06-array-jvt-inputs':('Replace Python event loops for primary-vertex inputs and truth matching with Awkward arrays','scripts/run-columnar-jvt.py'),
 '07-lz4-output':('Use LZ4 for the same ROOT output columns instead of default ZLIB','scripts/run-columnar-systematics.py'),
 '08-lazy-metadata':('Load optional Python table/range inspection data only on access; native evaluator payloads unchanged','python/atlas_correctionlib/jvt.py'),
+'09-single-thread':('Default to one native worker; benchmark on one CPU with numerical library threads capped at one','python/atlas_correctionlib/parallel.py'),
+'10-rng-construction':('Construct TRandom3 with its final seed, eliminating redundant default seeding','src/backend.hxx'),
+'11-cached-gaussian':('Cache the first standard Gaussian by original seed; preserve rejection and ROOT stream exactly','src/backend.hxx'),
 }
 description,ref=descriptions[label]
 folder=root/'optimization-campaign'/label
@@ -30,7 +33,7 @@ for i in range(1,4):
     dest=out/f'run-{i}';dest.mkdir(exist_ok=True)
     for stage in ('nominal','systematics','jvt'):
         shutil.copy2(folder/f'runs/C-{i}/results/{stage}-comparison.json',dest/f'{stage}.json')
-for rel in ('src/nominal.cxx','src/systematics.hxx','scripts/run-columnar-jvt.py','scripts/run-columnar-systematics.py','python/atlas_correctionlib/systematics.py','python/atlas_correctionlib/jvt.py','python/atlas_correctionlib/parallel.py','python/atlas_correctionlib/kinematic_cache.py'):
+for rel in ('src/backend.hxx','src/nominal.cxx','src/systematics.hxx','scripts/run-columnar-jvt.py','scripts/run-columnar-systematics.py','python/atlas_correctionlib/systematics.py','python/atlas_correctionlib/jvt.py','python/atlas_correctionlib/parallel.py','python/atlas_correctionlib/kinematic_cache.py'):
     if not (root/rel).exists(): continue
     dest=windows/'columnar-source'/rel;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(root/rel,dest)
 shutil.copy2(root/'c-nice/atlas_jet_corrections.py',windows/'c-nice/atlas_jet_corrections.py')
@@ -51,5 +54,8 @@ if (integration/'summary.json').exists():
     for name in ('summary.json','comparison.json','loaded-libraries.txt'):
         shutil.copy2(integration/name,destination/name)
     lines += ['',f'B integration after step 03: all 20,000 events passed comparison with A using unchanged `config/reference.yaml` (SHA-256 `{b["config_sha256"]}`). One run took {b["wall_seconds"]:.2f} s; this is an integration check, not a repeated speedup measurement. Saved worker memory mappings confirm the rebuilt overlay libraries were loaded. Subsequent Python-only steps leave this shared C++ implementation unchanged.']
-(windows/'c-nice-optimization.md').write_text('\n'.join(lines)+'\n')
+report_path=windows/'c-nice-optimization.md'
+previous=report_path.read_text() if report_path.exists() else ''
+tail=previous[previous.index('\n## Outcome'):] if '\n## Outcome' in previous else ''
+report_path.write_text('\n'.join(lines)+'\n'+tail)
 print(commit,summary['mean'],flush=True)
