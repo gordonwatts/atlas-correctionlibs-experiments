@@ -1,6 +1,6 @@
 # C-nice full-systematics optimization campaign
 
-**Current single-threaded result: 49.63 ± 0.39 s.** The earlier 38.72 s result used four native workers. See [single-threaded timings and profiling](single-thread-profiling.md) for the current default, isolated RNG changes, and validation.
+**Selected single-threaded result: 26.44 ± 0.42 s.** See the [complete timing history, starting at the original 155.86 s baseline](x2-optimization.md). This report retains the first campaign’s detailed evidence.
 
 20,000 events / 196,606 jets; all 117 kinematic and 119 JVT/weight states. Three sequential runs per step; first discarded, mean and sample SD of the remaining two. Setup and compilation excluded. Existing imports, input preparation, numerical evaluation, ROOT outputs and A-reference comparisons remain included. No random-seed changes. Timing differences include run-to-run machine variation.
 

@@ -1,13 +1,27 @@
-# Exact-result single-core optimization toward 2×
+# Complete C-nice optimization timing history
 
 The selected full-systematics workflow takes **26.44 ± 0.42 s** on one CPU for 20,000 events (196,606 jets), down from **49.63 ± 0.39 s**: **1.88× faster**, or **46.7% less time**. It remains 1.63 s above the 24.81 s target. Against the freshly rebuilt unchanged control (47.13 s), the speedup is **1.78×**. No numerical approximation, seed change, tolerance change, systematic reduction, or dropped output/check was used.
 
 The selected code is checkpoint 20. The larger-chunk experiment at checkpoint 21 showed no useful improvement and was reverted; its results remain preserved. The exact JVT cache at checkpoint 18 has no separately established speedup: its apparent gain is smaller than the observed timing variation.
 
+The table includes every optimization checkpoint from the original 155.86 s baseline. Steps 05–08 used four native workers; steps 09 onward use one worker pinned to one CPU. Earlier steps 00–04 used one native worker without the later affinity policy. Do not interpret the thread-policy transitions as isolated implementation gains. Historical A/B/C/D, nominal-only and no-calibration comparisons remain in [the four-path comparison](four-path-timing-comparison.md). Profiling runs 22–24 are diagnostic studies, not additional accepted benchmark checkpoints.
+
 Three runs per checkpoint; discard the first and report mean/sample SD of the remaining two. Runs were sequential, not interleaved, with no forced OS-cache flush. These are short checkpoint measurements on one frozen sample, not precision estimates of production throughput. One-CPU affinity, one native worker and one BLAS/OpenMP thread were enforced. Setup and builds are outside the timer; Python startup, nominal recalibration, all systematic/JVT processing, input/output and every A reference comparison are inside. Nominal-only plots and no-calibration timing were not rerun.
 
 | Step | Seconds | Change and source | Authoritative WSL commit |
 |---|---:|---|---|
+| 00-baseline | 155.86 ± 0.51 | Fresh array-preparation baseline; unchanged evaluator and diagnostic outputs; [source](c-nice/atlas_jet_corrections.py) | `5997af7d848dc290e5c4f46d74c7ef79ba943416` |
+| 01-array-bindings | 112.06 ± 0.42 | Native dense-array batch bindings eliminate Python scalar/list transfer; shared evaluators unchanged; [source](src/nominal.cxx) | `c6764e198e0259a2d81732d685dc115ca2665873` |
+| 02-event-products | 108.25 ± 0.77 | Replace per-event Python weight products with float64 Awkward reductions; [source](scripts/run-columnar-jvt.py) | `0992cd9608f2b492e56e65d5f9445abb14b32972` |
+| 03-compiled-metadata | 100.79 ± 0.33 | Parse uncertainty component metadata and reference constants once at construction; [source](src/systematics.hxx) | `d7667fb696d3fd2d382aab9f7d280aa53e8260ca` |
+| 04-reuse-kinematics | 83.21 ± 0.88 | Reuse validated kinematics from the systematic stage in the JVT stage; [source](scripts/run-columnar-jvt.py) | `efecd4aeab0cda89e91b2e5a1afd94fd698c7959` |
+| 05-parallel-batches | 61.05 ± 0.09 | Evaluate independent native batch slices on four threads; preserve scalar physics and ordering; [source](python/atlas_correctionlib/parallel.py) **Historical four-worker run.** | `9d2af94fe7ead89669f018a87d36595c3cab8616` |
+| 06-array-jvt-inputs | 54.41 ± 0.68 | Replace Python event loops for primary-vertex inputs and truth matching with Awkward arrays; [source](scripts/run-columnar-jvt.py) **Historical four-worker run.** | `153f82cf579085f9acc148e52d9f2ab74b13f5c7` |
+| 07-lz4-output | 43.26 ± 0.10 | Use LZ4 for the same ROOT output columns instead of default ZLIB; [source](scripts/run-columnar-systematics.py) **Historical four-worker run.** | `2f2c39a78209c261a5acc3a6f2b9f4b5d5f3dd8d` |
+| 08-lazy-metadata | 38.72 ± 0.29 | Load optional Python table/range inspection data only on access; native evaluator payloads unchanged; [source](python/atlas_correctionlib/jvt.py) **Historical four-worker run.** | `492f657b4ecea85630d9df1f5ee733aded10870e` |
+| 09-single-thread | 56.27 ± 0.03 | Default to one native worker; benchmark on one CPU with numerical library threads capped at one; [source](python/atlas_correctionlib/parallel.py) | `b79d363fe0a2d350a963802c912a3a543a4e18d9` |
+| 10-rng-construction | 54.08 ± 0.42 | Construct TRandom3 with its final seed, eliminating redundant default seeding; [source](src/backend.hxx) | `b9b6bd2990b621240099fe4e9fcbcce41219a3f8` |
+| 11-cached-gaussian | 49.63 ± 0.39 | Cache the first standard Gaussian by original seed; preserve rejection and ROOT stream exactly; [source](src/backend.hxx) | `1813b4e8136d8539b74fdca469742ef277a86530` |
 | 12-rebuild-control | 47.13 ± 0.03 | Rebuild unchanged full-precision CorrectionLib with a reproducible Release configuration [Source](vendor-patches/existing-full-precision-json.patch) | `dc6d525e21d1fb49b72d7f74a1cfc0169e987af9` |
 | 13-bin-edge-reference | 42.97 ± 0.00 | Reference non-uniform bin edges instead of copying their vector on every lookup [Source](vendor-patches/bin-edge-reference.patch) | `eb8b0a0c184b4c43a9c6a808d62e516e477903f9` |
 | 14-bound-tables | 37.88 ± 0.55 | Resolve shared systematic correction objects once at construction [Source](src/systematics.hxx) | `abc0c38557e0073706bda25c232ba50c1919af19` |
