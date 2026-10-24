@@ -1,8 +1,8 @@
 # Complete C-nice optimization timing history
 
-**Selected full-systematics result: 25.61 ± 0.31 s on one CPU.** Both NN changes are implemented in the shared B/C inference backend. This is 1.94× faster than the 49.63 s checkpoint and 0.83 s below the pre-NN 26.44 s checkpoint. These are short sequential measurements, not a controlled estimate of each change’s isolated gain.
+**Latest full-systematics result: 24.95 ± 0.08 s on one CPU.** The uniform-bin step has no demonstrated speedup over its fresh unchanged control (24.95 ± 0.02 s). The preceding NN checkpoint measured 25.61 ± 0.31 s. These short sequential measurements are not isolated estimates of each change’s gain.
 
-Checkpoint 26 is selected. Checkpoint 21’s larger input chunks were reverted. Checkpoints 18 and 25 have no individually established performance gain. See [the NN implementation and acceptance report](nn-optimization.md).
+Checkpoint 29 is selected; its conservative uniform encoding does not change active lookup paths. [Study and fresh control](uniform-binning.md). Checkpoint 21’s larger input chunks were reverted. Checkpoints 18 and 25 have no individually established performance gain. See [the NN implementation and acceptance report](nn-optimization.md).
 
 The table includes every optimization checkpoint from the original 155.86 s baseline. Steps 05–08 used four native workers; steps 09 onward use one worker pinned to one CPU. Earlier steps 00–04 used one native worker without the later affinity policy. Do not interpret the thread-policy transitions as isolated implementation gains. Historical A/B/C/D, nominal-only and no-calibration comparisons remain in [the four-path comparison](four-path-timing-comparison.md). Profiling runs 22–24 are diagnostic studies, not additional accepted benchmark checkpoints.
 
@@ -34,6 +34,7 @@ Three runs per checkpoint; discard the first and report mean/sample SD of the re
 | 21-larger-read-chunks | 26.64 ± 0.41 | Read nominal inputs in 5000-event chunks instead of 1000; same full sample and outputs **Reverted: no useful gain.** [Source](scripts/run-columnar-full.py) | `eab8381bcf2cd209ea60e91230f8dfcca504af9f` |
 | 25-nn-feature-cache | 27.01 ± 1.00 | Cache exact NN input tuples in a bounded model-scoped native cache shared by B and C. **Gain inconclusive.** [Source](src/nn_graph.hxx) | `e35bd9d9a171aee5eeecf68016f44aea058b0e1f` |
 | 26-nn-reusable-buffers | 25.61 ± 0.31 | Reuse NN intermediate buffers with matching Eigen operations in the shared B/C backend [Source](src/nn_graph.hxx) | `2d8cad68da093634555819df49ea7190e4285023` |
+| 29-uniform-binning | 24.95 ± 0.08 | Conservative uniform encoding; 12 inactive nodes eligible, **no demonstrated speedup**. Fresh control 24.95 ± 0.02 s. [Source](python/atlas_correctionlib/nodes.py) | `0eee0f84dd4efc37f3211e487b14e408f1c861ff` |
 
 ## Earlier campaign through checkpoint 20
 
@@ -114,3 +115,8 @@ No physics implementation or configuration changed for this measurement. This up
 ## Matched lookup comparison (24 October 2026)
 
 A test-only swap inside the shared systematic backend measured 1.115 ± 0.012 s with original ATLAS histogram lookups versus 1.307 ± 0.074 s with CorrectionLib. All 117 states matched exactly on the replay sample. This is a native calculation study, not a new C-nice optimization checkpoint or end-to-end timing. See [the lookup comparison](lookup-comparison.md) for the direct interpolation and JVT lookup measurements, scope and validation.
+
+
+## Uniform encoding follow-up (24 October 2026)
+
+See [the uniform-bin study](uniform-binning.md) for the complete axis audit, boundary checks, fresh control timing and B acceptance. Checkpoint 29 is a conservative representation change; none of the active lookup nodes qualified.

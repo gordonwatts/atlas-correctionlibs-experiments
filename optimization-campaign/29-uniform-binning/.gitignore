@@ -1,2 +1,6 @@
 /original-payloads/*.gz
 /*.gz
+**/install
+**/python
+**/payloads
+**/results/reference

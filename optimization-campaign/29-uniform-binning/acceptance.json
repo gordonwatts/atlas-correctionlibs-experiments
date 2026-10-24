@@ -1,0 +1,32 @@
+{
+  "implementation_commit": "0eee0f84dd4efc37f3211e487b14e408f1c861ff",
+  "conversion_nodes": 12,
+  "B": {
+    "library_sha256": "38db17ec28c7040869b121e0d39a91a18175f4ccf65cad5f61da6a71d2113cb0",
+    "wall_seconds": 265.0485363619955,
+    "passed": true,
+    "events": 20000,
+    "cpu_affinity": [
+      0
+    ],
+    "configuration": "config/reference.yaml",
+    "config_sha256": "4d84aa237b6a1796c05e9a38fa341e89993f1b8c582bc99da7b1624b4ed46ca8",
+    "command": [
+      "CPRun.py",
+      "-i",
+      "/cvmfs/atlas-nightlies.cern.ch/repo/data/data-art/ASG/DAOD_PHYSLITE/p7266/mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep.deriv.DAOD_PHYSLITE.e8514_e8528_s4162_s4114_r15540_r15516_p7266/DAOD_PHYSLITE.49568713._001693.pool.root.1",
+      "-t",
+      "/home/gwatts/atlas/correctionlib_tests/config/reference.yaml",
+      "-o",
+      "output.root",
+      "-e",
+      "20000"
+    ]
+  },
+  "control_mean": 24.945100283497595,
+  "control_sd": 0.024761467379769298,
+  "mean": 24.95328248700389,
+  "sd": 0.08437096006677336,
+  "no_active_lookup_changed": true,
+  "performance_gain_established": false
+}
