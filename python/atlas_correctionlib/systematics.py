@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import numpy as np, correctionlib
 from _atlas_corrections import smear_batch
+from .parallel import batch as parallel_batch
 class PythonRecipePrototype:
  def __init__(self,payload):
   payload=Path(payload)
@@ -72,6 +73,6 @@ class Systematics:
  def variations(self,p4,mu,npv,bjet):
   rows=np.column_stack([p4,mu,npv,bjet])
   for name in self.engine.names():
-   values=np.asarray(self.engine.batch_array(name,rows))
+   values=np.asarray(parallel_batch(lambda chunk:self.engine.batch_array(name,chunk),rows))
    if np.any(values[:,4]!=0):raise RuntimeError("Unsuccessful systematic correction status")
    yield name,values[:,:4]

@@ -3,6 +3,7 @@ import json,gzip
 from pathlib import Path
 import numpy as np
 from _atlas_corrections import NNJvt,JvtEfficiency
+from .parallel import batch as parallel_batch
 class Jvt:
  def __init__(self,payload,tables):
   payload=Path(payload);c=json.loads((payload/"nnjvt-cuts.json").read_text())
@@ -19,6 +20,6 @@ class Jvt:
  def evaluate(self,p4,sumpt,jvfcorr,haspv,ishs,sigma=0):
   # Both NNJVT selection and efficiency use the configured default JetEtaName='eta'.
   rows=np.column_stack([p4[:,0],p4[:,1],p4[:,1],sumpt,jvfcorr,haspv])
-  result=np.asarray(self.nn.batch_array(rows));score=result[:,0];passed=result[:,1].astype(bool)
-  values=np.asarray(self.efficiency.batch_array(np.column_stack([p4[:,0],p4[:,1],passed,ishs]),sigma))
+  result=np.asarray(parallel_batch(self.nn.batch_array,rows));score=result[:,0];passed=result[:,1].astype(bool)
+  values=np.asarray(parallel_batch(lambda chunk:self.efficiency.batch_array(chunk,sigma),np.column_stack([p4[:,0],p4[:,1],passed,ishs])))
   return score,passed,values[:,0].astype(np.float32),values[:,1]==0

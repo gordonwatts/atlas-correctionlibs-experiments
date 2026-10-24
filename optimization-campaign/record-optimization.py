@@ -12,6 +12,7 @@ descriptions={
 '05-parallel-batches':('Evaluate independent native batch slices on four threads; preserve scalar physics and ordering','python/atlas_correctionlib/parallel.py'),
 '06-array-jvt-inputs':('Replace Python event loops for primary-vertex inputs and truth matching with Awkward arrays','scripts/run-columnar-jvt.py'),
 '07-lz4-output':('Use LZ4 for the same ROOT output columns instead of default ZLIB','scripts/run-columnar-systematics.py'),
+'08-lazy-metadata':('Load optional Python table/range inspection data only on access; native evaluator payloads unchanged','python/atlas_correctionlib/jvt.py'),
 }
 description,ref=descriptions[label]
 folder=root/'optimization-campaign'/label
