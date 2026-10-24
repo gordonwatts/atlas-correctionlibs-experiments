@@ -32,3 +32,20 @@ The [complete timing history](x2-optimization.md) now includes the original opti
 Evidence: [B summary](optimization-campaign/nn-B-integration/summary.json), [loaded libraries](optimization-campaign/nn-B-integration/loaded-libraries.txt), [buffer tests](optimization-campaign/nn-checks/check-26-buffer-edges.log), and [full output parity](optimization-campaign/x2-checks/20-flat-adapters-to-26-nn-reusable-buffers-parity.json).
 
 All changes, checks and documentation are committed locally in both repositories. Nothing was pushed.
+
+## Final repeated Path B timing (24 October 2026)
+
+The final shared backend takes **257.80 ± 4.10 s** in Path B, compared with the historical **290.70 ± 1.01 s** baseline: **11.3% less elapsed time**. This comparison shows no observed slowdown, but is not an interleaved regression test. The historical baseline did not enforce the current one-CPU affinity policy.
+
+| Measurement | Wall seconds |
+|---|---:|
+| Historical B baseline, mean ± sample SD | 290.70 ± 1.01 |
+| Final B run 1 (excluded) | 258.86 |
+| Final B run 2 | 254.95 |
+| Final B run 3 | 255.95 |
+| Final B run 4 | 262.50 |
+| **Final B mean ± sample SD, runs 2–4** | **257.80 ± 4.10** |
+
+Four sequential runs of 20,000 events, full systematics and unchanged `config/reference.yaml`; first run excluded, no forced cache flush. One-CPU affinity and one native/BLAS/OpenMP worker. Environment setup is outside the timer; process startup, tool initialization, computation and ROOT output are inside. The library-observation loop polls every 0.5 s, adding up to roughly 0.5 s of finish-detection delay. All four full A comparisons passed outside the timed jobs. Loaded-library records confirm the rebuilt JetMomentTools and JetUncertainties overlays and expected CorrectionLib library.
+
+No physics implementation or configuration changed for this measurement. This updates the end-of-campaign B measurement only; earlier checkpoints were not rerun. Raw ROOT outputs and logs remain in WSL. [Run summaries and provenance](optimization-campaign/27-final-B-timing/summary.json).
