@@ -9,6 +9,7 @@ descriptions={
 '02-event-products':('Replace per-event Python weight products with float64 Awkward reductions','scripts/run-columnar-jvt.py'),
 '03-compiled-metadata':('Parse uncertainty component metadata and reference constants once at construction','src/systematics.hxx'),
 '04-reuse-kinematics':('Reuse validated kinematics from the systematic stage in the JVT stage','scripts/run-columnar-jvt.py'),
+'05-parallel-batches':('Evaluate independent native batch slices on four threads; preserve scalar physics and ordering','python/atlas_correctionlib/parallel.py'),
 }
 description,ref=descriptions[label]
 folder=root/'optimization-campaign'/label
@@ -16,7 +17,7 @@ summary=json.loads((folder/'summary.json').read_text())
 assert summary['passed']
 for name in ('optimization-campaign.py','optimization-campaign.sh','record-optimization.py'):
     shutil.copy2(windows/name,root/'optimization-campaign'/name)
-subprocess.run(['git','add','src','python','scripts','c-nice/atlas_jet_corrections.py','optimization-campaign'],cwd=root,check=True)
+subprocess.run(['git','add','src','python','scripts','c-nice/atlas_jet_corrections.py','c-nice/timing.py','optimization-campaign'],cwd=root,check=True)
 subprocess.run(['git','commit','-q','-m',f'{label}: {description}'],cwd=root,check=True)
 commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=root,text=True).strip()
 out=windows/'optimization-results'/label
@@ -26,9 +27,11 @@ for i in range(1,4):
     dest=out/f'run-{i}';dest.mkdir(exist_ok=True)
     for stage in ('nominal','systematics','jvt'):
         shutil.copy2(folder/f'runs/C-{i}/results/{stage}-comparison.json',dest/f'{stage}.json')
-for rel in ('src/nominal.cxx','src/systematics.hxx','scripts/run-columnar-jvt.py','python/atlas_correctionlib/systematics.py','python/atlas_correctionlib/jvt.py'):
+for rel in ('src/nominal.cxx','src/systematics.hxx','scripts/run-columnar-jvt.py','scripts/run-columnar-systematics.py','python/atlas_correctionlib/systematics.py','python/atlas_correctionlib/jvt.py','python/atlas_correctionlib/parallel.py','python/atlas_correctionlib/kinematic_cache.py'):
+    if not (root/rel).exists(): continue
     dest=windows/'columnar-source'/rel;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(root/rel,dest)
 shutil.copy2(root/'c-nice/atlas_jet_corrections.py',windows/'c-nice/atlas_jet_corrections.py')
+shutil.copy2(root/'c-nice/timing.py',windows/'c-nice/timing.py')
 index=windows/'optimization-results/index.json'
 records=json.loads(index.read_text()) if index.exists() else []
 records.append(dict(label=label,description=description,code=ref,commit=commit,mean=summary['mean'],sd=summary['sd']))

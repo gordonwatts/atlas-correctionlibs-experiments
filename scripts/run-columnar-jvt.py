@@ -46,11 +46,8 @@ for name,out in variations:
   summary["score"]=compare("check_NNJvt_"+name,score)
   summary["selection"]=compare("jet_select_jvt_"+name,passed,exact=True)
  summary["jet_weight"]=compare("jet_jvtEfficiency_FixedEffPt_"+name,sf)
- eventweights=[];offset=0
- for count in counts:
-  stop=offset+count
-  eventweights.append(np.prod(sf[offset:stop][valid[offset:stop]],dtype=np.float64))
-  offset=stop
+ # Invalid jets contribute the multiplicative identity; retain float64 products.
+ eventweights=ak.to_numpy(ak.prod(ak.unflatten(np.where(valid,sf,1.).astype(np.float64),counts),axis=1))
  summary["event_weight"]=compare("weight_jvt_effSF_FixedEffPt_"+name,np.asarray(eventweights),event=True)
  if writer is not None:
   writer[name]=dict(eventNumber=stored["eventNumber"][:len(counts)],originalJetIndex=ak.local_index(ak.unflatten(sf,counts),axis=1),score=ak.unflatten(score,counts),selected=ak.unflatten(passed,counts),jet_weight=ak.unflatten(sf,counts),status=ak.unflatten(np.where(valid,2,1).astype(np.int8),counts),event_weight=np.asarray(eventweights))
