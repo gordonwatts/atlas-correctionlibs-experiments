@@ -1,0 +1,13 @@
+CMake Deprecation Warning at pybind11/CMakeLists.txt:13 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- pybind11 v2.13.6 
+-- Configuring done (1.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/gwatts/atlas/correctionlib_tests/build-correctionlib-x2

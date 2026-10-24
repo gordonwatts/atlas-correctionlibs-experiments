@@ -26,3 +26,5 @@ wheels/
 /optimization-campaign/checks/*-exact
 /optimization-campaign/**/*.pstats
 /optimization-campaign/**/*.bin
+
+/build-correctionlib-x2/
