@@ -8,6 +8,8 @@ descriptions={
  '13-bin-edge-reference':('Reference non-uniform bin edges instead of copying their vector on every lookup','vendor-patches/bin-edge-reference.patch'),
  '14-bound-tables':('Resolve shared systematic correction objects once at construction','src/systematics.hxx'),
  '15-paired-systematics':('Reuse exact shared uncertainty evaluation between related systematic states','src/systematics.hxx'),
+ '18-exact-jvt-reuse':('Reuse JVT results only for exactly identical effective inputs','python/atlas_correctionlib/jvt.py'),
+ '19-flat-group-buffers':('Write grouped native results directly into contiguous NumPy storage','src/nominal.cxx'),
  '17-batched-reference':('Read validation reference branches in bounded groups of 16','python/atlas_correctionlib/reference.py'),
  '16-integrated-workflow-v2':('Share loaded arrays and payloads between stages while retaining all outputs and checks','scripts/run-columnar-full.py'),
 }
@@ -49,5 +51,6 @@ for row in rows:
 lines+=['','Every repetition passed nominal, kinematic-systematic and JVT comparisons against A. Library source commits and installed library SHA-256 hashes are retained in each checkpoint’s `implementation.json`. The rebuild control preserves the pre-existing full-precision JSON parsing patch. Changes to the shared backend also require final B integration validation.']
 (w/'x2-optimization.md').write_text('\n'.join(lines)+'\n')
 print(commit,summary['mean'],flush=True)
+
 
 

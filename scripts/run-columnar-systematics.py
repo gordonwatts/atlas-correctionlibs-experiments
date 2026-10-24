@@ -5,6 +5,7 @@ import numpy as np,uproot,awkward as ak
 r=Path(__file__).resolve().parents[1]
 sys.path[:0]=[str(r/"python"),str(r/"install/python")]
 from atlas_correctionlib.systematics import Systematics
+from atlas_correctionlib.reference import ReferenceReader
 from atlas_correctionlib.kinematic_cache import fingerprint
 p=argparse.ArgumentParser();p.add_argument("--events",type=int,default=100);p.add_argument("--reference",default="results/reference/reference.root");p.add_argument("--report",default="results/systematics-comparison.json");p.add_argument("--output");a=p.parse_args()
 stored=globals().get("shared_nominal")
@@ -23,6 +24,7 @@ bjet=ak.to_numpy(ak.flatten(arr[fields[2]]))==5
 ref=globals().get("shared_reference")
 if ref is None:ref=uproot.open(r/a.reference)["analysis"]
 engine=Systematics(r/"payloads");checks={};seen=[]
+reference=ReferenceReader(ref,["check_"+coord+"_"+name for name in engine.engine.names() for coord in ("pt","eta","phi","m")],a.events)
 writer=uproot.recreate(r/a.output,compression=uproot.LZ4(1)) if a.output else None
 for name,out in engine.variations(p4,mu,npv,bjet):
  seen.append(name);summary={}
@@ -33,7 +35,7 @@ for name,out in engine.variations(p4,mu,npv,bjet):
   data["status"]=ak.unflatten(np.full(n,2,dtype=np.int8),counts)
   writer[name]=data
  for i,coord in enumerate(["pt","eta","phi","m"]):
-  truth=ak.to_numpy(ak.flatten(ref["check_"+coord+"_"+name].array(entry_stop=a.events)))
+  truth=ak.to_numpy(ak.flatten(reference.read("check_"+coord+"_"+name)))
   delta=np.abs(out[:,i]-truth)
   if coord=="phi":delta=np.abs((out[:,i]-truth+np.pi)%(2*np.pi)-np.pi)
   tol=2e-6 if coord in ("eta","phi") else .01+2e-6*np.abs(truth)

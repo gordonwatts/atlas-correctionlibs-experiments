@@ -4,6 +4,7 @@ import numpy as np,uproot,awkward as ak
 r=Path(__file__).resolve().parents[1];sys.path[:0]=[str(r/"python"),str(r/"install/python")]
 from atlas_correctionlib.systematics import Systematics
 from atlas_correctionlib.jvt import Jvt
+from atlas_correctionlib.reference import ReferenceReader
 from atlas_correctionlib.kinematic_cache import fingerprint,read as read_kinematics
 p=argparse.ArgumentParser();p.add_argument("--events",type=int,default=100);p.add_argument("--reference",default="results/reference/reference.root");p.add_argument("--report",default="results/jvt-comparison.json");p.add_argument("--output");p.add_argument("--kinematics");a=p.parse_args()
 stored=globals().get("shared_nominal")
@@ -44,9 +45,12 @@ if ref is None:ref=uproot.open(r/a.reference)["analysis"]
 engine=globals().get("shared_systematics")
 if engine is None:engine=Systematics(r/"payloads")
 jvt=Jvt(r/"payloads",None);checks={}
+reference_names=[prefix+name for name in engine.engine.names() for prefix in ("check_NNJvt_","jet_select_jvt_","jet_jvtEfficiency_FixedEffPt_","weight_jvt_effSF_FixedEffPt_")]
+reference_names += [prefix+name for name in ("JET_NNJvtEfficiency__1up","JET_NNJvtEfficiency__1down") for prefix in ("jet_jvtEfficiency_FixedEffPt_","weight_jvt_effSF_FixedEffPt_")]
+reference=ReferenceReader(ref,reference_names,a.events)
 writer=uproot.recreate(r/a.output,compression=uproot.LZ4(1)) if a.output else None
 def compare(name,v,exact=False,event=False):
- truth=ref[name].array(entry_stop=a.events)
+ truth=reference.read(name)
  truth=ak.to_numpy(truth if event else ak.flatten(truth))
  delta=np.abs(v.astype(float)-truth.astype(float));tol=0 if exact else 1e-7+2e-6*np.abs(truth)
  bad=(delta>tol)|~np.isfinite(delta)
