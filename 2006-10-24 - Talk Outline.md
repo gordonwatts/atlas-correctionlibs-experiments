@@ -8,15 +8,15 @@ Audience: ATLAS colleagues familiar with jets, calibration tools and systematics
 
 Suggested talk title: **Trying CorrectionLib for ATLAS jet corrections**.
 
-Opening voice: “We have tried to make columnar analysis possible without creating a large coding workload for the ATLAS Combined Performance groups. Powerful coding agents now make it practical to investigate solutions that would once have required too much rewriting. I've wanted to try CMS's CorrectionLib for a while, so I used this opportunity to ask two questions: what is it like to use CorrectionLib, and how fast can a columnar analysis run while the AnalysisBase and Athena interfaces stay the same?”
+Opening voice: “Here is the columnar tool design we have been working with, next to the CorrectionLib-based structure I wanted to investigate. We chose the current route in part to keep the coding workload manageable for the Combined Performance groups. With coding agents, a more substantial rewrite is now practical to explore. That gave me a chance to try CorrectionLib and ask how fast this could go without changing the AnalysisBase and Athena interfaces.”
 
-The story: explain the constraint on CP-group workload and why coding agents make a broader experiment feasible; state the two questions; start with an untouched ATLAS reference; extract the same calibration constants; implement a shared backend that runs inside the existing framework and behind a columnar interface; validate it; optimize one change at a time. Most improvements came from avoiding repeated work and data movement. CorrectionLib supplies useful calibration-data infrastructure, but its lookup engine was not intrinsically faster than the original ROOT lookup in our measurements.
+The story: compare the current columnar access-layer design with the CorrectionLib-based experiment; explain the constraint on CP-group workload and why coding agents make a broader experiment feasible; state the two questions; start with an untouched ATLAS reference; extract the same calibration constants; implement a shared backend that runs inside the existing framework and behind a columnar interface; validate it; optimize one change at a time. Most improvements came from avoiding repeated work and data movement. CorrectionLib supplies useful calibration-data infrastructure, but its lookup engine was not intrinsically faster than the original ROOT lookup in our measurements.
 
 ### Instructions for the later slide-building chat
 
 - Build the deck only after this outline has been edited/approved. Do not infer approval of a visual theme, template or destination from this file.
 - Treat the tables below and their linked raw evidence as the numerical source. Older report headings sometimes say “selected” for historical checkpoints; [the complete history](x2-optimization.md) and [uniform-bin follow-up](uniform-binning.md) resolve the current state.
-- Preserve the sequence requested: CP workload and agent-enabled motivation → two investigation goals → CorrectionLib → A → columnar C-nice → B integration and first comparison → optimization → final comparison → backup.
+- Preserve the sequence requested: current design beside CorrectionLib-based experiment, with CP workload and agent-enabled motivation → two investigation goals → CorrectionLib → A → columnar C-nice → B integration and first comparison → optimization → final comparison → backup.
 - Put a small source reference and checkpoint on result slides. Put full links, implementation hashes and caveats in speaker notes. The complete optimization table already contains full authoritative Git hashes.
 - Label every abbreviated snippet either **actual code excerpt** or **simplified illustration**. The toy payload below is invented teaching data, not an ATLAS recommendation. Proposed interfaces in old design documents must not be presented as implemented.
 - Main slides should have one point each. Code should normally fit in 8–15 lines; move field lists, input paths and full YAML to backup. Use the real jet-pT plot if useful, but note its nominal-only scope.
@@ -25,17 +25,17 @@ The story: explain the constraint on CP-group workload and why coding agents mak
 
 ## Main talk
 
-### 1. Why revisit the columnar approach now?
+### 1. Two ways to carry jet corrections into columnar analysis
 
-**Point:** Our columnar choices have been constrained by the coding workload they would place on the Combined Performance (CP) groups. Coding agents now make it practical to explore solutions that require more substantial rewriting.
+**Point:** Put the established ATLAS columnar access-layer design beside the CorrectionLib-based experiment so the audience sees the architectural choice motivating the talk.
 
-**On slide:** “Keep the workload for CP groups manageable.” Then: “Coding agents make broader implementation experiments practical.”
+**On slide:** Left: the current access-layer design, with shared CP-tool code and xAOD/columnar data access. Right: the experiment's AnalysisBase/Athena and columnar adapters feeding shared C++ jet-correction logic, with CorrectionLib payloads and evaluator for calibration lookups. Label the right-hand side **this experiment**, not a proposed replacement for all CP tools.
 
-**Visual:** A simple progression from the CP workload constraint to the new opportunity to investigate other designs. Avoid suggesting that CP groups have agreed to take on new maintenance work.
+**Visual:** Use the [editable side-by-side architecture graphic](talk-outline-sources/columnar-architecture-comparison.svg) ([PNG preview](talk-outline-sources/columnar-architecture-comparison.png); [source and design notes](talk-outline-sources/architecture-comparison-notes.md)). Its left side redraws the columnar infrastructure concept from Nils Krumnack's section of the 2025 R2R4 AMG S&C Week talk, especially slides 12–16. Its right side shows the implemented B/C experiment. Do not imply that CorrectionLib replaces all handwritten jet-correction logic or supplies the application adapters.
 
-**Say:** This changes what we can investigate, not the requirement to respect the existing AnalysisBase and Athena interfaces. I have wanted to try CorrectionLib, which came out of CMS, for a while. The agent-enabled opportunity prompted a concrete experiment with a real jet calibration chain.
+**Say:** The current direction was chosen in part to avoid creating a large coding workload for the Combined Performance groups. Coding agents make a more substantial rewrite feasible to investigate. I have wanted to try CMS's CorrectionLib for a while, so I tested it on a real jet calibration chain. The AnalysisBase and Athena interfaces remain a constraint for this experiment; the next slide states its two questions.
 
-**Sources:** [Implementation record](implementation-log.md), [interface handoff](correctionlib-interface-handoff.md).
+**Sources:** [Nils's columnar infrastructure slides 12–16](https://docs.google.com/presentation/d/1CTlFzuWv8yvz1zD8Eemk4Yx8fvOGjAugkifxTgl5S0A/edit), [earlier high-level layered design, slides 8–9](https://docs.google.com/presentation/d/1ZEvrgVMoMdCe3ax0oCuZq-Tpf1uGBKbMgK2OvVeS6Bk/edit), [implemented B/C architecture](implementation-log.md), [CorrectionLib scope](correctionlib-interface-handoff.md).
 
 ### 2. Two questions for this investigation
 

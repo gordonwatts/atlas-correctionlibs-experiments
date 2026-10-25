@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Two routes to columnar jet corrections</title>
+  <desc id="desc">Side-by-side layered diagrams comparing the ATLAS columnar access-layer design with the CorrectionLib-based jet-correction experiment.</desc>
+  <defs>
+    <style>
+      text { font-family: "Segoe UI", Arial, sans-serif; }
+      .title { fill: #14233b; font-size: 48px; font-weight: 700; }
+      .card-title { fill: #14233b; font-size: 29px; font-weight: 700; }
+      .card-sub { fill: #53657b; font-size: 19px; }
+      .layer { fill: #ffffff; stroke-width: 2.5; }
+      .label { fill: #17283f; font-size: 24px; font-weight: 650; text-anchor: middle; }
+      .small { fill: #41536a; font-size: 18px; text-anchor: middle; }
+      .note { fill: #4c5d70; font-size: 17px; }
+      .footer { fill: #69788a; font-size: 15px; }
+      .flow-left { fill: none; stroke: #4070af; stroke-width: 3; marker-end: url(#arrow-left); }
+      .flow-right { fill: none; stroke: #138b84; stroke-width: 3; marker-end: url(#arrow-right); }
+    </style>
+    <marker id="arrow-left" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#4070af" stroke-width="2"/></marker>
+    <marker id="arrow-right" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#138b84" stroke-width="2"/></marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="#f5f8fc"/>
+  <text class="title" x="64" y="75">Two routes to columnar jet corrections</text>
+
+  <rect x="55" y="112" width="730" height="695" rx="24" fill="#eaf1fb" stroke="#c5d7ee" stroke-width="2"/>
+  <rect x="815" y="112" width="730" height="695" rx="24" fill="#e8f5f2" stroke="#b8ded8" stroke-width="2"/>
+  <text class="card-title" x="85" y="158">ATLAS columnar design</text>
+  <text class="card-sub" x="85" y="188">Shared CP tools with two data-access modes</text>
+  <text class="card-title" x="845" y="158">CorrectionLib experiment</text>
+  <text class="card-sub" x="845" y="188">Shared jet backend with versioned calibration lookups</text>
+
+  <!-- Established columnar design -->
+  <rect class="layer" x="85" y="218" width="315" height="67" rx="12" fill="#ffffff" stroke="#8eb1da"/>
+  <rect class="layer" x="440" y="218" width="315" height="67" rx="12" fill="#ffffff" stroke="#8eb1da"/>
+  <text class="label" x="242.5" y="259">AnalysisBase / Athena</text>
+  <text class="label" x="597.5" y="259">Columnar analysis</text>
+  <path class="flow-left" d="M242.5 286 V317 H420 V341"/>
+  <path class="flow-left" d="M597.5 286 V317 H420 V341"/>
+  <rect class="layer" x="137" y="343" width="566" height="78" rx="14" fill="#ffffff" stroke="#5d8ec7"/>
+  <text class="label" x="420" y="375">Shared CP tool code</text>
+  <text class="small" x="420" y="401">One implementation used in both environments</text>
+  <path class="flow-left" d="M420 422 V454"/>
+  <rect class="layer" x="137" y="458" width="566" height="116" rx="14" fill="#ffffff" stroke="#5d8ec7"/>
+  <text class="label" x="420" y="493">Data access layer</text>
+  <rect x="155" y="515" width="250" height="42" rx="9" fill="#e7f0fb"/>
+  <rect x="435" y="515" width="250" height="42" rx="9" fill="#e7f0fb"/>
+  <text class="small" x="280" y="542">xAOD mode</text>
+  <text class="small" x="560" y="542">Columnar mode</text>
+  <path class="flow-left" d="M280 575 V618"/>
+  <path class="flow-left" d="M560 575 V618"/>
+  <rect class="layer" x="137" y="623" width="268" height="67" rx="12" fill="#ffffff" stroke="#8eb1da"/>
+  <rect class="layer" x="435" y="623" width="268" height="67" rx="12" fill="#ffffff" stroke="#8eb1da"/>
+  <text class="label" x="271" y="664">xAOD objects</text>
+  <text class="label" x="569" y="664">Column arrays</text>
+  <text class="note" x="85" y="750">Design priority: limit CP-group migration work</text>
+
+  <!-- CorrectionLib-based implementation -->
+  <rect class="layer" x="845" y="218" width="315" height="67" rx="12" fill="#ffffff" stroke="#71bdb5"/>
+  <rect class="layer" x="1200" y="218" width="315" height="67" rx="12" fill="#ffffff" stroke="#71bdb5"/>
+  <text class="label" x="1002.5" y="259">AnalysisBase / Athena</text>
+  <text class="label" x="1357.5" y="259">Columnar Python</text>
+  <path class="flow-right" d="M1002.5 286 V314"/>
+  <path class="flow-right" d="M1357.5 286 V314"/>
+  <rect class="layer" x="845" y="320" width="315" height="67" rx="12" fill="#ffffff" stroke="#49a79e"/>
+  <rect class="layer" x="1200" y="320" width="315" height="67" rx="12" fill="#ffffff" stroke="#49a79e"/>
+  <text class="label" x="1002.5" y="361">B integration adapter</text>
+  <text class="label" x="1357.5" y="361">C array adapter</text>
+  <path class="flow-right" d="M1002.5 388 V410 H1180 V425"/>
+  <path class="flow-right" d="M1357.5 388 V410 H1180 V425"/>
+  <rect class="layer" x="897" y="430" width="566" height="78" rx="14" fill="#ffffff" stroke="#269a90"/>
+  <text class="label" x="1180" y="462">Shared C++ jet-correction logic</text>
+  <text class="small" x="1180" y="488">Ordering, systematics, four-vectors, selection</text>
+  <path class="flow-right" d="M1180 509 V535"/>
+  <rect class="layer" x="897" y="540" width="566" height="63" rx="14" fill="#ffffff" stroke="#269a90"/>
+  <text class="label" x="1180" y="580">CorrectionLib evaluator</text>
+  <path class="flow-right" d="M1180 604 V626"/>
+  <rect x="897" y="632" width="566" height="58" rx="14" fill="#fff3df" stroke="#dca857" stroke-width="2.5"/>
+  <text class="label" x="1180" y="668">Versioned JSON calibration payloads</text>
+  <text class="note" x="845" y="745">NNJVT and RNG remain separate native components</text>
+  <text class="note" x="845" y="771">AnalysisBase / Athena interfaces stay the same</text>
+
+  <text class="footer" x="64" y="852">Left: N. Krumnack, R2R4 AMG S&amp;C Week (2025), slides 12–16. Right: implemented B/C jet-correction prototype.</text>
+</svg>
