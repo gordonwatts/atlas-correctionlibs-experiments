@@ -4,19 +4,19 @@ Draft for discussion and editing. Prepared 24 October 2026; the **2006** in the 
 
 ## Talk intent and working assumptions
 
-Audience: ATLAS colleagues familiar with jets, calibration tools and systematics, but not necessarily CorrectionLib or columnar Python. Assume roughly 30 minutes, with 23 main slides and technical backup. Shorten by combining slides 3–4, 11–12 and 20–21; keep detailed measurement caveats in notes rather than dropping them.
+Audience: ATLAS colleagues familiar with jets, calibration tools and systematics, but not necessarily CorrectionLib or columnar Python. Assume roughly 30 minutes, with 24 main slides and technical backup. Shorten by combining slides 4–5, 12–13 and 21–22; keep detailed measurement caveats in notes rather than dropping them.
 
 Suggested talk title: **Trying CorrectionLib for ATLAS jet corrections**.
 
-Opening voice: “I've wanted to try CorrectionLib for a long time. This finally gave me an excuse to take a real calibration chain, make it work in a columnar analysis, and see how fast we could make it.”
+Opening voice: “We have tried to make columnar analysis possible without creating a large coding workload for the ATLAS Combined Performance groups. Powerful coding agents now make it practical to investigate solutions that would once have required too much rewriting. I've wanted to try CMS's CorrectionLib for a while, so I used this opportunity to ask two questions: what is it like to use CorrectionLib, and how fast can a columnar analysis run while the AnalysisBase and Athena interfaces stay the same?”
 
-The story: start with an untouched ATLAS reference; extract the same calibration constants; implement a shared backend that runs inside the existing framework and behind a columnar interface; validate it; optimize one change at a time. Most improvements came from avoiding repeated work and data movement. CorrectionLib supplies useful calibration-data infrastructure, but its lookup engine was not intrinsically faster than the original ROOT lookup in our measurements.
+The story: explain the constraint on CP-group workload and why coding agents make a broader experiment feasible; state the two questions; start with an untouched ATLAS reference; extract the same calibration constants; implement a shared backend that runs inside the existing framework and behind a columnar interface; validate it; optimize one change at a time. Most improvements came from avoiding repeated work and data movement. CorrectionLib supplies useful calibration-data infrastructure, but its lookup engine was not intrinsically faster than the original ROOT lookup in our measurements.
 
 ### Instructions for the later slide-building chat
 
 - Build the deck only after this outline has been edited/approved. Do not infer approval of a visual theme, template or destination from this file.
 - Treat the tables below and their linked raw evidence as the numerical source. Older report headings sometimes say “selected” for historical checkpoints; [the complete history](x2-optimization.md) and [uniform-bin follow-up](uniform-binning.md) resolve the current state.
-- Preserve the sequence requested: motivation → CorrectionLib → A → columnar C-nice → B integration and first comparison → optimization → final comparison → backup.
+- Preserve the sequence requested: CP workload and agent-enabled motivation → two investigation goals → CorrectionLib → A → columnar C-nice → B integration and first comparison → optimization → final comparison → backup.
 - Put a small source reference and checkpoint on result slides. Put full links, implementation hashes and caveats in speaker notes. The complete optimization table already contains full authoritative Git hashes.
 - Label every abbreviated snippet either **actual code excerpt** or **simplified illustration**. The toy payload below is invented teaching data, not an ATLAS recommendation. Proposed interfaces in old design documents must not be presented as implemented.
 - Main slides should have one point each. Code should normally fit in 8–15 lines; move field lists, input paths and full YAML to backup. Use the real jet-pT plot if useful, but note its nominal-only scope.
@@ -25,19 +25,31 @@ The story: start with an untouched ATLAS reference; extract the same calibration
 
 ## Main talk
 
-### 1. I've wanted to try this for a while
+### 1. Why revisit the columnar approach now?
 
-**Point:** This is a concrete experiment with a real calibration chain, not just a toy CorrectionLib example.
+**Point:** Our columnar choices have been constrained by the coding workload they would place on the Combined Performance (CP) groups. Coding agents now make it practical to explore solutions that require more substantial rewriting.
 
-**On slide:** Motivation in the opening wording above; “Can we use the same calibration in our existing software and in a columnar analysis?”
+**On slide:** “Keep the workload for CP groups manageable.” Then: “Coding agents make broader implementation experiments practical.”
 
-**Visual:** Three small boxes, initially without implementation detail: reference / framework replacement / columnar application.
+**Visual:** A simple progression from the CP workload constraint to the new opportunity to investigate other designs. Avoid suggesting that CP groups have agreed to take on new maintenance work.
 
-**Say:** We can use the existing software as an oracle and keep the calibration prescription tied to something we can check. The scope is a frozen MC23 jet setup, not every ATLAS calibration or data-taking condition.
+**Say:** This changes what we can investigate, not the requirement to respect the existing AnalysisBase and Athena interfaces. I have wanted to try CorrectionLib, which came out of CMS, for a while. The agent-enabled opportunity prompted a concrete experiment with a real jet calibration chain.
+
+**Sources:** [Implementation record](implementation-log.md), [interface handoff](correctionlib-interface-handoff.md).
+
+### 2. Two questions for this investigation
+
+**Point:** Test CorrectionLib as a practical way to carry jet corrections into columnar analysis, and measure how fast that analysis can run while the AnalysisBase and Athena interfaces remain the same.
+
+**On slide:** “What is it like to use CorrectionLib?” and “How fast can columnar analysis go without changing the AnalysisBase and Athena interfaces?”
+
+**Visual:** Two numbered questions. A small footer can name the real test case: frozen MC23 jet calibration.
+
+**Say:** We use the existing ATLAS implementation as a reference and keep the calibration prescription tied to something we can check. The scope is one frozen MC23 jet setup, not every ATLAS calibration or data-taking condition. The following slides explain the test setup and the measured result.
 
 **Sources:** [Implementation record](implementation-log.md), [validation summary](validation-summary.md), [complete timing history](x2-optimization.md).
 
-### 2. What would count as a useful result?
+### 3. What would count as a useful result?
 
 **Point:** A cleaner application interface is only useful if the physics and existing use case still work.
 
@@ -47,7 +59,7 @@ The story: start with an untouched ATLAS reference; extract the same calibration
 
 **Sources:** [RNG study](single-thread-profiling.md), [NN acceptance](nn-optimization.md), [latest parity](optimization-results/29-uniform-binning/parity.json).
 
-### 3. CorrectionLib: a payload and an evaluator
+### 4. CorrectionLib: a payload and an evaluator
 
 **Point:** A correction is a function with named, typed inputs and a numerical output, distributed as data.
 
@@ -59,7 +71,7 @@ The story: start with an untouched ATLAS reference; extract the same calibration
 
 **Sources:** [Architecture discussion, “What CorrectionLib does”](correctionlib-interface-handoff.md), [actual node builder](columnar-source/python/atlas_correctionlib/nodes.py). That discussion contains later Path D proposals: use its introductory explanation only here.
 
-### 4. A tiny payload, and the code that calls it
+### 5. A tiny payload, and the code that calls it
 
 **Point:** Show the audience the whole contract with a small readable example.
 
@@ -89,7 +101,7 @@ scale = corrections["toy_scale"].evaluate(75.0)  # 1.01
 
 **Deck-builder check:** This toy is independent of the real payload. Keep real-valued edges written as JSON floating-point numbers; the pinned parser rejects integer edge literals. Revalidate if the example is edited for the deck.
 
-### 5. What did we put into CorrectionLib?
+### 6. What did we put into CorrectionLib?
 
 **Point:** We reformatted existing constants; we did not fit new calibrations.
 
@@ -101,7 +113,7 @@ scale = corrections["toy_scale"].evaluate(75.0)  # 1.01
 
 **Sources:** [Nominal backend](columnar-source/src/backend.hxx), [systematics](columnar-source/src/systematics.hxx), [efficiency](columnar-source/src/efficiency.hxx), [NN wrapper](columnar-source/src/nnjvt.hxx), [lookup study](lookup-comparison.md). Original exporters in WSL: `python/atlas_correctionlib/compile_nominal.py` and `compile_uncertainties.py`.
 
-### 6. Path A: run the software we already have
+### 7. Path A: run the software we already have
 
 **Point:** The reference is the untouched release running a real sample.
 
@@ -127,7 +139,7 @@ Jets:
 
 **Sources:** [A/B configuration](talk-outline-sources/reference.yaml), [four-path timings](four-path-timing-comparison.md).
 
-### 7. How fast can it be if we just read and plot?
+### 8. How fast can it be if we just read and plot?
 
 **Point:** Separate the framework/I/O floor from calibration and systematics.
 
@@ -148,7 +160,7 @@ Jets:
 
 **Sources:** [Stored-jet configuration](a-stored-timing/a-stored.yaml), [A measurements](a-stored-timing/summary.json), [columnar stored-jet measurements](c-nice/stored-timing/summary.json), [facade scope](c-nice/README.md), [plot](c-nice/array-timing/jet-pt.png).
 
-### 8. Path C-nice: what I want to write
+### 9. Path C-nice: what I want to write
 
 **Point:** The analysis sees arrays and named results, with a loop only over chunks.
 
@@ -177,7 +189,7 @@ with uproot.open(filename) as source:
 
 **Sources:** [Complete working script](c-nice/plot-jets.py), [facade](c-nice/atlas_jet_corrections.py), [full diagnostic runner](columnar-source/scripts/run-columnar-full.py), [README](c-nice/README.md).
 
-### 9. Columnar outside, shared physics inside
+### 10. Columnar outside, shared physics inside
 
 **Point:** We did not have to rewrite every C++ correction as a vector kernel.
 
@@ -187,7 +199,7 @@ with uproot.open(filename) as source:
 
 **Sources:** [Array adapter](columnar-source/src/nominal.cxx), [array validation](c-nice/array-validation.json), [full runner](columnar-source/scripts/run-columnar-full.py).
 
-### 10. Path B: put the same backend into the old release
+### 11. Path B: put the same backend into the old release
 
 **Point:** The analysis configuration stays the same; the implementation behind the tools changes.
 
@@ -206,7 +218,7 @@ export DATAPATH="$ATLAS_CORRECTIONLIB_BUNDLE:${DATAPATH:-}"
 
 **Sources:** [Frozen setup copy](talk-outline-sources/setup-replacement.sh), [same A/B YAML](talk-outline-sources/reference.yaml), [B loaded libraries](optimization-results/27-final-B-timing/run-2/loaded-libraries.txt), [NN integration](nn-optimization.md). Historical WSL generator: `scripts/prepare-overlay.py`; do not rerun it just to build slides, as it recreates overlay sources and predates some later changes.
 
-### 11. First comparison: all three on one page
+### 12. First comparison: all three on one page
 
 **Point:** The replacement works in both contexts; columnar execution is already useful before the optimization campaign.
 
@@ -220,7 +232,7 @@ export DATAPATH="$ATLAS_CORRECTIONLIB_BUNDLE:${DATAPATH:-}"
 
 **Sources:** [Four-path report](four-path-timing-comparison.md), [array-facade timing](c-nice/array-timing/summary.json), [complete history](x2-optimization.md).
 
-### 12. Optimization rules: how fast can we make it?
+### 13. Optimization rules: how fast can we make it?
 
 **Point:** Make each change reviewable and preserve the physics.
 
@@ -230,7 +242,7 @@ export DATAPATH="$ATLAS_CORRECTIONLIB_BUNDLE:${DATAPATH:-}"
 
 **Visual:** Main single-CPU trajectory **56.27 → 49.63 → 37.88 → 31.71 → 26.44 → 25.61 s**, followed by the **24.95 s latest repeat**, with an annotation that the last difference is not a uniform-bin gain. Full checkpoint list in backup.
 
-### 13. Big gain: cross the Python/C++ boundary in arrays
+### 14. Big gain: cross the Python/C++ boundary in arrays
 
 **Point:** Millions of individual values are expensive to transfer through Python containers.
 
@@ -249,7 +261,7 @@ result = native.batch_array(rows)
 
 **Sources:** [Bindings](columnar-source/src/nominal.cxx), checkpoints 01, 19, 20 in [history](x2-optimization.md); historical versions via their Git commits.
 
-### 14. Big gain: stop doing the same calculation twice
+### 15. Big gain: stop doing the same calculation twice
 
 **Point:** Workflow reuse can matter more than tuning a single lookup.
 
@@ -267,7 +279,7 @@ jvt = evaluate_jvt(kinematics)  # use the already computed states
 
 **Sources:** [JVT runner](columnar-source/scripts/run-columnar-jvt.py), [integrated runner](columnar-source/scripts/run-columnar-full.py), [facade workflow notes](c-nice/README.md).
 
-### 15. Big gain: resolve metadata and tables once
+### 16. Big gain: resolve metadata and tables once
 
 **Point:** Loading a description should not be part of each jet's calculation.
 
@@ -286,7 +298,7 @@ double value = response->evaluate({pt, eta});
 
 **Sources:** [Compiled component and Table definitions](columnar-source/src/systematics.hxx), checkpoints 03 and 14.
 
-### 16. Big gain: one unwanted vector copy
+### 17. Big gain: one unwanted vector copy
 
 **Point:** Profiling found an avoidable cost inside CorrectionLib itself.
 
@@ -303,7 +315,7 @@ double value = response->evaluate({pt, eta});
 
 **Sources:** [Bin-copy patch](vendor-patches/bin-edge-reference.patch), [precision patch](vendor-patches/existing-full-precision-json.patch), [history](x2-optimization.md).
 
-### 17. Reuse the common part of systematic variations
+### 18. Reuse the common part of systematic variations
 
 **Point:** Up/down and related resolution states share calculations.
 
@@ -323,7 +335,7 @@ for (const auto& variation : variations) {
 
 **Sources:** [Grouped systematic evaluator](columnar-source/src/systematics.hxx), checkpoint 15 and its acceptance in [history](x2-optimization.md).
 
-### 18. RNG and NN: optimize the work around the arithmetic
+### 19. RNG and NN: optimize the work around the arithmetic
 
 **Point:** Small kernels can spend substantial effort setting up or allocating.
 
@@ -335,7 +347,7 @@ for (const auto& variation : variations) {
 
 **Sources:** [RNG report](single-thread-profiling.md), [smearing code](columnar-source/src/backend.hxx), [native profile](calculation-profile-report.md), [NN report](nn-optimization.md), [buffers](columnar-source/src/nn_buffered.hxx). Split this slide into two if time permits.
 
-### 19. What did careful profiling tell us?
+### 20. What did careful profiling tell us?
 
 **Point:** Once the calculation is cheap, the diagnostic workflow matters.
 
@@ -347,7 +359,7 @@ for (const auto& variation : variations) {
 
 **Sources:** [Whole-workflow profile](final-profile-report.md), [calculation profile](calculation-profile-report.md).
 
-### 20. Is CorrectionLib's lookup faster than ROOT's?
+### 21. Is CorrectionLib's lookup faster than ROOT's?
 
 **Point:** We measured it rather than assuming it.
 
@@ -364,7 +376,7 @@ for (const auto& variation : variations) {
 
 **Sources:** [Lookup report](lookup-comparison.md), [matched harness](lookup-benchmark/benchmark.cxx), [JVT harness](lookup-benchmark/jvt.cxx).
 
-### 21. A useful negative result: uniform bins
+### 22. A useful negative result: uniform bins
 
 **Point:** A faster representation must still select the right bin at the edges.
 
@@ -376,7 +388,7 @@ for (const auto& variation : variations) {
 
 **Sources:** [Uniform-bin study](uniform-binning.md), [export guard](columnar-source/python/atlas_correctionlib/nodes.py), [audit evidence](optimization-results/29-uniform-binning/axis-audit.json).
 
-### 22. Final results: A, B and C-nice
+### 23. Final results: A, B and C-nice
 
 **Point:** The shared backend remains usable in the existing framework, and the columnar diagnostic workflow is much faster.
 
@@ -394,7 +406,7 @@ for (const auto& variation : variations) {
 
 **Sources:** [Complete history](x2-optimization.md), [repeated final B](optimization-results/27-final-B-timing/summary.json), [latest C](optimization-results/29-uniform-binning/summary.json), [latest B validation](optimization-results/29-uniform-binning/B-integration/summary.json).
 
-### 23. What did we learn, and what is next?
+### 24. What did we learn, and what is next?
 
 **Point:** The experiment gives us a working interface, shared physics and a reviewable optimization history.
 
