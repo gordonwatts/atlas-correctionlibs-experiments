@@ -49,7 +49,7 @@ def main():
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--native", type=Path, help="separately built _atlas_corrections extension")
-    parser.add_argument("--python-tag", default="cp313", choices=("cp39", "cp313"))
+    parser.add_argument("--python-tag", default="cp313", choices=("cp39", "cp313", "cp314"))
     args = parser.parse_args()
     root = args.root.resolve()
     output = args.output.resolve()
@@ -153,14 +153,14 @@ root = Path("atlas_complete_corrections")
 data = [str(p.relative_to(root)) for p in root.rglob("*") if p.is_file() and p.suffix != ".py"]
 setup(name="atlas-complete-corrections", version="0.1.0", packages=find_packages(),
       package_data={"atlas_complete_corrections": data}, include_package_data=True,
-      python_requires=">=3.9,<3.14", install_requires=["numpy>=2,<3", "awkward>=2,<3"],
+      python_requires=">=3.9,<3.15", install_requires=["numpy>=2,<3", "awkward>=2,<3"],
       distclass=BinaryDistribution, zip_safe=False)
 ''')
     subprocess.run([sys.executable, "setup.py", "bdist_wheel", "--plat-name", "linux_x86_64",
                     "--dist-dir", str(output / "dist")], cwd=stage, check=True,
                    stdout=(output / "build.log").open("w"), stderr=subprocess.STDOUT)
     wheel = next((output / "dist").glob("*.whl"))
-    if args.python_tag != "cp313":
+    if f"-{args.python_tag}-{args.python_tag}-" not in wheel.name:
         subprocess.run([sys.executable, "-m", "wheel", "tags", "--python-tag", args.python_tag,
                         "--abi-tag", args.python_tag, str(wheel)], check=True,
                        stdout=(output / "retag.log").open("w"), stderr=subprocess.STDOUT)
@@ -168,6 +168,7 @@ setup(name="atlas-complete-corrections", version="0.1.0", packages=find_packages
         wheel = next((output / "dist").glob("*.whl"))
     add_startup_hook(wheel, Path(__file__).with_name("atlas_complete_corrections_startup.pth"))
     print(wheel)
+    print(f"wheel size: {wheel.stat().st_size} bytes")
     print(f"bundled {len(library_paths)} shared libraries and {len(list((package / 'payloads').rglob('*')))} payload entries")
 
 
