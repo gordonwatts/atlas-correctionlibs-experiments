@@ -1,0 +1,1 @@
+import ctypes, importlib.util; _atlas_libs = importlib.util.find_spec('atlas_complete_corrections').submodule_search_locations[0] + '/libs/'; ctypes.CDLL(_atlas_libs + 'libgcc_s.so.1', mode=ctypes.RTLD_GLOBAL); ctypes.CDLL(_atlas_libs + 'libstdc++.so.6', mode=ctypes.RTLD_GLOBAL)

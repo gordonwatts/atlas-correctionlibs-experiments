@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "python": "3.9.16",
+  "wheel": "/home/gwatts/atlas/correctionlib_tests/wheel-experiment/run-2026-10-26-06/isolated-01/venv/lib/python3.9/site-packages/atlas_complete_corrections/__init__.py",
+  "jets": 12,
+  "systematic_states": 117,
+  "jvt_variations": 3,
+  "release_setup": false
+}

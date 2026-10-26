@@ -30,3 +30,11 @@ wheels/
 /build-correctionlib-x2/
 
 /optimization-campaign/**/profile-native
+
+# Standalone wheel experiment: retain generated artifacts locally
+/wheel-experiment/run-*/
+/wheel-experiment/build-cp39/
+/wheel-experiment/install-cp39/
+/wheel-experiment/python-devel*/
+/wheel-experiment/tools/
+/wheel-experiment/*.log
