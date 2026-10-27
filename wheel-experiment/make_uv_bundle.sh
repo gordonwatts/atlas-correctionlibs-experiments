@@ -10,8 +10,7 @@ if test -e "$output"; then
 fi
 mkdir -p "$output/bundle"
 cp "$root/wheel-experiment/run_complete_corrections.py" "$output/bundle/"
-cp "$root/wheel-experiment/reference-fixture.npz" "$output/bundle/"
 cp "$wheel" "$output/bundle/"
-(cd "$output/bundle" && sha256sum run_complete_corrections.py reference-fixture.npz "$(basename "$wheel")" > SHA256SUMS)
+(cd "$output/bundle" && sha256sum run_complete_corrections.py "$(basename "$wheel")" > SHA256SUMS)
 tar -C "$output/bundle" -czf "$output/atlas-complete-corrections-uv314.tar.gz" .
 stat -c '%n: %s bytes' "$output/atlas-complete-corrections-uv314.tar.gz"
